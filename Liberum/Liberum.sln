@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProFormaUI", "ProFormaLibrary\ProFormaUI.csproj", "{DC8D837E-2573-4716-BF24-64C895EEBD50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProFormaLibraries", "ProFormaLibraries\ProFormaLibraries.csproj", "{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1B3A6FE-E5B0-4493-B5CE-10F214ADF1E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC8D837E-2573-4716-BF24-64C895EEBD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8D837E-2573-4716-BF24-64C895EEBD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8D837E-2573-4716-BF24-64C895EEBD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8D837E-2573-4716-BF24-64C895EEBD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2CEBA23-39B4-4C51-B7B7-EB234A3847E5}
+	EndGlobalSection
+EndGlobal
