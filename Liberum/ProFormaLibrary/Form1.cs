@@ -579,6 +579,10 @@ namespace ProFormaLibrary
                     request.Customer = selectCustomerComboBox.Text;
                     request.HUtotal = UpdateStripLabelTotal();
                     request.Haulier = Hauliertextbox.Text;
+                    request.UKexit = UKexitTextbox.Text;
+                    request.Destination = CustomsOfficeTextBox.Text;
+                    request.PhoneNumber = driverNumberTextbox.Text;
+                    request.Incoterms = IncotermTextBox.Text;
 
                     List<string> fetchedContacts = SqliteDataAccess.LoadCC();
                     request.Contacts = string.Join("<br>", fetchedContacts);

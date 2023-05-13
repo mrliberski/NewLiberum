@@ -20,5 +20,10 @@ namespace ProFormaLibraries
         public string? Customer { get; set; }
         public int? HUtotal { get; set; }
         public string? Haulier { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? UKexit { get; set; }
+        public string? Destination { get; set; }
+        public string? Incoterms { get; set; }
+        public string? Currency { get; set; }
     }
 }
