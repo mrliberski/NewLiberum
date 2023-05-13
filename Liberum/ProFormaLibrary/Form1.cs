@@ -5,6 +5,9 @@ using System.Net.Mail;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Outlook = Microsoft.Office.Interop.Outlook;
+using System;
+using System.Media;
+using System.Windows.Forms;
 
 namespace ProFormaLibrary
 {
@@ -35,6 +38,23 @@ namespace ProFormaLibrary
             ClearContent();
             GetHighestInvoiceNumberAndIncrement();
             //LoadSampleItems();
+        }
+
+        private static void NotYet()
+        {
+            string directoryPath = @".\Sounds";
+            string filePath = Path.Combine(directoryPath, "p-hub-bro.wav");
+
+            // Create a SoundPlayer object with the desired sound file
+            SoundPlayer customSound = new SoundPlayer(filePath);
+            customSound.Play();
+
+            MessageBox.Show("This module is not yet available.", "Disappointment.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            // Show a message box and set the sound for that message box
+            //MessageBox.Show("Custom sound message box", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, 0, true, "customSound");
+
+            // Play the custom sound
+            System.Reflection.Assembly.GetExecutingAssembly().PlaySound("customSound", customSound);
         }
 
         /// <summary>
@@ -292,31 +312,6 @@ namespace ProFormaLibrary
             //TODO : validation of selection in create broker request method
         }
 
-        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IBFtimeSlotComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RequestTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ProFormaGenerator_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ClearButton_Click(object sender, EventArgs e)
         {
             ClearContent();
@@ -364,10 +359,7 @@ namespace ProFormaLibrary
             }
         }
 
-        private static void NotYet()
-        {
-            MessageBox.Show("This module is not yet available.", "Disappointment.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
+
 
         private void CreateInvoiceEntry()
         {

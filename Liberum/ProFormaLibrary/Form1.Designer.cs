@@ -112,7 +112,7 @@
             // 
             resources.ApplyResources(dateTimePicker1, "dateTimePicker1");
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.ValueChanged += DateTimePicker1_ValueChanged;
+            //dateTimePicker1.ValueChanged += DateTimePicker1_ValueChanged;
             // 
             // InvoiceNumberValue
             // 
@@ -124,7 +124,7 @@
             resources.ApplyResources(RequestTypeComboBox, "RequestTypeComboBox");
             RequestTypeComboBox.FormattingEnabled = true;
             RequestTypeComboBox.Name = "RequestTypeComboBox";
-            RequestTypeComboBox.SelectedIndexChanged += RequestTypeComboBox_SelectedIndexChanged;
+            //RequestTypeComboBox.SelectedIndexChanged += RequestTypeComboBox_SelectedIndexChanged;
             // 
             // TypeOfRequestLAbel
             // 
@@ -146,7 +146,7 @@
             resources.ApplyResources(IBFtimeSlotComboBox, "IBFtimeSlotComboBox");
             IBFtimeSlotComboBox.FormattingEnabled = true;
             IBFtimeSlotComboBox.Name = "IBFtimeSlotComboBox";
-            IBFtimeSlotComboBox.SelectedIndexChanged += IBFtimeSlotComboBox_SelectedIndexChanged;
+            //IBFtimeSlotComboBox.SelectedIndexChanged += IBFtimeSlotComboBox_SelectedIndexChanged;
             // 
             // CustomerDetailsGroupBox
             // 
@@ -246,7 +246,7 @@
             // 
             resources.ApplyResources(driversNumberLAbel, "driversNumberLAbel");
             driversNumberLAbel.Name = "driversNumberLAbel";
-            driversNumberLAbel.Click += Label1_Click;
+            //driversNumberLAbel.Click += Label1_Click;
             // 
             // Hauliertextbox
             // 
@@ -560,7 +560,7 @@
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ProFormaGenerator";
-            Load += ProFormaGenerator_Load;
+            //Load += ProFormaGenerator_Load;
             CustomerDetailsGroupBox.ResumeLayout(false);
             CustomerDetailsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
