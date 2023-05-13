@@ -13,6 +13,51 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static List<string> LoadRequestType()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select RequestName from RequestType", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadRecipients()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select Address from Recipients", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadCC()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select Address from CClist", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadTimeslots()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select Timeslot from Timeslots", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadProcedures()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select Code from Procedurecodes", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
         public static List<CustomerModel> LoadCustomers()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))

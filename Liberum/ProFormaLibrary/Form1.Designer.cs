@@ -40,17 +40,17 @@
             CustomerDetailsGroupBox = new GroupBox();
             CurrencytextBox = new TextBox();
             CurrencyLAbel = new Label();
-            EditCustomerLink = new LinkLabel();
             IncotermTextBox = new TextBox();
             IncoLabel = new Label();
+            EditCustomerLink = new LinkLabel();
             CustomsOfficeTextBox = new TextBox();
             customsOfficelabel = new Label();
             UKexitTextbox = new TextBox();
             UKexitFacilityLabel = new Label();
-            CreatNewCustomerlinkLabel1 = new LinkLabel();
             driverNumberTextbox = new TextBox();
             driversNumberLAbel = new Label();
             Hauliertextbox = new TextBox();
+            CreatNewCustomerlinkLabel1 = new LinkLabel();
             haulierName = new Label();
             telephoneValue = new Label();
             contactNameVAlue = new Label();
@@ -94,6 +94,10 @@
             label2 = new Label();
             POtextBox = new TextBox();
             KanbanTextBox = new TextBox();
+            ProcedureCodeLabel = new Label();
+            ProcedureTypeCombo = new ComboBox();
+            TrailerTextBox = new TextBox();
+            label3 = new Label();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -151,6 +155,7 @@
             CustomerDetailsGroupBox.Controls.Add(CurrencyLAbel);
             CustomerDetailsGroupBox.Controls.Add(IncotermTextBox);
             CustomerDetailsGroupBox.Controls.Add(IncoLabel);
+            CustomerDetailsGroupBox.Controls.Add(EditCustomerLink);
             CustomerDetailsGroupBox.Controls.Add(CustomsOfficeTextBox);
             CustomerDetailsGroupBox.Controls.Add(customsOfficelabel);
             CustomerDetailsGroupBox.Controls.Add(UKexitTextbox);
@@ -158,6 +163,7 @@
             CustomerDetailsGroupBox.Controls.Add(driverNumberTextbox);
             CustomerDetailsGroupBox.Controls.Add(driversNumberLAbel);
             CustomerDetailsGroupBox.Controls.Add(Hauliertextbox);
+            CustomerDetailsGroupBox.Controls.Add(CreatNewCustomerlinkLabel1);
             CustomerDetailsGroupBox.Controls.Add(haulierName);
             CustomerDetailsGroupBox.Controls.Add(telephoneValue);
             CustomerDetailsGroupBox.Controls.Add(contactNameVAlue);
@@ -194,13 +200,6 @@
             resources.ApplyResources(CurrencyLAbel, "CurrencyLAbel");
             CurrencyLAbel.Name = "CurrencyLAbel";
             // 
-            // EditCustomerLink
-            // 
-            resources.ApplyResources(EditCustomerLink, "EditCustomerLink");
-            EditCustomerLink.Name = "EditCustomerLink";
-            EditCustomerLink.TabStop = true;
-            EditCustomerLink.LinkClicked += EditCustomerLink_LinkClicked;
-            // 
             // IncotermTextBox
             // 
             resources.ApplyResources(IncotermTextBox, "IncotermTextBox");
@@ -210,6 +209,13 @@
             // 
             resources.ApplyResources(IncoLabel, "IncoLabel");
             IncoLabel.Name = "IncoLabel";
+            // 
+            // EditCustomerLink
+            // 
+            resources.ApplyResources(EditCustomerLink, "EditCustomerLink");
+            EditCustomerLink.Name = "EditCustomerLink";
+            EditCustomerLink.TabStop = true;
+            EditCustomerLink.LinkClicked += EditCustomerLink_LinkClicked;
             // 
             // CustomsOfficeTextBox
             // 
@@ -231,13 +237,6 @@
             resources.ApplyResources(UKexitFacilityLabel, "UKexitFacilityLabel");
             UKexitFacilityLabel.Name = "UKexitFacilityLabel";
             // 
-            // CreatNewCustomerlinkLabel1
-            // 
-            resources.ApplyResources(CreatNewCustomerlinkLabel1, "CreatNewCustomerlinkLabel1");
-            CreatNewCustomerlinkLabel1.Name = "CreatNewCustomerlinkLabel1";
-            CreatNewCustomerlinkLabel1.TabStop = true;
-            CreatNewCustomerlinkLabel1.LinkClicked += CreatNewCustomerlinkLabel1_LinkClicked;
-            // 
             // driverNumberTextbox
             // 
             resources.ApplyResources(driverNumberTextbox, "driverNumberTextbox");
@@ -253,6 +252,13 @@
             // 
             resources.ApplyResources(Hauliertextbox, "Hauliertextbox");
             Hauliertextbox.Name = "Hauliertextbox";
+            // 
+            // CreatNewCustomerlinkLabel1
+            // 
+            resources.ApplyResources(CreatNewCustomerlinkLabel1, "CreatNewCustomerlinkLabel1");
+            CreatNewCustomerlinkLabel1.Name = "CreatNewCustomerlinkLabel1";
+            CreatNewCustomerlinkLabel1.TabStop = true;
+            CreatNewCustomerlinkLabel1.LinkClicked += CreatNewCustomerlinkLabel1_LinkClicked;
             // 
             // haulierName
             // 
@@ -498,21 +504,44 @@
             resources.ApplyResources(KanbanTextBox, "KanbanTextBox");
             KanbanTextBox.Name = "KanbanTextBox";
             // 
+            // ProcedureCodeLabel
+            // 
+            resources.ApplyResources(ProcedureCodeLabel, "ProcedureCodeLabel");
+            ProcedureCodeLabel.Name = "ProcedureCodeLabel";
+            // 
+            // ProcedureTypeCombo
+            // 
+            resources.ApplyResources(ProcedureTypeCombo, "ProcedureTypeCombo");
+            ProcedureTypeCombo.FormattingEnabled = true;
+            ProcedureTypeCombo.Name = "ProcedureTypeCombo";
+            // 
+            // TrailerTextBox
+            // 
+            resources.ApplyResources(TrailerTextBox, "TrailerTextBox");
+            TrailerTextBox.Name = "TrailerTextBox";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
             // ProFormaGenerator
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            Controls.Add(TrailerTextBox);
+            Controls.Add(label3);
+            Controls.Add(ProcedureCodeLabel);
+            Controls.Add(ProcedureTypeCombo);
             Controls.Add(KanbanTextBox);
             Controls.Add(POtextBox);
-            Controls.Add(EditCustomerLink);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(RemoveSelectedLinkLabel);
             Controls.Add(closeDownButton);
             Controls.Add(clearButton);
             Controls.Add(createBrokerRequest);
-            Controls.Add(CreatNewCustomerlinkLabel1);
             Controls.Add(emailRecipientsListLinkLabel);
             Controls.Add(createInvoiceButton);
             Controls.Add(addItemLinkLabel);
@@ -608,5 +637,9 @@
         private Label label2;
         private TextBox POtextBox;
         private TextBox KanbanTextBox;
+        private Label ProcedureCodeLabel;
+        private ComboBox ProcedureTypeCombo;
+        private TextBox TrailerTextBox;
+        private Label label3;
     }
 }

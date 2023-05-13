@@ -29,7 +29,7 @@ namespace ProFormaLibraries
         public long ContainerHSCode { get; set; }
         public string? ContainerCOO { get; set; }
         public int PartsPerContainer{ get; set; } 
-        public int ContainersPerPallet{ get; set; }
+        public int ContainersPerPallet{ get; set; } // not used anymore but if you remove it or move it, all will go pop!
         public int PalletsQuantity { get; set; }
         public int RequiresPackaging { get; set; }
         public int RequiresLid { get; set; }

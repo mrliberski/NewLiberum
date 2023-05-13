@@ -1,10 +1,10 @@
-using Microsoft.VisualBasic;
+using Microsoft.Office.Interop.Outlook;
 using ProFormaLibraries;
 using ProFormaUI;
-using System.Diagnostics.CodeAnalysis;
-using System.DirectoryServices.ActiveDirectory;
-using System.Drawing;
-using System.Drawing.Text;
+using System.Net.Mail;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace ProFormaLibrary
 {
@@ -19,8 +19,9 @@ namespace ProFormaLibrary
         public string HUquantity { get; set; }
         private List<string> Invoices = new List<string>();
         public string? invoiceNumberSaved = "";
-        public InvoiceModel Invoice =new InvoiceModel();
+        public InvoiceModel Invoice = new InvoiceModel();
         public CustomerModel Customer = new CustomerModel();
+        List<string> ProcedureCode = new List<string>();
 
 
         public ProFormaGenerator()
@@ -28,6 +29,7 @@ namespace ProFormaLibrary
             InitializeComponent();
             LoadRequestType();
             LoadIbfTimeslots();
+            LoadProcedure();
             LoadCustomers();
             SetToolbarLabelExpiryDate();
             ClearContent();
@@ -161,7 +163,7 @@ namespace ProFormaLibrary
             dataGridView1.Columns["ContainerGrossWeight"].Visible = false;
             dataGridView1.Columns["ContainersPerPallet"].Visible = false;
             dataGridView1.Columns["ContainerPrice"].Visible = false;
-            //dataGridView1.Columns["ContainerHSCode"].Visible = false;
+            dataGridView1.Columns["PartsPerContainer"].Visible = false;
             dataGridView1.Columns["ContainerCOO"].Visible = false;
             dataGridView1.Columns["CreatedDate"].Visible = false;
             dataGridView1.Columns["CreatedBy"].Visible = false;
@@ -225,7 +227,17 @@ namespace ProFormaLibrary
         //    createBrokerRequest.Enabled = false;
         //}
 
+        private void LoadProcedure()
+        {
+            ProcedureCode.Clear();
+            ProcedureCode = SqliteDataAccess.LoadProcedures();
 
+            //ProcedureCode.Add("Permanent Export - 100001");
+            //ProcedureCode.Add("Temporary Export - 230000");
+            //ProcedureCode.Add("Repair Export - 220000");
+
+            WireUpProcedures(ProcedureCode);
+        }
 
         /// <summary>
         /// Populating request type combo box for customs broker
@@ -233,12 +245,7 @@ namespace ProFormaLibrary
         private void LoadRequestType()
         {
             requestType.Clear();
-            requestType.Add("EAD Only");
-            requestType.Add("EAD + T1");
-            requestType.Add("EAD + T1 + ATA");
-            requestType.Add("Amendment");
-            requestType.Add("Other");
-
+            requestType = SqliteDataAccess.LoadRequestType();
             WireupRequestType(requestType);
         }
 
@@ -248,12 +255,16 @@ namespace ProFormaLibrary
         private void LoadIbfTimeslots()
         {
             ibfTimeslot.Clear();
-            ibfTimeslot.Add("06:00 - 12:00");
-            ibfTimeslot.Add("12:00 - 18:00");
-            ibfTimeslot.Add("18:00 - 00:00");
-            ibfTimeslot.Add("00:00 - 06:00");
-
+            ibfTimeslot = SqliteDataAccess.LoadTimeslots();
             WireupIBFslots(ibfTimeslot);
+        }
+
+        private void WireUpProcedures(List<string> procedures)
+        {
+            ProcedureTypeCombo.Items.Clear();
+            ProcedureTypeCombo.DataSource = null;
+            ProcedureTypeCombo.DataSource = procedures;
+            //ProcedureTypeCombo.SelectedIndex =-1; TODO: implement validation and uncomment
         }
 
         /// <summary>
@@ -265,6 +276,7 @@ namespace ProFormaLibrary
             RequestTypeComboBox.Items.Clear();
             RequestTypeComboBox.DataSource = null;
             RequestTypeComboBox.DataSource = requestType;
+            //RequestTypeComboBox.SelectedIndex =-1;
         }
 
         /// <summary>
@@ -276,6 +288,8 @@ namespace ProFormaLibrary
             IBFtimeSlotComboBox.Items.Clear();
             IBFtimeSlotComboBox.DataSource = null;
             IBFtimeSlotComboBox.DataSource = ibfTimeslot;
+            //IBFtimeSlotComboBox.SelectedIndex =-1;
+            //TODO : validation of selection in create broker request method
         }
 
         private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -335,6 +349,7 @@ namespace ProFormaLibrary
             CurrencytextBox.Text = string.Empty;
             POtextBox.Text = string.Empty;
             KanbanTextBox.Text = string.Empty;
+            TrailerTextBox.Text = string.Empty;
 
             toolStripStatusLabel5.Text = "There are no items in shipment";
         }
@@ -345,7 +360,7 @@ namespace ProFormaLibrary
             iExit = MessageBox.Show("Are you sure you want to Exit?", "Please confirm selection.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (iExit == DialogResult.Yes)
             {
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
         }
 
@@ -356,7 +371,7 @@ namespace ProFormaLibrary
 
         private void CreateInvoiceEntry()
         {
-
+            //this is called twice to ensure there were no changes to DB in the meantime
             GetHighestInvoiceNumberAndIncrement();
 
             //InvoiceModel model = new InvoiceModel();
@@ -381,52 +396,8 @@ namespace ProFormaLibrary
             {
                 if (Items.Count > 0)
                 {
-                    InvoiceItem invoiceItem = new InvoiceItem();
-                    invoiceItem.InvoiceNumber = InvoiceNumberValue.Text;
-                    invoiceItem.CustomerName = ((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName; //ToString();
-
-                    CreateInvoiceEntry();
-                    foreach (ItemModel item in Items)
-                    {
-                        invoiceItem.ItemQuantity = item.ItemQuantity;
-                        invoiceItem.ItemName = item.ItemName;
-                        invoiceItem.PartNumber = item.PartNumber;
-                        invoiceItem.CustomerNumber = item.CustomerNumber;
-                        invoiceItem.ItemNetWeight = item.ItemNetWeight;
-                        invoiceItem.ItemGrossWeight = item.ItemGrossWeight;
-                        invoiceItem.ItemPrice = item.ItemPrice;
-                        invoiceItem.ItemHScode = item.ItemHScode;
-                        invoiceItem.ItemCOO = item.ItemCOO;
-                        invoiceItem.ContainerName = item.ContainerName;
-                        invoiceItem.ContainersQuantity = item.ContainersQuantity;
-                        invoiceItem.ContainerCode = item.ContainerCode;
-                        invoiceItem.ContainerNetWeight = item.ContainerNetWeight;
-                        invoiceItem.ContainerGrossWeight = item.ContainerGrossWeight;
-                        invoiceItem.ContainerPrice = item.ContainerPrice;
-                        invoiceItem.ContainerHSCode = item.ContainerHSCode;
-                        invoiceItem.ContainerCOO = item.ContainerCOO;
-                        invoiceItem.PartsPerContainer = item.PartsPerContainer;
-                        invoiceItem.ContainersPerPallet = item.ContainersPerPallet;
-                        invoiceItem.PalletsQuantity = item.PalletsQuantity;
-                        invoiceItem.RequiresPackaging = item.RequiresPackaging;
-                        invoiceItem.RequiresLid = item.RequiresLid;
-                        invoiceItem.RequiresPallet = item.RequiresPallet;
-                        invoiceItem.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-
-                        //MessageBox.Show(item.ItemName);
-                        SqliteDataAccess.AddInvoiceItem(invoiceItem);
-                    }
-
-                    Invoice.ReferenceNumber = POtextBox.Text;
-                    Invoice.KanbanNumber = KanbanTextBox.Text;
-
-                    CreateHtmlInvoice(Customer, Invoice, Items);
-                    CreatePdfInvoice();
-
-                    Items.Clear();
-                    WireUpItems(Items);
-                    UpdateStripLabelTotal();
-                    ClearContent();
+                    CreateInvoiceDocuments();
+                    SweepUptheForm();
                 }
                 else
                 {
@@ -437,7 +408,61 @@ namespace ProFormaLibrary
             GetHighestInvoiceNumberAndIncrement();
         }
 
-        private void CreatePdfInvoice()
+
+        public void CreateInvoiceDocuments()
+        {
+            InvoiceItem invoiceItem = new InvoiceItem();
+            invoiceItem.InvoiceNumber = InvoiceNumberValue.Text;
+            invoiceItem.CustomerName = ((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName; //ToString();
+
+            CreateInvoiceEntry();
+            foreach (ItemModel item in Items)
+            {
+                invoiceItem.ItemQuantity = item.ItemQuantity;
+                invoiceItem.ItemName = item.ItemName;
+                invoiceItem.PartNumber = item.PartNumber;
+                invoiceItem.CustomerNumber = item.CustomerNumber;
+                invoiceItem.ItemNetWeight = item.ItemNetWeight;
+                invoiceItem.ItemGrossWeight = item.ItemGrossWeight;
+                invoiceItem.ItemPrice = item.ItemPrice;
+                invoiceItem.ItemHScode = item.ItemHScode;
+                invoiceItem.ItemCOO = item.ItemCOO;
+                invoiceItem.ContainerName = item.ContainerName;
+                invoiceItem.ContainersQuantity = item.ContainersQuantity;
+                invoiceItem.ContainerCode = item.ContainerCode;
+                invoiceItem.ContainerNetWeight = item.ContainerNetWeight;
+                invoiceItem.ContainerGrossWeight = item.ContainerGrossWeight;
+                invoiceItem.ContainerPrice = item.ContainerPrice;
+                invoiceItem.ContainerHSCode = item.ContainerHSCode;
+                invoiceItem.ContainerCOO = item.ContainerCOO;
+                invoiceItem.PartsPerContainer = item.PartsPerContainer;
+                invoiceItem.ContainersPerPallet = item.ContainersPerPallet;
+                invoiceItem.PalletsQuantity = item.PalletsQuantity;
+                invoiceItem.RequiresPackaging = item.RequiresPackaging;
+                invoiceItem.RequiresLid = item.RequiresLid;
+                invoiceItem.RequiresPallet = item.RequiresPallet;
+                invoiceItem.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
+                //MessageBox.Show(item.ItemName);
+                SqliteDataAccess.AddInvoiceItem(invoiceItem);
+            }
+
+            Invoice.ReferenceNumber = POtextBox.Text;
+            Invoice.KanbanNumber = KanbanTextBox.Text;
+
+            CreateHtmlInvoice(Customer, Invoice, Items);
+            CreatePdfInvoice();
+        }
+
+        public void SweepUptheForm()
+        {
+            Items.Clear();
+            WireUpItems(Items);
+            UpdateStripLabelTotal();
+            ClearContent();
+        }
+
+        private static void CreatePdfInvoice()
         {
             var htmlToPdf = new NReco.PdfGenerator.HtmlToPdfConverter();
 
@@ -453,11 +478,11 @@ namespace ProFormaLibrary
 
             htmlToPdf.GeneratePdfFromFile(@".\HTML\Invoice.html", null, @".\HTML\Invoice.pdf");
 
-            htmlToPdf.LogReceived += (sender, e) => {MessageBox.Show("WkHtmlToPdf Log: {0}", e.Data);};
-
+            htmlToPdf.LogReceived += (sender, e) => { MessageBox.Show("WkHtmlToPdf Log: {0}", e.Data); };
+            File.Delete(@".\HTML\Invoice.html");
         }
 
-        private bool CanWriteToFile(string filePath)
+        private static bool CanWriteToFile(string filePath)
         {
             string directoryPath = Path.GetDirectoryName(filePath);
             if (!Directory.Exists(directoryPath))
@@ -478,7 +503,7 @@ namespace ProFormaLibrary
             }
         }
 
-        private void CreateHtmlInvoice(CustomerModel customer, InvoiceModel invoice, List<ItemModel> Items)
+        private static void CreateHtmlInvoice(CustomerModel customer, InvoiceModel invoice, List<ItemModel> Items)
         {
             string HtmlOutput = InvoiceTemplate.EntireModel(invoice, Items, customer);
             string directoryPath = @".\HTML";
@@ -493,7 +518,7 @@ namespace ProFormaLibrary
                 {
                     System.Diagnostics.Process.Start("explorer.exe", directoryPath);
                 }
-                catch (Exception ex)
+                catch (System.Exception ex)
                 {
                     Console.WriteLine($"Error opening folder: {ex.Message}");
                 }
@@ -507,32 +532,132 @@ namespace ProFormaLibrary
             }
         }
 
-    
+
 
         private void CheckLicence()
         {
             if (ValidateExpiryDate())
             {
                 MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
         }
+
 
         private void CreateBrokerRequest_Click(object sender, EventArgs e)
         {
             CheckLicence();
-            NotYet();
+
+            DialogResult iExit;
+            iExit = MessageBox.Show("New invoice and request will be created, continue?", "Please confirm shipment creation.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (iExit == DialogResult.Yes)
+            {
+                //ValidateCombos();
+
+                if (Items.Count > 0)
+                {
+                    /// I have tried Microsoft Interop nugget but this did not work on 365 machine so I have removed it and 
+                    /// I have added COM reference Outlook 16 object library
+                    /// Select "Add Reference..."
+                    /// Select "COM"
+                    /// Select "Microsoft Excel 16.0 Object Library"
+                    /// Reference a type within code(e.g.Microsoft.Office.Interop.Excel.Chart)
+                    /// Try to run the console app. It fails as described.
+                    /// Add<EmbedInteropTypes>True </ EmbedInteropTypes >
+
+                    RequestModel request = new RequestModel();
+
+                    request.Procedure = ProcedureTypeCombo.SelectedItem.ToString();
+                    request.InvoiceNumber = InvoiceNumberValue.Text;
+                    request.RequestType = RequestTypeComboBox.SelectedItem.ToString();
+                    DateTime x = dateTimePicker1.Value;
+                    request.IbfDate = x.ToString("dd/MM/yyyy");
+                    request.IbfTimeslot = IBFtimeSlotComboBox.SelectedItem.ToString();
+                    request.ReferenceNumber = POtextBox.Text;
+                    request.KanbanNumber = KanbanTextBox.Text;
+                    request.TruckNumber = TrailerTextBox.Text;
+                    request.Customer = selectCustomerComboBox.Text;
+                    request.HUtotal = UpdateStripLabelTotal();
+                    request.Haulier = Hauliertextbox.Text;
+
+                    List<string> fetchedContacts = SqliteDataAccess.LoadCC();
+                    request.Contacts = string.Join("<br>", fetchedContacts);
+
+                    CreateInvoiceDocuments();
+
+                    // build ead request form html
+                    // build ead request form pdf
+
+                    // build T1 request form html
+                    // build T1 request form pdf
+
+                    // build CMR xml / html /excel?
+                    // build CMR pdf
+
+                    List<string> recipients = SqliteDataAccess.LoadRecipients();
+                    string attachmentPath = AppDomain.CurrentDomain.BaseDirectory + @"Html\Invoice.pdf";
+                    List<string> ccList = SqliteDataAccess.LoadCC();
+                    string subject = request.RequestType + " Request Antolin Redditch > " + selectCustomerComboBox.Text + " > " + request.ReferenceNumber + " > " + request.KanbanNumber + " > " + DateTime.Now.ToString();
+
+
+
+                    EadRequestTemplate emailBody = new EadRequestTemplate();
+                    string body = emailBody.EadRequestFormModel(request);// TODO: buildBody() -  extract template to class;
+
+                    Outlook.Application outlookApp = new Outlook.Application();
+                    Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
+
+                    mailItem.To = string.Join(";", recipients);
+                    mailItem.CC = string.Join(";", ccList);
+                    // Set the subject
+                    mailItem.Subject = subject;
+                    // Set the HTML body
+                    mailItem.HTMLBody = body;
+                    // Attach a file
+                    if (!string.IsNullOrEmpty(attachmentPath))
+                    {
+                        mailItem.Attachments.Add(attachmentPath);
+                    }
+
+                    // Display the email
+                    mailItem.Display();
+
+                    // Release resources
+                    Marshal.ReleaseComObject(mailItem);
+                    Marshal.ReleaseComObject(outlookApp);
+
+                    SweepUptheForm();
+                }
+                else
+                {
+                    MessageBox.Show("There are no items to send.", "Hmmmmm", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
+            }
         }
+
+        private void CreateOutlookEmail(string recipient, string subject, string body)
+        {
+
+        }
+
+
+
+
 
         private void AddItemLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName != null)
+            //if (((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName != null)
+            if (selectCustomerComboBox.SelectedIndex != -1)
             {
                 SelectedCustomer = ((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName;
 
                 CheckLicence();
                 Form open = new AddItem(this, SelectedCustomer);
                 open.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Ensure customer is selected", "Selection error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
@@ -621,7 +746,7 @@ namespace ProFormaLibrary
                 //this will not work => selectCustomerComboBox.SelectedIndex = -1;
                 MessageBox.Show("You can't change a customer if item list is not empty.", "Customer change invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 //selectCustomerComboBox.Text = ((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName;
-            } 
+            }
             else
             {
                 CheckLicence();
@@ -650,7 +775,7 @@ namespace ProFormaLibrary
                 WireUpItems(Items);
 
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 MessageBox.Show("An error occured: " + ex.Message + " - " + ex.Source);
             }
@@ -676,7 +801,7 @@ namespace ProFormaLibrary
                 WireUpItems(Items);
 
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 MessageBox.Show("An error occured: " + ex.Message + " - " + ex.Source);
             }
@@ -685,7 +810,7 @@ namespace ProFormaLibrary
         /// <summary>
         /// Method to update the thtal number oh handling units 
         /// </summary>
-        private void UpdateStripLabelTotal()
+        private int UpdateStripLabelTotal()
         {
             //to update number of HU in current shipment
             int total = 0;
@@ -712,6 +837,8 @@ namespace ProFormaLibrary
             {
                 toolStripStatusLabel5.Text = "Total Number of HUs in current shipment: " + total;
             }
+
+            return total;
 
         }
 

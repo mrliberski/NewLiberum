@@ -154,11 +154,13 @@ namespace ProFormaUI
         private void RecalculateBoxes()
         {
             PAckagingQtyTextBox.Text = Math.Ceiling(int.Parse(ItemQtyTextBox.Text) / decimal.Parse(PPCtextBox.Text)).ToString();
+            ((ItemModel)AvailableItemsComboBox.SelectedItem).ContainersQuantity = int.Parse(PAckagingQtyTextBox.Text);
 
             // pallet qty = container qty / pphu qty and then ceiling
             if (decimal.Parse(CPPtextBox.Text) != 0)
             {
                 PalletsTextBox.Text = Math.Ceiling(int.Parse(PAckagingQtyTextBox.Text) / decimal.Parse(CPPtextBox.Text)).ToString();
+                ((ItemModel)AvailableItemsComboBox.SelectedItem).PalletsQuantity = int.Parse(PalletsTextBox.Text);
             }
 
         }
@@ -183,6 +185,8 @@ namespace ProFormaUI
             else
             {
                 ((ItemModel)AvailableItemsComboBox.SelectedItem).Cpp = int.Parse(CPPtextBox.Text);
+                
+
                 // recalculate 
                 RecalculateBoxes();
             }

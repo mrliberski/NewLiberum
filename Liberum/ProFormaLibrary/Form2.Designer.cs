@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            emailBuild = new Button();
+            SuspendLayout();
+            // 
+            // emailBuild
+            // 
+            emailBuild.Location = new Point(435, 250);
+            emailBuild.Name = "emailBuild";
+            emailBuild.Size = new Size(237, 75);
+            emailBuild.TabIndex = 0;
+            emailBuild.Text = "send email test";
+            emailBuild.UseVisualStyleBackColor = true;
+            emailBuild.Click += emailBuild_Click;
+            // 
+            // Form2
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(emailBuild);
+            Name = "Form2";
+            Text = "Form2";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button emailBuild;
     }
 }
