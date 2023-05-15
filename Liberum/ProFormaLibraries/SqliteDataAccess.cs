@@ -13,6 +13,42 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static List<InvoiceItem> PopulateItems(int invoice)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<InvoiceItem>($"select * from InvoiceItems where InvoiceNumber = @invoice", new { invoice });
+                return output.ToList();
+            }
+        }
+
+        //public static List<ItemModel> LoadItems(string SelectedCustomer)
+        //{
+        //    using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+        //    {
+        //        // did not work ;P var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer={SelectedCustomer}", new DynamicParameters());
+        //        var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
+        //        return output.ToList();
+        //    }
+        //}
+
+
+        public static CustomerModel FetchCustomerInfo(string customer)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                CustomerModel output = new CustomerModel();
+
+                var parameters = new DynamicParameters();
+                parameters.Add("@customer", customer);
+
+                output = cnn.Query<CustomerModel>("select id,* from Customers WHERE CustomerName = @customer", parameters).FirstOrDefault();
+                return output;
+            }
+
+
+            //return new CustomerModel();
+        }
 
         public static InvoiceItem SelectInvoiceCustomer(int SelectedInvoice)
         {

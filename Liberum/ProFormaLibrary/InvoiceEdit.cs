@@ -1,4 +1,5 @@
-﻿using ProFormaLibraries;
+﻿using Microsoft.Office.Interop.Outlook;
+using ProFormaLibraries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,11 @@ namespace ProFormaUI
 {
     public partial class InvoiceEdit : Form
     {
-        private int _invoiceId;
-        private InvoiceItem _invoiceCustomerName;
-        private List<InvoiceItem> _invoiceItems;
+        public int _invoiceId;
+        private InvoiceItem _invoiceCustomerName = new InvoiceItem();
+        private List<InvoiceItem> _invoiceItems = new List<InvoiceItem>();
+        private CustomerModel _customerModel = new CustomerModel();
+        //private List<InvoiceItem> _currentItems = new List<InvoiceItem>();
 
         public InvoiceEdit()
         {
@@ -43,16 +46,6 @@ namespace ProFormaUI
             InvoiceNumberTextBox.Text = string.Empty;
         }
 
-        private void printInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void InvoiceNumberLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -65,42 +58,49 @@ namespace ProFormaUI
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
+            // ClearForm(); - to nie moze tu byc :)
             // validate if entry is a valid int
             try
             {
+                ErrorPlaceholderValueLabel.Text = string.Empty;
                 _invoiceId = int.Parse(InvoiceNumberTextBox.Text);
-                ErrorPlaceholderValueLabel.Text= string.Empty;
-                //MessageBox.Show("OK");
+                // MessageBox.Show("OK");
                 try
                 {
+                    // MessageBox.Show("Trying");
                     _invoiceCustomerName = SqliteDataAccess.SelectInvoiceCustomer(_invoiceId);
-                    if ( _invoiceCustomerName != null )
+                    if (_invoiceCustomerName != null)
                     {
+                        // MessageBox.Show("1");
                         CustomerNameValueLabel.Text = _invoiceCustomerName.CustomerName;
                         PopulateCustomerInfo(_invoiceCustomerName.CustomerName);
                         PopulateItems(_invoiceId);
                     }
                     else
                     {
+                        // MessageBox.Show("2");
                         CustomerNameValueLabel.Text = string.Empty;
                         ErrorPlaceholderValueLabel.Text = string.Empty;
                         ErrorPlaceholderValueLabel.Text = "No hits...";
                     }
-                   
+
                 }
-                catch (Exception ex)
+                catch (System.Exception ex)
                 {
+                    // MessageBox.Show("3");
                     ErrorPlaceholderValueLabel.Text = string.Empty;
                     CustomerNameValueLabel.Text = string.Empty;
-                    ErrorPlaceholderValueLabel.Text += ex.Message;
+                    ErrorPlaceholderValueLabel.Text = ex.Message;
                 }
-            } 
-            catch (Exception ex)
-            {
-                ErrorPlaceholderValueLabel.Text = string.Empty;
-                ErrorPlaceholderValueLabel.Text += ex.Message;
             }
-            
+            catch (System.Exception ex)
+            {
+                // MessageBox.Show("NOK");
+                ErrorPlaceholderValueLabel.Text = string.Empty;
+                ErrorPlaceholderValueLabel.Text = ex.Message;
+
+            }
+
 
             //if (int.TryParse(PalletsTextBox.Text, out int Pallet))
             //{
@@ -116,12 +116,33 @@ namespace ProFormaUI
 
         private void PopulateCustomerInfo(string Customer)
         {
-
+            _customerModel = SqliteDataAccess.FetchCustomerInfo(Customer);
+            Address1Value.Text = _customerModel.CustomerAddressLine1;
+            Address2Value.Text = _customerModel.CustomerAddressLine2;
+            PostCodeValue.Text = _customerModel.CustomerZipCode;
+            CountryValue.Text = _customerModel.CustomerCountry;
+            VatNumberValue.Text = _customerModel.CustomerVAT;
+            eoriNumberValue.Text = _customerModel.CustomerEORI;
+            sapNumberValue.Text = _customerModel.SAPnumber;
+            contactNameVAlue.Text = _customerModel.CustomerContactPerson;
+            telephoneValue.Text = _customerModel.CustomerPhone;
         }
 
-        private List<InvoiceItem> PopulateItems(int InvoiceNumber)
+        private void PopulateItems(int InvoiceNumber)
         {
-            return _invoiceItems;
+            _invoiceItems = SqliteDataAccess.PopulateItems(InvoiceNumber);
+            WireUpItems();
+        }
+
+        private void WireUpItems()
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = _invoiceItems;
+        }
+
+        private void InvoiceNumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

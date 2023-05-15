@@ -80,6 +80,7 @@
             InvoiceNumberTextBox.Size = new Size(229, 27);
             InvoiceNumberTextBox.TabIndex = 54;
             InvoiceNumberTextBox.Text = "Invoice Number";
+            InvoiceNumberTextBox.TextChanged += InvoiceNumberTextBox_TextChanged;
             // 
             // InvoiceNumberLabel
             // 
@@ -91,7 +92,6 @@
             InvoiceNumberLabel.Size = new Size(152, 20);
             InvoiceNumberLabel.TabIndex = 53;
             InvoiceNumberLabel.Text = "Enter Invoice Number";
-            InvoiceNumberLabel.Click += InvoiceNumberLabel_Click;
             // 
             // SearchButton
             // 
@@ -392,7 +392,6 @@
             printInvoiceToolStripMenuItem.Name = "printInvoiceToolStripMenuItem";
             printInvoiceToolStripMenuItem.Size = new Size(60, 24);
             printInvoiceToolStripMenuItem.Text = "Menu";
-            printInvoiceToolStripMenuItem.Click += printInvoiceToolStripMenuItem_Click;
             // 
             // updateInvoiceToolStripMenuItem
             // 
