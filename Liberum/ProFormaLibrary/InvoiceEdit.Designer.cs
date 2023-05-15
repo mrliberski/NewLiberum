@@ -95,7 +95,6 @@
             // 
             // SearchButton
             // 
-            SearchButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             SearchButton.FlatAppearance.MouseDownBackColor = Color.White;
             SearchButton.FlatStyle = FlatStyle.Flat;
             SearchButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -330,7 +329,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(955, 610);
+            dataGridView1.Size = new Size(1108, 610);
             dataGridView1.TabIndex = 77;
             // 
             // CloseButton
@@ -340,7 +339,7 @@
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(1172, 759);
+            CloseButton.Location = new Point(1325, 759);
             CloseButton.Name = "CloseButton";
             CloseButton.Size = new Size(171, 32);
             CloseButton.TabIndex = 78;
@@ -355,7 +354,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ImeMode = ImeMode.NoControl;
-            button1.Location = new Point(995, 759);
+            button1.Location = new Point(1148, 759);
             button1.Name = "button1";
             button1.Size = new Size(171, 32);
             button1.TabIndex = 79;
@@ -369,7 +368,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ImeMode = ImeMode.NoControl;
-            button2.Location = new Point(561, 759);
+            button2.Location = new Point(714, 759);
             button2.Name = "button2";
             button2.Size = new Size(171, 32);
             button2.TabIndex = 80;
@@ -382,7 +381,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { printInvoiceToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1407, 28);
+            menuStrip1.Size = new Size(1560, 28);
             menuStrip1.TabIndex = 81;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -443,7 +442,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ImeMode = ImeMode.NoControl;
-            button3.Location = new Point(384, 759);
+            button3.Location = new Point(537, 759);
             button3.Name = "button3";
             button3.Size = new Size(171, 32);
             button3.TabIndex = 82;
@@ -457,7 +456,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button4.ImeMode = ImeMode.NoControl;
-            button4.Location = new Point(818, 759);
+            button4.Location = new Point(971, 759);
             button4.Name = "button4";
             button4.Size = new Size(171, 32);
             button4.TabIndex = 83;
@@ -470,7 +469,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(1407, 826);
+            ClientSize = new Size(1560, 826);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
