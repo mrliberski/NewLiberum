@@ -636,11 +636,7 @@ namespace ProFormaLibrary
 
         }
 
-
-
-
-
-        private void AddItemLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void AddItem()
         {
             //if (((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName != null)
             if (selectCustomerComboBox.SelectedIndex != -1)
@@ -657,11 +653,16 @@ namespace ProFormaLibrary
             }
         }
 
+
+
+        private void AddItemLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddItem();
+        }
+
         private void CreateNewItemLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CheckLicence();
-            Form open = new CreateNewItemForm();
-            open.ShowDialog();
+            CreateItem();
         }
 
         private void EditCustomerLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -838,5 +839,46 @@ namespace ProFormaLibrary
 
         }
 
+        private void createNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form? form = new AddCustomerForm();
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+            form.FormClosed += Customer_FormClosed;
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+            form.ShowDialog();
+        }
+
+        private void editCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form open = new EditCustomer();
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+            open.FormClosed += Customer_FormClosed;
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+            open.ShowDialog();
+        }
+
+        private void createNewItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateItem();
+        }
+
+        private void CreateItem()
+        {
+            CheckLicence();
+            Form open = new CreateNewItemForm();
+            open.ShowDialog();
+        }
+
+        private void addItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddItem();
+        }
+
+        private void editInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CheckLicence();
+            Form open = new InvoiceEdit();
+            open.ShowDialog();
+        }
     }
 }

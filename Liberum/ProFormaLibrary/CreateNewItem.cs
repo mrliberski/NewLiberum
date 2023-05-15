@@ -159,6 +159,7 @@ namespace ProFormaUI
 
         private void AddEntryToDatabase(ItemModel model)
         {
+            // TODO: VALIDATION!!!!!
             model.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
             model.ItemCustomer = selectCustomerComboBox.Text;
             model.ItemName = itemNameTextbox.Text;

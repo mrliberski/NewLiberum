@@ -98,9 +98,25 @@
             ProcedureTypeCombo = new ComboBox();
             TrailerTextBox = new TextBox();
             label3 = new Label();
+            menuStrip1 = new MenuStrip();
+            itemToolStripMenuItem = new ToolStripMenuItem();
+            createNewItemToolStripMenuItem = new ToolStripMenuItem();
+            addItemToolStripMenuItem = new ToolStripMenuItem();
+            invoiceToolStripMenuItem = new ToolStripMenuItem();
+            createInvoiceToolStripMenuItem = new ToolStripMenuItem();
+            editInvoiceToolStripMenuItem = new ToolStripMenuItem();
+            openInvoiceFolderToolStripMenuItem = new ToolStripMenuItem();
+            customerToolStripMenuItem = new ToolStripMenuItem();
+            createNewCustomerToolStripMenuItem = new ToolStripMenuItem();
+            editCustomerToolStripMenuItem = new ToolStripMenuItem();
+            settingsToolStripMenuItem = new ToolStripMenuItem();
+            emailSettingsToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
+            licenceToolStripMenuItem = new ToolStripMenuItem();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // InvoiceNumberLabel
@@ -112,7 +128,6 @@
             // 
             resources.ApplyResources(dateTimePicker1, "dateTimePicker1");
             dateTimePicker1.Name = "dateTimePicker1";
-            //dateTimePicker1.ValueChanged += DateTimePicker1_ValueChanged;
             // 
             // InvoiceNumberValue
             // 
@@ -124,7 +139,6 @@
             resources.ApplyResources(RequestTypeComboBox, "RequestTypeComboBox");
             RequestTypeComboBox.FormattingEnabled = true;
             RequestTypeComboBox.Name = "RequestTypeComboBox";
-            //RequestTypeComboBox.SelectedIndexChanged += RequestTypeComboBox_SelectedIndexChanged;
             // 
             // TypeOfRequestLAbel
             // 
@@ -146,7 +160,6 @@
             resources.ApplyResources(IBFtimeSlotComboBox, "IBFtimeSlotComboBox");
             IBFtimeSlotComboBox.FormattingEnabled = true;
             IBFtimeSlotComboBox.Name = "IBFtimeSlotComboBox";
-            //IBFtimeSlotComboBox.SelectedIndexChanged += IBFtimeSlotComboBox_SelectedIndexChanged;
             // 
             // CustomerDetailsGroupBox
             // 
@@ -246,7 +259,6 @@
             // 
             resources.ApplyResources(driversNumberLAbel, "driversNumberLAbel");
             driversNumberLAbel.Name = "driversNumberLAbel";
-            //driversNumberLAbel.Click += Label1_Click;
             // 
             // Hauliertextbox
             // 
@@ -525,6 +537,92 @@
             resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
             // 
+            // menuStrip1
+            // 
+            resources.ApplyResources(menuStrip1, "menuStrip1");
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { itemToolStripMenuItem, invoiceToolStripMenuItem, customerToolStripMenuItem, settingsToolStripMenuItem });
+            menuStrip1.Name = "menuStrip1";
+            // 
+            // itemToolStripMenuItem
+            // 
+            resources.ApplyResources(itemToolStripMenuItem, "itemToolStripMenuItem");
+            itemToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createNewItemToolStripMenuItem, addItemToolStripMenuItem });
+            itemToolStripMenuItem.Name = "itemToolStripMenuItem";
+            // 
+            // createNewItemToolStripMenuItem
+            // 
+            resources.ApplyResources(createNewItemToolStripMenuItem, "createNewItemToolStripMenuItem");
+            createNewItemToolStripMenuItem.Name = "createNewItemToolStripMenuItem";
+            createNewItemToolStripMenuItem.Click += createNewItemToolStripMenuItem_Click;
+            // 
+            // addItemToolStripMenuItem
+            // 
+            resources.ApplyResources(addItemToolStripMenuItem, "addItemToolStripMenuItem");
+            addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
+            addItemToolStripMenuItem.Click += addItemToolStripMenuItem_Click;
+            // 
+            // invoiceToolStripMenuItem
+            // 
+            resources.ApplyResources(invoiceToolStripMenuItem, "invoiceToolStripMenuItem");
+            invoiceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createInvoiceToolStripMenuItem, editInvoiceToolStripMenuItem, openInvoiceFolderToolStripMenuItem });
+            invoiceToolStripMenuItem.Name = "invoiceToolStripMenuItem";
+            // 
+            // createInvoiceToolStripMenuItem
+            // 
+            resources.ApplyResources(createInvoiceToolStripMenuItem, "createInvoiceToolStripMenuItem");
+            createInvoiceToolStripMenuItem.Name = "createInvoiceToolStripMenuItem";
+            // 
+            // editInvoiceToolStripMenuItem
+            // 
+            resources.ApplyResources(editInvoiceToolStripMenuItem, "editInvoiceToolStripMenuItem");
+            editInvoiceToolStripMenuItem.Name = "editInvoiceToolStripMenuItem";
+            editInvoiceToolStripMenuItem.Click += editInvoiceToolStripMenuItem_Click;
+            // 
+            // openInvoiceFolderToolStripMenuItem
+            // 
+            resources.ApplyResources(openInvoiceFolderToolStripMenuItem, "openInvoiceFolderToolStripMenuItem");
+            openInvoiceFolderToolStripMenuItem.Name = "openInvoiceFolderToolStripMenuItem";
+            // 
+            // customerToolStripMenuItem
+            // 
+            resources.ApplyResources(customerToolStripMenuItem, "customerToolStripMenuItem");
+            customerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createNewCustomerToolStripMenuItem, editCustomerToolStripMenuItem });
+            customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            // 
+            // createNewCustomerToolStripMenuItem
+            // 
+            resources.ApplyResources(createNewCustomerToolStripMenuItem, "createNewCustomerToolStripMenuItem");
+            createNewCustomerToolStripMenuItem.Name = "createNewCustomerToolStripMenuItem";
+            createNewCustomerToolStripMenuItem.Click += createNewCustomerToolStripMenuItem_Click;
+            // 
+            // editCustomerToolStripMenuItem
+            // 
+            resources.ApplyResources(editCustomerToolStripMenuItem, "editCustomerToolStripMenuItem");
+            editCustomerToolStripMenuItem.Name = "editCustomerToolStripMenuItem";
+            editCustomerToolStripMenuItem.Click += editCustomerToolStripMenuItem_Click;
+            // 
+            // settingsToolStripMenuItem
+            // 
+            resources.ApplyResources(settingsToolStripMenuItem, "settingsToolStripMenuItem");
+            settingsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { emailSettingsToolStripMenuItem, aboutToolStripMenuItem, licenceToolStripMenuItem });
+            settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            // 
+            // emailSettingsToolStripMenuItem
+            // 
+            resources.ApplyResources(emailSettingsToolStripMenuItem, "emailSettingsToolStripMenuItem");
+            emailSettingsToolStripMenuItem.Name = "emailSettingsToolStripMenuItem";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            resources.ApplyResources(aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            // 
+            // licenceToolStripMenuItem
+            // 
+            resources.ApplyResources(licenceToolStripMenuItem, "licenceToolStripMenuItem");
+            licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
+            // 
             // ProFormaGenerator
             // 
             resources.ApplyResources(this, "$this");
@@ -547,6 +645,7 @@
             Controls.Add(addItemLinkLabel);
             Controls.Add(createNewItemLabel);
             Controls.Add(statusStrip1);
+            Controls.Add(menuStrip1);
             Controls.Add(dataGridView1);
             Controls.Add(CustomerDetailsGroupBox);
             Controls.Add(IBFtimeSlotComboBox);
@@ -559,13 +658,15 @@
             Controls.Add(InvoiceNumberLabel);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MainMenuStrip = menuStrip1;
             Name = "ProFormaGenerator";
-            //Load += ProFormaGenerator_Load;
             CustomerDetailsGroupBox.ResumeLayout(false);
             CustomerDetailsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -641,5 +742,20 @@
         private ComboBox ProcedureTypeCombo;
         private TextBox TrailerTextBox;
         private Label label3;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem itemToolStripMenuItem;
+        private ToolStripMenuItem createNewItemToolStripMenuItem;
+        private ToolStripMenuItem addItemToolStripMenuItem;
+        private ToolStripMenuItem invoiceToolStripMenuItem;
+        private ToolStripMenuItem createInvoiceToolStripMenuItem;
+        private ToolStripMenuItem editInvoiceToolStripMenuItem;
+        private ToolStripMenuItem openInvoiceFolderToolStripMenuItem;
+        private ToolStripMenuItem customerToolStripMenuItem;
+        private ToolStripMenuItem createNewCustomerToolStripMenuItem;
+        private ToolStripMenuItem editCustomerToolStripMenuItem;
+        private ToolStripMenuItem settingsToolStripMenuItem;
+        private ToolStripMenuItem emailSettingsToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
+        private ToolStripMenuItem licenceToolStripMenuItem;
     }
 }

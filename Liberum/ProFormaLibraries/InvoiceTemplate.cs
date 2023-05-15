@@ -98,7 +98,7 @@ namespace ProFormaLibraries
                         <td align = ""center"" style = ""border-left: 1px solid black; text-align: left; "" > &nbsp; {model.ItemName} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.PartNumber} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.CustomerNumber} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemQuantity}</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemQuantity} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemHScode} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemCOO} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemNetWeight*model.ItemQuantity} &nbsp;</td>

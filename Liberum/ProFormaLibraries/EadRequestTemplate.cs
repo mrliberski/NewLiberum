@@ -45,7 +45,7 @@ namespace ProFormaLibraries
             output += @$"<td align=""center"">&nbsp;<b>{request.Customer}</b>&nbsp;</td>";
             output += @"</tr>";
 
-            output += @"<tr><td align=""center"">&nbsp;UK Exit Coded&nbsp;</td>";
+            output += @"<tr><td align=""center"">&nbsp;UK Exit Code&nbsp;</td>";
             output += @$"<td align=""center"">&nbsp;{request.UKexit}&nbsp;</td>";
             output += @"</tr>";
 
