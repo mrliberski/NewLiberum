@@ -58,8 +58,17 @@ namespace ProFormaUI
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
+            SearchMe();
+        }
+
+        private void SearchMe()
+        {
             // ClearForm(); - to nie moze tu byc :)
             // validate if entry is a valid int
+            _invoiceItems.Clear();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = _invoiceItems;
+
             try
             {
                 ErrorPlaceholderValueLabel.Text = string.Empty;
@@ -100,18 +109,6 @@ namespace ProFormaUI
                 ErrorPlaceholderValueLabel.Text = ex.Message;
 
             }
-
-
-            //if (int.TryParse(PalletsTextBox.Text, out int Pallet))
-            //{
-            //    //RecalculateBoxes ();
-            //    ((ItemModel)AvailableItemsComboBox.SelectedItem).PalletsQuantity = Pallet;
-            //}
-            //else
-            //{
-            //    PalletsTextBox.Text = ((ItemModel)AvailableItemsComboBox.SelectedItem).PalletsQuantity.ToString();
-            //    PalletsErrorLAbel.Text = "Value was reset due to incorrect format...";
-            //}
         }
 
         private void PopulateCustomerInfo(string Customer)
@@ -138,11 +135,13 @@ namespace ProFormaUI
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = _invoiceItems;
+
+            dataGridView1.Columns["Id"].Visible = false;
         }
 
         private void InvoiceNumberTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            SearchMe();
         }
     }
 }
