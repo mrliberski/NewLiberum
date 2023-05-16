@@ -85,11 +85,6 @@ namespace ProFormaUI
             this.Close();
         }
 
-        private void TellMe(string message)
-        {
-            MessageBox.Show(message);
-        }
-
         private void AvailableItemsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ResetItem();

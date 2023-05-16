@@ -37,6 +37,6 @@ namespace ProFormaLibraries
         public int RequiresLid { get; set; }
         public int RequiresPallet { get; set; }
         public string? CreatedDate { get; set; }
-        public string? CreatedBy { get { return Environment.UserName; } }
+        public static string? CreatedBy { get { return Environment.UserName; } }
     }
 }

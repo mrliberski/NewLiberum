@@ -13,7 +13,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace ProFormaUI
 {
-    public partial class InvoiceEdit : Form
+    public partial class InvoiceEdit : Form, ICustomerItemSelection
     {
         public int _invoiceId;
         private InvoiceItem _invoiceCustomerName = new InvoiceItem();
@@ -151,9 +151,9 @@ namespace ProFormaUI
                 //MessageBox.Show(string.Format("Are you sure you want to remove selected item from invoice?{0}This acion is non-reversible.", Environment.NewLine));
                 DialogResult iExit;
                 iExit = MessageBox.Show(
-                    "Are you sure you want to remove selected item from invoice?" + Environment.NewLine + " This action is non-reversible.", 
-                    "Please confirm selection.", 
-                    MessageBoxButtons.YesNo, 
+                    "Are you sure you want to remove selected item from invoice?" + Environment.NewLine + " This action is non-reversible.",
+                    "Please confirm selection.",
+                    MessageBoxButtons.YesNo,
                     MessageBoxIcon.Information);
 
                 if (iExit == DialogResult.Yes)
@@ -177,6 +177,82 @@ namespace ProFormaUI
                 ErrorPlaceholderValueLabel.Text = ex.Message + " - " + ex.Source;
                 //MessageBox.Show("An error occured: " + ex.Message + " - " + ex.Source);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddItem();
+        }
+
+        private void AddItem()
+        {
+            //if (((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName != null)
+            if (CustomerNameValueLabel.Text != string.Empty)
+            {
+                 string SelectedCustomer = CustomerNameValueLabel.Text;
+
+                Form open = new AddItem(this, SelectedCustomer);
+                open.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No valid Invoice was selected...", "Selection error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        public void ItemSelection(ItemModel SelectedItem)
+        {
+            // Here we need to map ItemModel to InvoiceItemModel
+            InvoiceItem _newInvoiceItem = NewItem(SelectedItem);
+
+            // Add to Db and grid view
+            AddNewItemToDatabase(_newInvoiceItem);
+            _invoiceItems.Add(_newInvoiceItem);
+            WireUpItems();
+        }
+
+        private InvoiceItem NewItem(ItemModel item)
+        {
+            InvoiceItem Output = new InvoiceItem();
+            Output.InvoiceNumber = InvoiceNumberTextBox.Text;
+            Output.CustomerName = CustomerNameValueLabel.Text;
+
+            Output.ItemQuantity = item.ItemQuantity;
+            Output.ItemName = item.ItemName;
+            Output.PartNumber = item.PartNumber;
+            Output.CustomerNumber = item.CustomerNumber;
+            Output.ItemNetWeight = item.ItemNetWeight;
+            Output.ItemGrossWeight =item.ItemGrossWeight;
+            Output.ItemPrice = item.ItemPrice;
+            Output.ItemHScode = item.ItemHScode; 
+            Output.ItemCOO = item.ItemCOO;
+            Output.ContainerName = item.ContainerName;
+            Output.ContainersQuantity = item.ContainersQuantity;
+            Output.ContainerCode = item.ContainerCode;
+            Output.ContainerNetWeight = item.ContainerNetWeight;
+            Output.ContainerGrossWeight = item.ContainerGrossWeight;
+            Output.ContainerPrice= item.ContainerPrice;
+            Output.ContainerHSCode= item.ContainerHSCode;
+            Output.ContainerCOO = item.ContainerCOO;
+            Output.PartsPerContainer = item.PartsPerContainer;
+            Output.ContainersPerPallet = item.Cpp;
+            Output.PalletsQuantity = item.PalletsQuantity;
+            Output.RequiresPackaging = item.RequiresPackaging;
+            Output.RequiresLid = item.RequiresLid;
+            Output.RequiresPallet = item.RequiresPallet;
+            Output.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
+            return Output;
+        }
+
+        private void AddNewItemToDatabase(InvoiceItem _newInvoiceItem)
+        {
+            MessageBox.Show("Here I need to add item to db", "I will do it", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        public void SelectedCustomer(CustomerModel customer)
+        {
+            throw new NotImplementedException();
         }
     }
 }
