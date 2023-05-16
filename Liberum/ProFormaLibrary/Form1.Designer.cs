@@ -113,6 +113,11 @@
             emailSettingsToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             licenceToolStripMenuItem = new ToolStripMenuItem();
+            datebaseToolStripMenuItem = new ToolStripMenuItem();
+            uploadCustomerToolStripMenuItem = new ToolStripMenuItem();
+            uploadItemsToolStripMenuItem = new ToolStripMenuItem();
+            mergeDatabaseToolStripMenuItem = new ToolStripMenuItem();
+            uploadItemListToolStripMenuItem = new ToolStripMenuItem();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -541,13 +546,13 @@
             // 
             resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { itemToolStripMenuItem, invoiceToolStripMenuItem, customerToolStripMenuItem, settingsToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { itemToolStripMenuItem, invoiceToolStripMenuItem, customerToolStripMenuItem, settingsToolStripMenuItem, datebaseToolStripMenuItem });
             menuStrip1.Name = "menuStrip1";
             // 
             // itemToolStripMenuItem
             // 
             resources.ApplyResources(itemToolStripMenuItem, "itemToolStripMenuItem");
-            itemToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createNewItemToolStripMenuItem, addItemToolStripMenuItem });
+            itemToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createNewItemToolStripMenuItem, addItemToolStripMenuItem, uploadItemListToolStripMenuItem });
             itemToolStripMenuItem.Name = "itemToolStripMenuItem";
             // 
             // createNewItemToolStripMenuItem
@@ -622,6 +627,33 @@
             // 
             resources.ApplyResources(licenceToolStripMenuItem, "licenceToolStripMenuItem");
             licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
+            // 
+            // datebaseToolStripMenuItem
+            // 
+            resources.ApplyResources(datebaseToolStripMenuItem, "datebaseToolStripMenuItem");
+            datebaseToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { uploadCustomerToolStripMenuItem, uploadItemsToolStripMenuItem, mergeDatabaseToolStripMenuItem });
+            datebaseToolStripMenuItem.Name = "datebaseToolStripMenuItem";
+            datebaseToolStripMenuItem.Click += datebaseToolStripMenuItem_Click;
+            // 
+            // uploadCustomerToolStripMenuItem
+            // 
+            resources.ApplyResources(uploadCustomerToolStripMenuItem, "uploadCustomerToolStripMenuItem");
+            uploadCustomerToolStripMenuItem.Name = "uploadCustomerToolStripMenuItem";
+            // 
+            // uploadItemsToolStripMenuItem
+            // 
+            resources.ApplyResources(uploadItemsToolStripMenuItem, "uploadItemsToolStripMenuItem");
+            uploadItemsToolStripMenuItem.Name = "uploadItemsToolStripMenuItem";
+            // 
+            // mergeDatabaseToolStripMenuItem
+            // 
+            resources.ApplyResources(mergeDatabaseToolStripMenuItem, "mergeDatabaseToolStripMenuItem");
+            mergeDatabaseToolStripMenuItem.Name = "mergeDatabaseToolStripMenuItem";
+            // 
+            // uploadItemListToolStripMenuItem
+            // 
+            resources.ApplyResources(uploadItemListToolStripMenuItem, "uploadItemListToolStripMenuItem");
+            uploadItemListToolStripMenuItem.Name = "uploadItemListToolStripMenuItem";
             // 
             // ProFormaGenerator
             // 
@@ -757,5 +789,10 @@
         private ToolStripMenuItem emailSettingsToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripMenuItem licenceToolStripMenuItem;
+        private ToolStripMenuItem datebaseToolStripMenuItem;
+        private ToolStripMenuItem uploadCustomerToolStripMenuItem;
+        private ToolStripMenuItem uploadItemsToolStripMenuItem;
+        private ToolStripMenuItem mergeDatabaseToolStripMenuItem;
+        private ToolStripMenuItem uploadItemListToolStripMenuItem;
     }
 }

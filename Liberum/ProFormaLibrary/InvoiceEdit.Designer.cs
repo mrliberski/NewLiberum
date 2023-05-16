@@ -374,6 +374,7 @@
             button2.TabIndex = 80;
             button2.Text = "Remove Selected";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // menuStrip1
             // 

@@ -880,5 +880,10 @@ namespace ProFormaLibrary
             Form open = new InvoiceEdit();
             open.ShowDialog();
         }
+
+        private void datebaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

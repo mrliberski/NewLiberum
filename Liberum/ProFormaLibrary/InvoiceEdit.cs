@@ -143,5 +143,40 @@ namespace ProFormaUI
         {
             SearchMe();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //MessageBox.Show(string.Format("Are you sure you want to remove selected item from invoice?{0}This acion is non-reversible.", Environment.NewLine));
+                DialogResult iExit;
+                iExit = MessageBox.Show(
+                    "Are you sure you want to remove selected item from invoice?" + Environment.NewLine + " This action is non-reversible.", 
+                    "Please confirm selection.", 
+                    MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Information);
+
+                if (iExit == DialogResult.Yes)
+                {
+                    int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
+                    if (rowIndex >= 0)
+                    {
+                        InvoiceItem it = _invoiceItems[rowIndex];
+                        _invoiceItems.Remove(it);
+                    }
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = _invoiceItems;
+                    WireUpItems();
+
+                    MessageBox.Show(string.Format("I should be romoving item from DB here{0}But I am not...{0}I will get to it.", Environment.NewLine));
+                }
+            }
+            catch (System.Exception ex)
+            {
+                ErrorPlaceholderValueLabel.Text = string.Empty;
+                ErrorPlaceholderValueLabel.Text = ex.Message + " - " + ex.Source;
+                //MessageBox.Show("An error occured: " + ex.Message + " - " + ex.Source);
+            }
+        }
     }
 }

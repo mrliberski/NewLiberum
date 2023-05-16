@@ -183,6 +183,18 @@
   <data name="CustomerDetailsGroupBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="CustomerDetailsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 31</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 363</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Text" xml:space="preserve">
+    <value>Customer Selection</value>
+  </data>
   <data name="CurrencytextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -723,18 +735,6 @@
   <data name="selectCustomerLAbel.Text" xml:space="preserve">
     <value>Select Customer</value>
   </data>
-  <data name="CustomerDetailsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 31</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 363</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Text" xml:space="preserve">
-    <value>Customer Selection</value>
-  </data>
   <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -743,6 +743,19 @@
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1325, 351</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 878</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 13, 0</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1407, 26</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
   </data>
   <data name="databaseStatusStripLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -773,19 +786,6 @@
   </data>
   <data name="toolStripStatusLabel5.Text" xml:space="preserve">
     <value>Total Number of HUs in current shipment: </value>
-  </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 878</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 13, 0</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 26</value>
-  </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
   </data>
   <data name="createNewItemLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -1081,8 +1081,53 @@
   <data name="addItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Add item</value>
   </data>
+  <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="uploadItemListToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Item List</value>
+  </data>
   <data name="itemToolStripMenuItem.Text" xml:space="preserve">
     <value>Item</value>
+  </data>
+  <data name="invoiceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="uploadCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="uploadCustomerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Customer</value>
+  </data>
+  <data name="uploadItemsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="uploadItemsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Items</value>
+  </data>
+  <data name="mergeDatabaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="mergeDatabaseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Merge Database</value>
+  </data>
+  <data name="datebaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="datebaseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1407, 28</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="createInvoiceToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Invoice</value>
@@ -1093,17 +1138,11 @@
   <data name="openInvoiceFolderToolStripMenuItem.Text" xml:space="preserve">
     <value>Open Invoice Folder</value>
   </data>
-  <data name="invoiceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Invoice</value>
-  </data>
   <data name="createNewCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Create New Customer</value>
   </data>
   <data name="editCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit Customer</value>
-  </data>
-  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Customer</value>
   </data>
   <data name="emailSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 26</value>
@@ -1122,15 +1161,6 @@
   </data>
   <data name="licenceToolStripMenuItem.Text" xml:space="preserve">
     <value>Licence</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 28</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
