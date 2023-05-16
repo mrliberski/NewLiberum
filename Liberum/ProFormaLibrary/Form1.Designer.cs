@@ -102,6 +102,7 @@
             itemToolStripMenuItem = new ToolStripMenuItem();
             createNewItemToolStripMenuItem = new ToolStripMenuItem();
             addItemToolStripMenuItem = new ToolStripMenuItem();
+            uploadItemListToolStripMenuItem = new ToolStripMenuItem();
             invoiceToolStripMenuItem = new ToolStripMenuItem();
             createInvoiceToolStripMenuItem = new ToolStripMenuItem();
             editInvoiceToolStripMenuItem = new ToolStripMenuItem();
@@ -117,7 +118,7 @@
             uploadCustomerToolStripMenuItem = new ToolStripMenuItem();
             uploadItemsToolStripMenuItem = new ToolStripMenuItem();
             mergeDatabaseToolStripMenuItem = new ToolStripMenuItem();
-            uploadItemListToolStripMenuItem = new ToolStripMenuItem();
+            uploadCustomerFileToolStripMenuItem = new ToolStripMenuItem();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -546,7 +547,7 @@
             // 
             resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { itemToolStripMenuItem, invoiceToolStripMenuItem, customerToolStripMenuItem, settingsToolStripMenuItem, datebaseToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { itemToolStripMenuItem, invoiceToolStripMenuItem, customerToolStripMenuItem, datebaseToolStripMenuItem, settingsToolStripMenuItem });
             menuStrip1.Name = "menuStrip1";
             // 
             // itemToolStripMenuItem
@@ -566,6 +567,11 @@
             resources.ApplyResources(addItemToolStripMenuItem, "addItemToolStripMenuItem");
             addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
             addItemToolStripMenuItem.Click += addItemToolStripMenuItem_Click;
+            // 
+            // uploadItemListToolStripMenuItem
+            // 
+            resources.ApplyResources(uploadItemListToolStripMenuItem, "uploadItemListToolStripMenuItem");
+            uploadItemListToolStripMenuItem.Name = "uploadItemListToolStripMenuItem";
             // 
             // invoiceToolStripMenuItem
             // 
@@ -592,7 +598,7 @@
             // customerToolStripMenuItem
             // 
             resources.ApplyResources(customerToolStripMenuItem, "customerToolStripMenuItem");
-            customerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createNewCustomerToolStripMenuItem, editCustomerToolStripMenuItem });
+            customerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createNewCustomerToolStripMenuItem, editCustomerToolStripMenuItem, uploadCustomerFileToolStripMenuItem });
             customerToolStripMenuItem.Name = "customerToolStripMenuItem";
             // 
             // createNewCustomerToolStripMenuItem
@@ -622,6 +628,7 @@
             // 
             resources.ApplyResources(aboutToolStripMenuItem, "aboutToolStripMenuItem");
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // licenceToolStripMenuItem
             // 
@@ -650,10 +657,10 @@
             resources.ApplyResources(mergeDatabaseToolStripMenuItem, "mergeDatabaseToolStripMenuItem");
             mergeDatabaseToolStripMenuItem.Name = "mergeDatabaseToolStripMenuItem";
             // 
-            // uploadItemListToolStripMenuItem
+            // uploadCustomerFileToolStripMenuItem
             // 
-            resources.ApplyResources(uploadItemListToolStripMenuItem, "uploadItemListToolStripMenuItem");
-            uploadItemListToolStripMenuItem.Name = "uploadItemListToolStripMenuItem";
+            resources.ApplyResources(uploadCustomerFileToolStripMenuItem, "uploadCustomerFileToolStripMenuItem");
+            uploadCustomerFileToolStripMenuItem.Name = "uploadCustomerFileToolStripMenuItem";
             // 
             // ProFormaGenerator
             // 
@@ -794,5 +801,6 @@
         private ToolStripMenuItem uploadItemsToolStripMenuItem;
         private ToolStripMenuItem mergeDatabaseToolStripMenuItem;
         private ToolStripMenuItem uploadItemListToolStripMenuItem;
+        private ToolStripMenuItem uploadCustomerFileToolStripMenuItem;
     }
 }

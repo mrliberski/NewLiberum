@@ -1069,24 +1069,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Trailer Number</value>
   </data>
-  <data name="createNewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
-  </data>
-  <data name="createNewItemToolStripMenuItem.Text" xml:space="preserve">
-    <value>Create New Item</value>
-  </data>
-  <data name="addItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
-  </data>
-  <data name="addItemToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add item</value>
-  </data>
-  <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="uploadItemListToolStripMenuItem.Text" xml:space="preserve">
-    <value>Upload Item List</value>
-  </data>
   <data name="itemToolStripMenuItem.Text" xml:space="preserve">
     <value>Item</value>
   </data>
@@ -1096,38 +1078,35 @@
   <data name="customerToolStripMenuItem.Text" xml:space="preserve">
     <value>Customer</value>
   </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="uploadCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="uploadCustomerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Upload Customer</value>
-  </data>
-  <data name="uploadItemsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="uploadItemsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Upload Items</value>
-  </data>
-  <data name="mergeDatabaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="mergeDatabaseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Merge Database</value>
-  </data>
-  <data name="datebaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 24</value>
-  </data>
   <data name="datebaseToolStripMenuItem.Text" xml:space="preserve">
     <value>Database</value>
+  </data>
+  <data name="emailSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Email Settings</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="licenceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Licence</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1407, 28</value>
   </data>
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
+  </data>
+  <data name="createNewItemToolStripMenuItem.Text" xml:space="preserve">
+    <value>Create New Item</value>
+  </data>
+  <data name="addItemToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add item</value>
+  </data>
+  <data name="uploadItemListToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Item List</value>
   </data>
   <data name="createInvoiceToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Invoice</value>
@@ -1144,23 +1123,20 @@
   <data name="editCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit Customer</value>
   </data>
-  <data name="emailSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 26</value>
+  <data name="uploadCustomerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Customer</value>
   </data>
-  <data name="emailSettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Email Settings</value>
+  <data name="uploadItemsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Items</value>
   </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 26</value>
+  <data name="mergeDatabaseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Merge Database</value>
   </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
+  <data name="uploadCustomerFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 26</value>
   </data>
-  <data name="licenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 26</value>
-  </data>
-  <data name="licenceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Licence</value>
+  <data name="uploadCustomerFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload Customer File</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
