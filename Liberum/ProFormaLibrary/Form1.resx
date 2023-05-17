@@ -1,4 +1,64 @@
-﻿<root>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -57,1370 +117,1421 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;createInvoiceButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;driverNumberTextbox.Parent" xml:space="preserve">
     <value>CustomerDetailsGroupBox</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PAckingInvoiceNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 29</value>
-  </data>
-  <data name="createInvoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 26</value>
-  </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 786</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PackInvoiceNumberValue.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;VatNumberValue.Name" xml:space="preserve">
-    <value>VatNumberValue</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="VatNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 199</value>
-  </data>
-  <data name="&gt;&gt;PAckingInvoiceNumberLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;createInvoiceButton.Name" xml:space="preserve">
-    <value>createInvoiceButton</value>
-  </data>
-  <data name="AdressLine3Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 139</value>
-  </data>
-  <data name="RemoveSelectedLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1098, 325</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="KanbanTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="Address2Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 119</value>
-  </data>
-  <data name="&gt;&gt;AddressLine1Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;createNewItemToolStripMenuItem.Name" xml:space="preserve">
-    <value>createNewItemToolStripMenuItem</value>
-  </data>
-  <data name="InvoiceNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 9</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="VATNumberLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
-    <value>dateTimePicker1</value>
-  </data>
-  <data name="Address1Value.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;PackInvoiceNumberValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;POtextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Address1Value.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;EoriNumberLabel.Name" xml:space="preserve">
-    <value>EoriNumberLabel</value>
-  </data>
-  <data name="&gt;&gt;Address3Value.Name" xml:space="preserve">
-    <value>Address3Value</value>
-  </data>
-  <data name="&gt;&gt;addItemLinkLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CityValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 139</value>
-  </data>
-  <data name="&gt;&gt;KanbanTextBox.Name" xml:space="preserve">
-    <value>KanbanTextBox</value>
-  </data>
-  <data name="&gt;&gt;UKexitFacilityLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 10, 0</value>
-  </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerLAbel.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;driverNumberTextbox.Name" xml:space="preserve">
-    <value>driverNumberTextbox</value>
-  </data>
-  <data name="&gt;&gt;PAckingInvoiceNumberLabel.Name" xml:space="preserve">
-    <value>PAckingInvoiceNumberLabel</value>
-  </data>
-  <data name="haulierName.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="contactNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;VatNumberValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IBFtimeSlotComboBox.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerLAbel.Name" xml:space="preserve">
-    <value>selectCustomerLAbel</value>
-  </data>
-  <data name="&gt;&gt;PAckingInvoiceNumberLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProcedureTypeCombo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="createNewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="&gt;&gt;TrailerTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AdressLine3Label.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedButton.Name" xml:space="preserve">
-    <value>removeSelectedButton</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProcedureCodeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerComboBox.Name" xml:space="preserve">
-    <value>selectCustomerComboBox</value>
-  </data>
-  <data name="&gt;&gt;PostCodeValue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;POtextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CityValue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;VATNumberLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;emailRecipientsListLinkLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="Address1Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 99</value>
-  </data>
-  <data name="&gt;&gt;AdressLine3Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="eoriNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 219</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 257</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel3.Name" xml:space="preserve">
-    <value>toolStripStatusLabel3</value>
-  </data>
-  <data name="&gt;&gt;AdressLine3Label.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;contactNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailSettingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EoriNumberLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="toolStripStatusLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 20</value>
-  </data>
-  <data name="emailSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="&gt;&gt;CustomerDetailsGroupBox.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="POtextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 154</value>
-  </data>
-  <data name="&gt;&gt;CountryValue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;CurrencytextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;mergeDatabaseToolStripMenuItem.Name" xml:space="preserve">
-    <value>mergeDatabaseToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;CountryValue.Name" xml:space="preserve">
-    <value>CountryValue</value>
-  </data>
-  <data name="&gt;&gt;TypeOfRequestLAbel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PAckingInvoiceNumberLabel.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;KanbanTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;createNewItemLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="selectCustomerLAbel.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>569, 719</value>
-  </data>
-  <data name="CountryLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 179</value>
-  </data>
-  <data name="mergeDatabaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="&gt;&gt;UKexitTextbox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Hauliertextbox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;addItemLinkLabel.Name" xml:space="preserve">
-    <value>addItemLinkLabel</value>
-  </data>
-  <data name="Hauliertextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 45</value>
-  </data>
-  <data name="&gt;&gt;haulierName.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;addItemLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerComboBox.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;Hauliertextbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Hauliertextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;clearButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProcedureCodeLabel.Name" xml:space="preserve">
-    <value>ProcedureCodeLabel</value>
-  </data>
-  <data name="clearButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1081, 719</value>
-  </data>
-  <data name="CustomsOfficeTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;CountryLabel.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;haulierName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="EditCustomerLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>890, 277</value>
-  </data>
-  <data name="&gt;&gt;EditCustomerLink.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;UKexitTextbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UKexitFacilityLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="haulierName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 22</value>
-  </data>
-  <data name="&gt;&gt;driversNumberLAbel.Name" xml:space="preserve">
-    <value>driversNumberLAbel</value>
-  </data>
-  <data name="editCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 26</value>
-  </data>
-  <data name="&gt;&gt;uploadItemsToolStripMenuItem.Name" xml:space="preserve">
-    <value>uploadItemsToolStripMenuItem</value>
-  </data>
-  <data name="UKexitTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 202</value>
-  </data>
-  <data name="TrailerTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 254</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectIBFTimeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="VATNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 199</value>
-  </data>
-  <data name="&gt;&gt;Address1Value.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;customerSapNumberLabel.Name" xml:space="preserve">
-    <value>customerSapNumberLabel</value>
-  </data>
-  <data name="addItemLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="TypeOfRequestLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 108</value>
-  </data>
-  <data name="contactNameVAlue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 259</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addItemToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TypeOfRequestLAbel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;IncotermTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RemoveSelectedLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AdressLine3Label.Name" xml:space="preserve">
-    <value>AdressLine3Label</value>
-  </data>
-  <data name="&gt;&gt;VatNumberValue.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;POtextBox.Name" xml:space="preserve">
-    <value>POtextBox</value>
-  </data>
-  <data name="CityValue.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;CustomsOfficeTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;EoriNumberLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="driverNumberTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 122</value>
-  </data>
-  <data name="createInvoiceButton.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;invoiceToolStripMenuItem.Name" xml:space="preserve">
-    <value>invoiceToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PackInvoiceNumberValue.Name" xml:space="preserve">
-    <value>PackInvoiceNumberValue</value>
-  </data>
-  <data name="&gt;&gt;AdressLine3Label.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;telephoneNumberLAbel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="closeDownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 719</value>
-  </data>
-  <data name="&gt;&gt;emailSettingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>emailSettingsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;closeDownButton.Name" xml:space="preserve">
-    <value>closeDownButton</value>
-  </data>
-  <data name="addItemLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 348</value>
-  </data>
-  <data name="InvoiceNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
-  </data>
-  <data name="driverNumberTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;CMRrequiredCheckBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;uploadCustomerToolStripMenuItem.Name" xml:space="preserve">
-    <value>uploadCustomerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;databaseStatusStripLabel.Name" xml:space="preserve">
-    <value>databaseStatusStripLabel</value>
-  </data>
-  <data name="&gt;&gt;IncoLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;AddressLine2Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="invoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 24</value>
-  </data>
-  <data name="&gt;&gt;databaseStatusStripLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="toolStripStatusLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 17</value>
-  </data>
-  <data name="&gt;&gt;datebaseToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Address2Value.Name" xml:space="preserve">
-    <value>Address2Value</value>
-  </data>
-  <data name="openInvoiceFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 26</value>
-  </data>
-  <data name="&gt;&gt;createInvoiceButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Address2Value.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="CountryValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 179</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="customerSapNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 239</value>
-  </data>
-  <data name="&gt;&gt;Address3Value.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;selectIBFdateLabel.Name" xml:space="preserve">
-    <value>selectIBFdateLabel</value>
-  </data>
-  <data name="uploadCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="PackInvoiceNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 29</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="IncoLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;CountryValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;uploadItemsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RequestTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 131</value>
-  </data>
-  <data name="AddressLine1Label.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;customsOfficelabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CustomsOfficeTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PostCodeValue.Name" xml:space="preserve">
-    <value>PostCodeValue</value>
-  </data>
-  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>settingsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="PAckingInvoiceNumberLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.Name" xml:space="preserve">
-    <value>CreatNewCustomerlinkLabel1</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
-    <value>toolStripStatusLabel1</value>
-  </data>
-  <data name="&gt;&gt;ProcedureCodeLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="UKexitFacilityLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 178</value>
-  </data>
-  <data name="&gt;&gt;TypeOfRequestLAbel.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;Address3Value.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;customsOfficelabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;CurrencyLAbel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;createInvoiceButton.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;openInvoiceFolderToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UKexitFacilityLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>978, 766</value>
-  </data>
-  <data name="PostCodeValue.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;editInvoiceToolStripMenuItem.Name" xml:space="preserve">
-    <value>editInvoiceToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;RequestTypeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="&gt;&gt;customerSapNumberLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="CurrencytextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 167</value>
-  </data>
-  <data name="&gt;&gt;sapNumberValue.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;TrailerTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;EditCustomerLink.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="contactNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 259</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="Address2Value.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;PostCodeLabel.Name" xml:space="preserve">
-    <value>PostCodeLabel</value>
-  </data>
-  <data name="&gt;&gt;VATNumberLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="sapNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 239</value>
-  </data>
-  <data name="editInvoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 26</value>
-  </data>
-  <data name="&gt;&gt;telephoneValue.Name" xml:space="preserve">
-    <value>telephoneValue</value>
-  </data>
-  <data name="&gt;&gt;closeDownButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;customsOfficelabel.Name" xml:space="preserve">
-    <value>customsOfficelabel</value>
-  </data>
-  <data name="InvoiceNumberLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="AddressLine2Label.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;createBrokerRequest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PostCodeValue.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel4.Name" xml:space="preserve">
-    <value>toolStripStatusLabel4</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;contactNameVAlue.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 719</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="IncotermTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 113</value>
-  </data>
-  <data name="&gt;&gt;telephoneNumberLAbel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;telephoneValue.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="eoriNumberValue.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;createNewItemLabel.Name" xml:space="preserve">
-    <value>createNewItemLabel</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 24</value>
-  </data>
-  <data name="&gt;&gt;closeDownButton.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="CMRNumberValue.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;PostCodeLabel.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Address3Value.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;licenceToolStripMenuItem.Name" xml:space="preserve">
-    <value>licenceToolStripMenuItem</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1318, 859</value>
-  </data>
-  <data name="&gt;&gt;telephoneNumberLAbel.Name" xml:space="preserve">
-    <value>telephoneNumberLAbel</value>
-  </data>
-  <data name="&gt;&gt;closeDownButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberValue.Name" xml:space="preserve">
-    <value>CMRNumberValue</value>
-  </data>
-  <data name="&gt;&gt;EditCustomerLink.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="CMRrequiredCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 165</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="contactNameVAlue.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="itemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
-  </data>
-  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 20</value>
-  </data>
-  <data name="&gt;&gt;IncotermTextBox.Name" xml:space="preserve">
-    <value>IncotermTextBox</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberLabel.Name" xml:space="preserve">
-    <value>CMRNumberLabel</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="PostCodeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;ProcedureCodeLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;UKexitFacilityLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="sapNumberValue.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 258</value>
-  </data>
-  <data name="&gt;&gt;PostCodeLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;InvoiceNumberLabel.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;customerToolStripMenuItem.Name" xml:space="preserve">
-    <value>customerToolStripMenuItem</value>
-  </data>
-  <data name="AddressLine1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 99</value>
-  </data>
-  <data name="&gt;&gt;ProcedureTypeCombo.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="UKexitTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;createNewItemLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Hauliertextbox.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;clearButton.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;IncotermTextBox.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;removeSelectedButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;eoriNumberValue.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="toolStripStatusLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 20</value>
-  </data>
-  <data name="createNewCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 26</value>
-  </data>
-  <data name="&gt;&gt;createNewItemLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1137, 681</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;driversNumberLAbel.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;EditCustomerLink.Name" xml:space="preserve">
-    <value>EditCustomerLink</value>
-  </data>
-  <data name="ProcedureTypeCombo.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="selectIBFTimeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;driverNumberTextbox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;InvoiceNumberValue.Name" xml:space="preserve">
-    <value>InvoiceNumberValue</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;editCustomerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="createBrokerRequest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 719</value>
-  </data>
-  <data name="&gt;&gt;clearButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ProFormaGenerator</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;InvoiceNumberLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CustomsOfficeTextBox.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="CMRNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 49</value>
-  </data>
-  <data name="&gt;&gt;contactNameLabel.Name" xml:space="preserve">
-    <value>contactNameLabel</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;PackInvoiceNumberValue.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="selectIBFdateLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="removeSelectedButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 719</value>
-  </data>
-  <data name="&gt;&gt;createNewItemToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;createNewCustomerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="EoriNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 219</value>
-  </data>
-  <data name="&gt;&gt;Address1Value.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="datebaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 24</value>
-  </data>
-  <data name="&gt;&gt;ProcedureTypeCombo.Name" xml:space="preserve">
-    <value>ProcedureTypeCombo</value>
-  </data>
-  <data name="driversNumberLAbel.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="IBFtimeSlotComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 278</value>
-  </data>
-  <data name="&gt;&gt;CountryLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;CityValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="IBFtimeSlotComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="removeSelectedButton.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;TypeOfRequestLAbel.Name" xml:space="preserve">
-    <value>TypeOfRequestLAbel</value>
-  </data>
-  <data name="CMRrequiredCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;CustomsOfficeTextBox.Name" xml:space="preserve">
-    <value>CustomsOfficeTextBox</value>
-  </data>
-  <data name="ProcedureCodeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;sapNumberValue.Name" xml:space="preserve">
-    <value>sapNumberValue</value>
-  </data>
-  <data name="&gt;&gt;CMRrequiredCheckBox.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;TypeOfRequestLAbel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CurrencytextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eoriNumberValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;createBrokerRequest.Name" xml:space="preserve">
-    <value>createBrokerRequest</value>
-  </data>
-  <data name="&gt;&gt;Address3Value.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;licenceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KanbanTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;createBrokerRequest.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberValue.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;KanbanTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 371</value>
-  </data>
-  <data name="EoriNumberLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;createInvoiceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CustomerDetailsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailRecipientsListLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CMRNumberLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="createInvoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 719</value>
-  </data>
-  <data name="IncoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 90</value>
-  </data>
-  <data name="&gt;&gt;IncoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 9</value>
-  </data>
-  <data name="&gt;&gt;RequestTypeComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="createNewItemLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 681</value>
-  </data>
-  <data name="&gt;&gt;AddressLine2Label.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;TrailerTextBox.Name" xml:space="preserve">
-    <value>TrailerTextBox</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;selectIBFTimeLabel.Name" xml:space="preserve">
-    <value>selectIBFTimeLabel</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Liberum Pro Forma Invoice Generator </value>
-  </data>
-  <data name="ProcedureCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 222</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel5.Name" xml:space="preserve">
-    <value>toolStripStatusLabel5</value>
-  </data>
-  <data name="&gt;&gt;CurrencyLAbel.Name" xml:space="preserve">
-    <value>CurrencyLAbel</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1286, 764</value>
-  </data>
-  <data name="&gt;&gt;RequestTypeComboBox.Name" xml:space="preserve">
-    <value>RequestTypeComboBox</value>
-  </data>
-  <data name="&gt;&gt;addItemToolStripMenuItem.Name" xml:space="preserve">
-    <value>addItemToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;eoriNumberValue.Name" xml:space="preserve">
-    <value>eoriNumberValue</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;PackInvoiceNumberValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;CountryLabel.Name" xml:space="preserve">
-    <value>CountryLabel</value>
-  </data>
-  <data name="&gt;&gt;CityValue.Name" xml:space="preserve">
-    <value>CityValue</value>
-  </data>
-  <data name="&gt;&gt;telephoneValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eoriNumberValue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="CMRNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 49</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
-  </data>
-  <data name="&gt;&gt;invoiceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;driverNumberTextbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="PostCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 159</value>
-  </data>
-  <data name="&gt;&gt;CustomerDetailsGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CustomsOfficeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 280</value>
-  </data>
-  <data name="&gt;&gt;contactNameLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="selectCustomerLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 40</value>
-  </data>
-  <data name="&gt;&gt;AddressLine2Label.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;CountryValue.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="RemoveSelectedLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;IncotermTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;uploadCustomerFileToolStripMenuItem.Name" xml:space="preserve">
-    <value>uploadCustomerFileToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="telephoneValue.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="uploadCustomerFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 26</value>
-  </data>
-  <data name="&gt;&gt;uploadItemListToolStripMenuItem.Name" xml:space="preserve">
-    <value>uploadItemListToolStripMenuItem</value>
-  </data>
-  <data name="IncotermTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InvoiceNumberValue.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;mergeDatabaseToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Address2Value.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="customsOfficelabel.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="createNewItemLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="selectCustomerComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;haulierName.Name" xml:space="preserve">
-    <value>haulierName</value>
-  </data>
-  <data name="KanbanTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 187</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1127, 309</value>
-  </data>
-  <data name="&gt;&gt;selectIBFdateLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;haulierName.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;RequestTypeComboBox.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="VatNumberValue.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;UKexitTextbox.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;selectIBFdateLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CurrencytextBox.Name" xml:space="preserve">
-    <value>CurrencytextBox</value>
   </data>
   <data name="&gt;&gt;InvoiceNumberLabel.Name" xml:space="preserve">
     <value>InvoiceNumberLabel</value>
   </data>
-  <data name="CountryLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PackInvoiceNumberValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 29</value>
   </data>
-  <data name="&gt;&gt;clearButton.Name" xml:space="preserve">
-    <value>clearButton</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CustomerDetailsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;selectIBFdateLabel.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;editInvoiceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RequestTypeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;AddressLine1Label.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;datebaseToolStripMenuItem.Name" xml:space="preserve">
-    <value>datebaseToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;emailRecipientsListLinkLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;errolLAbel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="telephoneNumberLAbel.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="eoriNumberValue.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;CustomerDetailsGroupBox.Name" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
+  <data name="&gt;&gt;closeDownButton.Name" xml:space="preserve">
+    <value>closeDownButton</value>
   </data>
-  <data name="&gt;&gt;IBFtimeSlotComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="selectCustomerComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;customerSapNumberLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;selectCustomerLAbel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;uploadCustomerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
   </data>
-  <data name="AddressLine2Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 119</value>
+  <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 17</value>
   </data>
-  <data name="&gt;&gt;customerSapNumberLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CurrencytextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UKexitFacilityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 178</value>
+  </data>
+  <data name="&gt;&gt;CustomsOfficeTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Hauliertextbox.Parent" xml:space="preserve">
     <value>CustomerDetailsGroupBox</value>
   </data>
-  <data name="&gt;&gt;UKexitFacilityLabel.Name" xml:space="preserve">
-    <value>UKexitFacilityLabel</value>
+  <data name="&gt;&gt;CustomerDetailsGroupBox.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;AddressLine2Label.Name" xml:space="preserve">
-    <value>AddressLine2Label</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Address2Value.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="EditCustomerLink.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Name" xml:space="preserve">
+    <value>toolStripStatusLabel2</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CMRNumberValue.Name" xml:space="preserve">
+    <value>CMRNumberValue</value>
   </data>
-  <data name="&gt;&gt;itemToolStripMenuItem.Name" xml:space="preserve">
-    <value>itemToolStripMenuItem</value>
+  <data name="&gt;&gt;selectIBFdateLabel.Name" xml:space="preserve">
+    <value>selectIBFdateLabel</value>
   </data>
-  <data name="&gt;&gt;itemToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PostCodeValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 126</value>
-  </data>
-  <data name="&gt;&gt;telephoneValue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="selectIBFdateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 202</value>
-  </data>
-  <data name="&gt;&gt;customerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;createBrokerRequest.Parent" xml:space="preserve">
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
-    <value>statusStrip1</value>
+  <data name="&gt;&gt;AddressLine1Label.Name" xml:space="preserve">
+    <value>AddressLine1Label</value>
   </data>
-  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;EditCustomerLink.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;driversNumberLAbel.Type" xml:space="preserve">
+  <data name="&gt;&gt;IncotermTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephoneValue.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="selectIBFTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 255</value>
   </data>
-  <data name="&gt;&gt;emailRecipientsListLinkLabel.Name" xml:space="preserve">
-    <value>emailRecipientsListLinkLabel</value>
+  <data name="contactNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
-  <data name="&gt;&gt;selectIBFTimeLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="&gt;&gt;clearButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Address2Value.Parent" xml:space="preserve">
+  <data name="ProcedureCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 222</value>
+  </data>
+  <data name="IncoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>618, 90</value>
+  </data>
+  <data name="&gt;&gt;IBFtimeSlotComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;contactNameVAlue.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;datebaseToolStripMenuItem.Name" xml:space="preserve">
+    <value>datebaseToolStripMenuItem</value>
+  </data>
+  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 126</value>
+  </data>
+  <data name="&gt;&gt;customsOfficelabel.Parent" xml:space="preserve">
     <value>CustomerDetailsGroupBox</value>
   </data>
-  <data name="&gt;&gt;selectIBFTimeLabel.Parent" xml:space="preserve">
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="InvoiceNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uploadItemsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="&gt;&gt;PostCodeValue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;contactNameVAlue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CMRNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProcedureCodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PAckingInvoiceNumberLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="&gt;&gt;Address1Value.Name" xml:space="preserve">
+    <value>Address1Value</value>
+  </data>
+  <data name="CustomsOfficeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;CMRrequiredCheckBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedButton.Name" xml:space="preserve">
+    <value>removeSelectedButton</value>
+  </data>
+  <data name="&gt;&gt;selectIBFTimeLabel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="TrailerTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 254</value>
+  </data>
+  <data name="createNewItemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;errolLAbel.Name" xml:space="preserve">
+    <value>errolLAbel</value>
+  </data>
+  <data name="CityValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 139</value>
+  </data>
+  <data name="&gt;&gt;closeDownButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailSettingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>emailSettingsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;CMRNumberLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;CountryLabel.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;uploadCustomerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createNewItemLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="UKexitTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 202</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;VATNumberLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProcedureTypeCombo.Name" xml:space="preserve">
+    <value>ProcedureTypeCombo</value>
+  </data>
+  <data name="&gt;&gt;customerSapNumberLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 235</value>
+  </data>
+  <data name="&gt;&gt;IncotermTextBox.Name" xml:space="preserve">
+    <value>IncotermTextBox</value>
+  </data>
+  <data name="&gt;&gt;CMRNumberLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UKexitTextbox.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PackInvoiceNumberValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uploadCustomerFileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AdressLine3Label.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="removeSelectedButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>910, 719</value>
+  </data>
+  <data name="Address1Value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 99</value>
+  </data>
+  <data name="&gt;&gt;invoiceToolStripMenuItem.Name" xml:space="preserve">
+    <value>invoiceToolStripMenuItem</value>
+  </data>
+  <data name="selectIBFdateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 202</value>
+  </data>
+  <data name="&gt;&gt;selectIBFdateLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uploadItemListToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>978, 766</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;IncoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CityValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel5.Name" xml:space="preserve">
+    <value>toolStripStatusLabel5</value>
+  </data>
+  <data name="&gt;&gt;TrailerTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="createInvoiceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 719</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addItemLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UKexitFacilityLabel.Name" xml:space="preserve">
+    <value>UKexitFacilityLabel</value>
+  </data>
+  <data name="&gt;&gt;createBrokerRequest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ProcedureTypeCombo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="IncotermTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>618, 113</value>
+  </data>
+  <data name="&gt;&gt;PackInvoiceNumberValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="IBFtimeSlotComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="selectCustomerLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 40</value>
+  </data>
+  <data name="&gt;&gt;mergeDatabaseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="clearButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1081, 719</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;CustomerDetailsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectCustomerLAbel.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="AdressLine3Label.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;AddressLine2Label.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;createNewItemToolStripMenuItem.Name" xml:space="preserve">
+    <value>createNewItemToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;selectCustomerComboBox.Name" xml:space="preserve">
+    <value>selectCustomerComboBox</value>
+  </data>
+  <data name="&gt;&gt;ProcedureTypeCombo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;VatNumberValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AddressLine1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 99</value>
+  </data>
+  <data name="sapNumberValue.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="IncoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="PAckingInvoiceNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;sapNumberValue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KanbanTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="&gt;&gt;closeDownButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;driverNumberTextbox.Name" xml:space="preserve">
+    <value>driverNumberTextbox</value>
+  </data>
+  <data name="&gt;&gt;KanbanTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="selectIBFTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 258</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ProcedureCodeLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PostCodeValue.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;Address1Value.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="licenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="&gt;&gt;AddressLine2Label.Name" xml:space="preserve">
+    <value>AddressLine2Label</value>
+  </data>
+  <data name="&gt;&gt;CountryValue.Name" xml:space="preserve">
+    <value>CountryValue</value>
+  </data>
+  <data name="createNewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="&gt;&gt;contactNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InvoiceNumberValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;POtextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostCodeValue.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;AddressLine1Label.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="CMRNumberValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 49</value>
+  </data>
+  <data name="&gt;&gt;uploadCustomerToolStripMenuItem.Name" xml:space="preserve">
+    <value>uploadCustomerToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;uploadCustomerFileToolStripMenuItem.Name" xml:space="preserve">
+    <value>uploadCustomerFileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;UKexitTextbox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="addItemLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 348</value>
+  </data>
+  <data name="&gt;&gt;driversNumberLAbel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephoneNumberLAbel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="selectCustomerComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 63</value>
+  </data>
+  <data name="closeDownButton.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;CurrencyLAbel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;driverNumberTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomerDetailsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>settingsToolStripMenuItem</value>
+  </data>
+  <data name="TypeOfRequestLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 108</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;TrailerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProcedureCodeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CountryLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="databaseStatusStripLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="&gt;&gt;createNewItemLabel.Name" xml:space="preserve">
+    <value>createNewItemLabel</value>
+  </data>
+  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.Name" xml:space="preserve">
+    <value>CreatNewCustomerlinkLabel1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;sapNumberValue.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;createBrokerRequest.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;InvoiceNumberLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eoriNumberValue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="haulierName.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;createNewItemLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CountryValue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;createBrokerRequest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editCustomerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailRecipientsListLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CustomsOfficeTextBox.Name" xml:space="preserve">
+    <value>CustomsOfficeTextBox</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="&gt;&gt;addItemLinkLabel.Name" xml:space="preserve">
+    <value>addItemLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;haulierName.Name" xml:space="preserve">
+    <value>haulierName</value>
+  </data>
+  <data name="eoriNumberValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 219</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RemoveSelectedLinkLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="POtextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;CurrencytextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;clearButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;InvoiceNumberValue.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;contactNameLabel.Name" xml:space="preserve">
+    <value>contactNameLabel</value>
+  </data>
+  <data name="&gt;&gt;customerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomsOfficeTextBox.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;customerSapNumberLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="customsOfficelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 256</value>
+  </data>
+  <data name="emailRecipientsListLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1137, 681</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 371</value>
+  </data>
+  <data name="driversNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 98</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RemoveSelectedLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1098, 325</value>
+  </data>
+  <data name="&gt;&gt;InvoiceNumberValue.Name" xml:space="preserve">
+    <value>InvoiceNumberValue</value>
+  </data>
+  <data name="&gt;&gt;CMRNumberValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="contactNameVAlue.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;mergeDatabaseToolStripMenuItem.Name" xml:space="preserve">
+    <value>mergeDatabaseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;EditCustomerLink.Name" xml:space="preserve">
+    <value>EditCustomerLink</value>
+  </data>
+  <data name="IBFtimeSlotComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 278</value>
+  </data>
+  <data name="&gt;&gt;haulierName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UKexitFacilityLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VatNumberValue.Name" xml:space="preserve">
+    <value>VatNumberValue</value>
+  </data>
+  <data name="uploadCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="CountryValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 179</value>
+  </data>
+  <data name="EoriNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 219</value>
+  </data>
+  <data name="&gt;&gt;PackInvoiceNumberValue.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="CountryValue.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="&gt;&gt;InvoiceNumberLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;createInvoiceToolStripMenuItem.Name" xml:space="preserve">
-    <value>createInvoiceToolStripMenuItem</value>
+  <data name="&gt;&gt;RemoveSelectedLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PackInvoiceNumberValue.Name" xml:space="preserve">
+    <value>PackInvoiceNumberValue</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;CustomerDetailsGroupBox.Name" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RemoveSelectedLinkLabel.Name" xml:space="preserve">
+    <value>RemoveSelectedLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;eoriNumberValue.Name" xml:space="preserve">
+    <value>eoriNumberValue</value>
+  </data>
+  <data name="telephoneNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 279</value>
+  </data>
+  <data name="&gt;&gt;InvoiceNumberLabel.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;selectIBFTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CityValue.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;driverNumberTextbox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PostCodeValue.Name" xml:space="preserve">
+    <value>PostCodeValue</value>
+  </data>
+  <data name="&gt;&gt;customerSapNumberLabel.Name" xml:space="preserve">
+    <value>customerSapNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;selectCustomerLAbel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;Address2Value.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IncoLabel.Name" xml:space="preserve">
+    <value>IncoLabel</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;KanbanTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mergeDatabaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="&gt;&gt;selectCustomerLAbel.Name" xml:space="preserve">
+    <value>selectCustomerLAbel</value>
+  </data>
+  <data name="openInvoiceFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 26</value>
+  </data>
+  <data name="&gt;&gt;Address3Value.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="EditCustomerLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 277</value>
+  </data>
+  <data name="&gt;&gt;CMRrequiredCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createBrokerRequest.Name" xml:space="preserve">
+    <value>createBrokerRequest</value>
+  </data>
+  <data name="&gt;&gt;createInvoiceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Hauliertextbox.Name" xml:space="preserve">
+    <value>Hauliertextbox</value>
+  </data>
+  <data name="Hauliertextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="ProcedureTypeCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="customerSapNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 239</value>
+  </data>
+  <data name="PostCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 159</value>
+  </data>
+  <data name="&gt;&gt;contactNameLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;AdressLine3Label.Name" xml:space="preserve">
+    <value>AdressLine3Label</value>
+  </data>
+  <data name="&gt;&gt;PostCodeLabel.Name" xml:space="preserve">
+    <value>PostCodeLabel</value>
+  </data>
+  <data name="&gt;&gt;telephoneValue.Name" xml:space="preserve">
+    <value>telephoneValue</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Hauliertextbox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;CurrencyLAbel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PAckingInvoiceNumberLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;VATNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VATNumberLabel.Name" xml:space="preserve">
+    <value>VATNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;TrailerTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;selectCustomerComboBox.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KanbanTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 187</value>
+  </data>
+  <data name="&gt;&gt;EoriNumberLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CurrencyLAbel.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;sapNumberValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AdressLine3Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 139</value>
+  </data>
+  <data name="&gt;&gt;settingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephoneNumberLAbel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;licenceToolStripMenuItem.Name" xml:space="preserve">
+    <value>licenceToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;telephoneValue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="driverNumberTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;EditCustomerLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IncotermTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;Hauliertextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createInvoiceButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;selectIBFdateLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;addItemToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TypeOfRequestLAbel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>569, 719</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 719</value>
+  </data>
+  <data name="&gt;&gt;IncotermTextBox.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="UKexitFacilityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="CityValue.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="createNewItemLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 681</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CityValue.Name" xml:space="preserve">
+    <value>CityValue</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostCodeLabel.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;selectCustomerComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Address2Value.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KanbanTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;itemToolStripMenuItem.Name" xml:space="preserve">
+    <value>itemToolStripMenuItem</value>
+  </data>
+  <data name="CountryLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="closeDownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1087, 719</value>
+  </data>
+  <data name="&gt;&gt;CurrencytextBox.Name" xml:space="preserve">
+    <value>CurrencytextBox</value>
   </data>
   <data name="ProcedureTypeCombo.Location" type="System.Drawing.Point, System.Drawing">
     <value>212, 219</value>
   </data>
+  <data name="&gt;&gt;createNewCustomerToolStripMenuItem.Name" xml:space="preserve">
+    <value>createNewCustomerToolStripMenuItem</value>
+  </data>
+  <data name="Address2Value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 119</value>
+  </data>
+  <data name="sapNumberValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 239</value>
+  </data>
+  <data name="CMRNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 49</value>
+  </data>
+  <data name="&gt;&gt;CountryLabel.Name" xml:space="preserve">
+    <value>CountryLabel</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sapNumberValue.Name" xml:space="preserve">
+    <value>sapNumberValue</value>
+  </data>
+  <data name="Address3Value.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="emailRecipientsListLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;PAckingInvoiceNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripStatusLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 20</value>
+  </data>
+  <data name="&gt;&gt;AddressLine1Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Name" xml:space="preserve">
+    <value>clearButton</value>
+  </data>
+  <data name="telephoneValue.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="AddressLine2Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 119</value>
+  </data>
+  <data name="&gt;&gt;CountryValue.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="CMRrequiredCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 165</value>
+  </data>
+  <data name="createNewCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 26</value>
+  </data>
+  <data name="&gt;&gt;telephoneNumberLAbel.Name" xml:space="preserve">
+    <value>telephoneNumberLAbel</value>
+  </data>
+  <data name="VATNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 199</value>
+  </data>
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 10, 0</value>
+  </data>
+  <data name="&gt;&gt;CountryLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;UKexitFacilityLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="telephoneValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 279</value>
+  </data>
+  <data name="&gt;&gt;EoriNumberLabel.Name" xml:space="preserve">
+    <value>EoriNumberLabel</value>
+  </data>
+  <data name="addItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="&gt;&gt;addItemLinkLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ProcedureCodeLabel.Name" xml:space="preserve">
+    <value>ProcedureCodeLabel</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
+    <value>dateTimePicker1</value>
+  </data>
+  <data name="VatNumberValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 199</value>
+  </data>
+  <data name="&gt;&gt;PostCodeValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PackInvoiceNumberValue.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;haulierName.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="emailSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="CountryLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 179</value>
+  </data>
+  <data name="&gt;&gt;POtextBox.Name" xml:space="preserve">
+    <value>POtextBox</value>
+  </data>
+  <data name="&gt;&gt;emailRecipientsListLinkLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;AddressLine2Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openInvoiceFolderToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TrailerTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="haulierName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 22</value>
+  </data>
+  <data name="InvoiceNumberValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 9</value>
+  </data>
+  <data name="createBrokerRequest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 719</value>
+  </data>
+  <data name="InvoiceNumberValue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <data name="&gt;&gt;databaseStatusStripLabel.Name" xml:space="preserve">
+    <value>databaseStatusStripLabel</value>
+  </data>
+  <data name="&gt;&gt;AdressLine3Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createInvoiceButton.Name" xml:space="preserve">
+    <value>createInvoiceButton</value>
+  </data>
+  <data name="VATNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;EditCustomerLink.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="CreatNewCustomerlinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1127, 309</value>
+  </data>
+  <data name="customsOfficelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;UKexitTextbox.Name" xml:space="preserve">
+    <value>UKexitTextbox</value>
+  </data>
+  <data name="itemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 24</value>
+  </data>
+  <data name="createInvoiceButton.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Address1Value.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="toolStripStatusLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 20</value>
+  </data>
+  <data name="&gt;&gt;addItemLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UKexitFacilityLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TypeOfRequestLAbel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="errolLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 822</value>
+  </data>
+  <data name="&gt;&gt;CurrencyLAbel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uploadCustomerFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 26</value>
+  </data>
+  <data name="&gt;&gt;PAckingInvoiceNumberLabel.Name" xml:space="preserve">
+    <value>PAckingInvoiceNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;CMRrequiredCheckBox.Name" xml:space="preserve">
+    <value>CMRrequiredCheckBox</value>
+  </data>
+  <data name="&gt;&gt;RemoveSelectedLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;driversNumberLAbel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;EoriNumberLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KanbanTextBox.Name" xml:space="preserve">
+    <value>KanbanTextBox</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Liberum Pro Forma Invoice Generator </value>
+  </data>
+  <data name="&gt;&gt;createNewItemLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 257</value>
+  </data>
+  <data name="&gt;&gt;VatNumberValue.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="addItemLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;uploadItemsToolStripMenuItem.Name" xml:space="preserve">
+    <value>uploadItemsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectIBFTimeLabel.Name" xml:space="preserve">
+    <value>selectIBFTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editCustomerToolStripMenuItem.Name" xml:space="preserve">
+    <value>editCustomerToolStripMenuItem</value>
+  </data>
+  <data name="clearButton.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="VatNumberValue.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="RequestTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="contactNameVAlue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 259</value>
+  </data>
+  <data name="PostCodeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="CurrencytextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>618, 167</value>
+  </data>
+  <data name="&gt;&gt;customsOfficelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Address3Value.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="editInvoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 26</value>
+  </data>
+  <data name="&gt;&gt;POtextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Address3Value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 139</value>
+  </data>
+  <data name="&gt;&gt;eoriNumberValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostCodeValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 159</value>
+  </data>
+  <data name="&gt;&gt;editInvoiceToolStripMenuItem.Name" xml:space="preserve">
+    <value>editInvoiceToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;IncotermTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ProcedureCodeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;IBFtimeSlotComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TrailerTextBox.Name" xml:space="preserve">
+    <value>TrailerTextBox</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel3.Name" xml:space="preserve">
+    <value>toolStripStatusLabel3</value>
+  </data>
+  <data name="&gt;&gt;TypeOfRequestLAbel.Name" xml:space="preserve">
+    <value>TypeOfRequestLAbel</value>
+  </data>
+  <data name="&gt;&gt;TypeOfRequestLAbel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProcedureTypeCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectIBFTimeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="errolLAbel.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="createBrokerRequest.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;RequestTypeComboBox.Name" xml:space="preserve">
+    <value>RequestTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;Address2Value.Name" xml:space="preserve">
+    <value>Address2Value</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Address3Value.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="CMRNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;haulierName.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="selectIBFdateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PostCodeLabel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="driverNumberTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 122</value>
+  </data>
+  <data name="PAckingInvoiceNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="editCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 26</value>
+  </data>
+  <data name="&gt;&gt;contactNameVAlue.Name" xml:space="preserve">
+    <value>contactNameVAlue</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;CMRNumberLabel.Name" xml:space="preserve">
+    <value>CMRNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;AdressLine3Label.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
   <data name="&gt;&gt;InvoiceNumberValue.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addItemLinkLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;CMRNumberValue.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;contactNameLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ProFormaGenerator</value>
+  </data>
+  <data name="&gt;&gt;createInvoiceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;itemToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;POtextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolStripStatusLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="&gt;&gt;createInvoiceButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uploadItemListToolStripMenuItem.Name" xml:space="preserve">
+    <value>uploadItemListToolStripMenuItem</value>
+  </data>
+  <data name="datebaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="&gt;&gt;Address1Value.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;contactNameVAlue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IBFtimeSlotComboBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="Address1Value.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;CMRrequiredCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CurrencytextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;createInvoiceToolStripMenuItem.Name" xml:space="preserve">
+    <value>createInvoiceToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;CustomsOfficeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hauliertextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 45</value>
+  </data>
+  <data name="TypeOfRequestLAbel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="EoriNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="UKexitTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="telephoneNumberLAbel.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="driversNumberLAbel.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="RequestTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 131</value>
+  </data>
+  <data name="&gt;&gt;removeSelectedButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;databaseStatusStripLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VATNumberLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;createNewCustomerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="contactNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 259</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1318, 859</value>
+  </data>
+  <data name="CMRrequiredCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6932,268 +7043,235 @@
         wutOsGUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="CurrencytextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="EditCustomerLink.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="clearButton.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;contactNameVAlue.Name" xml:space="preserve">
-    <value>contactNameVAlue</value>
-  </data>
-  <data name="CurrencyLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 144</value>
-  </data>
-  <data name="&gt;&gt;AddressLine1Label.Name" xml:space="preserve">
-    <value>AddressLine1Label</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CMRNumberLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="databaseStatusStripLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
-  </data>
-  <data name="selectCustomerComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 63</value>
-  </data>
-  <data name="&gt;&gt;InvoiceNumberValue.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="closeDownButton.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;editCustomerToolStripMenuItem.Name" xml:space="preserve">
-    <value>editCustomerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;RemoveSelectedLinkLabel.Name" xml:space="preserve">
-    <value>RemoveSelectedLinkLabel</value>
-  </data>
-  <data name="&gt;&gt;telephoneNumberLAbel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;CurrencyLAbel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CurrencyLAbel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="InvoiceNumberValue.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;uploadCustomerFileToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerLAbel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="Address3Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 139</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerComboBox.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;EoriNumberLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="POtextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;IncoLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Address1Value.Name" xml:space="preserve">
-    <value>Address1Value</value>
-  </data>
-  <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 17</value>
-  </data>
-  <data name="&gt;&gt;PostCodeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CityValue.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;sapNumberValue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;selectCustomerLAbel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="createBrokerRequest.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="licenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="&gt;&gt;sapNumberValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IncoLabel.Name" xml:space="preserve">
-    <value>IncoLabel</value>
-  </data>
-  <data name="&gt;&gt;CurrencytextBox.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;VATNumberLabel.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="PostCodeValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 159</value>
-  </data>
-  <data name="&gt;&gt;uploadItemListToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contactNameVAlue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="driversNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 98</value>
-  </data>
-  <data name="uploadItemsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="&gt;&gt;ProcedureTypeCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;emailRecipientsListLinkLabel.Name" xml:space="preserve">
+    <value>emailRecipientsListLinkLabel</value>
   </data>
   <data name="&gt;&gt;VatNumberValue.Parent" xml:space="preserve">
     <value>CustomerDetailsGroupBox</value>
   </data>
-  <data name="addItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+  <data name="&gt;&gt;RequestTypeComboBox.ZOrder" xml:space="preserve">
+    <value>25</value>
   </data>
-  <data name="telephoneNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 279</value>
+  <data name="removeSelectedButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="&gt;&gt;CreatNewCustomerlinkLabel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CountryValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1286, 764</value>
+  </data>
+  <data name="&gt;&gt;CurrencytextBox.Parent" xml:space="preserve">
     <value>CustomerDetailsGroupBox</value>
   </data>
-  <data name="CurrencyLAbel.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
+  <data name="&gt;&gt;RequestTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="customsOfficelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 256</value>
+  <data name="&gt;&gt;selectCustomerComboBox.ZOrder" xml:space="preserve">
+    <value>34</value>
   </data>
-  <data name="&gt;&gt;TrailerTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="CustomsOfficeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 280</value>
   </data>
-  <data name="&gt;&gt;contactNameVAlue.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="TrailerTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
+  <data name="&gt;&gt;closeDownButton.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="customerSapNumberLabel.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="&gt;&gt;RemoveSelectedLinkLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;eoriNumberValue.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;CMRrequiredCheckBox.Name" xml:space="preserve">
-    <value>CMRrequiredCheckBox</value>
-  </data>
-  <data name="&gt;&gt;AddressLine1Label.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;UKexitTextbox.Name" xml:space="preserve">
-    <value>UKexitTextbox</value>
-  </data>
-  <data name="&gt;&gt;CMRrequiredCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contactNameLabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;RemoveSelectedLinkLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 235</value>
+  <data name="&gt;&gt;licenceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+  <data name="createInvoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 26</value>
   </data>
-  <data name="&gt;&gt;VATNumberLabel.Name" xml:space="preserve">
-    <value>VATNumberLabel</value>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
-  <data name="&gt;&gt;Hauliertextbox.Name" xml:space="preserve">
-    <value>Hauliertextbox</value>
+  <data name="InvoiceNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
-  <data name="&gt;&gt;customsOfficelabel.Parent" xml:space="preserve">
-    <value>CustomerDetailsGroupBox</value>
+  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 9</value>
   </data>
-  <data name="&gt;&gt;createNewCustomerToolStripMenuItem.Name" xml:space="preserve">
-    <value>createNewCustomerToolStripMenuItem</value>
+  <data name="&gt;&gt;AddressLine2Label.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
-  <data name="&gt;&gt;CountryLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;customerToolStripMenuItem.Name" xml:space="preserve">
+    <value>customerToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;customsOfficelabel.Name" xml:space="preserve">
+    <value>customsOfficelabel</value>
+  </data>
+  <data name="CurrencyLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>618, 144</value>
+  </data>
+  <data name="&gt;&gt;selectIBFdateLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="telephoneValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 279</value>
-  </data>
-  <data name="&gt;&gt;IBFtimeSlotComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openInvoiceFolderToolStripMenuItem.Name" xml:space="preserve">
-    <value>openInvoiceFolderToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;driversNumberLAbel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;IncoLabel.Parent" xml:space="preserve">
     <value>CustomerDetailsGroupBox</value>
   </data>
-  <data name="&gt;&gt;IBFtimeSlotComboBox.Name" xml:space="preserve">
-    <value>IBFtimeSlotComboBox</value>
+  <data name="&gt;&gt;IncoLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;POtextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;CMRNumberValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RequestTypeComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;errolLAbel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel4.Name" xml:space="preserve">
+    <value>toolStripStatusLabel4</value>
+  </data>
+  <data name="&gt;&gt;customerSapNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;editInvoiceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addItemToolStripMenuItem.Name" xml:space="preserve">
+    <value>addItemToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;UKexitTextbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Address3Value.Name" xml:space="preserve">
+    <value>Address3Value</value>
+  </data>
+  <data name="invoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 24</value>
+  </data>
+  <data name="AddressLine1Label.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;datebaseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;invoiceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailSettingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CreatNewCustomerlinkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;telephoneValue.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="AddressLine2Label.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 719</value>
   </data>
-  <data name="&gt;&gt;toolStripStatusLabel2.Name" xml:space="preserve">
-    <value>toolStripStatusLabel2</value>
+  <data name="&gt;&gt;emailRecipientsListLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CountryValue.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;IBFtimeSlotComboBox.Name" xml:space="preserve">
+    <value>IBFtimeSlotComboBox</value>
   </data>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="&gt;&gt;EoriNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customsOfficelabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;driversNumberLAbel.Name" xml:space="preserve">
+    <value>driversNumberLAbel</value>
+  </data>
+  <data name="&gt;&gt;AddressLine1Label.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;PostCodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CMRNumberValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;driversNumberLAbel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CityValue.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 786</value>
+  </data>
+  <data name="&gt;&gt;errolLAbel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RemoveSelectedLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;uploadItemsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="selectCustomerLAbel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="POtextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 154</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;openInvoiceFolderToolStripMenuItem.Name" xml:space="preserve">
+    <value>openInvoiceFolderToolStripMenuItem</value>
+  </data>
+  <data name="Address2Value.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;telephoneNumberLAbel.Parent" xml:space="preserve">
+    <value>CustomerDetailsGroupBox</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;CurrencyLAbel.Name" xml:space="preserve">
+    <value>CurrencyLAbel</value>
+  </data>
+  <data name="&gt;&gt;createNewItemToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-GB</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>154, 17</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en-GB</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

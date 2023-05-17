@@ -110,15 +110,16 @@
             customerToolStripMenuItem = new ToolStripMenuItem();
             createNewCustomerToolStripMenuItem = new ToolStripMenuItem();
             editCustomerToolStripMenuItem = new ToolStripMenuItem();
-            settingsToolStripMenuItem = new ToolStripMenuItem();
-            emailSettingsToolStripMenuItem = new ToolStripMenuItem();
-            aboutToolStripMenuItem = new ToolStripMenuItem();
-            licenceToolStripMenuItem = new ToolStripMenuItem();
+            uploadCustomerFileToolStripMenuItem = new ToolStripMenuItem();
             datebaseToolStripMenuItem = new ToolStripMenuItem();
             uploadCustomerToolStripMenuItem = new ToolStripMenuItem();
             uploadItemsToolStripMenuItem = new ToolStripMenuItem();
             mergeDatabaseToolStripMenuItem = new ToolStripMenuItem();
-            uploadCustomerFileToolStripMenuItem = new ToolStripMenuItem();
+            settingsToolStripMenuItem = new ToolStripMenuItem();
+            emailSettingsToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
+            licenceToolStripMenuItem = new ToolStripMenuItem();
+            errolLAbel = new Label();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -613,27 +614,10 @@
             editCustomerToolStripMenuItem.Name = "editCustomerToolStripMenuItem";
             editCustomerToolStripMenuItem.Click += editCustomerToolStripMenuItem_Click;
             // 
-            // settingsToolStripMenuItem
+            // uploadCustomerFileToolStripMenuItem
             // 
-            resources.ApplyResources(settingsToolStripMenuItem, "settingsToolStripMenuItem");
-            settingsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { emailSettingsToolStripMenuItem, aboutToolStripMenuItem, licenceToolStripMenuItem });
-            settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            // 
-            // emailSettingsToolStripMenuItem
-            // 
-            resources.ApplyResources(emailSettingsToolStripMenuItem, "emailSettingsToolStripMenuItem");
-            emailSettingsToolStripMenuItem.Name = "emailSettingsToolStripMenuItem";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            resources.ApplyResources(aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
-            // 
-            // licenceToolStripMenuItem
-            // 
-            resources.ApplyResources(licenceToolStripMenuItem, "licenceToolStripMenuItem");
-            licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
+            resources.ApplyResources(uploadCustomerFileToolStripMenuItem, "uploadCustomerFileToolStripMenuItem");
+            uploadCustomerFileToolStripMenuItem.Name = "uploadCustomerFileToolStripMenuItem";
             // 
             // datebaseToolStripMenuItem
             // 
@@ -657,16 +641,40 @@
             resources.ApplyResources(mergeDatabaseToolStripMenuItem, "mergeDatabaseToolStripMenuItem");
             mergeDatabaseToolStripMenuItem.Name = "mergeDatabaseToolStripMenuItem";
             // 
-            // uploadCustomerFileToolStripMenuItem
+            // settingsToolStripMenuItem
             // 
-            resources.ApplyResources(uploadCustomerFileToolStripMenuItem, "uploadCustomerFileToolStripMenuItem");
-            uploadCustomerFileToolStripMenuItem.Name = "uploadCustomerFileToolStripMenuItem";
+            resources.ApplyResources(settingsToolStripMenuItem, "settingsToolStripMenuItem");
+            settingsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { emailSettingsToolStripMenuItem, aboutToolStripMenuItem, licenceToolStripMenuItem });
+            settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            // 
+            // emailSettingsToolStripMenuItem
+            // 
+            resources.ApplyResources(emailSettingsToolStripMenuItem, "emailSettingsToolStripMenuItem");
+            emailSettingsToolStripMenuItem.Name = "emailSettingsToolStripMenuItem";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            resources.ApplyResources(aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+            // 
+            // licenceToolStripMenuItem
+            // 
+            resources.ApplyResources(licenceToolStripMenuItem, "licenceToolStripMenuItem");
+            licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
+            // 
+            // errolLAbel
+            // 
+            resources.ApplyResources(errolLAbel, "errolLAbel");
+            errolLAbel.ForeColor = Color.Red;
+            errolLAbel.Name = "errolLAbel";
             // 
             // ProFormaGenerator
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            Controls.Add(errolLAbel);
             Controls.Add(TrailerTextBox);
             Controls.Add(label3);
             Controls.Add(ProcedureCodeLabel);
@@ -802,5 +810,6 @@
         private ToolStripMenuItem mergeDatabaseToolStripMenuItem;
         private ToolStripMenuItem uploadItemListToolStripMenuItem;
         private ToolStripMenuItem uploadCustomerFileToolStripMenuItem;
+        private Label errolLAbel;
     }
 }

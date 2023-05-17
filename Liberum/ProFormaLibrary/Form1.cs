@@ -346,6 +346,8 @@ namespace ProFormaLibrary
             KanbanTextBox.Text = string.Empty;
             TrailerTextBox.Text = string.Empty;
 
+            errolLAbel.Text = string.Empty;
+
             toolStripStatusLabel5.Text = "There are no items in shipment";
         }
 
@@ -388,8 +390,17 @@ namespace ProFormaLibrary
             {
                 if (Items.Count > 0)
                 {
-                    CreateInvoiceDocuments();
-                    SweepUptheForm();
+                    try
+                    {
+                        CreateInvoiceDocuments();
+                        SweepUptheForm();
+                    }
+                    catch(System.Exception ex)
+                    {
+                        errolLAbel.Text = string.Empty;
+                        errolLAbel.Text += ex.Message;
+                    }
+                    
                 }
                 else
                 {
@@ -436,7 +447,16 @@ namespace ProFormaLibrary
                 invoiceItem.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
 
                 //MessageBox.Show(item.ItemName);
-                SqliteDataAccess.AddInvoiceItem(invoiceItem);
+                try
+                {
+                    SqliteDataAccess.AddInvoiceItem(invoiceItem);
+                }
+                catch(System.Exception ex)
+                {
+                    errolLAbel.Text = string.Empty;
+                    errolLAbel.Text += ex.Message;
+                }
+                
             }
 
             Invoice.ReferenceNumber = POtextBox.Text;

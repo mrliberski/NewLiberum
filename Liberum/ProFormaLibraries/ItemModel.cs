@@ -35,7 +35,7 @@ namespace ProFormaLibraries
         public int RequiresLid { get; set; }
         public int RequiresPallet { get; set; }
         public string? CreatedDate { get; set; }
-        public static string? CreatedBy { get {return Environment.UserName; } }
+        public string? CreatedBy { get {return Environment.UserName; } }
         public int Cpp { get; set; } // replacement for container per pallet which for some reason gets updted in db but can be never pulled out 
     }
 }

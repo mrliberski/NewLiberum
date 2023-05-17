@@ -1,13 +1,14 @@
-﻿using Dapper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SQLite;
+//using System.Data.SQLite;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Dapper;
 
 namespace ProFormaLibraries
 {
@@ -15,22 +16,44 @@ namespace ProFormaLibraries
     {
         public static List<InvoiceItem> PopulateItems(int invoice)
         {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            using (var cnn = new SQLiteConnection("Data Source=your_database.db"))
             {
-                var output = cnn.Query<InvoiceItem>($"select * from InvoiceItems where InvoiceNumber = @invoice", new { invoice });
-                return output.ToList();
+                cnn.Open();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "select * from InvoiceItems where InvoiceNumber = @invoice";
+                cmd.Parameters.AddWithValue("@invoice", invoice);
+                var output = new List<InvoiceItem>();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var item = new InvoiceItem();
+                        // fill item properties from reader
+                        output.Add(item);
+                    }
+                }
+                return output;
             }
         }
 
-        //public static List<ItemModel> LoadItems(string SelectedCustomer)
+        //public static List<InvoiceItem> PopulateItems(int invoice)
         //{
         //    using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
         //    {
-        //        // did not work ;P var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer={SelectedCustomer}", new DynamicParameters());
-        //        var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
+        //        var output = cnn.Query<InvoiceItem>($"select * from InvoiceItems where InvoiceNumber = @invoice", new { invoice });
         //        return output.ToList();
         //    }
         //}
+
+        public static List<ItemModel> LoadItems(string SelectedCustomer)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                // did not work ;P var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer={SelectedCustomer}", new DynamicParameters());
+                var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
+                return output.ToList();
+            }
+        }
 
 
         public static CustomerModel FetchCustomerInfo(string customer)
@@ -118,6 +141,106 @@ namespace ProFormaLibraries
 
         public static void AddInvoiceItem(InvoiceItem item)
         {
+            var connection = new SQLiteConnection(LoadConnectionString());
+
+            connection.Open();
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = @"insert into InvoiceItems 
+                        (
+                            InvoiceNumber,
+                            CustomerName,
+                            ItemQuantity, 
+                            ItemName,
+                            PartNumber,
+                            CustomerNumber,
+                            ItemNetWeight,
+                            ItemGrossWeight,
+                            ItemPrice,
+                            ItemHScode,
+                            ItemCOO,
+                            ContainerName,
+                            ContainersQuantity,
+                            ContainerCode,
+                            ContainerNetWeight,
+                            ContainerGrossWeight,
+                            ContainerPrice,
+                            ContainerHSCode,
+                            ContainerCOO,
+                            PartsPerContainer,
+                            ContainersPerPallet,
+                            PalletsQuantity,
+                            RequiresPackaging,
+                            RequiresLid,
+                            RequiresPallet,
+                            CreatedDate,
+                            CreatedBy
+                        )
+                        values 
+                        (
+                            @InvoiceNumber,
+                            @CustomerName,
+                            @ItemQuantity, 
+                            @ItemName,
+                            @PartNumber,
+                            @CustomerNumber,
+                            @ItemNetWeight,
+                            @ItemGrossWeight,
+                            @ItemPrice,
+                            @ItemHScode,
+                            @ItemCOO,
+                            @ContainerName,
+                            @ContainersQuantity,
+                            @ContainerCode,
+                            @ContainerNetWeight,
+                            @ContainerGrossWeight,
+                            @ContainerPrice,
+                            @ContainerHSCode,
+                            @ContainerCOO,
+                            @PartsPerContainer,
+                            @ContainersPerPallet,
+                            @PalletsQuantity,
+                            @RequiresPackaging,
+                            @RequiresLid,
+                            @RequiresPallet,
+                            @CreatedDate,
+                            @CreatedBy
+                        )";
+            cmd.Parameters.Add(new SQLiteParameter("@InvoiceNumber", item.InvoiceNumber));
+            cmd.Parameters.Add(new SQLiteParameter("@CustomerName", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemQuantity", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemName", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@PartNumber", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@CustomerNumber", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemNetWeight", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemGrossWeight", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemPrice", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemHScode", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ItemCOO", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerName", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainersQuantity", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerCode", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerNetWeight", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerGrossWeight", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerPrice", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerHSCode", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainerCOO", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@PartsPerContainer", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@ContainersPerPallet", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@PalletsQuantity", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@RequiresPackaging", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@RequiresLid", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@RequiresPallet", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@CreatedDate", item.CustomerName));
+            cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", item.CustomerName));
+
+            // add other parameters for item properties
+
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        public static void AddInvoiceItem_Dapper(InvoiceItem item)
+        {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
                 connection.Execute(@"insert into InvoiceItems 
@@ -196,16 +319,6 @@ namespace ProFormaLibraries
                 }
 
                 return invoices;
-            }
-        }
-
-        public static List<ItemModel> LoadItems(string SelectedCustomer)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                // did not work ;P var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer={SelectedCustomer}", new DynamicParameters());
-                var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
-                return output.ToList();
             }
         }
 
