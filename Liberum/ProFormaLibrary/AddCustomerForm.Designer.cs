@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCustomerForm));
             CustomerDetailsGroupBox = new GroupBox();
+            CurrencyTextBox = new TextBox();
+            label1 = new Label();
             IncotermsTextBox = new TextBox();
             IncotermsLabel = new Label();
             Address3TextBox = new TextBox();
@@ -67,8 +69,6 @@
             ClearButton = new Button();
             CloseButton = new Button();
             CreateCustomerNewButton = new Button();
-            CurrencyTextBox = new TextBox();
-            label1 = new Label();
             CustomerDetailsGroupBox.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -113,6 +113,16 @@
             CustomerDetailsGroupBox.Name = "CustomerDetailsGroupBox";
             CustomerDetailsGroupBox.TabStop = false;
             CustomerDetailsGroupBox.Enter += CustomerDetailsGroupBox_Enter;
+            // 
+            // CurrencyTextBox
+            // 
+            resources.ApplyResources(CurrencyTextBox, "CurrencyTextBox");
+            CurrencyTextBox.Name = "CurrencyTextBox";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // IncotermsTextBox
             // 
@@ -309,16 +319,6 @@
             CreateCustomerNewButton.Name = "CreateCustomerNewButton";
             CreateCustomerNewButton.UseVisualStyleBackColor = true;
             CreateCustomerNewButton.Click += CreateCustomerNewButton_Click;
-            // 
-            // CurrencyTextBox
-            // 
-            resources.ApplyResources(CurrencyTextBox, "CurrencyTextBox");
-            CurrencyTextBox.Name = "CurrencyTextBox";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
             // 
             // AddCustomerForm
             // 

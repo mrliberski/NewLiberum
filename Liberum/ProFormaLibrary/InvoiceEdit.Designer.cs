@@ -370,7 +370,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ImeMode = ImeMode.NoControl;
-            button2.Location = new Point(714, 759);
+            button2.Location = new Point(565, 759);
             button2.Name = "button2";
             button2.Size = new Size(171, 32);
             button2.TabIndex = 80;
@@ -445,7 +445,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ImeMode = ImeMode.NoControl;
-            button3.Location = new Point(537, 759);
+            button3.Location = new Point(388, 759);
             button3.Name = "button3";
             button3.Size = new Size(171, 32);
             button3.TabIndex = 82;

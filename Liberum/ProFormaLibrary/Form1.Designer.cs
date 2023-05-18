@@ -437,6 +437,7 @@
             // 
             resources.ApplyResources(toolStripStatusLabel4, "toolStripStatusLabel4");
             toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            toolStripStatusLabel4.Click += toolStripStatusLabel4_Click;
             // 
             // toolStripStatusLabel5
             // 
@@ -618,6 +619,7 @@
             // 
             resources.ApplyResources(uploadCustomerFileToolStripMenuItem, "uploadCustomerFileToolStripMenuItem");
             uploadCustomerFileToolStripMenuItem.Name = "uploadCustomerFileToolStripMenuItem";
+            uploadCustomerFileToolStripMenuItem.Click += uploadCustomerFileToolStripMenuItem_Click;
             // 
             // datebaseToolStripMenuItem
             // 
@@ -651,6 +653,7 @@
             // 
             resources.ApplyResources(emailSettingsToolStripMenuItem, "emailSettingsToolStripMenuItem");
             emailSettingsToolStripMenuItem.Name = "emailSettingsToolStripMenuItem";
+            emailSettingsToolStripMenuItem.Click += emailSettingsToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem
             // 
@@ -662,6 +665,7 @@
             // 
             resources.ApplyResources(licenceToolStripMenuItem, "licenceToolStripMenuItem");
             licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
+            licenceToolStripMenuItem.Click += licenceToolStripMenuItem_Click;
             // 
             // errolLAbel
             // 

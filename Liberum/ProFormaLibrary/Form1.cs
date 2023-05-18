@@ -395,12 +395,12 @@ namespace ProFormaLibrary
                         CreateInvoiceDocuments();
                         SweepUptheForm();
                     }
-                    catch(System.Exception ex)
+                    catch (System.Exception ex)
                     {
                         errolLAbel.Text = string.Empty;
                         errolLAbel.Text += ex.Message;
                     }
-                    
+
                 }
                 else
                 {
@@ -451,12 +451,12 @@ namespace ProFormaLibrary
                 {
                     SqliteDataAccess.AddInvoiceItem(invoiceItem);
                 }
-                catch(System.Exception ex)
+                catch (System.Exception ex)
                 {
                     errolLAbel.Text = string.Empty;
                     errolLAbel.Text += ex.Message;
                 }
-                
+
             }
 
             Invoice.ReferenceNumber = POtextBox.Text;
@@ -903,13 +903,35 @@ namespace ProFormaLibrary
 
         private void datebaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            NotYet();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             About a = new About();
             a.Show();
+        }
+
+        private void uploadCustomerFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form open = new UploadCustomers();
+            open.ShowDialog();
+        }
+
+        private void emailSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NotYet();
+        }
+
+        private void licenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form open = new LicenceInfo();
+            open.ShowDialog();
+        }
+
+        private void toolStripStatusLabel4_Click(object sender, EventArgs e)
+        {
+            NotYet();
         }
     }
 }
