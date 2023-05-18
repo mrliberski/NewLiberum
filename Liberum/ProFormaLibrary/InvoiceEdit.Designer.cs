@@ -68,6 +68,8 @@
             exitToolStripMenuItem3 = new ToolStripMenuItem();
             button3 = new Button();
             button4 = new Button();
+            currentHunumberLabel = new Label();
+            CurrentHuNumberValue = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -465,6 +467,26 @@
             button4.Text = "Print";
             button4.UseVisualStyleBackColor = true;
             // 
+            // currentHunumberLabel
+            // 
+            currentHunumberLabel.AutoSize = true;
+            currentHunumberLabel.ImeMode = ImeMode.NoControl;
+            currentHunumberLabel.Location = new Point(19, 781);
+            currentHunumberLabel.Name = "currentHunumberLabel";
+            currentHunumberLabel.Size = new Size(239, 20);
+            currentHunumberLabel.TabIndex = 84;
+            currentHunumberLabel.Text = "Current number of HU in shipment:";
+            // 
+            // CurrentHuNumberValue
+            // 
+            CurrentHuNumberValue.AutoSize = true;
+            CurrentHuNumberValue.ImeMode = ImeMode.NoControl;
+            CurrentHuNumberValue.Location = new Point(264, 781);
+            CurrentHuNumberValue.Name = "CurrentHuNumberValue";
+            CurrentHuNumberValue.Size = new Size(62, 20);
+            CurrentHuNumberValue.TabIndex = 85;
+            CurrentHuNumberValue.Text = "<none>";
+            // 
             // InvoiceEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -472,6 +494,8 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(1560, 826);
+            Controls.Add(CurrentHuNumberValue);
+            Controls.Add(currentHunumberLabel);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -559,5 +583,7 @@
         private ToolStripMenuItem exitToolStripMenuItem3;
         private Button button3;
         private Button button4;
+        private Label currentHunumberLabel;
+        private Label CurrentHuNumberValue;
     }
 }

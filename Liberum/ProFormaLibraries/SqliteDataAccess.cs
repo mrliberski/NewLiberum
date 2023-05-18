@@ -16,7 +16,7 @@ namespace ProFormaLibraries
     {
         public static List<InvoiceItem> PopulateItems(int invoice)
         {
-            using (var cnn = new SQLiteConnection("Data Source=your_database.db"))
+            using (var cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Open();
                 var cmd = cnn.CreateCommand();
@@ -28,7 +28,36 @@ namespace ProFormaLibraries
                     while (reader.Read())
                     {
                         var item = new InvoiceItem();
+
                         // fill item properties from reader
+                        item.Id = Convert.ToInt32(reader["Id"]);
+                        item.InvoiceNumber = reader["InvoiceNumber"].ToString();
+                        item.CustomerName = reader["CustomerName"].ToString();
+                        item.ItemQuantity = Convert.ToInt32(reader["ItemQuantity"]);
+                        item.ItemName = reader["ItemName"].ToString();
+                        item.PartNumber = reader["PartNumber"].ToString();
+                        item.CustomerNumber = reader["CustomerNumber"].ToString();
+                        item.ItemNetWeight = Convert.ToDouble(reader["ItemNetWeight"]);
+                        item.ItemGrossWeight = Convert.ToDouble(reader["ItemGrossWeight"]);
+                        item.ItemPrice = Convert.ToDouble(reader["ItemPrice"]);
+                        item.ItemHScode = Convert.ToInt64(reader["ItemHScode"]);
+                        item.ItemCOO = reader["ItemCOO"].ToString();
+                        item.ContainerName = reader["ContainerName"].ToString();
+                        item.ContainersQuantity = Convert.ToInt32(reader["ContainersQuantity"]);
+                        item.ContainerCode = reader["ContainerCode"].ToString();
+                        item.ContainerNetWeight = Convert.ToDouble(reader["ContainerNetWeight"]);
+                        item.ContainerGrossWeight = Convert.ToDouble(reader["ContainerGrossWeight"]);
+                        item.ContainerPrice =  Convert.ToDouble(reader["ContainerPrice"]);
+                        item.ContainerHSCode = Convert.ToInt64(reader["ContainerHSCode"]);
+                        item.ContainerCOO = reader["ContainerCOO"].ToString();
+                        item.PartsPerContainer = Convert.ToInt32(reader["PartsPerContainer"]);
+                        item.ContainersPerPallet = Convert.ToInt32(reader["ContainersPerPallet"]);
+                        item.PalletsQuantity = Convert.ToInt32(reader["PalletsQuantity"]);
+                        item.RequiresPackaging = Convert.ToInt32(reader["RequiresPackaging"]);
+                        item.RequiresLid = Convert.ToInt32(reader["RequiresLid"]);
+                        item.RequiresPallet = Convert.ToInt32(reader["RequiresPallet"]);
+                        item.CreatedDate = reader["CreatedDate"].ToString();
+
                         output.Add(item);
                     }
                 }
@@ -55,7 +84,6 @@ namespace ProFormaLibraries
             }
         }
 
-
         public static CustomerModel FetchCustomerInfo(string customer)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -68,9 +96,6 @@ namespace ProFormaLibraries
                 output = cnn.Query<CustomerModel>("select id,* from Customers WHERE CustomerName = @customer", parameters).FirstOrDefault();
                 return output;
             }
-
-
-            //return new CustomerModel();
         }
 
         public static InvoiceItem SelectInvoiceCustomer(int SelectedInvoice)
@@ -141,11 +166,11 @@ namespace ProFormaLibraries
 
         public static void AddInvoiceItem(InvoiceItem item)
         {
-            var connection = new SQLiteConnection(LoadConnectionString());
-
-            connection.Open();
-            var cmd = connection.CreateCommand();
-            cmd.CommandText = @"insert into InvoiceItems 
+            using (var connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Open();
+                var cmd = connection.CreateCommand();
+                cmd.CommandText = @"insert into InvoiceItems 
                         (
                             InvoiceNumber,
                             CustomerName,
@@ -205,40 +230,40 @@ namespace ProFormaLibraries
                             @CreatedDate,
                             @CreatedBy
                         )";
-            cmd.Parameters.Add(new SQLiteParameter("@InvoiceNumber", item.InvoiceNumber));
-            cmd.Parameters.Add(new SQLiteParameter("@CustomerName", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemQuantity", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemName", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@PartNumber", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@CustomerNumber", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemNetWeight", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemGrossWeight", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemPrice", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemHScode", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ItemCOO", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerName", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainersQuantity", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerCode", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerNetWeight", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerGrossWeight", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerPrice", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerHSCode", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainerCOO", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@PartsPerContainer", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@ContainersPerPallet", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@PalletsQuantity", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@RequiresPackaging", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@RequiresLid", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@RequiresPallet", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@CreatedDate", item.CustomerName));
-            cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@InvoiceNumber", item.InvoiceNumber));
+                cmd.Parameters.Add(new SQLiteParameter("@CustomerName", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemQuantity", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemName", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@PartNumber", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@CustomerNumber", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemNetWeight", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemGrossWeight", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemPrice", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemHScode", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ItemCOO", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerName", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainersQuantity", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerCode", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerNetWeight", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerGrossWeight", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerPrice", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerHSCode", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainerCOO", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@PartsPerContainer", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@ContainersPerPallet", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@PalletsQuantity", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@RequiresPackaging", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@RequiresLid", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@RequiresPallet", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@CreatedDate", item.CustomerName));
+                cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", item.CustomerName));
 
-            // add other parameters for item properties
-
-            cmd.ExecuteNonQuery();
-            connection.Close();
+                cmd.ExecuteNonQuery();
+                connection.Close();
+            }
         }
 
+        // original method which started throuwing tantrum at some point. FFS
         public static void AddInvoiceItem_Dapper(InvoiceItem item)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -397,8 +422,6 @@ namespace ProFormaLibraries
                         )", item);
             }
         }
-
-
 
         public static void SaveNewCustomer(CustomerModel customer)
         {

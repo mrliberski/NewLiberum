@@ -114,21 +114,38 @@ namespace ProFormaUI
         private void PopulateCustomerInfo(string Customer)
         {
             _customerModel = SqliteDataAccess.FetchCustomerInfo(Customer);
-            Address1Value.Text = _customerModel.CustomerAddressLine1;
-            Address2Value.Text = _customerModel.CustomerAddressLine2;
-            PostCodeValue.Text = _customerModel.CustomerZipCode;
-            CountryValue.Text = _customerModel.CustomerCountry;
-            VatNumberValue.Text = _customerModel.CustomerVAT;
-            eoriNumberValue.Text = _customerModel.CustomerEORI;
-            sapNumberValue.Text = _customerModel.SAPnumber;
-            contactNameVAlue.Text = _customerModel.CustomerContactPerson;
-            telephoneValue.Text = _customerModel.CustomerPhone;
+
+            if (_customerModel != null)
+            {
+                Address1Value.Text = _customerModel.CustomerAddressLine1;
+                Address2Value.Text = _customerModel.CustomerAddressLine2;
+                PostCodeValue.Text = _customerModel.CustomerZipCode;
+                CountryValue.Text = _customerModel.CustomerCountry;
+                VatNumberValue.Text = _customerModel.CustomerVAT;
+                eoriNumberValue.Text = _customerModel.CustomerEORI;
+                sapNumberValue.Text = _customerModel.SAPnumber;
+                contactNameVAlue.Text = _customerModel.CustomerContactPerson;
+                telephoneValue.Text = _customerModel.CustomerPhone;
+            }
+            else
+            {
+                ErrorPlaceholderValueLabel.Text = string.Empty;
+                ErrorPlaceholderValueLabel.Text = "Could not retrieve customer data";
+            }
         }
 
         private void PopulateItems(int InvoiceNumber)
         {
             _invoiceItems = SqliteDataAccess.PopulateItems(InvoiceNumber);
-            WireUpItems();
+            if (_invoiceItems != null)
+            {
+                WireUpItems();
+            }
+            else
+            {
+                // ErrorPlaceholderValueLabel.Text = string.Empty;
+                ErrorPlaceholderValueLabel.Text += " & Could not retrieve invoice items.";
+            }
         }
 
         private void WireUpItems()
@@ -189,7 +206,7 @@ namespace ProFormaUI
             //if (((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName != null)
             if (CustomerNameValueLabel.Text != string.Empty)
             {
-                 string SelectedCustomer = CustomerNameValueLabel.Text;
+                string SelectedCustomer = CustomerNameValueLabel.Text;
 
                 Form open = new AddItem(this, SelectedCustomer);
                 open.ShowDialog();
@@ -222,17 +239,17 @@ namespace ProFormaUI
             Output.PartNumber = item.PartNumber;
             Output.CustomerNumber = item.CustomerNumber;
             Output.ItemNetWeight = item.ItemNetWeight;
-            Output.ItemGrossWeight =item.ItemGrossWeight;
+            Output.ItemGrossWeight = item.ItemGrossWeight;
             Output.ItemPrice = item.ItemPrice;
-            Output.ItemHScode = item.ItemHScode; 
+            Output.ItemHScode = item.ItemHScode;
             Output.ItemCOO = item.ItemCOO;
             Output.ContainerName = item.ContainerName;
             Output.ContainersQuantity = item.ContainersQuantity;
             Output.ContainerCode = item.ContainerCode;
             Output.ContainerNetWeight = item.ContainerNetWeight;
             Output.ContainerGrossWeight = item.ContainerGrossWeight;
-            Output.ContainerPrice= item.ContainerPrice;
-            Output.ContainerHSCode= item.ContainerHSCode;
+            Output.ContainerPrice = item.ContainerPrice;
+            Output.ContainerHSCode = item.ContainerHSCode;
             Output.ContainerCOO = item.ContainerCOO;
             Output.PartsPerContainer = item.PartsPerContainer;
             Output.ContainersPerPallet = item.Cpp;
