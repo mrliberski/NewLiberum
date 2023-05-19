@@ -123,8 +123,8 @@ namespace ProFormaUI
         private void SaveInitialState()
         {
             InitialQty = "0";
-            InitialPPC = ((ItemModel)AvailableItemsComboBox.SelectedItem).PartsPerContainer.ToString(); 
-            InitialContainerPerHU = ((ItemModel)AvailableItemsComboBox.SelectedItem).Cpp.ToString(); 
+            InitialPPC = ((ItemModel)AvailableItemsComboBox.SelectedItem).PartsPerContainer.ToString();
+            InitialContainerPerHU = ((ItemModel)AvailableItemsComboBox.SelectedItem).Cpp.ToString();
         }
 
         private void ItemQtyTextBox_TextChanged(object sender, EventArgs e)
@@ -180,7 +180,7 @@ namespace ProFormaUI
             else
             {
                 ((ItemModel)AvailableItemsComboBox.SelectedItem).Cpp = int.Parse(CPPtextBox.Text);
-                
+
 
                 // recalculate 
                 RecalculateBoxes();
@@ -240,13 +240,13 @@ namespace ProFormaUI
 
 
 
-                    //TODO - validate
+            //TODO - validate
             if (AvailableItemsComboBox.SelectedItem != null && int.Parse(ItemQtyTextBox.Text) > 0)
             {
                 ItemModel model = new ItemModel();
                 model = AvailableItemsComboBox.SelectedItem as ItemModel;
                 callingForm.ItemSelection(model);
-                this.Close();
+                //this.Close();
             }
             else
             {

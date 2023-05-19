@@ -73,7 +73,7 @@
             AvailableItemsComboBox.FormattingEnabled = true;
             AvailableItemsComboBox.Location = new Point(308, 27);
             AvailableItemsComboBox.Name = "AvailableItemsComboBox";
-            AvailableItemsComboBox.Size = new Size(477, 28);
+            AvailableItemsComboBox.Size = new Size(722, 28);
             AvailableItemsComboBox.TabIndex = 0;
             AvailableItemsComboBox.SelectedIndexChanged += AvailableItemsComboBox_SelectedIndexChanged;
             // 
@@ -323,7 +323,7 @@
             groupBox1.Controls.Add(PackagingNameLabel);
             groupBox1.Location = new Point(536, 84);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(248, 183);
+            groupBox1.Size = new Size(494, 183);
             groupBox1.TabIndex = 61;
             groupBox1.TabStop = false;
             groupBox1.Text = "Item Data";
@@ -431,7 +431,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(818, 378);
+            ClientSize = new Size(1058, 378);
             Controls.Add(groupBox1);
             Controls.Add(PalletsErrorLAbel);
             Controls.Add(CPHUerrorLAbel);
