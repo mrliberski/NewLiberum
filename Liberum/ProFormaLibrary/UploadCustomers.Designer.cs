@@ -98,6 +98,7 @@
             UploadFileButton.TabIndex = 61;
             UploadFileButton.Text = "Upload File";
             UploadFileButton.UseVisualStyleBackColor = true;
+            UploadFileButton.Click += UploadFileButton_Click;
             // 
             // CloseButton
             // 
@@ -116,9 +117,9 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(CustomerModelValue);
-            groupBox1.Location = new Point(12, 96);
+            groupBox1.Location = new Point(12, 125);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(948, 181);
+            groupBox1.Size = new Size(948, 164);
             groupBox1.TabIndex = 63;
             groupBox1.TabStop = false;
             groupBox1.Text = "Customer Model";

@@ -49,33 +49,47 @@ namespace ProFormaUI
             int row = 2;
             int col = 1;
 
-            while (string.IsNullOrEmpty(ws.Cells[row,col].Value?.ToString()) == false)
+            while (string.IsNullOrEmpty(ws.Cells[row, col].Value?.ToString()) == false)
             {
                 CustomerModel c = new();
-                c.CustomerName = ws.Cells[row,col].Value?.ToString();
-                c.CustomerAddressLine1 = ws.Cells[row, col+1].Value?.ToString();
-                c.CustomerAddressLine2 = ws.Cells[row, col+2].Value?.ToString();
-                c.CustomerAddressLine3 = ws.Cells[row, col+3].Value?.ToString();
-                c.CustomerCity = ws.Cells[row, col+4].Value?.ToString();
-                c.CustomerPhone = ws.Cells[row, col+5].Value?.ToString();
-                c.CustomerRegion = ws.Cells[row, col+6].Value?.ToString();
-                c.CustomerCountry = ws.Cells[row, col+7].Value?.ToString();
-                c.CustomerZipCode = ws.Cells[row, col+8].Value?.ToString();
-                c.CustomerVAT = ws.Cells[row, col+9].Value?.ToString();
-                c.CustomerEORI = ws.Cells[row, col+10].Value?.ToString();
-                c.CustomerUKExitCode = ws.Cells[row, col+11].Value?.ToString();
-                c.CustomerFinalCustomsCode = ws.Cells[row, col+12].Value?.ToString();
-                c.CustomerFootNote = ws.Cells[row, col+13].Value?.ToString();
-                c.CustomerContactPerson = ws.Cells[row, col+14].Value?.ToString();
-                c.SAPnumber = ws.Cells[row, col+15].Value?.ToString();
-                c.Haulier = ws.Cells[row, col+16].Value?.ToString();
-                c.Incoterms = ws.Cells[row, col+17].Value?.ToString();
-                c.Currency = ws.Cells[row, col+18].Value?.ToString();
+                c.CustomerName = ws.Cells[row, col].Value?.ToString();
+                c.CustomerAddressLine1 = ws.Cells[row, col + 1].Value?.ToString();
+                c.CustomerAddressLine2 = ws.Cells[row, col + 2].Value?.ToString();
+                c.CustomerAddressLine3 = ws.Cells[row, col + 3].Value?.ToString();
+                c.CustomerCity = ws.Cells[row, col + 4].Value?.ToString();
+                c.CustomerPhone = ws.Cells[row, col + 5].Value?.ToString();
+                c.CustomerRegion = ws.Cells[row, col + 6].Value?.ToString();
+                c.CustomerCountry = ws.Cells[row, col + 7].Value?.ToString();
+                c.CustomerZipCode = ws.Cells[row, col + 8].Value?.ToString();
+                c.CustomerVAT = ws.Cells[row, col + 9].Value?.ToString();
+                c.CustomerEORI = ws.Cells[row, col + 10].Value?.ToString();
+                c.CustomerUKExitCode = ws.Cells[row, col + 11].Value?.ToString();
+                c.CustomerFinalCustomsCode = ws.Cells[row, col + 12].Value?.ToString();
+                c.CustomerFootNote = ws.Cells[row, col + 13].Value?.ToString();
+                c.CustomerContactPerson = ws.Cells[row, col + 14].Value?.ToString();
+                c.SAPnumber = ws.Cells[row, col + 15].Value?.ToString();
+                c.Haulier = ws.Cells[row, col + 16].Value?.ToString();
+                c.Incoterms = ws.Cells[row, col + 17].Value?.ToString();
+                c.Currency = ws.Cells[row, col + 18].Value?.ToString();
 
                 Customers.Add(c);
                 row += 1;
             }
 
+            foreach (var c in Customers)
+            {
+                try
+                {
+                    SqliteDataAccess.SaveNewCustomer(c);
+                }
+                catch (Exception ex)
+                {
+                    ErrorPlaceholderValueLabel.Text = string.Empty;
+                    ErrorPlaceholderValueLabel.Text = ex.Message + " for customer: " + c.CustomerName;
+                }
+            }
+
+            MessageBox.Show("Upload completed");
 
         }
 
@@ -105,7 +119,7 @@ namespace ProFormaUI
 
         private string LoadCustomerModel()
         {
-            string output = 
+            string output =
                 @"Columns in spreadheet must be in line with following pattern:
 
 Customer Name | Address1 | Address2 | Address3 | City | Phone | Region | Country | PostCode | VAT | EORI | UK Exit | EU Entry | Footnote  
@@ -120,6 +134,12 @@ First line (header) is always omitted.
         private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void UploadFileButton_Click(object sender, EventArgs e)
+        {
+            //ValidateFile();
+            UploadFile();
         }
     }
 }
