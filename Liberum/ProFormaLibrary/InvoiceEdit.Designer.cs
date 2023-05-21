@@ -362,10 +362,11 @@
             button1.TabIndex = 79;
             button1.Text = "Update Invoice";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button2.FlatAppearance.MouseDownBackColor = Color.White;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -440,7 +441,7 @@
             // 
             // button3
             // 
-            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button3.FlatAppearance.MouseDownBackColor = Color.White;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -469,6 +470,7 @@
             // 
             // currentHunumberLabel
             // 
+            currentHunumberLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             currentHunumberLabel.AutoSize = true;
             currentHunumberLabel.ImeMode = ImeMode.NoControl;
             currentHunumberLabel.Location = new Point(19, 781);
@@ -479,6 +481,7 @@
             // 
             // CurrentHuNumberValue
             // 
+            CurrentHuNumberValue.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             CurrentHuNumberValue.AutoSize = true;
             CurrentHuNumberValue.ImeMode = ImeMode.NoControl;
             CurrentHuNumberValue.Location = new Point(264, 781);

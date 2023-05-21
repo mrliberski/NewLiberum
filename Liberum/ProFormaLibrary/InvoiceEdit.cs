@@ -154,6 +154,7 @@ namespace ProFormaUI
             dataGridView1.DataSource = _invoiceItems;
 
             dataGridView1.Columns["Id"].Visible = false;
+            UpdateHUcount();
         }
 
         private void InvoiceNumberTextBox_TextChanged(object sender, EventArgs e)
@@ -185,12 +186,12 @@ namespace ProFormaUI
                             {
                                 SqliteDataAccess.RemoveItemFromInvoice(it);
                             }
-                            catch(System.Exception ex)
+                            catch (System.Exception ex)
                             {
                                 ErrorPlaceholderValueLabel.Text = ex.Message;
                             }
                         }
-                        
+
                         _invoiceItems.Remove(it);
                     }
                     dataGridView1.DataSource = null;
@@ -229,13 +230,37 @@ namespace ProFormaUI
             }
         }
 
+        private void UpdateHUcount()
+        {
+            //to update number of HU in current shipment
+            int total = 0;
+            int columnIndex = 22; // Change this to the index of the column you want to calculate the total for
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                // Check if the cell value is not null or empty
+                if (row.Cells[columnIndex].Value != null && !string.IsNullOrEmpty(row.Cells[columnIndex].Value.ToString()))
+                {
+                    // Parse the cell value as a decimal and add it to the total
+                    int cellValue = int.Parse(row.Cells[columnIndex].Value.ToString());
+                    total += cellValue;
+                }
+            }
+
+            // Output the total
+            //MessageBox.Show("The total for column " + columnIndex + " is " + total);
+
+            CurrentHuNumberValue.Text = total.ToString();
+
+        }
+
+
         public void ItemSelection(ItemModel SelectedItem)
         {
             // Here we need to map ItemModel to InvoiceItemModel
             InvoiceItem _newInvoiceItem = NewItem(SelectedItem);
 
             // Add to Db and grid view
-            AddNewItemToDatabase(_newInvoiceItem);
             _invoiceItems.Add(_newInvoiceItem);
             WireUpItems();
         }
@@ -243,7 +268,7 @@ namespace ProFormaUI
         private InvoiceItem NewItem(ItemModel item)
         {
             InvoiceItem Output = new InvoiceItem();
-            Output.InvoiceNumber = InvoiceNumberTextBox.Text;
+            //Output.InvoiceNumber = InvoiceNumberTextBox.Text;
             Output.CustomerName = CustomerNameValueLabel.Text;
 
             Output.ItemQuantity = item.ItemQuantity;
@@ -274,14 +299,75 @@ namespace ProFormaUI
             return Output;
         }
 
-        private void AddNewItemToDatabase(InvoiceItem _newInvoiceItem)
-        {
-            MessageBox.Show("Here I need to add item to db", "I will do it", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-        }
-
         public void SelectedCustomer(CustomerModel customer)
         {
             throw new NotImplementedException();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // ask if you really want to update invoice
+            // iterate through list of items and check if they have null id
+            // if they have null id add each to db
+
+            //MessageBox.Show(string.Format("Are you sure you want to remove selected item from invoice?{0}This acion is non-reversible.", Environment.NewLine));
+            DialogResult iExit;
+            iExit = MessageBox.Show(
+                "Are you sure you want to add all items to invoice?",
+                "Please confirm invoice correction.",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Information);
+
+            if (iExit == DialogResult.Yes)
+            {
+                InvoiceItem _newItem = new InvoiceItem();
+
+                foreach (InvoiceItem item in _invoiceItems)
+                {
+                    if (item.InvoiceNumber == null)
+                    {
+                        try
+                        {
+                            _newItem.CustomerName = item.CustomerName;
+                            _newItem.InvoiceNumber = InvoiceNumberTextBox.Text;
+                            _newItem.ItemQuantity = item.ItemQuantity;
+                            _newItem.ItemName = item.ItemName;
+                            _newItem.PartNumber = item.PartNumber;
+                            _newItem.CustomerNumber = item.CustomerNumber;
+                            _newItem.ItemNetWeight = item.ItemNetWeight;
+                            _newItem.ItemGrossWeight = item.ItemGrossWeight;
+                            _newItem.ItemPrice = item.ItemPrice;
+                            _newItem.ItemHScode = item.ItemHScode;
+                            _newItem.ItemCOO = item.ItemCOO;
+                            _newItem.ContainerName = item.ContainerName;
+                            _newItem.ContainersQuantity = item.ContainersQuantity;
+                            _newItem.ContainerCode = item.ContainerCode;
+                            _newItem.ContainerNetWeight = item.ContainerNetWeight;
+                            _newItem.ContainerGrossWeight = item.ContainerGrossWeight;
+                            _newItem.ContainerPrice = item.ContainerPrice;
+                            _newItem.ContainerHSCode = item.ContainerHSCode;
+                            _newItem.ContainerCOO = item.ContainerCOO;
+                            _newItem.PartsPerContainer = item.PartsPerContainer;
+                            _newItem.ContainersPerPallet = item.ContainersPerPallet;
+                            _newItem.PalletsQuantity = item.PalletsQuantity;
+                            _newItem.RequiresPackaging = item.RequiresPackaging;
+                            _newItem.RequiresLid = item.RequiresLid;
+                            _newItem.RequiresPallet = item.RequiresPallet;
+                            _newItem.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
+                            SqliteDataAccess.AddInvoiceItem(_newItem);
+
+                            PopulateItems(int.Parse(InvoiceNumberTextBox.Text));
+                        }
+                        catch (System.Exception ex)
+                        {
+                            ErrorPlaceholderValueLabel.Text = ex.Message;
+                        }
+
+
+                    }
+                }
+            }
         }
     }
 }
