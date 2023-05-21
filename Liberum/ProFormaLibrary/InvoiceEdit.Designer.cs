@@ -467,6 +467,7 @@
             button4.TabIndex = 83;
             button4.Text = "Print";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // currentHunumberLabel
             // 

@@ -132,6 +132,57 @@ namespace ProFormaLibraries
             }
         }
 
+        public static InvoiceModel SelectInvoiceData(string InvoiceNumber)
+        {
+            string connectionString = LoadConnectionString();
+
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM Invoices WHERE InvoiceNumber = @InvoiceNumber";
+                    command.Parameters.AddWithValue("@InvoiceNumber", InvoiceNumber);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string invoiceNumber = reader.GetString(reader.GetOrdinal("InvoiceNumber"));
+                            string poNumber = reader.GetString(reader.GetOrdinal("PONumber"));
+                            string kanbanNumber = reader.GetString(reader.GetOrdinal("KanbanNumber"));
+                            string created = reader.GetString(reader.GetOrdinal("Created"));
+
+                            return new InvoiceModel
+                            {
+                                InvoiceNumber = invoiceNumber,
+                                ReferenceNumber = poNumber,
+                                KanbanNumber = kanbanNumber,
+                                Created = created
+                            };
+                        }
+                    }
+                }
+            }
+
+            return null; // in case of no results
+        }
+
+
+
+        public static InvoiceModel SelectInvoiceData_Dapper(string InvoiceNumber)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@InvoiceNumber", InvoiceNumber);
+
+                var output = cnn.Query<InvoiceModel>("SELECT id, * FROM Invoices WHERE InvoiceNumber = @InvoiceNumber", parameters).FirstOrDefault();
+                return output;
+            }
+        }
+
         public static List<string> LoadRequestType()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -378,14 +429,18 @@ namespace ProFormaLibraries
                             InvoiceNumber,
                             CMRnumber,
                             Created, 
-                            Creator
+                            Creator, 
+                            KanbanNumber, 
+                            PONumber
                         )
                         values 
                         (
                             @InvoiceNumber,
                             @InvoiceNumber,
                             @Created,
-                            @Creator
+                            @Creator,
+                            @KanbanNumber,
+                            @ReferenceNumber
                         )", model);
             }
         }

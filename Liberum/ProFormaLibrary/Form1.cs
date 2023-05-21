@@ -376,6 +376,8 @@ namespace ProFormaLibrary
             invoiceNumberSaved = InvoiceNumberValue.Text;
             Invoice.CMRnumber = Invoice.InvoiceNumber;
             Invoice.Created = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            Invoice.KanbanNumber = KanbanTextBox.Text;
+            Invoice.ReferenceNumber = POtextBox.Text;
 
             SqliteDataAccess.CreateInvoice(Invoice);
 

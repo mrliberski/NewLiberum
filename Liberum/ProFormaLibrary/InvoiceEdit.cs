@@ -369,5 +369,25 @@ namespace ProFormaUI
                 }
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(_invoiceItems != null)
+            {
+                CustomerModel customerModel = new CustomerModel();
+                InvoiceModel invoiceModel = new InvoiceModel();
+                List<InvoiceItem> items = new List<InvoiceItem>();
+
+                customerModel = SqliteDataAccess.FetchCustomerInfo(CustomerNameValueLabel.Text);
+                invoiceModel = SqliteDataAccess.SelectInvoiceData(InvoiceNumberTextBox.Text);
+                items = _invoiceItems;
+
+                HtmlAndPdfLogic.CreateHtmlInvoice(customerModel, invoiceModel, items);
+                HtmlAndPdfLogic.CreatePdfInvoice();
+
+                // TODO - BUG: PO number is not returned from db query (null)
+            }
+
+        }
     }
 }
