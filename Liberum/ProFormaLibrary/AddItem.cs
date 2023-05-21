@@ -105,6 +105,8 @@ namespace ProFormaUI
                 //TellMe(((ItemModel)selectedItem).PalletsQuantity.ToString());
                 selectedItemNameLabel.Text = ((ItemModel)selectedItem).ItemName;
                 PackagingNameLabel.Text = ((ItemModel)selectedItem).ContainerName;
+                PartNumberValue.Text = ((ItemModel)selectedItem).PartNumber;
+                CustomerNumberValue.Text = ((ItemModel)selectedItem).CustomerNumber;
 
                 if (((ItemModel)selectedItem).ItemCOO != null)
                 {

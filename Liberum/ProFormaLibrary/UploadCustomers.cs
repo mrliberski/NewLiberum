@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,41 +23,46 @@ namespace ProFormaUI
 
         private void ResetForm()
         {
+            ErrorPlaceholderValueLabel.ForeColor = Color.Red;
             ErrorPlaceholderValueLabel.Text = string.Empty;
             InfoLabel.Text = string.Empty;
             PathSelectionTextBox.Text = string.Empty;
             CustomerModelValue.Text = LoadCustomerModel();
         }
 
-        private void ValidateFile()
-        {
-            //check extension
-            //check if available?
-            //check format
-        }
-
         private void UploadFile()
         {
-            //Once validated only we can try to upload and capture any errors
             string path = PathSelectionTextBox.Text;
 
-            List<CustomerModel> Customers = ExcelLogic.UploadCustomersToDatabase(path);
-
-            foreach (var c in Customers)
+            if (File.Exists(path) && Regex.IsMatch(path, @"^.+\.xlsx$"))
             {
-                try
+                List<CustomerModel> Customers = ExcelLogic.UploadCustomersToDatabase(path);
+
+                foreach (var c in Customers)
                 {
-                    SqliteDataAccess.SaveNewCustomer(c);
+                    try
+                    {
+                        SqliteDataAccess.SaveNewCustomer(c);
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorPlaceholderValueLabel.ForeColor = Color.Red;
+                        //ErrorPlaceholderValueLabel.Text = string.Empty;
+                        ErrorPlaceholderValueLabel.Text += ex.Message + " for customer: " + c.CustomerName;
+                    }
                 }
-                catch (Exception ex)
-                {
-                    ErrorPlaceholderValueLabel.Text = string.Empty;
-                    ErrorPlaceholderValueLabel.Text = ex.Message + " for customer: " + c.CustomerName;
-                }
+
+                InfoLabel.ForeColor = Color.Green;
+                InfoLabel.Text = string.Empty;
+                InfoLabel.Text = "Upload sequence completed";
+                //MessageBox.Show("Upload completed");
             }
-
-            MessageBox.Show("Upload completed");
-
+            else
+            {
+                ErrorPlaceholderValueLabel.ForeColor = Color.Red;
+                ErrorPlaceholderValueLabel.Text = string.Empty;
+                ErrorPlaceholderValueLabel.Text = "Invalid file selection or invalid file extension.";
+            }
         }
 
         private void FileSelectButton_Click(object sender, EventArgs e)

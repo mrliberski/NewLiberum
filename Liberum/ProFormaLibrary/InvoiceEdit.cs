@@ -179,13 +179,25 @@ namespace ProFormaUI
                     if (rowIndex >= 0)
                     {
                         InvoiceItem it = _invoiceItems[rowIndex];
+                        if (it != null)
+                        {
+                            try
+                            {
+                                SqliteDataAccess.RemoveItemFromInvoice(it);
+                            }
+                            catch(System.Exception ex)
+                            {
+                                ErrorPlaceholderValueLabel.Text = ex.Message;
+                            }
+                        }
+                        
                         _invoiceItems.Remove(it);
                     }
                     dataGridView1.DataSource = null;
                     dataGridView1.DataSource = _invoiceItems;
                     WireUpItems();
 
-                    MessageBox.Show(string.Format("I should be romoving item from DB here{0}But I am not...{0}I will get to it.", Environment.NewLine));
+                    //MessageBox.Show(string.Format("I should be romoving item from DB here{0}But I am not...{0}I will get to it.", Environment.NewLine));
                 }
             }
             catch (System.Exception ex)

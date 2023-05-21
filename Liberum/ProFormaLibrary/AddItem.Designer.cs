@@ -54,6 +54,10 @@
             PalletsErrorLAbel = new Label();
             ItemHScodeLabel = new Label();
             groupBox1 = new GroupBox();
+            CustomerNumberValue = new Label();
+            PartNumberValue = new Label();
+            label11 = new Label();
+            label10 = new Label();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
@@ -73,7 +77,7 @@
             AvailableItemsComboBox.FormattingEnabled = true;
             AvailableItemsComboBox.Location = new Point(308, 27);
             AvailableItemsComboBox.Name = "AvailableItemsComboBox";
-            AvailableItemsComboBox.Size = new Size(722, 28);
+            AvailableItemsComboBox.Size = new Size(922, 28);
             AvailableItemsComboBox.TabIndex = 0;
             AvailableItemsComboBox.SelectedIndexChanged += AvailableItemsComboBox_SelectedIndexChanged;
             // 
@@ -116,7 +120,7 @@
             // selectedItemNameLabel
             // 
             selectedItemNameLabel.AutoSize = true;
-            selectedItemNameLabel.Location = new Point(89, 30);
+            selectedItemNameLabel.Location = new Point(146, 36);
             selectedItemNameLabel.Name = "selectedItemNameLabel";
             selectedItemNameLabel.Size = new Size(100, 20);
             selectedItemNameLabel.TabIndex = 39;
@@ -134,7 +138,7 @@
             // PackagingNameLabel
             // 
             PackagingNameLabel.AutoSize = true;
-            PackagingNameLabel.Location = new Point(89, 90);
+            PackagingNameLabel.Location = new Point(146, 134);
             PackagingNameLabel.Name = "PackagingNameLabel";
             PackagingNameLabel.Size = new Size(120, 20);
             PackagingNameLabel.TabIndex = 41;
@@ -146,7 +150,7 @@
             AddItemButton.FlatStyle = FlatStyle.Flat;
             AddItemButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             AddItemButton.ImeMode = ImeMode.NoControl;
-            AddItemButton.Location = new Point(39, 297);
+            AddItemButton.Location = new Point(33, 349);
             AddItemButton.Name = "AddItemButton";
             AddItemButton.Size = new Size(171, 43);
             AddItemButton.TabIndex = 42;
@@ -160,7 +164,7 @@
             Reset.FlatStyle = FlatStyle.Flat;
             Reset.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Reset.ImeMode = ImeMode.NoControl;
-            Reset.Location = new Point(228, 297);
+            Reset.Location = new Point(224, 349);
             Reset.Name = "Reset";
             Reset.Size = new Size(171, 43);
             Reset.TabIndex = 43;
@@ -174,7 +178,7 @@
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(615, 297);
+            CloseButton.Location = new Point(1059, 349);
             CloseButton.Name = "CloseButton";
             CloseButton.Size = new Size(171, 43);
             CloseButton.TabIndex = 44;
@@ -299,7 +303,7 @@
             // ItemHScodeLabel
             // 
             ItemHScodeLabel.AutoSize = true;
-            ItemHScodeLabel.Location = new Point(89, 50);
+            ItemHScodeLabel.Location = new Point(146, 94);
             ItemHScodeLabel.Name = "ItemHScodeLabel";
             ItemHScodeLabel.Size = new Size(66, 20);
             ItemHScodeLabel.TabIndex = 60;
@@ -307,6 +311,10 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(CustomerNumberValue);
+            groupBox1.Controls.Add(PartNumberValue);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(label10);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label7);
@@ -323,15 +331,51 @@
             groupBox1.Controls.Add(PackagingNameLabel);
             groupBox1.Location = new Point(536, 84);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(494, 183);
+            groupBox1.Size = new Size(694, 235);
             groupBox1.TabIndex = 61;
             groupBox1.TabStop = false;
             groupBox1.Text = "Item Data";
             // 
+            // CustomerNumberValue
+            // 
+            CustomerNumberValue.AutoSize = true;
+            CustomerNumberValue.Location = new Point(146, 76);
+            CustomerNumberValue.Name = "CustomerNumberValue";
+            CustomerNumberValue.Size = new Size(130, 20);
+            CustomerNumberValue.TabIndex = 74;
+            CustomerNumberValue.Text = "Customer Number";
+            // 
+            // PartNumberValue
+            // 
+            PartNumberValue.AutoSize = true;
+            PartNumberValue.Location = new Point(146, 56);
+            PartNumberValue.Name = "PartNumberValue";
+            PartNumberValue.Size = new Size(92, 20);
+            PartNumberValue.TabIndex = 73;
+            PartNumberValue.Text = "Part Number";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(7, 76);
+            label11.Name = "label11";
+            label11.Size = new Size(133, 20);
+            label11.TabIndex = 72;
+            label11.Text = "Customer Number:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(45, 56);
+            label10.Name = "label10";
+            label10.Size = new Size(95, 20);
+            label10.TabIndex = 62;
+            label10.Text = "Part Number:";
+            // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(36, 110);
+            label9.Location = new Point(93, 154);
             label9.Name = "label9";
             label9.Size = new Size(47, 20);
             label9.TabIndex = 71;
@@ -340,7 +384,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(4, 90);
+            label8.Location = new Point(61, 134);
             label8.Name = "label8";
             label8.Size = new Size(79, 20);
             label8.TabIndex = 70;
@@ -349,7 +393,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(30, 70);
+            label7.Location = new Point(87, 114);
             label7.Name = "label7";
             label7.Size = new Size(53, 20);
             label7.TabIndex = 69;
@@ -358,7 +402,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(30, 150);
+            label6.Location = new Point(87, 194);
             label6.Name = "label6";
             label6.Size = new Size(53, 20);
             label6.TabIndex = 68;
@@ -367,7 +411,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(52, 130);
+            label5.Location = new Point(109, 174);
             label5.Name = "label5";
             label5.Size = new Size(31, 20);
             label5.TabIndex = 67;
@@ -376,7 +420,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(52, 50);
+            label4.Location = new Point(109, 94);
             label4.Name = "label4";
             label4.Size = new Size(31, 20);
             label4.TabIndex = 66;
@@ -385,7 +429,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(41, 30);
+            label3.Location = new Point(98, 36);
             label3.Name = "label3";
             label3.Size = new Size(42, 20);
             label3.TabIndex = 65;
@@ -394,7 +438,7 @@
             // PackagingCOOlabel
             // 
             PackagingCOOlabel.AutoSize = true;
-            PackagingCOOlabel.Location = new Point(89, 150);
+            PackagingCOOlabel.Location = new Point(146, 194);
             PackagingCOOlabel.Name = "PackagingCOOlabel";
             PackagingCOOlabel.Size = new Size(111, 20);
             PackagingCOOlabel.TabIndex = 64;
@@ -403,7 +447,7 @@
             // PackagingHSlabel
             // 
             PackagingHSlabel.AutoSize = true;
-            PackagingHSlabel.Location = new Point(89, 130);
+            PackagingHSlabel.Location = new Point(146, 174);
             PackagingHSlabel.Name = "PackagingHSlabel";
             PackagingHSlabel.Size = new Size(99, 20);
             PackagingHSlabel.TabIndex = 63;
@@ -412,7 +456,7 @@
             // PackagingCodeLabel
             // 
             PackagingCodeLabel.AutoSize = true;
-            PackagingCodeLabel.Location = new Point(89, 110);
+            PackagingCodeLabel.Location = new Point(146, 154);
             PackagingCodeLabel.Name = "PackagingCodeLabel";
             PackagingCodeLabel.Size = new Size(115, 20);
             PackagingCodeLabel.TabIndex = 62;
@@ -421,7 +465,7 @@
             // ItemCOOlabel
             // 
             ItemCOOlabel.AutoSize = true;
-            ItemCOOlabel.Location = new Point(89, 70);
+            ItemCOOlabel.Location = new Point(146, 114);
             ItemCOOlabel.Name = "ItemCOOlabel";
             ItemCOOlabel.Size = new Size(74, 20);
             ItemCOOlabel.TabIndex = 61;
@@ -431,7 +475,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1058, 378);
+            ClientSize = new Size(1250, 422);
             Controls.Add(groupBox1);
             Controls.Add(PalletsErrorLAbel);
             Controls.Add(CPHUerrorLAbel);
@@ -455,6 +499,7 @@
             Controls.Add(SelectAvailableLAbel);
             Controls.Add(AvailableItemsComboBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(1268, 469);
             Name = "AddItem";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Add Item to Shipment";
@@ -502,5 +547,9 @@
         private Label label5;
         private Label label4;
         private Label label3;
+        private Label label11;
+        private Label label10;
+        private Label CustomerNumberValue;
+        private Label PartNumberValue;
     }
 }

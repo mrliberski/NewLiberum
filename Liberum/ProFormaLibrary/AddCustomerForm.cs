@@ -52,7 +52,6 @@ namespace ProFormaUI
             SqliteDataAccess.SaveNewCustomer(model);
         }
 
-        // TODO - make validation more gracious
         private void ValidateForm()
         {
             if (customerNameTextBox.Text.Length < 3)

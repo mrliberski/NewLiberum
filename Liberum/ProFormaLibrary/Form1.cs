@@ -621,7 +621,7 @@ namespace ProFormaLibrary
 
 
                     EadRequestTemplate emailBody = new EadRequestTemplate();
-                    string body = emailBody.EadRequestFormModel(request);// TODO: buildBody() -  extract template to class;
+                    string body = emailBody.EadRequestFormModel(request);
 
                     Outlook.Application outlookApp = new Outlook.Application();
                     Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);

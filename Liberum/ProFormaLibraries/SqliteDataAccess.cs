@@ -14,6 +14,28 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static void RemoveItemFromInvoice(InvoiceItem item)
+        {
+            if (item != null)
+            {
+                var recordId = item.Id;
+
+                using (SQLiteConnection connection = new SQLiteConnection(LoadConnectionString()))
+                {
+                    connection.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(connection))
+                    {
+                        // Specify the SQL query with a parameter for the item ID
+                        command.CommandText = "DELETE FROM InvoiceItems WHERE Id = @id";
+                        command.Parameters.AddWithValue("@id", recordId);
+
+                        // Execute the command
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
         public static List<InvoiceItem> PopulateItems(int invoice)
         {
             using (var cnn = new SQLiteConnection(LoadConnectionString()))
