@@ -15,5 +15,6 @@ namespace ProFormaLibraries
         public string? KanbanNumber { get; set; }
         public string? Created { get; set; }
         public string? Creator { get { return Environment.UserName; } }
+        public string? InvoiceType { get; set; }
     }
 }

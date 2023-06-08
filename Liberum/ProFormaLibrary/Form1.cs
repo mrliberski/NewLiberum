@@ -19,7 +19,7 @@ namespace ProFormaLibrary
         List<string> requestType = new List<string>();
         List<string> ibfTimeslot = new List<string>();
         List<CustomerModel> customers = new List<CustomerModel>();
-        public DateTime deadLine = new DateTime(2023, 06, 01);
+        public DateTime deadLine = new DateTime(2023, 07, 01);
         public List<ItemModel> Items = new List<ItemModel>();
         public string SelectedCustomer { get; set; }
         public string HUquantity { get; set; }
@@ -28,6 +28,7 @@ namespace ProFormaLibrary
         public InvoiceModel Invoice = new InvoiceModel();
         public CustomerModel Customer = new CustomerModel();
         List<string> ProcedureCode = new List<string>();
+        List<string> InvoiceTypeList = new List<string>();
 
 
         public ProFormaGenerator()
@@ -35,6 +36,7 @@ namespace ProFormaLibrary
             InitializeComponent();
             LoadRequestType();
             LoadIbfTimeslots();
+            LoadInvoiceTypes();
             LoadProcedure();
             LoadCustomers();
             SetToolbarLabelExpiryDate();
@@ -58,6 +60,20 @@ namespace ProFormaLibrary
 
             // Play the custom sound
             System.Reflection.Assembly.GetExecutingAssembly().PlaySound("customSound", customSound);
+        }
+
+        private void LoadInvoiceTypes()
+        {
+            InvoiceTypeList.Clear();
+            InvoiceTypeList = SqliteDataAccess.LoadInvoiceType();
+            WireUpInvoiceTypes();
+        }
+
+        private void WireUpInvoiceTypes()
+        {
+            InvoiceTypeComboBox.Items.Clear();
+            InvoiceTypeComboBox.DataSource = null;
+            InvoiceTypeComboBox.DataSource = InvoiceTypeList;
         }
 
         /// <summary>
@@ -464,6 +480,7 @@ namespace ProFormaLibrary
 
             }
 
+            Invoice.InvoiceType = InvoiceTypeComboBox.SelectedItem.ToString();
             Invoice.ReferenceNumber = POtextBox.Text;
             Invoice.KanbanNumber = KanbanTextBox.Text;
 
@@ -865,6 +882,17 @@ namespace ProFormaLibrary
         private void toolStripStatusLabel4_Click(object sender, EventArgs e)
         {
             NotYet();
+        }
+
+        private void openInvoiceFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string directoryPath = @".\HTML";
+            System.Diagnostics.Process.Start("explorer.exe", directoryPath);
+        }
+
+        private void createInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

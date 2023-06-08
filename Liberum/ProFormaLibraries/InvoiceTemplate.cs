@@ -24,6 +24,7 @@ namespace ProFormaLibraries
             int HUcount = 0;
             double WeightCount = 0;
             double ValueCount = 0;
+            double NetWeightCount = 0;
 
 
             //string PicFolderPath = @".\Pictures";
@@ -47,8 +48,11 @@ namespace ProFormaLibraries
             //InvoiceContent = InvoiceContent+ GraphicsPathWithFilePrefix; 
 
             InvoiceContent = InvoiceContent + @""" alt = ""Antolin"" style = ""padding: 5pt; max-width: 50%; height: auto;""></div>
-                    <div style = ""background-color:white; float:inline-end; text-align: right; padding-left: 10px;""><p><h3>
-                                    Pro Forma Invoice&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3></p></div></div><hr>";
+                    <div style = ""background-color:white; float:inline-end; text-align: right; padding-left: 10px;""><p><h3>";
+
+            InvoiceContent = InvoiceContent + Invoice.InvoiceType;
+
+            InvoiceContent = InvoiceContent + "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3></p></div></div><hr>";
 
             InvoiceContent = InvoiceContent + @$"
 
@@ -123,6 +127,8 @@ namespace ProFormaLibraries
                 WeightCount = WeightCount + (model.ContainersQuantity*model.ContainerNetWeight);
                 WeightCount = WeightCount + (model.ItemQuantity*model.ItemNetWeight);
 
+                NetWeightCount = NetWeightCount + (model.ItemQuantity * model.ItemNetWeight);
+
                 ValueCount = ValueCount + (model.ContainersQuantity * model.ContainerPrice);
                 ValueCount = ValueCount + (model.ItemPrice*model.ItemQuantity);
 
@@ -146,6 +152,7 @@ namespace ProFormaLibraries
                         <table align = ""center"" cellspacing = ""0"" cellpadding = ""0"" style = ""font-size:10pt; font-family:Calibri; border-collapse: collapse; text-align:center; align-items: center; width: 100%; "" ><hr>
                             <tr>
                                 <th> Handling Units: {HUcount} </th>
+                                <th> Net Weight: {NetWeightCount.ToString("0.00")} kg </th>
                                 <th> Total Weight: {WeightCount.ToString("0.00")} kg </th>
                                 <th> Total Value: {Customer.Currency} {ValueCount.ToString("0.00")} </th>
                         </tr></table></div>

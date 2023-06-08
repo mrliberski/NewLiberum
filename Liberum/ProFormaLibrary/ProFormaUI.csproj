@@ -10,7 +10,7 @@
     <ApplicationIcon>grumpsyico.ico</ApplicationIcon>
     <Title>Liberum</Title>
     <Copyright>Copyright © 2020 - 2023 Pawel Liberski</Copyright>
-    <Description>Purpose built Proof - of - concept  Pro Forma invoice generator for small and quite poor office.</Description>
+    <Description>Purpose built Proof - of - concept  Pro Forma invoice generator for small and surprisingly quite poor office.</Description>
     <PackageProjectUrl>https://github.com/mrliberski/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mrliberski/NewLiberum</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -19,6 +19,7 @@
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <FileVersion>1.0.2.0</FileVersion>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <Version>1.1.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

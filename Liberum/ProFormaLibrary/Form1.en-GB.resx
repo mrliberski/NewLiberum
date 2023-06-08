@@ -138,7 +138,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 131</value>
+    <value>208, 166</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dateTimePicker1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
@@ -169,7 +169,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="RequestTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 97</value>
+    <value>208, 132</value>
   </data>
   <data name="RequestTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
@@ -184,7 +184,7 @@
     <value>NoControl</value>
   </data>
   <data name="TypeOfRequestLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 100</value>
+    <value>57, 135</value>
   </data>
   <data name="TypeOfRequestLAbel.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 20</value>
@@ -202,7 +202,7 @@
     <value>NoControl</value>
   </data>
   <data name="selectIBFdateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 136</value>
+    <value>44, 171</value>
   </data>
   <data name="selectIBFdateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 20</value>
@@ -220,7 +220,7 @@
     <value>NoControl</value>
   </data>
   <data name="selectIBFTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 167</value>
+    <value>20, 202</value>
   </data>
   <data name="selectIBFTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 20</value>
@@ -232,7 +232,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="IBFtimeSlotComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 164</value>
+    <value>208, 199</value>
   </data>
   <data name="IBFtimeSlotComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
@@ -242,6 +242,18 @@
   </data>
   <data name="CustomerDetailsGroupBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 31</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 363</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Text" xml:space="preserve">
+    <value>Customer Selection</value>
   </data>
   <data name="CurrencytextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -305,27 +317,6 @@
   </data>
   <data name="IncoLabel.Text" xml:space="preserve">
     <value>Incoterms</value>
-  </data>
-  <data name="EditCustomerLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="EditCustomerLink.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="EditCustomerLink.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="EditCustomerLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="EditCustomerLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>789, 300</value>
-  </data>
-  <data name="EditCustomerLink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 20</value>
-  </data>
-  <data name="EditCustomerLink.Text" xml:space="preserve">
-    <value>Edit Customer</value>
   </data>
   <data name="CustomsOfficeTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -428,24 +419,6 @@
   </data>
   <data name="Hauliertextbox.Text" xml:space="preserve">
     <value>Haulier Name</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 320</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 20</value>
-  </data>
-  <data name="CreatNewCustomerlinkLabel1.Text" xml:space="preserve">
-    <value>Create New Customer</value>
   </data>
   <data name="haulierName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -783,18 +756,6 @@
   <data name="selectCustomerLAbel.Text" xml:space="preserve">
     <value>Select Customer</value>
   </data>
-  <data name="CustomerDetailsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 31</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 363</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Text" xml:space="preserve">
-    <value>Customer Selection</value>
-  </data>
   <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -803,6 +764,19 @@
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1325, 351</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 878</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 13, 0</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1407, 26</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
   </data>
   <data name="databaseStatusStripLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -833,40 +807,6 @@
   </data>
   <data name="toolStripStatusLabel5.Text" xml:space="preserve">
     <value>Total Number of HUs in current shipment: </value>
-  </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 878</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 13, 0</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 26</value>
-  </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="createNewItemLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="createNewItemLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="createNewItemLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="createNewItemLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="createNewItemLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 778</value>
-  </data>
-  <data name="createNewItemLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="createNewItemLabel.Text" xml:space="preserve">
-    <value>Create New Item</value>
   </data>
   <data name="addItemLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -903,27 +843,6 @@
   </data>
   <data name="createInvoiceButton.Text" xml:space="preserve">
     <value>Create Invoice</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1229, 778</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 20</value>
-  </data>
-  <data name="emailRecipientsListLinkLabel.Text" xml:space="preserve">
-    <value>Edit email settings</value>
   </data>
   <data name="createBrokerRequest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -1019,7 +938,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 237</value>
+    <value>49, 272</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
@@ -1037,7 +956,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 269</value>
+    <value>88, 304</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 20</value>
@@ -1052,7 +971,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="POtextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 233</value>
+    <value>208, 268</value>
   </data>
   <data name="POtextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 27</value>
@@ -1064,7 +983,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="KanbanTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 266</value>
+    <value>208, 301</value>
   </data>
   <data name="KanbanTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 27</value>
@@ -1082,7 +1001,7 @@
     <value>NoControl</value>
   </data>
   <data name="ProcedureCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 202</value>
+    <value>57, 237</value>
   </data>
   <data name="ProcedureCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 20</value>
@@ -1094,7 +1013,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="ProcedureTypeCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 199</value>
+    <value>208, 234</value>
   </data>
   <data name="ProcedureTypeCombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
@@ -1103,7 +1022,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="TrailerTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 299</value>
+    <value>208, 334</value>
   </data>
   <data name="TrailerTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 27</value>
@@ -1121,13 +1040,22 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 302</value>
+    <value>63, 337</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 20</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Trailer Number</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1407, 28</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="itemToolStripMenuItem.Text" xml:space="preserve">
+    <value>Item</value>
   </data>
   <data name="createNewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 26</value>
@@ -1141,14 +1069,17 @@
   <data name="addItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Add item</value>
   </data>
+  <data name="uploadItemListToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 26</value>
   </data>
   <data name="uploadItemListToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Item List</value>
   </data>
-  <data name="itemToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item</value>
+  <data name="invoiceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Invoice</value>
   </data>
   <data name="createInvoiceToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Invoice</value>
@@ -1159,8 +1090,8 @@
   <data name="openInvoiceFolderToolStripMenuItem.Text" xml:space="preserve">
     <value>Open Invoice Folder</value>
   </data>
-  <data name="invoiceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Invoice</value>
+  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Customer</value>
   </data>
   <data name="createNewCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Create New Customer</value>
@@ -1171,8 +1102,11 @@
   <data name="uploadCustomerFileToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Customer File</value>
   </data>
-  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Customer</value>
+  <data name="datebaseToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="datebaseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Database</value>
   </data>
   <data name="uploadCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 26</value>
@@ -1192,8 +1126,11 @@
   <data name="mergeDatabaseToolStripMenuItem.Text" xml:space="preserve">
     <value>Merge Database</value>
   </data>
-  <data name="datebaseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Database</value>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="emailSettingsToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="emailSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 26</value>
@@ -1213,15 +1150,6 @@
   <data name="licenceToolStripMenuItem.Text" xml:space="preserve">
     <value>Licence</value>
   </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 28</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
   <data name="errolLAbel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1236,6 +1164,33 @@
   </data>
   <data name="errolLAbel.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
+  </data>
+  <data name="InvoiceTypeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="InvoiceTypeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="InvoiceTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="InvoiceTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="InvoiceTypeLabel.Text" xml:space="preserve">
+    <value>Invoice Type:</value>
+  </data>
+  <data name="InvoiceTypeComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="InvoiceTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 98</value>
+  </data>
+  <data name="InvoiceTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 28</value>
+  </data>
+  <data name="InvoiceTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

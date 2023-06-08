@@ -120,6 +120,15 @@ namespace ProFormaLibraries
             }
         }
 
+        public static List<CustomerModel> FetchCustomerInfo()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<CustomerModel>("SELECT * FROM Customers ORDER BY CustomerName ASC").ToList();
+                return output;
+            }
+        }
+
         public static InvoiceItem SelectInvoiceCustomer(int SelectedInvoice)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -169,8 +178,6 @@ namespace ProFormaLibraries
             return null; // in case of no results
         }
 
-
-
         public static InvoiceModel SelectInvoiceData_Dapper(string InvoiceNumber)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -188,6 +195,15 @@ namespace ProFormaLibraries
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 var output = cnn.Query<string>("select RequestName from RequestType", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadInvoiceType()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select InvoiceType from InvoiceType", new DynamicParameters());
                 return output.ToList();
             }
         }
@@ -232,7 +248,7 @@ namespace ProFormaLibraries
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var output = cnn.Query<CustomerModel>("select id,* from Customers", new DynamicParameters());
+                var output = cnn.Query<CustomerModel>("select id,* from Customers ORDER BY CustomerName ASC", new DynamicParameters());
                 return output.ToList();
             }
         }

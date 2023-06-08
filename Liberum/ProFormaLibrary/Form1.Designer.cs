@@ -42,7 +42,6 @@
             CurrencyLAbel = new Label();
             IncotermTextBox = new TextBox();
             IncoLabel = new Label();
-            EditCustomerLink = new LinkLabel();
             CustomsOfficeTextBox = new TextBox();
             customsOfficelabel = new Label();
             UKexitTextbox = new TextBox();
@@ -50,7 +49,6 @@
             driverNumberTextbox = new TextBox();
             driversNumberLAbel = new Label();
             Hauliertextbox = new TextBox();
-            CreatNewCustomerlinkLabel1 = new LinkLabel();
             haulierName = new Label();
             telephoneValue = new Label();
             contactNameVAlue = new Label();
@@ -82,10 +80,8 @@
             toolStripStatusLabel3 = new ToolStripStatusLabel();
             toolStripStatusLabel4 = new ToolStripStatusLabel();
             toolStripStatusLabel5 = new ToolStripStatusLabel();
-            createNewItemLabel = new LinkLabel();
             addItemLinkLabel = new LinkLabel();
             createInvoiceButton = new Button();
-            emailRecipientsListLinkLabel = new LinkLabel();
             createBrokerRequest = new Button();
             clearButton = new Button();
             closeDownButton = new Button();
@@ -120,6 +116,8 @@
             aboutToolStripMenuItem = new ToolStripMenuItem();
             licenceToolStripMenuItem = new ToolStripMenuItem();
             errolLAbel = new Label();
+            InvoiceTypeLabel = new Label();
+            InvoiceTypeComboBox = new ComboBox();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -175,7 +173,6 @@
             CustomerDetailsGroupBox.Controls.Add(CurrencyLAbel);
             CustomerDetailsGroupBox.Controls.Add(IncotermTextBox);
             CustomerDetailsGroupBox.Controls.Add(IncoLabel);
-            CustomerDetailsGroupBox.Controls.Add(EditCustomerLink);
             CustomerDetailsGroupBox.Controls.Add(CustomsOfficeTextBox);
             CustomerDetailsGroupBox.Controls.Add(customsOfficelabel);
             CustomerDetailsGroupBox.Controls.Add(UKexitTextbox);
@@ -183,7 +180,6 @@
             CustomerDetailsGroupBox.Controls.Add(driverNumberTextbox);
             CustomerDetailsGroupBox.Controls.Add(driversNumberLAbel);
             CustomerDetailsGroupBox.Controls.Add(Hauliertextbox);
-            CustomerDetailsGroupBox.Controls.Add(CreatNewCustomerlinkLabel1);
             CustomerDetailsGroupBox.Controls.Add(haulierName);
             CustomerDetailsGroupBox.Controls.Add(telephoneValue);
             CustomerDetailsGroupBox.Controls.Add(contactNameVAlue);
@@ -230,13 +226,6 @@
             resources.ApplyResources(IncoLabel, "IncoLabel");
             IncoLabel.Name = "IncoLabel";
             // 
-            // EditCustomerLink
-            // 
-            resources.ApplyResources(EditCustomerLink, "EditCustomerLink");
-            EditCustomerLink.Name = "EditCustomerLink";
-            EditCustomerLink.TabStop = true;
-            EditCustomerLink.LinkClicked += EditCustomerLink_LinkClicked;
-            // 
             // CustomsOfficeTextBox
             // 
             resources.ApplyResources(CustomsOfficeTextBox, "CustomsOfficeTextBox");
@@ -271,13 +260,6 @@
             // 
             resources.ApplyResources(Hauliertextbox, "Hauliertextbox");
             Hauliertextbox.Name = "Hauliertextbox";
-            // 
-            // CreatNewCustomerlinkLabel1
-            // 
-            resources.ApplyResources(CreatNewCustomerlinkLabel1, "CreatNewCustomerlinkLabel1");
-            CreatNewCustomerlinkLabel1.Name = "CreatNewCustomerlinkLabel1";
-            CreatNewCustomerlinkLabel1.TabStop = true;
-            CreatNewCustomerlinkLabel1.LinkClicked += CreatNewCustomerlinkLabel1_LinkClicked;
             // 
             // haulierName
             // 
@@ -444,13 +426,6 @@
             resources.ApplyResources(toolStripStatusLabel5, "toolStripStatusLabel5");
             toolStripStatusLabel5.Name = "toolStripStatusLabel5";
             // 
-            // createNewItemLabel
-            // 
-            resources.ApplyResources(createNewItemLabel, "createNewItemLabel");
-            createNewItemLabel.Name = "createNewItemLabel";
-            createNewItemLabel.TabStop = true;
-            createNewItemLabel.LinkClicked += CreateNewItemLabel_LinkClicked;
-            // 
             // addItemLinkLabel
             // 
             resources.ApplyResources(addItemLinkLabel, "addItemLinkLabel");
@@ -465,13 +440,6 @@
             createInvoiceButton.Name = "createInvoiceButton";
             createInvoiceButton.UseVisualStyleBackColor = true;
             createInvoiceButton.Click += CreateInvoiceButton_Click;
-            // 
-            // emailRecipientsListLinkLabel
-            // 
-            resources.ApplyResources(emailRecipientsListLinkLabel, "emailRecipientsListLinkLabel");
-            emailRecipientsListLinkLabel.Name = "emailRecipientsListLinkLabel";
-            emailRecipientsListLinkLabel.TabStop = true;
-            emailRecipientsListLinkLabel.LinkClicked += EmailRecipientsListLinkLabel_LinkClicked;
             // 
             // createBrokerRequest
             // 
@@ -585,6 +553,7 @@
             // 
             resources.ApplyResources(createInvoiceToolStripMenuItem, "createInvoiceToolStripMenuItem");
             createInvoiceToolStripMenuItem.Name = "createInvoiceToolStripMenuItem";
+            createInvoiceToolStripMenuItem.Click += createInvoiceToolStripMenuItem_Click;
             // 
             // editInvoiceToolStripMenuItem
             // 
@@ -596,6 +565,7 @@
             // 
             resources.ApplyResources(openInvoiceFolderToolStripMenuItem, "openInvoiceFolderToolStripMenuItem");
             openInvoiceFolderToolStripMenuItem.Name = "openInvoiceFolderToolStripMenuItem";
+            openInvoiceFolderToolStripMenuItem.Click += openInvoiceFolderToolStripMenuItem_Click;
             // 
             // customerToolStripMenuItem
             // 
@@ -673,11 +643,24 @@
             errolLAbel.ForeColor = Color.Red;
             errolLAbel.Name = "errolLAbel";
             // 
+            // InvoiceTypeLabel
+            // 
+            resources.ApplyResources(InvoiceTypeLabel, "InvoiceTypeLabel");
+            InvoiceTypeLabel.Name = "InvoiceTypeLabel";
+            // 
+            // InvoiceTypeComboBox
+            // 
+            resources.ApplyResources(InvoiceTypeComboBox, "InvoiceTypeComboBox");
+            InvoiceTypeComboBox.FormattingEnabled = true;
+            InvoiceTypeComboBox.Name = "InvoiceTypeComboBox";
+            // 
             // ProFormaGenerator
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            Controls.Add(InvoiceTypeLabel);
+            Controls.Add(InvoiceTypeComboBox);
             Controls.Add(errolLAbel);
             Controls.Add(TrailerTextBox);
             Controls.Add(label3);
@@ -691,10 +674,8 @@
             Controls.Add(closeDownButton);
             Controls.Add(clearButton);
             Controls.Add(createBrokerRequest);
-            Controls.Add(emailRecipientsListLinkLabel);
             Controls.Add(createInvoiceButton);
             Controls.Add(addItemLinkLabel);
-            Controls.Add(createNewItemLabel);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             Controls.Add(dataGridView1);
@@ -733,7 +714,6 @@
         private Label selectIBFTimeLabel;
         private ComboBox IBFtimeSlotComboBox;
         private GroupBox CustomerDetailsGroupBox;
-        private LinkLabel CreatNewCustomerlinkLabel1;
         private Label sapNumberValue;
         private Label customerSapNumberLabel;
         private Label eoriNumberValue;
@@ -767,11 +747,8 @@
         private Label UKexitFacilityLabel;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel databaseStatusStripLabel;
-        private LinkLabel EditCustomerLink;
-        private LinkLabel createNewItemLabel;
         private LinkLabel addItemLinkLabel;
         private Button createInvoiceButton;
-        private LinkLabel emailRecipientsListLinkLabel;
         private Button createBrokerRequest;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private Button clearButton;
@@ -815,5 +792,7 @@
         private ToolStripMenuItem uploadItemListToolStripMenuItem;
         private ToolStripMenuItem uploadCustomerFileToolStripMenuItem;
         private Label errolLAbel;
+        private Label InvoiceTypeLabel;
+        private ComboBox InvoiceTypeComboBox;
     }
 }
