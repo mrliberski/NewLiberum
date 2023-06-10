@@ -394,6 +394,7 @@ namespace ProFormaLibrary
             Invoice.Created = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
             Invoice.KanbanNumber = KanbanTextBox.Text;
             Invoice.ReferenceNumber = POtextBox.Text;
+            Invoice.InvoiceType = InvoiceTypeComboBox.Text.ToString();
 
             SqliteDataAccess.CreateInvoice(Invoice);
 

@@ -162,13 +162,15 @@ namespace ProFormaLibraries
                             string poNumber = reader.GetString(reader.GetOrdinal("PONumber"));
                             string kanbanNumber = reader.GetString(reader.GetOrdinal("KanbanNumber"));
                             string created = reader.GetString(reader.GetOrdinal("Created"));
+                            string InvoiceType = reader.GetString(reader.GetOrdinal("InvoiceType"));
 
                             return new InvoiceModel
                             {
                                 InvoiceNumber = invoiceNumber,
                                 ReferenceNumber = poNumber,
                                 KanbanNumber = kanbanNumber,
-                                Created = created
+                                Created = created,
+                                InvoiceType = InvoiceType
                             };
                         }
                     }
@@ -203,7 +205,7 @@ namespace ProFormaLibraries
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var output = cnn.Query<string>("select InvoiceType from InvoiceType", new DynamicParameters());
+                var output = cnn.Query<string>("select InvoiceType from InvoiceTypes", new DynamicParameters());
                 return output.ToList();
             }
         }
@@ -447,7 +449,8 @@ namespace ProFormaLibraries
                             Created, 
                             Creator, 
                             KanbanNumber, 
-                            PONumber
+                            PONumber,
+                            InvoiceType
                         )
                         values 
                         (
@@ -456,7 +459,8 @@ namespace ProFormaLibraries
                             @Created,
                             @Creator,
                             @KanbanNumber,
-                            @ReferenceNumber
+                            @ReferenceNumber,
+                            @InvoiceType
                         )", model);
             }
         }

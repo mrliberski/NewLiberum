@@ -16,15 +16,33 @@ namespace ProFormaUI
     public partial class InvoiceEdit : Form, ICustomerItemSelection
     {
         public int _invoiceId;
+        private InvoiceModel _invoiceData = new InvoiceModel();
         private InvoiceItem _invoiceCustomerName = new InvoiceItem();
         private List<InvoiceItem> _invoiceItems = new List<InvoiceItem>();
         private CustomerModel _customerModel = new CustomerModel();
+        List<string> InvoiceTypeList = new List<string>();
+        private InvoiceModel _invoice = new InvoiceModel();
         //private List<InvoiceItem> _currentItems = new List<InvoiceItem>();
 
         public InvoiceEdit()
         {
             InitializeComponent();
+            LoadInvoiceTypes();
             ClearForm();
+        }
+
+        private void LoadInvoiceTypes()
+        {
+            InvoiceTypeList.Clear();
+            InvoiceTypeList = SqliteDataAccess.LoadInvoiceType();
+            WireUpInvoiceTypes();
+        }
+
+        private void WireUpInvoiceTypes()
+        {
+            InvoiceTypeComboBox.Items.Clear();
+            InvoiceTypeComboBox.DataSource = null;
+            InvoiceTypeComboBox.DataSource = InvoiceTypeList;
         }
 
         private void ClearForm()
@@ -84,6 +102,14 @@ namespace ProFormaUI
                         CustomerNameValueLabel.Text = _invoiceCustomerName.CustomerName;
                         PopulateCustomerInfo(_invoiceCustomerName.CustomerName);
                         PopulateItems(_invoiceId);
+
+                        // Change ComboBox selection in line with DB data=
+                        _invoice = SqliteDataAccess.SelectInvoiceData(InvoiceNumberTextBox.Text);
+                        int selectedIndex = InvoiceTypeList.IndexOf(_invoice.InvoiceType);
+                        if (selectedIndex >= 0)
+                        {
+                            InvoiceTypeComboBox.SelectedIndex = selectedIndex;
+                        }
                     }
                     else
                     {
@@ -114,6 +140,7 @@ namespace ProFormaUI
         private void PopulateCustomerInfo(string Customer)
         {
             _customerModel = SqliteDataAccess.FetchCustomerInfo(Customer);
+
 
             if (_customerModel != null)
             {
@@ -372,7 +399,7 @@ namespace ProFormaUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(_invoiceItems != null)
+            if (_invoiceItems != null)
             {
                 CustomerModel customerModel = new CustomerModel();
                 InvoiceModel invoiceModel = new InvoiceModel();
@@ -388,6 +415,17 @@ namespace ProFormaUI
                 // TODO - BUG: PO number is not returned from db query (null)
             }
 
+        }
+
+        private void InvoiceTypeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InvoiceTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _invoice.InvoiceType = InvoiceTypeComboBox.SelectedItem.ToString();
+            // TODO - AMEND DB
         }
     }
 }
