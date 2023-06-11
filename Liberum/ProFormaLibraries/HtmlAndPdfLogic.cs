@@ -86,6 +86,7 @@ namespace ProFormaLibraries
                 return false;
             }
         }
+
         public static void CreatePdfInvoice()
         {
             var htmlToPdf = new NReco.PdfGenerator.HtmlToPdfConverter();

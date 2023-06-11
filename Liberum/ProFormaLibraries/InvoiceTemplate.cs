@@ -209,9 +209,9 @@ namespace ProFormaLibraries
             //InvoiceContent = InvoiceContent+ GraphicsPathWithFilePrefix; 
 
             InvoiceContent = InvoiceContent + @""" alt = ""Antolin"" style = ""padding: 5pt; max-width: 50%; height: auto;""></div>
-                    <div style = ""background-color:white; float:inline-end; text-align: right; padding-left: 10px;""><p><h3>
-                                    Pro Forma Invoice&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3></p></div></div><hr>";
-
+                    <div style = ""background-color:white; float:inline-end; text-align: right; padding-left: 10px;""><p><h3>";
+            InvoiceContent = InvoiceContent + Invoice.InvoiceType;
+            InvoiceContent = InvoiceContent +  "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3></p></div></div><hr>";
             InvoiceContent = InvoiceContent + @$"
 
                     <table align = ""center"" cellspacing = ""0"" cellpadding = ""0"" style = ""font-size:10pt; font-family:Calibri; border-collapse: collapse; text-align:center; align-items: center; width: 100%;"" >

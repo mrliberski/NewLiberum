@@ -599,6 +599,23 @@ namespace ProFormaLibraries
             }
         }
 
+        public static void UpdateInvoice(InvoiceModel Invoice)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute(@"update Invoices 
+                    SET
+                        PONumber=@ReferenceNumber,
+                        KanbanNumber=@KanbanNumber,
+                        Created=@Created,
+                        Creator=@Creator,
+                        InvoiceType=@InvoiceType
+                    WHERE
+                        InvoiceNumber=@InvoiceNumber
+                    ", Invoice);
+            }
+        }
+
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

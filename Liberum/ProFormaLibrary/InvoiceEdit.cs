@@ -411,8 +411,6 @@ namespace ProFormaUI
 
                 HtmlAndPdfLogic.CreateHtmlInvoice(customerModel, invoiceModel, items);
                 HtmlAndPdfLogic.CreatePdfInvoice();
-
-                // TODO - BUG: PO number is not returned from db query (null)
             }
 
         }
@@ -425,7 +423,7 @@ namespace ProFormaUI
         private void InvoiceTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             _invoice.InvoiceType = InvoiceTypeComboBox.SelectedItem.ToString();
-            // TODO - AMEND DB
+            SqliteDataAccess.UpdateInvoice(_invoice);
         }
     }
 }
