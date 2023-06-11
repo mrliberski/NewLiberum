@@ -110,6 +110,10 @@ namespace ProFormaUI
                         {
                             InvoiceTypeComboBox.SelectedIndex = selectedIndex;
                         }
+
+                        // Update values in PO / Kanban
+                        POtextBox.Text = _invoice.ReferenceNumber;
+                        KanbanTextBox.Text = _invoice.KanbanNumber;
                     }
                     else
                     {
@@ -423,6 +427,18 @@ namespace ProFormaUI
         private void InvoiceTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             _invoice.InvoiceType = InvoiceTypeComboBox.SelectedItem.ToString();
+            SqliteDataAccess.UpdateInvoice(_invoice);
+        }
+
+        private void POtextBox_TextChanged(object sender, EventArgs e)
+        {
+            _invoice.ReferenceNumber = POtextBox.Text;
+            SqliteDataAccess.UpdateInvoice(_invoice);
+        }
+
+        private void KanbanTextBox_TextChanged(object sender, EventArgs e)
+        {
+            _invoice.KanbanNumber = KanbanTextBox.Text;
             SqliteDataAccess.UpdateInvoice(_invoice);
         }
     }

@@ -72,6 +72,10 @@
             CurrentHuNumberValue = new Label();
             InvoiceTypeLabel = new Label();
             InvoiceTypeComboBox = new ComboBox();
+            KanbanTextBox = new TextBox();
+            POtextBox = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -127,7 +131,7 @@
             // 
             telephoneValue.AutoSize = true;
             telephoneValue.ImeMode = ImeMode.NoControl;
-            telephoneValue.Location = new Point(137, 393);
+            telephoneValue.Location = new Point(137, 519);
             telephoneValue.Name = "telephoneValue";
             telephoneValue.Size = new Size(62, 20);
             telephoneValue.TabIndex = 74;
@@ -137,7 +141,7 @@
             // 
             contactNameVAlue.AutoSize = true;
             contactNameVAlue.ImeMode = ImeMode.NoControl;
-            contactNameVAlue.Location = new Point(137, 373);
+            contactNameVAlue.Location = new Point(137, 499);
             contactNameVAlue.Name = "contactNameVAlue";
             contactNameVAlue.Size = new Size(62, 20);
             contactNameVAlue.TabIndex = 73;
@@ -147,7 +151,7 @@
             // 
             telephoneNumberLAbel.AutoSize = true;
             telephoneNumberLAbel.ImeMode = ImeMode.NoControl;
-            telephoneNumberLAbel.Location = new Point(53, 393);
+            telephoneNumberLAbel.Location = new Point(53, 519);
             telephoneNumberLAbel.Name = "telephoneNumberLAbel";
             telephoneNumberLAbel.Size = new Size(78, 20);
             telephoneNumberLAbel.TabIndex = 72;
@@ -157,7 +161,7 @@
             // 
             contactNameLabel.AutoSize = true;
             contactNameLabel.ImeMode = ImeMode.NoControl;
-            contactNameLabel.Location = new Point(27, 373);
+            contactNameLabel.Location = new Point(27, 499);
             contactNameLabel.Name = "contactNameLabel";
             contactNameLabel.Size = new Size(104, 20);
             contactNameLabel.TabIndex = 71;
@@ -167,7 +171,7 @@
             // 
             sapNumberValue.AutoSize = true;
             sapNumberValue.ImeMode = ImeMode.NoControl;
-            sapNumberValue.Location = new Point(137, 353);
+            sapNumberValue.Location = new Point(137, 479);
             sapNumberValue.Name = "sapNumberValue";
             sapNumberValue.Size = new Size(62, 20);
             sapNumberValue.TabIndex = 70;
@@ -177,7 +181,7 @@
             // 
             customerSapNumberLabel.AutoSize = true;
             customerSapNumberLabel.ImeMode = ImeMode.NoControl;
-            customerSapNumberLabel.Location = new Point(38, 353);
+            customerSapNumberLabel.Location = new Point(38, 479);
             customerSapNumberLabel.Name = "customerSapNumberLabel";
             customerSapNumberLabel.Size = new Size(93, 20);
             customerSapNumberLabel.TabIndex = 69;
@@ -187,7 +191,7 @@
             // 
             eoriNumberValue.AutoSize = true;
             eoriNumberValue.ImeMode = ImeMode.NoControl;
-            eoriNumberValue.Location = new Point(137, 333);
+            eoriNumberValue.Location = new Point(137, 459);
             eoriNumberValue.Name = "eoriNumberValue";
             eoriNumberValue.Size = new Size(62, 20);
             eoriNumberValue.TabIndex = 68;
@@ -197,7 +201,7 @@
             // 
             EoriNumberLabel.AutoSize = true;
             EoriNumberLabel.ImeMode = ImeMode.NoControl;
-            EoriNumberLabel.Location = new Point(32, 333);
+            EoriNumberLabel.Location = new Point(32, 459);
             EoriNumberLabel.Name = "EoriNumberLabel";
             EoriNumberLabel.Size = new Size(99, 20);
             EoriNumberLabel.TabIndex = 67;
@@ -207,7 +211,7 @@
             // 
             VatNumberValue.AutoSize = true;
             VatNumberValue.ImeMode = ImeMode.NoControl;
-            VatNumberValue.Location = new Point(137, 313);
+            VatNumberValue.Location = new Point(137, 439);
             VatNumberValue.Name = "VatNumberValue";
             VatNumberValue.Size = new Size(62, 20);
             VatNumberValue.TabIndex = 66;
@@ -217,7 +221,7 @@
             // 
             VATNumberLabel.AutoSize = true;
             VATNumberLabel.ImeMode = ImeMode.NoControl;
-            VATNumberLabel.Location = new Point(39, 313);
+            VATNumberLabel.Location = new Point(39, 439);
             VATNumberLabel.Name = "VATNumberLabel";
             VATNumberLabel.Size = new Size(92, 20);
             VATNumberLabel.TabIndex = 65;
@@ -227,7 +231,7 @@
             // 
             CountryValue.AutoSize = true;
             CountryValue.ImeMode = ImeMode.NoControl;
-            CountryValue.Location = new Point(137, 293);
+            CountryValue.Location = new Point(137, 419);
             CountryValue.Name = "CountryValue";
             CountryValue.Size = new Size(62, 20);
             CountryValue.TabIndex = 64;
@@ -237,7 +241,7 @@
             // 
             CountryLabel.AutoSize = true;
             CountryLabel.ImeMode = ImeMode.NoControl;
-            CountryLabel.Location = new Point(71, 293);
+            CountryLabel.Location = new Point(71, 419);
             CountryLabel.Name = "CountryLabel";
             CountryLabel.Size = new Size(60, 20);
             CountryLabel.TabIndex = 63;
@@ -247,7 +251,7 @@
             // 
             PostCodeValue.AutoSize = true;
             PostCodeValue.ImeMode = ImeMode.NoControl;
-            PostCodeValue.Location = new Point(137, 273);
+            PostCodeValue.Location = new Point(137, 399);
             PostCodeValue.Name = "PostCodeValue";
             PostCodeValue.Size = new Size(62, 20);
             PostCodeValue.TabIndex = 62;
@@ -257,7 +261,7 @@
             // 
             PostCodeLabel.AutoSize = true;
             PostCodeLabel.ImeMode = ImeMode.NoControl;
-            PostCodeLabel.Location = new Point(56, 273);
+            PostCodeLabel.Location = new Point(56, 399);
             PostCodeLabel.Name = "PostCodeLabel";
             PostCodeLabel.Size = new Size(75, 20);
             PostCodeLabel.TabIndex = 61;
@@ -267,7 +271,7 @@
             // 
             CityValue.AutoSize = true;
             CityValue.ImeMode = ImeMode.NoControl;
-            CityValue.Location = new Point(137, 253);
+            CityValue.Location = new Point(137, 379);
             CityValue.Name = "CityValue";
             CityValue.Size = new Size(62, 20);
             CityValue.TabIndex = 60;
@@ -277,7 +281,7 @@
             // 
             Address2Value.AutoSize = true;
             Address2Value.ImeMode = ImeMode.NoControl;
-            Address2Value.Location = new Point(137, 233);
+            Address2Value.Location = new Point(137, 359);
             Address2Value.Name = "Address2Value";
             Address2Value.Size = new Size(62, 20);
             Address2Value.TabIndex = 59;
@@ -287,7 +291,7 @@
             // 
             Address1Value.AutoSize = true;
             Address1Value.ImeMode = ImeMode.NoControl;
-            Address1Value.Location = new Point(137, 213);
+            Address1Value.Location = new Point(137, 339);
             Address1Value.Name = "Address1Value";
             Address1Value.Size = new Size(62, 20);
             Address1Value.TabIndex = 58;
@@ -297,7 +301,7 @@
             // 
             AddressLine1Label.AutoSize = true;
             AddressLine1Label.ImeMode = ImeMode.NoControl;
-            AddressLine1Label.Location = new Point(69, 213);
+            AddressLine1Label.Location = new Point(69, 339);
             AddressLine1Label.Name = "AddressLine1Label";
             AddressLine1Label.Size = new Size(62, 20);
             AddressLine1Label.TabIndex = 57;
@@ -307,7 +311,7 @@
             // 
             CustomerNameValueLabel.AutoSize = true;
             CustomerNameValueLabel.ImeMode = ImeMode.NoControl;
-            CustomerNameValueLabel.Location = new Point(137, 193);
+            CustomerNameValueLabel.Location = new Point(137, 319);
             CustomerNameValueLabel.Name = "CustomerNameValueLabel";
             CustomerNameValueLabel.Size = new Size(62, 20);
             CustomerNameValueLabel.TabIndex = 76;
@@ -317,7 +321,7 @@
             // 
             CustomerNameLabel.AutoSize = true;
             CustomerNameLabel.ImeMode = ImeMode.NoControl;
-            CustomerNameLabel.Location = new Point(15, 193);
+            CustomerNameLabel.Location = new Point(15, 319);
             CustomerNameLabel.Name = "CustomerNameLabel";
             CustomerNameLabel.Size = new Size(116, 20);
             CustomerNameLabel.TabIndex = 75;
@@ -511,9 +515,51 @@
             InvoiceTypeComboBox.FormattingEnabled = true;
             InvoiceTypeComboBox.Location = new Point(15, 146);
             InvoiceTypeComboBox.Name = "InvoiceTypeComboBox";
-            InvoiceTypeComboBox.Size = new Size(184, 28);
+            InvoiceTypeComboBox.Size = new Size(311, 28);
             InvoiceTypeComboBox.TabIndex = 86;
             InvoiceTypeComboBox.SelectedIndexChanged += InvoiceTypeComboBox_SelectedIndexChanged;
+            // 
+            // KanbanTextBox
+            // 
+            KanbanTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            KanbanTextBox.Location = new Point(15, 253);
+            KanbanTextBox.Name = "KanbanTextBox";
+            KanbanTextBox.Size = new Size(311, 27);
+            KanbanTextBox.TabIndex = 91;
+            KanbanTextBox.Text = "Kanban";
+            KanbanTextBox.TextChanged += KanbanTextBox_TextChanged;
+            // 
+            // POtextBox
+            // 
+            POtextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            POtextBox.Location = new Point(12, 200);
+            POtextBox.Name = "POtextBox";
+            POtextBox.Size = new Size(314, 27);
+            POtextBox.TabIndex = 90;
+            POtextBox.Text = "PO / Ref";
+            POtextBox.TextChanged += POtextBox_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ImeMode = ImeMode.NoControl;
+            label2.Location = new Point(15, 230);
+            label2.Name = "label2";
+            label2.Size = new Size(83, 20);
+            label2.TabIndex = 89;
+            label2.Text = "Kanban No";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ImeMode = ImeMode.NoControl;
+            label1.Location = new Point(15, 177);
+            label1.Name = "label1";
+            label1.Size = new Size(122, 20);
+            label1.TabIndex = 88;
+            label1.Text = "PO / Ref Number";
             // 
             // InvoiceEdit
             // 
@@ -522,6 +568,10 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(1560, 826);
+            Controls.Add(KanbanTextBox);
+            Controls.Add(POtextBox);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(InvoiceTypeLabel);
             Controls.Add(InvoiceTypeComboBox);
             Controls.Add(CurrentHuNumberValue);
@@ -617,5 +667,9 @@
         private Label CurrentHuNumberValue;
         private Label InvoiceTypeLabel;
         private ComboBox InvoiceTypeComboBox;
+        private TextBox KanbanTextBox;
+        private TextBox POtextBox;
+        private Label label2;
+        private Label label1;
     }
 }
