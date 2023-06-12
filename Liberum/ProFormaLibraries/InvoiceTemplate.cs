@@ -177,6 +177,7 @@ namespace ProFormaLibraries
             int HUcount = 0;
             double WeightCount = 0;
             double ValueCount = 0;
+            double NetWeightCount = 0;
 
             //if (Invoice.KanbanNumber == null)
             //{
@@ -285,6 +286,8 @@ namespace ProFormaLibraries
                 WeightCount = WeightCount + (model.ContainersQuantity * model.ContainerNetWeight);
                 WeightCount = WeightCount + (model.ItemQuantity * model.ItemNetWeight);
 
+                NetWeightCount = NetWeightCount + (model.ItemQuantity * model.ItemNetWeight);
+
                 ValueCount = ValueCount + (model.ContainersQuantity * model.ContainerPrice);
                 ValueCount = ValueCount + (model.ItemPrice * model.ItemQuantity);
 
@@ -308,6 +311,7 @@ namespace ProFormaLibraries
                         <table align = ""center"" cellspacing = ""0"" cellpadding = ""0"" style = ""font-size:10pt; font-family:Calibri; border-collapse: collapse; text-align:center; align-items: center; width: 100%; "" ><hr>
                             <tr>
                                 <th> Handling Units: {HUcount} </th>
+                                <th> Net Weight: {NetWeightCount.ToString("0.00")} kg </th>
                                 <th> Total Weight: {WeightCount.ToString("0.00")} kg </th>
                                 <th> Total Value: {Customer.Currency} {ValueCount.ToString("0.00")} </th>
                         </tr></table></div>
