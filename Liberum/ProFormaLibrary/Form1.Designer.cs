@@ -485,11 +485,13 @@
             // POtextBox
             // 
             resources.ApplyResources(POtextBox, "POtextBox");
+            POtextBox.BorderStyle = BorderStyle.FixedSingle;
             POtextBox.Name = "POtextBox";
             // 
             // KanbanTextBox
             // 
             resources.ApplyResources(KanbanTextBox, "KanbanTextBox");
+            KanbanTextBox.BorderStyle = BorderStyle.FixedSingle;
             KanbanTextBox.Name = "KanbanTextBox";
             // 
             // ProcedureCodeLabel
@@ -506,6 +508,7 @@
             // TrailerTextBox
             // 
             resources.ApplyResources(TrailerTextBox, "TrailerTextBox");
+            TrailerTextBox.BorderStyle = BorderStyle.FixedSingle;
             TrailerTextBox.Name = "TrailerTextBox";
             // 
             // label3
@@ -658,7 +661,7 @@
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.White;
             Controls.Add(InvoiceTypeLabel);
             Controls.Add(InvoiceTypeComboBox);
             Controls.Add(errolLAbel);
@@ -692,6 +695,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
             Name = "ProFormaGenerator";
+            WindowState = FormWindowState.Maximized;
             CustomerDetailsGroupBox.ResumeLayout(false);
             CustomerDetailsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

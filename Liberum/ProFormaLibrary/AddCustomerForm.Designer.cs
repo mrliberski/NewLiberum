@@ -153,6 +153,7 @@
             // 
             resources.ApplyResources(defaultHaulierLabel, "defaultHaulierLabel");
             defaultHaulierLabel.Name = "defaultHaulierLabel";
+            defaultHaulierLabel.Click += defaultHaulierLabel_Click;
             // 
             // destinationOfficeTextbox
             // 

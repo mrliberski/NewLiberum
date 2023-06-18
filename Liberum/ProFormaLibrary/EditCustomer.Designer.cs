@@ -31,6 +31,8 @@
             Label footerLAbel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditCustomer));
             CustomerDetailsGroupBox = new GroupBox();
+            CurrencyTextBox = new TextBox();
+            label1 = new Label();
             IncotermsTextBox = new TextBox();
             IncotermsLabel = new Label();
             footerTextBox = new TextBox();
@@ -69,8 +71,6 @@
             databaseStatusStripLabel = new ToolStripStatusLabel();
             CloseButton = new Button();
             ClearButton = new Button();
-            CurrencyTextBox = new TextBox();
-            label1 = new Label();
             footerLAbel = new Label();
             CustomerDetailsGroupBox.SuspendLayout();
             statusStrip1.SuspendLayout();
@@ -123,6 +123,16 @@
             CustomerDetailsGroupBox.Name = "CustomerDetailsGroupBox";
             CustomerDetailsGroupBox.TabStop = false;
             CustomerDetailsGroupBox.Enter += CustomerDetailsGroupBox_Enter;
+            // 
+            // CurrencyTextBox
+            // 
+            resources.ApplyResources(CurrencyTextBox, "CurrencyTextBox");
+            CurrencyTextBox.Name = "CurrencyTextBox";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // IncotermsTextBox
             // 
@@ -326,16 +336,6 @@
             ClearButton.Name = "ClearButton";
             ClearButton.UseVisualStyleBackColor = true;
             ClearButton.Click += ClearButton_Click;
-            // 
-            // CurrencyTextBox
-            // 
-            resources.ApplyResources(CurrencyTextBox, "CurrencyTextBox");
-            CurrencyTextBox.Name = "CurrencyTextBox";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
             // 
             // EditCustomer
             // 

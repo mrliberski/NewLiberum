@@ -126,10 +126,14 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="InvoiceNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 65</value>
+    <value>55, 35</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="InvoiceNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="InvoiceNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 20</value>
+    <value>92, 15</value>
   </data>
   <data name="InvoiceNumberLabel.Text" xml:space="preserve">
     <value>Invoice Number</value>
@@ -138,29 +142,35 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 166</value>
+    <value>156, 113</value>
+  </data>
+  <data name="dateTimePicker1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dateTimePicker1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 27</value>
+    <value>173, 23</value>
   </data>
   <data name="InvoiceNumberValue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="InvoiceNumberValue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+    <value>Segoe UI, 9pt, style=Bold</value>
   </data>
   <data name="InvoiceNumberValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="InvoiceNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 65</value>
+    <value>156, 35</value>
+  </data>
+  <data name="InvoiceNumberValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="InvoiceNumberValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>51, 15</value>
   </data>
   <data name="InvoiceNumberValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -169,10 +179,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="RequestTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 132</value>
+    <value>156, 90</value>
+  </data>
+  <data name="RequestTypeComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="RequestTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 28</value>
+    <value>173, 23</value>
   </data>
   <data name="TypeOfRequestLAbel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -184,13 +197,16 @@
     <value>NoControl</value>
   </data>
   <data name="TypeOfRequestLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 135</value>
+    <value>60, 93</value>
+  </data>
+  <data name="TypeOfRequestLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="TypeOfRequestLAbel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 20</value>
+    <value>87, 15</value>
   </data>
   <data name="TypeOfRequestLAbel.Text" xml:space="preserve">
-    <value>Type of request:</value>
+    <value>Type of request</value>
   </data>
   <data name="selectIBFdateLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -202,10 +218,13 @@
     <value>NoControl</value>
   </data>
   <data name="selectIBFdateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 171</value>
+    <value>48, 115</value>
+  </data>
+  <data name="selectIBFdateLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="selectIBFdateLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 20</value>
+    <value>99, 15</value>
   </data>
   <data name="selectIBFdateLabel.Text" xml:space="preserve">
     <value>Required IBF date</value>
@@ -220,10 +239,13 @@
     <value>NoControl</value>
   </data>
   <data name="selectIBFTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 202</value>
+    <value>28, 139</value>
+  </data>
+  <data name="selectIBFTimeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="selectIBFTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 20</value>
+    <value>119, 15</value>
   </data>
   <data name="selectIBFTimeLabel.Text" xml:space="preserve">
     <value>Required IBF timeslot</value>
@@ -232,28 +254,19 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="IBFtimeSlotComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 199</value>
+    <value>156, 136</value>
+  </data>
+  <data name="IBFtimeSlotComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="IBFtimeSlotComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 28</value>
+    <value>173, 23</value>
   </data>
   <data name="CustomerDetailsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="CustomerDetailsGroupBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 31</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 363</value>
-  </data>
-  <data name="CustomerDetailsGroupBox.Text" xml:space="preserve">
-    <value>Customer Selection</value>
   </data>
   <data name="CurrencytextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -262,10 +275,13 @@
     <value>False</value>
   </data>
   <data name="CurrencytextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 257</value>
+    <value>505, 144</value>
+  </data>
+  <data name="CurrencytextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="CurrencytextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 27</value>
+    <value>61, 23</value>
   </data>
   <data name="CurrencytextBox.Text" xml:space="preserve">
     <value>Currency</value>
@@ -280,10 +296,13 @@
     <value>NoControl</value>
   </data>
   <data name="CurrencyLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>579, 260</value>
+    <value>436, 147</value>
+  </data>
+  <data name="CurrencyLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="CurrencyLAbel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 20</value>
+    <value>55, 15</value>
   </data>
   <data name="CurrencyLAbel.Text" xml:space="preserve">
     <value>Currency</value>
@@ -292,10 +311,13 @@
     <value>Top, Right</value>
   </data>
   <data name="IncotermTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 224</value>
+    <value>505, 121</value>
+  </data>
+  <data name="IncotermTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="IncotermTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 27</value>
+    <value>61, 23</value>
   </data>
   <data name="IncotermTextBox.Text" xml:space="preserve">
     <value>Incoterms</value>
@@ -310,10 +332,13 @@
     <value>NoControl</value>
   </data>
   <data name="IncoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 227</value>
+    <value>431, 124</value>
+  </data>
+  <data name="IncoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="IncoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 20</value>
+    <value>60, 15</value>
   </data>
   <data name="IncoLabel.Text" xml:space="preserve">
     <value>Incoterms</value>
@@ -322,10 +347,13 @@
     <value>Top, Right</value>
   </data>
   <data name="CustomsOfficeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 191</value>
+    <value>505, 98</value>
+  </data>
+  <data name="CustomsOfficeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="CustomsOfficeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 27</value>
+    <value>166, 23</value>
   </data>
   <data name="CustomsOfficeTextBox.Text" xml:space="preserve">
     <value>Destination Office</value>
@@ -340,10 +368,13 @@
     <value>NoControl</value>
   </data>
   <data name="customsOfficelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 194</value>
+    <value>339, 101</value>
+  </data>
+  <data name="customsOfficelabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="customsOfficelabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 20</value>
+    <value>152, 15</value>
   </data>
   <data name="customsOfficelabel.Text" xml:space="preserve">
     <value>Destination Customs Office</value>
@@ -352,10 +383,13 @@
     <value>Top, Right</value>
   </data>
   <data name="UKexitTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 158</value>
+    <value>505, 75</value>
+  </data>
+  <data name="UKexitTextbox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="UKexitTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 27</value>
+    <value>166, 23</value>
   </data>
   <data name="UKexitTextbox.Text" xml:space="preserve">
     <value>UK Exit Office</value>
@@ -370,10 +404,13 @@
     <value>NoControl</value>
   </data>
   <data name="UKexitFacilityLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 161</value>
+    <value>409, 78</value>
+  </data>
+  <data name="UKexitFacilityLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="UKexitFacilityLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
+    <value>82, 15</value>
   </data>
   <data name="UKexitFacilityLabel.Text" xml:space="preserve">
     <value>UK Exit facility</value>
@@ -382,10 +419,13 @@
     <value>Top, Right</value>
   </data>
   <data name="driverNumberTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 125</value>
+    <value>505, 52</value>
+  </data>
+  <data name="driverNumberTextbox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="driverNumberTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 27</value>
+    <value>166, 23</value>
   </data>
   <data name="driverNumberTextbox.Text" xml:space="preserve">
     <value>Driver's number</value>
@@ -400,10 +440,13 @@
     <value>NoControl</value>
   </data>
   <data name="driversNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 128</value>
+    <value>358, 55</value>
+  </data>
+  <data name="driversNumberLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="driversNumberLAbel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>133, 15</value>
   </data>
   <data name="driversNumberLAbel.Text" xml:space="preserve">
     <value>Driver's Mobile Number</value>
@@ -412,10 +455,13 @@
     <value>Top, Right</value>
   </data>
   <data name="Hauliertextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 92</value>
+    <value>505, 29</value>
+  </data>
+  <data name="Hauliertextbox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Hauliertextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 27</value>
+    <value>166, 23</value>
   </data>
   <data name="Hauliertextbox.Text" xml:space="preserve">
     <value>Haulier Name</value>
@@ -430,10 +476,13 @@
     <value>NoControl</value>
   </data>
   <data name="haulierName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>588, 95</value>
+    <value>446, 32</value>
+  </data>
+  <data name="haulierName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="haulierName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>45, 15</value>
   </data>
   <data name="haulierName.Text" xml:space="preserve">
     <value>Haulier</value>
@@ -445,10 +494,13 @@
     <value>NoControl</value>
   </data>
   <data name="telephoneValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 310</value>
+    <value>110, 196</value>
+  </data>
+  <data name="telephoneValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="telephoneValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="telephoneValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -460,10 +512,13 @@
     <value>NoControl</value>
   </data>
   <data name="contactNameVAlue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 290</value>
+    <value>110, 182</value>
+  </data>
+  <data name="contactNameVAlue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="contactNameVAlue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="contactNameVAlue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -475,10 +530,13 @@
     <value>NoControl</value>
   </data>
   <data name="telephoneNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 310</value>
+    <value>19, 196</value>
+  </data>
+  <data name="telephoneNumberLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="telephoneNumberLAbel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 20</value>
+    <value>61, 15</value>
   </data>
   <data name="telephoneNumberLAbel.Text" xml:space="preserve">
     <value>Telephone</value>
@@ -490,10 +548,13 @@
     <value>NoControl</value>
   </data>
   <data name="contactNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 290</value>
+    <value>19, 182</value>
+  </data>
+  <data name="contactNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="contactNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
+    <value>84, 15</value>
   </data>
   <data name="contactNameLabel.Text" xml:space="preserve">
     <value>Contact Name</value>
@@ -505,10 +566,13 @@
     <value>NoControl</value>
   </data>
   <data name="sapNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 270</value>
+    <value>110, 166</value>
+  </data>
+  <data name="sapNumberValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="sapNumberValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="sapNumberValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -520,10 +584,13 @@
     <value>NoControl</value>
   </data>
   <data name="customerSapNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 270</value>
+    <value>19, 166</value>
+  </data>
+  <data name="customerSapNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="customerSapNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 20</value>
+    <value>75, 15</value>
   </data>
   <data name="customerSapNumberLabel.Text" xml:space="preserve">
     <value>SAP Number</value>
@@ -535,10 +602,13 @@
     <value>NoControl</value>
   </data>
   <data name="eoriNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 250</value>
+    <value>110, 152</value>
+  </data>
+  <data name="eoriNumberValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="eoriNumberValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="eoriNumberValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -550,10 +620,13 @@
     <value>NoControl</value>
   </data>
   <data name="EoriNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 250</value>
+    <value>19, 152</value>
+  </data>
+  <data name="EoriNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="EoriNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
+    <value>79, 15</value>
   </data>
   <data name="EoriNumberLabel.Text" xml:space="preserve">
     <value>EORI Number</value>
@@ -565,10 +638,13 @@
     <value>NoControl</value>
   </data>
   <data name="VatNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 230</value>
+    <value>110, 136</value>
+  </data>
+  <data name="VatNumberValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="VatNumberValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="VatNumberValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -580,10 +656,13 @@
     <value>NoControl</value>
   </data>
   <data name="VATNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 230</value>
+    <value>19, 136</value>
+  </data>
+  <data name="VATNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="VATNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
+    <value>73, 15</value>
   </data>
   <data name="VATNumberLabel.Text" xml:space="preserve">
     <value>VAT Number</value>
@@ -595,10 +674,13 @@
     <value>NoControl</value>
   </data>
   <data name="CountryValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 210</value>
+    <value>110, 122</value>
+  </data>
+  <data name="CountryValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="CountryValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="CountryValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -610,10 +692,13 @@
     <value>NoControl</value>
   </data>
   <data name="CountryLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 210</value>
+    <value>19, 122</value>
+  </data>
+  <data name="CountryLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="CountryLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="CountryLabel.Text" xml:space="preserve">
     <value>Country</value>
@@ -625,10 +710,13 @@
     <value>NoControl</value>
   </data>
   <data name="PostCodeValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 190</value>
+    <value>110, 106</value>
+  </data>
+  <data name="PostCodeValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="PostCodeValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="PostCodeValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -640,10 +728,13 @@
     <value>NoControl</value>
   </data>
   <data name="PostCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 190</value>
+    <value>19, 106</value>
+  </data>
+  <data name="PostCodeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="PostCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>61, 15</value>
   </data>
   <data name="PostCodeLabel.Text" xml:space="preserve">
     <value>Post Code</value>
@@ -655,10 +746,13 @@
     <value>NoControl</value>
   </data>
   <data name="CityValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 170</value>
+    <value>110, 92</value>
+  </data>
+  <data name="CityValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="CityValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="CityValue.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -670,10 +764,13 @@
     <value>NoControl</value>
   </data>
   <data name="AdressLine3Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 170</value>
+    <value>19, 92</value>
+  </data>
+  <data name="AdressLine3Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="AdressLine3Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 20</value>
+    <value>28, 15</value>
   </data>
   <data name="AdressLine3Label.Text" xml:space="preserve">
     <value>City</value>
@@ -685,10 +782,13 @@
     <value>NoControl</value>
   </data>
   <data name="Address2Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 150</value>
+    <value>110, 76</value>
+  </data>
+  <data name="Address2Value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Address2Value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="Address2Value.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -700,10 +800,13 @@
     <value>NoControl</value>
   </data>
   <data name="AddressLine2Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 119</value>
+    <value>4, 89</value>
+  </data>
+  <data name="AddressLine2Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="AddressLine2Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 20</value>
+    <value>0, 15</value>
   </data>
   <data name="Address1Value.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -712,10 +815,13 @@
     <value>NoControl</value>
   </data>
   <data name="Address1Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 130</value>
+    <value>110, 62</value>
+  </data>
+  <data name="Address1Value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Address1Value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="Address1Value.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -727,19 +833,25 @@
     <value>NoControl</value>
   </data>
   <data name="AddressLine1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 130</value>
+    <value>19, 62</value>
+  </data>
+  <data name="AddressLine1Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="AddressLine1Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 20</value>
+    <value>83, 15</value>
   </data>
   <data name="AddressLine1Label.Text" xml:space="preserve">
     <value>Address Line 1</value>
   </data>
   <data name="selectCustomerComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 79</value>
+    <value>19, 32</value>
+  </data>
+  <data name="selectCustomerComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="selectCustomerComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>398, 28</value>
+    <value>300, 23</value>
   </data>
   <data name="selectCustomerLAbel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -748,65 +860,85 @@
     <value>NoControl</value>
   </data>
   <data name="selectCustomerLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 56</value>
+    <value>19, 15</value>
+  </data>
+  <data name="selectCustomerLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="selectCustomerLAbel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
+    <value>93, 15</value>
   </data>
   <data name="selectCustomerLAbel.Text" xml:space="preserve">
     <value>Select Customer</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 23</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 229</value>
   </data>
   <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 424</value>
+    <value>28, 275</value>
+  </data>
+  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1325, 351</value>
-  </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 878</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 13, 0</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 26</value>
-  </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
+    <value>994, 275</value>
   </data>
   <data name="databaseStatusStripLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 20</value>
+    <value>77, 17</value>
   </data>
   <data name="databaseStatusStripLabel.Text" xml:space="preserve">
     <value>Licence Type:</value>
   </data>
   <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>39, 17</value>
   </data>
   <data name="toolStripStatusLabel1.Text" xml:space="preserve">
     <value>Demo</value>
   </data>
   <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 20</value>
+    <value>88, 17</value>
   </data>
   <data name="toolStripStatusLabel2.Text" xml:space="preserve">
     <value>//   Expiry Date:</value>
   </data>
-  <data name="toolStripStatusLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 20</value>
-  </data>
   <data name="toolStripStatusLabel3.Text" xml:space="preserve">
     <value>toolStripStatusLabel3</value>
+  </data>
+  <data name="toolStripStatusLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 17</value>
   </data>
   <data name="toolStripStatusLabel4.Text" xml:space="preserve">
     <value>//  Copyright © 2020 - 2023 Pawel Liberski</value>
   </data>
+  <data name="toolStripStatusLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 17</value>
+  </data>
   <data name="toolStripStatusLabel5.Text" xml:space="preserve">
     <value>Total Number of HUs in current shipment: </value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 629</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1055, 22</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
   </data>
   <data name="addItemLinkLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -818,10 +950,13 @@
     <value>NoControl</value>
   </data>
   <data name="addItemLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 401</value>
+    <value>28, 258</value>
+  </data>
+  <data name="addItemLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="addItemLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
+    <value>56, 15</value>
   </data>
   <data name="addItemLinkLabel.Text" xml:space="preserve">
     <value>Add item</value>
@@ -836,10 +971,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="createInvoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 811</value>
+    <value>29, 554</value>
+  </data>
+  <data name="createInvoiceButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="createInvoiceButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 43</value>
+    <value>128, 32</value>
   </data>
   <data name="createInvoiceButton.Text" xml:space="preserve">
     <value>Create Invoice</value>
@@ -857,10 +995,13 @@
     <value>NoControl</value>
   </data>
   <data name="createBrokerRequest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 811</value>
+    <value>161, 554</value>
+  </data>
+  <data name="createBrokerRequest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="createBrokerRequest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 43</value>
+    <value>172, 32</value>
   </data>
   <data name="createBrokerRequest.Text" xml:space="preserve">
     <value>Create Broker Request</value>
@@ -878,10 +1019,13 @@
     <value>NoControl</value>
   </data>
   <data name="clearButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1007, 811</value>
+    <value>762, 553</value>
+  </data>
+  <data name="clearButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="clearButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 43</value>
+    <value>128, 32</value>
   </data>
   <data name="clearButton.Text" xml:space="preserve">
     <value>Clear Form</value>
@@ -899,10 +1043,13 @@
     <value>NoControl</value>
   </data>
   <data name="closeDownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1189, 811</value>
+    <value>894, 553</value>
+  </data>
+  <data name="closeDownButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="closeDownButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 43</value>
+    <value>128, 32</value>
   </data>
   <data name="closeDownButton.Text" xml:space="preserve">
     <value>Exit</value>
@@ -920,10 +1067,13 @@
     <value>NoControl</value>
   </data>
   <data name="RemoveSelectedLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1204, 401</value>
+    <value>898, 258</value>
+  </data>
+  <data name="RemoveSelectedLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="RemoveSelectedLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 20</value>
+    <value>124, 15</value>
   </data>
   <data name="RemoveSelectedLinkLabel.Text" xml:space="preserve">
     <value>Remove Selected Item</value>
@@ -938,10 +1088,13 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 272</value>
+    <value>49, 184</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 20</value>
+    <value>98, 15</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>PO / Ref Number</value>
@@ -956,10 +1109,13 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 304</value>
+    <value>81, 207</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 20</value>
+    <value>66, 15</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -971,10 +1127,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="POtextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 268</value>
+    <value>156, 182</value>
+  </data>
+  <data name="POtextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="POtextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 27</value>
+    <value>173, 23</value>
   </data>
   <data name="POtextBox.Text" xml:space="preserve">
     <value>PO / Ref</value>
@@ -983,10 +1142,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="KanbanTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 301</value>
+    <value>156, 205</value>
+  </data>
+  <data name="KanbanTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="KanbanTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 27</value>
+    <value>173, 23</value>
   </data>
   <data name="KanbanTextBox.Text" xml:space="preserve">
     <value>Kanban</value>
@@ -1001,10 +1163,13 @@
     <value>NoControl</value>
   </data>
   <data name="ProcedureCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 237</value>
+    <value>55, 162</value>
+  </data>
+  <data name="ProcedureCodeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="ProcedureCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
+    <value>92, 15</value>
   </data>
   <data name="ProcedureCodeLabel.Text" xml:space="preserve">
     <value>Procedure Code</value>
@@ -1013,19 +1178,25 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="ProcedureTypeCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 234</value>
+    <value>156, 159</value>
+  </data>
+  <data name="ProcedureTypeCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="ProcedureTypeCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 28</value>
+    <value>173, 23</value>
   </data>
   <data name="TrailerTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="TrailerTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 334</value>
+    <value>156, 228</value>
+  </data>
+  <data name="TrailerTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="TrailerTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 27</value>
+    <value>173, 23</value>
   </data>
   <data name="TrailerTextBox.Text" xml:space="preserve">
     <value>Trailer Number</value>
@@ -1040,31 +1211,25 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 337</value>
+    <value>62, 230</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 20</value>
+    <value>85, 15</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Trailer Number</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 28</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="itemToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item</value>
-  </data>
   <data name="createNewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
+    <value>162, 22</value>
   </data>
   <data name="createNewItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Create New Item</value>
   </data>
   <data name="addItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
+    <value>162, 22</value>
   </data>
   <data name="addItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Add item</value>
@@ -1073,82 +1238,127 @@
     <value>False</value>
   </data>
   <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
+    <value>162, 22</value>
   </data>
   <data name="uploadItemListToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Item List</value>
   </data>
-  <data name="invoiceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Invoice</value>
+  <data name="itemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="itemToolStripMenuItem.Text" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="createInvoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="createInvoiceToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Invoice</value>
   </data>
+  <data name="editInvoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="editInvoiceToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit Invoice</value>
+  </data>
+  <data name="openInvoiceFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="openInvoiceFolderToolStripMenuItem.Text" xml:space="preserve">
     <value>Open Invoice Folder</value>
   </data>
-  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Customer</value>
+  <data name="invoiceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="invoiceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="createNewCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
   </data>
   <data name="createNewCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Create New Customer</value>
   </data>
+  <data name="editCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
   <data name="editCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit Customer</value>
+  </data>
+  <data name="uploadCustomerFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
   </data>
   <data name="uploadCustomerFileToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Customer File</value>
   </data>
-  <data name="datebaseToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
   </data>
-  <data name="datebaseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Database</value>
+  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Customer</value>
   </data>
   <data name="uploadCustomerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 26</value>
+    <value>167, 22</value>
   </data>
   <data name="uploadCustomerToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Customer</value>
   </data>
   <data name="uploadItemsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 26</value>
+    <value>167, 22</value>
   </data>
   <data name="uploadItemsToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Items</value>
   </data>
   <data name="mergeDatabaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 26</value>
+    <value>167, 22</value>
   </data>
   <data name="mergeDatabaseToolStripMenuItem.Text" xml:space="preserve">
     <value>Merge Database</value>
   </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
+  <data name="datebaseToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="datebaseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="datebaseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Database</value>
   </data>
   <data name="emailSettingsToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="emailSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 26</value>
+    <value>148, 22</value>
   </data>
   <data name="emailSettingsToolStripMenuItem.Text" xml:space="preserve">
     <value>Email Settings</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 26</value>
+    <value>148, 22</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>About</value>
   </data>
   <data name="licenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 26</value>
+    <value>148, 22</value>
   </data>
   <data name="licenceToolStripMenuItem.Text" xml:space="preserve">
     <value>Licence</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1055, 24</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="errolLAbel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1159,8 +1369,14 @@
   <data name="errolLAbel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="errolLAbel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 563</value>
+  </data>
+  <data name="errolLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="errolLAbel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
+    <value>50, 15</value>
   </data>
   <data name="errolLAbel.Text" xml:space="preserve">
     <value>&lt;none&gt;</value>
@@ -1174,23 +1390,32 @@
   <data name="InvoiceTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="InvoiceTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 70</value>
+  </data>
+  <data name="InvoiceTypeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="InvoiceTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 20</value>
+    <value>72, 15</value>
   </data>
   <data name="InvoiceTypeLabel.Text" xml:space="preserve">
-    <value>Invoice Type:</value>
+    <value>Invoice Type</value>
   </data>
   <data name="InvoiceTypeComboBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="InvoiceTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 98</value>
+    <value>156, 67</value>
+  </data>
+  <data name="InvoiceTypeComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="InvoiceTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 28</value>
+    <value>173, 23</value>
   </data>
-  <data name="InvoiceTypeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 15</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1199,7 +1424,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1407, 904</value>
+    <value>1055, 651</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Light, 9pt</value>
@@ -6715,7 +6940,7 @@
 </value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
+    <value>79, 85</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

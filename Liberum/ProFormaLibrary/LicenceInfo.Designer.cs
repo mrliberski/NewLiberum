@@ -39,9 +39,10 @@
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(324, 362);
+            CloseButton.Location = new Point(284, 272);
+            CloseButton.Margin = new Padding(3, 2, 3, 2);
             CloseButton.Name = "CloseButton";
-            CloseButton.Size = new Size(171, 32);
+            CloseButton.Size = new Size(150, 24);
             CloseButton.TabIndex = 63;
             CloseButton.Text = "Close";
             CloseButton.UseVisualStyleBackColor = true;
@@ -52,24 +53,26 @@
             CustomerModelValue.AutoSize = true;
             CustomerModelValue.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CustomerModelValue.ImeMode = ImeMode.NoControl;
-            CustomerModelValue.Location = new Point(22, 24);
+            CustomerModelValue.Location = new Point(19, 18);
             CustomerModelValue.Name = "CustomerModelValue";
-            CustomerModelValue.Size = new Size(115, 20);
+            CustomerModelValue.Size = new Size(93, 15);
             CustomerModelValue.TabIndex = 65;
             CustomerModelValue.Text = "CustomerModel";
             CustomerModelValue.TextAlign = ContentAlignment.MiddleLeft;
+            CustomerModelValue.Click += CustomerModelValue_Click;
             // 
             // LicenceInfo
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(702, 344);
             Controls.Add(CustomerModelValue);
             Controls.Add(CloseButton);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MinimumSize = new Size(818, 497);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(718, 383);
             Name = "LicenceInfo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "LicenceInfo";

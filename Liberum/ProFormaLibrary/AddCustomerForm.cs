@@ -149,5 +149,10 @@ namespace ProFormaUI
 
             ClearForm();
         }
+
+        private void defaultHaulierLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
