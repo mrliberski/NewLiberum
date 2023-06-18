@@ -530,7 +530,7 @@
     <value>NoControl</value>
   </data>
   <data name="telephoneNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 196</value>
+    <value>45, 196</value>
   </data>
   <data name="telephoneNumberLAbel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -548,7 +548,7 @@
     <value>NoControl</value>
   </data>
   <data name="contactNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 182</value>
+    <value>22, 182</value>
   </data>
   <data name="contactNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -584,7 +584,7 @@
     <value>NoControl</value>
   </data>
   <data name="customerSapNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 166</value>
+    <value>31, 166</value>
   </data>
   <data name="customerSapNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -620,7 +620,7 @@
     <value>NoControl</value>
   </data>
   <data name="EoriNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 152</value>
+    <value>27, 152</value>
   </data>
   <data name="EoriNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -656,7 +656,7 @@
     <value>NoControl</value>
   </data>
   <data name="VATNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 136</value>
+    <value>33, 136</value>
   </data>
   <data name="VATNumberLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -692,7 +692,7 @@
     <value>NoControl</value>
   </data>
   <data name="CountryLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 122</value>
+    <value>56, 122</value>
   </data>
   <data name="CountryLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -728,7 +728,7 @@
     <value>NoControl</value>
   </data>
   <data name="PostCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 106</value>
+    <value>45, 106</value>
   </data>
   <data name="PostCodeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -764,7 +764,7 @@
     <value>NoControl</value>
   </data>
   <data name="AdressLine3Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 92</value>
+    <value>78, 92</value>
   </data>
   <data name="AdressLine3Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -833,7 +833,7 @@
     <value>NoControl</value>
   </data>
   <data name="AddressLine1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 62</value>
+    <value>23, 62</value>
   </data>
   <data name="AddressLine1Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>

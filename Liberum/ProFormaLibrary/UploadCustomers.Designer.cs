@@ -46,9 +46,9 @@
             ErrorPlaceholderValueLabel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             ErrorPlaceholderValueLabel.ForeColor = Color.Red;
             ErrorPlaceholderValueLabel.ImeMode = ImeMode.NoControl;
-            ErrorPlaceholderValueLabel.Location = new Point(12, 67);
+            ErrorPlaceholderValueLabel.Location = new Point(10, 50);
             ErrorPlaceholderValueLabel.Name = "ErrorPlaceholderValueLabel";
-            ErrorPlaceholderValueLabel.Size = new Size(266, 20);
+            ErrorPlaceholderValueLabel.Size = new Size(214, 15);
             ErrorPlaceholderValueLabel.TabIndex = 60;
             ErrorPlaceholderValueLabel.Text = "<-------- Error placeholder ----------->";
             // 
@@ -58,9 +58,10 @@
             FileSelectButton.FlatStyle = FlatStyle.Flat;
             FileSelectButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FileSelectButton.ImeMode = ImeMode.NoControl;
-            FileSelectButton.Location = new Point(12, 12);
+            FileSelectButton.Location = new Point(10, 9);
+            FileSelectButton.Margin = new Padding(3, 2, 3, 2);
             FileSelectButton.Name = "FileSelectButton";
-            FileSelectButton.Size = new Size(171, 32);
+            FileSelectButton.Size = new Size(150, 24);
             FileSelectButton.TabIndex = 59;
             FileSelectButton.Text = "Select File";
             FileSelectButton.UseVisualStyleBackColor = true;
@@ -69,9 +70,10 @@
             // PathSelectionTextBox
             // 
             PathSelectionTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            PathSelectionTextBox.Location = new Point(189, 15);
+            PathSelectionTextBox.Location = new Point(165, 11);
+            PathSelectionTextBox.Margin = new Padding(3, 2, 3, 2);
             PathSelectionTextBox.Name = "PathSelectionTextBox";
-            PathSelectionTextBox.Size = new Size(771, 27);
+            PathSelectionTextBox.Size = new Size(675, 23);
             PathSelectionTextBox.TabIndex = 58;
             PathSelectionTextBox.Text = "Select Valid Excel File";
             // 
@@ -80,9 +82,9 @@
             InfoLabel.AutoSize = true;
             InfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             InfoLabel.ImeMode = ImeMode.NoControl;
-            InfoLabel.Location = new Point(12, 47);
+            InfoLabel.Location = new Point(10, 35);
             InfoLabel.Name = "InfoLabel";
-            InfoLabel.Size = new Size(137, 20);
+            InfoLabel.Size = new Size(109, 15);
             InfoLabel.TabIndex = 57;
             InfoLabel.Text = "<Info Placeholder>";
             // 
@@ -92,9 +94,10 @@
             UploadFileButton.FlatStyle = FlatStyle.Flat;
             UploadFileButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             UploadFileButton.ImeMode = ImeMode.NoControl;
-            UploadFileButton.Location = new Point(12, 295);
+            UploadFileButton.Location = new Point(10, 221);
+            UploadFileButton.Margin = new Padding(3, 2, 3, 2);
             UploadFileButton.Name = "UploadFileButton";
-            UploadFileButton.Size = new Size(171, 32);
+            UploadFileButton.Size = new Size(150, 24);
             UploadFileButton.TabIndex = 61;
             UploadFileButton.Text = "Upload File";
             UploadFileButton.UseVisualStyleBackColor = true;
@@ -106,9 +109,10 @@
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(789, 295);
+            CloseButton.Location = new Point(690, 221);
+            CloseButton.Margin = new Padding(3, 2, 3, 2);
             CloseButton.Name = "CloseButton";
-            CloseButton.Size = new Size(171, 32);
+            CloseButton.Size = new Size(150, 24);
             CloseButton.TabIndex = 62;
             CloseButton.Text = "Close";
             CloseButton.UseVisualStyleBackColor = true;
@@ -117,9 +121,11 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(CustomerModelValue);
-            groupBox1.Location = new Point(12, 125);
+            groupBox1.Location = new Point(10, 94);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(948, 164);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(830, 123);
             groupBox1.TabIndex = 63;
             groupBox1.TabStop = false;
             groupBox1.Text = "Customer Model";
@@ -129,18 +135,19 @@
             CustomerModelValue.AutoSize = true;
             CustomerModelValue.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CustomerModelValue.ImeMode = ImeMode.NoControl;
-            CustomerModelValue.Location = new Point(6, 32);
+            CustomerModelValue.Location = new Point(5, 24);
             CustomerModelValue.Name = "CustomerModelValue";
-            CustomerModelValue.Size = new Size(115, 20);
+            CustomerModelValue.Size = new Size(93, 15);
             CustomerModelValue.TabIndex = 64;
             CustomerModelValue.Text = "CustomerModel";
             // 
             // UploadCustomers
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(972, 354);
+            BackColor = Color.White;
+            ClientSize = new Size(852, 272);
             Controls.Add(groupBox1);
             Controls.Add(CloseButton);
             Controls.Add(UploadFileButton);
@@ -151,7 +158,8 @@
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MinimumSize = new Size(990, 401);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(868, 311);
             Name = "UploadCustomers";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Upload Customers";

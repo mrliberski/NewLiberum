@@ -383,6 +383,7 @@
             // 
             resources.ApplyResources(dataGridView1, "dataGridView1");
             dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.BackgroundColor = Color.LightGray;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 29;

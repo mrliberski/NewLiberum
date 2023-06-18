@@ -75,35 +75,38 @@
             // AvailableItemsComboBox
             // 
             AvailableItemsComboBox.FormattingEnabled = true;
-            AvailableItemsComboBox.Location = new Point(308, 27);
+            AvailableItemsComboBox.Location = new Point(270, 20);
+            AvailableItemsComboBox.Margin = new Padding(3, 2, 3, 2);
             AvailableItemsComboBox.Name = "AvailableItemsComboBox";
-            AvailableItemsComboBox.Size = new Size(922, 28);
+            AvailableItemsComboBox.Size = new Size(807, 23);
             AvailableItemsComboBox.TabIndex = 0;
             AvailableItemsComboBox.SelectedIndexChanged += AvailableItemsComboBox_SelectedIndexChanged;
             // 
             // SelectAvailableLAbel
             // 
             SelectAvailableLAbel.AutoSize = true;
-            SelectAvailableLAbel.Location = new Point(35, 30);
+            SelectAvailableLAbel.Location = new Point(31, 22);
             SelectAvailableLAbel.Name = "SelectAvailableLAbel";
-            SelectAvailableLAbel.Size = new Size(209, 20);
+            SelectAvailableLAbel.Size = new Size(164, 15);
             SelectAvailableLAbel.TabIndex = 1;
             SelectAvailableLAbel.Text = "Select available item from list:";
             // 
             // ItemQtyTextBox
             // 
-            ItemQtyTextBox.Location = new Point(179, 108);
+            ItemQtyTextBox.Location = new Point(157, 81);
+            ItemQtyTextBox.Margin = new Padding(3, 2, 3, 2);
             ItemQtyTextBox.Name = "ItemQtyTextBox";
-            ItemQtyTextBox.Size = new Size(65, 27);
+            ItemQtyTextBox.Size = new Size(57, 23);
             ItemQtyTextBox.TabIndex = 2;
             ItemQtyTextBox.Text = "0";
             ItemQtyTextBox.TextChanged += ItemQtyTextBox_TextChanged;
             // 
             // PAckagingQtyTextBox
             // 
-            PAckagingQtyTextBox.Location = new Point(179, 207);
+            PAckagingQtyTextBox.Location = new Point(157, 155);
+            PAckagingQtyTextBox.Margin = new Padding(3, 2, 3, 2);
             PAckagingQtyTextBox.Name = "PAckagingQtyTextBox";
-            PAckagingQtyTextBox.Size = new Size(65, 27);
+            PAckagingQtyTextBox.Size = new Size(57, 23);
             PAckagingQtyTextBox.TabIndex = 37;
             PAckagingQtyTextBox.Text = "0";
             PAckagingQtyTextBox.TextChanged += Hauliertextbox_TextChanged;
@@ -111,36 +114,36 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(35, 111);
+            label2.Location = new Point(31, 83);
             label2.Name = "label2";
-            label2.Size = new Size(138, 20);
+            label2.Size = new Size(111, 15);
             label2.TabIndex = 38;
             label2.Text = "Enter item quantity:";
             // 
             // selectedItemNameLabel
             // 
             selectedItemNameLabel.AutoSize = true;
-            selectedItemNameLabel.Location = new Point(146, 36);
+            selectedItemNameLabel.Location = new Point(128, 27);
             selectedItemNameLabel.Name = "selectedItemNameLabel";
-            selectedItemNameLabel.Size = new Size(100, 20);
+            selectedItemNameLabel.Size = new Size(78, 15);
             selectedItemNameLabel.TabIndex = 39;
             selectedItemNameLabel.Text = "Selected Item";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 210);
+            label1.Location = new Point(29, 158);
             label1.Name = "label1";
-            label1.Size = new Size(137, 20);
+            label1.Size = new Size(112, 15);
             label1.TabIndex = 40;
             label1.Text = "Packaging quantity:";
             // 
             // PackagingNameLabel
             // 
             PackagingNameLabel.AutoSize = true;
-            PackagingNameLabel.Location = new Point(146, 134);
+            PackagingNameLabel.Location = new Point(128, 100);
             PackagingNameLabel.Name = "PackagingNameLabel";
-            PackagingNameLabel.Size = new Size(120, 20);
+            PackagingNameLabel.Size = new Size(97, 15);
             PackagingNameLabel.TabIndex = 41;
             PackagingNameLabel.Text = "Packaging Name";
             // 
@@ -150,9 +153,10 @@
             AddItemButton.FlatStyle = FlatStyle.Flat;
             AddItemButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             AddItemButton.ImeMode = ImeMode.NoControl;
-            AddItemButton.Location = new Point(33, 349);
+            AddItemButton.Location = new Point(29, 262);
+            AddItemButton.Margin = new Padding(3, 2, 3, 2);
             AddItemButton.Name = "AddItemButton";
-            AddItemButton.Size = new Size(171, 43);
+            AddItemButton.Size = new Size(150, 32);
             AddItemButton.TabIndex = 42;
             AddItemButton.Text = "Add Item";
             AddItemButton.UseVisualStyleBackColor = true;
@@ -164,9 +168,10 @@
             Reset.FlatStyle = FlatStyle.Flat;
             Reset.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Reset.ImeMode = ImeMode.NoControl;
-            Reset.Location = new Point(224, 349);
+            Reset.Location = new Point(196, 262);
+            Reset.Margin = new Padding(3, 2, 3, 2);
             Reset.Name = "Reset";
-            Reset.Size = new Size(171, 43);
+            Reset.Size = new Size(150, 32);
             Reset.TabIndex = 43;
             Reset.Text = "Reset";
             Reset.UseVisualStyleBackColor = true;
@@ -178,9 +183,10 @@
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(1059, 349);
+            CloseButton.Location = new Point(927, 262);
+            CloseButton.Margin = new Padding(3, 2, 3, 2);
             CloseButton.Name = "CloseButton";
-            CloseButton.Size = new Size(171, 43);
+            CloseButton.Size = new Size(150, 32);
             CloseButton.TabIndex = 44;
             CloseButton.Text = "Close";
             CloseButton.UseVisualStyleBackColor = true;
@@ -189,53 +195,56 @@
             // PartsPerContainerLabel
             // 
             PartsPerContainerLabel.AutoSize = true;
-            PartsPerContainerLabel.Location = new Point(35, 144);
+            PartsPerContainerLabel.Location = new Point(31, 108);
             PartsPerContainerLabel.Name = "PartsPerContainerLabel";
-            PartsPerContainerLabel.Size = new Size(135, 20);
+            PartsPerContainerLabel.Size = new Size(111, 15);
             PartsPerContainerLabel.TabIndex = 45;
             PartsPerContainerLabel.Text = "Parts Per Container:";
             // 
             // ContainersPerHuLabel
             // 
             ContainersPerHuLabel.AutoSize = true;
-            ContainersPerHuLabel.Location = new Point(39, 177);
+            ContainersPerHuLabel.Location = new Point(34, 133);
             ContainersPerHuLabel.Name = "ContainersPerHuLabel";
-            ContainersPerHuLabel.Size = new Size(131, 20);
+            ContainersPerHuLabel.Size = new Size(107, 15);
             ContainersPerHuLabel.TabIndex = 46;
             ContainersPerHuLabel.Text = "Containers Per HU:";
             // 
             // PalletsLabel
             // 
             PalletsLabel.AutoSize = true;
-            PalletsLabel.Location = new Point(60, 243);
+            PalletsLabel.Location = new Point(52, 182);
             PalletsLabel.Name = "PalletsLabel";
-            PalletsLabel.Size = new Size(110, 20);
+            PalletsLabel.Size = new Size(89, 15);
             PalletsLabel.TabIndex = 47;
             PalletsLabel.Text = "Handling Units:";
             // 
             // PPCtextBox
             // 
-            PPCtextBox.Location = new Point(179, 141);
+            PPCtextBox.Location = new Point(157, 106);
+            PPCtextBox.Margin = new Padding(3, 2, 3, 2);
             PPCtextBox.Name = "PPCtextBox";
-            PPCtextBox.Size = new Size(65, 27);
+            PPCtextBox.Size = new Size(57, 23);
             PPCtextBox.TabIndex = 50;
             PPCtextBox.Text = "0";
             PPCtextBox.TextChanged += PPCtextBox_TextChanged;
             // 
             // CPPtextBox
             // 
-            CPPtextBox.Location = new Point(179, 174);
+            CPPtextBox.Location = new Point(157, 130);
+            CPPtextBox.Margin = new Padding(3, 2, 3, 2);
             CPPtextBox.Name = "CPPtextBox";
-            CPPtextBox.Size = new Size(65, 27);
+            CPPtextBox.Size = new Size(57, 23);
             CPPtextBox.TabIndex = 51;
             CPPtextBox.Text = "0";
             CPPtextBox.TextChanged += CPPtextBox_TextChanged;
             // 
             // PalletsTextBox
             // 
-            PalletsTextBox.Location = new Point(179, 240);
+            PalletsTextBox.Location = new Point(157, 180);
+            PalletsTextBox.Margin = new Padding(3, 2, 3, 2);
             PalletsTextBox.Name = "PalletsTextBox";
-            PalletsTextBox.Size = new Size(65, 27);
+            PalletsTextBox.Size = new Size(57, 23);
             PalletsTextBox.TabIndex = 52;
             PalletsTextBox.Text = "0";
             PalletsTextBox.TextChanged += PalletsTextBox_TextChanged;
@@ -244,9 +253,9 @@
             // 
             itemNotFondLabel.AutoSize = true;
             itemNotFondLabel.ForeColor = Color.Red;
-            itemNotFondLabel.Location = new Point(308, 58);
+            itemNotFondLabel.Location = new Point(270, 44);
             itemNotFondLabel.Name = "itemNotFondLabel";
-            itemNotFondLabel.Size = new Size(213, 20);
+            itemNotFondLabel.Size = new Size(170, 15);
             itemNotFondLabel.TabIndex = 54;
             itemNotFondLabel.Text = "<Item not Found placeholder>";
             // 
@@ -254,9 +263,9 @@
             // 
             quantityErrorLabel.AutoSize = true;
             quantityErrorLabel.ForeColor = Color.Red;
-            quantityErrorLabel.Location = new Point(250, 111);
+            quantityErrorLabel.Location = new Point(219, 83);
             quantityErrorLabel.Name = "quantityErrorLabel";
-            quantityErrorLabel.Size = new Size(280, 20);
+            quantityErrorLabel.Size = new Size(225, 15);
             quantityErrorLabel.TabIndex = 55;
             quantityErrorLabel.Text = "<quantity must be numeric placeholder>";
             // 
@@ -264,9 +273,9 @@
             // 
             PackQtyErrorLabel.AutoSize = true;
             PackQtyErrorLabel.ForeColor = Color.Red;
-            PackQtyErrorLabel.Location = new Point(250, 210);
+            PackQtyErrorLabel.Location = new Point(219, 158);
             PackQtyErrorLabel.Name = "PackQtyErrorLabel";
-            PackQtyErrorLabel.Size = new Size(280, 20);
+            PackQtyErrorLabel.Size = new Size(225, 15);
             PackQtyErrorLabel.TabIndex = 56;
             PackQtyErrorLabel.Text = "<quantity must be numeric placeholder>";
             // 
@@ -274,9 +283,9 @@
             // 
             PPCerrorLAbel.AutoSize = true;
             PPCerrorLAbel.ForeColor = Color.Red;
-            PPCerrorLAbel.Location = new Point(250, 145);
+            PPCerrorLAbel.Location = new Point(219, 109);
             PPCerrorLAbel.Name = "PPCerrorLAbel";
-            PPCerrorLAbel.Size = new Size(280, 20);
+            PPCerrorLAbel.Size = new Size(225, 15);
             PPCerrorLAbel.TabIndex = 57;
             PPCerrorLAbel.Text = "<quantity must be numeric placeholder>";
             // 
@@ -284,9 +293,9 @@
             // 
             CPHUerrorLAbel.AutoSize = true;
             CPHUerrorLAbel.ForeColor = Color.Red;
-            CPHUerrorLAbel.Location = new Point(250, 177);
+            CPHUerrorLAbel.Location = new Point(219, 133);
             CPHUerrorLAbel.Name = "CPHUerrorLAbel";
-            CPHUerrorLAbel.Size = new Size(280, 20);
+            CPHUerrorLAbel.Size = new Size(225, 15);
             CPHUerrorLAbel.TabIndex = 58;
             CPHUerrorLAbel.Text = "<quantity must be numeric placeholder>";
             // 
@@ -294,18 +303,18 @@
             // 
             PalletsErrorLAbel.AutoSize = true;
             PalletsErrorLAbel.ForeColor = Color.Red;
-            PalletsErrorLAbel.Location = new Point(250, 243);
+            PalletsErrorLAbel.Location = new Point(219, 182);
             PalletsErrorLAbel.Name = "PalletsErrorLAbel";
-            PalletsErrorLAbel.Size = new Size(280, 20);
+            PalletsErrorLAbel.Size = new Size(225, 15);
             PalletsErrorLAbel.TabIndex = 59;
             PalletsErrorLAbel.Text = "<quantity must be numeric placeholder>";
             // 
             // ItemHScodeLabel
             // 
             ItemHScodeLabel.AutoSize = true;
-            ItemHScodeLabel.Location = new Point(146, 94);
+            ItemHScodeLabel.Location = new Point(128, 70);
             ItemHScodeLabel.Name = "ItemHScodeLabel";
-            ItemHScodeLabel.Size = new Size(66, 20);
+            ItemHScodeLabel.Size = new Size(52, 15);
             ItemHScodeLabel.TabIndex = 60;
             ItemHScodeLabel.Text = "Item HS ";
             // 
@@ -329,9 +338,11 @@
             groupBox1.Controls.Add(selectedItemNameLabel);
             groupBox1.Controls.Add(ItemHScodeLabel);
             groupBox1.Controls.Add(PackagingNameLabel);
-            groupBox1.Location = new Point(536, 84);
+            groupBox1.Location = new Point(469, 63);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(694, 235);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(607, 176);
             groupBox1.TabIndex = 61;
             groupBox1.TabStop = false;
             groupBox1.Text = "Item Data";
@@ -339,143 +350,144 @@
             // CustomerNumberValue
             // 
             CustomerNumberValue.AutoSize = true;
-            CustomerNumberValue.Location = new Point(146, 76);
+            CustomerNumberValue.Location = new Point(128, 57);
             CustomerNumberValue.Name = "CustomerNumberValue";
-            CustomerNumberValue.Size = new Size(130, 20);
+            CustomerNumberValue.Size = new Size(106, 15);
             CustomerNumberValue.TabIndex = 74;
             CustomerNumberValue.Text = "Customer Number";
             // 
             // PartNumberValue
             // 
             PartNumberValue.AutoSize = true;
-            PartNumberValue.Location = new Point(146, 56);
+            PartNumberValue.Location = new Point(128, 42);
             PartNumberValue.Name = "PartNumberValue";
-            PartNumberValue.Size = new Size(92, 20);
+            PartNumberValue.Size = new Size(75, 15);
             PartNumberValue.TabIndex = 73;
             PartNumberValue.Text = "Part Number";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(7, 76);
+            label11.Location = new Point(6, 57);
             label11.Name = "label11";
-            label11.Size = new Size(133, 20);
+            label11.Size = new Size(109, 15);
             label11.TabIndex = 72;
             label11.Text = "Customer Number:";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(45, 56);
+            label10.Location = new Point(39, 42);
             label10.Name = "label10";
-            label10.Size = new Size(95, 20);
+            label10.Size = new Size(78, 15);
             label10.TabIndex = 62;
             label10.Text = "Part Number:";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(93, 154);
+            label9.Location = new Point(81, 116);
             label9.Name = "label9";
-            label9.Size = new Size(47, 20);
+            label9.Size = new Size(38, 15);
             label9.TabIndex = 71;
             label9.Text = "Code:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(61, 134);
+            label8.Location = new Point(53, 100);
             label8.Name = "label8";
-            label8.Size = new Size(79, 20);
+            label8.Size = new Size(65, 15);
             label8.TabIndex = 70;
             label8.Text = "Packaging:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(87, 114);
+            label7.Location = new Point(76, 86);
             label7.Name = "label7";
-            label7.Size = new Size(53, 20);
+            label7.Size = new Size(43, 15);
             label7.TabIndex = 69;
             label7.Text = "Origin:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(87, 194);
+            label6.Location = new Point(76, 146);
             label6.Name = "label6";
-            label6.Size = new Size(53, 20);
+            label6.Size = new Size(43, 15);
             label6.TabIndex = 68;
             label6.Text = "Origin:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(109, 174);
+            label5.Location = new Point(95, 130);
             label5.Name = "label5";
-            label5.Size = new Size(31, 20);
+            label5.Size = new Size(25, 15);
             label5.TabIndex = 67;
             label5.Text = "HS:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(109, 94);
+            label4.Location = new Point(95, 70);
             label4.Name = "label4";
-            label4.Size = new Size(31, 20);
+            label4.Size = new Size(25, 15);
             label4.TabIndex = 66;
             label4.Text = "HS:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(98, 36);
+            label3.Location = new Point(86, 27);
             label3.Name = "label3";
-            label3.Size = new Size(42, 20);
+            label3.Size = new Size(34, 15);
             label3.TabIndex = 65;
             label3.Text = "Item:";
             // 
             // PackagingCOOlabel
             // 
             PackagingCOOlabel.AutoSize = true;
-            PackagingCOOlabel.Location = new Point(146, 194);
+            PackagingCOOlabel.Location = new Point(128, 146);
             PackagingCOOlabel.Name = "PackagingCOOlabel";
-            PackagingCOOlabel.Size = new Size(111, 20);
+            PackagingCOOlabel.Size = new Size(91, 15);
             PackagingCOOlabel.TabIndex = 64;
             PackagingCOOlabel.Text = "Packaging COO";
             // 
             // PackagingHSlabel
             // 
             PackagingHSlabel.AutoSize = true;
-            PackagingHSlabel.Location = new Point(146, 174);
+            PackagingHSlabel.Location = new Point(128, 130);
             PackagingHSlabel.Name = "PackagingHSlabel";
-            PackagingHSlabel.Size = new Size(99, 20);
+            PackagingHSlabel.Size = new Size(80, 15);
             PackagingHSlabel.TabIndex = 63;
             PackagingHSlabel.Text = "Packaging HS";
             // 
             // PackagingCodeLabel
             // 
             PackagingCodeLabel.AutoSize = true;
-            PackagingCodeLabel.Location = new Point(146, 154);
+            PackagingCodeLabel.Location = new Point(128, 116);
             PackagingCodeLabel.Name = "PackagingCodeLabel";
-            PackagingCodeLabel.Size = new Size(115, 20);
+            PackagingCodeLabel.Size = new Size(93, 15);
             PackagingCodeLabel.TabIndex = 62;
             PackagingCodeLabel.Text = "Packaging Code";
             // 
             // ItemCOOlabel
             // 
             ItemCOOlabel.AutoSize = true;
-            ItemCOOlabel.Location = new Point(146, 114);
+            ItemCOOlabel.Location = new Point(128, 86);
             ItemCOOlabel.Name = "ItemCOOlabel";
-            ItemCOOlabel.Size = new Size(74, 20);
+            ItemCOOlabel.Size = new Size(60, 15);
             ItemCOOlabel.TabIndex = 61;
             ItemCOOlabel.Text = "Item COO";
             // 
             // AddItem
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 422);
+            BackColor = Color.White;
+            ClientSize = new Size(1096, 322);
             Controls.Add(groupBox1);
             Controls.Add(PalletsErrorLAbel);
             Controls.Add(CPHUerrorLAbel);
@@ -499,7 +511,8 @@
             Controls.Add(SelectAvailableLAbel);
             Controls.Add(AvailableItemsComboBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MinimumSize = new Size(1268, 469);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(1112, 361);
             Name = "AddItem";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Add Item to Shipment";
