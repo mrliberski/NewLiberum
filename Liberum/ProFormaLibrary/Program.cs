@@ -32,6 +32,7 @@ namespace ProFormaLibrary
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             System.Windows.Forms.Application.Run(new ProFormaGenerator());
+            //System.Windows.Forms.Application.Run(new RemoteSql());
             //Application.Run(new LogonScreenForm());
         }
 

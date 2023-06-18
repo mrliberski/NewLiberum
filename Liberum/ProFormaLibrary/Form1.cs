@@ -213,13 +213,13 @@ namespace ProFormaLibrary
             //dataGridView1.Columns["ItemQuantity"].ReadOnly = true;
 
             dataGridView1.Columns["ItemName"].HeaderText = "Item Name";
-            dataGridView1.Columns["ItemName"].ReadOnly = true;
+            //dataGridView1.Columns["ItemName"].ReadOnly = true;
 
             dataGridView1.Columns["ContainerName"].HeaderText = "Container Name";
-            dataGridView1.Columns["ContainerName"].ReadOnly = true;
+            //dataGridView1.Columns["ContainerName"].ReadOnly = true;
 
             dataGridView1.Columns["ContainerCode"].HeaderText = "Container Code";
-            dataGridView1.Columns["ContainerCode"].ReadOnly = true;
+            //dataGridView1.Columns["ContainerCode"].ReadOnly = true;
         }
 
         private void SetToolbarLabelExpiryDate()
