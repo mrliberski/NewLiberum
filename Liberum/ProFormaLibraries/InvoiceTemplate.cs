@@ -105,9 +105,9 @@ namespace ProFormaLibraries
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemQuantity} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemHScode} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemCOO} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ItemNetWeight*model.ItemQuantity).ToString("0:00")} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemPrice} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ItemQuantity*model.ItemPrice).ToString("0:00")} &nbsp;</td></tr>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ItemNetWeight*model.ItemQuantity).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ItemPrice).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ItemQuantity*model.ItemPrice).ToString("0.00")} &nbsp;</td></tr>
 
                     <tr>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; &nbsp;</td>
@@ -117,8 +117,8 @@ namespace ProFormaLibraries
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainersQuantity} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainerHSCode} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainerCOO} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ContainersQuantity*model.ContainerNetWeight).ToString("0:00")} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainerPrice} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ContainersQuantity*model.ContainerNetWeight).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ContainerPrice).ToString("0.00")} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ContainerPrice*model.ContainersQuantity).ToString("0.00")} &nbsp;</td></tr>
                 ";
 
@@ -264,9 +264,9 @@ namespace ProFormaLibraries
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemQuantity} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemHScode} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemCOO} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ItemNetWeight * model.ItemQuantity).ToString("0:00")} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ItemPrice} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ItemQuantity * model.ItemPrice).ToString("0:00")} &nbsp;</td></tr>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ItemNetWeight * model.ItemQuantity).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ItemPrice).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ItemQuantity * model.ItemPrice).ToString("0.00")} &nbsp;</td></tr>
 
                     <tr>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; &nbsp;</td>
@@ -276,9 +276,9 @@ namespace ProFormaLibraries
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainersQuantity} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainerHSCode} &nbsp;</td>
                         <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainerCOO} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ContainersQuantity * model.ContainerNetWeight).ToString("0:00")} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {model.ContainerPrice} &nbsp;</td>
-                        <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ContainerPrice * model.ContainersQuantity).ToString("0:00")} &nbsp;</td></tr>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ContainersQuantity * model.ContainerNetWeight).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; "" > &nbsp; {(model.ContainerPrice).ToString("0.00")} &nbsp;</td>
+                        <td align = ""center"" style = ""border-left: 1px solid black; border-right: 1px solid black; "" > &nbsp; {(model.ContainerPrice * model.ContainersQuantity).ToString("0.00")} &nbsp;</td></tr>
                 ";
 
                 HUcount = HUcount + model.PalletsQuantity;

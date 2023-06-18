@@ -99,9 +99,9 @@
             CloseButton.FlatAppearance.MouseDownBackColor = Color.White;
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(768, 561);
+            CloseButton.Location = new Point(738, 561);
             CloseButton.Name = "CloseButton";
-            CloseButton.Size = new Size(170, 25);
+            CloseButton.Size = new Size(170, 33);
             CloseButton.TabIndex = 122;
             CloseButton.Text = "Close";
             CloseButton.UseVisualStyleBackColor = true;
@@ -112,9 +112,9 @@
             ClearButton.FlatAppearance.MouseDownBackColor = Color.White;
             ClearButton.FlatStyle = FlatStyle.Flat;
             ClearButton.ImeMode = ImeMode.NoControl;
-            ClearButton.Location = new Point(388, 561);
+            ClearButton.Location = new Point(375, 561);
             ClearButton.Name = "ClearButton";
-            ClearButton.Size = new Size(170, 25);
+            ClearButton.Size = new Size(170, 33);
             ClearButton.TabIndex = 121;
             ClearButton.Text = "Clear";
             ClearButton.UseVisualStyleBackColor = true;
@@ -125,9 +125,9 @@
             CreateItemButton.FlatAppearance.MouseDownBackColor = Color.White;
             CreateItemButton.FlatStyle = FlatStyle.Flat;
             CreateItemButton.ImeMode = ImeMode.NoControl;
-            CreateItemButton.Location = new Point(10, 561);
+            CreateItemButton.Location = new Point(23, 561);
             CreateItemButton.Name = "CreateItemButton";
-            CreateItemButton.Size = new Size(170, 25);
+            CreateItemButton.Size = new Size(170, 33);
             CreateItemButton.TabIndex = 120;
             CreateItemButton.Text = "Create New Item";
             CreateItemButton.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@
             // 
             // itemNameTextbox
             // 
-            itemNameTextbox.Location = new Point(176, 87);
+            itemNameTextbox.Location = new Point(216, 57);
             itemNameTextbox.Name = "itemNameTextbox";
             itemNameTextbox.Size = new Size(322, 23);
             itemNameTextbox.TabIndex = 102;
@@ -146,7 +146,7 @@
             itemNameLabel.AutoSize = true;
             itemNameLabel.ImageAlign = ContentAlignment.TopRight;
             itemNameLabel.ImeMode = ImeMode.NoControl;
-            itemNameLabel.Location = new Point(91, 90);
+            itemNameLabel.Location = new Point(91, 60);
             itemNameLabel.Name = "itemNameLabel";
             itemNameLabel.Size = new Size(66, 15);
             itemNameLabel.TabIndex = 121;
@@ -211,9 +211,9 @@
             groupBox1.Controls.Add(selectCustomerLAbel);
             groupBox1.Controls.Add(itemNameTextbox);
             groupBox1.Controls.Add(itemNameLabel);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(27, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(926, 543);
+            groupBox1.Size = new Size(881, 543);
             groupBox1.TabIndex = 126;
             groupBox1.TabStop = false;
             groupBox1.Text = "New Item Definitions";
@@ -225,7 +225,7 @@
             CustomerNumberErrorLabel.ForeColor = Color.Red;
             CustomerNumberErrorLabel.ImageAlign = ContentAlignment.TopRight;
             CustomerNumberErrorLabel.ImeMode = ImeMode.NoControl;
-            CustomerNumberErrorLabel.Location = new Point(505, 136);
+            CustomerNumberErrorLabel.Location = new Point(545, 108);
             CustomerNumberErrorLabel.Name = "CustomerNumberErrorLabel";
             CustomerNumberErrorLabel.Size = new Size(210, 15);
             CustomerNumberErrorLabel.TabIndex = 183;
@@ -234,7 +234,7 @@
             // 
             // CustomerNumberTextBox
             // 
-            CustomerNumberTextBox.Location = new Point(176, 133);
+            CustomerNumberTextBox.Location = new Point(216, 105);
             CustomerNumberTextBox.Name = "CustomerNumberTextBox";
             CustomerNumberTextBox.Size = new Size(322, 23);
             CustomerNumberTextBox.TabIndex = 181;
@@ -245,7 +245,7 @@
             CustomerNumberLabel.AutoSize = true;
             CustomerNumberLabel.ImageAlign = ContentAlignment.TopRight;
             CustomerNumberLabel.ImeMode = ImeMode.NoControl;
-            CustomerNumberLabel.Location = new Point(54, 137);
+            CustomerNumberLabel.Location = new Point(54, 108);
             CustomerNumberLabel.Name = "CustomerNumberLabel";
             CustomerNumberLabel.Size = new Size(103, 15);
             CustomerNumberLabel.TabIndex = 182;
@@ -259,7 +259,7 @@
             partNumberErrorLAbel.ForeColor = Color.Red;
             partNumberErrorLAbel.ImageAlign = ContentAlignment.TopRight;
             partNumberErrorLAbel.ImeMode = ImeMode.NoControl;
-            partNumberErrorLAbel.Location = new Point(505, 113);
+            partNumberErrorLAbel.Location = new Point(545, 83);
             partNumberErrorLAbel.Name = "partNumberErrorLAbel";
             partNumberErrorLAbel.Size = new Size(210, 15);
             partNumberErrorLAbel.TabIndex = 180;
@@ -268,7 +268,7 @@
             // 
             // PartNumberTextBox
             // 
-            PartNumberTextBox.Location = new Point(176, 110);
+            PartNumberTextBox.Location = new Point(216, 81);
             PartNumberTextBox.Name = "PartNumberTextBox";
             PartNumberTextBox.Size = new Size(322, 23);
             PartNumberTextBox.TabIndex = 178;
@@ -279,7 +279,7 @@
             PArtNumberLAbel.AutoSize = true;
             PArtNumberLAbel.ImageAlign = ContentAlignment.TopRight;
             PArtNumberLAbel.ImeMode = ImeMode.NoControl;
-            PArtNumberLAbel.Location = new Point(82, 114);
+            PArtNumberLAbel.Location = new Point(82, 84);
             PArtNumberLAbel.Name = "PArtNumberLAbel";
             PArtNumberLAbel.Size = new Size(75, 15);
             PArtNumberLAbel.TabIndex = 179;
@@ -293,7 +293,7 @@
             LidErrorLAbel.ForeColor = Color.Red;
             LidErrorLAbel.ImageAlign = ContentAlignment.TopRight;
             LidErrorLAbel.ImeMode = ImeMode.NoControl;
-            LidErrorLAbel.Location = new Point(248, 499);
+            LidErrorLAbel.Location = new Point(288, 473);
             LidErrorLAbel.Name = "LidErrorLAbel";
             LidErrorLAbel.Size = new Size(210, 15);
             LidErrorLAbel.TabIndex = 177;
@@ -307,7 +307,7 @@
             ReqPalletErrorLabel.ForeColor = Color.Red;
             ReqPalletErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ReqPalletErrorLabel.ImeMode = ImeMode.NoControl;
-            ReqPalletErrorLabel.Location = new Point(248, 470);
+            ReqPalletErrorLabel.Location = new Point(288, 449);
             ReqPalletErrorLabel.Name = "ReqPalletErrorLabel";
             ReqPalletErrorLabel.Size = new Size(210, 15);
             ReqPalletErrorLabel.TabIndex = 176;
@@ -321,7 +321,7 @@
             ReqPackagingErrorLabel.ForeColor = Color.Red;
             ReqPackagingErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ReqPackagingErrorLabel.ImeMode = ImeMode.NoControl;
-            ReqPackagingErrorLabel.Location = new Point(248, 441);
+            ReqPackagingErrorLabel.Location = new Point(288, 425);
             ReqPackagingErrorLabel.Name = "ReqPackagingErrorLabel";
             ReqPackagingErrorLabel.Size = new Size(210, 15);
             ReqPackagingErrorLabel.TabIndex = 175;
@@ -335,7 +335,7 @@
             ContainerPerPalletErrorLabel.ForeColor = Color.Red;
             ContainerPerPalletErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerPerPalletErrorLabel.ImeMode = ImeMode.NoControl;
-            ContainerPerPalletErrorLabel.Location = new Point(505, 412);
+            ContainerPerPalletErrorLabel.Location = new Point(545, 396);
             ContainerPerPalletErrorLabel.Name = "ContainerPerPalletErrorLabel";
             ContainerPerPalletErrorLabel.Size = new Size(210, 15);
             ContainerPerPalletErrorLabel.TabIndex = 174;
@@ -349,7 +349,7 @@
             ContainerPPUerrorLabel.ForeColor = Color.Red;
             ContainerPPUerrorLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerPPUerrorLabel.ImeMode = ImeMode.NoControl;
-            ContainerPPUerrorLabel.Location = new Point(504, 389);
+            ContainerPPUerrorLabel.Location = new Point(545, 372);
             ContainerPPUerrorLabel.Name = "ContainerPPUerrorLabel";
             ContainerPPUerrorLabel.Size = new Size(210, 15);
             ContainerPPUerrorLabel.TabIndex = 173;
@@ -363,7 +363,7 @@
             ContainerCOOerrorLabel.ForeColor = Color.Red;
             ContainerCOOerrorLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerCOOerrorLabel.ImeMode = ImeMode.NoControl;
-            ContainerCOOerrorLabel.Location = new Point(505, 366);
+            ContainerCOOerrorLabel.Location = new Point(545, 348);
             ContainerCOOerrorLabel.Name = "ContainerCOOerrorLabel";
             ContainerCOOerrorLabel.Size = new Size(210, 15);
             ContainerCOOerrorLabel.TabIndex = 172;
@@ -377,7 +377,7 @@
             ContainerHScodeErrorLabel.ForeColor = Color.Red;
             ContainerHScodeErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerHScodeErrorLabel.ImeMode = ImeMode.NoControl;
-            ContainerHScodeErrorLabel.Location = new Point(505, 343);
+            ContainerHScodeErrorLabel.Location = new Point(544, 324);
             ContainerHScodeErrorLabel.Name = "ContainerHScodeErrorLabel";
             ContainerHScodeErrorLabel.Size = new Size(210, 15);
             ContainerHScodeErrorLabel.TabIndex = 171;
@@ -391,7 +391,7 @@
             ContainerPriceErrorLAbel.ForeColor = Color.Red;
             ContainerPriceErrorLAbel.ImageAlign = ContentAlignment.TopRight;
             ContainerPriceErrorLAbel.ImeMode = ImeMode.NoControl;
-            ContainerPriceErrorLAbel.Location = new Point(505, 320);
+            ContainerPriceErrorLAbel.Location = new Point(545, 300);
             ContainerPriceErrorLAbel.Name = "ContainerPriceErrorLAbel";
             ContainerPriceErrorLAbel.Size = new Size(210, 15);
             ContainerPriceErrorLAbel.TabIndex = 170;
@@ -405,7 +405,7 @@
             ContainerWeightErrorLabel.ForeColor = Color.Red;
             ContainerWeightErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerWeightErrorLabel.ImeMode = ImeMode.NoControl;
-            ContainerWeightErrorLabel.Location = new Point(504, 297);
+            ContainerWeightErrorLabel.Location = new Point(545, 276);
             ContainerWeightErrorLabel.Name = "ContainerWeightErrorLabel";
             ContainerWeightErrorLabel.Size = new Size(210, 15);
             ContainerWeightErrorLabel.TabIndex = 169;
@@ -419,7 +419,7 @@
             ContainerCodeErrorLabel.ForeColor = Color.Red;
             ContainerCodeErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerCodeErrorLabel.ImeMode = ImeMode.NoControl;
-            ContainerCodeErrorLabel.Location = new Point(505, 274);
+            ContainerCodeErrorLabel.Location = new Point(545, 252);
             ContainerCodeErrorLabel.Name = "ContainerCodeErrorLabel";
             ContainerCodeErrorLabel.Size = new Size(210, 15);
             ContainerCodeErrorLabel.TabIndex = 168;
@@ -433,7 +433,7 @@
             ContainerNameErrolLabel.ForeColor = Color.Red;
             ContainerNameErrolLabel.ImageAlign = ContentAlignment.TopRight;
             ContainerNameErrolLabel.ImeMode = ImeMode.NoControl;
-            ContainerNameErrolLabel.Location = new Point(504, 251);
+            ContainerNameErrolLabel.Location = new Point(545, 228);
             ContainerNameErrolLabel.Name = "ContainerNameErrolLabel";
             ContainerNameErrolLabel.Size = new Size(210, 15);
             ContainerNameErrolLabel.TabIndex = 167;
@@ -447,7 +447,7 @@
             ItemCOOerrorLAbel.ForeColor = Color.Red;
             ItemCOOerrorLAbel.ImageAlign = ContentAlignment.TopRight;
             ItemCOOerrorLAbel.ImeMode = ImeMode.NoControl;
-            ItemCOOerrorLAbel.Location = new Point(505, 228);
+            ItemCOOerrorLAbel.Location = new Point(545, 204);
             ItemCOOerrorLAbel.Name = "ItemCOOerrorLAbel";
             ItemCOOerrorLAbel.Size = new Size(210, 15);
             ItemCOOerrorLAbel.TabIndex = 166;
@@ -461,7 +461,7 @@
             itemHScodeErrorLabel.ForeColor = Color.Red;
             itemHScodeErrorLabel.ImageAlign = ContentAlignment.TopRight;
             itemHScodeErrorLabel.ImeMode = ImeMode.NoControl;
-            itemHScodeErrorLabel.Location = new Point(505, 205);
+            itemHScodeErrorLabel.Location = new Point(545, 180);
             itemHScodeErrorLabel.Name = "itemHScodeErrorLabel";
             itemHScodeErrorLabel.Size = new Size(210, 15);
             itemHScodeErrorLabel.TabIndex = 165;
@@ -475,7 +475,7 @@
             ItemPPUerrorLabel.ForeColor = Color.Red;
             ItemPPUerrorLabel.ImageAlign = ContentAlignment.TopRight;
             ItemPPUerrorLabel.ImeMode = ImeMode.NoControl;
-            ItemPPUerrorLabel.Location = new Point(505, 182);
+            ItemPPUerrorLabel.Location = new Point(544, 156);
             ItemPPUerrorLabel.Name = "ItemPPUerrorLabel";
             ItemPPUerrorLabel.Size = new Size(210, 15);
             ItemPPUerrorLabel.TabIndex = 164;
@@ -489,7 +489,7 @@
             ItemNetErrorLabel.ForeColor = Color.Red;
             ItemNetErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ItemNetErrorLabel.ImeMode = ImeMode.NoControl;
-            ItemNetErrorLabel.Location = new Point(504, 159);
+            ItemNetErrorLabel.Location = new Point(544, 133);
             ItemNetErrorLabel.Name = "ItemNetErrorLabel";
             ItemNetErrorLabel.Size = new Size(210, 15);
             ItemNetErrorLabel.TabIndex = 163;
@@ -503,7 +503,7 @@
             ItemNameErrorLabel.ForeColor = Color.Red;
             ItemNameErrorLabel.ImageAlign = ContentAlignment.TopRight;
             ItemNameErrorLabel.ImeMode = ImeMode.NoControl;
-            ItemNameErrorLabel.Location = new Point(505, 90);
+            ItemNameErrorLabel.Location = new Point(544, 60);
             ItemNameErrorLabel.Name = "ItemNameErrorLabel";
             ItemNameErrorLabel.Size = new Size(210, 15);
             ItemNameErrorLabel.TabIndex = 162;
@@ -514,7 +514,7 @@
             // 
             requiresLidComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             requiresLidComboBox.FormattingEnabled = true;
-            requiresLidComboBox.Location = new Point(176, 496);
+            requiresLidComboBox.Location = new Point(216, 470);
             requiresLidComboBox.Name = "requiresLidComboBox";
             requiresLidComboBox.Size = new Size(66, 23);
             requiresLidComboBox.TabIndex = 119;
@@ -524,7 +524,7 @@
             label2.AutoSize = true;
             label2.ImageAlign = ContentAlignment.TopRight;
             label2.ImeMode = ImeMode.NoControl;
-            label2.Location = new Point(86, 499);
+            label2.Location = new Point(87, 473);
             label2.Name = "label2";
             label2.Size = new Size(71, 15);
             label2.TabIndex = 161;
@@ -535,7 +535,7 @@
             // 
             requiresPalletCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             requiresPalletCombo.FormattingEnabled = true;
-            requiresPalletCombo.Location = new Point(175, 467);
+            requiresPalletCombo.Location = new Point(216, 446);
             requiresPalletCombo.Name = "requiresPalletCombo";
             requiresPalletCombo.Size = new Size(66, 23);
             requiresPalletCombo.TabIndex = 118;
@@ -545,7 +545,7 @@
             label1.AutoSize = true;
             label1.ImageAlign = ContentAlignment.TopRight;
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(73, 470);
+            label1.Location = new Point(74, 449);
             label1.Name = "label1";
             label1.Size = new Size(84, 15);
             label1.TabIndex = 159;
@@ -556,7 +556,7 @@
             // 
             requiresPackComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             requiresPackComboBox.FormattingEnabled = true;
-            requiresPackComboBox.Location = new Point(176, 438);
+            requiresPackComboBox.Location = new Point(216, 422);
             requiresPackComboBox.Name = "requiresPackComboBox";
             requiresPackComboBox.Size = new Size(66, 23);
             requiresPackComboBox.TabIndex = 109;
@@ -566,7 +566,7 @@
             reqPackagingLabel.AutoSize = true;
             reqPackagingLabel.ImageAlign = ContentAlignment.TopRight;
             reqPackagingLabel.ImeMode = ImeMode.NoControl;
-            reqPackagingLabel.Location = new Point(47, 441);
+            reqPackagingLabel.Location = new Point(48, 425);
             reqPackagingLabel.Name = "reqPackagingLabel";
             reqPackagingLabel.Size = new Size(110, 15);
             reqPackagingLabel.TabIndex = 157;
@@ -575,7 +575,7 @@
             // 
             // boxesPerPalletTextBox
             // 
-            boxesPerPalletTextBox.Location = new Point(175, 409);
+            boxesPerPalletTextBox.Location = new Point(216, 393);
             boxesPerPalletTextBox.Name = "boxesPerPalletTextBox";
             boxesPerPalletTextBox.Size = new Size(322, 23);
             boxesPerPalletTextBox.TabIndex = 117;
@@ -586,7 +586,7 @@
             label14.AutoSize = true;
             label14.ImageAlign = ContentAlignment.TopRight;
             label14.ImeMode = ImeMode.NoControl;
-            label14.Location = new Point(41, 412);
+            label14.Location = new Point(42, 396);
             label14.Name = "label14";
             label14.Size = new Size(116, 15);
             label14.TabIndex = 151;
@@ -595,7 +595,7 @@
             // 
             // partsPerBoxTextBox
             // 
-            partsPerBoxTextBox.Location = new Point(176, 386);
+            partsPerBoxTextBox.Location = new Point(216, 369);
             partsPerBoxTextBox.Name = "partsPerBoxTextBox";
             partsPerBoxTextBox.Size = new Size(322, 23);
             partsPerBoxTextBox.TabIndex = 116;
@@ -606,7 +606,7 @@
             ppcLabel.AutoSize = true;
             ppcLabel.ImageAlign = ContentAlignment.TopRight;
             ppcLabel.ImeMode = ImeMode.NoControl;
-            ppcLabel.Location = new Point(49, 389);
+            ppcLabel.Location = new Point(49, 372);
             ppcLabel.Name = "ppcLabel";
             ppcLabel.Size = new Size(108, 15);
             ppcLabel.TabIndex = 149;
@@ -615,7 +615,7 @@
             // 
             // containerCOOtextBox
             // 
-            containerCOOtextBox.Location = new Point(175, 363);
+            containerCOOtextBox.Location = new Point(216, 345);
             containerCOOtextBox.Name = "containerCOOtextBox";
             containerCOOtextBox.Size = new Size(322, 23);
             containerCOOtextBox.TabIndex = 115;
@@ -626,7 +626,7 @@
             label12.AutoSize = true;
             label12.ImageAlign = ContentAlignment.TopRight;
             label12.ImeMode = ImeMode.NoControl;
-            label12.Location = new Point(69, 366);
+            label12.Location = new Point(69, 348);
             label12.Name = "label12";
             label12.Size = new Size(88, 15);
             label12.TabIndex = 147;
@@ -635,7 +635,7 @@
             // 
             // containerHStextBox
             // 
-            containerHStextBox.Location = new Point(176, 340);
+            containerHStextBox.Location = new Point(216, 321);
             containerHStextBox.Name = "containerHStextBox";
             containerHStextBox.Size = new Size(322, 23);
             containerHStextBox.TabIndex = 114;
@@ -646,7 +646,7 @@
             containerHScodeLabel.AutoSize = true;
             containerHScodeLabel.ImageAlign = ContentAlignment.TopRight;
             containerHScodeLabel.ImeMode = ImeMode.NoControl;
-            containerHScodeLabel.Location = new Point(49, 343);
+            containerHScodeLabel.Location = new Point(50, 324);
             containerHScodeLabel.Name = "containerHScodeLabel";
             containerHScodeLabel.Size = new Size(108, 15);
             containerHScodeLabel.TabIndex = 145;
@@ -655,7 +655,7 @@
             // 
             // containerPriceTextBox
             // 
-            containerPriceTextBox.Location = new Point(175, 317);
+            containerPriceTextBox.Location = new Point(216, 297);
             containerPriceTextBox.Name = "containerPriceTextBox";
             containerPriceTextBox.Size = new Size(322, 23);
             containerPriceTextBox.TabIndex = 113;
@@ -666,7 +666,7 @@
             containerPriceLAbel.AutoSize = true;
             containerPriceLAbel.ImageAlign = ContentAlignment.TopRight;
             containerPriceLAbel.ImeMode = ImeMode.NoControl;
-            containerPriceLAbel.Location = new Point(69, 320);
+            containerPriceLAbel.Location = new Point(70, 300);
             containerPriceLAbel.Name = "containerPriceLAbel";
             containerPriceLAbel.Size = new Size(88, 15);
             containerPriceLAbel.TabIndex = 143;
@@ -675,7 +675,7 @@
             // 
             // containerWeightTextBox
             // 
-            containerWeightTextBox.Location = new Point(175, 294);
+            containerWeightTextBox.Location = new Point(216, 273);
             containerWeightTextBox.Name = "containerWeightTextBox";
             containerWeightTextBox.Size = new Size(322, 23);
             containerWeightTextBox.TabIndex = 112;
@@ -686,7 +686,7 @@
             containerWeightLabel.AutoSize = true;
             containerWeightLabel.ImageAlign = ContentAlignment.TopRight;
             containerWeightLabel.ImeMode = ImeMode.NoControl;
-            containerWeightLabel.Location = new Point(33, 297);
+            containerWeightLabel.Location = new Point(33, 276);
             containerWeightLabel.Name = "containerWeightLabel";
             containerWeightLabel.Size = new Size(124, 15);
             containerWeightLabel.TabIndex = 141;
@@ -695,7 +695,7 @@
             // 
             // ContainerCodeTextBox
             // 
-            ContainerCodeTextBox.Location = new Point(176, 271);
+            ContainerCodeTextBox.Location = new Point(216, 249);
             ContainerCodeTextBox.Name = "ContainerCodeTextBox";
             ContainerCodeTextBox.Size = new Size(322, 23);
             ContainerCodeTextBox.TabIndex = 111;
@@ -706,7 +706,7 @@
             label8.AutoSize = true;
             label8.ImageAlign = ContentAlignment.TopRight;
             label8.ImeMode = ImeMode.NoControl;
-            label8.Location = new Point(70, 274);
+            label8.Location = new Point(71, 252);
             label8.Name = "label8";
             label8.Size = new Size(87, 15);
             label8.TabIndex = 139;
@@ -715,7 +715,7 @@
             // 
             // containerNameTextBox
             // 
-            containerNameTextBox.Location = new Point(176, 248);
+            containerNameTextBox.Location = new Point(216, 225);
             containerNameTextBox.Name = "containerNameTextBox";
             containerNameTextBox.Size = new Size(322, 23);
             containerNameTextBox.TabIndex = 110;
@@ -726,7 +726,7 @@
             containerNameLabel.AutoSize = true;
             containerNameLabel.ImageAlign = ContentAlignment.TopRight;
             containerNameLabel.ImeMode = ImeMode.NoControl;
-            containerNameLabel.Location = new Point(63, 251);
+            containerNameLabel.Location = new Point(64, 228);
             containerNameLabel.Name = "containerNameLabel";
             containerNameLabel.Size = new Size(94, 15);
             containerNameLabel.TabIndex = 137;
@@ -735,7 +735,7 @@
             // 
             // itemCOOtextBox
             // 
-            itemCOOtextBox.Location = new Point(176, 225);
+            itemCOOtextBox.Location = new Point(216, 201);
             itemCOOtextBox.Name = "itemCOOtextBox";
             itemCOOtextBox.Size = new Size(322, 23);
             itemCOOtextBox.TabIndex = 108;
@@ -746,7 +746,7 @@
             itemCOOlabel.AutoSize = true;
             itemCOOlabel.ImageAlign = ContentAlignment.TopRight;
             itemCOOlabel.ImeMode = ImeMode.NoControl;
-            itemCOOlabel.Location = new Point(97, 228);
+            itemCOOlabel.Location = new Point(97, 204);
             itemCOOlabel.Name = "itemCOOlabel";
             itemCOOlabel.Size = new Size(60, 15);
             itemCOOlabel.TabIndex = 135;
@@ -755,7 +755,7 @@
             // 
             // HScodeTextBox
             // 
-            HScodeTextBox.Location = new Point(176, 202);
+            HScodeTextBox.Location = new Point(216, 177);
             HScodeTextBox.Name = "HScodeTextBox";
             HScodeTextBox.Size = new Size(322, 23);
             HScodeTextBox.TabIndex = 107;
@@ -766,7 +766,7 @@
             HScodeLabel.AutoSize = true;
             HScodeLabel.ImageAlign = ContentAlignment.TopRight;
             HScodeLabel.ImeMode = ImeMode.NoControl;
-            HScodeLabel.Location = new Point(104, 205);
+            HScodeLabel.Location = new Point(104, 180);
             HScodeLabel.Name = "HScodeLabel";
             HScodeLabel.Size = new Size(53, 15);
             HScodeLabel.TabIndex = 133;
@@ -775,7 +775,7 @@
             // 
             // itemPriceTextBox
             // 
-            itemPriceTextBox.Location = new Point(176, 179);
+            itemPriceTextBox.Location = new Point(216, 153);
             itemPriceTextBox.Name = "itemPriceTextBox";
             itemPriceTextBox.Size = new Size(322, 23);
             itemPriceTextBox.TabIndex = 105;
@@ -786,7 +786,7 @@
             itemPriceLabel.AutoSize = true;
             itemPriceLabel.ImageAlign = ContentAlignment.TopRight;
             itemPriceLabel.ImeMode = ImeMode.NoControl;
-            itemPriceLabel.Location = new Point(80, 180);
+            itemPriceLabel.Location = new Point(80, 156);
             itemPriceLabel.Name = "itemPriceLabel";
             itemPriceLabel.Size = new Size(77, 15);
             itemPriceLabel.TabIndex = 129;
@@ -795,7 +795,7 @@
             // 
             // netWeightTextBox
             // 
-            netWeightTextBox.Location = new Point(176, 156);
+            netWeightTextBox.Location = new Point(216, 129);
             netWeightTextBox.Name = "netWeightTextBox";
             netWeightTextBox.Size = new Size(322, 23);
             netWeightTextBox.TabIndex = 103;
@@ -806,7 +806,7 @@
             netWeightLabel.AutoSize = true;
             netWeightLabel.ImageAlign = ContentAlignment.TopRight;
             netWeightLabel.ImeMode = ImeMode.NoControl;
-            netWeightLabel.Location = new Point(66, 157);
+            netWeightLabel.Location = new Point(66, 133);
             netWeightLabel.Name = "netWeightLabel";
             netWeightLabel.Size = new Size(91, 15);
             netWeightLabel.TabIndex = 125;
@@ -817,7 +817,7 @@
             // 
             selectCustomerComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             selectCustomerComboBox.FormattingEnabled = true;
-            selectCustomerComboBox.Location = new Point(176, 33);
+            selectCustomerComboBox.Location = new Point(216, 33);
             selectCustomerComboBox.Name = "selectCustomerComboBox";
             selectCustomerComboBox.Size = new Size(321, 23);
             selectCustomerComboBox.TabIndex = 101;
@@ -826,7 +826,7 @@
             // 
             selectCustomerLAbel.AutoSize = true;
             selectCustomerLAbel.ImeMode = ImeMode.NoControl;
-            selectCustomerLAbel.Location = new Point(54, 36);
+            selectCustomerLAbel.Location = new Point(64, 36);
             selectCustomerLAbel.Name = "selectCustomerLAbel";
             selectCustomerLAbel.Size = new Size(93, 15);
             selectCustomerLAbel.TabIndex = 123;
@@ -839,7 +839,7 @@
             BottomFormErrorLAbel.ForeColor = Color.Red;
             BottomFormErrorLAbel.ImageAlign = ContentAlignment.TopRight;
             BottomFormErrorLAbel.ImeMode = ImeMode.NoControl;
-            BottomFormErrorLAbel.Location = new Point(10, 589);
+            BottomFormErrorLAbel.Location = new Point(23, 607);
             BottomFormErrorLAbel.Name = "BottomFormErrorLAbel";
             BottomFormErrorLAbel.Size = new Size(210, 15);
             BottomFormErrorLAbel.TabIndex = 178;
@@ -853,7 +853,7 @@
             UpdateButton.ImeMode = ImeMode.NoControl;
             UpdateButton.Location = new Point(199, 561);
             UpdateButton.Name = "UpdateButton";
-            UpdateButton.Size = new Size(170, 25);
+            UpdateButton.Size = new Size(170, 33);
             UpdateButton.TabIndex = 179;
             UpdateButton.Text = "Update Existing Item";
             UpdateButton.UseVisualStyleBackColor = true;
@@ -866,7 +866,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
-            ClientSize = new Size(958, 618);
+            ClientSize = new Size(958, 659);
             Controls.Add(UpdateButton);
             Controls.Add(BottomFormErrorLAbel);
             Controls.Add(groupBox1);
@@ -877,10 +877,11 @@
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MinimumSize = new Size(856, 657);
+            MinimumSize = new Size(974, 698);
             Name = "CreateNewItemForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Create New Item";
+            WindowState = FormWindowState.Maximized;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
