@@ -895,5 +895,10 @@ namespace ProFormaLibrary
         {
 
         }
+
+        private void convertToPdfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HtmlAndPdfLogic.CreatePdfInvoice();
+        }
     }
 }

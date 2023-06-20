@@ -118,6 +118,7 @@
             errolLAbel = new Label();
             InvoiceTypeLabel = new Label();
             InvoiceTypeComboBox = new ComboBox();
+            convertToPdfToolStripMenuItem = new ToolStripMenuItem();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -550,7 +551,7 @@
             // invoiceToolStripMenuItem
             // 
             resources.ApplyResources(invoiceToolStripMenuItem, "invoiceToolStripMenuItem");
-            invoiceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createInvoiceToolStripMenuItem, editInvoiceToolStripMenuItem, openInvoiceFolderToolStripMenuItem });
+            invoiceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createInvoiceToolStripMenuItem, editInvoiceToolStripMenuItem, openInvoiceFolderToolStripMenuItem, convertToPdfToolStripMenuItem });
             invoiceToolStripMenuItem.Name = "invoiceToolStripMenuItem";
             // 
             // createInvoiceToolStripMenuItem
@@ -657,6 +658,12 @@
             resources.ApplyResources(InvoiceTypeComboBox, "InvoiceTypeComboBox");
             InvoiceTypeComboBox.FormattingEnabled = true;
             InvoiceTypeComboBox.Name = "InvoiceTypeComboBox";
+            // 
+            // convertToPdfToolStripMenuItem
+            // 
+            resources.ApplyResources(convertToPdfToolStripMenuItem, "convertToPdfToolStripMenuItem");
+            convertToPdfToolStripMenuItem.Name = "convertToPdfToolStripMenuItem";
+            convertToPdfToolStripMenuItem.Click += convertToPdfToolStripMenuItem_Click;
             // 
             // ProFormaGenerator
             // 
@@ -799,5 +806,6 @@
         private Label errolLAbel;
         private Label InvoiceTypeLabel;
         private ComboBox InvoiceTypeComboBox;
+        private ToolStripMenuItem convertToPdfToolStripMenuItem;
     }
 }

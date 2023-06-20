@@ -104,7 +104,7 @@ namespace ProFormaLibraries
             htmlToPdf.GeneratePdfFromFile(@".\HTML\Invoice.html", null, @".\HTML\Invoice.pdf");
 
             htmlToPdf.LogReceived += (sender, e) => { MessageBox.Show("WkHtmlToPdf Log: {0}", e.Data); };
-            File.Delete(@".\HTML\Invoice.html");
+            //File.Delete(@".\HTML\Invoice.html");
         }
 
     }
