@@ -198,7 +198,10 @@ namespace ProFormaUI
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("this is on TODO list ;)", "I'll do it one day", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Close();
+            Form open = new UpdateItemForm();
+            open.ShowDialog();
+            //MessageBox.Show("this is on TODO list ;)", "I'll do it one day", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
