@@ -33,6 +33,7 @@ This software is provided on as-is basis and may contain errors.
 I reserve the right to amend this software in the way I see fit, and withdraw it from use with due notice. 
 
 DISCLAIMER!
+This sofware is for demonstration purposes only and generated invoices are not to be used for commercial purposes. 
 This software does not collect any personal information.
 Local databases are not shared with any other instance of this sofware. 
 
