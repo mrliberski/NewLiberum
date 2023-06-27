@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace ProFormaUI
 {
-    public partial class AddItem : Form
+    public partial class AddItem : Form, ICustomerItemSelection
     {
         public List<ItemModel> ItemSelection = new List<ItemModel>();
         public string? Customer { get; set; }
@@ -22,7 +22,9 @@ namespace ProFormaUI
         public string? InitialPackQty;
         public string? InitialHU;
 
+
         ICustomerItemSelection callingForm;
+
 
         public AddItem(ICustomerItemSelection caller, string? SelectedCustomer)
         {
@@ -262,6 +264,16 @@ namespace ProFormaUI
             ItemQtyTextBox.Text = InitialQty;
             PPCtextBox.Text = InitialPPC;
             CPPtextBox.Text = InitialContainerPerHU;
+        }
+
+        public void SelectedCustomer(CustomerModel customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ICustomerItemSelection.ItemSelection(ItemModel SelectedItem)
+        {
+            throw new NotImplementedException();
         }
     }
 }

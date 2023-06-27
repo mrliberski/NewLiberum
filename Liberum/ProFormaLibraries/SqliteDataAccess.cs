@@ -14,6 +14,88 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static void UpdateItem(ItemModel model, string OriginalItemName)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+
+
+                cnn.Execute(@"update ItemsTable SET 
+
+                            ItemName = @ItemName,
+                            PartNumber = @PartNumber,
+                            CustomerNumber = @CustomerNumber,
+                            ItemNetWeight = @ItemNetWeight,
+                            ItemPrice = @ItemPrice,
+                            ItemHScode = @ItemHScode,
+                            ItemCOO = @ItemCOO,
+                            ContainerName = @ContainerName,
+                            ContainerNetWeight = @ContainerNetWeight,
+                            ContainerPrice = @ContainerPrice,
+                            ContainerHScode = @ContainerHSCode,
+                            ContainerCOO = @ContainerCOO,
+                            PartsPerContainer = @PartsPerContainer,
+                            CPP = @ContainersPerPallet,
+                            RequiresPackaging = @RequiresPackaging,
+                            RequiresLid = @RequiresLid,
+                            RequiresPallet = @RequiresPallet,
+                            ContainerCode = @ContainerCode
+                                WHERE
+                            ItemName = @OriginalName
+                        ", new 
+                { 
+                    ItemName = model.ItemName, 
+                    PartNumber = model.PartNumber,
+                    CustomerNumber = model.CustomerNumber,
+                    ItemNetWeight = model.ItemNetWeight,
+                    ItemPrice = model.ItemPrice,
+                    ItemHScode = model.ItemHScode,
+                    ItemCOO = model.ItemCOO,
+                    ContainerName = model.ContainerName,
+                    ContainerNetWeight = model.ContainerNetWeight,
+                    ContainerPrice = model.ContainerPrice,
+                    ContainerHSCode = model.ContainerHSCode,
+                    ContainerCOO = model.ContainerCOO,
+                    PartsPerContainer = model.PartsPerContainer,
+                    ContainersPerPallet = model.Cpp,
+                    RequiresPackaging = model.RequiresPackaging,
+                    RequiresLid = model.RequiresLid,
+                    RequiresPallet = model.RequiresPallet,
+                    ContainerCode = model.ContainerCode,
+                    OriginalName = OriginalItemName 
+                });
+
+
+
+
+                //cnn.Execute(@"update Customers 
+                //    SET
+                //        CustomerAddressLine1=@CustomerAddressLine1,
+                //        CustomerAddressLine2=@CustomerAddressLine2,
+                //        CustomerAddressLine3=@CustomerAddressLine3,
+                //        CustomerPhone=@CustomerPhone,
+                //        CustomerCity=@CustomerCity,
+                //        CustomerCountry=@CustomerCountry,
+                //        CustomerZipCode=@CustomerZipCode,
+                //        CustomerVAT=@CustomerVAT,
+                //        CustomerEORI=@CustomerEORI,
+                //        CustomerUKExitCode=@CustomerUKExitCode,
+                //        CustomerFinalCustomsCode=@CustomerFinalCustomsCode,
+                //        CustomerFootNote=@CustomerFootNote,
+                //        CustomerContactPerson=@CustomerContactPerson,
+                //        SAPnumber=@SAPnumber,
+                //        Haulier=@Haulier,
+                //        Incoterms=@Incoterms,
+                //        Currency=@Currency
+                //    WHERE
+                //        CustomerName=@CustomerName
+                //    ", customer);
+
+            }
+        }
+
+
+
         public static void RemoveItemFromInvoice(InvoiceItem item)
         {
             if (item != null)
@@ -101,7 +183,7 @@ namespace ProFormaLibraries
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 // did not work ;P var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer={SelectedCustomer}", new DynamicParameters());
-                var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
+                var output = cnn.Query<ItemModel>($"select id, * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
                 return output.ToList();
             }
         }

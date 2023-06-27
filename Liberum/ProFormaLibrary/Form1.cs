@@ -900,5 +900,16 @@ namespace ProFormaLibrary
         {
             HtmlAndPdfLogic.CreatePdfInvoice();
         }
+
+        private void uploadItemListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateExistingItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form open = new UpdateItemForm();
+            open.ShowDialog();
+        }
     }
 }
