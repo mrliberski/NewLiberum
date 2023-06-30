@@ -25,31 +25,23 @@ namespace ProFormaUI
 
         private void LoadLicenceInfo()
         {
-            CustomerModelValue.Text = @"Copyright © 2020 - 2023 Pawel Liberski. All rights reserved...
+            richTextBox1.Text = @"Copyright © 2020 - 2023 Pawel Liberski. All rights reserved...
 
-Conditional license is hereby provided to Antolin Interiors Redditch only 
-to use this software for the period not exceeding my employment with Antolin Interiors. 
-This software is provided on as-is basis and may contain errors. 
-I reserve the right to amend this software in the way I see fit, and withdraw it from use with due notice. 
+Conditional license is hereby provided to Antolin Interiors Redditch only to use this software for the period not exceeding author's employment with Antolin Interiors. 
+This software is a proof-of concept version and is provided on as-is basis. It may contain multiple errors. 
+Author reserves the right to amend this software as and when required, but also to withdraw any given permissions at any time.
 
 DISCLAIMER!
-This sofware is for demonstration purposes only and generated invoices are not to be used for commercial purposes. 
-This software does not collect any personal information.
+This sofware is for demonstration purposes only and generated invoices are props which are not to be used for commercial purposes or in conjuction with any commercial activity.
+This software does not collect or share any personal information.
 Local databases are not shared with any other instance of this sofware. 
 
-THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
-BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE 
-AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-By using this software you agree to this terms.
+By using this software you agree to terms in full.
                 ";
         }
 
-        private void CustomerModelValue_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

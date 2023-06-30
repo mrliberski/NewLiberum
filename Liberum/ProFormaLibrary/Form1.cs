@@ -481,6 +481,8 @@ namespace ProFormaLibrary
 
             }
 
+            Customer.Incoterms = IncotermTextBox.Text;
+
             Invoice.InvoiceType = InvoiceTypeComboBox.SelectedItem.ToString();
             Invoice.ReferenceNumber = POtextBox.Text;
             Invoice.KanbanNumber = KanbanTextBox.Text;

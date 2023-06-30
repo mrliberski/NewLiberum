@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LicenceInfo));
             CloseButton = new Button();
             CustomerModelValue = new Label();
+            richTextBox1 = new RichTextBox();
             SuspendLayout();
             // 
             // CloseButton
@@ -39,10 +40,9 @@
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CloseButton.ImeMode = ImeMode.NoControl;
-            CloseButton.Location = new Point(284, 272);
-            CloseButton.Margin = new Padding(3, 2, 3, 2);
+            CloseButton.Location = new Point(313, 415);
             CloseButton.Name = "CloseButton";
-            CloseButton.Size = new Size(150, 24);
+            CloseButton.Size = new Size(171, 32);
             CloseButton.TabIndex = 63;
             CloseButton.Text = "Close";
             CloseButton.UseVisualStyleBackColor = true;
@@ -53,27 +53,36 @@
             CustomerModelValue.AutoSize = true;
             CustomerModelValue.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CustomerModelValue.ImeMode = ImeMode.NoControl;
-            CustomerModelValue.Location = new Point(19, 18);
+            CustomerModelValue.Location = new Point(22, 24);
             CustomerModelValue.Name = "CustomerModelValue";
-            CustomerModelValue.Size = new Size(93, 15);
+            CustomerModelValue.Size = new Size(75, 20);
             CustomerModelValue.TabIndex = 65;
-            CustomerModelValue.Text = "CustomerModel";
+            CustomerModelValue.Text = "Important";
             CustomerModelValue.TextAlign = ContentAlignment.MiddleLeft;
-            CustomerModelValue.Click += CustomerModelValue_Click;
+            //CustomerModelValue.Click += CustomerModelValue_Click;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(35, 64);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new Size(725, 332);
+            richTextBox1.TabIndex = 66;
+            richTextBox1.Text = "";
             // 
             // LicenceInfo
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(702, 344);
+            ClientSize = new Size(802, 459);
+            Controls.Add(richTextBox1);
             Controls.Add(CustomerModelValue);
             Controls.Add(CloseButton);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 2, 3, 2);
-            MinimumSize = new Size(718, 383);
+            MinimumSize = new Size(818, 495);
             Name = "LicenceInfo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "LicenceInfo";
@@ -85,5 +94,6 @@
 
         private Button CloseButton;
         private Label CustomerModelValue;
+        private RichTextBox richTextBox1;
     }
 }
