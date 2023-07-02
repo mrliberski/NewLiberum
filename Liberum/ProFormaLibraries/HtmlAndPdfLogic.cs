@@ -18,10 +18,10 @@ namespace ProFormaLibraries
             if (CanWriteToFile(filePath)) 
             {
                 //MessageBox.Show("I CAN WRITE");
-                File.WriteAllText(filePath, HtmlOutput);
+
                 try
                 {
-                    System.Diagnostics.Process.Start("explorer.exe", directoryPath);
+                    File.WriteAllText(filePath, HtmlOutput);
                 }
                 catch (System.Exception ex)
                 {

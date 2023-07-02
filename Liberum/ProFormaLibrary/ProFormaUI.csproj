@@ -56,6 +56,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.0" />
     <PackageReference Include="Dapper" Version="2.0.143" />
     <PackageReference Include="EPPlus" Version="6.2.6" />
     <PackageReference Include="NReco.PdfGenerator" Version="1.2.1" />

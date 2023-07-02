@@ -1,0 +1,62 @@
+</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="10" ss:MergeDown="3" ss:StyleID="m2092098678468"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="33" ss:StyleID="s264"/>
+    <Cell ss:Index="35" ss:StyleID="s265"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="34" ss:MergeAcross="2" ss:StyleID="s267"><Data ss:Type="String">drukowanie menu</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s267"><Data ss:Type="String">druk bezpośredni</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="7.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:MergeDown="16" ss:StyleID="s269"><Data ss:Type="String">The spaces framed with heavy lines must filied in by the carrier.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">3</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="12" ss:StyleID="s198"><Data ss:Type="String">Miejsce przeznaczenia (miejscowość, kraj)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s272"><Data ss:Type="Number">17</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="9" ss:StyleID="m2092098678608"><Data ss:Type="String">Kolejni przewoźnicy (nazwisko lub nazwa, adres, kraj)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="12" ss:StyleID="s213"><Data ss:Type="String">Place of delivery of the goods (place, country)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="19" ss:MergeAcross="9" ss:StyleID="s254"><Data ss:Type="String">Successive carriers (name, address, country)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="13" ss:MergeDown="1"
+     ss:StyleID="m2092098677012"><Data ss:Type="String">

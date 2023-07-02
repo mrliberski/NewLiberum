@@ -1,0 +1,226 @@
+</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:StyleID="s215"><Data ss:Type="String">Established in</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="10" ss:MergeAcross="1" ss:StyleID="s524"><Data ss:Type="String">on</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s526"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="10" ss:StyleID="s346"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s346"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">22</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="7" ss:MergeDown="4" ss:StyleID="s529"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s246"><Data ss:Type="Number">23</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="6" ss:MergeDown="4" ss:StyleID="m2092101671904"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s272"><Data ss:Type="Number">24</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s198"><Data ss:Type="String">Przesyłkę otrzymano</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:MergeDown="1" ss:StyleID="m2092101672676"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="22" ss:MergeAcross="2" ss:StyleID="s213"><Data ss:Type="String">Goods received</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="4" ss:StyleID="m2092101672716"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="13" ss:MergeDown="4" ss:StyleID="m2092101672736"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="21" ss:MergeDown="4" ss:StyleID="m2092101672756"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s546"><Data ss:Type="String">Miejscowość</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:MergeDown="1" ss:StyleID="s316"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s547"><Data ss:Type="String">dnia</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:MergeDown="1" ss:StyleID="s549"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="22" ss:StyleID="s550"><Data ss:Type="String">Place</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="25" ss:StyleID="s551"><Data ss:Type="String">on</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="22" ss:MergeAcross="6" ss:StyleID="s553"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="6" ss:StyleID="s213"><Data ss:Type="String">Podpis i stempel nadawcy</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s215"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="14" ss:MergeAcross="5" ss:StyleID="s213"><Data ss:Type="String">Podpis i stempel przewoźnika</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m2092101668516"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="22" ss:MergeAcross="6" ss:StyleID="s213"><Data ss:Type="String">Podpis i stempel odbiorcy</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="6" ss:StyleID="s558"><Data ss:Type="String">Signature and stamp of the sender</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s559"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="14" ss:MergeAcross="5" ss:StyleID="s561"><Data ss:Type="String">Signature and stamp of the carrier</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="22" ss:MergeAcross="6" ss:StyleID="m2092101668596"><Data
+      ss:Type="String">Signature and stamp of the consignee</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s562"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s562"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="24" ss:StyleID="s564"><Data ss:Type="String">Wzór CMR/IRU/Polska z 1976 dla międzynarodowych przewozów drogowych odpowiada ustaleniom, które zostały dokonane przez Międzynarodową Unię Transportu Drogowego/IRU/.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s562"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s562"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="10.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s565"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s565"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="24" ss:StyleID="s564"><Data ss:Type="String">The 1976 CMR/IRU/Poland model for international road transport complies with the rules of the International Road Transport Union/IRU/.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s565"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s565"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="10.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s566"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s566"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s566"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s566"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Index="83" ss:AutoFitHeight="0">
+    <Cell ss:Index="5" ss:StyleID="s173"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:CenterHorizontal="1" x:CenterVertical="1"/>
+    <Header x:Margin="0.19685039370078741"/>
+    <Footer x:Margin="0.19685039370078741"
+     x:Data="&amp;L&amp;1#&amp;&quot;Calibri Light&quot;&amp;8&amp;K000000Classified as Internal"/>
+    <PageMargins x:Bottom="0.39370078740157483" x:Left="0.19685039370078741"
+     x:Right="0.19685039370078741" x:Top="0.19685039370078741"/>
+   </PageSetup>
+   <Unsynced/>
+   <DisplayPageBreak/>
+   <FitToPage/>
+   <Print>
+    <FitHeight>0</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>75</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>50</TabColorIndex>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>31</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+     <RangeSelection>R32C8:R32C9</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
+
+
+
+
+   
+  
+   
+   
+  
+  
+ 
+
+
+    
+   
+   

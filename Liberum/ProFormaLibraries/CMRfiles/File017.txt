@@ -1,0 +1,5 @@
+  </Data><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s518"><Data ss:Type="String">dnia</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="5" ss:MergeDown="2" ss:StyleID="m2092101669904"
+     ss:Formula="=TODAY()"><Data ss:Type="DateTime">

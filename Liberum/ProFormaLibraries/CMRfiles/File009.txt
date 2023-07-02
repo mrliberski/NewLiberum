@@ -1,0 +1,82 @@
+</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">5</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="12" ss:StyleID="s198"><Data ss:Type="String">Załączam dokumanty</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="12" ss:StyleID="s213"><Data ss:Type="String">Documents attached</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="13" ss:MergeDown="1"
+     ss:StyleID="m2092098678864"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9.75">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">6</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s198"><Data ss:Type="String">Cechy i numery</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s192"><Data ss:Type="Number">7</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s198"><Data ss:Type="String">Ilość sztuk</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s192"><Data ss:Type="Number">8</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s198"><Data ss:Type="String">Sposób opakowania</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s192"><Data ss:Type="Number">9</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Rodzaj towaru*</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s194"><Data ss:Type="Number">10</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Nr statystyczny</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s194"><Data ss:Type="Number">11</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Waga brutto w kg</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s307"><Data ss:Type="Number">12</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Objętość w m3</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="2" ss:StyleID="s213"><Data ss:Type="String">Marks and Nos</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="9" ss:MergeAcross="3" ss:StyleID="s213"><Data ss:Type="String">Number of packages</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="14" ss:MergeAcross="2" ss:StyleID="s213"><Data ss:Type="String">Method of packing</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="18" ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Nature of the goods*</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="21" ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Statistical nr.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="24" ss:MergeAcross="1" ss:StyleID="s213"><Data ss:Type="String">Gross weight kg</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="27" ss:MergeAcross="1" ss:StyleID="s254"><ss:Data
+      ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">Volume in m<Sup>3</Sup></ss:Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><Data ss:Type="String">

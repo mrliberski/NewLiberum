@@ -1,0 +1,109 @@
+</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="26" ss:StyleID="s235"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s236"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s237"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="38" ss:StyleID="s220"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="18" ss:StyleID="s232"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="4" ss:MergeDown="4" ss:StyleID="s239"><Data
+      ss:Type="String">Niniejszy przewóz podlega postanowianiom konwencji o umowie miedzynarodowej przewozu drogowego towarów (CMR) bez względu na jakąkolwiek przeciwną klauzulę.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+ <Cell ss:MergeAcross="4" ss:MergeDown="4" ss:StyleID="s239"><Data
+      ss:Type="String">This carriage is subject, notwithstanding any clause to the contrary, to the Convention on the Contract for the international Carriage of goods by road (CMR).</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s204"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="38" ss:StyleID="s220"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="18" ss:StyleID="s232"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="38" ss:StyleID="s220"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="18" ss:StyleID="s232"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="33" ss:MergeAcross="3" ss:StyleID="s241"/>
+    <Cell ss:StyleID="s243"/>
+    <Cell ss:StyleID="s244"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="18" ss:StyleID="s232"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="33" ss:MergeAcross="4" ss:StyleID="s241"><Data ss:Type="String">
+pawelliberski.com</Data></Cell>
+    <Cell ss:StyleID="s244"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="18" ss:StyleID="s232"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="33" ss:MergeAcross="4" ss:StyleID="s241"><Data ss:Type="String">pawelliberski.com</Data></Cell>
+    <Cell ss:StyleID="s244"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">2</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="12" ss:StyleID="s198"><Data ss:Type="String">Odbiorca (nazwisko lub nazwa, adres, kraj)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s246"><Data ss:Type="Number">16</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="9" ss:StyleID="m2092098676052"><Data ss:Type="String">Przewoźnik (nazwisko lub nazwa, adres, kraj)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="33" ss:MergeAcross="4" ss:StyleID="s241"><Data ss:Type="String">
++44</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="12" ss:StyleID="s213"><Data ss:Type="String">Consignee (name, address, country)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="19" ss:MergeAcross="9" ss:StyleID="s254"><Data ss:Type="String">Carrier (name, address, country)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s203"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="33" ss:StyleID="s255"/>
+    <Cell ss:StyleID="s255"/>
+    <Cell ss:StyleID="s255"/>
+    <Cell ss:StyleID="s255"/>
+    <Cell ss:StyleID="s255"/>
+    <Cell ss:StyleID="s256"/>
+    <Cell ss:StyleID="s256"/>
+    <Cell ss:StyleID="s256"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s223"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="13" ss:MergeDown="3" ss:StyleID="m2092098678448"><Data
+      ss:Type="String">
+

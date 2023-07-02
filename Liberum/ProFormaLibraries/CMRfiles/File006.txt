@@ -1,0 +1,42 @@
+</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="10" ss:MergeDown="1" ss:StyleID="m2092098677032"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="29" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">4</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="12" ss:StyleID="s198"><Data ss:Type="String">Miejsce i data załadowania (miejscowość, kraj, data)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s272"><Data ss:Type="Number">18</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="9" ss:StyleID="m2092098677112"><Data ss:Type="String">Zastrzeżenia i uwagi przewoźnika</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="54" ss:StyleID="s287"><Data ss:Type="String">*In case of dangerous goods mention, besides the possible certification, on the last line of the column the particulars of the class, the UN number and the packing group, if needed.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="54" ss:StyleID="s289"><Data ss:Type="String">*W przypadku przewozu towarów niebezpiecznych, oprócz ewentualnego posiadania zaświadczenia, należy podać w ostatnim wierszu: klasę, liczbę oraz w danym przypadku literę.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="12" ss:StyleID="s213"><Data ss:Type="String">Place and date of taking over the goods (place, country, date)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="19" ss:MergeAcross="9" ss:StyleID="s254"><Data ss:Type="String">Carrier's reservations and observations</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="13" ss:StyleID="m2092098678736"><Data
+      ss:Type="String">

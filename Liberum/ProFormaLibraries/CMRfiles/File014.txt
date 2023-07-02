@@ -1,0 +1,340 @@
+</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092098676260"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s317"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s318"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092098677488"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092098677508"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:MergeDown="4" ss:StyleID="s328"><Data
+      ss:Type="String">19+20+21+22</Data><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s330"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s317"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s314"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s318"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101671092"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101672864"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101672964"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101672984"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669328"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669348"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669448"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669468"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101674816"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101674836"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s336"><Data ss:Type="String">włącznie oraz</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s338"><Data ss:Type="String">including</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s310"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101673488"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101673508"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101673608"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101673628"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="3" ss:StyleID="s310"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s313"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s316"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669536"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669556"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+<Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:MergeDown="1" ss:StyleID="s328"><Data
+      ss:Type="String">1-15</Data><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s341"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s343"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s343"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s343"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s343"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s343"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s342"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s344"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669596"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s345"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s346"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s347"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+    <Cell ss:StyleID="s340"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s348"><Data ss:Type="String">Nr UN</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m2092101669616"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s354"><Data ss:Type="String">Klasa zob. pkt 9.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="3" ss:MergeDown="1" ss:StyleID="m2092101669636"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s360"><Data ss:Type="String">Nr próbki etykiety zagrożenia</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="4" ss:MergeDown="1" ss:StyleID="m2092101669656"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s360"><Data ss:Type="String">Grupa pakowania</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:MergeDown="1" ss:StyleID="m2092101669676"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101669696"><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s345"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s346"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s347"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="14" ss:StyleID="s366"><Data ss:Type="String">Do wypełnienia pod odpowiedzialnością nadawcy&#10;Auszufüllen auf Verantwortung des Absenders</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="14" ss:StyleID="s338"><Data ss:Type="String">To be completed on sender's responsability</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s367"><Data ss:Type="String">UN-Nr.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="6" ss:StyleID="s368"><Data ss:Type="String">name s. nr. 9</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="11" ss:StyleID="s368"><Data ss:Type="String">Hazard label sample no.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="17" ss:StyleID="s368"><Data ss:Type="String">Pack group</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="20" ss:StyleID="s333"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s332"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s334"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s345"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s346"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s347"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s345"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s346"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s347"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+<Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s190"><Data ss:Type="Number">13</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="12" ss:StyleID="s198"><Data ss:Type="String">Instrukcje nadawcy</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m2092101675836"><Data ss:Type="Number">19</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s374"><Data ss:Type="String">Do zapłacenia</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101675856"><Data ss:Type="String">Nadawca</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101675876"><Data ss:Type="String">Waluta</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101671408"><Data ss:Type="String">Odbiorca</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="5" ss:MergeAcross="12" ss:StyleID="s213"><Data ss:Type="String">Sender's instructions</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="19" ss:StyleID="s385"><Data ss:Type="String">To be paid by</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101671448"><Data ss:Type="String">Sender</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101671468"><Data ss:Type="String">Currency</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2092101671488"><Data ss:Type="String">Consignee</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="31" ss:StyleID="s219"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25">
+    <Cell ss:StyleID="s188"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:Index="4" ss:MergeAcross="13" ss:MergeDown="13"
+     ss:StyleID="m2092101671508"><Data ss:Type="String">

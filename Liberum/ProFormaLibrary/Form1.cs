@@ -487,8 +487,11 @@ namespace ProFormaLibrary
             Invoice.ReferenceNumber = POtextBox.Text;
             Invoice.KanbanNumber = KanbanTextBox.Text;
 
+            XmlAndPdfLogic.CreateCMRdocument(Customer, Invoice, Items);
+            //XmlAndPdfLogic.CreatePDF();
             HtmlAndPdfLogic.CreateHtmlInvoice(Customer, Invoice, Items);
             HtmlAndPdfLogic.CreatePdfInvoice();
+            System.Diagnostics.Process.Start("explorer.exe", @".\HTML");
         }
 
         public void SweepUptheForm()
