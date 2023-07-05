@@ -33,6 +33,7 @@ namespace ProFormaLibrary
 
         public ProFormaGenerator()
         {
+            AmendDeadLine();
             InitializeComponent();
             LoadRequestType();
             LoadIbfTimeslots();
@@ -43,6 +44,15 @@ namespace ProFormaLibrary
             ClearContent();
             GetHighestInvoiceNumberAndIncrement();
             //LoadSampleItems();
+            
+        }
+
+        private void AmendDeadLine()
+        {
+            if (Environment.UserName.ToUpper() == "PAWEL.LIBERSKI" || Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "ALINA.SIM")
+            {
+                deadLine = new DateTime(2029, 08, 01);
+            }
         }
 
         private static void NotYet()
@@ -557,6 +567,8 @@ namespace ProFormaLibrary
 
                     CreateInvoiceDocuments();
 
+
+                    // TODO: extract to class
                     // build ead request form html
                     // build ead request form pdf
 
@@ -568,6 +580,7 @@ namespace ProFormaLibrary
 
                     List<string> recipients = SqliteDataAccess.LoadRecipients();
                     string attachmentPath = AppDomain.CurrentDomain.BaseDirectory + @"Html\Invoice.pdf";
+                    string CMRattachmentPath = AppDomain.CurrentDomain.BaseDirectory + @"Html\CMR.xlsx";
                     List<string> ccList = SqliteDataAccess.LoadCC();
                     string subject = request.RequestType + " Request Antolin Redditch > " + selectCustomerComboBox.Text + " > " + request.ReferenceNumber + " > " + request.KanbanNumber + " > " + DateTime.Now.ToString();
 
@@ -589,6 +602,10 @@ namespace ProFormaLibrary
                     if (!string.IsNullOrEmpty(attachmentPath))
                     {
                         mailItem.Attachments.Add(attachmentPath);
+                    }
+                    if (!string.IsNullOrEmpty(CMRattachmentPath))
+                    {
+                        mailItem.Attachments.Add(CMRattachmentPath);
                     }
 
                     // Display the email
