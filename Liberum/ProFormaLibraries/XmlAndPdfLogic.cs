@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Wordprocessing;
 using OfficeOpenXml;
 
 
@@ -74,10 +75,10 @@ namespace ProFormaLibraries
                 string rodzajTowaru = opisTowaru;                    // Q32 - rodzaj towaru
                 double wagaBrutto = 0;                               // W32 - waga brutto + kgs
 
-
                 foreach (ItemModel item in Items)
                 {
-                    iloscSztuk += item.ItemQuantity / item.PartsPerContainer;
+
+                    iloscSztuk += (int)Math.Ceiling((decimal)item.ItemQuantity / item.PartsPerContainer);
                     iloscPalet += item.PalletsQuantity;
                     wagaBrutto += item.ItemQuantity * item.ItemNetWeight;
                     wagaBrutto += item.ContainersQuantity * item.ContainerNetWeight;
