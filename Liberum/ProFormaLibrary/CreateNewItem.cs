@@ -155,6 +155,7 @@ namespace ProFormaUI
             AddEntryToDatabase(model);
 
             ClearForm();
+            this.Close();
         }
 
         private void AddEntryToDatabase(ItemModel model)

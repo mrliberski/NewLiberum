@@ -149,6 +149,7 @@ namespace ProFormaUI
 
                 SqliteDataAccess.UpdateCustomer(model);
                 ClearForm();
+                this.Close();
             }
         }
 

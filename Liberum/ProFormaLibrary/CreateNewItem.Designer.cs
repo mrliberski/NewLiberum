@@ -138,7 +138,7 @@
             itemNameTextbox.Location = new Point(216, 61);
             itemNameTextbox.Name = "itemNameTextbox";
             itemNameTextbox.Size = new Size(322, 27);
-            itemNameTextbox.TabIndex = 102;
+            itemNameTextbox.TabIndex = 100;
             itemNameTextbox.Text = "Item Name";
             // 
             // itemNameLabel
@@ -237,7 +237,7 @@
             CustomerNumberTextBox.Location = new Point(216, 115);
             CustomerNumberTextBox.Name = "CustomerNumberTextBox";
             CustomerNumberTextBox.Size = new Size(322, 27);
-            CustomerNumberTextBox.TabIndex = 181;
+            CustomerNumberTextBox.TabIndex = 102;
             CustomerNumberTextBox.Text = "Customer Number";
             // 
             // CustomerNumberLabel
@@ -271,7 +271,7 @@
             PartNumberTextBox.Location = new Point(216, 88);
             PartNumberTextBox.Name = "PartNumberTextBox";
             PartNumberTextBox.Size = new Size(322, 27);
-            PartNumberTextBox.TabIndex = 178;
+            PartNumberTextBox.TabIndex = 101;
             PartNumberTextBox.Text = "Part Number";
             // 
             // PArtNumberLAbel
@@ -820,7 +820,7 @@
             selectCustomerComboBox.Location = new Point(216, 33);
             selectCustomerComboBox.Name = "selectCustomerComboBox";
             selectCustomerComboBox.Size = new Size(321, 28);
-            selectCustomerComboBox.TabIndex = 101;
+            selectCustomerComboBox.TabIndex = 99;
             // 
             // selectCustomerLAbel
             // 
