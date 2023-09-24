@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProFormaLibraries", "ProFor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1B3A6FE-E5B0-4493-B5CE-10F214ADF1E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liberum2", "Liberum2\Liberum2.csproj", "{AD0F896B-7F53-47BB-AE51-E21BEA8CBB4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBFB27AE-F0CB-4CC2-9743-773EBD40228C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0F896B-7F53-47BB-AE51-E21BEA8CBB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0F896B-7F53-47BB-AE51-E21BEA8CBB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0F896B-7F53-47BB-AE51-E21BEA8CBB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0F896B-7F53-47BB-AE51-E21BEA8CBB4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

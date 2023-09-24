@@ -68,7 +68,7 @@ namespace ProFormaLibraries
                         <hr>
 
                         <div style = ""font-size: 8pt; font-family:Calibri; text-align:center; float:left; width:50%;"" >
-                            <p style = ""padding:1px; font-size:10pt; font-family:Calibri; text-align:center;"" ><b>{Customer.CustomerName}</b><br>
+                            <p style = ""padding:1px; font-size:10pt; font-family:Calibri; text-align:center;"" ><b>IMPORTER:<br>{Customer.CustomerName}</b><br>
                                     {Customer.CustomerAddressLine1}, {Customer.CustomerAddressLine2}<br>
                                     {Customer.CustomerAddressLine3}<br>
                                     {Customer.CustomerZipCode}, {Customer.CustomerCity}<br>
@@ -77,7 +77,7 @@ namespace ProFormaLibraries
                         </div>
 
                         <div style = ""font-size: 8pt; font-family:Calibri; text-align:center; float:left; width: 50%;"" >
-                            <p style = ""padding:1px; font-size: 10pt; font-family:Calibri; text-align:center;"" ><b>Antolin Interiors UK Ltd</b><br>
+                            <p style = ""padding:1px; font-size: 10pt; font-family:Calibri; text-align:center;"" ><b>EXPORTER:<br>Antolin Interiors UK Ltd</b><br>
                                     Merse Road, North Moons Moat<br>B98 9HL Redditch<br>United Kingdom<br>VAT: GB683819882<br>EORI:GB683819882000 </p><br></div>&nbsp;<br><br>
 
             <div style = ""width: 100%;"">
@@ -227,7 +227,7 @@ namespace ProFormaLibraries
                         <hr>";
 
             InvoiceContent = InvoiceContent + @$"            <div style = ""font-size: 8pt; font-family:Calibri; text-align:center; float:left; width:50%;"" >
-                            <p style = ""padding:1px; font-size:10pt; font-family:Calibri; text-align:center;"" ><b>{Customer.CustomerName}</b><br>
+                            <p style = ""padding:1px; font-size:10pt; font-family:Calibri; text-align:center;"" ><b>IMPORTER<br>{Customer.CustomerName}</b><br>
                                     {Customer.CustomerAddressLine1}, {Customer.CustomerAddressLine2}<br>
                                     {Customer.CustomerAddressLine3}<br>
                                     {Customer.CustomerZipCode}, {Customer.CustomerCity}<br>
@@ -236,7 +236,7 @@ namespace ProFormaLibraries
                         </div>";
 
             InvoiceContent = InvoiceContent + @$"            <div style = ""font-size: 8pt; font-family:Calibri; text-align:center; float:left; width: 50%;"" >
-                            <p style = ""padding:1px; font-size: 10pt; font-family:Calibri; text-align:center;"" ><b>Antolin Interiors UK Ltd</b><br>
+                            <p style = ""padding:1px; font-size: 10pt; font-family:Calibri; text-align:center;"" ><b>EXPORTER:<br>Antolin Interiors UK Ltd</b><br>
                                     Merse Road, North Moons Moat<br>B98 9HL Redditch<br>United Kingdom<br>VAT: GB683819882<br>EORI:GB683819882000 </p><br></div>&nbsp;<br><br>
 
             <div style = ""width: 100%;"">

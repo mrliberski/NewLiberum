@@ -18,7 +18,7 @@
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
@@ -298,7 +298,7 @@
     <value>NoControl</value>
   </data>
   <data name="IncoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 165</value>
+    <value>573, 165</value>
   </data>
   <data name="IncoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
@@ -328,7 +328,7 @@
     <value>NoControl</value>
   </data>
   <data name="customsOfficelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 135</value>
+    <value>458, 135</value>
   </data>
   <data name="customsOfficelabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 20</value>
@@ -358,7 +358,7 @@
     <value>NoControl</value>
   </data>
   <data name="UKexitFacilityLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>545, 104</value>
+    <value>543, 104</value>
   </data>
   <data name="UKexitFacilityLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 20</value>
@@ -388,7 +388,7 @@
     <value>NoControl</value>
   </data>
   <data name="driversNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 73</value>
+    <value>480, 73</value>
   </data>
   <data name="driversNumberLAbel.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 20</value>
@@ -418,7 +418,7 @@
     <value>NoControl</value>
   </data>
   <data name="haulierName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 43</value>
+    <value>590, 43</value>
   </data>
   <data name="haulierName.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
@@ -433,7 +433,7 @@
     <value>NoControl</value>
   </data>
   <data name="telephoneValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 261</value>
+    <value>144, 263</value>
   </data>
   <data name="telephoneValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -448,7 +448,7 @@
     <value>NoControl</value>
   </data>
   <data name="contactNameVAlue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 243</value>
+    <value>144, 243</value>
   </data>
   <data name="contactNameVAlue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -463,7 +463,7 @@
     <value>NoControl</value>
   </data>
   <data name="telephoneNumberLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 261</value>
+    <value>60, 263</value>
   </data>
   <data name="telephoneNumberLAbel.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
@@ -478,7 +478,7 @@
     <value>NoControl</value>
   </data>
   <data name="contactNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 243</value>
+    <value>34, 243</value>
   </data>
   <data name="contactNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 20</value>
@@ -493,7 +493,7 @@
     <value>NoControl</value>
   </data>
   <data name="sapNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 221</value>
+    <value>144, 223</value>
   </data>
   <data name="sapNumberValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -508,7 +508,7 @@
     <value>NoControl</value>
   </data>
   <data name="customerSapNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 221</value>
+    <value>45, 223</value>
   </data>
   <data name="customerSapNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 20</value>
@@ -523,7 +523,7 @@
     <value>NoControl</value>
   </data>
   <data name="eoriNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 203</value>
+    <value>144, 203</value>
   </data>
   <data name="eoriNumberValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -538,7 +538,7 @@
     <value>NoControl</value>
   </data>
   <data name="EoriNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 203</value>
+    <value>39, 203</value>
   </data>
   <data name="EoriNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -553,7 +553,7 @@
     <value>NoControl</value>
   </data>
   <data name="VatNumberValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 181</value>
+    <value>144, 183</value>
   </data>
   <data name="VatNumberValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -568,7 +568,7 @@
     <value>NoControl</value>
   </data>
   <data name="VATNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 181</value>
+    <value>46, 183</value>
   </data>
   <data name="VATNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 20</value>
@@ -583,7 +583,7 @@
     <value>NoControl</value>
   </data>
   <data name="CountryValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 163</value>
+    <value>144, 163</value>
   </data>
   <data name="CountryValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -598,7 +598,7 @@
     <value>NoControl</value>
   </data>
   <data name="CountryLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 163</value>
+    <value>78, 163</value>
   </data>
   <data name="CountryLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
@@ -613,7 +613,7 @@
     <value>NoControl</value>
   </data>
   <data name="PostCodeValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 141</value>
+    <value>144, 143</value>
   </data>
   <data name="PostCodeValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -628,7 +628,7 @@
     <value>NoControl</value>
   </data>
   <data name="PostCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 141</value>
+    <value>63, 143</value>
   </data>
   <data name="PostCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 20</value>
@@ -643,7 +643,7 @@
     <value>NoControl</value>
   </data>
   <data name="CityValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 123</value>
+    <value>144, 123</value>
   </data>
   <data name="CityValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -658,7 +658,7 @@
     <value>NoControl</value>
   </data>
   <data name="AdressLine3Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 123</value>
+    <value>104, 122</value>
   </data>
   <data name="AdressLine3Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 20</value>
@@ -673,7 +673,7 @@
     <value>NoControl</value>
   </data>
   <data name="Address2Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 101</value>
+    <value>144, 103</value>
   </data>
   <data name="Address2Value.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -700,7 +700,7 @@
     <value>NoControl</value>
   </data>
   <data name="Address1Value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 83</value>
+    <value>144, 83</value>
   </data>
   <data name="Address1Value.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -715,7 +715,7 @@
     <value>NoControl</value>
   </data>
   <data name="AddressLine1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 83</value>
+    <value>33, 83</value>
   </data>
   <data name="AddressLine1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 20</value>
@@ -751,7 +751,7 @@
     <value>461, 31</value>
   </data>
   <data name="CustomerDetailsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 305</value>
+    <value>900, 306</value>
   </data>
   <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -1057,17 +1057,11 @@
   <data name="addItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Add item</value>
   </data>
-  <data name="uploadItemListToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="uploadItemListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 26</value>
   </data>
   <data name="uploadItemListToolStripMenuItem.Text" xml:space="preserve">
     <value>Upload Item List</value>
-  </data>
-  <data name="updateExistingItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 26</value>
   </data>
   <data name="updateExistingItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Update Existing Item</value>
@@ -1203,6 +1197,9 @@
   </data>
   <data name="InvoiceTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

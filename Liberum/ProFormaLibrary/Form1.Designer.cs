@@ -99,6 +99,7 @@
             createNewItemToolStripMenuItem = new ToolStripMenuItem();
             addItemToolStripMenuItem = new ToolStripMenuItem();
             uploadItemListToolStripMenuItem = new ToolStripMenuItem();
+            updateExistingItemToolStripMenuItem = new ToolStripMenuItem();
             invoiceToolStripMenuItem = new ToolStripMenuItem();
             createInvoiceToolStripMenuItem = new ToolStripMenuItem();
             editInvoiceToolStripMenuItem = new ToolStripMenuItem();
@@ -119,7 +120,6 @@
             errolLAbel = new Label();
             InvoiceTypeLabel = new Label();
             InvoiceTypeComboBox = new ComboBox();
-            updateExistingItemToolStripMenuItem = new ToolStripMenuItem();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -550,6 +550,12 @@
             uploadItemListToolStripMenuItem.Name = "uploadItemListToolStripMenuItem";
             uploadItemListToolStripMenuItem.Click += uploadItemListToolStripMenuItem_Click;
             // 
+            // updateExistingItemToolStripMenuItem
+            // 
+            resources.ApplyResources(updateExistingItemToolStripMenuItem, "updateExistingItemToolStripMenuItem");
+            updateExistingItemToolStripMenuItem.Name = "updateExistingItemToolStripMenuItem";
+            updateExistingItemToolStripMenuItem.Click += updateExistingItemToolStripMenuItem_Click;
+            // 
             // invoiceToolStripMenuItem
             // 
             resources.ApplyResources(invoiceToolStripMenuItem, "invoiceToolStripMenuItem");
@@ -667,12 +673,6 @@
             InvoiceTypeComboBox.FormattingEnabled = true;
             InvoiceTypeComboBox.Name = "InvoiceTypeComboBox";
             // 
-            // updateExistingItemToolStripMenuItem
-            // 
-            resources.ApplyResources(updateExistingItemToolStripMenuItem, "updateExistingItemToolStripMenuItem");
-            updateExistingItemToolStripMenuItem.Name = "updateExistingItemToolStripMenuItem";
-            updateExistingItemToolStripMenuItem.Click += updateExistingItemToolStripMenuItem_Click;
-            // 
             // ProFormaGenerator
             // 
             resources.ApplyResources(this, "$this");
@@ -712,6 +712,7 @@
             MainMenuStrip = menuStrip1;
             Name = "ProFormaGenerator";
             WindowState = FormWindowState.Maximized;
+            Load += ProFormaGenerator_Load;
             CustomerDetailsGroupBox.ResumeLayout(false);
             CustomerDetailsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

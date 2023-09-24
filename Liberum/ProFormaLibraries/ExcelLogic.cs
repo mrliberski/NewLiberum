@@ -52,5 +52,57 @@ namespace ProFormaLibraries
 
 
         }
+
+        public static List<ItemModel> UploadItemsToDatabase(string path, string CustomerName)
+        {
+            // Excel library Epplus - check licence changes
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            List<ItemModel> Items = new List<ItemModel>();
+            using var package = new ExcelPackage(path);
+            var ws = package.Workbook.Worksheets[0]; // fuirst workheet
+
+            int row = 2;
+            int col = 1;
+
+            while (string.IsNullOrEmpty(ws.Cells[row, col].Value?.ToString()) == false)
+            {
+                ItemModel c = new();
+
+                c.ItemCustomer = CustomerName;
+                c.ItemQuantity = 0;
+                c.ItemName = ws.Cells[row, col].Value?.ToString();
+                c.PartNumber = ws.Cells[row, col + 1].Value?.ToString();
+                c.CustomerNumber = ws.Cells[row, col +2].Value?.ToString();
+                c.ItemNetWeight = double.Parse(ws.Cells[row, col + 3].Value.ToString());
+                c.ItemGrossWeight = 0;
+                c.ItemPrice = double.Parse(ws.Cells[row, col + 4].Value.ToString());
+                c.ItemHScode = int.Parse(ws.Cells[row, col + 5].Value.ToString());
+                c.ItemCOO = ws.Cells[row, col + 6].Value?.ToString();
+                c.ContainerName = ws.Cells[row, col + 7].Value?.ToString();
+                c.ContainersQuantity = 0;
+                c.ContainerCode = ws.Cells[row, col + 8].Value?.ToString();
+                c.ContainerNetWeight = double.Parse(ws.Cells[row, col + 9].Value.ToString());
+                c.ContainerGrossWeight = 0;
+                c.ContainerPrice = double.Parse(ws.Cells[row, col + 10].Value.ToString());
+                c.ContainerHSCode = int.Parse(ws.Cells[row, col + 11].Value.ToString());
+                c.ContainerCOO = ws.Cells[row, col + 12].Value?.ToString();
+                c.PartsPerContainer = int.Parse(ws.Cells[row, col + 13].Value.ToString());
+                c.ContainersPerPallet = int.Parse(ws.Cells[row, col + 14].Value?.ToString());
+                c.PalletsQuantity = 0;
+                c.RequiresPackaging = 1;
+                c.RequiresLid = 1;
+                c.RequiresPallet = 1;
+                c.CreatedDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+                c.Cpp = int.Parse(ws.Cells[row, col + 14].Value?.ToString());  
+
+                Items.Add(c);
+                row += 1;
+            }
+
+            return Items;
+
+
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace ProFormaLibrary
         List<string> requestType = new List<string>();
         List<string> ibfTimeslot = new List<string>();
         List<CustomerModel> customers = new List<CustomerModel>();
-        public DateTime deadLine = new DateTime(2023, 08, 01);
+        public DateTime deadLine = new DateTime(2023, 12, 31);
         public List<ItemModel> Items = new List<ItemModel>();
         public string SelectedCustomer { get; set; }
         public string HUquantity { get; set; }
@@ -44,7 +44,7 @@ namespace ProFormaLibrary
             ClearContent();
             GetHighestInvoiceNumberAndIncrement();
             //LoadSampleItems();
-            
+
         }
 
         private void AmendDeadLine()
@@ -925,13 +925,19 @@ namespace ProFormaLibrary
 
         private void uploadItemListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form open = new UploadItems();
+            open.ShowDialog();
         }
 
         private void updateExistingItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form open = new UpdateItemForm();
             open.ShowDialog();
+        }
+
+        private void ProFormaGenerator_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

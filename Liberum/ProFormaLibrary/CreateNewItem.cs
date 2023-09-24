@@ -204,5 +204,10 @@ namespace ProFormaUI
             open.ShowDialog();
             //MessageBox.Show("this is on TODO list ;)", "I'll do it one day", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void CreateNewItemForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

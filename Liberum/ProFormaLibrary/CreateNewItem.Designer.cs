@@ -646,11 +646,11 @@
             containerHScodeLabel.AutoSize = true;
             containerHScodeLabel.ImageAlign = ContentAlignment.TopRight;
             containerHScodeLabel.ImeMode = ImeMode.NoControl;
-            containerHScodeLabel.Location = new Point(50, 361);
+            containerHScodeLabel.Location = new Point(-5, 361);
             containerHScodeLabel.Name = "containerHScodeLabel";
-            containerHScodeLabel.Size = new Size(135, 20);
+            containerHScodeLabel.Size = new Size(190, 20);
             containerHScodeLabel.TabIndex = 145;
-            containerHScodeLabel.Text = "Container HS Code";
+            containerHScodeLabel.Text = "Container HS (7326904000)";
             containerHScodeLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // containerPriceTextBox
@@ -766,11 +766,11 @@
             HScodeLabel.AutoSize = true;
             HScodeLabel.ImageAlign = ContentAlignment.TopRight;
             HScodeLabel.ImeMode = ImeMode.NoControl;
-            HScodeLabel.Location = new Point(118, 199);
+            HScodeLabel.Location = new Point(40, 199);
             HScodeLabel.Name = "HScodeLabel";
-            HScodeLabel.Size = new Size(67, 20);
+            HScodeLabel.Size = new Size(145, 20);
             HScodeLabel.TabIndex = 133;
-            HScodeLabel.Text = "HS Code";
+            HScodeLabel.Text = "HS Code (87082900)";
             HScodeLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // itemPriceTextBox
@@ -882,6 +882,7 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "Create New Item";
             WindowState = FormWindowState.Maximized;
+            Load += CreateNewItemForm_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

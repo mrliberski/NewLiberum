@@ -250,7 +250,7 @@ namespace ProFormaUI
                 ItemModel model = new ItemModel();
                 model = AvailableItemsComboBox.SelectedItem as ItemModel;
                 callingForm.ItemSelection(model);
-                //this.Close();
+                this.Close();
             }
             else
             {
