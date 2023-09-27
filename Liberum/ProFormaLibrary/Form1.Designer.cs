@@ -708,7 +708,6 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(InvoiceNumberLabel);
             ForeColor = Color.Black;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
             Name = "ProFormaGenerator";
             WindowState = FormWindowState.Maximized;
