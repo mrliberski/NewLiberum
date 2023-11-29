@@ -389,13 +389,13 @@ namespace ProFormaUI
                             SqliteDataAccess.AddInvoiceItem(_newItem);
 
                             PopulateItems(int.Parse(InvoiceNumberTextBox.Text));
+
+                            MessageBox.Show("Updated");
                         }
                         catch (System.Exception ex)
                         {
                             ErrorPlaceholderValueLabel.Text = ex.Message;
                         }
-
-
                     }
                 }
             }
@@ -416,7 +416,6 @@ namespace ProFormaUI
                 HtmlAndPdfLogic.CreateHtmlInvoice(customerModel, invoiceModel, items);
                 HtmlAndPdfLogic.CreatePdfInvoice();
             }
-
         }
 
         private void InvoiceTypeLabel_Click(object sender, EventArgs e)

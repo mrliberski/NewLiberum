@@ -195,6 +195,10 @@ namespace ProFormaLibrary
             WireUpItems(Items);
         }
 
+        /// <summary>
+        /// Data grid formatting
+        /// </summary>
+        /// <param name="Items"></param>
         private void WireUpItems(List<ItemModel> Items)
         {
             dataGridView1.DataSource = null;
@@ -202,17 +206,17 @@ namespace ProFormaLibrary
 
             dataGridView1.Columns["ItemId"].Visible = false;
             dataGridView1.Columns["ItemCustomer"].Visible = false;
-            dataGridView1.Columns["ItemGrossWeight"].Visible = false;
-            dataGridView1.Columns["ContainerGrossWeight"].Visible = false;
-            dataGridView1.Columns["ItemPrice"].Visible = false;
+            //dataGridView1.Columns["ItemGrossWeight"].Visible = false;
+            //dataGridView1.Columns["ContainerGrossWeight"].Visible = false;
+            //dataGridView1.Columns["ItemPrice"].Visible = false;
             //dataGridView1.Columns["ItemHScode"].Visible = false;
-            dataGridView1.Columns["ItemNetWeight"].Visible = false;
+            //dataGridView1.Columns["ItemNetWeight"].Visible = false;
             dataGridView1.Columns["ItemCOO"].Visible = false;
-            dataGridView1.Columns["ContainerNetWeight"].Visible = false;
+            //dataGridView1.Columns["ContainerNetWeight"].Visible = false;
             dataGridView1.Columns["ContainerGrossWeight"].Visible = false;
-            dataGridView1.Columns["ContainersPerPallet"].Visible = false;
-            dataGridView1.Columns["ContainerPrice"].Visible = false;
-            dataGridView1.Columns["PartsPerContainer"].Visible = false;
+            //dataGridView1.Columns["ContainersPerPallet"].Visible = false;
+            //dataGridView1.Columns["ContainerPrice"].Visible = false;
+            //dataGridView1.Columns["PartsPerContainer"].Visible = false;
             dataGridView1.Columns["ContainerCOO"].Visible = false;
             dataGridView1.Columns["CreatedDate"].Visible = false;
             dataGridView1.Columns["CreatedBy"].Visible = false;
@@ -375,6 +379,7 @@ namespace ProFormaLibrary
             KanbanTextBox.Text = string.Empty;
             TrailerTextBox.Text = string.Empty;
 
+            HUtextBox.Text = string.Empty;
             errolLAbel.Text = string.Empty;
 
             toolStripStatusLabel5.Text = "There are no items in shipment";
@@ -555,7 +560,10 @@ namespace ProFormaLibrary
                     request.KanbanNumber = KanbanTextBox.Text;
                     request.TruckNumber = TrailerTextBox.Text;
                     request.Customer = selectCustomerComboBox.Text;
-                    request.HUtotal = UpdateStripLabelTotal();
+
+                    // fetches from text box rather than counting due to override must....
+                    request.HUtotal = int.Parse(HUtextBox.Text); 
+                    //request.HUtotal = UpdateStripLabelTotal();
                     request.Haulier = Hauliertextbox.Text;
                     request.UKexit = UKexitTextbox.Text;
                     request.Destination = CustomsOfficeTextBox.Text;
@@ -795,6 +803,8 @@ namespace ProFormaLibrary
             {
                 MessageBox.Show("An error occured: " + ex.Message + " - " + ex.Source);
             }
+
+            UpdateStripLabelTotal();
         }
 
         /// <summary>
@@ -822,11 +832,14 @@ namespace ProFormaLibrary
             if (total == 0)
             {
                 toolStripStatusLabel5.Text = "There are no items in shipment";
+                HUtextBox.Text = total.ToString();
             }
             else
             {
                 toolStripStatusLabel5.Text = "Total Number of HUs in current shipment: " + total;
             }
+
+            HUtextBox.Text = total.ToString();
 
             return total;
 

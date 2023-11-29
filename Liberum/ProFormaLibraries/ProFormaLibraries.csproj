@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ClosedXML" Version="0.102.0" />
-    <PackageReference Include="Dapper" Version="2.0.143" />
-    <PackageReference Include="EPPlus" Version="6.2.6" />
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="EPPlus" Version="7.0.7" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="NReco.PdfGenerator" Version="1.2.1" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />

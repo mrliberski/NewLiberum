@@ -120,6 +120,8 @@
             errolLAbel = new Label();
             InvoiceTypeLabel = new Label();
             InvoiceTypeComboBox = new ComboBox();
+            HUtextBox = new TextBox();
+            label4 = new Label();
             CustomerDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             statusStrip1.SuspendLayout();
@@ -673,11 +675,23 @@
             InvoiceTypeComboBox.FormattingEnabled = true;
             InvoiceTypeComboBox.Name = "InvoiceTypeComboBox";
             // 
+            // HUtextBox
+            // 
+            resources.ApplyResources(HUtextBox, "HUtextBox");
+            HUtextBox.Name = "HUtextBox";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
             // ProFormaGenerator
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(HUtextBox);
+            Controls.Add(label4);
             Controls.Add(InvoiceTypeLabel);
             Controls.Add(InvoiceTypeComboBox);
             Controls.Add(errolLAbel);
@@ -816,5 +830,7 @@
         private ComboBox InvoiceTypeComboBox;
         private ToolStripMenuItem convertToPdfToolStripMenuItem;
         private ToolStripMenuItem updateExistingItemToolStripMenuItem;
+        private TextBox HUtextBox;
+        private Label label4;
     }
 }

@@ -183,7 +183,7 @@ namespace ProFormaLibraries
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 // did not work ;P var output = cnn.Query<ItemModel>($"select * from ItemsTable where Customer={SelectedCustomer}", new DynamicParameters());
-                var output = cnn.Query<ItemModel>($"select id, * from ItemsTable where Customer = @SelectedCustomer", new { SelectedCustomer });
+                var output = cnn.Query<ItemModel>($"select id, * from ItemsTable where Customer = @SelectedCustomer ORDER BY ItemName ASC" , new { SelectedCustomer });
                 return output.ToList();
             }
         }

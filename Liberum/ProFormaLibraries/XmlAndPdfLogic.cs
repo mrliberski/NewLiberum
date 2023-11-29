@@ -51,6 +51,7 @@ namespace ProFormaLibraries
 
                 textBox.Location = new Point(20, 20);
                 textBox.Size = new Size(400, 30);
+                textBox.Text = "Automotive components";
 
                 okButton.Text = "OK";
                 okButton.DialogResult = DialogResult.OK;

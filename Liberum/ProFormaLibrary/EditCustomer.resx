@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="footerLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>579, 446</value>
+    <value>707, 446</value>
   </data>
   <data name="footerLAbel.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -163,7 +163,7 @@
     <value>221, 587</value>
   </data>
   <data name="CurrencyTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="CurrencyTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -223,7 +223,7 @@
     <value>221, 555</value>
   </data>
   <data name="IncotermsTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="IncotermsTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -280,13 +280,13 @@
     <value>3</value>
   </data>
   <data name="footerTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>579, 469</value>
+    <value>707, 469</value>
   </data>
   <data name="footerTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="footerTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>592, 145</value>
+    <value>464, 145</value>
   </data>
   <data name="footerTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
@@ -310,7 +310,7 @@
     <value>221, 224</value>
   </data>
   <data name="cityTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="cityTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -391,7 +391,7 @@
     <value>221, 521</value>
   </data>
   <data name="haulierNameTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="haulierNameTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -451,7 +451,7 @@
     <value>221, 488</value>
   </data>
   <data name="destinationOfficeTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="destinationOfficeTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -511,7 +511,7 @@
     <value>221, 455</value>
   </data>
   <data name="exitPointTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="exitPointTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -571,7 +571,7 @@
     <value>221, 92</value>
   </data>
   <data name="addressLine1TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="addressLine1TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
@@ -595,7 +595,7 @@
     <value>221, 125</value>
   </data>
   <data name="addressLine2TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="addressLine2TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -619,7 +619,7 @@
     <value>221, 157</value>
   </data>
   <data name="addressLine3TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="addressLine3TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -643,7 +643,7 @@
     <value>221, 191</value>
   </data>
   <data name="postCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="postCodeTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -667,7 +667,7 @@
     <value>221, 257</value>
   </data>
   <data name="countryTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="countryTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -691,7 +691,7 @@
     <value>221, 291</value>
   </data>
   <data name="vatNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="vatNumberTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -715,7 +715,7 @@
     <value>221, 323</value>
   </data>
   <data name="eoriNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="eoriNumberTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -739,7 +739,7 @@
     <value>221, 356</value>
   </data>
   <data name="sapNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="sapNumberTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -763,7 +763,7 @@
     <value>221, 389</value>
   </data>
   <data name="contactNameTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="contactNameTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -787,7 +787,7 @@
     <value>221, 421</value>
   </data>
   <data name="telephoneTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 27</value>
+    <value>466, 27</value>
   </data>
   <data name="telephoneTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>

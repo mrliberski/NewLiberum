@@ -1198,6 +1198,30 @@
   <data name="InvoiceTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 28</value>
   </data>
+  <data name="HUtextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="HUtextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 27</value>
+  </data>
+  <data name="HUtextBox.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Handling Units</value>
+  </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
