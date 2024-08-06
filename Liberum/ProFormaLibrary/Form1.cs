@@ -15,11 +15,10 @@ namespace ProFormaLibrary
     public partial class ProFormaGenerator : Form, ICustomerItemSelection
     {
 
-
         List<string> requestType = new List<string>();
         List<string> ibfTimeslot = new List<string>();
         List<CustomerModel> customers = new List<CustomerModel>();
-        public DateTime deadLine = new DateTime(2023, 12, 31);
+        public DateTime deadLine = new DateTime(2025, 01, 07);
         public List<ItemModel> Items = new List<ItemModel>();
         public string SelectedCustomer { get; set; }
         public string HUquantity { get; set; }
@@ -51,7 +50,7 @@ namespace ProFormaLibrary
         {
             if (Environment.UserName.ToUpper() == "PAWEL.LIBERSKI" || Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "ALINA.SIM")
             {
-                deadLine = new DateTime(2029, 08, 01);
+                deadLine = new DateTime(2099, 08, 01);
             }
         }
 
@@ -262,12 +261,12 @@ namespace ProFormaLibrary
             }
             else if (Expiration > DateTime.Today)
             {
-                //MessageBox.Show(@"Welcome, This is a demo software and is provided with on as-is basis. It comes with no warranties whatsoever. ", "Licence Expiry date: " + ExpirationDate.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(@"Welcome, This is a demo software and is provided with on as-is basis. It comes with no warranties whatsoever. ", "Licence Expiry date: " + Expiration.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
             else
             {
-                //MessageBox.Show("No idea man", "WTF", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No idea man", "WTF", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
@@ -522,14 +521,35 @@ namespace ProFormaLibrary
             if (ValidateExpiryDate())
             {
                 MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                System.Windows.Forms.Application.Exit();
+                //System.Windows.Forms.Application.Exit();
+
+                string directoryPath = @".\Sounds";
+                string filePath = Path.Combine(directoryPath, "p-hub-bro.wav");
+
+                // Create a SoundPlayer object with the desired sound file
+                SoundPlayer customSound = new SoundPlayer(filePath);
+                customSound.Play();
+
+                //MessageBox.Show("This module is not yet available.", "Disappointment.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Show a message box and set the sound for that message box
+                //MessageBox.Show("Custom sound message box", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, 0, true, "customSound");
+
+                // Play the custom sound
+                System.Reflection.Assembly.GetExecutingAssembly().PlaySound("customSound", customSound);
+
+
+
+
+
+
             }
         }
 
 
         private void CreateBrokerRequest_Click(object sender, EventArgs e)
         {
-            CheckLicence();
+           // CheckLicence();
 
             DialogResult iExit;
             iExit = MessageBox.Show("New invoice and request will be created, continue?", "Please confirm shipment creation.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
