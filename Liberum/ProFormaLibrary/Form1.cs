@@ -43,6 +43,7 @@ namespace ProFormaLibrary
             ClearContent();
             GetHighestInvoiceNumberAndIncrement();
             //LoadSampleItems();
+            CheckLicence();
 
         }
 
@@ -417,7 +418,7 @@ namespace ProFormaLibrary
 
         private void CreateInvoiceButton_Click(object sender, EventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
             //NotYet();
 
             DialogResult iExit;
@@ -505,7 +506,13 @@ namespace ProFormaLibrary
             //XmlAndPdfLogic.CreatePDF();
             HtmlAndPdfLogic.CreateHtmlInvoice(Customer, Invoice, Items);
             HtmlAndPdfLogic.CreatePdfInvoice();
-            System.Diagnostics.Process.Start("explorer.exe", @".\HTML");
+
+            if (Environment.UserName.ToUpper() == "PAWEL.LIBERSKI" || Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "ALINA.SIM")
+            {
+                System.Diagnostics.Process.Start("explorer.exe", @".\HTML");
+            }
+
+            
         }
 
         public void SweepUptheForm()
@@ -530,10 +537,10 @@ namespace ProFormaLibrary
                 SoundPlayer customSound = new SoundPlayer(filePath);
                 customSound.Play();
 
-                //MessageBox.Show("This module is not yet available.", "Disappointment.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // MessageBox.Show("This module is not yet available.", "Disappointment.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 // Show a message box and set the sound for that message box
-                //MessageBox.Show("Custom sound message box", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, 0, true, "customSound");
+                // MessageBox.Show("Custom sound message box", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, 0, true, "customSound");
 
                 // Play the custom sound
                 System.Reflection.Assembly.GetExecutingAssembly().PlaySound("customSound", customSound);
@@ -664,7 +671,7 @@ namespace ProFormaLibrary
             {
                 SelectedCustomer = ((CustomerModel)selectCustomerComboBox.SelectedItem).CustomerName;
 
-                CheckLicence();
+                //CheckLicence();
                 Form open = new AddItem(this, SelectedCustomer);
                 open.ShowDialog();
             }
@@ -688,7 +695,7 @@ namespace ProFormaLibrary
 
         private void EditCustomerLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
             Form open = new EditCustomer();
 #pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
             open.FormClosed += Customer_FormClosed;
@@ -698,13 +705,13 @@ namespace ProFormaLibrary
 
         private void Customer_FormClosed(object sender, FormClosedEventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
             LoadCustomers();
         }
 
         private void CreatNewCustomerlinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
             Form? form = new AddCustomerForm();
 #pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
             form.FormClosed += Customer_FormClosed;
@@ -714,13 +721,13 @@ namespace ProFormaLibrary
 
         private void EmailRecipientsListLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
             NotYet();
         }
 
         private void SelectCustomerComboBox_SelectionChangeCommited(object sender, EventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
         }
 
         private void PopulateCustomerInfo()
@@ -767,7 +774,7 @@ namespace ProFormaLibrary
             }
             else
             {
-                CheckLicence();
+                //CheckLicence();
                 PopulateCustomerInfo();
             }
 
@@ -890,7 +897,7 @@ namespace ProFormaLibrary
 
         private void CreateItem()
         {
-            CheckLicence();
+            //CheckLicence();
             Form open = new CreateNewItemForm();
             open.ShowDialog();
         }
@@ -902,7 +909,7 @@ namespace ProFormaLibrary
 
         private void editInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CheckLicence();
+            //CheckLicence();
             Form open = new InvoiceEdit();
             open.ShowDialog();
         }
