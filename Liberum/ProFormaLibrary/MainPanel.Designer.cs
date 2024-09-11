@@ -30,9 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
+            button10 = new Button();
+            button9 = new Button();
+            button8 = new Button();
+            button7 = new Button();
+            button6 = new Button();
+            button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             panelLogo = new Panel();
             panelTitleBar = new Panel();
-            button1 = new Button();
             panelMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -40,9 +49,115 @@
             // 
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
+            panelMenu.Controls.Add(button10);
+            panelMenu.Controls.Add(button9);
+            panelMenu.Controls.Add(button8);
+            panelMenu.Controls.Add(button7);
+            panelMenu.Controls.Add(button6);
+            panelMenu.Controls.Add(button5);
+            panelMenu.Controls.Add(button4);
+            panelMenu.Controls.Add(button3);
+            panelMenu.Controls.Add(button2);
             panelMenu.Controls.Add(button1);
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
+            // 
+            // button10
+            // 
+            resources.ApplyResources(button10, "button10");
+            button10.FlatAppearance.BorderSize = 0;
+            button10.ForeColor = Color.Gainsboro;
+            button10.Image = Properties.Resources.cross_out__2_;
+            button10.Name = "button10";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // button9
+            // 
+            resources.ApplyResources(button9, "button9");
+            button9.FlatAppearance.BorderSize = 0;
+            button9.ForeColor = Color.Gainsboro;
+            button9.Name = "button9";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // button8
+            // 
+            resources.ApplyResources(button8, "button8");
+            button8.FlatAppearance.BorderSize = 0;
+            button8.ForeColor = Color.Gainsboro;
+            button8.Name = "button8";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button7
+            // 
+            resources.ApplyResources(button7, "button7");
+            button7.FlatAppearance.BorderSize = 0;
+            button7.ForeColor = Color.Gainsboro;
+            button7.Name = "button7";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button6
+            // 
+            resources.ApplyResources(button6, "button6");
+            button6.FlatAppearance.BorderSize = 0;
+            button6.ForeColor = Color.Gainsboro;
+            button6.Image = Properties.Resources.value;
+            button6.Name = "button6";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button5
+            // 
+            resources.ApplyResources(button5, "button5");
+            button5.FlatAppearance.BorderSize = 0;
+            button5.ForeColor = Color.Gainsboro;
+            button5.Image = Properties.Resources.shopping_list;
+            button5.Name = "button5";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(button4, "button4");
+            button4.FlatAppearance.BorderSize = 0;
+            button4.ForeColor = Color.Gainsboro;
+            button4.Image = Properties.Resources.shopping_cart__1_;
+            button4.Name = "button4";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(button3, "button3");
+            button3.FlatAppearance.BorderSize = 0;
+            button3.ForeColor = Color.Gainsboro;
+            button3.Image = Properties.Resources.settings;
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(button2, "button2");
+            button2.FlatAppearance.BorderSize = 0;
+            button2.ForeColor = Color.Gainsboro;
+            button2.Image = Properties.Resources.bar_chart;
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.FlatAppearance.BorderSize = 0;
+            button1.ForeColor = Color.Gainsboro;
+            button1.Image = Properties.Resources.alarm__1_;
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panelLogo
             // 
@@ -55,14 +170,6 @@
             resources.ApplyResources(panelTitleBar, "panelTitleBar");
             panelTitleBar.BackColor = SystemColors.ActiveCaption;
             panelTitleBar.Name = "panelTitleBar";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(button1, "button1");
-            button1.FlatAppearance.BorderSize = 0;
-            button1.ForeColor = Color.Gainsboro;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // MainPanel
             // 
@@ -83,5 +190,14 @@
         private Panel panelLogo;
         private Panel panelTitleBar;
         private Button button1;
+        private Button button10;
+        private Button button9;
+        private Button button8;
+        private Button button7;
+        private Button button6;
+        private Button button5;
+        private Button button4;
+        private Button button3;
+        private Button button2;
     }
 }
