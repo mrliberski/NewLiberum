@@ -80,46 +80,51 @@ namespace ProFormaUI
             ActivateButton(sender);
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button6_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button7_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button8_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button9_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button10_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button11_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        private void button12_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+        //private void button12_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //}
 
-        //exit button
-        private void button13_Click(object sender, EventArgs e)
+        ////exit button
+        //private void button13_Click(object sender, EventArgs e)
+        //{
+        //    ActivateButton(sender);
+        //    this.Close();
+        //}
+
+        private void MainPanel_Load(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            this.Close();
+
         }
     }
 }
