@@ -11,6 +11,8 @@ using ProFormaLibraries;
 using ProFormaLibrary;
 using ProFormaUI;
 using System.Windows.Forms;
+using DocumentFormat.OpenXml.Spreadsheet;
+using System.Runtime.InteropServices;
 
 
 
@@ -30,11 +32,31 @@ namespace ProFormaUI
         {
             InitializeComponent();
             random = new Random();
+            btnCloseChildform.Visible = false;
+
+            //remove frame
+            this.Text = string.Empty;
+            this.ControlBox = false;
+
+            //This bit will restrict the size of window to cover the taskbar
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+
+        /// <summary>
+        /// /dragging window
+        /// </summary>
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        /// <summary>
+        /// end of dragging window
+        /// </summary>
+        /// <returns></returns>
 
 
         //methods
-        private Color SelectThemeColor()
+        private System.Drawing.Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
             while (tempIndex == index)
@@ -58,14 +80,20 @@ namespace ProFormaUI
                 if (currentButton != (Button)btnSender)
                 {
                     DisableButton();
-                    Color color = SelectThemeColor();
+                    System.Drawing.Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.White;
+                    currentButton.ForeColor = System.Drawing.Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+
+                    // Apply theme colour to child form buttons
+                    ThemeColor.PrimaryColor = color;
+                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+
+                    btnCloseChildform.Visible = true;
                 }
             }
 
@@ -73,13 +101,15 @@ namespace ProFormaUI
 
         private void DisableButton()
         {
-            foreach (Control previousBtn in panelMenu.Controls)
+            foreach (System.Windows.Forms.Control previousBtn in panelMenu.Controls)
+            {
                 if (previousBtn.GetType() == typeof(Button))
                 {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    previousBtn.ForeColor = Color.Gainsboro;
+                    previousBtn.BackColor = System.Drawing.Color.FromArgb(51, 51, 76);
+                    previousBtn.ForeColor = System.Drawing.Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
+            }
         }
 
         private void btnCounts_Click(object sender, EventArgs e)
@@ -98,7 +128,7 @@ namespace ProFormaUI
 
 
             //format child form and open within a panel
-            activeForm=childForm;
+            activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -111,25 +141,26 @@ namespace ProFormaUI
             lblTitle.Text = childForm.Text;
         }
 
-     
 
-      
+
+
 
         private void MainPanel_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            OpenChildForm(new ProFormaGenerator(), sender);
         }
 
         //export Button
         private void button2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-            //OpenChildForm(new Form1(), sender);
+            //ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -172,6 +203,51 @@ namespace ProFormaUI
         {
             ActivateButton(sender);
             this.Close();
+        }
+
+        private void btnCloseChildform_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+                Reset();
+            }
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            lblTitle.Text = "HOME";
+            panelTitleBar.BackColor = System.Drawing.Color.FromArgb(0, 150, 136);
+            panelLogo.BackColor = System.Drawing.Color.FromArgb(0, 39, 39, 58);
+            currentButton = null;
+            btnCloseChildform.Visible = false;
+        }
+
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        //exit button
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //maximize button
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -43,11 +43,18 @@
             panelLogo = new Panel();
             label1 = new Label();
             panelTitleBar = new Panel();
+            btnMinimize = new Button();
+            btnMaximize = new Button();
+            btnClose = new Button();
+            btnCloseChildform = new Button();
             lblTitle = new Label();
             panelDesktopPanel = new Panel();
+            pictureBox1 = new PictureBox();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             panelTitleBar.SuspendLayout();
+            panelDesktopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -152,7 +159,7 @@
             resources.ApplyResources(exportButton, "exportButton");
             exportButton.FlatAppearance.BorderSize = 0;
             exportButton.ForeColor = Color.Gainsboro;
-            exportButton.Image = Properties.Resources.bar_chart;
+            exportButton.Image = Properties.Resources.shopping_list;
             exportButton.Name = "exportButton";
             exportButton.UseVisualStyleBackColor = true;
             exportButton.Click += button2_Click;
@@ -162,7 +169,7 @@
             resources.ApplyResources(button1, "button1");
             button1.FlatAppearance.BorderSize = 0;
             button1.ForeColor = Color.Gainsboro;
-            button1.Image = Properties.Resources.alarm__1_;
+            button1.Image = Properties.Resources.bar_chart;
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -184,8 +191,52 @@
             // 
             resources.ApplyResources(panelTitleBar, "panelTitleBar");
             panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
+            panelTitleBar.Controls.Add(btnMinimize);
+            panelTitleBar.Controls.Add(btnMaximize);
+            panelTitleBar.Controls.Add(btnClose);
+            panelTitleBar.Controls.Add(btnCloseChildform);
             panelTitleBar.Controls.Add(lblTitle);
             panelTitleBar.Name = "panelTitleBar";
+            panelTitleBar.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // btnMinimize
+            // 
+            resources.ApplyResources(btnMinimize, "btnMinimize");
+            btnMinimize.FlatAppearance.BorderSize = 0;
+            btnMinimize.ForeColor = Color.Gainsboro;
+            btnMinimize.Name = "btnMinimize";
+            btnMinimize.UseMnemonic = false;
+            btnMinimize.UseVisualStyleBackColor = true;
+            btnMinimize.Click += btnMinimize_Click;
+            // 
+            // btnMaximize
+            // 
+            resources.ApplyResources(btnMaximize, "btnMaximize");
+            btnMaximize.FlatAppearance.BorderSize = 0;
+            btnMaximize.ForeColor = Color.Gainsboro;
+            btnMaximize.Name = "btnMaximize";
+            btnMaximize.UseMnemonic = false;
+            btnMaximize.UseVisualStyleBackColor = true;
+            btnMaximize.Click += button11_Click;
+            // 
+            // btnClose
+            // 
+            resources.ApplyResources(btnClose, "btnClose");
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.ForeColor = Color.Gainsboro;
+            btnClose.Name = "btnClose";
+            btnClose.UseMnemonic = false;
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
+            // btnCloseChildform
+            // 
+            resources.ApplyResources(btnCloseChildform, "btnCloseChildform");
+            btnCloseChildform.FlatAppearance.BorderSize = 0;
+            btnCloseChildform.Image = Properties.Resources.cross_out__2_;
+            btnCloseChildform.Name = "btnCloseChildform";
+            btnCloseChildform.UseVisualStyleBackColor = true;
+            btnCloseChildform.Click += btnCloseChildform_Click;
             // 
             // lblTitle
             // 
@@ -196,7 +247,14 @@
             // panelDesktopPanel
             // 
             resources.ApplyResources(panelDesktopPanel, "panelDesktopPanel");
+            panelDesktopPanel.Controls.Add(pictureBox1);
             panelDesktopPanel.Name = "panelDesktopPanel";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // MainPanel
             // 
@@ -214,6 +272,8 @@
             panelLogo.PerformLayout();
             panelTitleBar.ResumeLayout(false);
             panelTitleBar.PerformLayout();
+            panelDesktopPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -234,5 +294,10 @@
         private Label lblTitle;
         private Label label1;
         private Panel panelDesktopPanel;
+        private Button btnCloseChildform;
+        private PictureBox pictureBox1;
+        private Button btnClose;
+        private Button btnMinimize;
+        private Button btnMaximize;
     }
 }

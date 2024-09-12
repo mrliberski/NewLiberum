@@ -44,6 +44,7 @@ namespace ProFormaLibrary
             GetHighestInvoiceNumberAndIncrement();
             //LoadSampleItems();
             CheckLicence();
+            LoadTheme();
 
         }
 
@@ -262,7 +263,7 @@ namespace ProFormaLibrary
             }
             else if (Expiration > DateTime.Today)
             {
-                MessageBox.Show(@"Welcome, This is a demo software and is provided with on as-is basis. It comes with no warranties whatsoever. ", "Licence Expiry date: " + Expiration.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show(@"Welcome, This is a demo software and is provided with on as-is basis. It comes with no warranties whatsoever. ", "Licence Expiry date: " + Expiration.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
             else
@@ -979,5 +980,24 @@ namespace ProFormaLibrary
         {
 
         }
+
+        private void LoadTheme()
+        {
+            foreach (System.Windows.Forms.Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+
+            //label3.ForeColor = ThemeColor.PrimaryColor;
+            //label4.ForeColor = ThemeColor.SecondaryColor;
+        }
+
     }
 }
