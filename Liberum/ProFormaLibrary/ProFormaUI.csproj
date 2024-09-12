@@ -65,6 +65,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Liberum2\Liberum2.csproj" />
     <ProjectReference Include="..\ProFormaLibraries\ProFormaLibraries.csproj" />
   </ItemGroup>
 

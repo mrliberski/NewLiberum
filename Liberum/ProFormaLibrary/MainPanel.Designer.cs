@@ -38,11 +38,16 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
+            exportButton = new Button();
             button1 = new Button();
             panelLogo = new Panel();
+            label1 = new Label();
             panelTitleBar = new Panel();
+            lblTitle = new Label();
+            panelDesktopPanel = new Panel();
             panelMenu.SuspendLayout();
+            panelLogo.SuspendLayout();
+            panelTitleBar.SuspendLayout();
             SuspendLayout();
             // 
             // panelMenu
@@ -57,7 +62,7 @@
             panelMenu.Controls.Add(button5);
             panelMenu.Controls.Add(button4);
             panelMenu.Controls.Add(button3);
-            panelMenu.Controls.Add(button2);
+            panelMenu.Controls.Add(exportButton);
             panelMenu.Controls.Add(button1);
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
@@ -77,6 +82,7 @@
             resources.ApplyResources(button9, "button9");
             button9.FlatAppearance.BorderSize = 0;
             button9.ForeColor = Color.Gainsboro;
+            button9.Image = Properties.Resources.alarm__1_;
             button9.Name = "button9";
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
@@ -86,6 +92,7 @@
             resources.ApplyResources(button8, "button8");
             button8.FlatAppearance.BorderSize = 0;
             button8.ForeColor = Color.Gainsboro;
+            button8.Image = Properties.Resources.shopping_list;
             button8.Name = "button8";
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
@@ -95,6 +102,7 @@
             resources.ApplyResources(button7, "button7");
             button7.FlatAppearance.BorderSize = 0;
             button7.ForeColor = Color.Gainsboro;
+            button7.Image = Properties.Resources.shopping_list;
             button7.Name = "button7";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
@@ -139,15 +147,15 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button2
+            // exportButton
             // 
-            resources.ApplyResources(button2, "button2");
-            button2.FlatAppearance.BorderSize = 0;
-            button2.ForeColor = Color.Gainsboro;
-            button2.Image = Properties.Resources.bar_chart;
-            button2.Name = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            resources.ApplyResources(exportButton, "exportButton");
+            exportButton.FlatAppearance.BorderSize = 0;
+            exportButton.ForeColor = Color.Gainsboro;
+            exportButton.Image = Properties.Resources.bar_chart;
+            exportButton.Name = "exportButton";
+            exportButton.UseVisualStyleBackColor = true;
+            exportButton.Click += button2_Click;
             // 
             // button1
             // 
@@ -163,25 +171,49 @@
             // 
             resources.ApplyResources(panelLogo, "panelLogo");
             panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            panelLogo.Controls.Add(label1);
             panelLogo.Name = "panelLogo";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.ForeColor = Color.LightGray;
+            label1.Name = "label1";
             // 
             // panelTitleBar
             // 
             resources.ApplyResources(panelTitleBar, "panelTitleBar");
-            panelTitleBar.BackColor = SystemColors.ActiveCaption;
+            panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
+            panelTitleBar.Controls.Add(lblTitle);
             panelTitleBar.Name = "panelTitleBar";
+            // 
+            // lblTitle
+            // 
+            resources.ApplyResources(lblTitle, "lblTitle");
+            lblTitle.ForeColor = Color.Gainsboro;
+            lblTitle.Name = "lblTitle";
+            // 
+            // panelDesktopPanel
+            // 
+            resources.ApplyResources(panelDesktopPanel, "panelDesktopPanel");
+            panelDesktopPanel.Name = "panelDesktopPanel";
             // 
             // MainPanel
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(panelDesktopPanel);
             Controls.Add(panelTitleBar);
             Controls.Add(panelMenu);
             Name = "MainPanel";
             WindowState = FormWindowState.Maximized;
             Load += MainPanel_Load;
             panelMenu.ResumeLayout(false);
+            panelLogo.ResumeLayout(false);
+            panelLogo.PerformLayout();
+            panelTitleBar.ResumeLayout(false);
+            panelTitleBar.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -198,6 +230,9 @@
         private Button button5;
         private Button button4;
         private Button button3;
-        private Button button2;
+        private Button exportButton;
+        private Label lblTitle;
+        private Label label1;
+        private Panel panelDesktopPanel;
     }
 }

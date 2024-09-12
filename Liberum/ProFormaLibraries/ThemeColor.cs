@@ -40,27 +40,27 @@ namespace ProFormaLibraries
                                                                     "#43B76E",
                                                                     "#7BCFE9",
                                                                     "#B71C46"};
-        //public static Color ChangeColorBrightness(Color color, double correctionFactor)
-        //{
-        //    double red = color.R;
-        //    Double green = color.G;
-        //    Double blue = color.B;
-        //    //If correction factor is less than 0, darken color.
-        //    if (correctionFactor < 0)
-        //    {
-        //        correctionFactor = 1 + correctionFactor;
-        //        network *= correctionFactor;
-        //        green *= correctionFactor;
-        //        blue *= correctionFactor;
-        //    }
-        //    //If correction factor is greater than zero, lighten color.
-        //    else
-        //    {
-        //        network = (255 - network) * correctionFactor + network;
-        //        green = (255 - green) * correctionFactor + green;
-        //        blue = (255 - blue) * correctionFactor + blue;
-        //    }
-        //    return Color.FromArgb(color.A, (byte)red, (byte)green, (byte)blue);
-        //}
+        public static Color ChangeColorBrightness(Color color, double correctionFactor)
+        {
+            double red = color.R;
+            Double green = color.G;
+            Double blue = color.B;
+            //If correction factor is less than 0, darken color.
+            if (correctionFactor < 0)
+            {
+                correctionFactor = 1 + correctionFactor;
+                red *= correctionFactor;
+                green *= correctionFactor;
+                blue *= correctionFactor;
+            }
+            //If correction factor is greater than zero, lighten color.
+            else
+            {
+                red = (255 - red) * correctionFactor + red;
+                green = (255 - green) * correctionFactor + green;
+                blue = (255 - blue) * correctionFactor + blue;
+            }
+            return Color.FromArgb(color.A, (byte)red, (byte)green, (byte)blue);
+        }
     }
 }

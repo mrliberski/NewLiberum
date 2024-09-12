@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProFormaLibraries;
+using ProFormaLibrary;
+using ProFormaUI;
+using System.Windows.Forms;
 
 
 
@@ -19,6 +22,7 @@ namespace ProFormaUI
         private Button currentButton;
         private Random random;
         private int tempIndex;
+        private Form activeForm;
 
 
         //Constructor
@@ -59,6 +63,9 @@ namespace ProFormaUI
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+                    panelTitleBar.BackColor = color;
+                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                 }
             }
 
@@ -80,47 +87,33 @@ namespace ProFormaUI
             ActivateButton(sender);
         }
 
-        //private void button6_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            //highlight active button
+            ActivateButton(btnSender);
 
-        //private void button7_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
 
-        //private void button8_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
+            //format child form and open within a panel
+            activeForm=childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
 
-        //private void button9_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
+            this.panelDesktopPanel.Controls.Add(childForm);
+            this.panelDesktopPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
-        //private void button10_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
+            lblTitle.Text = childForm.Text;
+        }
 
-        //private void button11_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
+     
 
-        //private void button12_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //}
-
-        ////exit button
-        //private void button13_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender);
-        //    this.Close();
-        //}
+      
 
         private void MainPanel_Load(object sender, EventArgs e)
         {
@@ -132,9 +125,11 @@ namespace ProFormaUI
             ActivateButton(sender);
         }
 
+        //export Button
         private void button2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            //OpenChildForm(new Form1(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
