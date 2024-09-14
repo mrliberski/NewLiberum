@@ -219,53 +219,60 @@ namespace ProFormaUI
 
         }
 
+        //export
         private void button1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             OpenChildForm(new ProFormaGenerator(), sender);
         }
 
-        //export Button
+        //Packaging count
         private void button2_Click(object sender, EventArgs e)
         {
-            //ActivateButton(sender);
+            ActivateButton(sender);
             OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
             OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
             OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //ActivateButton(sender);
+            ActivateButton(sender);
             OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
             OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
             OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         // exit button
@@ -281,6 +288,7 @@ namespace ProFormaUI
             {
                 activeForm.Close();
                 Reset();
+                ActivateButton(sender);
             }
         }
 
