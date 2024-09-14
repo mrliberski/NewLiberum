@@ -89,7 +89,7 @@
             resources.ApplyResources(button9, "button9");
             button9.FlatAppearance.BorderSize = 0;
             button9.ForeColor = Color.Gainsboro;
-            button9.Image = Properties.Resources.alarm__1_;
+            button9.Image = Properties.Resources.settings;
             button9.Name = "button9";
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
@@ -99,7 +99,7 @@
             resources.ApplyResources(button8, "button8");
             button8.FlatAppearance.BorderSize = 0;
             button8.ForeColor = Color.Gainsboro;
-            button8.Image = Properties.Resources.shopping_list;
+            button8.Image = Properties.Resources.shopping_cart__1_;
             button8.Name = "button8";
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
@@ -139,7 +139,7 @@
             resources.ApplyResources(button4, "button4");
             button4.FlatAppearance.BorderSize = 0;
             button4.ForeColor = Color.Gainsboro;
-            button4.Image = Properties.Resources.shopping_cart__1_;
+            button4.Image = Properties.Resources.shopping_list;
             button4.Name = "button4";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
@@ -149,7 +149,7 @@
             resources.ApplyResources(button3, "button3");
             button3.FlatAppearance.BorderSize = 0;
             button3.ForeColor = Color.Gainsboro;
-            button3.Image = Properties.Resources.settings;
+            button3.Image = Properties.Resources.shopping_list;
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;

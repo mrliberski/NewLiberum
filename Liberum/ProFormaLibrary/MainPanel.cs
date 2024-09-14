@@ -13,6 +13,7 @@ using ProFormaUI;
 using System.Windows.Forms;
 using DocumentFormat.OpenXml.Spreadsheet;
 using System.Runtime.InteropServices;
+using System.Media;
 
 
 
@@ -25,6 +26,7 @@ namespace ProFormaUI
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        public DateTime deadLine = new DateTime(2025, 01, 07);
 
 
         //Constructor
@@ -40,6 +42,9 @@ namespace ProFormaUI
 
             //This bit will restrict the size of window to cover the taskbar
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+            AmendDeadLine();
+            CheckLicence();
         }
 
         /// <summary>
@@ -56,6 +61,70 @@ namespace ProFormaUI
 
 
         //methods
+
+        private void AmendDeadLine()
+        {
+            if (Environment.UserName.ToUpper() == "PAWEL.LIBERSKI" || Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "ALINA.SIM")
+            {
+                deadLine = new DateTime(2099, 08, 01);
+            }
+        }
+
+        private void CheckLicence()
+        {
+            if (ValidateExpiryDate())
+            {
+                MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //System.Windows.Forms.Application.Exit();
+
+                string directoryPath = @".\Sounds";
+                string filePath = Path.Combine(directoryPath, "p-hub-bro.wav");
+
+                // Create a SoundPlayer object with the desired sound file
+                SoundPlayer customSound = new SoundPlayer(filePath);
+                customSound.Play();
+
+                // MessageBox.Show("This module is not yet available.", "Disappointment.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // MessageBox.Show("Licence Expired. Please obtaina a licenced version of a software.", "Expired Licence", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Show a message box and set the sound for that message box
+                // MessageBox.Show("Custom sound message box", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, 0, true, "customSound");
+
+                // Play the custom sound
+                System.Reflection.Assembly.GetExecutingAssembly().PlaySound("customSound", customSound);
+
+
+
+
+
+
+            }
+        }
+
+        private bool ValidateExpiryDate()
+        {
+            DateTime Expiration = deadLine;
+
+            if (Expiration < DateTime.Today)
+            {
+                return true;
+            }
+            else if (Expiration == DateTime.Today)
+            {
+                MessageBox.Show("The licence will expire today", "Suspense", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (Expiration > DateTime.Today)
+            {
+                //MessageBox.Show(@"Welcome, This is a demo software and is provided with on as-is basis. It comes with no warranties whatsoever. ", "Licence Expiry date: " + Expiration.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            else
+            {
+                MessageBox.Show("No idea man", "WTF", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
         private System.Drawing.Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
@@ -165,27 +234,28 @@ namespace ProFormaUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            //ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -222,6 +292,7 @@ namespace ProFormaUI
             panelLogo.BackColor = System.Drawing.Color.FromArgb(0, 39, 39, 58);
             currentButton = null;
             btnCloseChildform.Visible = false;
+            panelMenu.BackColor = System.Drawing.Color.FromArgb(51, 51, 76);
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)

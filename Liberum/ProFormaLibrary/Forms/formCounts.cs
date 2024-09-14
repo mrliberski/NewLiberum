@@ -17,6 +17,7 @@ namespace ProFormaUI.Forms
         {
             InitializeComponent();
             LoadTheme();
+            ClearAllTextBoxes(this);
         }
 
         private void formCounts_Load(object sender, EventArgs e)
@@ -40,8 +41,29 @@ namespace ProFormaUI.Forms
                 }
             }
 
-            label3.ForeColor = ThemeColor.PrimaryColor;
-            label4.ForeColor = ThemeColor.SecondaryColor;
+            //label3.ForeColor = ThemeColor.PrimaryColor;
+            //label4.ForeColor = ThemeColor.SecondaryColor;
+        }
+
+        // Clear all textobxes
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ClearAllTextBoxes(this);
+        }
+
+        private void ClearAllTextBoxes(Control control)
+        {
+            foreach (Control c in control.Controls)
+            {
+                if (c is TextBox)
+                {
+                    ((TextBox)c).Clear();
+                }
+                else
+                {
+                    ClearAllTextBoxes(c);
+                }
+            }
         }
     }
 }
