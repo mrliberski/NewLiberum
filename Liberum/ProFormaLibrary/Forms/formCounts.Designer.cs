@@ -205,6 +205,7 @@
             button3.TabIndex = 53;
             button3.Text = "Submit";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label1
             // 
@@ -221,6 +222,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(86, 27);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -228,6 +230,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(86, 27);
             textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label2
             // 
@@ -356,7 +359,7 @@
             label19.Name = "label19";
             label19.Size = new Size(17, 20);
             label19.TabIndex = 34;
-            label19.Text = "1";
+            label19.Text = "0";
             // 
             // label20
             // 
@@ -413,7 +416,7 @@
             label15.Name = "label15";
             label15.Size = new Size(17, 20);
             label15.TabIndex = 27;
-            label15.Text = "1";
+            label15.Text = "0";
             // 
             // label16
             // 
@@ -470,7 +473,7 @@
             label13.Name = "label13";
             label13.Size = new Size(17, 20);
             label13.TabIndex = 20;
-            label13.Text = "1";
+            label13.Text = "0";
             // 
             // label14
             // 
@@ -504,7 +507,7 @@
             label12.Name = "label12";
             label12.Size = new Size(17, 20);
             label12.TabIndex = 16;
-            label12.Text = "1";
+            label12.Text = "0";
             // 
             // label10
             // 
@@ -539,6 +542,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(86, 27);
             textBox5.TabIndex = 3;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label7
             // 
@@ -707,7 +711,7 @@
             label85.Name = "label85";
             label85.Size = new Size(17, 20);
             label85.TabIndex = 111;
-            label85.Text = "1";
+            label85.Text = "0";
             // 
             // label86
             // 
@@ -716,7 +720,7 @@
             label86.Name = "label86";
             label86.Size = new Size(17, 20);
             label86.TabIndex = 110;
-            label86.Text = "1";
+            label86.Text = "0";
             // 
             // label87
             // 
@@ -725,7 +729,7 @@
             label87.Name = "label87";
             label87.Size = new Size(17, 20);
             label87.TabIndex = 109;
-            label87.Text = "1";
+            label87.Text = "0";
             // 
             // label88
             // 
@@ -734,7 +738,7 @@
             label88.Name = "label88";
             label88.Size = new Size(17, 20);
             label88.TabIndex = 108;
-            label88.Text = "1";
+            label88.Text = "0";
             // 
             // label89
             // 
@@ -743,7 +747,7 @@
             label89.Name = "label89";
             label89.Size = new Size(17, 20);
             label89.TabIndex = 107;
-            label89.Text = "1";
+            label89.Text = "0";
             // 
             // label90
             // 
@@ -752,7 +756,7 @@
             label90.Name = "label90";
             label90.Size = new Size(17, 20);
             label90.TabIndex = 106;
-            label90.Text = "1";
+            label90.Text = "0";
             // 
             // label91
             // 
@@ -761,7 +765,7 @@
             label91.Name = "label91";
             label91.Size = new Size(17, 20);
             label91.TabIndex = 105;
-            label91.Text = "1";
+            label91.Text = "0";
             // 
             // label92
             // 
@@ -770,7 +774,7 @@
             label92.Name = "label92";
             label92.Size = new Size(17, 20);
             label92.TabIndex = 104;
-            label92.Text = "1";
+            label92.Text = "0";
             // 
             // label93
             // 
@@ -779,7 +783,7 @@
             label93.Name = "label93";
             label93.Size = new Size(17, 20);
             label93.TabIndex = 103;
-            label93.Text = "1";
+            label93.Text = "0";
             // 
             // label94
             // 
@@ -788,7 +792,7 @@
             label94.Name = "label94";
             label94.Size = new Size(17, 20);
             label94.TabIndex = 102;
-            label94.Text = "1";
+            label94.Text = "0";
             // 
             // label95
             // 
@@ -797,7 +801,7 @@
             label95.Name = "label95";
             label95.Size = new Size(17, 20);
             label95.TabIndex = 101;
-            label95.Text = "1";
+            label95.Text = "0";
             // 
             // label96
             // 
@@ -806,7 +810,7 @@
             label96.Name = "label96";
             label96.Size = new Size(17, 20);
             label96.TabIndex = 100;
-            label96.Text = "1";
+            label96.Text = "0";
             // 
             // label97
             // 
@@ -824,7 +828,7 @@
             label98.Name = "label98";
             label98.Size = new Size(17, 20);
             label98.TabIndex = 98;
-            label98.Text = "1";
+            label98.Text = "0";
             // 
             // label76
             // 
