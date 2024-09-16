@@ -42,23 +42,23 @@
             label82 = new Label();
             label83 = new Label();
             label84 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            textBox10 = new TextBox();
+            topCoverTotalLabel = new Label();
+            topCoverPalletFactorLabel = new Label();
+            topcoverDamagedTextBox = new TextBox();
             label21 = new Label();
-            textBox11 = new TextBox();
+            topCoverFullsTextBox = new TextBox();
             label22 = new Label();
-            textBox12 = new TextBox();
-            label15 = new Label();
-            label16 = new Label();
-            textBox7 = new TextBox();
+            topCoverEmptiestextBox = new TextBox();
+            DecorTotalLabel = new Label();
+            DecorPalletFactorlabel = new Label();
+            DecorDamagedtextBox = new TextBox();
             label17 = new Label();
-            textBox8 = new TextBox();
+            DecorFulltextBox = new TextBox();
             label18 = new Label();
-            textBox9 = new TextBox();
-            label13 = new Label();
-            label14 = new Label();
-            textBox6 = new TextBox();
+            DecorEmptiestextBox = new TextBox();
+            lowerTotalLabel = new Label();
+            lowerPalletFactorLabel = new Label();
+            lowersDamagedTextBox = new TextBox();
             label11 = new Label();
             label12 = new Label();
             label10 = new Label();
@@ -67,9 +67,9 @@
             textBox5 = new TextBox();
             label7 = new Label();
             label6 = new Label();
-            textBox4 = new TextBox();
+            lowersFullsTextBox = new TextBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            lowerEmpriesTextBox = new TextBox();
             groupBox2 = new GroupBox();
             label85 = new Label();
             label86 = new Label();
@@ -181,6 +181,7 @@
             label42 = new Label();
             label43 = new Label();
             textBox24 = new TextBox();
+            errorLabel = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -239,7 +240,7 @@
             label2.Name = "label2";
             label2.Size = new Size(65, 20);
             label2.TabIndex = 5;
-            label2.Text = "6223190";
+            label2.Text = "6221438";
             // 
             // label3
             // 
@@ -247,9 +248,9 @@
             label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(53, 37);
             label3.Name = "label3";
-            label3.Size = new Size(523, 25);
+            label3.Size = new Size(843, 25);
             label3.TabIndex = 8;
-            label3.Text = "Please enter the number of pallets. Blank entries are omitted.";
+            label3.Text = "Please enter the number of pallets. Only numeric entries are allowed and blank entries are omitted.";
             // 
             // label4
             // 
@@ -267,23 +268,23 @@
             groupBox1.Controls.Add(label82);
             groupBox1.Controls.Add(label83);
             groupBox1.Controls.Add(label84);
-            groupBox1.Controls.Add(label19);
-            groupBox1.Controls.Add(label20);
-            groupBox1.Controls.Add(textBox10);
+            groupBox1.Controls.Add(topCoverTotalLabel);
+            groupBox1.Controls.Add(topCoverPalletFactorLabel);
+            groupBox1.Controls.Add(topcoverDamagedTextBox);
             groupBox1.Controls.Add(label21);
-            groupBox1.Controls.Add(textBox11);
+            groupBox1.Controls.Add(topCoverFullsTextBox);
             groupBox1.Controls.Add(label22);
-            groupBox1.Controls.Add(textBox12);
-            groupBox1.Controls.Add(label15);
-            groupBox1.Controls.Add(label16);
-            groupBox1.Controls.Add(textBox7);
+            groupBox1.Controls.Add(topCoverEmptiestextBox);
+            groupBox1.Controls.Add(DecorTotalLabel);
+            groupBox1.Controls.Add(DecorPalletFactorlabel);
+            groupBox1.Controls.Add(DecorDamagedtextBox);
             groupBox1.Controls.Add(label17);
-            groupBox1.Controls.Add(textBox8);
+            groupBox1.Controls.Add(DecorFulltextBox);
             groupBox1.Controls.Add(label18);
-            groupBox1.Controls.Add(textBox9);
-            groupBox1.Controls.Add(label13);
-            groupBox1.Controls.Add(label14);
-            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(DecorEmptiestextBox);
+            groupBox1.Controls.Add(lowerTotalLabel);
+            groupBox1.Controls.Add(lowerPalletFactorLabel);
+            groupBox1.Controls.Add(lowersDamagedTextBox);
             groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(label10);
@@ -293,9 +294,9 @@
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(lowersFullsTextBox);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(lowerEmpriesTextBox);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label2);
@@ -352,30 +353,31 @@
             label84.TabIndex = 35;
             label84.Text = "12";
             // 
-            // label19
+            // topCoverTotalLabel
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(968, 169);
-            label19.Name = "label19";
-            label19.Size = new Size(17, 20);
-            label19.TabIndex = 34;
-            label19.Text = "0";
+            topCoverTotalLabel.AutoSize = true;
+            topCoverTotalLabel.Location = new Point(968, 169);
+            topCoverTotalLabel.Name = "topCoverTotalLabel";
+            topCoverTotalLabel.Size = new Size(17, 20);
+            topCoverTotalLabel.TabIndex = 34;
+            topCoverTotalLabel.Text = "0";
             // 
-            // label20
+            // topCoverPalletFactorLabel
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(785, 169);
-            label20.Name = "label20";
-            label20.Size = new Size(17, 20);
-            label20.TabIndex = 33;
-            label20.Text = "1";
+            topCoverPalletFactorLabel.AutoSize = true;
+            topCoverPalletFactorLabel.Location = new Point(785, 169);
+            topCoverPalletFactorLabel.Name = "topCoverPalletFactorLabel";
+            topCoverPalletFactorLabel.Size = new Size(17, 20);
+            topCoverPalletFactorLabel.TabIndex = 33;
+            topCoverPalletFactorLabel.Text = "1";
             // 
-            // textBox10
+            // topcoverDamagedTextBox
             // 
-            textBox10.Location = new Point(661, 166);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(86, 27);
-            textBox10.TabIndex = 12;
+            topcoverDamagedTextBox.Location = new Point(661, 166);
+            topcoverDamagedTextBox.Name = "topcoverDamagedTextBox";
+            topcoverDamagedTextBox.Size = new Size(86, 27);
+            topcoverDamagedTextBox.TabIndex = 12;
+            topcoverDamagedTextBox.TextChanged += topcoverDamagedTextBox_TextChanged;
             // 
             // label21
             // 
@@ -386,12 +388,13 @@
             label21.TabIndex = 30;
             label21.Text = "6221436";
             // 
-            // textBox11
+            // topCoverFullsTextBox
             // 
-            textBox11.Location = new Point(569, 166);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(86, 27);
-            textBox11.TabIndex = 11;
+            topCoverFullsTextBox.Location = new Point(569, 166);
+            topCoverFullsTextBox.Name = "topCoverFullsTextBox";
+            topCoverFullsTextBox.Size = new Size(86, 27);
+            topCoverFullsTextBox.TabIndex = 11;
+            topCoverFullsTextBox.TextChanged += topCoverFullsTextBox_TextChanged;
             // 
             // label22
             // 
@@ -402,37 +405,39 @@
             label22.TabIndex = 28;
             label22.Text = "F6X IP Top Cover (DS) - Line 4";
             // 
-            // textBox12
+            // topCoverEmptiestextBox
             // 
-            textBox12.Location = new Point(477, 166);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(86, 27);
-            textBox12.TabIndex = 10;
+            topCoverEmptiestextBox.Location = new Point(477, 166);
+            topCoverEmptiestextBox.Name = "topCoverEmptiestextBox";
+            topCoverEmptiestextBox.Size = new Size(86, 27);
+            topCoverEmptiestextBox.TabIndex = 10;
+            topCoverEmptiestextBox.TextChanged += topCoverEmptiestextBox_TextChanged;
             // 
-            // label15
+            // DecorTotalLabel
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(968, 136);
-            label15.Name = "label15";
-            label15.Size = new Size(17, 20);
-            label15.TabIndex = 27;
-            label15.Text = "0";
+            DecorTotalLabel.AutoSize = true;
+            DecorTotalLabel.Location = new Point(968, 136);
+            DecorTotalLabel.Name = "DecorTotalLabel";
+            DecorTotalLabel.Size = new Size(17, 20);
+            DecorTotalLabel.TabIndex = 27;
+            DecorTotalLabel.Text = "0";
             // 
-            // label16
+            // DecorPalletFactorlabel
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(785, 136);
-            label16.Name = "label16";
-            label16.Size = new Size(17, 20);
-            label16.TabIndex = 26;
-            label16.Text = "1";
+            DecorPalletFactorlabel.AutoSize = true;
+            DecorPalletFactorlabel.Location = new Point(785, 136);
+            DecorPalletFactorlabel.Name = "DecorPalletFactorlabel";
+            DecorPalletFactorlabel.Size = new Size(17, 20);
+            DecorPalletFactorlabel.TabIndex = 26;
+            DecorPalletFactorlabel.Text = "1";
             // 
-            // textBox7
+            // DecorDamagedtextBox
             // 
-            textBox7.Location = new Point(661, 133);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(86, 27);
-            textBox7.TabIndex = 9;
+            DecorDamagedtextBox.Location = new Point(661, 133);
+            DecorDamagedtextBox.Name = "DecorDamagedtextBox";
+            DecorDamagedtextBox.Size = new Size(86, 27);
+            DecorDamagedtextBox.TabIndex = 9;
+            DecorDamagedtextBox.TextChanged += DecorDamagedtextBox_TextChanged;
             // 
             // label17
             // 
@@ -443,12 +448,13 @@
             label17.TabIndex = 23;
             label17.Text = "6221434";
             // 
-            // textBox8
+            // DecorFulltextBox
             // 
-            textBox8.Location = new Point(569, 133);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(86, 27);
-            textBox8.TabIndex = 8;
+            DecorFulltextBox.Location = new Point(569, 133);
+            DecorFulltextBox.Name = "DecorFulltextBox";
+            DecorFulltextBox.Size = new Size(86, 27);
+            DecorFulltextBox.TabIndex = 8;
+            DecorFulltextBox.TextChanged += DecorFulltextBox_TextChanged;
             // 
             // label18
             // 
@@ -459,37 +465,39 @@
             label18.TabIndex = 21;
             label18.Text = "F6X IP Decor Pad - Line 3";
             // 
-            // textBox9
+            // DecorEmptiestextBox
             // 
-            textBox9.Location = new Point(477, 133);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(86, 27);
-            textBox9.TabIndex = 7;
+            DecorEmptiestextBox.Location = new Point(477, 133);
+            DecorEmptiestextBox.Name = "DecorEmptiestextBox";
+            DecorEmptiestextBox.Size = new Size(86, 27);
+            DecorEmptiestextBox.TabIndex = 7;
+            DecorEmptiestextBox.TextChanged += DecorEmptiestextBox_TextChanged;
             // 
-            // label13
+            // lowerTotalLabel
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(968, 103);
-            label13.Name = "label13";
-            label13.Size = new Size(17, 20);
-            label13.TabIndex = 20;
-            label13.Text = "0";
+            lowerTotalLabel.AutoSize = true;
+            lowerTotalLabel.Location = new Point(968, 103);
+            lowerTotalLabel.Name = "lowerTotalLabel";
+            lowerTotalLabel.Size = new Size(17, 20);
+            lowerTotalLabel.TabIndex = 20;
+            lowerTotalLabel.Text = "0";
             // 
-            // label14
+            // lowerPalletFactorLabel
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(785, 103);
-            label14.Name = "label14";
-            label14.Size = new Size(17, 20);
-            label14.TabIndex = 19;
-            label14.Text = "1";
+            lowerPalletFactorLabel.AutoSize = true;
+            lowerPalletFactorLabel.Location = new Point(785, 103);
+            lowerPalletFactorLabel.Name = "lowerPalletFactorLabel";
+            lowerPalletFactorLabel.Size = new Size(17, 20);
+            lowerPalletFactorLabel.TabIndex = 19;
+            lowerPalletFactorLabel.Text = "1";
             // 
-            // textBox6
+            // lowersDamagedTextBox
             // 
-            textBox6.Location = new Point(661, 100);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(86, 27);
-            textBox6.TabIndex = 6;
+            lowersDamagedTextBox.Location = new Point(661, 100);
+            lowersDamagedTextBox.Name = "lowersDamagedTextBox";
+            lowersDamagedTextBox.Size = new Size(86, 27);
+            lowersDamagedTextBox.TabIndex = 6;
+            lowersDamagedTextBox.TextChanged += lowersDamagedTextBox_TextChanged;
             // 
             // label11
             // 
@@ -562,12 +570,13 @@
             label6.TabIndex = 9;
             label6.Text = "6223190";
             // 
-            // textBox4
+            // lowersFullsTextBox
             // 
-            textBox4.Location = new Point(569, 100);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(86, 27);
-            textBox4.TabIndex = 5;
+            lowersFullsTextBox.Location = new Point(569, 100);
+            lowersFullsTextBox.Name = "lowersFullsTextBox";
+            lowersFullsTextBox.Size = new Size(86, 27);
+            lowersFullsTextBox.TabIndex = 5;
+            lowersFullsTextBox.TextChanged += lowersFullsTextBox_TextChanged;
             // 
             // label5
             // 
@@ -578,12 +587,13 @@
             label5.TabIndex = 7;
             label5.Text = "F6X IP Lower - Line 2";
             // 
-            // textBox3
+            // lowerEmpriesTextBox
             // 
-            textBox3.Location = new Point(477, 100);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(86, 27);
-            textBox3.TabIndex = 4;
+            lowerEmpriesTextBox.Location = new Point(477, 100);
+            lowerEmpriesTextBox.Name = "lowerEmpriesTextBox";
+            lowerEmpriesTextBox.Size = new Size(86, 27);
+            lowerEmpriesTextBox.TabIndex = 4;
+            lowerEmpriesTextBox.TextChanged += lowerEmpriesTextBox_TextChanged;
             // 
             // groupBox2
             // 
@@ -1616,11 +1626,22 @@
             textBox24.Size = new Size(86, 27);
             textBox24.TabIndex = 14;
             // 
+            // errorLabel
+            // 
+            errorLabel.AutoSize = true;
+            errorLabel.ForeColor = Color.Crimson;
+            errorLabel.Location = new Point(53, 62);
+            errorLabel.Name = "errorLabel";
+            errorLabel.Size = new Size(226, 20);
+            errorLabel.TabIndex = 54;
+            errorLabel.Text = "Only numeric entries are allowed";
+            // 
             // formCounts
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1347, 930);
+            Controls.Add(errorLabel);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label3);
@@ -1648,29 +1669,29 @@
         private Label label4;
         private GroupBox groupBox1;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox lowersFullsTextBox;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox lowerEmpriesTextBox;
         private Label label8;
         private TextBox textBox5;
         private Label label7;
-        private Label label19;
-        private Label label20;
-        private TextBox textBox10;
+        private Label topCoverTotalLabel;
+        private Label topCoverPalletFactorLabel;
+        private TextBox topcoverDamagedTextBox;
         private Label label21;
-        private TextBox textBox11;
+        private TextBox topCoverFullsTextBox;
         private Label label22;
-        private TextBox textBox12;
-        private Label label15;
-        private Label label16;
-        private TextBox textBox7;
+        private TextBox topCoverEmptiestextBox;
+        private Label DecorTotalLabel;
+        private Label DecorPalletFactorlabel;
+        private TextBox DecorDamagedtextBox;
         private Label label17;
-        private TextBox textBox8;
+        private TextBox DecorFulltextBox;
         private Label label18;
-        private TextBox textBox9;
-        private Label label13;
-        private Label label14;
-        private TextBox textBox6;
+        private TextBox DecorEmptiestextBox;
+        private Label lowerTotalLabel;
+        private Label lowerPalletFactorLabel;
+        private TextBox lowersDamagedTextBox;
         private Label label11;
         private Label label12;
         private Label label10;
@@ -1791,5 +1812,6 @@
         private Label label96;
         private Label label97;
         private Label label98;
+        private Label errorLabel;
     }
 }

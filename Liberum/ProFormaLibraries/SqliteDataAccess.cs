@@ -94,8 +94,6 @@ namespace ProFormaLibraries
             }
         }
 
-
-
         public static void RemoveItemFromInvoice(InvoiceItem item)
         {
             if (item != null)

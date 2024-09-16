@@ -288,7 +288,7 @@ namespace ProFormaUI
             {
                 activeForm.Close();
                 Reset();
-                ActivateButton(sender);
+                //ActivateButton(sender);
             }
         }
 
@@ -297,7 +297,7 @@ namespace ProFormaUI
             DisableButton();
             lblTitle.Text = "HOME";
             panelTitleBar.BackColor = System.Drawing.Color.FromArgb(0, 150, 136);
-            panelLogo.BackColor = System.Drawing.Color.FromArgb(0, 39, 39, 58);
+            panelLogo.BackColor = System.Drawing.Color.FromArgb(39, 39, 58);
             currentButton = null;
             btnCloseChildform.Visible = false;
             panelMenu.BackColor = System.Drawing.Color.FromArgb(51, 51, 76);

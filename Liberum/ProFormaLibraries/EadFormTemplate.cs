@@ -54,8 +54,7 @@ namespace ProFormaLibraries
                     <td align=""center"" style=""border: 1px solid black;text-align: right;"">&nbsp;Contact email: &nbsp;</td>
                     <td align=""center"" style=""border: 1px solid black;text-align: left;"">
                         pawel.liberski@grupoantolin.com; <br>
-                        paula.southall@grupoantolin.com; <br>
-                        alexandra.cendrowska@grupoantolin.com;<br> 
+                        jamie.partridge@antolin.com; <br>
                         alina.sim@grupoantolin.com
                         &nbsp;</td>
                 </tr>";
