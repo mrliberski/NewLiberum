@@ -159,12 +159,34 @@ namespace ProFormaUI.Forms
             //
         }
 
+
+        /// <summary>
+        /// SUBMITTING FORM DATA TO HTML LibRARY
+        /// </summary>
+
         private void button3_Click(object sender, EventArgs e)
         {
             PackagingCount TopperBFS = new PackagingCount();
             PackagingCount Lower = new PackagingCount();
             PackagingCount Decor = new PackagingCount();
             PackagingCount TopcoverDS = new PackagingCount();
+
+            PackagingCount StColLowAssy = new PackagingCount(); 
+            PackagingCount Lklt6147 = new PackagingCount();
+            PackagingCount Lklt6410 = new PackagingCount();
+            PackagingCount Lklt8210 = new PackagingCount();
+            PackagingCount projCover = new PackagingCount();
+            PackagingCount projServCover = new PackagingCount();
+            PackagingCount sideCover = new PackagingCount();
+            PackagingCount lowerCap = new PackagingCount();
+            PackagingCount cidCover = new PackagingCount();
+            PackagingCount sideCap = new PackagingCount();
+            PackagingCount StColUpAssy = new PackagingCount();
+
+            PackagingCount lids = new PackagingCount();
+            PackagingCount pallets = new PackagingCount();
+            PackagingCount metalPallets = new PackagingCount();
+
 
             //TOPPER BFS
             TopperBFS.PackagingName = "F6X Topper Pad BFS";
@@ -246,10 +268,279 @@ namespace ProFormaUI.Forms
             TopcoverDS.TotalContainers = int.Parse(topCoverTotalLabel.Text);
             // END OF TOPPER BFS
 
+            //PackagingCount StColLowAssy = new PackagingCount();
+            StColLowAssy.PackagingName = "F6X Steering Column Lower Assy";
+            StColLowAssy.PackagingNumber = "3084318";
+            if (int.TryParse(lowColEmptyTextBox.Text, out result))
+                StColLowAssy.CountOfEmpties = result;
+            else
+                StColLowAssy.CountOfEmpties = 0;
+            if (int.TryParse(lowColFullTextBox.Text, out result))
+                StColLowAssy.CountOfFulls = result;
+            else
+                StColLowAssy.CountOfFulls = 0;
+            if (int.TryParse(LowColDamagedTextBox.Text, out result))
+                StColLowAssy.CountOfDamaged = result;
+            else
+                StColLowAssy.CountOfDamaged = 0;
+            StColLowAssy.PalletFactor = int.Parse(LowColPalletFactotTextBox.Text);
+            StColLowAssy.PackFactor = int.Parse(LowColPackFactorTextBox.Text);
+            StColLowAssy.TotalContainers = int.Parse(LowColTotalContTextBox.Text);
+
+            //PackagingCount Lklt6147 = new PackagingCount();
+            Lklt6147.PackagingName = "F6X Emergency Sp brkt; Puddle Lamp";
+            Lklt6147.PackagingNumber = "3106147";
+            if (int.TryParse(PuddleEmptiesTextBox.Text, out result))
+                Lklt6147.CountOfEmpties = result;
+            else
+                Lklt6147.CountOfEmpties = 0;
+            if (int.TryParse(PuddleFulltextBox.Text, out result))
+                Lklt6147.CountOfFulls = result;
+            else
+                Lklt6147.CountOfFulls = 0;
+            if (int.TryParse(PuddleDamagedTextBox.Text, out result))
+                Lklt6147.CountOfDamaged = result;
+            else
+                Lklt6147.CountOfDamaged = 0;
+            Lklt6147.PalletFactor = int.Parse(puddlePalletFactorLabel.Text);
+            Lklt6147.PackFactor = int.Parse(puddlePackFactorLabel.Text);
+            Lklt6147.TotalContainers = int.Parse(PuddletotalLabel.Text);
+
+            //PackagingCount Lklt6410 = new PackagingCount();
+            Lklt6410.PackagingName = "F6X Footwell Cover";
+            Lklt6410.PackagingNumber = "3106410";
+            if (int.TryParse(FootwellEmptytextBox.Text, out result))
+                Lklt6410.CountOfEmpties = result;
+            else
+                Lklt6410.CountOfEmpties = 0;
+            if (int.TryParse(FootwellFullTextBox.Text, out result))
+                Lklt6410.CountOfFulls = result;
+            else
+                Lklt6410.CountOfFulls = 0;
+            if (int.TryParse(FootwellDamagedTextbox.Text, out result))
+                Lklt6410.CountOfDamaged = result;
+            else
+                Lklt6410.CountOfDamaged = 0;
+            Lklt6410.PalletFactor = int.Parse(footwellPalletFactorLabel.Text);
+            Lklt6410.PackFactor = int.Parse(footwellPackFactorLabel.Text);
+            Lklt6410.TotalContainers = int.Parse(footwellTotalLabel.Text);
+
+            //PackagingCount Lklt8210 = new PackagingCount();
+            Lklt8210.PackagingName = "F6X Air Splitter";
+            Lklt8210.PackagingNumber = "3108210";
+            if (int.TryParse(AirsplitterEmptiesTextBox.Text, out result))
+                Lklt8210.CountOfEmpties = result;
+            else
+                Lklt8210.CountOfEmpties = 0;
+            if (int.TryParse(AirsplitterFullstextBox.Text, out result))
+                Lklt8210.CountOfFulls = result;
+            else
+                Lklt8210.CountOfFulls = 0;
+            if (int.TryParse(AirsplitterDamagedtextBox.Text, out result))
+                Lklt8210.CountOfDamaged = result;
+            else
+                Lklt8210.CountOfDamaged = 0;
+            Lklt8210.PalletFactor = int.Parse(AirsplitterPalletrFactorLabel.Text);
+            Lklt8210.PackFactor = int.Parse(AirsplitterPackFactorlabel.Text);
+            Lklt8210.TotalContainers = int.Parse(AirsplitterTotallabel.Text);
+
+            //PackagingCount projCover = new PackagingCount();
+            projCover.PackagingName = "F6X Projector Cover";
+            projCover.PackagingNumber = "6214972";
+            if (int.TryParse(ProjectorCoveremptiestextBox.Text, out result))
+                projCover.CountOfEmpties = result;
+            else
+                projCover.CountOfEmpties = 0;
+            if (int.TryParse(ProjectorCoverFullStextBox.Text, out result))
+                projCover.CountOfFulls = result;
+            else
+                projCover.CountOfFulls = 0;
+            if (int.TryParse(ProjectorCoverDamagedtextBox.Text, out result))
+                projCover.CountOfDamaged = result;
+            else
+                projCover.CountOfDamaged = 0;
+            projCover.PalletFactor = int.Parse(ProjectorCoverPalletFactorlabel.Text);
+            projCover.PackFactor = int.Parse(ProjectorCoverPackFactorlabel.Text);
+            projCover.TotalContainers = int.Parse(ProjectorCoverTotallabel.Text);
+
+            //PackagingCount projServCover = new PackagingCount();
+            projServCover.PackagingName = "F6X Projector Service Cover";
+            projServCover.PackagingNumber = "6215016";
+            if (int.TryParse(ProjServCoverEmptiestextBox.Text, out result))
+                projServCover.CountOfEmpties = result;
+            else
+                projServCover.CountOfEmpties = 0;
+            if (int.TryParse(ProjServCoverFullstextBox.Text, out result))
+                projServCover.CountOfFulls = result;
+            else
+                projServCover.CountOfFulls = 0;
+            if (int.TryParse(ProjServCoverDamagedtextBox.Text, out result))
+                projServCover.CountOfDamaged = result;
+            else
+                projServCover.CountOfDamaged = 0;
+            projServCover.PalletFactor = int.Parse(ProjServCoverPalletFactorlabel.Text);
+            projServCover.PackFactor = int.Parse(ProjServCoverPckFactorlabel.Text);
+            projServCover.TotalContainers = int.Parse(ProjServCoverTotalLabel.Text);
+
+            //PackagingCount sideCover = new PackagingCount();
+            sideCover.PackagingName = "F6X Projector Shutter & Side Cover";
+            sideCover.PackagingNumber = "6215572";
+            if (int.TryParse(SideCoverEmptiesTextBox.Text, out result))
+                sideCover.CountOfEmpties = result;
+            else
+                sideCover.CountOfEmpties = 0;
+            if (int.TryParse(SideCoverFulltextBox.Text, out result))
+                sideCover.CountOfFulls = result;
+            else
+                sideCover.CountOfFulls = 0;
+            if (int.TryParse(SideCoverDamagedtextBox.Text, out result))
+                sideCover.CountOfDamaged = result;
+            else
+                sideCover.CountOfDamaged = 0;
+            sideCover.PalletFactor = int.Parse(SideCoverPalletFactorlabel.Text);
+            sideCover.PackFactor = int.Parse(SideCoverPackFactorlabel.Text);
+            sideCover.TotalContainers = int.Parse(SideCoverTotallabel.Text);
+
+            //PackagingCount lowerCap = new PackagingCount();
+            lowerCap.PackagingName = "F6X Lower Cap";
+            lowerCap.PackagingNumber = "6218708";
+            if (int.TryParse(LoweCapEmptiesTextBox.Text, out result))
+                lowerCap.CountOfEmpties = result;
+            else
+                lowerCap.CountOfEmpties = 0;
+            if (int.TryParse(LoweCapFullstextBox.Text, out result))
+                lowerCap.CountOfFulls = result;
+            else
+                lowerCap.CountOfFulls = 0;
+            if (int.TryParse(LoweCapDamagedtextBox.Text, out result))
+                lowerCap.CountOfDamaged = result;
+            else
+                lowerCap.CountOfDamaged = 0;
+            lowerCap.PalletFactor = int.Parse(LoweCapPalletFactorlabel.Text);
+            lowerCap.PackFactor = int.Parse(LoweCapPackFctorlabel.Text);
+            lowerCap.TotalContainers = int.Parse(LoweCapTotallabel.Text);
+
+            //PackagingCount cidCover = new PackagingCount();
+            cidCover.PackagingName = "F6X CID Cover Base";
+            cidCover.PackagingNumber = "6221407";
+            if (int.TryParse(CIDcoverEmptiestextBox.Text, out result))
+                cidCover.CountOfEmpties = result;
+            else
+                cidCover.CountOfEmpties = 0;
+            if (int.TryParse(CIDcoverFullstextBox.Text, out result))
+                cidCover.CountOfFulls = result;
+            else
+                cidCover.CountOfFulls = 0;
+            if (int.TryParse(CIDcoverDamagedtextBox.Text, out result))
+                cidCover.CountOfDamaged = result;
+            else
+                cidCover.CountOfDamaged = 0;
+            cidCover.PalletFactor = int.Parse(CIDcoverPalletFactorlabel.Text);
+            cidCover.PackFactor = int.Parse(CIDcoverPackFactorlabel.Text);
+            cidCover.TotalContainers = int.Parse(CIDcoverTotallabel.Text);
+
+            //PackagingCount sideCap = new PackagingCount();
+            sideCap.PackagingName = "F6X Side Cap";
+            sideCap.PackagingNumber = "6221431";
+            if (int.TryParse(SideCapemptiesTextBox.Text, out result))
+                sideCap.CountOfEmpties = result;
+            else
+                sideCap.CountOfEmpties = 0;
+            if (int.TryParse(SideCapFullstextBox.Text, out result))
+                sideCap.CountOfFulls = result;
+            else
+                sideCap.CountOfFulls = 0;
+            if (int.TryParse(SideCapDamagedtextBox.Text, out result))
+                sideCap.CountOfDamaged = result;
+            else
+                sideCap.CountOfDamaged = 0;
+            sideCap.PalletFactor = int.Parse(SideCapPalletFactorlabel.Text);
+            sideCap.PackFactor = int.Parse(SideCapPackFactorlabel.Text);
+            sideCap.TotalContainers = int.Parse(SideCapTotallabel.Text);
+
+            //PackagingCount StColUpAssy = new PackagingCount();
+            StColUpAssy.PackagingName = "F6X Sttering Column Upper Assy";
+            StColUpAssy.PackagingNumber = "6224798";
+            if (int.TryParse(StColUpperEmptiesTextBox.Text, out result))
+                StColUpAssy.CountOfEmpties = result;
+            else
+                StColUpAssy.CountOfEmpties = 0;
+            if (int.TryParse(StColUpperFullstextBox.Text, out result))
+                StColUpAssy.CountOfFulls = result;
+            else
+                StColUpAssy.CountOfFulls = 0;
+            if (int.TryParse(StColUpperDamagedtextBox.Text, out result))
+                StColUpAssy.CountOfDamaged = result;
+            else
+                StColUpAssy.CountOfDamaged = 0;
+            StColUpAssy.PalletFactor = int.Parse(StColUpperPalletFactorLabel.Text);
+            StColUpAssy.PackFactor = int.Parse(StColUpperPackFactorLabel.Text);
+            StColUpAssy.TotalContainers = int.Parse(StColUpperTotalLabel.Text);
+
+
+            //PackagingCount lids = new PackagingCount();
+            lids.PackagingName = "Pallets Of Lids";
+            lids.PackagingNumber = "3101208";
+            if (int.TryParse(LidsEmptiesTextBox.Text, out result))
+                lids.CountOfEmpties = result;
+            else
+                lids.CountOfEmpties = 0;
+
+            lids.CountOfFulls = 0;
+            lids.CountOfDamaged = 0;
+            lids.PalletFactor = int.Parse(LidsPalletFactorlabel.Text);
+            lids.PackFactor = 1;
+            lids.TotalContainers = int.Parse(LidsTotallabel.Text);
+
+            //PackagingCount pallets = new PackagingCount();
+            pallets.PackagingName = "Euro Pallets";
+            pallets.PackagingNumber = "3100062";
+            if (int.TryParse(EuroPalletEmptiesTextBox.Text, out result))
+                pallets.CountOfEmpties = result;
+            else
+                pallets.CountOfEmpties = 0;
+
+            pallets.CountOfFulls = 0;
+            pallets.CountOfDamaged = 0;
+            pallets.PalletFactor = 1;
+            pallets.PackFactor = 1;
+            pallets.TotalContainers = int.Parse(EuroPalletTotallabel.Text);
+
+            //PackagingCount metalPallets = new PackagingCount();
+            metalPallets.PackagingName = "Steel Pallets";
+            metalPallets.PackagingNumber = "3102560";
+            if (int.TryParse(metalPalEmptyTextBox.Text, out result))
+                metalPallets.CountOfEmpties = result;
+            else
+                metalPallets.CountOfEmpties = 0;
+
+            metalPallets.CountOfFulls = 0;
+            metalPallets.CountOfDamaged = 0;
+            metalPallets.PalletFactor = 1;
+            metalPallets.PackFactor = 1;
+            metalPallets.TotalContainers = int.Parse(MetalPalTotalLabel.Text);
+
             counts.Add(TopperBFS);
             counts.Add(Lower);
             counts.Add(Decor);
             counts.Add(TopcoverDS);
+
+            counts.Add(StColLowAssy);
+            counts.Add(Lklt6147);
+            counts.Add(Lklt6410);
+            counts.Add(Lklt8210);
+            counts.Add(projCover);
+            counts.Add(projServCover);
+            counts.Add(sideCover);
+            counts.Add(lowerCap);
+            counts.Add(cidCover);
+            counts.Add(sideCap);
+            counts.Add(StColUpAssy);
+
+            counts.Add(lids);
+            counts.Add(pallets);
+            counts.Add(metalPallets);
+
 
             //MessageBox.Show("Getting there");
 

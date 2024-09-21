@@ -197,7 +197,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.Location = new Point(1090, 104);
+            button2.Location = new Point(1248, 104);
             button2.Name = "button2";
             button2.Size = new Size(165, 48);
             button2.TabIndex = 52;
@@ -208,7 +208,7 @@
             // button3
             // 
             button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button3.Location = new Point(1090, 158);
+            button3.Location = new Point(1248, 158);
             button3.Name = "button3";
             button3.Size = new Size(165, 48);
             button3.TabIndex = 53;
@@ -1575,9 +1575,9 @@
             label30.AutoSize = true;
             label30.Location = new Point(20, 136);
             label30.Name = "label30";
-            label30.Size = new Size(227, 20);
+            label30.Size = new Size(231, 20);
             label30.TabIndex = 21;
-            label30.Text = "Falt-KLT 600x400 - Footwel cover";
+            label30.Text = "Falt-KLT 600x400 - Footwell cover";
             // 
             // FootwellEmptytextBox
             // 
