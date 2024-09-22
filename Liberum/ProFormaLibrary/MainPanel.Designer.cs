@@ -139,7 +139,7 @@
             resources.ApplyResources(button4, "button4");
             button4.FlatAppearance.BorderSize = 0;
             button4.ForeColor = Color.Gainsboro;
-            button4.Image = Properties.Resources.shopping_list;
+            button4.Image = Properties.Resources.settings;
             button4.Name = "button4";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
@@ -149,7 +149,7 @@
             resources.ApplyResources(button3, "button3");
             button3.FlatAppearance.BorderSize = 0;
             button3.ForeColor = Color.Gainsboro;
-            button3.Image = Properties.Resources.shopping_list;
+            button3.Image = Properties.Resources.shopping_cart__1_;
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
