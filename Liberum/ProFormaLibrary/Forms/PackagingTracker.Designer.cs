@@ -98,9 +98,9 @@
             errorLabel.ForeColor = Color.Crimson;
             errorLabel.Location = new Point(39, 22);
             errorLabel.Name = "errorLabel";
-            errorLabel.Size = new Size(81, 20);
+            errorLabel.Size = new Size(169, 20);
             errorLabel.TabIndex = 68;
-            errorLabel.Text = "Error Label";
+            errorLabel.Text = "Numeric Value Required";
             // 
             // dateTimePicker1
             // 
@@ -165,6 +165,7 @@
             advisedQtyTextBox.Name = "advisedQtyTextBox";
             advisedQtyTextBox.Size = new Size(229, 27);
             advisedQtyTextBox.TabIndex = 5;
+            advisedQtyTextBox.TextChanged += advisedQtyTextBox_TextChanged;
             // 
             // label8
             // 
@@ -181,6 +182,7 @@
             receivedQtyTextBox.Name = "receivedQtyTextBox";
             receivedQtyTextBox.Size = new Size(229, 27);
             receivedQtyTextBox.TabIndex = 6;
+            receivedQtyTextBox.TextChanged += receivedQtyTextBox_TextChanged;
             // 
             // label9
             // 

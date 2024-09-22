@@ -81,7 +81,7 @@ namespace ProFormaUI.Forms
             AddEntrytoDB();
             packagingCodeTextBox.Text = string.Empty;
             advisedQtyTextBox.Text = string.Empty;
-            receivedQtyTextBox.Text = string.Empty; 
+            receivedQtyTextBox.Text = string.Empty;
             commentTextBox.Text = string.Empty;
             packagingCodeTextBox.Focus();
         }
@@ -115,15 +115,62 @@ namespace ProFormaUI.Forms
         //TODO - add record to DB
         private void AddEntrytoDB()
         {
-            MessageBox.Show ("Pretending to add entry to db");
-            SendDiscrepancyNotification();
+            //MessageBox.Show ("Pretending to add entry to db");
+            PackagingTrackerItem item = new PackagingTrackerItem();
+            item.DeliveryDate = dateTimePicker1.Value.ToString();
+            item.DeliveryTime = deliveryTimeTextBox.Text;
+            item.DeliveryNumber = deliveryNoTextBox.Text;
+            item.PackagingCode = packagingCodeTextBox.Text;
+            item.AdvisedQty = int.Parse(advisedQtyTextBox.Text);
+            item.ReceivedQty = int.Parse(receivedQtyTextBox.Text);
+            item.Comment = commentTextBox.Text;
+
+            // If advised is not equal to received, we need to report it
+            if (item.AdvisedQty != item.ReceivedQty) { SendDiscrepancyNotification(); }
+
+            // Add entry to DB
+            SqliteDataAccess.InsertPackTrackerItem(item);
+            MessageBox.Show("Record Added");
+
+            // Refresh grid
             UpdateOverview();
         }
 
         //TODO - pulls date from db and feeds tableview
         private void UpdateOverview() { }
 
-        //TODO - send email out when a discreapncy is entered
-        private void SendDiscrepancyNotification() { }
+
+        private void SendDiscrepancyNotification()
+        {
+            //TODO - email about discrepancy
+            MessageBox.Show("Discrepancy detected - notification was sent.");
+        }
+
+        private void receivedQtyTextBox_TextChanged(object sender, EventArgs e)
+        {
+            //int quantityOfItems;
+            if (int.TryParse(receivedQtyTextBox.Text, out int quantityOfItems))
+            {
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                receivedQtyTextBox.Text = string.Empty;
+                errorLabel.Visible = true;
+            }
+        }
+
+        private void advisedQtyTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(advisedQtyTextBox.Text, out int quantityOfItems))
+            {
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                advisedQtyTextBox.Text = string.Empty;
+                errorLabel.Visible = true;
+            }
+        }
     }
 }

@@ -353,6 +353,51 @@ namespace ProFormaLibraries
             }
         }
 
+        public static void InsertPackTrackerItem(PackagingTrackerItem item)
+        {
+            using (var connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Open();
+                var cmd = connection.CreateCommand();
+                cmd.CommandText = @"insert into PackagingTracker 
+                        (
+                            DeliveryDate,
+                            DeliveryTime,
+                            DeliveryNumber, 
+                            PackagingCode,
+                            AdvisedQty,
+                            ReceivedQty,
+                            Comment,
+                            EntryDate,
+                            EnteredBy
+                        )
+                        values 
+                        (
+                            @DeliveryDate,
+                            @DeliveryTime,
+                            @DeliveryNumber, 
+                            @PackagingCode,
+                            @AdvisedQty,
+                            @ReceivedQty,
+                            @Comment,
+                            @EntryDate,
+                            @CreatedBy
+                        )";
+                cmd.Parameters.Add(new SQLiteParameter("@DeliveryDate", item.DeliveryDate));
+                cmd.Parameters.Add(new SQLiteParameter("@DeliveryTime", item.DeliveryTime));
+                cmd.Parameters.Add(new SQLiteParameter("@DeliveryNumber", item.DeliveryNumber));
+                cmd.Parameters.Add(new SQLiteParameter("@PackagingCode", item.PackagingCode));
+                cmd.Parameters.Add(new SQLiteParameter("@AdvisedQty", item.AdvisedQty));
+                cmd.Parameters.Add(new SQLiteParameter("@ReceivedQty", item.ReceivedQty));
+                cmd.Parameters.Add(new SQLiteParameter("@Comment", item.Comment));
+                cmd.Parameters.Add(new SQLiteParameter("@EntryDate", item.EntryDate));
+                cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", Environment.UserName));
+
+                cmd.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
+
         public static void AddInvoiceItem(InvoiceItem item)
         {
             using (var connection = new SQLiteConnection(LoadConnectionString()))
