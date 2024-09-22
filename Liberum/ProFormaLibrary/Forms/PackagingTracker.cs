@@ -14,6 +14,9 @@ namespace ProFormaUI.Forms
 {
     public partial class PackagingTracker : Form
     {
+        private List<PackagingTrackerItem> _items = new List<PackagingTrackerItem>();
+
+
         //MAIN FUNCTION
         public PackagingTracker()
         {
@@ -121,23 +124,52 @@ namespace ProFormaUI.Forms
             item.DeliveryTime = deliveryTimeTextBox.Text;
             item.DeliveryNumber = deliveryNoTextBox.Text;
             item.PackagingCode = packagingCodeTextBox.Text;
-            item.AdvisedQty = int.Parse(advisedQtyTextBox.Text);
-            item.ReceivedQty = int.Parse(receivedQtyTextBox.Text);
+
+            int advised;
+            if (int.TryParse(advisedQtyTextBox.Text, out advised))
+            {
+                advised = int.Parse(advisedQtyTextBox.Text);
+            }
+            else
+            {
+                advised = 0;
+            }
+
+            int received;
+            if (int.TryParse(receivedQtyTextBox.Text, out received))
+            {
+                received = int.Parse(receivedQtyTextBox.Text);
+            }
+            else
+            {
+                received = 0;
+            }
+
+            item.AdvisedQty = advised;
+            item.ReceivedQty = received;
+
             item.Comment = commentTextBox.Text;
 
             // If advised is not equal to received, we need to report it
-            if (item.AdvisedQty != item.ReceivedQty) { SendDiscrepancyNotification(); }
+            if (advised != received) { SendDiscrepancyNotification(); }
 
             // Add entry to DB
             SqliteDataAccess.InsertPackTrackerItem(item);
-            MessageBox.Show("Record Added");
+            //MessageBox.Show("Record Added");
 
             // Refresh grid
             UpdateOverview();
         }
 
         //TODO - pulls date from db and feeds tableview
-        private void UpdateOverview() { }
+        private void UpdateOverview() 
+        {
+            _items.Clear();
+            dataGridView1.DataSource = null;
+            _items = SqliteDataAccess.PullPackagingTracker();
+            dataGridView1.DataSource = _items;
+            dataGridView1.Columns["Id"].Visible = false;
+        }
 
 
         private void SendDiscrepancyNotification()

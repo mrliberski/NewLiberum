@@ -8,6 +8,8 @@ namespace ProFormaLibraries
 {
     public class PackagingTrackerItem
     {
+        public int Id { get; set; }
+
         public string? DeliveryDate { get; set; }
 
         public string? DeliveryTime { get; set; }

@@ -233,7 +233,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(689, 524);
+            dataGridView1.Size = new Size(1012, 524);
             dataGridView1.TabIndex = 82;
             // 
             // button5
@@ -251,7 +251,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1182, 696);
+            ClientSize = new Size(1583, 696);
             Controls.Add(button5);
             Controls.Add(dataGridView1);
             Controls.Add(NewDeliveryButton);

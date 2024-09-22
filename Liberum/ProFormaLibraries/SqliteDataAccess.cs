@@ -272,6 +272,15 @@ namespace ProFormaLibraries
             }
         }
 
+        public static List<PackagingTrackerItem> PullPackagingTracker()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker ORDER BY Id DESC", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
         public static List<string> LoadRequestType()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
