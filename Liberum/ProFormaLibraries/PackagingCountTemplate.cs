@@ -60,14 +60,14 @@ namespace ProFormaLibraries
             {
                 //TODO - new recipient list must be created and linked accordingly
                 //List<string> recipients = SqliteDataAccess.LoadRecipients();
-                List<string> recipients = SqliteDataAccess.LoadCC();
+                List<string> recipients = SqliteDataAccess.LoadPackagingCountRecipients();
                 //List<string> ccList = SqliteDataAccess.LoadCC();
                 string subject = "Packaging Count > " + DateTime.Now.ToString();
 
                 Outlook.Application outlookApp = new Outlook.Application();
                 Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
 
-                    mailItem.To = string.Join(";", recipients) + "; Leighton, Rebecca; Wood, Craig; Richards, Cyrus";
+                mailItem.To = string.Join(";", recipients);// + "; Leighton, Rebecca; Wood, Craig; Richards, Cyrus";
                     //mailItem.CC = string.Join(";", ccList);
                     // Set the subject
                     mailItem.Subject = subject;

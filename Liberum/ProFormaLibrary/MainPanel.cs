@@ -236,43 +236,43 @@ namespace ProFormaUI
         private void button3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            OpenChildForm(new Forms.StockCount(), sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            OpenChildForm(new Forms.ControlPage(), sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            OpenChildForm(new Forms.PackagingTracker(), sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            OpenChildForm(new Forms.Handover(), sender);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            //OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            //OpenChildForm(new Forms.formCounts(), sender);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Forms.formCounts(), sender);
+            //OpenChildForm(new Forms.formCounts(), sender);
         }
 
         // exit button

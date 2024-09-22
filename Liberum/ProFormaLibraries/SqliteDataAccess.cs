@@ -299,6 +299,24 @@ namespace ProFormaLibraries
             }
         }
 
+        public static List<string> LoadHandoverRecipients()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select UserName from HandoverRecipients", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadPackagingCountRecipients()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select UserName from PackagingCountRecipients", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
         public static List<string> LoadCC()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))

@@ -332,7 +332,7 @@
     <value>1</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>   Exports</value>
+    <value>   Exports App</value>
   </data>
   <data name="button1.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -466,13 +466,16 @@
   <data name="panelTitleBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>901, 80</value>
   </data>
+  <data name="panelDesktopPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANgAAAA/CAYAAACCYQbXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAIEJJREFUeF7tXQmYHEXZriD+oqjIkWxmpo8NRkTwQKMixw8CAkFAVAgEcuzM9DGz
+        vgAADr4B6kKxwAAAIEJJREFUeF7tXQmYHEXZriD+oqjIkWxmpo8NRkTwQKMixw8CAkFAVAgEcuzM9DGz
         GyKgIqcsSTYBgYigXFEEVAQjIoSEZLM5kBBuCBA55L6PQDjCGULY/32/rt7puXZnd2bDrv+8z1PP9HR/
         Xef3Vn1VXYfqF2w6fpiKTzxUqdaN9J066qijZjDcScr03lZDU1/Td+qoo46awHC2UJZ3j9r6mE5cz9J3
         66ijjpqArVdjS6eys53K9F9TMXeUflJHHXVUhdjhW6H1+rcQzHI7VeMktmKX6ad11FFHVTC9Y5RNcnkB
@@ -614,7 +617,7 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 223</value>
+    <value>317, 214</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 86</value>

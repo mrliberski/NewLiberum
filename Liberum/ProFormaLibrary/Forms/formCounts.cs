@@ -551,6 +551,7 @@ namespace ProFormaUI.Forms
             PackagingCountTemplate.SendPackagingCount(emailsss);
 
             ClearAllTextBoxes(this);
+            counts.Clear();
         }
 
         //ip lowers

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -760,7 +760,7 @@
     <value>37, 367</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1325, 367</value>
+    <value>1325, 198</value>
   </data>
   <data name="databaseStatusStripLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -787,7 +787,7 @@
     <value>toolStripStatusLabel3</value>
   </data>
   <data name="toolStripStatusLabel4.Text" xml:space="preserve">
-    <value>//  Copyright © 2020 - 2023 Pawel Liberski</value>
+    <value>//  Copyright © 2020 - 2024 Pawel Liberski</value>
   </data>
   <data name="toolStripStatusLabel5.Text" xml:space="preserve">
     <value>Total Number of HUs in current shipment: </value>
@@ -833,7 +833,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="createInvoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 739</value>
+    <value>39, 589</value>
   </data>
   <data name="createInvoiceButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 43</value>
@@ -854,7 +854,7 @@
     <value>NoControl</value>
   </data>
   <data name="createBrokerRequest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 739</value>
+    <value>215, 589</value>
   </data>
   <data name="createBrokerRequest.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 43</value>
@@ -875,7 +875,7 @@
     <value>NoControl</value>
   </data>
   <data name="clearButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1016, 737</value>
+    <value>1016, 587</value>
   </data>
   <data name="clearButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 43</value>
@@ -896,7 +896,7 @@
     <value>NoControl</value>
   </data>
   <data name="closeDownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1192, 737</value>
+    <value>1192, 587</value>
   </data>
   <data name="closeDownButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 43</value>
@@ -1163,7 +1163,7 @@
     <value>NoControl</value>
   </data>
   <data name="errolLAbel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 751</value>
+    <value>449, 601</value>
   </data>
   <data name="errolLAbel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -1201,6 +1201,9 @@
   <data name="HUtextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
+  <data name="HUtextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1283, 646</value>
+  </data>
   <data name="HUtextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 27</value>
   </data>
@@ -1215,6 +1218,9 @@
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 649</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
