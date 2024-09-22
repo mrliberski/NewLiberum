@@ -197,6 +197,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(1248, 104);
             button2.Name = "button2";
             button2.Size = new Size(165, 48);
@@ -208,6 +209,7 @@
             // button3
             // 
             button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Location = new Point(1248, 158);
             button3.Name = "button3";
             button3.Size = new Size(165, 48);

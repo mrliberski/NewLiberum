@@ -52,10 +52,9 @@
             label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(12, 22);
             label3.Name = "label3";
-            label3.Size = new Size(168, 25);
+            label3.Size = new Size(155, 25);
             label3.TabIndex = 55;
-            label3.Text = "Stock Count Panel ";
- //           label3.Click += label3_Click;
+            label3.Text = "Work in progress";
             // 
             // button3
             // 
@@ -79,7 +78,7 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(15, 150);
             button1.Name = "button1";
             button1.Size = new Size(165, 48);
@@ -89,7 +88,7 @@
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button4.FlatStyle = FlatStyle.Flat;
             button4.Location = new Point(15, 96);
             button4.Name = "button4";
             button4.Size = new Size(165, 48);
