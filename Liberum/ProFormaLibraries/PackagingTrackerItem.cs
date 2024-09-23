@@ -27,5 +27,7 @@ namespace ProFormaLibraries
         public string? EntryDate {  get { return DateTime.Now.ToString(); } }
 
         public static string? CreatedBy { get { return Environment.UserName; } }
+
+        public string? RegNumber { get; set; }
     }
 }

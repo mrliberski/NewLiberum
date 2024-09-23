@@ -260,17 +260,7 @@ namespace ProFormaLibraries
             return null; // in case of no results
         }
 
-        public static InvoiceModel SelectInvoiceData_Dapper(string InvoiceNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                var parameters = new DynamicParameters();
-                parameters.Add("@InvoiceNumber", InvoiceNumber);
 
-                var output = cnn.Query<InvoiceModel>("SELECT id, * FROM Invoices WHERE InvoiceNumber = @InvoiceNumber", parameters).FirstOrDefault();
-                return output;
-            }
-        }
 
         public static List<PackagingTrackerItem> PullPackagingTracker()
         {
@@ -280,6 +270,8 @@ namespace ProFormaLibraries
                 return output.ToList();
             }
         }
+
+
 
         public static List<string> LoadRequestType()
         {
@@ -378,7 +370,8 @@ namespace ProFormaLibraries
                             ReceivedQty,
                             Comment,
                             EntryDate,
-                            EnteredBy
+                            EnteredBy,
+                            RegNumber
                         )
                         values 
                         (
@@ -390,7 +383,8 @@ namespace ProFormaLibraries
                             @ReceivedQty,
                             @Comment,
                             @EntryDate,
-                            @CreatedBy
+                            @CreatedBy,
+                            @RegNumber
                         )";
                 cmd.Parameters.Add(new SQLiteParameter("@DeliveryDate", item.DeliveryDate));
                 cmd.Parameters.Add(new SQLiteParameter("@DeliveryTime", item.DeliveryTime));
@@ -401,6 +395,7 @@ namespace ProFormaLibraries
                 cmd.Parameters.Add(new SQLiteParameter("@Comment", item.Comment));
                 cmd.Parameters.Add(new SQLiteParameter("@EntryDate", item.EntryDate));
                 cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", Environment.UserName));
+                cmd.Parameters.Add(new SQLiteParameter("@RegNumber", item.RegNumber));
 
                 cmd.ExecuteNonQuery();
                 connection.Close();
@@ -587,6 +582,50 @@ namespace ProFormaLibraries
                 }
 
                 return invoices;
+            }
+        }
+
+
+        // Search items in the packaging tracker by delivery number
+        public static List<PackagingTrackerItem> SearchByDelivery(string _deliveryQuery)
+        {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@DeliveryNote", "%" + _deliveryQuery + "%");
+
+
+                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker WHERE DeliveryNumber LIKE @DeliveryNote", parameters);
+                return output.ToList();
+            }
+        }
+
+        // Search items in the packaging tracker by packaging number
+        public static List<PackagingTrackerItem> SearchByPackaging(string _deliveryQuery)
+        {
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@PackagingCode", "%" + _deliveryQuery + "%");
+
+
+                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker WHERE PackagingCode LIKE @PackagingCode", parameters);
+                return output.ToList();
+            }
+        }
+
+
+        public static InvoiceModel SelectInvoiceData_Dapper(string InvoiceNumber)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@InvoiceNumber", InvoiceNumber);
+
+                var output = cnn.Query<InvoiceModel>("SELECT id, * FROM Invoices WHERE InvoiceNumber = @InvoiceNumber", parameters).FirstOrDefault();
+                return output;
             }
         }
 

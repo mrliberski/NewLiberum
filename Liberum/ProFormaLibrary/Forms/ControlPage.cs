@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,9 +34,22 @@ namespace ProFormaUI.Forms
                 }
             }
 
+
+            //MessageBox.Show("theme applied");
             // POSSIBLE MORE APPLICATIONS
             //label3.ForeColor = ThemeColor.PrimaryColor;
             //label4.ForeColor = ThemeColor.SecondaryColor;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string folderPath = @"C:\Root";
+            Process.Start("explorer.exe", folderPath);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,6 +22,7 @@ namespace ProFormaUI.Forms
             LoadTheme();
             ClearAllTextBoxes(this);
             errorLabel.Visible = false;
+            radioButton1.Checked = true;
         }
 
         private void formCounts_Load(object sender, EventArgs e)
@@ -70,6 +71,7 @@ namespace ProFormaUI.Forms
             }
 
             errorLabel.Visible = false;
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -171,7 +173,7 @@ namespace ProFormaUI.Forms
             PackagingCount Decor = new PackagingCount();
             PackagingCount TopcoverDS = new PackagingCount();
 
-            PackagingCount StColLowAssy = new PackagingCount(); 
+            PackagingCount StColLowAssy = new PackagingCount();
             PackagingCount Lklt6147 = new PackagingCount();
             PackagingCount Lklt6410 = new PackagingCount();
             PackagingCount Lklt8210 = new PackagingCount();
@@ -520,27 +522,32 @@ namespace ProFormaUI.Forms
             metalPallets.PackFactor = 1;
             metalPallets.TotalContainers = int.Parse(MetalPalTotalLabel.Text);
 
-            counts.Add(TopperBFS);
-            counts.Add(Lower);
-            counts.Add(Decor);
-            counts.Add(TopcoverDS);
 
-            counts.Add(StColLowAssy);
-            counts.Add(Lklt6147);
-            counts.Add(Lklt6410);
-            counts.Add(Lklt8210);
-            counts.Add(projCover);
-            counts.Add(projServCover);
-            counts.Add(sideCover);
-            counts.Add(lowerCap);
-            counts.Add(cidCover);
-            counts.Add(sideCap);
-            counts.Add(StColUpAssy);
+            if (radioButton1.Checked == true)
+            {
+                counts.Add(TopperBFS);
+                counts.Add(Lower);
+                counts.Add(Decor);
+                counts.Add(TopcoverDS);
+            }
+            else
+            {
+                counts.Add(StColLowAssy);
+                counts.Add(Lklt6147);
+                counts.Add(Lklt6410);
+                counts.Add(Lklt8210);
+                counts.Add(projCover);
+                counts.Add(projServCover);
+                counts.Add(sideCover);
+                counts.Add(lowerCap);
+                counts.Add(cidCover);
+                counts.Add(sideCap);
+                counts.Add(StColUpAssy);
 
-            counts.Add(lids);
-            counts.Add(pallets);
-            counts.Add(metalPallets);
-
+                counts.Add(lids);
+                counts.Add(pallets);
+                counts.Add(metalPallets);
+            }
 
             //MessageBox.Show("Getting there");
 
@@ -1880,6 +1887,22 @@ namespace ProFormaUI.Forms
 
             // Update label (empties + fulls + damaged * pallet factor)
             LidsTotallabel.Text = ((empties + fulls + damaged) * int.Parse(LidsPalletFactorlabel.Text)).ToString();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckButton();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckButton();
+        }
+
+        private void CheckButton()
+        {
+            if (radioButton1.Checked == true) { radioButton2.Checked = false; } 
+            else if (radioButton2.Checked == true) { radioButton1.Checked = false; }
         }
     }
 }

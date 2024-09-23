@@ -15,6 +15,7 @@ namespace ProFormaUI.Forms
     public partial class PackagingTracker : Form
     {
         private List<PackagingTrackerItem> _items = new List<PackagingTrackerItem>();
+        private string _deliveryQuery = string.Empty;
 
 
         //MAIN FUNCTION
@@ -99,6 +100,7 @@ namespace ProFormaUI.Forms
             commentTextBox.Text = string.Empty;
             deliveryNoTextBox.Text = string.Empty;
             deliveryTimeTextBox.Text = string.Empty;
+            RegTextBox.Text = string.Empty;
             deliveryTimeTextBox.Focus();
         }
 
@@ -111,6 +113,7 @@ namespace ProFormaUI.Forms
             commentTextBox.Text = string.Empty;
             deliveryNoTextBox.Text = string.Empty;
             deliveryTimeTextBox.Text = string.Empty;
+            RegTextBox.Text = string.Empty;
             deliveryTimeTextBox.Focus();
         }
 
@@ -149,6 +152,7 @@ namespace ProFormaUI.Forms
             item.ReceivedQty = received;
 
             item.Comment = commentTextBox.Text;
+            item.RegNumber = RegTextBox.Text;
 
             // If advised is not equal to received, we need to report it
             if (advised != received) { SendDiscrepancyNotification(); }
@@ -162,13 +166,28 @@ namespace ProFormaUI.Forms
         }
 
         //TODO - pulls date from db and feeds tableview
-        private void UpdateOverview() 
+        private void UpdateOverview()
         {
             _items.Clear();
             dataGridView1.DataSource = null;
             _items = SqliteDataAccess.PullPackagingTracker();
             dataGridView1.DataSource = _items;
             dataGridView1.Columns["Id"].Visible = false;
+            dataGridView1.Columns["DeliveryTime"].Visible = false;
+
+            //dataGridView1.Columns["DeliveryDate"].Name = "Delivery Date";
+            //dataGridView1.Columns[1].Name = "Column2";
+            //dataGridView1.Columns[2].Name = "Column3";
+            //dataGridView1.Columns[3].Name = "Column4";
+            //dataGridView1.Columns[4].Name = "Column5";
+            //dataGridView1.Columns[5].Name = "Column6";
+            //dataGridView1.Columns[6].Name = "Column7";
+            //dataGridView1.Columns[7].Name = "Column8";
+            //dataGridView1.Columns[8].Name = "Column9";
+
+            dataGridView1.Columns["RegNumber"].DisplayIndex = 2;
+
+            SearchErrorLabel.Text = string.Empty;
         }
 
 
@@ -202,6 +221,71 @@ namespace ProFormaUI.Forms
             {
                 advisedQtyTextBox.Text = string.Empty;
                 errorLabel.Visible = true;
+            }
+        }
+
+        private void searchDeliveryTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+            SearchDelivery();
+
+            //_items = SqliteDataAccess.SearchDeliveries();
+
+        }
+
+        private void SearchDelivery()
+        {
+            try
+            {
+                //clear error label and grab delivery number to search
+                SearchErrorLabel.Text = string.Empty;
+                _deliveryQuery = searchDeliveryTextBox.Text;
+                try
+                {
+                    _items.Clear();
+                    dataGridView1.DataSource = null;
+                    _items = SqliteDataAccess.SearchByDelivery(_deliveryQuery);
+                    dataGridView1.DataSource = _items;
+                    dataGridView1.Columns["Id"].Visible = false;
+                }
+                catch (System.Exception ex)
+                {
+                    SearchErrorLabel.Text = ex.Message;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                SearchErrorLabel.Text = string.Empty;
+                SearchErrorLabel.Visible = true;
+                SearchErrorLabel.Text = ex.Message;
+            }
+        }
+
+        private void searchPackagingTextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                //clear error label and grab delivery number to search
+                SearchErrorLabel.Text = string.Empty;
+                _deliveryQuery = searchPackagingTextBox.Text;
+                try
+                {
+                    _items.Clear();
+                    dataGridView1.DataSource = null;
+                    _items = SqliteDataAccess.SearchByPackaging(_deliveryQuery);
+                    dataGridView1.DataSource = _items;
+                    dataGridView1.Columns["Id"].Visible = false;
+                }
+                catch (System.Exception ex)
+                {
+                    SearchErrorLabel.Text = ex.Message;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                SearchErrorLabel.Text = string.Empty;
+                SearchErrorLabel.Visible = true;
+                SearchErrorLabel.Text = ex.Message;
             }
         }
     }

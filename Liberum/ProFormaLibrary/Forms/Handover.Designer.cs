@@ -149,14 +149,15 @@
             textBox86 = new TextBox();
             button2 = new Button();
             button3 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(1278, 11);
+            button1.Location = new Point(1309, 11);
             button1.Name = "button1";
-            button1.Size = new Size(165, 36);
+            button1.Size = new Size(134, 36);
             button1.TabIndex = 66;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = true;
@@ -164,9 +165,9 @@
             // button4
             // 
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(768, 11);
+            button4.Location = new Point(889, 11);
             button4.Name = "button4";
-            button4.Size = new Size(165, 36);
+            button4.Size = new Size(134, 36);
             button4.TabIndex = 65;
             button4.Text = "Reset";
             button4.UseVisualStyleBackColor = true;
@@ -1230,9 +1231,9 @@
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(938, 11);
+            button2.Location = new Point(1029, 11);
             button2.Name = "button2";
-            button2.Size = new Size(165, 36);
+            button2.Size = new Size(134, 36);
             button2.TabIndex = 185;
             button2.Text = "Save";
             button2.UseVisualStyleBackColor = true;
@@ -1240,12 +1241,22 @@
             // button3
             // 
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1108, 11);
+            button3.Location = new Point(1169, 11);
             button3.Name = "button3";
-            button3.Size = new Size(165, 36);
+            button3.Size = new Size(134, 36);
             button3.TabIndex = 186;
             button3.Text = "Load";
             button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Location = new Point(749, 11);
+            button5.Name = "button5";
+            button5.Size = new Size(134, 36);
+            button5.TabIndex = 187;
+            button5.Text = "New";
+            button5.UseVisualStyleBackColor = true;
             // 
             // Handover
             // 
@@ -1254,6 +1265,7 @@
             AutoScroll = true;
             AutoSize = true;
             ClientSize = new Size(1688, 1048);
+            Controls.Add(button5);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label27);
@@ -1504,5 +1516,6 @@
         private TextBox textBox86;
         private Button button2;
         private Button button3;
+        private Button button5;
     }
 }
