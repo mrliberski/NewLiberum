@@ -71,6 +71,7 @@ namespace ProFormaUI.Forms
             errorLabel.Visible = false;
         }
 
+        // ADD SINGLE RECORD
         private void addButton_Click(object sender, EventArgs e)
         {
             //ADD entry to DB & RESET all
@@ -78,6 +79,7 @@ namespace ProFormaUI.Forms
             ClearAllTextBoxes(this);
         }
 
+        // ADD RECORD FOR MULTIITEM DELIVERY
         private void addPlusNewEntryButton_Click(object sender, EventArgs e)
         {
             //ADD ENTRY AND KEEP DATE, DELIVERY TIME AND DELIVERY NUMBER
@@ -90,6 +92,8 @@ namespace ProFormaUI.Forms
             packagingCodeTextBox.Focus();
         }
 
+
+        // ADD ITEM & START NEW DELIVERY
         private void AddPlusNewDeliveryButton_Click(object sender, EventArgs e)
         {
             //ADD ENTRY, KEEP DATE 
@@ -104,6 +108,7 @@ namespace ProFormaUI.Forms
             deliveryTimeTextBox.Focus();
         }
 
+        //START OVER
         private void NewDeliveryButton_Click(object sender, EventArgs e)
         {
             //CLEAR AND RETURN CARET
@@ -115,6 +120,7 @@ namespace ProFormaUI.Forms
             deliveryTimeTextBox.Text = string.Empty;
             RegTextBox.Text = string.Empty;
             deliveryTimeTextBox.Focus();
+            errorLabel.Text = string.Empty;
         }
 
 
@@ -155,7 +161,7 @@ namespace ProFormaUI.Forms
             item.RegNumber = RegTextBox.Text;
 
             // If advised is not equal to received, we need to report it
-            if (advised != received) { SendDiscrepancyNotification(); }
+            if (advised != received) { SendDiscrepancyNotification(item); }
 
             // Add entry to DB
             SqliteDataAccess.InsertPackTrackerItem(item);
@@ -191,10 +197,12 @@ namespace ProFormaUI.Forms
         }
 
 
-        private void SendDiscrepancyNotification()
+        // IF discrepancy is detected this block is triggered - we send notification
+        private void SendDiscrepancyNotification(PackagingTrackerItem item)
         {
-            //TODO - email about discrepancy
-            MessageBox.Show("Discrepancy detected - notification was sent.");
+            PackagingCountTemplate.SendPackagingAlert(item);
+            // TODO - once validated, message box can be switched off
+            // MessageBox.Show("Discrepancy detected - notification was sent.");
         }
 
         private void receivedQtyTextBox_TextChanged(object sender, EventArgs e)
