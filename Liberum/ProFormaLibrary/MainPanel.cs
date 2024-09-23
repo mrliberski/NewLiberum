@@ -45,6 +45,7 @@ namespace ProFormaUI
 
             AmendDeadLine();
             CheckLicence();
+            NotificationsLogic.DisplayNotificationsAsRequired();
         }
 
         /// <summary>
