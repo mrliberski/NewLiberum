@@ -56,6 +56,7 @@
             SearchErrorLabel = new Label();
             RegTextBox = new TextBox();
             label10 = new Label();
+            ExportButton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -314,11 +315,23 @@
             label10.TabIndex = 89;
             label10.Text = "Registration";
             // 
+            // ExportButton
+            // 
+            ExportButton.FlatStyle = FlatStyle.Flat;
+            ExportButton.Location = new Point(1129, 753);
+            ExportButton.Name = "ExportButton";
+            ExportButton.Size = new Size(354, 36);
+            ExportButton.TabIndex = 90;
+            ExportButton.Text = "Export Results";
+            ExportButton.UseVisualStyleBackColor = true;
+            ExportButton.Click += ExportButton_Click;
+            // 
             // PackagingTracker
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1583, 878);
+            Controls.Add(ExportButton);
             Controls.Add(RegTextBox);
             Controls.Add(label10);
             Controls.Add(SearchErrorLabel);
@@ -384,5 +397,6 @@
         private Label SearchErrorLabel;
         private TextBox RegTextBox;
         private Label label10;
+        private Button ExportButton;
     }
 }

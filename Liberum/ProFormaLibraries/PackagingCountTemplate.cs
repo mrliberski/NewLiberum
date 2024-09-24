@@ -95,12 +95,12 @@ namespace ProFormaLibraries
             Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
 
             mailItem.To = string.Join(";", recipients);// + "; Leighton, Rebecca; Wood, Craig; Richards, Cyrus";
-                                                           //mailItem.CC = string.Join(";", ccList);
-                                                           // Set the subject
+            //mailItem.CC = string.Join(";", ccList);
+                                                           
             mailItem.Subject = subject;
             mailItem.HTMLBody = PackagingAlertEmailBody(item);
-            mailItem.Display();
-            //mailItem.Send();
+            //mailItem.Display();
+            mailItem.Send();
 
             // Release resources
             Marshal.ReleaseComObject(mailItem);
@@ -127,13 +127,6 @@ namespace ProFormaLibraries
 
             emailBody += "</table>";
             emailBody += "<br>Alert generated on " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-
-
-
-
-
-
-
 
             return emailBody;   
         }

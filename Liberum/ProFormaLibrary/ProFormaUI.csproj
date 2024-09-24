@@ -97,6 +97,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="CSV\" />
     <Folder Include="Templates\" />
   </ItemGroup>
 

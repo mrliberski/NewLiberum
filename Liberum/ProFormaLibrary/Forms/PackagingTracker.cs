@@ -306,5 +306,47 @@ namespace ProFormaUI.Forms
                 SearchErrorLabel.Text = ex.Message;
             }
         }
+
+
+
+        //EXPORT RESULTS TO CSV AND OPEN FOLDER
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                if (_items.Count > 0)
+                {
+                    //MessageBox.Show("Attempt to save");
+                    //EXPORT TO CSV
+                    SaveToCSV(_items);
+                }
+                else
+                { MessageBox.Show("No hits."); }
+            } 
+            catch (System.Exception ex) 
+            { 
+                errorLabel.Text = ex.Message; 
+            }
+        }
+
+        private void SaveToCSV(List<PackagingTrackerItem> items)
+        {
+            using (StreamWriter writer = new StreamWriter(@".\CSV\result.csv"))
+            {
+                // Write the header
+                writer.WriteLine("Delivery Date,Reg Number,Delivery Number,Packaging Code,Advised Qty,Received Qty,Comment");
+
+                // Write the data
+                foreach (var item in items)
+                {
+                    writer.WriteLine($"{item.DeliveryDate},{item.RegNumber},{item.DeliveryNumber},{item.PackagingCode},{item.AdvisedQty},{item.ReceivedQty},{item.Comment}");
+                }
+            }
+
+            //OPEN FOLDER
+            System.Diagnostics.Process.Start("explorer.exe", @".\CSV");
+
+
+        }
     }
 }
