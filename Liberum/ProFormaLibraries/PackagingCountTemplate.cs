@@ -99,8 +99,8 @@ namespace ProFormaLibraries
                                                            // Set the subject
             mailItem.Subject = subject;
             mailItem.HTMLBody = PackagingAlertEmailBody(item);
-            //mailItem.Display();
-            mailItem.Send();
+            mailItem.Display();
+            //mailItem.Send();
 
             // Release resources
             Marshal.ReleaseComObject(mailItem);

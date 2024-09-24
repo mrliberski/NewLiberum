@@ -62,10 +62,10 @@
             // AddPlusNewDeliveryButton
             // 
             AddPlusNewDeliveryButton.FlatStyle = FlatStyle.Flat;
-            AddPlusNewDeliveryButton.Location = new Point(38, 480);
+            AddPlusNewDeliveryButton.Location = new Point(38, 516);
             AddPlusNewDeliveryButton.Name = "AddPlusNewDeliveryButton";
             AddPlusNewDeliveryButton.Size = new Size(354, 36);
-            AddPlusNewDeliveryButton.TabIndex = 10;
+            AddPlusNewDeliveryButton.TabIndex = 11;
             AddPlusNewDeliveryButton.Text = "Add + New Delivery";
             AddPlusNewDeliveryButton.UseVisualStyleBackColor = true;
             AddPlusNewDeliveryButton.Click += AddPlusNewDeliveryButton_Click;
@@ -73,10 +73,10 @@
             // addButton
             // 
             addButton.FlatStyle = FlatStyle.Flat;
-            addButton.Location = new Point(38, 396);
+            addButton.Location = new Point(38, 432);
             addButton.Name = "addButton";
             addButton.Size = new Size(354, 36);
-            addButton.TabIndex = 8;
+            addButton.TabIndex = 9;
             addButton.Text = "Add";
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
@@ -139,7 +139,7 @@
             deliveryNoTextBox.Location = new Point(163, 162);
             deliveryNoTextBox.Name = "deliveryNoTextBox";
             deliveryNoTextBox.Size = new Size(229, 27);
-            deliveryNoTextBox.TabIndex = 3;
+            deliveryNoTextBox.TabIndex = 4;
             // 
             // label6
             // 
@@ -155,7 +155,7 @@
             packagingCodeTextBox.Location = new Point(163, 195);
             packagingCodeTextBox.Name = "packagingCodeTextBox";
             packagingCodeTextBox.Size = new Size(229, 27);
-            packagingCodeTextBox.TabIndex = 4;
+            packagingCodeTextBox.TabIndex = 5;
             // 
             // label7
             // 
@@ -171,7 +171,7 @@
             advisedQtyTextBox.Location = new Point(163, 228);
             advisedQtyTextBox.Name = "advisedQtyTextBox";
             advisedQtyTextBox.Size = new Size(229, 27);
-            advisedQtyTextBox.TabIndex = 5;
+            advisedQtyTextBox.TabIndex = 6;
             advisedQtyTextBox.TextChanged += advisedQtyTextBox_TextChanged;
             // 
             // label8
@@ -188,7 +188,7 @@
             receivedQtyTextBox.Location = new Point(163, 261);
             receivedQtyTextBox.Name = "receivedQtyTextBox";
             receivedQtyTextBox.Size = new Size(229, 27);
-            receivedQtyTextBox.TabIndex = 6;
+            receivedQtyTextBox.TabIndex = 7;
             receivedQtyTextBox.TextChanged += receivedQtyTextBox_TextChanged;
             // 
             // label9
@@ -207,15 +207,15 @@
             commentTextBox.Name = "commentTextBox";
             commentTextBox.ScrollBars = ScrollBars.Horizontal;
             commentTextBox.Size = new Size(229, 96);
-            commentTextBox.TabIndex = 7;
+            commentTextBox.TabIndex = 8;
             // 
             // addPlusNewEntryButton
             // 
             addPlusNewEntryButton.FlatStyle = FlatStyle.Flat;
-            addPlusNewEntryButton.Location = new Point(38, 438);
+            addPlusNewEntryButton.Location = new Point(38, 474);
             addPlusNewEntryButton.Name = "addPlusNewEntryButton";
             addPlusNewEntryButton.Size = new Size(354, 36);
-            addPlusNewEntryButton.TabIndex = 9;
+            addPlusNewEntryButton.TabIndex = 10;
             addPlusNewEntryButton.Text = "Add + New Entry";
             addPlusNewEntryButton.UseVisualStyleBackColor = true;
             addPlusNewEntryButton.Click += addPlusNewEntryButton_Click;
@@ -223,10 +223,10 @@
             // NewDeliveryButton
             // 
             NewDeliveryButton.FlatStyle = FlatStyle.Flat;
-            NewDeliveryButton.Location = new Point(38, 522);
+            NewDeliveryButton.Location = new Point(38, 558);
             NewDeliveryButton.Name = "NewDeliveryButton";
             NewDeliveryButton.Size = new Size(354, 36);
-            NewDeliveryButton.TabIndex = 11;
+            NewDeliveryButton.TabIndex = 12;
             NewDeliveryButton.Text = "Clear + New Delivery";
             NewDeliveryButton.UseVisualStyleBackColor = true;
             NewDeliveryButton.Click += NewDeliveryButton_Click;
@@ -240,16 +240,16 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1048, 524);
+            dataGridView1.Size = new Size(1048, 667);
             dataGridView1.TabIndex = 82;
             // 
             // button5
             // 
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(38, 564);
+            button5.Location = new Point(38, 600);
             button5.Name = "button5";
             button5.Size = new Size(354, 36);
-            button5.TabIndex = 12;
+            button5.TabIndex = 13;
             button5.Text = "Clear";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
@@ -257,7 +257,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(38, 641);
+            label3.Location = new Point(38, 677);
             label3.Name = "label3";
             label3.Size = new Size(111, 20);
             label3.TabIndex = 84;
@@ -265,16 +265,16 @@
             // 
             // searchDeliveryTextBox
             // 
-            searchDeliveryTextBox.Location = new Point(163, 638);
+            searchDeliveryTextBox.Location = new Point(163, 674);
             searchDeliveryTextBox.Name = "searchDeliveryTextBox";
             searchDeliveryTextBox.Size = new Size(229, 27);
-            searchDeliveryTextBox.TabIndex = 83;
+            searchDeliveryTextBox.TabIndex = 14;
             searchDeliveryTextBox.TextChanged += searchDeliveryTextBox_TextChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(38, 674);
+            label4.Location = new Point(38, 710);
             label4.Name = "label4";
             label4.Size = new Size(76, 20);
             label4.TabIndex = 86;
@@ -282,17 +282,17 @@
             // 
             // searchPackagingTextBox
             // 
-            searchPackagingTextBox.Location = new Point(163, 671);
+            searchPackagingTextBox.Location = new Point(163, 707);
             searchPackagingTextBox.Name = "searchPackagingTextBox";
             searchPackagingTextBox.Size = new Size(229, 27);
-            searchPackagingTextBox.TabIndex = 85;
+            searchPackagingTextBox.TabIndex = 15;
             searchPackagingTextBox.TextChanged += searchPackagingTextBox_TextChanged;
             // 
             // SearchErrorLabel
             // 
             SearchErrorLabel.AutoSize = true;
             SearchErrorLabel.ForeColor = Color.Crimson;
-            SearchErrorLabel.Location = new Point(39, 717);
+            SearchErrorLabel.Location = new Point(39, 753);
             SearchErrorLabel.Name = "SearchErrorLabel";
             SearchErrorLabel.Size = new Size(56, 20);
             SearchErrorLabel.TabIndex = 87;
@@ -303,7 +303,7 @@
             RegTextBox.Location = new Point(163, 129);
             RegTextBox.Name = "RegTextBox";
             RegTextBox.Size = new Size(229, 27);
-            RegTextBox.TabIndex = 88;
+            RegTextBox.TabIndex = 3;
             // 
             // label10
             // 

@@ -158,14 +158,24 @@ namespace ProFormaUI.Forms
             item.ReceivedQty = received;
 
             item.Comment = commentTextBox.Text;
-            item.RegNumber = RegTextBox.Text;
-
-            // If advised is not equal to received, we need to report it
-            if (advised != received) { SendDiscrepancyNotification(item); }
+            item.RegNumber = RegTextBox.Text.ToUpper();
 
             // Add entry to DB
             SqliteDataAccess.InsertPackTrackerItem(item);
-            //MessageBox.Show("Record Added");
+
+            // If advised is not equal to received, we need to report it
+            if (advised != received)
+            {
+                try
+                {
+                    SendDiscrepancyNotification(item);
+                }
+                catch (Exception ex)
+                {
+                    errorLabel.Text = ex.Message;
+                }
+            }
+
 
             // Refresh grid
             UpdateOverview();
