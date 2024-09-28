@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            button4 = new Button();
             DateLabel = new Label();
             label1 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            commentTextBox = new TextBox();
+            HSTextBox = new TextBox();
             label2 = new Label();
             comboBox1 = new ComboBox();
             textBox1 = new TextBox();
@@ -129,49 +128,25 @@
             textBox68 = new TextBox();
             textBox69 = new TextBox();
             textBox70 = new TextBox();
-            label26 = new Label();
-            textBox71 = new TextBox();
-            textBox72 = new TextBox();
-            textBox73 = new TextBox();
-            textBox74 = new TextBox();
-            textBox75 = new TextBox();
-            textBox76 = new TextBox();
-            textBox77 = new TextBox();
-            textBox78 = new TextBox();
-            label27 = new Label();
-            textBox79 = new TextBox();
-            textBox80 = new TextBox();
-            textBox81 = new TextBox();
-            textBox82 = new TextBox();
-            textBox83 = new TextBox();
-            textBox84 = new TextBox();
-            textBox85 = new TextBox();
-            textBox86 = new TextBox();
             button2 = new Button();
             button3 = new Button();
             button5 = new Button();
+            label26 = new Label();
+            label27 = new Label();
+            label28 = new Label();
+            ClearShipmentsButton = new Button();
             SuspendLayout();
             // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(1309, 11);
+            button1.Location = new Point(1229, 11);
             button1.Name = "button1";
-            button1.Size = new Size(134, 36);
-            button1.TabIndex = 66;
+            button1.Size = new Size(88, 36);
+            button1.TabIndex = 6;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(889, 11);
-            button4.Name = "button4";
-            button4.Size = new Size(134, 36);
-            button4.TabIndex = 65;
-            button4.Text = "Reset";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button1.Click += button1_Click;
             // 
             // DateLabel
             // 
@@ -200,22 +175,22 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.RightToLeft = RightToLeft.No;
             dateTimePicker1.Size = new Size(183, 27);
-            dateTimePicker1.TabIndex = 70;
+            dateTimePicker1.TabIndex = 1;
             // 
-            // commentTextBox
+            // HSTextBox
             // 
-            commentTextBox.Location = new Point(160, 53);
-            commentTextBox.Multiline = true;
-            commentTextBox.Name = "commentTextBox";
-            commentTextBox.ScrollBars = ScrollBars.Vertical;
-            commentTextBox.Size = new Size(1284, 59);
-            commentTextBox.TabIndex = 71;
+            HSTextBox.Location = new Point(160, 53);
+            HSTextBox.Multiline = true;
+            HSTextBox.Name = "HSTextBox";
+            HSTextBox.ScrollBars = ScrollBars.Vertical;
+            HSTextBox.Size = new Size(1157, 59);
+            HSTextBox.TabIndex = 7;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(431, 17);
+            label2.Location = new Point(405, 14);
             label2.Name = "label2";
             label2.Size = new Size(48, 23);
             label2.TabIndex = 72;
@@ -224,10 +199,10 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(485, 16);
+            comboBox1.Location = new Point(459, 12);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(173, 28);
-            comboBox1.TabIndex = 73;
+            comboBox1.TabIndex = 2;
             // 
             // textBox1
             // 
@@ -235,8 +210,8 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ScrollBars = ScrollBars.Vertical;
-            textBox1.Size = new Size(1284, 59);
-            textBox1.TabIndex = 75;
+            textBox1.Size = new Size(1157, 59);
+            textBox1.TabIndex = 8;
             // 
             // label3
             // 
@@ -253,8 +228,8 @@
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.ScrollBars = ScrollBars.Vertical;
-            textBox2.Size = new Size(1284, 59);
-            textBox2.TabIndex = 77;
+            textBox2.Size = new Size(1157, 59);
+            textBox2.TabIndex = 9;
             // 
             // label4
             // 
@@ -271,8 +246,8 @@
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.ScrollBars = ScrollBars.Vertical;
-            textBox3.Size = new Size(1284, 59);
-            textBox3.TabIndex = 79;
+            textBox3.Size = new Size(1157, 59);
+            textBox3.TabIndex = 10;
             // 
             // label5
             // 
@@ -289,8 +264,8 @@
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.ScrollBars = ScrollBars.Vertical;
-            textBox4.Size = new Size(1284, 59);
-            textBox4.TabIndex = 81;
+            textBox4.Size = new Size(1157, 59);
+            textBox4.TabIndex = 11;
             // 
             // label6
             // 
@@ -307,8 +282,8 @@
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.ScrollBars = ScrollBars.Vertical;
-            textBox5.Size = new Size(1284, 59);
-            textBox5.TabIndex = 83;
+            textBox5.Size = new Size(1157, 59);
+            textBox5.TabIndex = 12;
             // 
             // label7
             // 
@@ -325,8 +300,8 @@
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.ScrollBars = ScrollBars.Vertical;
-            textBox6.Size = new Size(1284, 59);
-            textBox6.TabIndex = 85;
+            textBox6.Size = new Size(1157, 59);
+            textBox6.TabIndex = 13;
             // 
             // label8
             // 
@@ -340,16 +315,16 @@
             // textBox7
             // 
             textBox7.BorderStyle = BorderStyle.FixedSingle;
-            textBox7.Location = new Point(162, 554);
+            textBox7.Location = new Point(162, 531);
             textBox7.Name = "textBox7";
             textBox7.ScrollBars = ScrollBars.Horizontal;
             textBox7.Size = new Size(86, 27);
-            textBox7.TabIndex = 87;
+            textBox7.TabIndex = 14;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(26, 531);
+            label9.Location = new Point(12, 508);
             label9.Name = "label9";
             label9.Size = new Size(85, 20);
             label9.TabIndex = 86;
@@ -358,7 +333,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(163, 531);
+            label10.Location = new Point(160, 508);
             label10.Name = "label10";
             label10.Size = new Size(37, 20);
             label10.TabIndex = 88;
@@ -367,7 +342,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(255, 531);
+            label11.Location = new Point(254, 508);
             label11.Name = "label11";
             label11.Size = new Size(52, 20);
             label11.TabIndex = 90;
@@ -376,16 +351,16 @@
             // textBox8
             // 
             textBox8.BorderStyle = BorderStyle.FixedSingle;
-            textBox8.Location = new Point(254, 554);
+            textBox8.Location = new Point(254, 531);
             textBox8.Name = "textBox8";
             textBox8.ScrollBars = ScrollBars.Horizontal;
             textBox8.Size = new Size(86, 27);
-            textBox8.TabIndex = 89;
+            textBox8.TabIndex = 15;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(347, 531);
+            label12.Location = new Point(346, 508);
             label12.Name = "label12";
             label12.Size = new Size(76, 20);
             label12.TabIndex = 92;
@@ -394,16 +369,16 @@
             // textBox9
             // 
             textBox9.BorderStyle = BorderStyle.FixedSingle;
-            textBox9.Location = new Point(346, 554);
+            textBox9.Location = new Point(346, 531);
             textBox9.Name = "textBox9";
             textBox9.ScrollBars = ScrollBars.Horizontal;
             textBox9.Size = new Size(86, 27);
-            textBox9.TabIndex = 91;
+            textBox9.TabIndex = 16;
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(439, 531);
+            label13.Location = new Point(438, 508);
             label13.Name = "label13";
             label13.Size = new Size(65, 20);
             label13.TabIndex = 94;
@@ -412,16 +387,16 @@
             // textBox10
             // 
             textBox10.BorderStyle = BorderStyle.FixedSingle;
-            textBox10.Location = new Point(438, 554);
+            textBox10.Location = new Point(438, 531);
             textBox10.Name = "textBox10";
             textBox10.ScrollBars = ScrollBars.Horizontal;
             textBox10.Size = new Size(86, 27);
-            textBox10.TabIndex = 93;
+            textBox10.TabIndex = 17;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(531, 531);
+            label14.Location = new Point(530, 508);
             label14.Name = "label14";
             label14.Size = new Size(64, 20);
             label14.TabIndex = 96;
@@ -430,16 +405,16 @@
             // textBox11
             // 
             textBox11.BorderStyle = BorderStyle.FixedSingle;
-            textBox11.Location = new Point(530, 554);
+            textBox11.Location = new Point(530, 531);
             textBox11.Name = "textBox11";
             textBox11.ScrollBars = ScrollBars.Horizontal;
             textBox11.Size = new Size(86, 27);
-            textBox11.TabIndex = 95;
+            textBox11.TabIndex = 18;
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(623, 531);
+            label15.Location = new Point(615, 508);
             label15.Name = "label15";
             label15.Size = new Size(93, 20);
             label15.TabIndex = 98;
@@ -448,34 +423,34 @@
             // textBox12
             // 
             textBox12.BorderStyle = BorderStyle.FixedSingle;
-            textBox12.Location = new Point(622, 554);
+            textBox12.Location = new Point(622, 531);
             textBox12.Name = "textBox12";
             textBox12.ScrollBars = ScrollBars.Horizontal;
             textBox12.Size = new Size(86, 27);
-            textBox12.TabIndex = 97;
+            textBox12.TabIndex = 19;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(715, 531);
+            label16.Location = new Point(714, 508);
             label16.Name = "label16";
-            label16.Size = new Size(66, 20);
+            label16.Size = new Size(57, 20);
             label16.TabIndex = 100;
-            label16.Text = "OK/NOK";
+            label16.Text = "To Plan";
             // 
             // textBox13
             // 
             textBox13.BorderStyle = BorderStyle.FixedSingle;
-            textBox13.Location = new Point(715, 554);
+            textBox13.Location = new Point(715, 531);
             textBox13.Name = "textBox13";
             textBox13.ScrollBars = ScrollBars.Horizontal;
             textBox13.Size = new Size(86, 27);
-            textBox13.TabIndex = 99;
+            textBox13.TabIndex = 20;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(807, 531);
+            label17.Location = new Point(806, 508);
             label17.Name = "label17";
             label17.Size = new Size(74, 20);
             label17.TabIndex = 102;
@@ -484,16 +459,16 @@
             // textBox14
             // 
             textBox14.BorderStyle = BorderStyle.FixedSingle;
-            textBox14.Location = new Point(806, 554);
+            textBox14.Location = new Point(806, 531);
             textBox14.Name = "textBox14";
             textBox14.ScrollBars = ScrollBars.Horizontal;
-            textBox14.Size = new Size(638, 27);
-            textBox14.TabIndex = 101;
+            textBox14.Size = new Size(511, 27);
+            textBox14.TabIndex = 21;
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(135, 557);
+            label18.Location = new Point(135, 534);
             label18.Name = "label18";
             label18.Size = new Size(20, 20);
             label18.TabIndex = 103;
@@ -502,7 +477,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(136, 589);
+            label19.Location = new Point(136, 566);
             label19.Name = "label19";
             label19.Size = new Size(20, 20);
             label19.TabIndex = 112;
@@ -511,79 +486,79 @@
             // textBox15
             // 
             textBox15.BorderStyle = BorderStyle.FixedSingle;
-            textBox15.Location = new Point(806, 587);
+            textBox15.Location = new Point(806, 564);
             textBox15.Name = "textBox15";
             textBox15.ScrollBars = ScrollBars.Horizontal;
-            textBox15.Size = new Size(638, 27);
-            textBox15.TabIndex = 111;
+            textBox15.Size = new Size(511, 27);
+            textBox15.TabIndex = 29;
             // 
             // textBox16
             // 
             textBox16.BorderStyle = BorderStyle.FixedSingle;
-            textBox16.Location = new Point(714, 587);
+            textBox16.Location = new Point(714, 564);
             textBox16.Name = "textBox16";
             textBox16.ScrollBars = ScrollBars.Horizontal;
             textBox16.Size = new Size(86, 27);
-            textBox16.TabIndex = 110;
+            textBox16.TabIndex = 28;
             // 
             // textBox17
             // 
             textBox17.BorderStyle = BorderStyle.FixedSingle;
-            textBox17.Location = new Point(623, 587);
+            textBox17.Location = new Point(623, 564);
             textBox17.Name = "textBox17";
             textBox17.ScrollBars = ScrollBars.Horizontal;
             textBox17.Size = new Size(86, 27);
-            textBox17.TabIndex = 109;
+            textBox17.TabIndex = 27;
             // 
             // textBox18
             // 
             textBox18.BorderStyle = BorderStyle.FixedSingle;
-            textBox18.Location = new Point(530, 587);
+            textBox18.Location = new Point(530, 564);
             textBox18.Name = "textBox18";
             textBox18.ScrollBars = ScrollBars.Horizontal;
             textBox18.Size = new Size(86, 27);
-            textBox18.TabIndex = 108;
+            textBox18.TabIndex = 26;
             // 
             // textBox19
             // 
             textBox19.BorderStyle = BorderStyle.FixedSingle;
-            textBox19.Location = new Point(438, 587);
+            textBox19.Location = new Point(438, 564);
             textBox19.Name = "textBox19";
             textBox19.ScrollBars = ScrollBars.Horizontal;
             textBox19.Size = new Size(86, 27);
-            textBox19.TabIndex = 107;
+            textBox19.TabIndex = 25;
             // 
             // textBox20
             // 
             textBox20.BorderStyle = BorderStyle.FixedSingle;
-            textBox20.Location = new Point(346, 587);
+            textBox20.Location = new Point(346, 564);
             textBox20.Name = "textBox20";
             textBox20.ScrollBars = ScrollBars.Horizontal;
             textBox20.Size = new Size(86, 27);
-            textBox20.TabIndex = 106;
+            textBox20.TabIndex = 24;
             // 
             // textBox21
             // 
             textBox21.BorderStyle = BorderStyle.FixedSingle;
-            textBox21.Location = new Point(254, 587);
+            textBox21.Location = new Point(254, 564);
             textBox21.Name = "textBox21";
             textBox21.ScrollBars = ScrollBars.Horizontal;
             textBox21.Size = new Size(86, 27);
-            textBox21.TabIndex = 105;
+            textBox21.TabIndex = 23;
             // 
             // textBox22
             // 
             textBox22.BorderStyle = BorderStyle.FixedSingle;
-            textBox22.Location = new Point(162, 587);
+            textBox22.Location = new Point(162, 564);
             textBox22.Name = "textBox22";
             textBox22.ScrollBars = ScrollBars.Horizontal;
             textBox22.Size = new Size(86, 27);
-            textBox22.TabIndex = 104;
+            textBox22.TabIndex = 22;
             // 
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(135, 622);
+            label20.Location = new Point(135, 599);
             label20.Name = "label20";
             label20.Size = new Size(20, 20);
             label20.TabIndex = 121;
@@ -592,79 +567,79 @@
             // textBox23
             // 
             textBox23.BorderStyle = BorderStyle.FixedSingle;
-            textBox23.Location = new Point(806, 620);
+            textBox23.Location = new Point(806, 597);
             textBox23.Name = "textBox23";
             textBox23.ScrollBars = ScrollBars.Horizontal;
-            textBox23.Size = new Size(638, 27);
-            textBox23.TabIndex = 120;
+            textBox23.Size = new Size(511, 27);
+            textBox23.TabIndex = 37;
             // 
             // textBox24
             // 
             textBox24.BorderStyle = BorderStyle.FixedSingle;
-            textBox24.Location = new Point(714, 620);
+            textBox24.Location = new Point(714, 597);
             textBox24.Name = "textBox24";
             textBox24.ScrollBars = ScrollBars.Horizontal;
             textBox24.Size = new Size(86, 27);
-            textBox24.TabIndex = 119;
+            textBox24.TabIndex = 36;
             // 
             // textBox25
             // 
             textBox25.BorderStyle = BorderStyle.FixedSingle;
-            textBox25.Location = new Point(623, 620);
+            textBox25.Location = new Point(623, 597);
             textBox25.Name = "textBox25";
             textBox25.ScrollBars = ScrollBars.Horizontal;
             textBox25.Size = new Size(86, 27);
-            textBox25.TabIndex = 118;
+            textBox25.TabIndex = 35;
             // 
             // textBox26
             // 
             textBox26.BorderStyle = BorderStyle.FixedSingle;
-            textBox26.Location = new Point(530, 620);
+            textBox26.Location = new Point(530, 597);
             textBox26.Name = "textBox26";
             textBox26.ScrollBars = ScrollBars.Horizontal;
             textBox26.Size = new Size(86, 27);
-            textBox26.TabIndex = 117;
+            textBox26.TabIndex = 34;
             // 
             // textBox27
             // 
             textBox27.BorderStyle = BorderStyle.FixedSingle;
-            textBox27.Location = new Point(438, 620);
+            textBox27.Location = new Point(438, 597);
             textBox27.Name = "textBox27";
             textBox27.ScrollBars = ScrollBars.Horizontal;
             textBox27.Size = new Size(86, 27);
-            textBox27.TabIndex = 116;
+            textBox27.TabIndex = 33;
             // 
             // textBox28
             // 
             textBox28.BorderStyle = BorderStyle.FixedSingle;
-            textBox28.Location = new Point(346, 620);
+            textBox28.Location = new Point(346, 597);
             textBox28.Name = "textBox28";
             textBox28.ScrollBars = ScrollBars.Horizontal;
             textBox28.Size = new Size(86, 27);
-            textBox28.TabIndex = 115;
+            textBox28.TabIndex = 32;
             // 
             // textBox29
             // 
             textBox29.BorderStyle = BorderStyle.FixedSingle;
-            textBox29.Location = new Point(254, 620);
+            textBox29.Location = new Point(254, 597);
             textBox29.Name = "textBox29";
             textBox29.ScrollBars = ScrollBars.Horizontal;
             textBox29.Size = new Size(86, 27);
-            textBox29.TabIndex = 114;
+            textBox29.TabIndex = 31;
             // 
             // textBox30
             // 
             textBox30.BorderStyle = BorderStyle.FixedSingle;
-            textBox30.Location = new Point(162, 620);
+            textBox30.Location = new Point(162, 597);
             textBox30.Name = "textBox30";
             textBox30.ScrollBars = ScrollBars.Horizontal;
             textBox30.Size = new Size(86, 27);
-            textBox30.TabIndex = 113;
+            textBox30.TabIndex = 30;
             // 
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(135, 655);
+            label21.Location = new Point(135, 632);
             label21.Name = "label21";
             label21.Size = new Size(20, 20);
             label21.TabIndex = 130;
@@ -673,79 +648,79 @@
             // textBox31
             // 
             textBox31.BorderStyle = BorderStyle.FixedSingle;
-            textBox31.Location = new Point(807, 653);
+            textBox31.Location = new Point(807, 630);
             textBox31.Name = "textBox31";
             textBox31.ScrollBars = ScrollBars.Horizontal;
-            textBox31.Size = new Size(638, 27);
-            textBox31.TabIndex = 129;
+            textBox31.Size = new Size(511, 27);
+            textBox31.TabIndex = 45;
             // 
             // textBox32
             // 
             textBox32.BorderStyle = BorderStyle.FixedSingle;
-            textBox32.Location = new Point(714, 653);
+            textBox32.Location = new Point(714, 630);
             textBox32.Name = "textBox32";
             textBox32.ScrollBars = ScrollBars.Horizontal;
             textBox32.Size = new Size(86, 27);
-            textBox32.TabIndex = 128;
+            textBox32.TabIndex = 44;
             // 
             // textBox33
             // 
             textBox33.BorderStyle = BorderStyle.FixedSingle;
-            textBox33.Location = new Point(623, 653);
+            textBox33.Location = new Point(623, 630);
             textBox33.Name = "textBox33";
             textBox33.ScrollBars = ScrollBars.Horizontal;
             textBox33.Size = new Size(86, 27);
-            textBox33.TabIndex = 127;
+            textBox33.TabIndex = 43;
             // 
             // textBox34
             // 
             textBox34.BorderStyle = BorderStyle.FixedSingle;
-            textBox34.Location = new Point(531, 653);
+            textBox34.Location = new Point(531, 630);
             textBox34.Name = "textBox34";
             textBox34.ScrollBars = ScrollBars.Horizontal;
             textBox34.Size = new Size(86, 27);
-            textBox34.TabIndex = 126;
+            textBox34.TabIndex = 42;
             // 
             // textBox35
             // 
             textBox35.BorderStyle = BorderStyle.FixedSingle;
-            textBox35.Location = new Point(439, 653);
+            textBox35.Location = new Point(439, 630);
             textBox35.Name = "textBox35";
             textBox35.ScrollBars = ScrollBars.Horizontal;
             textBox35.Size = new Size(86, 27);
-            textBox35.TabIndex = 125;
+            textBox35.TabIndex = 41;
             // 
             // textBox36
             // 
             textBox36.BorderStyle = BorderStyle.FixedSingle;
-            textBox36.Location = new Point(347, 653);
+            textBox36.Location = new Point(347, 630);
             textBox36.Name = "textBox36";
             textBox36.ScrollBars = ScrollBars.Horizontal;
             textBox36.Size = new Size(86, 27);
-            textBox36.TabIndex = 124;
+            textBox36.TabIndex = 40;
             // 
             // textBox37
             // 
             textBox37.BorderStyle = BorderStyle.FixedSingle;
-            textBox37.Location = new Point(255, 653);
+            textBox37.Location = new Point(255, 630);
             textBox37.Name = "textBox37";
             textBox37.ScrollBars = ScrollBars.Horizontal;
             textBox37.Size = new Size(86, 27);
-            textBox37.TabIndex = 123;
+            textBox37.TabIndex = 39;
             // 
             // textBox38
             // 
             textBox38.BorderStyle = BorderStyle.FixedSingle;
-            textBox38.Location = new Point(163, 653);
+            textBox38.Location = new Point(163, 630);
             textBox38.Name = "textBox38";
             textBox38.ScrollBars = ScrollBars.Horizontal;
             textBox38.Size = new Size(86, 27);
-            textBox38.TabIndex = 122;
+            textBox38.TabIndex = 38;
             // 
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(135, 688);
+            label22.Location = new Point(135, 665);
             label22.Name = "label22";
             label22.Size = new Size(20, 20);
             label22.TabIndex = 139;
@@ -754,79 +729,79 @@
             // textBox39
             // 
             textBox39.BorderStyle = BorderStyle.FixedSingle;
-            textBox39.Location = new Point(807, 686);
+            textBox39.Location = new Point(807, 663);
             textBox39.Name = "textBox39";
             textBox39.ScrollBars = ScrollBars.Horizontal;
-            textBox39.Size = new Size(638, 27);
-            textBox39.TabIndex = 138;
+            textBox39.Size = new Size(511, 27);
+            textBox39.TabIndex = 53;
             // 
             // textBox40
             // 
             textBox40.BorderStyle = BorderStyle.FixedSingle;
-            textBox40.Location = new Point(714, 686);
+            textBox40.Location = new Point(714, 663);
             textBox40.Name = "textBox40";
             textBox40.ScrollBars = ScrollBars.Horizontal;
             textBox40.Size = new Size(86, 27);
-            textBox40.TabIndex = 137;
+            textBox40.TabIndex = 52;
             // 
             // textBox41
             // 
             textBox41.BorderStyle = BorderStyle.FixedSingle;
-            textBox41.Location = new Point(622, 686);
+            textBox41.Location = new Point(622, 663);
             textBox41.Name = "textBox41";
             textBox41.ScrollBars = ScrollBars.Horizontal;
             textBox41.Size = new Size(86, 27);
-            textBox41.TabIndex = 136;
+            textBox41.TabIndex = 51;
             // 
             // textBox42
             // 
             textBox42.BorderStyle = BorderStyle.FixedSingle;
-            textBox42.Location = new Point(531, 686);
+            textBox42.Location = new Point(531, 663);
             textBox42.Name = "textBox42";
             textBox42.ScrollBars = ScrollBars.Horizontal;
             textBox42.Size = new Size(86, 27);
-            textBox42.TabIndex = 135;
+            textBox42.TabIndex = 50;
             // 
             // textBox43
             // 
             textBox43.BorderStyle = BorderStyle.FixedSingle;
-            textBox43.Location = new Point(439, 686);
+            textBox43.Location = new Point(439, 663);
             textBox43.Name = "textBox43";
             textBox43.ScrollBars = ScrollBars.Horizontal;
             textBox43.Size = new Size(86, 27);
-            textBox43.TabIndex = 134;
+            textBox43.TabIndex = 49;
             // 
             // textBox44
             // 
             textBox44.BorderStyle = BorderStyle.FixedSingle;
-            textBox44.Location = new Point(347, 686);
+            textBox44.Location = new Point(347, 663);
             textBox44.Name = "textBox44";
             textBox44.ScrollBars = ScrollBars.Horizontal;
             textBox44.Size = new Size(86, 27);
-            textBox44.TabIndex = 133;
+            textBox44.TabIndex = 48;
             // 
             // textBox45
             // 
             textBox45.BorderStyle = BorderStyle.FixedSingle;
-            textBox45.Location = new Point(255, 686);
+            textBox45.Location = new Point(255, 663);
             textBox45.Name = "textBox45";
             textBox45.ScrollBars = ScrollBars.Horizontal;
             textBox45.Size = new Size(86, 27);
-            textBox45.TabIndex = 132;
+            textBox45.TabIndex = 47;
             // 
             // textBox46
             // 
             textBox46.BorderStyle = BorderStyle.FixedSingle;
-            textBox46.Location = new Point(163, 686);
+            textBox46.Location = new Point(163, 663);
             textBox46.Name = "textBox46";
             textBox46.ScrollBars = ScrollBars.Horizontal;
             textBox46.Size = new Size(86, 27);
-            textBox46.TabIndex = 131;
+            textBox46.TabIndex = 46;
             // 
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(136, 721);
+            label23.Location = new Point(136, 698);
             label23.Name = "label23";
             label23.Size = new Size(20, 20);
             label23.TabIndex = 148;
@@ -835,79 +810,79 @@
             // textBox47
             // 
             textBox47.BorderStyle = BorderStyle.FixedSingle;
-            textBox47.Location = new Point(806, 719);
+            textBox47.Location = new Point(806, 696);
             textBox47.Name = "textBox47";
             textBox47.ScrollBars = ScrollBars.Horizontal;
-            textBox47.Size = new Size(638, 27);
-            textBox47.TabIndex = 147;
+            textBox47.Size = new Size(511, 27);
+            textBox47.TabIndex = 61;
             // 
             // textBox48
             // 
             textBox48.BorderStyle = BorderStyle.FixedSingle;
-            textBox48.Location = new Point(714, 719);
+            textBox48.Location = new Point(714, 696);
             textBox48.Name = "textBox48";
             textBox48.ScrollBars = ScrollBars.Horizontal;
             textBox48.Size = new Size(86, 27);
-            textBox48.TabIndex = 146;
+            textBox48.TabIndex = 60;
             // 
             // textBox49
             // 
             textBox49.BorderStyle = BorderStyle.FixedSingle;
-            textBox49.Location = new Point(622, 719);
+            textBox49.Location = new Point(622, 696);
             textBox49.Name = "textBox49";
             textBox49.ScrollBars = ScrollBars.Horizontal;
             textBox49.Size = new Size(86, 27);
-            textBox49.TabIndex = 145;
+            textBox49.TabIndex = 59;
             // 
             // textBox50
             // 
             textBox50.BorderStyle = BorderStyle.FixedSingle;
-            textBox50.Location = new Point(530, 719);
+            textBox50.Location = new Point(530, 696);
             textBox50.Name = "textBox50";
             textBox50.ScrollBars = ScrollBars.Horizontal;
             textBox50.Size = new Size(86, 27);
-            textBox50.TabIndex = 144;
+            textBox50.TabIndex = 58;
             // 
             // textBox51
             // 
             textBox51.BorderStyle = BorderStyle.FixedSingle;
-            textBox51.Location = new Point(438, 719);
+            textBox51.Location = new Point(438, 696);
             textBox51.Name = "textBox51";
             textBox51.ScrollBars = ScrollBars.Horizontal;
             textBox51.Size = new Size(86, 27);
-            textBox51.TabIndex = 143;
+            textBox51.TabIndex = 57;
             // 
             // textBox52
             // 
             textBox52.BorderStyle = BorderStyle.FixedSingle;
-            textBox52.Location = new Point(346, 719);
+            textBox52.Location = new Point(346, 696);
             textBox52.Name = "textBox52";
             textBox52.ScrollBars = ScrollBars.Horizontal;
             textBox52.Size = new Size(86, 27);
-            textBox52.TabIndex = 142;
+            textBox52.TabIndex = 56;
             // 
             // textBox53
             // 
             textBox53.BorderStyle = BorderStyle.FixedSingle;
-            textBox53.Location = new Point(254, 719);
+            textBox53.Location = new Point(254, 696);
             textBox53.Name = "textBox53";
             textBox53.ScrollBars = ScrollBars.Horizontal;
             textBox53.Size = new Size(86, 27);
-            textBox53.TabIndex = 141;
+            textBox53.TabIndex = 55;
             // 
             // textBox54
             // 
             textBox54.BorderStyle = BorderStyle.FixedSingle;
-            textBox54.Location = new Point(162, 719);
+            textBox54.Location = new Point(162, 696);
             textBox54.Name = "textBox54";
             textBox54.ScrollBars = ScrollBars.Horizontal;
             textBox54.Size = new Size(86, 27);
-            textBox54.TabIndex = 140;
+            textBox54.TabIndex = 54;
             // 
             // label24
             // 
             label24.AutoSize = true;
-            label24.Location = new Point(135, 754);
+            label24.Location = new Point(135, 731);
             label24.Name = "label24";
             label24.Size = new Size(20, 20);
             label24.TabIndex = 157;
@@ -916,79 +891,79 @@
             // textBox55
             // 
             textBox55.BorderStyle = BorderStyle.FixedSingle;
-            textBox55.Location = new Point(807, 752);
+            textBox55.Location = new Point(807, 729);
             textBox55.Name = "textBox55";
             textBox55.ScrollBars = ScrollBars.Horizontal;
-            textBox55.Size = new Size(638, 27);
-            textBox55.TabIndex = 156;
+            textBox55.Size = new Size(511, 27);
+            textBox55.TabIndex = 69;
             // 
             // textBox56
             // 
             textBox56.BorderStyle = BorderStyle.FixedSingle;
-            textBox56.Location = new Point(714, 752);
+            textBox56.Location = new Point(714, 729);
             textBox56.Name = "textBox56";
             textBox56.ScrollBars = ScrollBars.Horizontal;
             textBox56.Size = new Size(86, 27);
-            textBox56.TabIndex = 155;
+            textBox56.TabIndex = 68;
             // 
             // textBox57
             // 
             textBox57.BorderStyle = BorderStyle.FixedSingle;
-            textBox57.Location = new Point(623, 752);
+            textBox57.Location = new Point(623, 729);
             textBox57.Name = "textBox57";
             textBox57.ScrollBars = ScrollBars.Horizontal;
             textBox57.Size = new Size(86, 27);
-            textBox57.TabIndex = 154;
+            textBox57.TabIndex = 67;
             // 
             // textBox58
             // 
             textBox58.BorderStyle = BorderStyle.FixedSingle;
-            textBox58.Location = new Point(531, 752);
+            textBox58.Location = new Point(531, 729);
             textBox58.Name = "textBox58";
             textBox58.ScrollBars = ScrollBars.Horizontal;
             textBox58.Size = new Size(86, 27);
-            textBox58.TabIndex = 153;
+            textBox58.TabIndex = 66;
             // 
             // textBox59
             // 
             textBox59.BorderStyle = BorderStyle.FixedSingle;
-            textBox59.Location = new Point(439, 752);
+            textBox59.Location = new Point(439, 729);
             textBox59.Name = "textBox59";
             textBox59.ScrollBars = ScrollBars.Horizontal;
             textBox59.Size = new Size(86, 27);
-            textBox59.TabIndex = 152;
+            textBox59.TabIndex = 65;
             // 
             // textBox60
             // 
             textBox60.BorderStyle = BorderStyle.FixedSingle;
-            textBox60.Location = new Point(347, 752);
+            textBox60.Location = new Point(347, 729);
             textBox60.Name = "textBox60";
             textBox60.ScrollBars = ScrollBars.Horizontal;
             textBox60.Size = new Size(86, 27);
-            textBox60.TabIndex = 151;
+            textBox60.TabIndex = 64;
             // 
             // textBox61
             // 
             textBox61.BorderStyle = BorderStyle.FixedSingle;
-            textBox61.Location = new Point(255, 752);
+            textBox61.Location = new Point(255, 729);
             textBox61.Name = "textBox61";
             textBox61.ScrollBars = ScrollBars.Horizontal;
             textBox61.Size = new Size(86, 27);
-            textBox61.TabIndex = 150;
+            textBox61.TabIndex = 63;
             // 
             // textBox62
             // 
             textBox62.BorderStyle = BorderStyle.FixedSingle;
-            textBox62.Location = new Point(163, 752);
+            textBox62.Location = new Point(163, 729);
             textBox62.Name = "textBox62";
             textBox62.ScrollBars = ScrollBars.Horizontal;
             textBox62.Size = new Size(86, 27);
-            textBox62.TabIndex = 149;
+            textBox62.TabIndex = 62;
             // 
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(135, 787);
+            label25.Location = new Point(135, 764);
             label25.Name = "label25";
             label25.Size = new Size(20, 20);
             label25.TabIndex = 166;
@@ -997,266 +972,145 @@
             // textBox63
             // 
             textBox63.BorderStyle = BorderStyle.FixedSingle;
-            textBox63.Location = new Point(807, 785);
+            textBox63.Location = new Point(807, 762);
             textBox63.Name = "textBox63";
             textBox63.ScrollBars = ScrollBars.Horizontal;
-            textBox63.Size = new Size(638, 27);
-            textBox63.TabIndex = 165;
+            textBox63.Size = new Size(511, 27);
+            textBox63.TabIndex = 77;
             // 
             // textBox64
             // 
             textBox64.BorderStyle = BorderStyle.FixedSingle;
-            textBox64.Location = new Point(714, 785);
+            textBox64.Location = new Point(714, 762);
             textBox64.Name = "textBox64";
             textBox64.ScrollBars = ScrollBars.Horizontal;
             textBox64.Size = new Size(86, 27);
-            textBox64.TabIndex = 164;
+            textBox64.TabIndex = 76;
             // 
             // textBox65
             // 
             textBox65.BorderStyle = BorderStyle.FixedSingle;
-            textBox65.Location = new Point(623, 785);
+            textBox65.Location = new Point(623, 762);
             textBox65.Name = "textBox65";
             textBox65.ScrollBars = ScrollBars.Horizontal;
             textBox65.Size = new Size(86, 27);
-            textBox65.TabIndex = 163;
+            textBox65.TabIndex = 75;
             // 
             // textBox66
             // 
             textBox66.BorderStyle = BorderStyle.FixedSingle;
-            textBox66.Location = new Point(531, 785);
+            textBox66.Location = new Point(531, 762);
             textBox66.Name = "textBox66";
             textBox66.ScrollBars = ScrollBars.Horizontal;
             textBox66.Size = new Size(86, 27);
-            textBox66.TabIndex = 162;
+            textBox66.TabIndex = 74;
             // 
             // textBox67
             // 
             textBox67.BorderStyle = BorderStyle.FixedSingle;
-            textBox67.Location = new Point(439, 785);
+            textBox67.Location = new Point(439, 762);
             textBox67.Name = "textBox67";
             textBox67.ScrollBars = ScrollBars.Horizontal;
             textBox67.Size = new Size(86, 27);
-            textBox67.TabIndex = 161;
+            textBox67.TabIndex = 73;
             // 
             // textBox68
             // 
             textBox68.BorderStyle = BorderStyle.FixedSingle;
-            textBox68.Location = new Point(347, 785);
+            textBox68.Location = new Point(347, 762);
             textBox68.Name = "textBox68";
             textBox68.ScrollBars = ScrollBars.Horizontal;
             textBox68.Size = new Size(86, 27);
-            textBox68.TabIndex = 160;
+            textBox68.TabIndex = 72;
             // 
             // textBox69
             // 
             textBox69.BorderStyle = BorderStyle.FixedSingle;
-            textBox69.Location = new Point(255, 785);
+            textBox69.Location = new Point(255, 762);
             textBox69.Name = "textBox69";
             textBox69.ScrollBars = ScrollBars.Horizontal;
             textBox69.Size = new Size(86, 27);
-            textBox69.TabIndex = 159;
+            textBox69.TabIndex = 71;
             // 
             // textBox70
             // 
             textBox70.BorderStyle = BorderStyle.FixedSingle;
-            textBox70.Location = new Point(163, 785);
+            textBox70.Location = new Point(163, 762);
             textBox70.Name = "textBox70";
             textBox70.ScrollBars = ScrollBars.Horizontal;
             textBox70.Size = new Size(86, 27);
-            textBox70.TabIndex = 158;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Location = new Point(136, 820);
-            label26.Name = "label26";
-            label26.Size = new Size(20, 20);
-            label26.TabIndex = 175;
-            label26.Text = "9.";
-            // 
-            // textBox71
-            // 
-            textBox71.BorderStyle = BorderStyle.FixedSingle;
-            textBox71.Location = new Point(806, 818);
-            textBox71.Name = "textBox71";
-            textBox71.ScrollBars = ScrollBars.Horizontal;
-            textBox71.Size = new Size(638, 27);
-            textBox71.TabIndex = 174;
-            // 
-            // textBox72
-            // 
-            textBox72.BorderStyle = BorderStyle.FixedSingle;
-            textBox72.Location = new Point(714, 818);
-            textBox72.Name = "textBox72";
-            textBox72.ScrollBars = ScrollBars.Horizontal;
-            textBox72.Size = new Size(86, 27);
-            textBox72.TabIndex = 173;
-            // 
-            // textBox73
-            // 
-            textBox73.BorderStyle = BorderStyle.FixedSingle;
-            textBox73.Location = new Point(622, 818);
-            textBox73.Name = "textBox73";
-            textBox73.ScrollBars = ScrollBars.Horizontal;
-            textBox73.Size = new Size(86, 27);
-            textBox73.TabIndex = 172;
-            // 
-            // textBox74
-            // 
-            textBox74.BorderStyle = BorderStyle.FixedSingle;
-            textBox74.Location = new Point(530, 818);
-            textBox74.Name = "textBox74";
-            textBox74.ScrollBars = ScrollBars.Horizontal;
-            textBox74.Size = new Size(86, 27);
-            textBox74.TabIndex = 171;
-            // 
-            // textBox75
-            // 
-            textBox75.BorderStyle = BorderStyle.FixedSingle;
-            textBox75.Location = new Point(438, 818);
-            textBox75.Name = "textBox75";
-            textBox75.ScrollBars = ScrollBars.Horizontal;
-            textBox75.Size = new Size(86, 27);
-            textBox75.TabIndex = 170;
-            // 
-            // textBox76
-            // 
-            textBox76.BorderStyle = BorderStyle.FixedSingle;
-            textBox76.Location = new Point(346, 818);
-            textBox76.Name = "textBox76";
-            textBox76.ScrollBars = ScrollBars.Horizontal;
-            textBox76.Size = new Size(86, 27);
-            textBox76.TabIndex = 169;
-            // 
-            // textBox77
-            // 
-            textBox77.BorderStyle = BorderStyle.FixedSingle;
-            textBox77.Location = new Point(254, 818);
-            textBox77.Name = "textBox77";
-            textBox77.ScrollBars = ScrollBars.Horizontal;
-            textBox77.Size = new Size(86, 27);
-            textBox77.TabIndex = 168;
-            // 
-            // textBox78
-            // 
-            textBox78.BorderStyle = BorderStyle.FixedSingle;
-            textBox78.Location = new Point(162, 818);
-            textBox78.Name = "textBox78";
-            textBox78.ScrollBars = ScrollBars.Horizontal;
-            textBox78.Size = new Size(86, 27);
-            textBox78.TabIndex = 167;
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Location = new Point(127, 853);
-            label27.Name = "label27";
-            label27.Size = new Size(28, 20);
-            label27.TabIndex = 184;
-            label27.Text = "10.";
-            // 
-            // textBox79
-            // 
-            textBox79.BorderStyle = BorderStyle.FixedSingle;
-            textBox79.Location = new Point(806, 851);
-            textBox79.Name = "textBox79";
-            textBox79.ScrollBars = ScrollBars.Horizontal;
-            textBox79.Size = new Size(638, 27);
-            textBox79.TabIndex = 183;
-            // 
-            // textBox80
-            // 
-            textBox80.BorderStyle = BorderStyle.FixedSingle;
-            textBox80.Location = new Point(714, 851);
-            textBox80.Name = "textBox80";
-            textBox80.ScrollBars = ScrollBars.Horizontal;
-            textBox80.Size = new Size(86, 27);
-            textBox80.TabIndex = 182;
-            // 
-            // textBox81
-            // 
-            textBox81.BorderStyle = BorderStyle.FixedSingle;
-            textBox81.Location = new Point(622, 851);
-            textBox81.Name = "textBox81";
-            textBox81.ScrollBars = ScrollBars.Horizontal;
-            textBox81.Size = new Size(86, 27);
-            textBox81.TabIndex = 181;
-            // 
-            // textBox82
-            // 
-            textBox82.BorderStyle = BorderStyle.FixedSingle;
-            textBox82.Location = new Point(530, 851);
-            textBox82.Name = "textBox82";
-            textBox82.ScrollBars = ScrollBars.Horizontal;
-            textBox82.Size = new Size(86, 27);
-            textBox82.TabIndex = 180;
-            // 
-            // textBox83
-            // 
-            textBox83.BorderStyle = BorderStyle.FixedSingle;
-            textBox83.Location = new Point(438, 851);
-            textBox83.Name = "textBox83";
-            textBox83.ScrollBars = ScrollBars.Horizontal;
-            textBox83.Size = new Size(86, 27);
-            textBox83.TabIndex = 179;
-            // 
-            // textBox84
-            // 
-            textBox84.BorderStyle = BorderStyle.FixedSingle;
-            textBox84.Location = new Point(346, 851);
-            textBox84.Name = "textBox84";
-            textBox84.ScrollBars = ScrollBars.Horizontal;
-            textBox84.Size = new Size(86, 27);
-            textBox84.TabIndex = 178;
-            // 
-            // textBox85
-            // 
-            textBox85.BorderStyle = BorderStyle.FixedSingle;
-            textBox85.Location = new Point(254, 851);
-            textBox85.Name = "textBox85";
-            textBox85.ScrollBars = ScrollBars.Horizontal;
-            textBox85.Size = new Size(86, 27);
-            textBox85.TabIndex = 177;
-            // 
-            // textBox86
-            // 
-            textBox86.BorderStyle = BorderStyle.FixedSingle;
-            textBox86.Location = new Point(162, 851);
-            textBox86.Name = "textBox86";
-            textBox86.ScrollBars = ScrollBars.Horizontal;
-            textBox86.Size = new Size(86, 27);
-            textBox86.TabIndex = 176;
+            textBox70.TabIndex = 70;
             // 
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(1029, 11);
+            button2.Location = new Point(1041, 11);
             button2.Name = "button2";
-            button2.Size = new Size(134, 36);
-            button2.TabIndex = 185;
+            button2.Size = new Size(88, 36);
+            button2.TabIndex = 4;
             button2.Text = "Save";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1169, 11);
+            button3.Location = new Point(1135, 11);
             button3.Name = "button3";
-            button3.Size = new Size(134, 36);
-            button3.TabIndex = 186;
-            button3.Text = "Load";
+            button3.Size = new Size(88, 36);
+            button3.TabIndex = 5;
+            button3.Text = "Reload";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button5
             // 
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(749, 11);
+            button5.Location = new Point(947, 11);
             button5.Name = "button5";
-            button5.Size = new Size(134, 36);
-            button5.TabIndex = 187;
+            button5.Size = new Size(88, 36);
+            button5.TabIndex = 3;
             button5.Text = "New";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(12, 804);
+            label26.Name = "label26";
+            label26.Size = new Size(224, 20);
+            label26.TabIndex = 188;
+            label26.Text = "Handover was last submitted by:";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(243, 804);
+            label27.Name = "label27";
+            label27.Size = new Size(98, 20);
+            label27.TabIndex = 189;
+            label27.Text = "<UserName>";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(359, 804);
+            label28.Name = "label28";
+            label28.Size = new Size(94, 20);
+            label28.TabIndex = 190;
+            label28.Text = "<DateTime>";
+            // 
+            // ClearShipmentsButton
+            // 
+            ClearShipmentsButton.FlatStyle = FlatStyle.Flat;
+            ClearShipmentsButton.Location = new Point(12, 550);
+            ClearShipmentsButton.Name = "ClearShipmentsButton";
+            ClearShipmentsButton.Size = new Size(88, 36);
+            ClearShipmentsButton.TabIndex = 78;
+            ClearShipmentsButton.Text = "Clear";
+            ClearShipmentsButton.UseVisualStyleBackColor = true;
+            ClearShipmentsButton.Click += ClearShipmentsButton_Click;
             // 
             // Handover
             // 
@@ -1264,28 +1118,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
-            ClientSize = new Size(1688, 1048);
+            ClientSize = new Size(1370, 1048);
+            Controls.Add(ClearShipmentsButton);
+            Controls.Add(label28);
+            Controls.Add(label27);
+            Controls.Add(label26);
             Controls.Add(button5);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(label27);
-            Controls.Add(textBox79);
-            Controls.Add(textBox80);
-            Controls.Add(textBox81);
-            Controls.Add(textBox82);
-            Controls.Add(textBox83);
-            Controls.Add(textBox84);
-            Controls.Add(textBox85);
-            Controls.Add(textBox86);
-            Controls.Add(label26);
-            Controls.Add(textBox71);
-            Controls.Add(textBox72);
-            Controls.Add(textBox73);
-            Controls.Add(textBox74);
-            Controls.Add(textBox75);
-            Controls.Add(textBox76);
-            Controls.Add(textBox77);
-            Controls.Add(textBox78);
             Controls.Add(label25);
             Controls.Add(textBox63);
             Controls.Add(textBox64);
@@ -1381,12 +1221,11 @@
             Controls.Add(label3);
             Controls.Add(comboBox1);
             Controls.Add(label2);
-            Controls.Add(commentTextBox);
+            Controls.Add(HSTextBox);
             Controls.Add(dateTimePicker1);
             Controls.Add(label1);
             Controls.Add(DateLabel);
             Controls.Add(button1);
-            Controls.Add(button4);
             Name = "Handover";
             Text = "Handover";
             ResumeLayout(false);
@@ -1396,11 +1235,10 @@
         #endregion
 
         private Button button1;
-        private Button button4;
         private Label DateLabel;
         private Label label1;
         private DateTimePicker dateTimePicker1;
-        private TextBox commentTextBox;
+        private TextBox HSTextBox;
         private Label label2;
         private ComboBox comboBox1;
         private TextBox textBox1;
@@ -1496,26 +1334,12 @@
         private TextBox textBox68;
         private TextBox textBox69;
         private TextBox textBox70;
-        private Label label26;
-        private TextBox textBox71;
-        private TextBox textBox72;
-        private TextBox textBox73;
-        private TextBox textBox74;
-        private TextBox textBox75;
-        private TextBox textBox76;
-        private TextBox textBox77;
-        private TextBox textBox78;
-        private Label label27;
-        private TextBox textBox79;
-        private TextBox textBox80;
-        private TextBox textBox81;
-        private TextBox textBox82;
-        private TextBox textBox83;
-        private TextBox textBox84;
-        private TextBox textBox85;
-        private TextBox textBox86;
         private Button button2;
         private Button button3;
         private Button button5;
+        private Label label26;
+        private Label label27;
+        private Label label28;
+        private Button ClearShipmentsButton;
     }
 }
