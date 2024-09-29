@@ -320,6 +320,7 @@
             textBox7.ScrollBars = ScrollBars.Horizontal;
             textBox7.Size = new Size(86, 27);
             textBox7.TabIndex = 14;
+            textBox7.TextAlign = HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -356,6 +357,7 @@
             textBox8.ScrollBars = ScrollBars.Horizontal;
             textBox8.Size = new Size(86, 27);
             textBox8.TabIndex = 15;
+            textBox8.TextAlign = HorizontalAlignment.Center;
             // 
             // label12
             // 
@@ -374,6 +376,7 @@
             textBox9.ScrollBars = ScrollBars.Horizontal;
             textBox9.Size = new Size(86, 27);
             textBox9.TabIndex = 16;
+            textBox9.TextAlign = HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -392,6 +395,7 @@
             textBox10.ScrollBars = ScrollBars.Horizontal;
             textBox10.Size = new Size(86, 27);
             textBox10.TabIndex = 17;
+            textBox10.TextAlign = HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -410,6 +414,7 @@
             textBox11.ScrollBars = ScrollBars.Horizontal;
             textBox11.Size = new Size(86, 27);
             textBox11.TabIndex = 18;
+            textBox11.TextAlign = HorizontalAlignment.Center;
             // 
             // label15
             // 
@@ -428,15 +433,16 @@
             textBox12.ScrollBars = ScrollBars.Horizontal;
             textBox12.Size = new Size(86, 27);
             textBox12.TabIndex = 19;
+            textBox12.TextAlign = HorizontalAlignment.Center;
             // 
             // label16
             // 
             label16.AutoSize = true;
             label16.Location = new Point(714, 508);
             label16.Name = "label16";
-            label16.Size = new Size(57, 20);
+            label16.Size = new Size(87, 20);
             label16.TabIndex = 100;
-            label16.Text = "To Plan";
+            label16.Text = "Commodity";
             // 
             // textBox13
             // 
@@ -444,13 +450,14 @@
             textBox13.Location = new Point(715, 531);
             textBox13.Name = "textBox13";
             textBox13.ScrollBars = ScrollBars.Horizontal;
-            textBox13.Size = new Size(86, 27);
+            textBox13.Size = new Size(98, 27);
             textBox13.TabIndex = 20;
+            textBox13.TextAlign = HorizontalAlignment.Center;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(806, 508);
+            label17.Location = new Point(841, 508);
             label17.Name = "label17";
             label17.Size = new Size(74, 20);
             label17.TabIndex = 102;
@@ -459,10 +466,10 @@
             // textBox14
             // 
             textBox14.BorderStyle = BorderStyle.FixedSingle;
-            textBox14.Location = new Point(806, 531);
+            textBox14.Location = new Point(817, 531);
             textBox14.Name = "textBox14";
             textBox14.ScrollBars = ScrollBars.Horizontal;
-            textBox14.Size = new Size(511, 27);
+            textBox14.Size = new Size(500, 27);
             textBox14.TabIndex = 21;
             // 
             // label18
@@ -486,10 +493,10 @@
             // textBox15
             // 
             textBox15.BorderStyle = BorderStyle.FixedSingle;
-            textBox15.Location = new Point(806, 564);
+            textBox15.Location = new Point(817, 564);
             textBox15.Name = "textBox15";
             textBox15.ScrollBars = ScrollBars.Horizontal;
-            textBox15.Size = new Size(511, 27);
+            textBox15.Size = new Size(500, 27);
             textBox15.TabIndex = 29;
             // 
             // textBox16
@@ -498,8 +505,9 @@
             textBox16.Location = new Point(714, 564);
             textBox16.Name = "textBox16";
             textBox16.ScrollBars = ScrollBars.Horizontal;
-            textBox16.Size = new Size(86, 27);
+            textBox16.Size = new Size(98, 27);
             textBox16.TabIndex = 28;
+            textBox16.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox17
             // 
@@ -509,6 +517,7 @@
             textBox17.ScrollBars = ScrollBars.Horizontal;
             textBox17.Size = new Size(86, 27);
             textBox17.TabIndex = 27;
+            textBox17.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox18
             // 
@@ -518,6 +527,7 @@
             textBox18.ScrollBars = ScrollBars.Horizontal;
             textBox18.Size = new Size(86, 27);
             textBox18.TabIndex = 26;
+            textBox18.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox19
             // 
@@ -527,6 +537,7 @@
             textBox19.ScrollBars = ScrollBars.Horizontal;
             textBox19.Size = new Size(86, 27);
             textBox19.TabIndex = 25;
+            textBox19.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox20
             // 
@@ -536,6 +547,7 @@
             textBox20.ScrollBars = ScrollBars.Horizontal;
             textBox20.Size = new Size(86, 27);
             textBox20.TabIndex = 24;
+            textBox20.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox21
             // 
@@ -545,6 +557,7 @@
             textBox21.ScrollBars = ScrollBars.Horizontal;
             textBox21.Size = new Size(86, 27);
             textBox21.TabIndex = 23;
+            textBox21.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox22
             // 
@@ -554,6 +567,7 @@
             textBox22.ScrollBars = ScrollBars.Horizontal;
             textBox22.Size = new Size(86, 27);
             textBox22.TabIndex = 22;
+            textBox22.TextAlign = HorizontalAlignment.Center;
             // 
             // label20
             // 
@@ -567,10 +581,10 @@
             // textBox23
             // 
             textBox23.BorderStyle = BorderStyle.FixedSingle;
-            textBox23.Location = new Point(806, 597);
+            textBox23.Location = new Point(817, 597);
             textBox23.Name = "textBox23";
             textBox23.ScrollBars = ScrollBars.Horizontal;
-            textBox23.Size = new Size(511, 27);
+            textBox23.Size = new Size(500, 27);
             textBox23.TabIndex = 37;
             // 
             // textBox24
@@ -579,8 +593,9 @@
             textBox24.Location = new Point(714, 597);
             textBox24.Name = "textBox24";
             textBox24.ScrollBars = ScrollBars.Horizontal;
-            textBox24.Size = new Size(86, 27);
+            textBox24.Size = new Size(98, 27);
             textBox24.TabIndex = 36;
+            textBox24.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox25
             // 
@@ -590,6 +605,7 @@
             textBox25.ScrollBars = ScrollBars.Horizontal;
             textBox25.Size = new Size(86, 27);
             textBox25.TabIndex = 35;
+            textBox25.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox26
             // 
@@ -599,6 +615,7 @@
             textBox26.ScrollBars = ScrollBars.Horizontal;
             textBox26.Size = new Size(86, 27);
             textBox26.TabIndex = 34;
+            textBox26.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox27
             // 
@@ -608,6 +625,7 @@
             textBox27.ScrollBars = ScrollBars.Horizontal;
             textBox27.Size = new Size(86, 27);
             textBox27.TabIndex = 33;
+            textBox27.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox28
             // 
@@ -617,6 +635,7 @@
             textBox28.ScrollBars = ScrollBars.Horizontal;
             textBox28.Size = new Size(86, 27);
             textBox28.TabIndex = 32;
+            textBox28.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox29
             // 
@@ -626,6 +645,7 @@
             textBox29.ScrollBars = ScrollBars.Horizontal;
             textBox29.Size = new Size(86, 27);
             textBox29.TabIndex = 31;
+            textBox29.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox30
             // 
@@ -635,6 +655,7 @@
             textBox30.ScrollBars = ScrollBars.Horizontal;
             textBox30.Size = new Size(86, 27);
             textBox30.TabIndex = 30;
+            textBox30.TextAlign = HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -648,10 +669,10 @@
             // textBox31
             // 
             textBox31.BorderStyle = BorderStyle.FixedSingle;
-            textBox31.Location = new Point(807, 630);
+            textBox31.Location = new Point(818, 630);
             textBox31.Name = "textBox31";
             textBox31.ScrollBars = ScrollBars.Horizontal;
-            textBox31.Size = new Size(511, 27);
+            textBox31.Size = new Size(500, 27);
             textBox31.TabIndex = 45;
             // 
             // textBox32
@@ -660,8 +681,9 @@
             textBox32.Location = new Point(714, 630);
             textBox32.Name = "textBox32";
             textBox32.ScrollBars = ScrollBars.Horizontal;
-            textBox32.Size = new Size(86, 27);
+            textBox32.Size = new Size(98, 27);
             textBox32.TabIndex = 44;
+            textBox32.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox33
             // 
@@ -671,6 +693,7 @@
             textBox33.ScrollBars = ScrollBars.Horizontal;
             textBox33.Size = new Size(86, 27);
             textBox33.TabIndex = 43;
+            textBox33.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox34
             // 
@@ -680,6 +703,7 @@
             textBox34.ScrollBars = ScrollBars.Horizontal;
             textBox34.Size = new Size(86, 27);
             textBox34.TabIndex = 42;
+            textBox34.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox35
             // 
@@ -689,6 +713,7 @@
             textBox35.ScrollBars = ScrollBars.Horizontal;
             textBox35.Size = new Size(86, 27);
             textBox35.TabIndex = 41;
+            textBox35.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox36
             // 
@@ -698,6 +723,7 @@
             textBox36.ScrollBars = ScrollBars.Horizontal;
             textBox36.Size = new Size(86, 27);
             textBox36.TabIndex = 40;
+            textBox36.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox37
             // 
@@ -707,6 +733,7 @@
             textBox37.ScrollBars = ScrollBars.Horizontal;
             textBox37.Size = new Size(86, 27);
             textBox37.TabIndex = 39;
+            textBox37.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox38
             // 
@@ -716,6 +743,7 @@
             textBox38.ScrollBars = ScrollBars.Horizontal;
             textBox38.Size = new Size(86, 27);
             textBox38.TabIndex = 38;
+            textBox38.TextAlign = HorizontalAlignment.Center;
             // 
             // label22
             // 
@@ -729,10 +757,10 @@
             // textBox39
             // 
             textBox39.BorderStyle = BorderStyle.FixedSingle;
-            textBox39.Location = new Point(807, 663);
+            textBox39.Location = new Point(818, 663);
             textBox39.Name = "textBox39";
             textBox39.ScrollBars = ScrollBars.Horizontal;
-            textBox39.Size = new Size(511, 27);
+            textBox39.Size = new Size(500, 27);
             textBox39.TabIndex = 53;
             // 
             // textBox40
@@ -741,8 +769,9 @@
             textBox40.Location = new Point(714, 663);
             textBox40.Name = "textBox40";
             textBox40.ScrollBars = ScrollBars.Horizontal;
-            textBox40.Size = new Size(86, 27);
+            textBox40.Size = new Size(98, 27);
             textBox40.TabIndex = 52;
+            textBox40.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox41
             // 
@@ -752,6 +781,7 @@
             textBox41.ScrollBars = ScrollBars.Horizontal;
             textBox41.Size = new Size(86, 27);
             textBox41.TabIndex = 51;
+            textBox41.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox42
             // 
@@ -761,6 +791,7 @@
             textBox42.ScrollBars = ScrollBars.Horizontal;
             textBox42.Size = new Size(86, 27);
             textBox42.TabIndex = 50;
+            textBox42.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox43
             // 
@@ -770,6 +801,7 @@
             textBox43.ScrollBars = ScrollBars.Horizontal;
             textBox43.Size = new Size(86, 27);
             textBox43.TabIndex = 49;
+            textBox43.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox44
             // 
@@ -779,6 +811,7 @@
             textBox44.ScrollBars = ScrollBars.Horizontal;
             textBox44.Size = new Size(86, 27);
             textBox44.TabIndex = 48;
+            textBox44.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox45
             // 
@@ -788,6 +821,7 @@
             textBox45.ScrollBars = ScrollBars.Horizontal;
             textBox45.Size = new Size(86, 27);
             textBox45.TabIndex = 47;
+            textBox45.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox46
             // 
@@ -797,6 +831,7 @@
             textBox46.ScrollBars = ScrollBars.Horizontal;
             textBox46.Size = new Size(86, 27);
             textBox46.TabIndex = 46;
+            textBox46.TextAlign = HorizontalAlignment.Center;
             // 
             // label23
             // 
@@ -810,10 +845,10 @@
             // textBox47
             // 
             textBox47.BorderStyle = BorderStyle.FixedSingle;
-            textBox47.Location = new Point(806, 696);
+            textBox47.Location = new Point(817, 696);
             textBox47.Name = "textBox47";
             textBox47.ScrollBars = ScrollBars.Horizontal;
-            textBox47.Size = new Size(511, 27);
+            textBox47.Size = new Size(500, 27);
             textBox47.TabIndex = 61;
             // 
             // textBox48
@@ -822,8 +857,9 @@
             textBox48.Location = new Point(714, 696);
             textBox48.Name = "textBox48";
             textBox48.ScrollBars = ScrollBars.Horizontal;
-            textBox48.Size = new Size(86, 27);
+            textBox48.Size = new Size(98, 27);
             textBox48.TabIndex = 60;
+            textBox48.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox49
             // 
@@ -833,6 +869,7 @@
             textBox49.ScrollBars = ScrollBars.Horizontal;
             textBox49.Size = new Size(86, 27);
             textBox49.TabIndex = 59;
+            textBox49.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox50
             // 
@@ -842,6 +879,7 @@
             textBox50.ScrollBars = ScrollBars.Horizontal;
             textBox50.Size = new Size(86, 27);
             textBox50.TabIndex = 58;
+            textBox50.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox51
             // 
@@ -851,6 +889,7 @@
             textBox51.ScrollBars = ScrollBars.Horizontal;
             textBox51.Size = new Size(86, 27);
             textBox51.TabIndex = 57;
+            textBox51.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox52
             // 
@@ -860,6 +899,7 @@
             textBox52.ScrollBars = ScrollBars.Horizontal;
             textBox52.Size = new Size(86, 27);
             textBox52.TabIndex = 56;
+            textBox52.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox53
             // 
@@ -869,6 +909,7 @@
             textBox53.ScrollBars = ScrollBars.Horizontal;
             textBox53.Size = new Size(86, 27);
             textBox53.TabIndex = 55;
+            textBox53.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox54
             // 
@@ -878,6 +919,7 @@
             textBox54.ScrollBars = ScrollBars.Horizontal;
             textBox54.Size = new Size(86, 27);
             textBox54.TabIndex = 54;
+            textBox54.TextAlign = HorizontalAlignment.Center;
             // 
             // label24
             // 
@@ -891,10 +933,10 @@
             // textBox55
             // 
             textBox55.BorderStyle = BorderStyle.FixedSingle;
-            textBox55.Location = new Point(807, 729);
+            textBox55.Location = new Point(818, 729);
             textBox55.Name = "textBox55";
             textBox55.ScrollBars = ScrollBars.Horizontal;
-            textBox55.Size = new Size(511, 27);
+            textBox55.Size = new Size(500, 27);
             textBox55.TabIndex = 69;
             // 
             // textBox56
@@ -903,8 +945,9 @@
             textBox56.Location = new Point(714, 729);
             textBox56.Name = "textBox56";
             textBox56.ScrollBars = ScrollBars.Horizontal;
-            textBox56.Size = new Size(86, 27);
+            textBox56.Size = new Size(98, 27);
             textBox56.TabIndex = 68;
+            textBox56.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox57
             // 
@@ -914,6 +957,7 @@
             textBox57.ScrollBars = ScrollBars.Horizontal;
             textBox57.Size = new Size(86, 27);
             textBox57.TabIndex = 67;
+            textBox57.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox58
             // 
@@ -923,6 +967,7 @@
             textBox58.ScrollBars = ScrollBars.Horizontal;
             textBox58.Size = new Size(86, 27);
             textBox58.TabIndex = 66;
+            textBox58.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox59
             // 
@@ -932,6 +977,7 @@
             textBox59.ScrollBars = ScrollBars.Horizontal;
             textBox59.Size = new Size(86, 27);
             textBox59.TabIndex = 65;
+            textBox59.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox60
             // 
@@ -941,6 +987,7 @@
             textBox60.ScrollBars = ScrollBars.Horizontal;
             textBox60.Size = new Size(86, 27);
             textBox60.TabIndex = 64;
+            textBox60.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox61
             // 
@@ -950,6 +997,7 @@
             textBox61.ScrollBars = ScrollBars.Horizontal;
             textBox61.Size = new Size(86, 27);
             textBox61.TabIndex = 63;
+            textBox61.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox62
             // 
@@ -959,6 +1007,7 @@
             textBox62.ScrollBars = ScrollBars.Horizontal;
             textBox62.Size = new Size(86, 27);
             textBox62.TabIndex = 62;
+            textBox62.TextAlign = HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -972,10 +1021,10 @@
             // textBox63
             // 
             textBox63.BorderStyle = BorderStyle.FixedSingle;
-            textBox63.Location = new Point(807, 762);
+            textBox63.Location = new Point(818, 762);
             textBox63.Name = "textBox63";
             textBox63.ScrollBars = ScrollBars.Horizontal;
-            textBox63.Size = new Size(511, 27);
+            textBox63.Size = new Size(500, 27);
             textBox63.TabIndex = 77;
             // 
             // textBox64
@@ -984,8 +1033,9 @@
             textBox64.Location = new Point(714, 762);
             textBox64.Name = "textBox64";
             textBox64.ScrollBars = ScrollBars.Horizontal;
-            textBox64.Size = new Size(86, 27);
+            textBox64.Size = new Size(98, 27);
             textBox64.TabIndex = 76;
+            textBox64.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox65
             // 
@@ -995,6 +1045,7 @@
             textBox65.ScrollBars = ScrollBars.Horizontal;
             textBox65.Size = new Size(86, 27);
             textBox65.TabIndex = 75;
+            textBox65.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox66
             // 
@@ -1004,6 +1055,7 @@
             textBox66.ScrollBars = ScrollBars.Horizontal;
             textBox66.Size = new Size(86, 27);
             textBox66.TabIndex = 74;
+            textBox66.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox67
             // 
@@ -1013,6 +1065,7 @@
             textBox67.ScrollBars = ScrollBars.Horizontal;
             textBox67.Size = new Size(86, 27);
             textBox67.TabIndex = 73;
+            textBox67.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox68
             // 
@@ -1022,6 +1075,7 @@
             textBox68.ScrollBars = ScrollBars.Horizontal;
             textBox68.Size = new Size(86, 27);
             textBox68.TabIndex = 72;
+            textBox68.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox69
             // 
@@ -1031,6 +1085,7 @@
             textBox69.ScrollBars = ScrollBars.Horizontal;
             textBox69.Size = new Size(86, 27);
             textBox69.TabIndex = 71;
+            textBox69.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox70
             // 
@@ -1040,6 +1095,7 @@
             textBox70.ScrollBars = ScrollBars.Horizontal;
             textBox70.Size = new Size(86, 27);
             textBox70.TabIndex = 70;
+            textBox70.TextAlign = HorizontalAlignment.Center;
             // 
             // button2
             // 

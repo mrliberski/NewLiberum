@@ -48,7 +48,7 @@ namespace ProFormaLibraries
             output += @"<td align=""center"">&nbsp;<b>First Sequence</b>&nbsp;</td>";
             output += @"<td align=""center"">&nbsp;<b>Last Sequence</b>&nbsp;</td>";
             output += @"<td align=""center"">&nbsp;<b>Reg Number</b>&nbsp;</td>";
-            output += @"<td align=""center"">&nbsp;<b>In Line With Plan</b>&nbsp;</td>";
+            output += @"<td align=""center"">&nbsp;<b>Commodity</b>&nbsp;</td>";
             output += @"<td align=""center"">&nbsp;<b>Comment</b>&nbsp;</td>";
             output += @"</tr>";
 

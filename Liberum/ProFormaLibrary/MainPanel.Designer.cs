@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
             button10 = new Button();
@@ -49,7 +50,9 @@
             btnCloseChildform = new Button();
             lblTitle = new Label();
             panelDesktopPanel = new Panel();
+            label2 = new Label();
             pictureBox1 = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             panelTitleBar.SuspendLayout();
@@ -247,14 +250,26 @@
             // panelDesktopPanel
             // 
             resources.ApplyResources(panelDesktopPanel, "panelDesktopPanel");
+            panelDesktopPanel.Controls.Add(label2);
             panelDesktopPanel.Controls.Add(pictureBox1);
             panelDesktopPanel.Name = "panelDesktopPanel";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(label2, "label2");
+            label2.ForeColor = Color.DarkSlateBlue;
+            label2.Name = "label2";
             // 
             // pictureBox1
             // 
             resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
             // 
             // MainPanel
             // 
@@ -273,6 +288,7 @@
             panelTitleBar.ResumeLayout(false);
             panelTitleBar.PerformLayout();
             panelDesktopPanel.ResumeLayout(false);
+            panelDesktopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -293,12 +309,14 @@
         private Button button3;
         private Button exportButton;
         private Label lblTitle;
-        private Label label1;
         private Panel panelDesktopPanel;
         private Button btnCloseChildform;
         private PictureBox pictureBox1;
         private Button btnClose;
         private Button btnMinimize;
         private Button btnMaximize;
+        private System.Windows.Forms.Timer timer1;
+        private Label label1;
+        private Label label2;
     }
 }

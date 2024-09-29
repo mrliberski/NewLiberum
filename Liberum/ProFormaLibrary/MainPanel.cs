@@ -46,6 +46,8 @@ namespace ProFormaUI
             AmendDeadLine();
             CheckLicence();
             NotificationsLogic.DisplayNotificationsAsRequired();
+            timer1.Start();
+            SetDateLabel();
         }
 
         /// <summary>
@@ -209,6 +211,7 @@ namespace ProFormaUI
             childForm.Show();
 
             lblTitle.Text = childForm.Text;
+
         }
 
 
@@ -329,5 +332,16 @@ namespace ProFormaUI
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void SetDateLabel()
+        {
+            label2.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+        }
+
     }
 }
