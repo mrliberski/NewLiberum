@@ -55,7 +55,7 @@ namespace ProFormaLibraries
         {
             //Generate email
             DialogResult iExit;
-            iExit = MessageBox.Show("Nw count report will be created, continue?", "Please confirm..", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            iExit = MessageBox.Show("New count report will be created, continue?", "Please confirm..", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (iExit == DialogResult.Yes)
             {
                 //TODO - new recipient list must be created and linked accordingly

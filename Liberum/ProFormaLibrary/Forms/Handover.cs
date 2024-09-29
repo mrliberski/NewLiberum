@@ -180,6 +180,7 @@ namespace ProFormaUI.Forms
             SqliteDataAccess.InsertHandoverSubmissionStamp();
             label27.Text = SqliteDataAccess.GetLastSubmittedUserName();
             label28.Text = SqliteDataAccess.GetWhenLastHandoverWasSubmitted();
+            HandoverEmail.CreateHandoverEmail(_handover);
         }
 
 
