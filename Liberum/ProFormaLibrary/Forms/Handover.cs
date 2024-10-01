@@ -23,13 +23,14 @@ namespace ProFormaUI.Forms
             LoadTheme();
             LoadShiftsDropDown();
             ReloadForm();
+            timer1.Start();
         }
 
         //Load drop down list of shifts
         private void LoadShiftsDropDown()
         {
             Shifts.Clear();
-            Shifts= SqliteDataAccess.GetShifts();
+            Shifts = SqliteDataAccess.GetShifts();
             WireUpShifts();
         }
 
@@ -228,7 +229,7 @@ namespace ProFormaUI.Forms
             _handover.LastSeq3 = textBox26.Text;
             _handover.RegNumber3 = textBox25.Text;
             _handover.ToPlan3 = textBox24.Text;
-            _handover.Comment3= textBox23.Text;
+            _handover.Comment3 = textBox23.Text;
 
             _handover.DespatchPlan4 = textBox38.Text;
             _handover.Arrival4 = textBox37.Text;
@@ -257,25 +258,25 @@ namespace ProFormaUI.Forms
             _handover.ToPlan6 = textBox48.Text;
             _handover.Comment6 = textBox47.Text;
 
-            _handover.DespatchPlan7= textBox62.Text;
-            _handover.Arrival7= textBox61.Text;
-            _handover.Departure7= textBox60.Text;
+            _handover.DespatchPlan7 = textBox62.Text;
+            _handover.Arrival7 = textBox61.Text;
+            _handover.Departure7 = textBox60.Text;
             _handover.FirstSeq7 = textBox59.Text;
-            _handover.LastSeq7= textBox58.Text;
-            _handover.RegNumber7= textBox57.Text;
-            _handover.ToPlan7= textBox56.Text;
-            _handover.Comment7= textBox55.Text;
+            _handover.LastSeq7 = textBox58.Text;
+            _handover.RegNumber7 = textBox57.Text;
+            _handover.ToPlan7 = textBox56.Text;
+            _handover.Comment7 = textBox55.Text;
 
             _handover.DespatchPlan8 = textBox70.Text;
-            _handover.Arrival8= textBox69.Text;
-            _handover.Departure8= textBox68.Text;
-            _handover.FirstSeq8= textBox67.Text;
-            _handover.LastSeq8=textBox66.Text;
-            _handover.RegNumber8= textBox65.Text;
-            _handover.ToPlan8= textBox64.Text;
-            _handover.Comment8= textBox63.Text;
+            _handover.Arrival8 = textBox69.Text;
+            _handover.Departure8 = textBox68.Text;
+            _handover.FirstSeq8 = textBox67.Text;
+            _handover.LastSeq8 = textBox66.Text;
+            _handover.RegNumber8 = textBox65.Text;
+            _handover.ToPlan8 = textBox64.Text;
+            _handover.Comment8 = textBox63.Text;
 
-            _handover.SubmittedDate= DateTime.Now;
+            _handover.SubmittedDate = DateTime.Now;
 
             SqliteDataAccess.InsertCurrentHandover(_handover);
         }
@@ -296,7 +297,12 @@ namespace ProFormaUI.Forms
 
         private void ClearShipmentsButton_Click(object sender, EventArgs e)
         {
-            ClearShipments();
+            DialogResult iExit;
+            iExit = MessageBox.Show("All shipment info will be cleared, continue?", "Please confirm..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (iExit == DialogResult.Yes)
+            {
+                ClearShipments();
+            }
         }
 
         private void ClearShipments()
@@ -374,6 +380,12 @@ namespace ProFormaUI.Forms
             textBox63.Text = string.Empty;
 
             SaveState();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            SaveState();
+            AutoSaveLabel.Text = "Autosave active - last changes saved at " + TimeOnly.FromDateTime(DateTime.Now);
         }
     }
 }

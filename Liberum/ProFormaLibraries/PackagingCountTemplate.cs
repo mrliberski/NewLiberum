@@ -31,6 +31,7 @@ namespace ProFormaLibraries
             output += @"<td align=""center"">&nbsp;<b>Damaged Pallets</b>&nbsp;</td>";
             output += @"<td align=""center"">&nbsp;<b>Pallet Factor</b>&nbsp;</td>";
             output += @"<td align=""center"">&nbsp;<b>Total Containers</b>&nbsp;</td>";
+            output += @"<td align=""center"">&nbsp;<b>Total Coverage</b>&nbsp;</td>";
             output += @"</tr>";
 
             foreach ( PackagingCount item in packagingCounts)
@@ -41,7 +42,8 @@ namespace ProFormaLibraries
                 output += @$"<td align=""center"">&nbsp;{item.CountOfFulls}&nbsp;</td>";
                 output += @$"<td align=""center"">&nbsp;{item.CountOfDamaged}&nbsp;</td>";
                 output += @$"<td align=""center"">&nbsp;{item.PalletFactor}&nbsp;</td>";
-                output += @$"<td align=""center"">&nbsp;{item.TotalContainers}&nbsp;</td>";
+                output += @$"<td align=""center"">&nbsp;{item.TotalContainers}&nbsp;</td>"; 
+                output += @$"<td align=""center"">&nbsp;{item.PackFactor * item.TotalContainers}&nbsp;</td>";
                 output += @"</tr>";
             }
 

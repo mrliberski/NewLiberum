@@ -149,7 +149,7 @@ namespace ProFormaLibraries
             output += @"</tr>";
 
             output += "</table>";
-            output += "<br>Request generated on " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            output += "<br>" + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
             CreateEmail(output);
         }
@@ -176,7 +176,6 @@ namespace ProFormaLibraries
                 // Release resources
                 Marshal.ReleaseComObject(mailItem);
                 Marshal.ReleaseComObject(outlookApp);
-
             }
         }
     }

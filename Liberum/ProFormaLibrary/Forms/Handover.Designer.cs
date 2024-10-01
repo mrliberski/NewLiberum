@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button1 = new Button();
             DateLabel = new Label();
             label1 = new Label();
@@ -135,6 +136,8 @@
             label27 = new Label();
             label28 = new Label();
             ClearShipmentsButton = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            AutoSaveLabel = new Label();
             SuspendLayout();
             // 
             // button1
@@ -1160,13 +1163,27 @@
             // ClearShipmentsButton
             // 
             ClearShipmentsButton.FlatStyle = FlatStyle.Flat;
-            ClearShipmentsButton.Location = new Point(12, 550);
+            ClearShipmentsButton.Location = new Point(11, 599);
             ClearShipmentsButton.Name = "ClearShipmentsButton";
-            ClearShipmentsButton.Size = new Size(88, 36);
+            ClearShipmentsButton.Size = new Size(116, 88);
             ClearShipmentsButton.TabIndex = 78;
-            ClearShipmentsButton.Text = "Clear";
+            ClearShipmentsButton.Text = "Clear\r\nShipments";
             ClearShipmentsButton.UseVisualStyleBackColor = true;
             ClearShipmentsButton.Click += ClearShipmentsButton_Click;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 60000;
+            timer1.Tick += timer1_Tick;
+            // 
+            // AutoSaveLabel
+            // 
+            AutoSaveLabel.AutoSize = true;
+            AutoSaveLabel.Location = new Point(12, 824);
+            AutoSaveLabel.Name = "AutoSaveLabel";
+            AutoSaveLabel.Size = new Size(115, 20);
+            AutoSaveLabel.TabIndex = 192;
+            AutoSaveLabel.Text = "Autosave status:";
             // 
             // Handover
             // 
@@ -1175,6 +1192,7 @@
             AutoScroll = true;
             AutoSize = true;
             ClientSize = new Size(1370, 1048);
+            Controls.Add(AutoSaveLabel);
             Controls.Add(ClearShipmentsButton);
             Controls.Add(label28);
             Controls.Add(label27);
@@ -1397,5 +1415,7 @@
         private Label label27;
         private Label label28;
         private Button ClearShipmentsButton;
+        private System.Windows.Forms.Timer timer1;
+        private Label AutoSaveLabel;
     }
 }
