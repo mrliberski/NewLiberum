@@ -89,7 +89,7 @@ namespace ProFormaLibraries
         {
             //Generate email with no prompts
 
-            List<string> recipients = SqliteDataAccess.LoadPackagingCountRecipients();
+            List<string> recipients = SqliteDataAccess.LoadPackagingAlertRecipients();
             //List<string> ccList = SqliteDataAccess.LoadCC();
             string subject = "Packaging Delivery Discrepancy Alert > " + DateTime.Now.ToString();
 

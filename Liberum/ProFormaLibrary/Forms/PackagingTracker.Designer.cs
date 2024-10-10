@@ -63,9 +63,10 @@
             // AddPlusNewDeliveryButton
             // 
             AddPlusNewDeliveryButton.FlatStyle = FlatStyle.Flat;
-            AddPlusNewDeliveryButton.Location = new Point(38, 516);
+            AddPlusNewDeliveryButton.Location = new Point(33, 387);
+            AddPlusNewDeliveryButton.Margin = new Padding(3, 2, 3, 2);
             AddPlusNewDeliveryButton.Name = "AddPlusNewDeliveryButton";
-            AddPlusNewDeliveryButton.Size = new Size(354, 36);
+            AddPlusNewDeliveryButton.Size = new Size(310, 27);
             AddPlusNewDeliveryButton.TabIndex = 11;
             AddPlusNewDeliveryButton.Text = "Add + New Delivery";
             AddPlusNewDeliveryButton.UseVisualStyleBackColor = true;
@@ -74,9 +75,10 @@
             // addButton
             // 
             addButton.FlatStyle = FlatStyle.Flat;
-            addButton.Location = new Point(38, 432);
+            addButton.Location = new Point(33, 324);
+            addButton.Margin = new Padding(3, 2, 3, 2);
             addButton.Name = "addButton";
-            addButton.Size = new Size(354, 36);
+            addButton.Size = new Size(310, 27);
             addButton.TabIndex = 9;
             addButton.Text = "Add";
             addButton.UseVisualStyleBackColor = true;
@@ -85,18 +87,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(38, 99);
+            label1.Location = new Point(33, 74);
             label1.Name = "label1";
-            label1.Size = new Size(100, 20);
+            label1.Size = new Size(78, 15);
             label1.TabIndex = 65;
             label1.Text = "Delivery Time";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(39, 67);
+            label2.Location = new Point(34, 50);
             label2.Name = "label2";
-            label2.Size = new Size(99, 20);
+            label2.Size = new Size(76, 15);
             label2.TabIndex = 66;
             label2.Text = "Delivery Date";
             // 
@@ -104,118 +106,126 @@
             // 
             errorLabel.AutoSize = true;
             errorLabel.ForeColor = Color.Crimson;
-            errorLabel.Location = new Point(39, 22);
+            errorLabel.Location = new Point(34, 16);
             errorLabel.Name = "errorLabel";
-            errorLabel.Size = new Size(169, 20);
+            errorLabel.Size = new Size(134, 15);
             errorLabel.TabIndex = 68;
             errorLabel.Text = "Numeric Value Required";
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.Location = new Point(163, 63);
+            dateTimePicker1.Location = new Point(143, 47);
+            dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.RightToLeft = RightToLeft.No;
-            dateTimePicker1.Size = new Size(229, 27);
+            dateTimePicker1.Size = new Size(201, 23);
             dateTimePicker1.TabIndex = 1;
             // 
             // deliveryTimeTextBox
             // 
-            deliveryTimeTextBox.Location = new Point(163, 96);
+            deliveryTimeTextBox.Location = new Point(143, 72);
+            deliveryTimeTextBox.Margin = new Padding(3, 2, 3, 2);
             deliveryTimeTextBox.Name = "deliveryTimeTextBox";
-            deliveryTimeTextBox.Size = new Size(229, 27);
+            deliveryTimeTextBox.Size = new Size(201, 23);
             deliveryTimeTextBox.TabIndex = 2;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(38, 165);
+            label5.Location = new Point(33, 124);
             label5.Name = "label5";
-            label5.Size = new Size(87, 20);
+            label5.Size = new Size(68, 15);
             label5.TabIndex = 73;
             label5.Text = "Delivery No";
             // 
             // deliveryNoTextBox
             // 
-            deliveryNoTextBox.Location = new Point(163, 162);
+            deliveryNoTextBox.Location = new Point(143, 122);
+            deliveryNoTextBox.Margin = new Padding(3, 2, 3, 2);
             deliveryNoTextBox.Name = "deliveryNoTextBox";
-            deliveryNoTextBox.Size = new Size(229, 27);
+            deliveryNoTextBox.Size = new Size(201, 23);
             deliveryNoTextBox.TabIndex = 4;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(38, 198);
+            label6.Location = new Point(33, 148);
             label6.Name = "label6";
-            label6.Size = new Size(115, 20);
+            label6.Size = new Size(93, 15);
             label6.TabIndex = 75;
             label6.Text = "Packaging Code";
             // 
             // packagingCodeTextBox
             // 
-            packagingCodeTextBox.Location = new Point(163, 195);
+            packagingCodeTextBox.Location = new Point(143, 146);
+            packagingCodeTextBox.Margin = new Padding(3, 2, 3, 2);
             packagingCodeTextBox.Name = "packagingCodeTextBox";
-            packagingCodeTextBox.Size = new Size(229, 27);
+            packagingCodeTextBox.Size = new Size(201, 23);
             packagingCodeTextBox.TabIndex = 5;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(38, 231);
+            label7.Location = new Point(33, 173);
             label7.Name = "label7";
-            label7.Size = new Size(89, 20);
+            label7.Size = new Size(71, 15);
             label7.TabIndex = 77;
             label7.Text = "Advised Qty";
             // 
             // advisedQtyTextBox
             // 
-            advisedQtyTextBox.Location = new Point(163, 228);
+            advisedQtyTextBox.Location = new Point(143, 171);
+            advisedQtyTextBox.Margin = new Padding(3, 2, 3, 2);
             advisedQtyTextBox.Name = "advisedQtyTextBox";
-            advisedQtyTextBox.Size = new Size(229, 27);
+            advisedQtyTextBox.Size = new Size(201, 23);
             advisedQtyTextBox.TabIndex = 6;
             advisedQtyTextBox.TextChanged += advisedQtyTextBox_TextChanged;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(38, 265);
+            label8.Location = new Point(33, 199);
             label8.Name = "label8";
-            label8.Size = new Size(96, 20);
+            label8.Size = new Size(76, 15);
             label8.TabIndex = 79;
             label8.Text = "Received Qty";
             // 
             // receivedQtyTextBox
             // 
-            receivedQtyTextBox.Location = new Point(163, 261);
+            receivedQtyTextBox.Location = new Point(143, 196);
+            receivedQtyTextBox.Margin = new Padding(3, 2, 3, 2);
             receivedQtyTextBox.Name = "receivedQtyTextBox";
-            receivedQtyTextBox.Size = new Size(229, 27);
+            receivedQtyTextBox.Size = new Size(201, 23);
             receivedQtyTextBox.TabIndex = 7;
             receivedQtyTextBox.TextChanged += receivedQtyTextBox_TextChanged;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(38, 301);
+            label9.Location = new Point(33, 226);
             label9.Name = "label9";
-            label9.Size = new Size(74, 20);
+            label9.Size = new Size(61, 15);
             label9.TabIndex = 81;
             label9.Text = "Comment";
             // 
             // commentTextBox
             // 
-            commentTextBox.Location = new Point(163, 294);
+            commentTextBox.Location = new Point(143, 220);
+            commentTextBox.Margin = new Padding(3, 2, 3, 2);
             commentTextBox.Multiline = true;
             commentTextBox.Name = "commentTextBox";
             commentTextBox.ScrollBars = ScrollBars.Horizontal;
-            commentTextBox.Size = new Size(229, 96);
+            commentTextBox.Size = new Size(201, 73);
             commentTextBox.TabIndex = 8;
             // 
             // addPlusNewEntryButton
             // 
             addPlusNewEntryButton.FlatStyle = FlatStyle.Flat;
-            addPlusNewEntryButton.Location = new Point(38, 474);
+            addPlusNewEntryButton.Location = new Point(33, 356);
+            addPlusNewEntryButton.Margin = new Padding(3, 2, 3, 2);
             addPlusNewEntryButton.Name = "addPlusNewEntryButton";
-            addPlusNewEntryButton.Size = new Size(354, 36);
+            addPlusNewEntryButton.Size = new Size(310, 27);
             addPlusNewEntryButton.TabIndex = 10;
             addPlusNewEntryButton.Text = "Add + New Entry";
             addPlusNewEntryButton.UseVisualStyleBackColor = true;
@@ -224,9 +234,10 @@
             // NewDeliveryButton
             // 
             NewDeliveryButton.FlatStyle = FlatStyle.Flat;
-            NewDeliveryButton.Location = new Point(38, 558);
+            NewDeliveryButton.Location = new Point(33, 418);
+            NewDeliveryButton.Margin = new Padding(3, 2, 3, 2);
             NewDeliveryButton.Name = "NewDeliveryButton";
-            NewDeliveryButton.Size = new Size(354, 36);
+            NewDeliveryButton.Size = new Size(310, 27);
             NewDeliveryButton.TabIndex = 12;
             NewDeliveryButton.Text = "Clear + New Delivery";
             NewDeliveryButton.UseVisualStyleBackColor = true;
@@ -236,20 +247,22 @@
             // 
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(435, 63);
+            dataGridView1.Location = new Point(381, 47);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1048, 667);
+            dataGridView1.Size = new Size(917, 500);
             dataGridView1.TabIndex = 82;
             // 
             // button5
             // 
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(38, 600);
+            button5.Location = new Point(33, 450);
+            button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(354, 36);
+            button5.Size = new Size(310, 27);
             button5.TabIndex = 13;
             button5.Text = "Clear";
             button5.UseVisualStyleBackColor = true;
@@ -258,34 +271,36 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(38, 677);
+            label3.Location = new Point(33, 508);
             label3.Name = "label3";
-            label3.Size = new Size(111, 20);
+            label3.Size = new Size(87, 15);
             label3.TabIndex = 84;
             label3.Text = "Search Delivery";
             // 
             // searchDeliveryTextBox
             // 
-            searchDeliveryTextBox.Location = new Point(163, 674);
+            searchDeliveryTextBox.Location = new Point(143, 506);
+            searchDeliveryTextBox.Margin = new Padding(3, 2, 3, 2);
             searchDeliveryTextBox.Name = "searchDeliveryTextBox";
-            searchDeliveryTextBox.Size = new Size(229, 27);
+            searchDeliveryTextBox.Size = new Size(201, 23);
             searchDeliveryTextBox.TabIndex = 14;
             searchDeliveryTextBox.TextChanged += searchDeliveryTextBox_TextChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(38, 710);
+            label4.Location = new Point(33, 532);
             label4.Name = "label4";
-            label4.Size = new Size(76, 20);
+            label4.Size = new Size(62, 15);
             label4.TabIndex = 86;
             label4.Text = "Packaging";
             // 
             // searchPackagingTextBox
             // 
-            searchPackagingTextBox.Location = new Point(163, 707);
+            searchPackagingTextBox.Location = new Point(143, 530);
+            searchPackagingTextBox.Margin = new Padding(3, 2, 3, 2);
             searchPackagingTextBox.Name = "searchPackagingTextBox";
-            searchPackagingTextBox.Size = new Size(229, 27);
+            searchPackagingTextBox.Size = new Size(201, 23);
             searchPackagingTextBox.TabIndex = 15;
             searchPackagingTextBox.TextChanged += searchPackagingTextBox_TextChanged;
             // 
@@ -293,34 +308,36 @@
             // 
             SearchErrorLabel.AutoSize = true;
             SearchErrorLabel.ForeColor = Color.Crimson;
-            SearchErrorLabel.Location = new Point(39, 753);
+            SearchErrorLabel.Location = new Point(34, 565);
             SearchErrorLabel.Name = "SearchErrorLabel";
-            SearchErrorLabel.Size = new Size(56, 20);
+            SearchErrorLabel.Size = new Size(45, 15);
             SearchErrorLabel.TabIndex = 87;
             SearchErrorLabel.Text = "No hits";
             // 
             // RegTextBox
             // 
-            RegTextBox.Location = new Point(163, 129);
+            RegTextBox.Location = new Point(143, 97);
+            RegTextBox.Margin = new Padding(3, 2, 3, 2);
             RegTextBox.Name = "RegTextBox";
-            RegTextBox.Size = new Size(229, 27);
+            RegTextBox.Size = new Size(201, 23);
             RegTextBox.TabIndex = 3;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(38, 132);
+            label10.Location = new Point(33, 99);
             label10.Name = "label10";
-            label10.Size = new Size(89, 20);
+            label10.Size = new Size(70, 15);
             label10.TabIndex = 89;
             label10.Text = "Registration";
             // 
             // ExportButton
             // 
             ExportButton.FlatStyle = FlatStyle.Flat;
-            ExportButton.Location = new Point(1129, 753);
+            ExportButton.Location = new Point(988, 565);
+            ExportButton.Margin = new Padding(3, 2, 3, 2);
             ExportButton.Name = "ExportButton";
-            ExportButton.Size = new Size(354, 36);
+            ExportButton.Size = new Size(310, 27);
             ExportButton.TabIndex = 90;
             ExportButton.Text = "Export Results";
             ExportButton.UseVisualStyleBackColor = true;
@@ -328,9 +345,9 @@
             // 
             // PackagingTracker
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1583, 878);
+            ClientSize = new Size(1385, 658);
             Controls.Add(ExportButton);
             Controls.Add(RegTextBox);
             Controls.Add(label10);
@@ -360,8 +377,10 @@
             Controls.Add(errorLabel);
             Controls.Add(AddPlusNewDeliveryButton);
             Controls.Add(addButton);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PackagingTracker";
             Text = "PackagingTracker";
+            Load += PackagingTracker_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

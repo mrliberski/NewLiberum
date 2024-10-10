@@ -15,6 +15,42 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+
+
+        // Inserts visitor for stats
+        public static void InsertVisit()
+        {
+            try 
+            {
+                using (var connection = new SQLiteConnection(LoadConnectionString()))
+                {
+                    connection.Open();
+                    var cmd = connection.CreateCommand();
+                    cmd.CommandText = @"insert into Visits 
+                        (
+                            Visitor,
+                            VisitTime
+                        )
+                        values 
+                        (
+                            @Visitor,
+                            @VisitTime
+                        )";
+                    cmd.Parameters.Add(new SQLiteParameter("@Visitor", Environment.UserName));
+                    cmd.Parameters.Add(new SQLiteParameter("@VisitTime", DateTime.Now.ToString()));
+
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (Exception e) 
+            { 
+                Console.WriteLine(e.ToString());
+            }
+        }
+
+
         public static string GetLastSubmittedUserName()
         {
             //checks who was the last person submitting handover
@@ -279,8 +315,6 @@ namespace ProFormaLibraries
 
             return null; // in case of no results
         }
-
-
 
         /// <summary>
         /// Inserts record into current handover state table
@@ -772,6 +806,7 @@ namespace ProFormaLibraries
             }
         }
 
+
         public static void UpdateItem(ItemModel model, string OriginalItemName)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -898,14 +933,6 @@ namespace ProFormaLibraries
             }
         }
 
-        //public static List<InvoiceItem> PopulateItems(int invoice)
-        //{
-        //    using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-        //    {
-        //        var output = cnn.Query<InvoiceItem>($"select * from InvoiceItems where InvoiceNumber = @invoice", new { invoice });
-        //        return output.ToList();
-        //    }
-        //}
 
         public static List<ItemModel> LoadItems(string SelectedCustomer)
         {
@@ -1036,6 +1063,14 @@ namespace ProFormaLibraries
             }
         }
 
+        public static List<string> LoadPackagingAlertRecipients()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select UserName from PackagingAlertRecipients", new DynamicParameters());
+                return output.ToList();
+            }
+        }
         public static List<string> LoadPackagingCountRecipients()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))

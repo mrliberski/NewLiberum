@@ -62,7 +62,7 @@ namespace ProFormaLibraries
                             <th>Currency: {Customer.Currency}</th>
                             <th>Incoterms: {Customer.Incoterms}</th>
                             <th>Reference Number: {Invoice.ReferenceNumber}</th>
-                            <th>Kaban Info: {Invoice.KanbanNumber}</th>
+                            <th>Kanban Info: {Invoice.KanbanNumber}</th>
                         </tr></table>
 
                         <hr>
@@ -221,7 +221,7 @@ namespace ProFormaLibraries
                             <th>Currency: {Customer.Currency}</th>
                             <th>Incoterms: {Customer.Incoterms}</th>
                             <th>Reference Number: {Invoice.ReferenceNumber}</th>
-                            <th>Kaban Info: {Invoice.KanbanNumber}</th>
+                            <th>Kanban Info: {Invoice.KanbanNumber}</th>
                         </tr></table>
 
                         <hr>";

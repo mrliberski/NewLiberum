@@ -23,7 +23,8 @@ namespace ProFormaUI.Forms
             LoadTheme();
             LoadShiftsDropDown();
             ReloadForm();
-            timer1.Start();
+            Autosave();
+            
         }
 
         //Load drop down list of shifts
@@ -381,6 +382,17 @@ namespace ProFormaUI.Forms
 
             SaveState();
         }
+
+        // Only enable autosave for these two
+        //TODO - move it to sql
+        private void Autosave()
+        {
+            if (Environment.UserName.ToUpper() == "RICHARD.PUGH" || Environment.UserName.ToUpper() == "MARCIN.CHRZASZCZ")
+            {
+                timer1.Start();
+            }
+        }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {

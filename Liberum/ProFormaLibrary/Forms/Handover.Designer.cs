@@ -1181,9 +1181,9 @@
             AutoSaveLabel.AutoSize = true;
             AutoSaveLabel.Location = new Point(12, 824);
             AutoSaveLabel.Name = "AutoSaveLabel";
-            AutoSaveLabel.Size = new Size(115, 20);
+            AutoSaveLabel.Size = new Size(128, 20);
             AutoSaveLabel.TabIndex = 192;
-            AutoSaveLabel.Text = "Autosave status:";
+            AutoSaveLabel.Text = "Autosave inactive.";
             // 
             // Handover
             // 

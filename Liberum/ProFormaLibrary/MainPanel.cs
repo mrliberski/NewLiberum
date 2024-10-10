@@ -33,6 +33,11 @@ namespace ProFormaUI
         public MainPanel()
         {
             InitializeComponent();
+
+            //Log visitor
+            SqliteDataAccess.InsertVisit();
+
+            // style formatting 
             random = new Random();
             btnCloseChildform.Visible = false;
 

@@ -210,7 +210,12 @@ namespace ProFormaUI.Forms
         // IF discrepancy is detected this block is triggered - we send notification
         private void SendDiscrepancyNotification(PackagingTrackerItem item)
         {
-            PackagingCountTemplate.SendPackagingAlert(item);
+            try 
+            {
+                PackagingCountTemplate.SendPackagingAlert(item);
+            } 
+            catch (Exception ex) { errorLabel.Text = ex.Message; }
+            
             // TODO - once validated, message box can be switched off
             // MessageBox.Show("Discrepancy detected - notification was sent.");
         }
@@ -312,7 +317,7 @@ namespace ProFormaUI.Forms
         //EXPORT RESULTS TO CSV AND OPEN FOLDER
         private void ExportButton_Click(object sender, EventArgs e)
         {
-            try 
+            try
             {
                 if (_items.Count > 0)
                 {
@@ -322,10 +327,10 @@ namespace ProFormaUI.Forms
                 }
                 else
                 { MessageBox.Show("No hits."); }
-            } 
-            catch (System.Exception ex) 
-            { 
-                errorLabel.Text = ex.Message; 
+            }
+            catch (System.Exception ex)
+            {
+                errorLabel.Text = ex.Message;
             }
         }
 
@@ -346,6 +351,11 @@ namespace ProFormaUI.Forms
             //OPEN FOLDER
             System.Diagnostics.Process.Start("explorer.exe", @".\CSV");
 
+
+        }
+
+        private void PackagingTracker_Load(object sender, EventArgs e)
+        {
 
         }
     }
