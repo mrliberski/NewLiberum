@@ -10,11 +10,45 @@ using System.Media;
 using System.Windows.Forms;
 using OfficeOpenXml;
 using DocumentFormat.OpenXml.Office2016.Excel;
+using System.Web;
 
 namespace ProFormaLibraries
 {
     public class PackagingCountTemplate
     {
+        public static string InternalPackagingCountEmailBody(List<PackagingCount> count)
+        {
+            string output = "";
+
+            output += @"<html><head><style>body {color: #3d3d40;font-size:10pt;font-family:Calibri;}</style></head><body>";
+            output += @"<h3>Packaging Count Report&nbsp;</h3>";
+            output += @"<table border=""1"" cellspacing=""0"" cellpadding=""0"" style=font-size:10pt;font-family:Calibri; border-collapse: collapse; text-align:center; width:90%;>";
+
+            output += @"<tr><td align=""center"">&nbsp;<b>Packaging Name</b>&nbsp;</td>";
+            output += @"<td align=""center"">&nbsp;<b>Empties</b>&nbsp;</td>";
+
+            output += @"<td align=""center"">&nbsp;<b>Pallet Factor</b>&nbsp;</td>";
+            output += @"<td align=""center"">&nbsp;<b>Fill Factor</b>&nbsp;</td>";
+            output += @"<td align=""center"">&nbsp;<b>Total Coverage</b>&nbsp;</td>";
+            output += @"</tr>";
+
+
+            foreach (PackagingCount item in count)
+            {
+                output += @$"<tr><td align=""center"">&nbsp;{item.PackagingName}&nbsp;</td>";
+                output += @$"<td align=""center"">&nbsp;{item.CountOfEmpties}&nbsp;</td>";
+
+                output += @$"<td align=""center"">&nbsp;{item.PalletFactor}&nbsp;</td>";
+                output += @$"<td align=""center"">&nbsp;{item.PackFactor}&nbsp;</td>";
+                output += @$"<td align=""center"">&nbsp;{item.PackFactor * item.TotalContainers}&nbsp;</td>";
+                output += @"</tr>";
+            }
+
+            output += "</table>";
+            output += "<br>Counted on " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+
+            return output;
+        }
         public static string PackagingCountEmailBody(List<PackagingCount> packagingCounts)
         {
             string output = "buhaha";
@@ -48,30 +82,68 @@ namespace ProFormaLibraries
             }
 
             output += "</table>";
-            output += "<br>Report generated on " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            output += "<br>Counted on " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
             return output;
         }
 
-        public static void SendPackagingCount(string PackagingCountemailBody) 
+        public static void SendInternalPackagingCount(string email)
         {
             //Generate email
             DialogResult iExit;
             iExit = MessageBox.Show("New count report will be created, continue?", "Please confirm..", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (iExit == DialogResult.Yes)
             {
-                //TODO - new recipient list must be created and linked accordingly
-                //List<string> recipients = SqliteDataAccess.LoadRecipients();
-                List<string> recipients = SqliteDataAccess.LoadPackagingCountRecipients();
-                //List<string> ccList = SqliteDataAccess.LoadCC();
-                string subject = "Packaging Count > " + DateTime.Now.ToString();
+                try
+                {
+                    //List<string> recipients = SqliteDataAccess.LoadRecipients();
+                    List<string> recipients = SqliteDataAccess.LoadPackagingCountRecipients();
+                    //List<string> ccList = SqliteDataAccess.LoadCC();
+                    string subject = "Internal Packaging Count > " + DateTime.Now.ToString();
 
-                Outlook.Application outlookApp = new Outlook.Application();
-                Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
+                    Outlook.Application outlookApp = new Outlook.Application();
+                    Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
 
-                mailItem.To = string.Join(";", recipients);// + "; Leighton, Rebecca; Wood, Craig; Richards, Cyrus";
-                    //mailItem.CC = string.Join(";", ccList);
-                    // Set the subject
+                    mailItem.To = string.Join(";", recipients);// + "; Leighton, Rebecca; Wood, Craig; Richards, Cyrus";
+                                                               //mailItem.CC = string.Join(";", ccList);
+                                                               // Set the subject
+                    mailItem.Subject = subject;
+                    // Set the HTML body
+                    mailItem.HTMLBody = email;
+                    // Display the email
+                    mailItem.Display();
+
+                    // Release resources
+                    Marshal.ReleaseComObject(mailItem);
+                    Marshal.ReleaseComObject(outlookApp);
+                }
+                catch (System.Exception ex) 
+                {
+                    MessageBox.Show(ex.Message, "Damn");
+                }
+            }
+        }
+        public static void SendPackagingCount(string PackagingCountemailBody) 
+        {
+
+            //Generate email
+            DialogResult iExit;
+            iExit = MessageBox.Show("New count report will be created, continue?", "Please confirm..", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (iExit == DialogResult.Yes)
+            {
+                try
+                {
+                    //List<string> recipients = SqliteDataAccess.LoadRecipients();
+                    List<string> recipients = SqliteDataAccess.LoadPackagingCountRecipients();
+                    //List<string> ccList = SqliteDataAccess.LoadCC();
+                    string subject = "Packaging Count > " + DateTime.Now.ToString();
+
+                    Outlook.Application outlookApp = new Outlook.Application();
+                    Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
+
+                    mailItem.To = string.Join(";", recipients);// + "; Leighton, Rebecca; Wood, Craig; Richards, Cyrus";
+                                                               //mailItem.CC = string.Join(";", ccList);
+                                                               // Set the subject
                     mailItem.Subject = subject;
                     // Set the HTML body
                     mailItem.HTMLBody = PackagingCountemailBody;
@@ -81,7 +153,11 @@ namespace ProFormaLibraries
                     // Release resources
                     Marshal.ReleaseComObject(mailItem);
                     Marshal.ReleaseComObject(outlookApp);
-
+                }
+                catch (System.Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Damn");
+                }
             }
         }
 

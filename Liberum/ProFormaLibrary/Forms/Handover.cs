@@ -387,7 +387,7 @@ namespace ProFormaUI.Forms
         //TODO - move it to sql
         private void Autosave()
         {
-            if (Environment.UserName.ToUpper() == "RICHARD.PUGH" || Environment.UserName.ToUpper() == "MARCIN.CHRZASZCZ")
+            if (Environment.UserName.ToUpper() == "RICHARD.PUGH" || Environment.UserName.ToUpper() == "MARCIN.CHRZASZCZ" || Environment.UserName.ToUpper() == "PANLI" )
             {
                 timer1.Start();
             }

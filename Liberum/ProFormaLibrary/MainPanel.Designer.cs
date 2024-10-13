@@ -34,8 +34,8 @@
             button10 = new Button();
             button9 = new Button();
             button8 = new Button();
-            button7 = new Button();
             button6 = new Button();
+            button7 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
@@ -64,11 +64,11 @@
             // 
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
-            panelMenu.Controls.Add(button10);
             panelMenu.Controls.Add(button9);
+            panelMenu.Controls.Add(button10);
             panelMenu.Controls.Add(button8);
-            panelMenu.Controls.Add(button7);
             panelMenu.Controls.Add(button6);
+            panelMenu.Controls.Add(button7);
             panelMenu.Controls.Add(button5);
             panelMenu.Controls.Add(button4);
             panelMenu.Controls.Add(button3);
@@ -107,16 +107,6 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
-            // button7
-            // 
-            resources.ApplyResources(button7, "button7");
-            button7.FlatAppearance.BorderSize = 0;
-            button7.ForeColor = Color.Gainsboro;
-            button7.Image = Properties.Resources.shopping_list;
-            button7.Name = "button7";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
-            // 
             // button6
             // 
             resources.ApplyResources(button6, "button6");
@@ -126,6 +116,16 @@
             button6.Name = "button6";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            resources.ApplyResources(button7, "button7");
+            button7.FlatAppearance.BorderSize = 0;
+            button7.ForeColor = Color.Gainsboro;
+            button7.Image = Properties.Resources.shopping_list;
+            button7.Name = "button7";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button5
             // 

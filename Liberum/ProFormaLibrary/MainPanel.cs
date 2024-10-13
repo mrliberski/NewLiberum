@@ -269,7 +269,7 @@ namespace ProFormaUI
         private void button7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            //OpenChildForm(new Forms.formCounts(), sender);
+            OpenChildForm(new Forms.InternalPackaging(), sender);
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -281,7 +281,7 @@ namespace ProFormaUI
         private void button9_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            //OpenChildForm(new Forms.formCounts(), sender);
+            OpenChildForm(new Forms.SubmitBug(), sender);
         }
 
         // exit button

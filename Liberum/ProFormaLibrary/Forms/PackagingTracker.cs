@@ -188,10 +188,19 @@ namespace ProFormaUI.Forms
             dataGridView1.DataSource = null;
             _items = SqliteDataAccess.PullPackagingTracker();
             dataGridView1.DataSource = _items;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.Columns["Id"].Visible = false;
             dataGridView1.Columns["DeliveryTime"].Visible = false;
+            dataGridView1.Columns["EntryDate"].Visible = false;
 
-            //dataGridView1.Columns["DeliveryDate"].Name = "Delivery Date";
+            dataGridView1.Columns[9].HeaderText = "Registration";
+            dataGridView1.Columns[1].HeaderText = "Delivery Date";
+            dataGridView1.Columns[3].HeaderText = "Delivery Number";
+            dataGridView1.Columns[4].HeaderText = "Packaging Code";
+            dataGridView1.Columns[5].HeaderText = "Qty Advised";
+            dataGridView1.Columns[6].HeaderText = "Qty Received";
+
+            // dataGridView1.Columns["DeliveryDate"].AutoSizeMode; 
             //dataGridView1.Columns[1].Name = "Column2";
             //dataGridView1.Columns[2].Name = "Column3";
             //dataGridView1.Columns[3].Name = "Column4";

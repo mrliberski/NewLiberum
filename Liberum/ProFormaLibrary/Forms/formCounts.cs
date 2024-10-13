@@ -71,7 +71,6 @@ namespace ProFormaUI.Forms
             }
 
             errorLabel.Visible = false;
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

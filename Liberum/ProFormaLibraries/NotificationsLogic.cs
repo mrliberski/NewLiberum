@@ -17,22 +17,26 @@ namespace ProFormaLibraries
         // UPDATE NOTE
         public static void FirstNote()
         {
-            DateTime Expiration = new DateTime(2024, 10, 01);
+            DateTime Expiration = new DateTime(2024, 10, 15);
             if (Expiration > DateTime.Today)
             {
                 //MessageBox.Show(@"Welcome, This is a demo software and is provided with on as-is basis. It comes with no warranties whatsoever. ", "Licence Expiry date: " + Expiration.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show(@"Hola, 
 New updates:
 
-1. Handover form is all wired up and should work as expected. Let me know if it misbehaves. 
+1. Internal Packaging count form has been wired up and is ready to use
+2. Additional form was added to report bugs or submit ideas
 
 Upcoming:
 
-1. Daily packagig count submitted via form will be inserted in database. 
-2. Outbound packaging tracker. 
-3. Links and what not
+1. Handover will be split into 3 individual form to improve readibility:
+    -   Logistic
+    -   Direct Supply
+    -   Transports
 
-                ", "New updates 30.09.2024", MessageBoxButtons.OK, MessageBoxIcon.Information);
+3. Links and control page - I need list form yourselves
+
+                ", "New updates 14.10.2024", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

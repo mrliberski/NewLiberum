@@ -1185,7 +1185,7 @@
             CIDcoverPalletFactorlabel.Name = "CIDcoverPalletFactorlabel";
             CIDcoverPalletFactorlabel.Size = new Size(25, 20);
             CIDcoverPalletFactorlabel.TabIndex = 68;
-            CIDcoverPalletFactorlabel.Text = "28";
+            CIDcoverPalletFactorlabel.Text = "14";
             // 
             // CIDcoverDamagedtextBox
             // 

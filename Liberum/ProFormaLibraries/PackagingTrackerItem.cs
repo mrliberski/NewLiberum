@@ -24,7 +24,7 @@ namespace ProFormaLibraries
 
         public string? Comment { get; set; }
 
-        public string? EntryDate {  get { return DateTime.Now.ToString(); } }
+        public string? EntryDate {  get { return DateTime.Now.ToString(); }  }
 
         public static string? CreatedBy { get { return Environment.UserName; } }
 

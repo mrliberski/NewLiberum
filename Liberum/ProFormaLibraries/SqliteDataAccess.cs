@@ -15,7 +15,36 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static void SubmitBug(string Message)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(LoadConnectionString()))
+                {
+                    connection.Open();
+                    var cmd = connection.CreateCommand();
+                    cmd.CommandText = @"insert into Bugs 
+                        (
+                            Date,
+                            Message
+                        )
+                        values 
+                        (
+                            @Date,
+                            @Message
+                        )";
+                    cmd.Parameters.Add(new SQLiteParameter("@Date", DateTime.Now.ToString()));
+                    cmd.Parameters.Add(new SQLiteParameter("@Message", Message));
 
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (Exception e) 
+            {
+                MessageBox.Show(e.Message, "damn");
+            }
+        }
 
         // Inserts visitor for stats
         public static void InsertVisit()
@@ -49,7 +78,6 @@ namespace ProFormaLibraries
                 Console.WriteLine(e.ToString());
             }
         }
-
 
         public static string GetLastSubmittedUserName()
         {
