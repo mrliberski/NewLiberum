@@ -158,7 +158,14 @@ namespace ProFormaLibraries
                         </tr></table></div>
                         <div style = ""font-size:9pt; font-family:Calibri; border-collapse: collapse; text-align:center; align-items: center; "">
                         <hr>The exporter of the products covered by this document (EORI GB683819882000) declares that, except where otherwise clearly indicated, these products are of UK preferential origin.
-                        <br><br><i>Customer specific note: {Customer.CustomerFootNote}</i><hr><div>Issued by: {Invoice.Creator}</div></div></body></html>";
+                        <br><br><i>Customer note: {Customer.CustomerFootNote}</i><hr>
+
+                        Name of exporter: Antolin Interiors UK Ltd. <br>
+Antolin Redditch is a division of Antolin Interiors UK Limited, registered office 5 Apollo Way, Warwick, CV34 6RW, reg no 1676532, VAT no. GB 683 8198 82><br>
+Account name:- Antolin Interiors UK Limited. Account number:- 72228947 Bank key:- 40-09-17. IBAN:- GB09HBUK40091772228947<br>
+                        Date and place of export: Redditch, {DateTime.Now.ToString("dd/MM/yyyy")}
+
+                            <hr><div>Issued by: {Invoice.Creator}</div></div></body></html>";
 
             return InvoiceContent; 
             
@@ -317,7 +324,17 @@ namespace ProFormaLibraries
                         </tr></table></div>
                         <div style = ""font-size:9pt; font-family:Calibri; border-collapse: collapse; text-align:center; align-items: center; "">
                         <hr>The exporter of the products covered by this document (EORI GB683819882000) declares that, except where otherwise clearly indicated, these products are of UK preferential origin.
-                        <br><br><i>Customer specific note: {Customer.CustomerFootNote}</i><hr><div>Issued by: {Invoice.Creator}</div></div></body></html>";
+                        <br><br><i>Customer note: {Customer.CustomerFootNote}</i><hr>
+
+                        Name of exporter: Antolin Interiors UK Ltd. <br>
+Antolin Redditch is a division of Antolin Interiors UK Limited, registered office 5 Apollo Way, Warwick, CV34 6RW, reg no 1676532, VAT no. GB 683 8198 82><br>
+Account name:- Antolin Interiors UK Limited. Account number:- 72228947 Bank key:- 40-09-17. IBAN:- GB09HBUK40091772228947<br>
+                        Date and place of export: Redditch, {DateTime.Now.ToString("dd/MM/yyyy")}
+
+
+
+
+<hr><div>Issued by: {Invoice.Creator}</div></div></body></html>";
 
             return InvoiceContent;
 

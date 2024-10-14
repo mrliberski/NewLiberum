@@ -15,6 +15,58 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static void Insertdiscrepancy(PackagingTrackerItem item)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(LoadConnectionString()))
+                {
+                    connection.Open();
+                    var cmd = connection.CreateCommand();
+                    cmd.CommandText = @"insert into Discrepancies
+                        (
+                            Date,
+                            DeliveryDate,
+                            User, 
+                            Registration, 
+                            DeliveryNumber,
+                            PackagingCode, 
+                            AdvisedQty, 
+                            ReceivedQty, 
+                            Comment
+                        )
+                        values 
+                        (
+                            @Date,
+                            @DeliveryDate,
+                            @User, 
+                            @Registration, 
+                            @DeliveryNumber,
+                            @PackagingCode, 
+                            @AdvisedQty, 
+                            @ReceivedQty, 
+                            @Comment
+                        )";
+                    cmd.Parameters.Add(new SQLiteParameter("@Date", DateTime.Now.ToString()));
+                    cmd.Parameters.Add(new SQLiteParameter("@DeliveryDate", item.DeliveryDate));
+                    cmd.Parameters.Add(new SQLiteParameter("@User", Environment.UserName));
+                    cmd.Parameters.Add(new SQLiteParameter("@Registration", item.RegNumber));
+                    cmd.Parameters.Add(new SQLiteParameter("@DeliveryNumber", item.DeliveryNumber));
+                    cmd.Parameters.Add(new SQLiteParameter("@PackagingCode", item.PackagingCode));
+                    cmd.Parameters.Add(new SQLiteParameter("@AdvisedQty", item.AdvisedQty));
+                    cmd.Parameters.Add(new SQLiteParameter("@ReceivedQty", item.ReceivedQty));
+                    cmd.Parameters.Add(new SQLiteParameter("@Comment", item.Comment));
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "damn");
+            }
+        }
+
         public static void SubmitBug(string Message)
         {
             try

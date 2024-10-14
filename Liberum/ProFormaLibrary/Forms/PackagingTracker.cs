@@ -169,6 +169,7 @@ namespace ProFormaUI.Forms
                 try
                 {
                     SendDiscrepancyNotification(item);
+                    SqliteDataAccess.Insertdiscrepancy(item);
                 }
                 catch (Exception ex)
                 {
