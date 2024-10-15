@@ -124,5 +124,7 @@ namespace ProFormaLibraries
         //SUBMITION
         public DateTime SubmittedDate { get; set; }
         public static string? CreatedBy { get { return Environment.UserName; } }
+
+        public int HandoverNumber { get; set; }
     }
 }

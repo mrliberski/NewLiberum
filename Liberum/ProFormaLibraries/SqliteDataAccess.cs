@@ -164,6 +164,21 @@ namespace ProFormaLibraries
             return Shift;
         }
 
+
+        public static int CheckHandoverVersion()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select HandoverNumber from CurrentHandover WHERE Id=1").FirstOrDefault();
+                if (output != null)
+                {
+                    return int.Parse(output);
+                }
+                else
+ { return 0; }
+            }
+        }
+
         public static CurrentHandoverModel FetchCurrentState()
         {
             string connectionString = LoadConnectionString();
@@ -263,6 +278,8 @@ namespace ProFormaLibraries
                             string _RegNumber8 = reader.GetString(reader.GetOrdinal("RegNumber8"));
                             string _ToPlan8 = reader.GetString(reader.GetOrdinal("ToPlan8"));
                             string _Comment8 = reader.GetString(reader.GetOrdinal("Comment8"));
+
+                            int _HandoverVersion = int.Parse(reader.GetString(reader.GetOrdinal("HandoverNumber")));
 
                             //DespatchPlan9,
                             //Arrival9,
@@ -366,7 +383,9 @@ namespace ProFormaLibraries
                                 LastSeq8 = _LastSeq8,
                                 RegNumber8 = _RegNumber8,
                                 ToPlan8 = _ToPlan8,
-                                Comment8 = _Comment8
+                                Comment8 = _Comment8,
+
+                                HandoverNumber = _HandoverVersion
 
                                 //DespatchPlan9 = _,
                                 //Arrival9 = _,
@@ -480,8 +499,11 @@ namespace ProFormaLibraries
                             ToPlan8=@ToPlan8,
                             Comment8=@Comment8,
                             SubmittedDate=@SubmittedDate,
-                            CreatedBy=@CreatedBy
-                                WHERE
+                            CreatedBy=@CreatedBy, 
+                            HandoverNumber = @HandoverNumber
+
+                            WHERE
+
                             Id = 1
                         ", new
                 {
@@ -560,7 +582,8 @@ namespace ProFormaLibraries
                     ToPlan8 = CurrentHandover.ToPlan8,
                     Comment8 = CurrentHandover.Comment8,
                     SubmittedDate = CurrentHandover.SubmittedDate,
-                    CreatedBy = Environment.UserName
+                    CreatedBy = Environment.UserName,
+                    HandoverNumber = CurrentHandover.HandoverNumber
 
                 });
             }

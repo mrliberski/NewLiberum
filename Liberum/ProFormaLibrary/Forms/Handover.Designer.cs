@@ -188,6 +188,7 @@
             HSTextBox.ScrollBars = ScrollBars.Vertical;
             HSTextBox.Size = new Size(1157, 59);
             HSTextBox.TabIndex = 7;
+            HSTextBox.TextChanged += HSTextBox_TextChanged;
             // 
             // label2
             // 
@@ -215,6 +216,7 @@
             textBox1.ScrollBars = ScrollBars.Vertical;
             textBox1.Size = new Size(1157, 59);
             textBox1.TabIndex = 8;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
@@ -233,6 +235,7 @@
             textBox2.ScrollBars = ScrollBars.Vertical;
             textBox2.Size = new Size(1157, 59);
             textBox2.TabIndex = 9;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label4
             // 
@@ -251,6 +254,7 @@
             textBox3.ScrollBars = ScrollBars.Vertical;
             textBox3.Size = new Size(1157, 59);
             textBox3.TabIndex = 10;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label5
             // 
@@ -269,6 +273,7 @@
             textBox4.ScrollBars = ScrollBars.Vertical;
             textBox4.Size = new Size(1157, 59);
             textBox4.TabIndex = 11;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label6
             // 
@@ -287,6 +292,7 @@
             textBox5.ScrollBars = ScrollBars.Vertical;
             textBox5.Size = new Size(1157, 59);
             textBox5.TabIndex = 12;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label7
             // 
@@ -305,6 +311,7 @@
             textBox6.ScrollBars = ScrollBars.Vertical;
             textBox6.Size = new Size(1157, 59);
             textBox6.TabIndex = 13;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // label8
             // 
@@ -324,6 +331,7 @@
             textBox7.Size = new Size(86, 27);
             textBox7.TabIndex = 14;
             textBox7.TextAlign = HorizontalAlignment.Center;
+            textBox7.TextChanged += textBox7_TextChanged;
             // 
             // label9
             // 
@@ -361,6 +369,7 @@
             textBox8.Size = new Size(86, 27);
             textBox8.TabIndex = 15;
             textBox8.TextAlign = HorizontalAlignment.Center;
+            textBox8.TextChanged += textBox8_TextChanged;
             // 
             // label12
             // 
@@ -380,6 +389,7 @@
             textBox9.Size = new Size(86, 27);
             textBox9.TabIndex = 16;
             textBox9.TextAlign = HorizontalAlignment.Center;
+            textBox9.TextChanged += textBox9_TextChanged;
             // 
             // label13
             // 
@@ -399,6 +409,7 @@
             textBox10.Size = new Size(86, 27);
             textBox10.TabIndex = 17;
             textBox10.TextAlign = HorizontalAlignment.Center;
+            textBox10.TextChanged += textBox10_TextChanged;
             // 
             // label14
             // 
@@ -418,6 +429,7 @@
             textBox11.Size = new Size(86, 27);
             textBox11.TabIndex = 18;
             textBox11.TextAlign = HorizontalAlignment.Center;
+            textBox11.TextChanged += textBox11_TextChanged;
             // 
             // label15
             // 
@@ -437,6 +449,7 @@
             textBox12.Size = new Size(86, 27);
             textBox12.TabIndex = 19;
             textBox12.TextAlign = HorizontalAlignment.Center;
+            textBox12.TextChanged += textBox12_TextChanged;
             // 
             // label16
             // 
@@ -456,6 +469,7 @@
             textBox13.Size = new Size(98, 27);
             textBox13.TabIndex = 20;
             textBox13.TextAlign = HorizontalAlignment.Center;
+            textBox13.TextChanged += textBox13_TextChanged;
             // 
             // label17
             // 
@@ -474,6 +488,7 @@
             textBox14.ScrollBars = ScrollBars.Horizontal;
             textBox14.Size = new Size(500, 27);
             textBox14.TabIndex = 21;
+            textBox14.TextChanged += textBox14_TextChanged;
             // 
             // label18
             // 
@@ -501,6 +516,7 @@
             textBox15.ScrollBars = ScrollBars.Horizontal;
             textBox15.Size = new Size(500, 27);
             textBox15.TabIndex = 29;
+            textBox15.TextChanged += textBox15_TextChanged;
             // 
             // textBox16
             // 
@@ -511,6 +527,7 @@
             textBox16.Size = new Size(98, 27);
             textBox16.TabIndex = 28;
             textBox16.TextAlign = HorizontalAlignment.Center;
+            textBox16.TextChanged += textBox16_TextChanged;
             // 
             // textBox17
             // 
@@ -521,6 +538,7 @@
             textBox17.Size = new Size(86, 27);
             textBox17.TabIndex = 27;
             textBox17.TextAlign = HorizontalAlignment.Center;
+            textBox17.TextChanged += textBox17_TextChanged;
             // 
             // textBox18
             // 
@@ -531,6 +549,7 @@
             textBox18.Size = new Size(86, 27);
             textBox18.TabIndex = 26;
             textBox18.TextAlign = HorizontalAlignment.Center;
+            textBox18.TextChanged += textBox18_TextChanged;
             // 
             // textBox19
             // 
@@ -541,6 +560,7 @@
             textBox19.Size = new Size(86, 27);
             textBox19.TabIndex = 25;
             textBox19.TextAlign = HorizontalAlignment.Center;
+            textBox19.TextChanged += textBox19_TextChanged;
             // 
             // textBox20
             // 
@@ -551,6 +571,7 @@
             textBox20.Size = new Size(86, 27);
             textBox20.TabIndex = 24;
             textBox20.TextAlign = HorizontalAlignment.Center;
+            textBox20.TextChanged += textBox20_TextChanged;
             // 
             // textBox21
             // 
@@ -561,6 +582,7 @@
             textBox21.Size = new Size(86, 27);
             textBox21.TabIndex = 23;
             textBox21.TextAlign = HorizontalAlignment.Center;
+            textBox21.TextChanged += textBox21_TextChanged;
             // 
             // textBox22
             // 
@@ -571,6 +593,7 @@
             textBox22.Size = new Size(86, 27);
             textBox22.TabIndex = 22;
             textBox22.TextAlign = HorizontalAlignment.Center;
+            textBox22.TextChanged += textBox22_TextChanged;
             // 
             // label20
             // 
@@ -589,6 +612,7 @@
             textBox23.ScrollBars = ScrollBars.Horizontal;
             textBox23.Size = new Size(500, 27);
             textBox23.TabIndex = 37;
+            textBox23.TextChanged += textBox23_TextChanged;
             // 
             // textBox24
             // 
@@ -599,6 +623,7 @@
             textBox24.Size = new Size(98, 27);
             textBox24.TabIndex = 36;
             textBox24.TextAlign = HorizontalAlignment.Center;
+            textBox24.TextChanged += textBox24_TextChanged;
             // 
             // textBox25
             // 
@@ -609,6 +634,7 @@
             textBox25.Size = new Size(86, 27);
             textBox25.TabIndex = 35;
             textBox25.TextAlign = HorizontalAlignment.Center;
+            textBox25.TextChanged += textBox25_TextChanged;
             // 
             // textBox26
             // 
@@ -619,6 +645,7 @@
             textBox26.Size = new Size(86, 27);
             textBox26.TabIndex = 34;
             textBox26.TextAlign = HorizontalAlignment.Center;
+            textBox26.TextChanged += textBox26_TextChanged;
             // 
             // textBox27
             // 
@@ -629,6 +656,7 @@
             textBox27.Size = new Size(86, 27);
             textBox27.TabIndex = 33;
             textBox27.TextAlign = HorizontalAlignment.Center;
+            textBox27.TextChanged += textBox27_TextChanged;
             // 
             // textBox28
             // 
@@ -639,6 +667,7 @@
             textBox28.Size = new Size(86, 27);
             textBox28.TabIndex = 32;
             textBox28.TextAlign = HorizontalAlignment.Center;
+            textBox28.TextChanged += textBox28_TextChanged;
             // 
             // textBox29
             // 
@@ -649,6 +678,7 @@
             textBox29.Size = new Size(86, 27);
             textBox29.TabIndex = 31;
             textBox29.TextAlign = HorizontalAlignment.Center;
+            textBox29.TextChanged += textBox29_TextChanged;
             // 
             // textBox30
             // 
@@ -659,6 +689,7 @@
             textBox30.Size = new Size(86, 27);
             textBox30.TabIndex = 30;
             textBox30.TextAlign = HorizontalAlignment.Center;
+            textBox30.TextChanged += textBox30_TextChanged;
             // 
             // label21
             // 
@@ -677,6 +708,7 @@
             textBox31.ScrollBars = ScrollBars.Horizontal;
             textBox31.Size = new Size(500, 27);
             textBox31.TabIndex = 45;
+            textBox31.TextChanged += textBox31_TextChanged;
             // 
             // textBox32
             // 
@@ -687,6 +719,7 @@
             textBox32.Size = new Size(98, 27);
             textBox32.TabIndex = 44;
             textBox32.TextAlign = HorizontalAlignment.Center;
+            textBox32.TextChanged += textBox32_TextChanged;
             // 
             // textBox33
             // 
@@ -697,6 +730,7 @@
             textBox33.Size = new Size(86, 27);
             textBox33.TabIndex = 43;
             textBox33.TextAlign = HorizontalAlignment.Center;
+            textBox33.TextChanged += textBox33_TextChanged;
             // 
             // textBox34
             // 
@@ -707,6 +741,7 @@
             textBox34.Size = new Size(86, 27);
             textBox34.TabIndex = 42;
             textBox34.TextAlign = HorizontalAlignment.Center;
+            textBox34.TextChanged += textBox34_TextChanged;
             // 
             // textBox35
             // 
@@ -717,6 +752,7 @@
             textBox35.Size = new Size(86, 27);
             textBox35.TabIndex = 41;
             textBox35.TextAlign = HorizontalAlignment.Center;
+            textBox35.TextChanged += textBox35_TextChanged;
             // 
             // textBox36
             // 
@@ -727,6 +763,7 @@
             textBox36.Size = new Size(86, 27);
             textBox36.TabIndex = 40;
             textBox36.TextAlign = HorizontalAlignment.Center;
+            textBox36.TextChanged += textBox36_TextChanged;
             // 
             // textBox37
             // 
@@ -737,6 +774,7 @@
             textBox37.Size = new Size(86, 27);
             textBox37.TabIndex = 39;
             textBox37.TextAlign = HorizontalAlignment.Center;
+            textBox37.TextChanged += textBox37_TextChanged;
             // 
             // textBox38
             // 
@@ -747,6 +785,7 @@
             textBox38.Size = new Size(86, 27);
             textBox38.TabIndex = 38;
             textBox38.TextAlign = HorizontalAlignment.Center;
+            textBox38.TextChanged += textBox38_TextChanged;
             // 
             // label22
             // 
@@ -765,6 +804,7 @@
             textBox39.ScrollBars = ScrollBars.Horizontal;
             textBox39.Size = new Size(500, 27);
             textBox39.TabIndex = 53;
+            textBox39.TextChanged += textBox39_TextChanged;
             // 
             // textBox40
             // 
@@ -775,6 +815,7 @@
             textBox40.Size = new Size(98, 27);
             textBox40.TabIndex = 52;
             textBox40.TextAlign = HorizontalAlignment.Center;
+            textBox40.TextChanged += textBox40_TextChanged;
             // 
             // textBox41
             // 
@@ -785,6 +826,7 @@
             textBox41.Size = new Size(86, 27);
             textBox41.TabIndex = 51;
             textBox41.TextAlign = HorizontalAlignment.Center;
+            textBox41.TextChanged += textBox41_TextChanged;
             // 
             // textBox42
             // 
@@ -795,6 +837,7 @@
             textBox42.Size = new Size(86, 27);
             textBox42.TabIndex = 50;
             textBox42.TextAlign = HorizontalAlignment.Center;
+            textBox42.TextChanged += textBox42_TextChanged;
             // 
             // textBox43
             // 
@@ -805,6 +848,7 @@
             textBox43.Size = new Size(86, 27);
             textBox43.TabIndex = 49;
             textBox43.TextAlign = HorizontalAlignment.Center;
+            textBox43.TextChanged += textBox43_TextChanged;
             // 
             // textBox44
             // 
@@ -815,6 +859,7 @@
             textBox44.Size = new Size(86, 27);
             textBox44.TabIndex = 48;
             textBox44.TextAlign = HorizontalAlignment.Center;
+            textBox44.TextChanged += textBox44_TextChanged;
             // 
             // textBox45
             // 
@@ -825,6 +870,7 @@
             textBox45.Size = new Size(86, 27);
             textBox45.TabIndex = 47;
             textBox45.TextAlign = HorizontalAlignment.Center;
+            textBox45.TextChanged += textBox45_TextChanged;
             // 
             // textBox46
             // 
@@ -835,6 +881,7 @@
             textBox46.Size = new Size(86, 27);
             textBox46.TabIndex = 46;
             textBox46.TextAlign = HorizontalAlignment.Center;
+            textBox46.TextChanged += textBox46_TextChanged;
             // 
             // label23
             // 
@@ -853,6 +900,7 @@
             textBox47.ScrollBars = ScrollBars.Horizontal;
             textBox47.Size = new Size(500, 27);
             textBox47.TabIndex = 61;
+            textBox47.TextChanged += textBox47_TextChanged;
             // 
             // textBox48
             // 
@@ -863,6 +911,7 @@
             textBox48.Size = new Size(98, 27);
             textBox48.TabIndex = 60;
             textBox48.TextAlign = HorizontalAlignment.Center;
+            textBox48.TextChanged += textBox48_TextChanged;
             // 
             // textBox49
             // 
@@ -873,6 +922,7 @@
             textBox49.Size = new Size(86, 27);
             textBox49.TabIndex = 59;
             textBox49.TextAlign = HorizontalAlignment.Center;
+            textBox49.TextChanged += textBox49_TextChanged;
             // 
             // textBox50
             // 
@@ -883,6 +933,7 @@
             textBox50.Size = new Size(86, 27);
             textBox50.TabIndex = 58;
             textBox50.TextAlign = HorizontalAlignment.Center;
+            textBox50.TextChanged += textBox50_TextChanged;
             // 
             // textBox51
             // 
@@ -893,6 +944,7 @@
             textBox51.Size = new Size(86, 27);
             textBox51.TabIndex = 57;
             textBox51.TextAlign = HorizontalAlignment.Center;
+            textBox51.TextChanged += textBox51_TextChanged;
             // 
             // textBox52
             // 
@@ -903,6 +955,7 @@
             textBox52.Size = new Size(86, 27);
             textBox52.TabIndex = 56;
             textBox52.TextAlign = HorizontalAlignment.Center;
+            textBox52.TextChanged += textBox52_TextChanged;
             // 
             // textBox53
             // 
@@ -913,6 +966,7 @@
             textBox53.Size = new Size(86, 27);
             textBox53.TabIndex = 55;
             textBox53.TextAlign = HorizontalAlignment.Center;
+            textBox53.TextChanged += textBox53_TextChanged;
             // 
             // textBox54
             // 
@@ -923,6 +977,7 @@
             textBox54.Size = new Size(86, 27);
             textBox54.TabIndex = 54;
             textBox54.TextAlign = HorizontalAlignment.Center;
+            textBox54.TextChanged += textBox54_TextChanged;
             // 
             // label24
             // 
@@ -941,6 +996,7 @@
             textBox55.ScrollBars = ScrollBars.Horizontal;
             textBox55.Size = new Size(500, 27);
             textBox55.TabIndex = 69;
+            textBox55.TextChanged += textBox55_TextChanged;
             // 
             // textBox56
             // 
@@ -951,6 +1007,7 @@
             textBox56.Size = new Size(98, 27);
             textBox56.TabIndex = 68;
             textBox56.TextAlign = HorizontalAlignment.Center;
+            textBox56.TextChanged += textBox56_TextChanged;
             // 
             // textBox57
             // 
@@ -961,6 +1018,7 @@
             textBox57.Size = new Size(86, 27);
             textBox57.TabIndex = 67;
             textBox57.TextAlign = HorizontalAlignment.Center;
+            textBox57.TextChanged += textBox57_TextChanged;
             // 
             // textBox58
             // 
@@ -971,6 +1029,7 @@
             textBox58.Size = new Size(86, 27);
             textBox58.TabIndex = 66;
             textBox58.TextAlign = HorizontalAlignment.Center;
+            textBox58.TextChanged += textBox58_TextChanged;
             // 
             // textBox59
             // 
@@ -981,6 +1040,7 @@
             textBox59.Size = new Size(86, 27);
             textBox59.TabIndex = 65;
             textBox59.TextAlign = HorizontalAlignment.Center;
+            textBox59.TextChanged += textBox59_TextChanged;
             // 
             // textBox60
             // 
@@ -991,6 +1051,7 @@
             textBox60.Size = new Size(86, 27);
             textBox60.TabIndex = 64;
             textBox60.TextAlign = HorizontalAlignment.Center;
+            textBox60.TextChanged += textBox60_TextChanged;
             // 
             // textBox61
             // 
@@ -1001,6 +1062,7 @@
             textBox61.Size = new Size(86, 27);
             textBox61.TabIndex = 63;
             textBox61.TextAlign = HorizontalAlignment.Center;
+            textBox61.TextChanged += textBox61_TextChanged;
             // 
             // textBox62
             // 
@@ -1011,6 +1073,7 @@
             textBox62.Size = new Size(86, 27);
             textBox62.TabIndex = 62;
             textBox62.TextAlign = HorizontalAlignment.Center;
+            textBox62.TextChanged += textBox62_TextChanged;
             // 
             // label25
             // 
@@ -1029,6 +1092,7 @@
             textBox63.ScrollBars = ScrollBars.Horizontal;
             textBox63.Size = new Size(500, 27);
             textBox63.TabIndex = 77;
+            textBox63.TextChanged += textBox63_TextChanged;
             // 
             // textBox64
             // 
@@ -1039,6 +1103,7 @@
             textBox64.Size = new Size(98, 27);
             textBox64.TabIndex = 76;
             textBox64.TextAlign = HorizontalAlignment.Center;
+            textBox64.TextChanged += textBox64_TextChanged;
             // 
             // textBox65
             // 
@@ -1049,6 +1114,7 @@
             textBox65.Size = new Size(86, 27);
             textBox65.TabIndex = 75;
             textBox65.TextAlign = HorizontalAlignment.Center;
+            textBox65.TextChanged += textBox65_TextChanged;
             // 
             // textBox66
             // 
@@ -1059,6 +1125,7 @@
             textBox66.Size = new Size(86, 27);
             textBox66.TabIndex = 74;
             textBox66.TextAlign = HorizontalAlignment.Center;
+            textBox66.TextChanged += textBox66_TextChanged;
             // 
             // textBox67
             // 
@@ -1069,6 +1136,7 @@
             textBox67.Size = new Size(86, 27);
             textBox67.TabIndex = 73;
             textBox67.TextAlign = HorizontalAlignment.Center;
+            textBox67.TextChanged += textBox67_TextChanged;
             // 
             // textBox68
             // 
@@ -1079,6 +1147,7 @@
             textBox68.Size = new Size(86, 27);
             textBox68.TabIndex = 72;
             textBox68.TextAlign = HorizontalAlignment.Center;
+            textBox68.TextChanged += textBox68_TextChanged;
             // 
             // textBox69
             // 
@@ -1089,6 +1158,7 @@
             textBox69.Size = new Size(86, 27);
             textBox69.TabIndex = 71;
             textBox69.TextAlign = HorizontalAlignment.Center;
+            textBox69.TextChanged += textBox69_TextChanged;
             // 
             // textBox70
             // 
@@ -1099,6 +1169,7 @@
             textBox70.Size = new Size(86, 27);
             textBox70.TabIndex = 70;
             textBox70.TextAlign = HorizontalAlignment.Center;
+            textBox70.TextChanged += textBox70_TextChanged;
             // 
             // button2
             // 
