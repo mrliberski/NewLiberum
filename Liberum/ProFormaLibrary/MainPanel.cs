@@ -180,7 +180,7 @@ namespace ProFormaUI
         {
             foreach (System.Windows.Forms.Control previousBtn in panelMenu.Controls)
             {
-                if (previousBtn.GetType() == typeof(Button))
+                if (previousBtn.GetType() == typeof(Button) || previousBtn.GetType() == typeof(FontAwesome.Sharp.IconButton))
                 {
                     previousBtn.BackColor = System.Drawing.Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = System.Drawing.Color.Gainsboro;
@@ -348,5 +348,10 @@ namespace ProFormaUI
             label2.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
         }
 
+        private void exportButton1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new ProFormaGenerator(), sender);
+        }
     }
 }

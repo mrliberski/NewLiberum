@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
+            exportButton1 = new FontAwesome.Sharp.IconButton();
             button9 = new Button();
             button10 = new Button();
             button8 = new Button();
@@ -40,7 +41,7 @@
             button4 = new Button();
             button3 = new Button();
             exportButton = new Button();
-            button1 = new Button();
+            button1x = new Button();
             panelLogo = new Panel();
             label1 = new Label();
             panelTitleBar = new Panel();
@@ -64,6 +65,7 @@
             // 
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
+            panelMenu.Controls.Add(exportButton1);
             panelMenu.Controls.Add(button9);
             panelMenu.Controls.Add(button10);
             panelMenu.Controls.Add(button8);
@@ -73,9 +75,21 @@
             panelMenu.Controls.Add(button4);
             panelMenu.Controls.Add(button3);
             panelMenu.Controls.Add(exportButton);
-            panelMenu.Controls.Add(button1);
+            panelMenu.Controls.Add(button1x);
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
+            // 
+            // exportButton1
+            // 
+            resources.ApplyResources(exportButton1, "exportButton1");
+            exportButton1.FlatAppearance.BorderSize = 0;
+            exportButton1.ForeColor = Color.Gainsboro;
+            exportButton1.IconChar = FontAwesome.Sharp.IconChar.TruckFast;
+            exportButton1.IconColor = Color.Gainsboro;
+            exportButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            exportButton1.Name = "exportButton1";
+            exportButton1.UseVisualStyleBackColor = true;
+            exportButton1.Click += exportButton1_Click_1;
             // 
             // button9
             // 
@@ -167,15 +181,15 @@
             exportButton.UseVisualStyleBackColor = true;
             exportButton.Click += button2_Click;
             // 
-            // button1
+            // button1x
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.FlatAppearance.BorderSize = 0;
-            button1.ForeColor = Color.Gainsboro;
-            button1.Image = Properties.Resources.bar_chart;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            resources.ApplyResources(button1x, "button1x");
+            button1x.FlatAppearance.BorderSize = 0;
+            button1x.ForeColor = Color.Gainsboro;
+            button1x.Image = Properties.Resources.bar_chart;
+            button1x.Name = "button1x";
+            button1x.UseVisualStyleBackColor = true;
+            button1x.Click += button1_Click;
             // 
             // panelLogo
             // 
@@ -298,7 +312,7 @@
         private Panel panelMenu;
         private Panel panelLogo;
         private Panel panelTitleBar;
-        private Button button1;
+        private Button button1x;
         private Button button10;
         private Button button9;
         private Button button8;
@@ -318,5 +332,6 @@
         private System.Windows.Forms.Timer timer1;
         private Label label1;
         private Label label2;
+        private FontAwesome.Sharp.IconButton exportButton1;
     }
 }
