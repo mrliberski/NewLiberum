@@ -31,8 +31,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
-            button10 = new Button();
             button9 = new Button();
+            button10 = new Button();
             button8 = new Button();
             button6 = new Button();
             button7 = new Button();
@@ -77,16 +77,6 @@
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
             // 
-            // button10
-            // 
-            resources.ApplyResources(button10, "button10");
-            button10.FlatAppearance.BorderSize = 0;
-            button10.ForeColor = Color.Gainsboro;
-            button10.Image = Properties.Resources.cross_out__2_;
-            button10.Name = "button10";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
-            // 
             // button9
             // 
             resources.ApplyResources(button9, "button9");
@@ -96,6 +86,16 @@
             button9.Name = "button9";
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
+            // 
+            // button10
+            // 
+            resources.ApplyResources(button10, "button10");
+            button10.FlatAppearance.BorderSize = 0;
+            button10.ForeColor = Color.Gainsboro;
+            button10.Image = Properties.Resources.cross_out__2_;
+            button10.Name = "button10";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button8
             // 

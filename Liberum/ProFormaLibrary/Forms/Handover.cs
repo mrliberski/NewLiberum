@@ -27,7 +27,7 @@ namespace ProFormaUI.Forms
             LoadShiftsDropDown();
             ReloadForm();
             StartCloseTimer();
-            //Autosave();
+            Autosave();
 
         }
 
@@ -456,6 +456,7 @@ namespace ProFormaUI.Forms
             if (Environment.UserName.ToUpper() == "RICHARD.PUGH" || Environment.UserName.ToUpper() == "MARCIN.CHRZASZCZ" || Environment.UserName.ToUpper() == "PANLI")
             {
                 timer1.Start();
+                AutoSaveLabel.Text = "Conditional save activated...";
             }
         }
 
@@ -470,352 +471,282 @@ namespace ProFormaUI.Forms
         {
             ResetTimer();
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox22_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox30_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox38_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox46_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox54_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox62_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox70_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox21_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox29_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox37_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox45_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox53_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox61_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox69_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox20_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox28_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox36_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox44_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox52_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox60_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox68_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox19_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox27_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox35_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox43_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox51_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox59_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox67_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox18_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox26_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox34_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox42_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox50_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox58_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox66_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox12_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox17_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox25_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox33_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox41_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox49_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox57_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox65_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox16_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox24_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox32_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox40_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox48_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox56_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox64_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox15_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox23_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox31_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox39_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox47_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox55_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();
         }
-
         private void textBox63_TextChanged(object sender, EventArgs e)
         {
             ResetTimer();

@@ -485,7 +485,7 @@
     <value>Segoe UI, 15pt</value>
   </data>
   <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 21</value>
+    <value>293, 21</value>
   </data>
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 35</value>

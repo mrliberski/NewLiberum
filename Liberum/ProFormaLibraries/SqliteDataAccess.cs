@@ -688,7 +688,8 @@ namespace ProFormaLibraries
                             ToPlan10,
                             Comment10,
                             SubmittedDate,
-                            CreatedBy
+                            CreatedBy, 
+                            HandoverNumber
                         )
                         values 
                         (
@@ -781,7 +782,8 @@ namespace ProFormaLibraries
                             @ToPlan10,
                             @Comment10,
                             @SubmittedDate,
-                            @CreatedBy
+                            @CreatedBy, 
+                            @HandoverNumber
                         )"
                 ;
 
@@ -883,7 +885,7 @@ namespace ProFormaLibraries
                 cmd.Parameters.Add(new SQLiteParameter("@RegNumber10", CurrentHandover.RegNumber10));
                 cmd.Parameters.Add(new SQLiteParameter("@ToPlan10", CurrentHandover.ToPlan10));
                 cmd.Parameters.Add(new SQLiteParameter("@Comment10", CurrentHandover.Comment10));
-
+                cmd.Parameters.Add(new SQLiteParameter("@HandoverNumber", CurrentHandover.HandoverNumber));
                 cmd.Parameters.Add(new SQLiteParameter("@SubmittedDate", CurrentHandover.SubmittedDate));
                 cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", Environment.UserName));
 
