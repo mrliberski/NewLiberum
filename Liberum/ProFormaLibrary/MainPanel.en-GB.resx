@@ -118,18 +118,228 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ExitButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ExitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ExitButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ExitButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ExitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 758</value>
+  </data>
+  <data name="ExitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="ExitButton.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="ReportBugButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ReportBugButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ReportBugButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ReportBugButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ReportBugButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="ReportBugButton.Text" xml:space="preserve">
+    <value>Report Bug</value>
+  </data>
+  <data name="HandoverButton4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="HandoverButton4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="HandoverButton4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="HandoverButton4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HandoverButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 480</value>
+  </data>
+  <data name="HandoverButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="HandoverButton4.Text" xml:space="preserve">
+    <value>Hang On </value>
+  </data>
+  <data name="HandoverButton3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="HandoverButton3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="HandoverButton3.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="HandoverButton3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HandoverButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 430</value>
+  </data>
+  <data name="HandoverButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="HandoverButton3.Text" xml:space="preserve">
+    <value>Shipments</value>
+  </data>
+  <data name="HandoverButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="HandoverButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="HandoverButton2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="HandoverButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HandoverButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 380</value>
+  </data>
+  <data name="HandoverButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="HandoverButton2.Text" xml:space="preserve">
+    <value>Handover New</value>
+  </data>
+  <data name="HandoverButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="HandoverButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="HandoverButton1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="HandoverButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HandoverButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 330</value>
+  </data>
+  <data name="HandoverButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="HandoverButton1.Text" xml:space="preserve">
+    <value>Handover</value>
+  </data>
+  <data name="TrackerButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TrackerButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="TrackerButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="TrackerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TrackerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 280</value>
+  </data>
+  <data name="TrackerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="TrackerButton.Text" xml:space="preserve">
+    <value>Tracker</value>
+  </data>
+  <data name="InternalPackagingButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="InternalPackagingButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="InternalPackagingButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="InternalPackagingButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="InternalPackagingButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 230</value>
+  </data>
+  <data name="InternalPackagingButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="InternalPackagingButton.Text" xml:space="preserve">
+    <value>Internal</value>
+  </data>
+  <data name="PackagingCountButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="PackagingCountButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="PackagingCountButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PackagingCountButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PackagingCountButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 180</value>
+  </data>
+  <data name="PackagingCountButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="PackagingCountButton.Text" xml:space="preserve">
+    <value>BMW Count</value>
+  </data>
+  <data name="iconButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="iconButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="iconButton1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="iconButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 130</value>
+  </data>
+  <data name="iconButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="iconButton1.Text" xml:space="preserve">
+    <value>MHE Training</value>
+  </data>
   <data name="exportButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="exportButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="exportButton1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="exportButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="exportButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 80</value>
   </data>
   <data name="exportButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -137,260 +347,7 @@
   <data name="exportButton1.Text" xml:space="preserve">
     <value>Exports</value>
   </data>
-  <data name="button9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="button9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 688</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>   Report Bug</value>
-  </data>
-  <data name="button9.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="button10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 748</value>
-  </data>
-  <data name="button10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <data name="button10.Text" xml:space="preserve">
-    <value>   EXIT</value>
-  </data>
-  <data name="button10.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 430</value>
-  </data>
-  <data name="button8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button8.Text" xml:space="preserve">
-    <value>   YYY</value>
-  </data>
-  <data name="button8.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button8.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>   Handover</value>
-  </data>
-  <data name="button6.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 330</value>
-  </data>
-  <data name="button7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>   Internal Packaging</value>
-  </data>
-  <data name="button7.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 280</value>
-  </data>
-  <data name="button5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button5.Text" xml:space="preserve">
-    <value>  BMW Tracker</value>
-  </data>
-  <data name="button5.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 230</value>
-  </data>
-  <data name="button4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>   Document Links</value>
-  </data>
-  <data name="button4.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button4.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 180</value>
-  </data>
-  <data name="button3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>   Stock Count</value>
-  </data>
-  <data name="button3.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button3.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="exportButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="exportButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="exportButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="exportButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 130</value>
-  </data>
-  <data name="exportButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="exportButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="exportButton.Text" xml:space="preserve">
-    <value>   Packaging Count</value>
-  </data>
-  <data name="exportButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="button1x.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button1x.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button1x.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1x.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 0, 0</value>
-  </data>
-  <data name="button1x.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="button1x.Text" xml:space="preserve">
-    <value>   Exports</value>
-  </data>
-  <data name="button1x.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -436,6 +393,7 @@
   <data name="btnMinimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnMinimize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 0, 0</value>
   </data>

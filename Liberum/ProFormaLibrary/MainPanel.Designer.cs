@@ -31,17 +31,17 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
+            ExitButton = new FontAwesome.Sharp.IconButton();
+            ReportBugButton = new FontAwesome.Sharp.IconButton();
+            HandoverButton4 = new FontAwesome.Sharp.IconButton();
+            HandoverButton3 = new FontAwesome.Sharp.IconButton();
+            HandoverButton2 = new FontAwesome.Sharp.IconButton();
+            HandoverButton1 = new FontAwesome.Sharp.IconButton();
+            TrackerButton = new FontAwesome.Sharp.IconButton();
+            InternalPackagingButton = new FontAwesome.Sharp.IconButton();
+            PackagingCountButton = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             exportButton1 = new FontAwesome.Sharp.IconButton();
-            button9 = new Button();
-            button10 = new Button();
-            button8 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            exportButton = new Button();
-            button1x = new Button();
             panelLogo = new Panel();
             label1 = new Label();
             panelTitleBar = new Panel();
@@ -65,19 +65,135 @@
             // 
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
+            panelMenu.Controls.Add(ExitButton);
+            panelMenu.Controls.Add(ReportBugButton);
+            panelMenu.Controls.Add(HandoverButton4);
+            panelMenu.Controls.Add(HandoverButton3);
+            panelMenu.Controls.Add(HandoverButton2);
+            panelMenu.Controls.Add(HandoverButton1);
+            panelMenu.Controls.Add(TrackerButton);
+            panelMenu.Controls.Add(InternalPackagingButton);
+            panelMenu.Controls.Add(PackagingCountButton);
+            panelMenu.Controls.Add(iconButton1);
             panelMenu.Controls.Add(exportButton1);
-            panelMenu.Controls.Add(button9);
-            panelMenu.Controls.Add(button10);
-            panelMenu.Controls.Add(button8);
-            panelMenu.Controls.Add(button6);
-            panelMenu.Controls.Add(button7);
-            panelMenu.Controls.Add(button5);
-            panelMenu.Controls.Add(button4);
-            panelMenu.Controls.Add(button3);
-            panelMenu.Controls.Add(exportButton);
-            panelMenu.Controls.Add(button1x);
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
+            // 
+            // ExitButton
+            // 
+            resources.ApplyResources(ExitButton, "ExitButton");
+            ExitButton.FlatAppearance.BorderSize = 0;
+            ExitButton.ForeColor = Color.Gainsboro;
+            ExitButton.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            ExitButton.IconColor = Color.Gainsboro;
+            ExitButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            ExitButton.Name = "ExitButton";
+            ExitButton.UseVisualStyleBackColor = true;
+            ExitButton.Click += ExitButton_Click;
+            // 
+            // ReportBugButton
+            // 
+            resources.ApplyResources(ReportBugButton, "ReportBugButton");
+            ReportBugButton.FlatAppearance.BorderSize = 0;
+            ReportBugButton.ForeColor = Color.Gainsboro;
+            ReportBugButton.IconChar = FontAwesome.Sharp.IconChar.HeadSideCough;
+            ReportBugButton.IconColor = Color.Gainsboro;
+            ReportBugButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            ReportBugButton.Name = "ReportBugButton";
+            ReportBugButton.UseVisualStyleBackColor = true;
+            ReportBugButton.Click += ReportBugButton_Click;
+            // 
+            // HandoverButton4
+            // 
+            resources.ApplyResources(HandoverButton4, "HandoverButton4");
+            HandoverButton4.FlatAppearance.BorderSize = 0;
+            HandoverButton4.ForeColor = Color.Gainsboro;
+            HandoverButton4.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            HandoverButton4.IconColor = Color.Gainsboro;
+            HandoverButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            HandoverButton4.Name = "HandoverButton4";
+            HandoverButton4.UseVisualStyleBackColor = true;
+            // 
+            // HandoverButton3
+            // 
+            resources.ApplyResources(HandoverButton3, "HandoverButton3");
+            HandoverButton3.FlatAppearance.BorderSize = 0;
+            HandoverButton3.ForeColor = Color.Gainsboro;
+            HandoverButton3.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            HandoverButton3.IconColor = Color.Gainsboro;
+            HandoverButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            HandoverButton3.Name = "HandoverButton3";
+            HandoverButton3.UseVisualStyleBackColor = true;
+            // 
+            // HandoverButton2
+            // 
+            resources.ApplyResources(HandoverButton2, "HandoverButton2");
+            HandoverButton2.FlatAppearance.BorderSize = 0;
+            HandoverButton2.ForeColor = Color.Gainsboro;
+            HandoverButton2.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            HandoverButton2.IconColor = Color.Gainsboro;
+            HandoverButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            HandoverButton2.Name = "HandoverButton2";
+            HandoverButton2.UseVisualStyleBackColor = true;
+            // 
+            // HandoverButton1
+            // 
+            resources.ApplyResources(HandoverButton1, "HandoverButton1");
+            HandoverButton1.FlatAppearance.BorderSize = 0;
+            HandoverButton1.ForeColor = Color.Gainsboro;
+            HandoverButton1.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            HandoverButton1.IconColor = Color.Gainsboro;
+            HandoverButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            HandoverButton1.Name = "HandoverButton1";
+            HandoverButton1.UseVisualStyleBackColor = true;
+            HandoverButton1.Click += HandoverButton1_Click;
+            // 
+            // TrackerButton
+            // 
+            resources.ApplyResources(TrackerButton, "TrackerButton");
+            TrackerButton.FlatAppearance.BorderSize = 0;
+            TrackerButton.ForeColor = Color.Gainsboro;
+            TrackerButton.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
+            TrackerButton.IconColor = Color.Gainsboro;
+            TrackerButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            TrackerButton.Name = "TrackerButton";
+            TrackerButton.UseVisualStyleBackColor = true;
+            TrackerButton.Click += TrackerButton_Click;
+            // 
+            // InternalPackagingButton
+            // 
+            resources.ApplyResources(InternalPackagingButton, "InternalPackagingButton");
+            InternalPackagingButton.FlatAppearance.BorderSize = 0;
+            InternalPackagingButton.ForeColor = Color.Gainsboro;
+            InternalPackagingButton.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            InternalPackagingButton.IconColor = Color.Gainsboro;
+            InternalPackagingButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            InternalPackagingButton.Name = "InternalPackagingButton";
+            InternalPackagingButton.UseVisualStyleBackColor = true;
+            InternalPackagingButton.Click += InternalPackagingButton_Click;
+            // 
+            // PackagingCountButton
+            // 
+            resources.ApplyResources(PackagingCountButton, "PackagingCountButton");
+            PackagingCountButton.FlatAppearance.BorderSize = 0;
+            PackagingCountButton.ForeColor = Color.Gainsboro;
+            PackagingCountButton.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            PackagingCountButton.IconColor = Color.Gainsboro;
+            PackagingCountButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            PackagingCountButton.Name = "PackagingCountButton";
+            PackagingCountButton.UseVisualStyleBackColor = true;
+            PackagingCountButton.Click += PackagingCountButton_Click;
+            // 
+            // iconButton1
+            // 
+            resources.ApplyResources(iconButton1, "iconButton1");
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.ForeColor = Color.Gainsboro;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Dolly;
+            iconButton1.IconColor = Color.Gainsboro;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Name = "iconButton1";
+            iconButton1.UseVisualStyleBackColor = true;
             // 
             // exportButton1
             // 
@@ -90,106 +206,6 @@
             exportButton1.Name = "exportButton1";
             exportButton1.UseVisualStyleBackColor = true;
             exportButton1.Click += exportButton1_Click_1;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(button9, "button9");
-            button9.FlatAppearance.BorderSize = 0;
-            button9.ForeColor = Color.Gainsboro;
-            button9.Image = Properties.Resources.settings;
-            button9.Name = "button9";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
-            // 
-            // button10
-            // 
-            resources.ApplyResources(button10, "button10");
-            button10.FlatAppearance.BorderSize = 0;
-            button10.ForeColor = Color.Gainsboro;
-            button10.Image = Properties.Resources.cross_out__2_;
-            button10.Name = "button10";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
-            // 
-            // button8
-            // 
-            resources.ApplyResources(button8, "button8");
-            button8.FlatAppearance.BorderSize = 0;
-            button8.ForeColor = Color.Gainsboro;
-            button8.Image = Properties.Resources.shopping_cart__1_;
-            button8.Name = "button8";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
-            // 
-            // button6
-            // 
-            resources.ApplyResources(button6, "button6");
-            button6.FlatAppearance.BorderSize = 0;
-            button6.ForeColor = Color.Gainsboro;
-            button6.Image = Properties.Resources.value;
-            button6.Name = "button6";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
-            // 
-            // button7
-            // 
-            resources.ApplyResources(button7, "button7");
-            button7.FlatAppearance.BorderSize = 0;
-            button7.ForeColor = Color.Gainsboro;
-            button7.Image = Properties.Resources.shopping_list;
-            button7.Name = "button7";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
-            // 
-            // button5
-            // 
-            resources.ApplyResources(button5, "button5");
-            button5.FlatAppearance.BorderSize = 0;
-            button5.ForeColor = Color.Gainsboro;
-            button5.Image = Properties.Resources.shopping_list;
-            button5.Name = "button5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(button4, "button4");
-            button4.FlatAppearance.BorderSize = 0;
-            button4.ForeColor = Color.Gainsboro;
-            button4.Image = Properties.Resources.settings;
-            button4.Name = "button4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // button3
-            // 
-            resources.ApplyResources(button3, "button3");
-            button3.FlatAppearance.BorderSize = 0;
-            button3.ForeColor = Color.Gainsboro;
-            button3.Image = Properties.Resources.shopping_cart__1_;
-            button3.Name = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
-            // exportButton
-            // 
-            resources.ApplyResources(exportButton, "exportButton");
-            exportButton.FlatAppearance.BorderSize = 0;
-            exportButton.ForeColor = Color.Gainsboro;
-            exportButton.Image = Properties.Resources.shopping_list;
-            exportButton.Name = "exportButton";
-            exportButton.UseVisualStyleBackColor = true;
-            exportButton.Click += button2_Click;
-            // 
-            // button1x
-            // 
-            resources.ApplyResources(button1x, "button1x");
-            button1x.FlatAppearance.BorderSize = 0;
-            button1x.ForeColor = Color.Gainsboro;
-            button1x.Image = Properties.Resources.bar_chart;
-            button1x.Name = "button1x";
-            button1x.UseVisualStyleBackColor = true;
-            button1x.Click += button1_Click;
             // 
             // panelLogo
             // 
@@ -312,16 +328,9 @@
         private Panel panelMenu;
         private Panel panelLogo;
         private Panel panelTitleBar;
-        private Button button1x;
-        private Button button10;
-        private Button button9;
-        private Button button8;
         private Button button7;
-        private Button button6;
-        private Button button5;
         private Button button4;
         private Button button3;
-        private Button exportButton;
         private Label lblTitle;
         private Panel panelDesktopPanel;
         private Button btnCloseChildform;
@@ -333,5 +342,15 @@
         private Label label1;
         private Label label2;
         private FontAwesome.Sharp.IconButton exportButton1;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton PackagingCountButton;
+        private FontAwesome.Sharp.IconButton InternalPackagingButton;
+        private FontAwesome.Sharp.IconButton TrackerButton;
+        private FontAwesome.Sharp.IconButton HandoverButton4;
+        private FontAwesome.Sharp.IconButton HandoverButton3;
+        private FontAwesome.Sharp.IconButton HandoverButton2;
+        private FontAwesome.Sharp.IconButton HandoverButton1;
+        private FontAwesome.Sharp.IconButton ReportBugButton;
+        private FontAwesome.Sharp.IconButton ExitButton;
     }
 }

@@ -164,7 +164,6 @@ namespace ProFormaLibraries
             return Shift;
         }
 
-
         public static int CheckHandoverVersion()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -1462,7 +1461,7 @@ namespace ProFormaLibraries
                 parameters.Add("@DeliveryNote", "%" + _deliveryQuery + "%");
 
 
-                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker WHERE DeliveryNumber LIKE @DeliveryNote", parameters);
+                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker WHERE DeliveryNumber LIKE @DeliveryNote ORDER BY Id DESC", parameters);
                 return output.ToList();
             }
         }
@@ -1477,7 +1476,7 @@ namespace ProFormaLibraries
                 parameters.Add("@PackagingCode", "%" + _deliveryQuery + "%");
 
 
-                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker WHERE PackagingCode LIKE @PackagingCode", parameters);
+                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker WHERE PackagingCode LIKE @PackagingCode ORDER BY Id DESC", parameters);
                 return output.ToList();
             }
         }

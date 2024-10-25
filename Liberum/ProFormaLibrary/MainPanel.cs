@@ -353,5 +353,41 @@ namespace ProFormaUI
             ActivateButton(sender);
             OpenChildForm(new ProFormaGenerator(), sender);
         }
+
+        private void PackagingCountButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.formCounts(), sender);
+        }
+
+        private void InternalPackagingButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.InternalPackaging(), sender);
+        }
+
+        private void TrackerButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.PackagingTracker(), sender);
+        }
+
+        private void HandoverButton1_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.Handover(), sender);
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.Close();
+        }
+
+        private void ReportBugButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.SubmitBug(), sender);
+        }
     }
 }
