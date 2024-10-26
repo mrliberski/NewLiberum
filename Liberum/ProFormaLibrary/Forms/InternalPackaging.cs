@@ -482,6 +482,53 @@ namespace ProFormaUI.Forms
             SterringPlateTotalLabel.Text = (fulls * int.Parse(SterringPlateFactorLabel.Text)).ToString();
         }
 
+        private void ventBezelPStextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(ventBezelPStextBox.Text, out int quantityOfItems))
+            {
+                ventPStotalLabelChange();
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                //MessageBox.Show("Incorrect Value", "Incorrect entry");
+                ventBezelPStextBox.Text = string.Empty;
+                ventPStotalLabelChange();
+                errorLabel.Visible = true;
+            }
+        }
+
+        private void ventPStotalLabelChange()
+        {
+            //this block checks if entry can be parsed to ints and updates total qty label
+            int fulls;
+            if (int.TryParse(ventBezelPStextBox.Text, out fulls))
+            {
+                fulls = int.Parse(ventBezelPStextBox.Text);
+            }
+            else
+            {
+                fulls = 0;
+            }
+
+            ventBezelPStotalLabel.Text = (fulls * int.Parse(ventBezelPSfillFactorlabel.Text)).ToString();
+        }
+
+        private void ventBezelDStextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ventcentretextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
 
         //clear text boxes
         private void button2_Click(object sender, EventArgs e)
@@ -544,7 +591,7 @@ namespace ProFormaUI.Forms
                 Topper.CountOfEmpties = result;
             else
                 Topper.CountOfEmpties = 0;
- 
+
             Topper.CountOfFulls = 0;
             Topper.CountOfDamaged = 0;
             Topper.PalletFactor = int.Parse(TopperPalletFactorLabel.Text);
@@ -575,9 +622,9 @@ namespace ProFormaUI.Forms
             else
                 DecorIMM.CountOfEmpties = 0;
 
-                DecorIMM.CountOfFulls = 0;
+            DecorIMM.CountOfFulls = 0;
 
-                DecorIMM.CountOfDamaged = 0;
+            DecorIMM.CountOfDamaged = 0;
             DecorIMM.PalletFactor = int.Parse(DecorIMMPalletFactorlabel.Text);
             DecorIMM.PackFactor = int.Parse(DecorIMMPackFactorlabel.Text);
             DecorIMM.TotalContainers = int.Parse(DecorIMMTotallabel.Text);
@@ -590,9 +637,9 @@ namespace ProFormaUI.Forms
             else
                 Functional.CountOfEmpties = 0;
 
-                Functional.CountOfFulls = 0;
+            Functional.CountOfFulls = 0;
 
-                Functional.CountOfDamaged = 0;
+            Functional.CountOfDamaged = 0;
             Functional.PalletFactor = int.Parse(FuctionalPalletFactorlabel.Text);
             Functional.PackFactor = int.Parse(FuctionalFactorlabel.Text);
             Functional.TotalContainers = int.Parse(FuctionalTotalLabel.Text);
@@ -619,8 +666,8 @@ namespace ProFormaUI.Forms
             else
                 Wad.CountOfEmpties = 0;
 
-                Wad.CountOfFulls = 0;
-                Wad.CountOfDamaged = 0;
+            Wad.CountOfFulls = 0;
+            Wad.CountOfDamaged = 0;
             Wad.PalletFactor = int.Parse(WadPalletFactorlabel.Text);
             Wad.PackFactor = int.Parse(WadPackFctorlabel.Text);
             Wad.TotalContainers = int.Parse(WadTotallabel.Text);
@@ -633,8 +680,8 @@ namespace ProFormaUI.Forms
             else
                 vent.CountOfEmpties = 0;
 
-                vent.CountOfFulls = 0;
-                vent.CountOfDamaged = 0;
+            vent.CountOfFulls = 0;
+            vent.CountOfDamaged = 0;
             vent.PalletFactor = int.Parse(VentPalletFactorlabel.Text);
             vent.PackFactor = int.Parse(VentPackFactorlabel.Text);
             vent.TotalContainers = int.Parse(VentTotallabel.Text);
@@ -646,8 +693,8 @@ namespace ProFormaUI.Forms
                 DecorWip.CountOfEmpties = result;
             else
                 DecorWip.CountOfEmpties = 0;
-                DecorWip.CountOfFulls = 0;
-                DecorWip.CountOfDamaged = 0;
+            DecorWip.CountOfFulls = 0;
+            DecorWip.CountOfDamaged = 0;
             DecorWip.PalletFactor = int.Parse(DecorWipPalletFactorlabel.Text);
             DecorWip.PackFactor = int.Parse(DecorWipPackFactorlabel.Text);
             DecorWip.TotalContainers = int.Parse(DecorWipTotallabel.Text);
@@ -659,8 +706,8 @@ namespace ProFormaUI.Forms
                 AirbagFlap.CountOfEmpties = result;
             else
                 AirbagFlap.CountOfEmpties = 0;
-                AirbagFlap.CountOfFulls = 0;
-                AirbagFlap.CountOfDamaged = 0;
+            AirbagFlap.CountOfFulls = 0;
+            AirbagFlap.CountOfDamaged = 0;
             AirbagFlap.PalletFactor = int.Parse(AirbagFlapPalletFactorLabel.Text);
             AirbagFlap.PackFactor = int.Parse(AirbagFlapPackFactorLabel.Text);
             AirbagFlap.TotalContainers = int.Parse(AirbagFlapTotalLabel.Text);
@@ -673,9 +720,9 @@ namespace ProFormaUI.Forms
             else
                 AirbagHute.CountOfEmpties = 0;
 
-                AirbagHute.CountOfFulls = 0;
+            AirbagHute.CountOfFulls = 0;
 
-                AirbagHute.CountOfDamaged = 0;
+            AirbagHute.CountOfDamaged = 0;
             AirbagHute.PalletFactor = int.Parse(AirbagChutePalletFactorlabel.Text);
             AirbagHute.PackFactor = int.Parse(AirbagChutePackFactorlabel.Text);
             AirbagHute.TotalContainers = int.Parse(AirbagChuteTotallabel.Text);
@@ -688,9 +735,9 @@ namespace ProFormaUI.Forms
             else
                 SteeringPlate.CountOfEmpties = 0;
 
-                SteeringPlate.CountOfFulls = 0;
+            SteeringPlate.CountOfFulls = 0;
 
-                SteeringPlate.CountOfDamaged = 0;
+            SteeringPlate.CountOfDamaged = 0;
             SteeringPlate.PalletFactor = int.Parse(SterringPlateFactorLabel.Text);
             SteeringPlate.PackFactor = int.Parse(SterringPlateFacLabel.Text);
             SteeringPlate.TotalContainers = int.Parse(SterringPlateTotalLabel.Text);
@@ -730,6 +777,11 @@ namespace ProFormaUI.Forms
 
             ClearAllTextBoxes(this);
             counts.Clear();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

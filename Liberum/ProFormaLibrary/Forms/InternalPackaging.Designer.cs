@@ -30,6 +30,21 @@
         {
             errorLabel = new Label();
             groupBox2 = new GroupBox();
+            ventCentreTotalLabel = new Label();
+            ventCentreFillLabel = new Label();
+            ventCentrePalletFactorLabel = new Label();
+            label13 = new Label();
+            ventcentretextBox = new TextBox();
+            ventBezelDStotalContainerLabel = new Label();
+            ventBezelDSfillFactorLabel = new Label();
+            ventBezelDSpalletFactorLabel = new Label();
+            label9 = new Label();
+            ventBezelDStextBox = new TextBox();
+            ventBezelPStotalLabel = new Label();
+            ventBezelPSfillFactorlabel = new Label();
+            ventBezelPSpalletFactorLabel = new Label();
+            label5 = new Label();
+            ventBezelPStextBox = new TextBox();
             SterringPlateTotalLabel = new Label();
             SterringPlateFacLabel = new Label();
             SterringPlateFactorLabel = new Label();
@@ -117,6 +132,21 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(ventCentreTotalLabel);
+            groupBox2.Controls.Add(ventCentreFillLabel);
+            groupBox2.Controls.Add(ventCentrePalletFactorLabel);
+            groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(ventcentretextBox);
+            groupBox2.Controls.Add(ventBezelDStotalContainerLabel);
+            groupBox2.Controls.Add(ventBezelDSfillFactorLabel);
+            groupBox2.Controls.Add(ventBezelDSpalletFactorLabel);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(ventBezelDStextBox);
+            groupBox2.Controls.Add(ventBezelPStotalLabel);
+            groupBox2.Controls.Add(ventBezelPSfillFactorlabel);
+            groupBox2.Controls.Add(ventBezelPSpalletFactorLabel);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(ventBezelPStextBox);
             groupBox2.Controls.Add(SterringPlateTotalLabel);
             groupBox2.Controls.Add(SterringPlateFacLabel);
             groupBox2.Controls.Add(SterringPlateFactorLabel);
@@ -188,15 +218,150 @@
             groupBox2.Controls.Add(label42);
             groupBox2.Location = new Point(12, 71);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(727, 541);
+            groupBox2.Size = new Size(727, 679);
             groupBox2.TabIndex = 59;
             groupBox2.TabStop = false;
             groupBox2.Text = "Internal Packaging Count";
             // 
+            // ventCentreTotalLabel
+            // 
+            ventCentreTotalLabel.AutoSize = true;
+            ventCentreTotalLabel.Location = new Point(523, 532);
+            ventCentreTotalLabel.Name = "ventCentreTotalLabel";
+            ventCentreTotalLabel.Size = new Size(17, 20);
+            ventCentreTotalLabel.TabIndex = 134;
+            ventCentreTotalLabel.Text = "0";
+            // 
+            // ventCentreFillLabel
+            // 
+            ventCentreFillLabel.AutoSize = true;
+            ventCentreFillLabel.Location = new Point(435, 532);
+            ventCentreFillLabel.Name = "ventCentreFillLabel";
+            ventCentreFillLabel.Size = new Size(25, 20);
+            ventCentreFillLabel.TabIndex = 133;
+            ventCentreFillLabel.Text = "70";
+            // 
+            // ventCentrePalletFactorLabel
+            // 
+            ventCentrePalletFactorLabel.AutoSize = true;
+            ventCentrePalletFactorLabel.Location = new Point(340, 532);
+            ventCentrePalletFactorLabel.Name = "ventCentrePalletFactorLabel";
+            ventCentrePalletFactorLabel.Size = new Size(17, 20);
+            ventCentrePalletFactorLabel.TabIndex = 132;
+            ventCentrePalletFactorLabel.Text = "1";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(20, 532);
+            label13.Name = "label13";
+            label13.Size = new Size(153, 20);
+            label13.TabIndex = 131;
+            label13.Text = "F6X Vent Bezel Centre";
+            // 
+            // ventcentretextBox
+            // 
+            ventcentretextBox.Location = new Point(234, 529);
+            ventcentretextBox.Name = "ventcentretextBox";
+            ventcentretextBox.Size = new Size(86, 27);
+            ventcentretextBox.TabIndex = 130;
+            ventcentretextBox.Text = "666";
+            ventcentretextBox.TextChanged += ventcentretextBox_TextChanged;
+            // 
+            // ventBezelDStotalContainerLabel
+            // 
+            ventBezelDStotalContainerLabel.AutoSize = true;
+            ventBezelDStotalContainerLabel.Location = new Point(523, 499);
+            ventBezelDStotalContainerLabel.Name = "ventBezelDStotalContainerLabel";
+            ventBezelDStotalContainerLabel.Size = new Size(17, 20);
+            ventBezelDStotalContainerLabel.TabIndex = 129;
+            ventBezelDStotalContainerLabel.Text = "0";
+            // 
+            // ventBezelDSfillFactorLabel
+            // 
+            ventBezelDSfillFactorLabel.AutoSize = true;
+            ventBezelDSfillFactorLabel.Location = new Point(435, 499);
+            ventBezelDSfillFactorLabel.Name = "ventBezelDSfillFactorLabel";
+            ventBezelDSfillFactorLabel.Size = new Size(33, 20);
+            ventBezelDSfillFactorLabel.TabIndex = 128;
+            ventBezelDSfillFactorLabel.Text = "102";
+            // 
+            // ventBezelDSpalletFactorLabel
+            // 
+            ventBezelDSpalletFactorLabel.AutoSize = true;
+            ventBezelDSpalletFactorLabel.Location = new Point(340, 499);
+            ventBezelDSpalletFactorLabel.Name = "ventBezelDSpalletFactorLabel";
+            ventBezelDSpalletFactorLabel.Size = new Size(17, 20);
+            ventBezelDSpalletFactorLabel.TabIndex = 127;
+            ventBezelDSpalletFactorLabel.Text = "1";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(20, 499);
+            label9.Name = "label9";
+            label9.Size = new Size(129, 20);
+            label9.TabIndex = 126;
+            label9.Text = "F6X Vent Bezel DS";
+            // 
+            // ventBezelDStextBox
+            // 
+            ventBezelDStextBox.Location = new Point(234, 496);
+            ventBezelDStextBox.Name = "ventBezelDStextBox";
+            ventBezelDStextBox.Size = new Size(86, 27);
+            ventBezelDStextBox.TabIndex = 125;
+            ventBezelDStextBox.Text = "666";
+            ventBezelDStextBox.TextChanged += ventBezelDStextBox_TextChanged;
+            // 
+            // ventBezelPStotalLabel
+            // 
+            ventBezelPStotalLabel.AutoSize = true;
+            ventBezelPStotalLabel.Location = new Point(523, 466);
+            ventBezelPStotalLabel.Name = "ventBezelPStotalLabel";
+            ventBezelPStotalLabel.Size = new Size(17, 20);
+            ventBezelPStotalLabel.TabIndex = 124;
+            ventBezelPStotalLabel.Text = "0";
+            // 
+            // ventBezelPSfillFactorlabel
+            // 
+            ventBezelPSfillFactorlabel.AutoSize = true;
+            ventBezelPSfillFactorlabel.Location = new Point(435, 466);
+            ventBezelPSfillFactorlabel.Name = "ventBezelPSfillFactorlabel";
+            ventBezelPSfillFactorlabel.Size = new Size(25, 20);
+            ventBezelPSfillFactorlabel.TabIndex = 123;
+            ventBezelPSfillFactorlabel.Text = "85";
+            // 
+            // ventBezelPSpalletFactorLabel
+            // 
+            ventBezelPSpalletFactorLabel.AutoSize = true;
+            ventBezelPSpalletFactorLabel.Location = new Point(340, 466);
+            ventBezelPSpalletFactorLabel.Name = "ventBezelPSpalletFactorLabel";
+            ventBezelPSpalletFactorLabel.Size = new Size(17, 20);
+            ventBezelPSpalletFactorLabel.TabIndex = 122;
+            ventBezelPSpalletFactorLabel.Text = "1";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(20, 466);
+            label5.Name = "label5";
+            label5.Size = new Size(126, 20);
+            label5.TabIndex = 121;
+            label5.Text = "F6X Vent Bezel PS";
+            // 
+            // ventBezelPStextBox
+            // 
+            ventBezelPStextBox.Location = new Point(234, 463);
+            ventBezelPStextBox.Name = "ventBezelPStextBox";
+            ventBezelPStextBox.Size = new Size(86, 27);
+            ventBezelPStextBox.TabIndex = 120;
+            ventBezelPStextBox.Text = "666";
+            ventBezelPStextBox.TextChanged += ventBezelPStextBox_TextChanged;
+            // 
             // SterringPlateTotalLabel
             // 
             SterringPlateTotalLabel.AutoSize = true;
-            SterringPlateTotalLabel.Location = new Point(523, 466);
+            SterringPlateTotalLabel.Location = new Point(523, 565);
             SterringPlateTotalLabel.Name = "SterringPlateTotalLabel";
             SterringPlateTotalLabel.Size = new Size(17, 20);
             SterringPlateTotalLabel.TabIndex = 119;
@@ -205,7 +370,7 @@
             // SterringPlateFacLabel
             // 
             SterringPlateFacLabel.AutoSize = true;
-            SterringPlateFacLabel.Location = new Point(435, 466);
+            SterringPlateFacLabel.Location = new Point(435, 565);
             SterringPlateFacLabel.Name = "SterringPlateFacLabel";
             SterringPlateFacLabel.Size = new Size(25, 20);
             SterringPlateFacLabel.TabIndex = 118;
@@ -214,7 +379,7 @@
             // SterringPlateFactorLabel
             // 
             SterringPlateFactorLabel.AutoSize = true;
-            SterringPlateFactorLabel.Location = new Point(340, 466);
+            SterringPlateFactorLabel.Location = new Point(340, 565);
             SterringPlateFactorLabel.Name = "SterringPlateFactorLabel";
             SterringPlateFactorLabel.Size = new Size(25, 20);
             SterringPlateFactorLabel.TabIndex = 117;
@@ -223,7 +388,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(20, 466);
+            label19.Location = new Point(20, 565);
             label19.Name = "label19";
             label19.Size = new Size(184, 20);
             label19.TabIndex = 115;
@@ -231,7 +396,7 @@
             // 
             // SterringPlateEmptyTextBox
             // 
-            SterringPlateEmptyTextBox.Location = new Point(234, 463);
+            SterringPlateEmptyTextBox.Location = new Point(234, 562);
             SterringPlateEmptyTextBox.Name = "SterringPlateEmptyTextBox";
             SterringPlateEmptyTextBox.Size = new Size(86, 27);
             SterringPlateEmptyTextBox.TabIndex = 13;
@@ -820,9 +985,10 @@
             label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(12, 9);
             label3.Name = "label3";
-            label3.Size = new Size(624, 25);
+            label3.Size = new Size(674, 25);
             label3.TabIndex = 57;
-            label3.Text = "Please enter the number of containers. Only numeric entries are allowed.";
+            label3.Text = "Pleaseeeeee enter the number of containers. Only numeric entries are allowed.";
+            label3.Click += label3_Click;
             // 
             // button3
             // 
@@ -851,7 +1017,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(985, 730);
+            ClientSize = new Size(985, 848);
             Controls.Add(errorLabel);
             Controls.Add(groupBox2);
             Controls.Add(label3);
@@ -941,5 +1107,20 @@
         private Label label3;
         private Button button3;
         private Button button2;
+        private Label ventCentreTotalLabel;
+        private Label ventCentreFillLabel;
+        private Label ventCentrePalletFactorLabel;
+        private Label label13;
+        private TextBox ventcentretextBox;
+        private Label ventBezelDStotalContainerLabel;
+        private Label ventBezelDSfillFactorLabel;
+        private Label ventBezelDSpalletFactorLabel;
+        private Label label9;
+        private TextBox ventBezelDStextBox;
+        private Label ventBezelPStotalLabel;
+        private Label ventBezelPSfillFactorlabel;
+        private Label ventBezelPSpalletFactorLabel;
+        private Label label5;
+        private TextBox ventBezelPStextBox;
     }
 }
