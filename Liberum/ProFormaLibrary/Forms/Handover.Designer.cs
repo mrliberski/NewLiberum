@@ -1262,6 +1262,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
+            BackColor = Color.White;
             ClientSize = new Size(1370, 1048);
             Controls.Add(AutoSaveLabel);
             Controls.Add(ClearShipmentsButton);
