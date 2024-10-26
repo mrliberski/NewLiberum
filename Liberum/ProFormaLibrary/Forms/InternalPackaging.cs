@@ -24,10 +24,6 @@ namespace ProFormaUI.Forms
             ClearAllTextBoxes(this);
         }
 
-
-
-
-
         // resets textbox and error label
         private void ClearAllTextBoxes(Control control)
         {
@@ -158,7 +154,7 @@ namespace ProFormaUI.Forms
                 fulls = 0;
             }
 
-            TopperTotalLabel.Text = (fulls * int.Parse(TopperPalletFactorLabel.Text)).ToString();
+            TopperTotal2.Text = (fulls * int.Parse(TopperPalletFactorLabel.Text)).ToString();
         }
 
         private void HousingEmptiesTextBox_TextChanged(object sender, EventArgs e)
@@ -190,7 +186,7 @@ namespace ProFormaUI.Forms
                 fulls = 0;
             }
 
-            HousingTotallabel.Text = (fulls * int.Parse(HousingPalletrFactorLabel.Text)).ToString();
+            HousingTotal2.Text = (fulls * int.Parse(HousingPalletrFactorLabel.Text)).ToString();
         }
 
 
@@ -223,7 +219,7 @@ namespace ProFormaUI.Forms
                 fulls = 0;
             }
 
-            DecorIMMTotallabel.Text = (fulls * int.Parse(DecorIMMPalletFactorlabel.Text)).ToString();
+            Decor2.Text = (fulls * int.Parse(DecorIMMPalletFactorlabel.Text)).ToString();
         }
 
         private void FuctionalEmptiestextBox_TextChanged(object sender, EventArgs e)
@@ -450,38 +446,6 @@ namespace ProFormaUI.Forms
             AirbagChuteTotallabel.Text = (fulls * int.Parse(AirbagChutePalletFactorlabel.Text)).ToString();
         }
 
-        private void SterringPlateEmptyTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(SterringPlateEmptyTextBox.Text, out int quantityOfItems))
-            {
-                SteeringTotalLabelChange();
-                errorLabel.Visible = false;
-            }
-            else
-            {
-                //MessageBox.Show("Incorrect Value", "Incorrect entry");
-                SterringPlateEmptyTextBox.Text = string.Empty;
-                SteeringTotalLabelChange();
-                errorLabel.Visible = true;
-            }
-        }
-
-        private void SteeringTotalLabelChange()
-        {
-            //this block checks if entry can be parsed to ints and updates total qty label
-            int fulls;
-            if (int.TryParse(SterringPlateEmptyTextBox.Text, out fulls))
-            {
-                fulls = int.Parse(SterringPlateEmptyTextBox.Text);
-            }
-            else
-            {
-                fulls = 0;
-            }
-
-            SterringPlateTotalLabel.Text = (fulls * int.Parse(SterringPlateFactorLabel.Text)).ToString();
-        }
-
         private void ventBezelPStextBox_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(ventBezelPStextBox.Text, out int quantityOfItems))
@@ -511,20 +475,72 @@ namespace ProFormaUI.Forms
                 fulls = 0;
             }
 
-            ventBezelPStotalLabel.Text = (fulls * int.Parse(ventBezelPSfillFactorlabel.Text)).ToString();
+            ventBezelPStotalLabel.Text = (fulls * int.Parse(ventBezelPSpalletFactorLabel.Text)).ToString();
         }
 
         private void ventBezelDStextBox_TextChanged(object sender, EventArgs e)
         {
+            if (int.TryParse(ventBezelDStextBox.Text, out int quantityOfItems))
+            {
+                ventDStotalLabelChange();
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                //MessageBox.Show("Incorrect Value", "Incorrect entry");
+                ventBezelDStextBox.Text = string.Empty;
+                ventDStotalLabelChange();
+                errorLabel.Visible = true;
+            }
+        }
 
+        private void ventDStotalLabelChange()
+        {
+            //this block checks if entry can be parsed to ints and updates total qty label
+            int fulls;
+            if (int.TryParse(ventBezelDStextBox.Text, out fulls))
+            {
+                fulls = int.Parse(ventBezelDStextBox.Text);
+            }
+            else
+            {
+                fulls = 0;
+            }
+
+            ventBezelDStotalContainerLabel.Text = (fulls * int.Parse(ventBezelDSpalletFactorLabel.Text)).ToString();
         }
 
         private void ventcentretextBox_TextChanged(object sender, EventArgs e)
         {
-
+            if (int.TryParse(ventcentretextBox.Text, out int quantityOfItems))
+            {
+                ventcentrtotalLabelChange();
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                //MessageBox.Show("Incorrect Value", "Incorrect entry");
+                ventcentretextBox.Text = string.Empty;
+                ventcentrtotalLabelChange();
+                errorLabel.Visible = true;
+            }
         }
 
+        private void ventcentrtotalLabelChange()
+        {
+            //this block checks if entry can be parsed to ints and updates total qty label
+            int fulls;
+            if (int.TryParse(ventcentretextBox.Text, out fulls))
+            {
+                fulls = int.Parse(ventcentretextBox.Text);
+            }
+            else
+            {
+                fulls = 0;
+            }
 
+            ventCentreTotalLabel.Text = (fulls * int.Parse(ventCentrePalletFactorLabel.Text)).ToString();
+        }
 
 
 
@@ -552,7 +568,9 @@ namespace ProFormaUI.Forms
             PackagingCount DecorWip = new PackagingCount();
             PackagingCount AirbagFlap = new PackagingCount();
             PackagingCount AirbagHute = new PackagingCount();
-            PackagingCount SteeringPlate = new PackagingCount();
+            PackagingCount VentBezelPS = new PackagingCount();
+            PackagingCount VentBezelDS = new PackagingCount();
+            PackagingCount VentBezel = new PackagingCount();
 
 
             //TOPcover
@@ -596,7 +614,7 @@ namespace ProFormaUI.Forms
             Topper.CountOfDamaged = 0;
             Topper.PalletFactor = int.Parse(TopperPalletFactorLabel.Text);
             Topper.PackFactor = int.Parse(TopperPackFactorLabel.Text);
-            Topper.TotalContainers = int.Parse(TopperTotalLabel.Text);
+            Topper.TotalContainers = int.Parse(TopperTotal2.Text);
             // END OF Topper
 
             //GloveboxHousing
@@ -611,7 +629,7 @@ namespace ProFormaUI.Forms
             GloveboxHousing.CountOfDamaged = 0;
             GloveboxHousing.PalletFactor = int.Parse(HousingPalletrFactorLabel.Text);
             GloveboxHousing.PackFactor = int.Parse(HousingackFactorlabel.Text);
-            GloveboxHousing.TotalContainers = int.Parse(HousingTotallabel.Text);
+            GloveboxHousing.TotalContainers = int.Parse(HousingTotal2.Text);
             // END OF GloveboxHousing
 
             //DecorIMM
@@ -627,7 +645,7 @@ namespace ProFormaUI.Forms
             DecorIMM.CountOfDamaged = 0;
             DecorIMM.PalletFactor = int.Parse(DecorIMMPalletFactorlabel.Text);
             DecorIMM.PackFactor = int.Parse(DecorIMMPackFactorlabel.Text);
-            DecorIMM.TotalContainers = int.Parse(DecorIMMTotallabel.Text);
+            DecorIMM.TotalContainers = int.Parse(Decor2.Text);
 
             //Functional
             Functional.PackagingName = "F6X Functional Carrier";
@@ -727,20 +745,52 @@ namespace ProFormaUI.Forms
             AirbagHute.PackFactor = int.Parse(AirbagChutePackFactorlabel.Text);
             AirbagHute.TotalContainers = int.Parse(AirbagChuteTotallabel.Text);
 
-            //SteeringPlate
-            SteeringPlate.PackagingName = "F6X Steering Column Plate";
-            SteeringPlate.PackagingNumber = "not applicable";
-            if (int.TryParse(SterringPlateEmptyTextBox.Text, out result))
-                SteeringPlate.CountOfEmpties = result;
+            //vent bezelps
+            VentBezelPS.PackagingName = "F6X Vent Bezel Passenger";
+            VentBezelPS.PackagingNumber = "not applicable";
+            if (int.TryParse(ventBezelPStextBox.Text, out result))
+                VentBezelPS.CountOfEmpties = result;
             else
-                SteeringPlate.CountOfEmpties = 0;
+                VentBezelPS.CountOfEmpties = 0;
 
-            SteeringPlate.CountOfFulls = 0;
+            VentBezelPS.CountOfFulls = 0;
 
-            SteeringPlate.CountOfDamaged = 0;
-            SteeringPlate.PalletFactor = int.Parse(SterringPlateFactorLabel.Text);
-            SteeringPlate.PackFactor = int.Parse(SterringPlateFacLabel.Text);
-            SteeringPlate.TotalContainers = int.Parse(SterringPlateTotalLabel.Text);
+            VentBezelPS.CountOfDamaged = 0;
+            VentBezelPS.PalletFactor = int.Parse(ventBezelPSpalletFactorLabel.Text);
+            VentBezelPS.PackFactor = int.Parse(ventBezelPSfillFactorlabel.Text);
+            VentBezelPS.TotalContainers = int.Parse(ventBezelPStotalLabel.Text);
+
+            //vant bezel ds
+            VentBezelDS.PackagingName = "F6X Vent Bezel Driver";
+            VentBezelDS.PackagingNumber = "not applicable";
+            if (int.TryParse(ventBezelDStextBox.Text, out result))
+                VentBezelDS.CountOfEmpties = result;
+            else
+                VentBezelDS.CountOfEmpties = 0;
+
+            VentBezelDS.CountOfFulls = 0;
+
+            VentBezelDS.CountOfDamaged = 0;
+            VentBezelDS.PalletFactor = int.Parse(ventBezelDSpalletFactorLabel.Text);
+            VentBezelDS.PackFactor = int.Parse(ventBezelDSfillFactorLabel.Text);
+            VentBezelDS.TotalContainers = int.Parse(ventBezelDStotalContainerLabel.Text);
+
+            //vent centre
+            VentBezel.PackagingName = "F6X Vent Bezel Centre";
+            VentBezel.PackagingNumber = "not applicable";
+            if (int.TryParse(ventcentretextBox.Text, out result))
+                VentBezel.CountOfEmpties = result;
+            else
+                VentBezel.CountOfEmpties = 0;
+
+            VentBezel.CountOfFulls = 0;
+
+            VentBezel.CountOfDamaged = 0;
+            VentBezel.PalletFactor = int.Parse(ventCentrePalletFactorLabel.Text);
+            VentBezel.PackFactor = int.Parse(ventCentreFillLabel.Text);
+            VentBezel.TotalContainers = int.Parse(ventCentreTotalLabel.Text);
+
+
 
             //PackagingCount Topcover = new PackagingCount();
             //PackagingCount GloveboxLid = new PackagingCount();
@@ -768,7 +818,9 @@ namespace ProFormaUI.Forms
             counts.Add(DecorWip);
             counts.Add(AirbagFlap);
             counts.Add(AirbagHute);
-            counts.Add(SteeringPlate);
+            counts.Add(VentBezel);
+            counts.Add(VentBezelPS);
+            counts.Add(VentBezelDS);
 
             //Create email body and pass it to sender class
             string emailsss;
