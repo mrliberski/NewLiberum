@@ -407,5 +407,12 @@ namespace ProFormaUI
             ActivateButton(sender);
             OpenChildForm(new Forms.NewHandover(), sender);
         }
+
+        //MHE TRAINING BUTTON
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.MheTraining(), sender);
+        }
     }
 }
