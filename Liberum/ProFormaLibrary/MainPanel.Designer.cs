@@ -108,22 +108,24 @@
             resources.ApplyResources(HandoverButton4, "HandoverButton4");
             HandoverButton4.FlatAppearance.BorderSize = 0;
             HandoverButton4.ForeColor = Color.Gainsboro;
-            HandoverButton4.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            HandoverButton4.IconChar = FontAwesome.Sharp.IconChar.TruckRampBox;
             HandoverButton4.IconColor = Color.Gainsboro;
             HandoverButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             HandoverButton4.Name = "HandoverButton4";
             HandoverButton4.UseVisualStyleBackColor = true;
+            HandoverButton4.Click += HandoverButton4_Click;
             // 
             // HandoverButton3
             // 
             resources.ApplyResources(HandoverButton3, "HandoverButton3");
             HandoverButton3.FlatAppearance.BorderSize = 0;
             HandoverButton3.ForeColor = Color.Gainsboro;
-            HandoverButton3.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            HandoverButton3.IconChar = FontAwesome.Sharp.IconChar.Truck;
             HandoverButton3.IconColor = Color.Gainsboro;
             HandoverButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             HandoverButton3.Name = "HandoverButton3";
             HandoverButton3.UseVisualStyleBackColor = true;
+            HandoverButton3.Click += HandoverButton3_Click;
             // 
             // HandoverButton2
             // 
@@ -135,6 +137,7 @@
             HandoverButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             HandoverButton2.Name = "HandoverButton2";
             HandoverButton2.UseVisualStyleBackColor = true;
+            HandoverButton2.Click += HandoverButton2_Click;
             // 
             // HandoverButton1
             // 

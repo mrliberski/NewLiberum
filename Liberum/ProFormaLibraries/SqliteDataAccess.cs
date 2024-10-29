@@ -15,6 +15,232 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static void InsertShipmentsOnly(CurrentHandoverModel CurrentHandover)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute(@"update CurrentHandover SET 
+
+                            DespatchPlan1=@DespatchPlan1,
+                            Arrival1=@Arrival1,
+                            Departure1=@Departure1,
+                            FirstSeq1=@FirstSeq1,
+                            LastSeq1=@LastSeq1,
+                            RegNumber1=@RegNumber1,
+                            ToPlan1=@ToPlan1,
+                            Comment1=@Comment1,
+                            DespatchPlan2=@DespatchPlan2,
+                            Arrival2=@Arrival2,
+                            Departure2=@Departure2,
+                            FirstSeq2=@FirstSeq2,
+                            LastSeq2=@LastSeq2,
+                            RegNumber2=@RegNumber2,
+                            ToPlan2=@ToPlan2,
+                            Comment2=@Comment2,
+                            DespatchPlan3=@DespatchPlan3,
+                            Arrival3=@Arrival3,
+                            Departure3=@Departure3,
+                            FirstSeq3=@FirstSeq3,
+                            LastSeq3=@LastSeq3,
+                            RegNumber3=@RegNumber3,
+                            ToPlan3=@ToPlan3,
+                            Comment3=@Comment3,
+                            DespatchPlan4=@DespatchPlan4,
+                            Arrival4=@Arrival4,
+                            Departure4=@Departure4,
+                            FirstSeq4=@FirstSeq4,
+                            LastSeq4=@LastSeq4,
+                            RegNumber4=@RegNumber4,
+                            ToPlan4=@ToPlan4,
+                            Comment4=@Comment4,
+                            DespatchPlan5=@DespatchPlan5,
+                            Arrival5=@Arrival5,
+                            Departure5=@Departure5,
+                            FirstSeq5=@FirstSeq5,
+                            LastSeq5=@LastSeq5,
+                            RegNumber5=@RegNumber5,
+                            ToPlan5=@ToPlan5,
+                            Comment5=@Comment5,
+                            DespatchPlan6=@DespatchPlan6,
+                            Arrival6=@Arrival6,
+                            Departure6=@Departure6,
+                            FirstSeq6=@FirstSeq6,
+                            LastSeq6=@LastSeq6,
+                            RegNumber6=@RegNumber6,
+                            ToPlan6=@ToPlan6,
+                            Comment6=@Comment6,
+                            DespatchPlan7=@DespatchPlan7,
+                            Arrival7=@Arrival7,
+                            Departure7=@Departure7,
+                            FirstSeq7=@FirstSeq7,
+                            LastSeq7=@LastSeq7,
+                            RegNumber7=@RegNumber7,
+                            ToPlan7=@ToPlan7,
+                            Comment7=@Comment7,
+                            DespatchPlan8=@DespatchPlan8,
+                            Arrival8=@Arrival8,
+                            Departure8=@Departure8,
+                            FirstSeq8=@FirstSeq8,
+                            LastSeq8=@LastSeq8,
+                            RegNumber8=@RegNumber8,
+                            ToPlan8=@ToPlan8,
+                            Comment8=@Comment8,
+                            DespatchPlan9=@DespatchPlan9,
+                            Arrival9=@Arrival9,
+                            Departure9=@Departure9,
+                            FirstSeq9=@FirstSeq9,
+                            LastSeq9=@LastSeq9,
+                            RegNumber9=@RegNumber9,
+                            ToPlan9=@ToPlan9,
+                            Comment9=@Comment9,
+                            DespatchPlan10=@DespatchPlan10,
+                            Arrival10=@Arrival10,
+                            Departure10=@Departure10,
+                            FirstSeq10=@FirstSeq10,
+                            LastSeq10=@LastSeq10,
+                            RegNumber10=@RegNumber10,
+                            ToPlan10=@ToPlan10,
+                            Comment10=@Comment10,
+                            SubmittedDate=@SubmittedDate,
+                            CreatedBy=@CreatedBy, 
+                            HandoverNumber = @HandoverNumber
+
+                            WHERE
+
+                            Id = 1
+                        ", new
+                {
+
+
+                    DespatchPlan1 = CurrentHandover.DespatchPlan1,
+                    Arrival1 = CurrentHandover.Arrival1,
+                    Departure1 = CurrentHandover.Departure1,
+                    FirstSeq1 = CurrentHandover.FirstSeq1,
+                    LastSeq1 = CurrentHandover.LastSeq1,
+                    RegNumber1 = CurrentHandover.RegNumber1,
+                    ToPlan1 = CurrentHandover.ToPlan1,
+                    Comment1 = CurrentHandover.Comment1,
+                    DespatchPlan2 = CurrentHandover.DespatchPlan2,
+                    Arrival2 = CurrentHandover.Arrival2,
+                    Departure2 = CurrentHandover.Departure2,
+                    FirstSeq2 = CurrentHandover.FirstSeq2,
+                    LastSeq2 = CurrentHandover.LastSeq2,
+                    RegNumber2 = CurrentHandover.RegNumber2,
+                    ToPlan2 = CurrentHandover.ToPlan2,
+                    Comment2 = CurrentHandover.Comment2,
+                    DespatchPlan3 = CurrentHandover.DespatchPlan3,
+                    Arrival3 = CurrentHandover.Arrival3,
+                    Departure3 = CurrentHandover.Departure3,
+                    FirstSeq3 = CurrentHandover.FirstSeq3,
+                    LastSeq3 = CurrentHandover.LastSeq3,
+                    RegNumber3 = CurrentHandover.RegNumber3,
+                    ToPlan3 = CurrentHandover.ToPlan3,
+                    Comment3 = CurrentHandover.Comment3,
+                    DespatchPlan4 = CurrentHandover.DespatchPlan4,
+                    Arrival4 = CurrentHandover.Arrival4,
+                    Departure4 = CurrentHandover.Departure4,
+                    FirstSeq4 = CurrentHandover.FirstSeq4,
+                    LastSeq4 = CurrentHandover.LastSeq4,
+                    RegNumber4 = CurrentHandover.RegNumber4,
+                    ToPlan4 = CurrentHandover.ToPlan4,
+                    Comment4 = CurrentHandover.Comment4,
+                    DespatchPlan5 = CurrentHandover.DespatchPlan5,
+                    Arrival5 = CurrentHandover.Arrival5,
+                    Departure5 = CurrentHandover.Departure5,
+                    FirstSeq5 = CurrentHandover.FirstSeq5,
+                    LastSeq5 = CurrentHandover.LastSeq5,
+                    RegNumber5 = CurrentHandover.RegNumber5,
+                    ToPlan5 = CurrentHandover.ToPlan5,
+                    Comment5 = CurrentHandover.Comment5,
+                    DespatchPlan6 = CurrentHandover.DespatchPlan6,
+                    Arrival6 = CurrentHandover.Arrival6,
+                    Departure6 = CurrentHandover.Departure6,
+                    FirstSeq6 = CurrentHandover.FirstSeq6,
+                    LastSeq6 = CurrentHandover.LastSeq6,
+                    RegNumber6 = CurrentHandover.RegNumber6,
+                    ToPlan6 = CurrentHandover.ToPlan6,
+                    Comment6 = CurrentHandover.Comment6,
+                    DespatchPlan7 = CurrentHandover.DespatchPlan7,
+                    Arrival7 = CurrentHandover.Arrival7,
+                    Departure7 = CurrentHandover.Departure7,
+                    FirstSeq7 = CurrentHandover.FirstSeq7,
+                    LastSeq7 = CurrentHandover.LastSeq7,
+                    RegNumber7 = CurrentHandover.RegNumber7,
+                    ToPlan7 = CurrentHandover.ToPlan7,
+                    Comment7 = CurrentHandover.Comment7,
+                    DespatchPlan8 = CurrentHandover.DespatchPlan8,
+                    Arrival8 = CurrentHandover.Arrival8,
+                    Departure8 = CurrentHandover.Departure8,
+                    FirstSeq8 = CurrentHandover.FirstSeq8,
+                    LastSeq8 = CurrentHandover.LastSeq8,
+                    RegNumber8 = CurrentHandover.RegNumber8,
+                    ToPlan8 = CurrentHandover.ToPlan8,
+                    Comment8 = CurrentHandover.Comment8,
+                    DespatchPlan9 = CurrentHandover.DespatchPlan9,
+                    Arrival9 = CurrentHandover.Arrival9,
+                    Departure9 = CurrentHandover.Departure9,
+                    FirstSeq9 = CurrentHandover.FirstSeq9,
+                    LastSeq9 = CurrentHandover.LastSeq9,
+                    RegNumber9 = CurrentHandover.RegNumber9,
+                    ToPlan9 = CurrentHandover.ToPlan9,
+                    Comment9 = CurrentHandover.Comment9,
+                    DespatchPlan10 = CurrentHandover.DespatchPlan10,
+                    Arrival10 = CurrentHandover.Arrival10,
+                    Departure10 = CurrentHandover.Departure10,
+                    FirstSeq10 = CurrentHandover.LastSeq10,
+                    LastSeq10 = CurrentHandover.LastSeq10,
+                    RegNumber10 = CurrentHandover.RegNumber10,
+                    ToPlan10 = CurrentHandover.ToPlan10,
+                    Comment10 = CurrentHandover.Comment10,
+                    SubmittedDate = CurrentHandover.SubmittedDate,
+                    CreatedBy = Environment.UserName,
+                    HandoverNumber = CurrentHandover.HandoverNumber
+
+                });
+            }
+        }
+
+
+        public static void InsertNewCurrentHandover(CurrentHandoverModel CurrentHandover)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute(@"update CurrentHandover SET 
+
+                            HandoverDate=@HandoverDate,
+                            Shift=@Shift,
+                            HealthAndSafety=@HealthAndSafety,
+                            EquipmentIssues=@EquipmentIssues,
+                            AssemblyLines=@AssemblyLines,
+                            MouldShop=@MouldShop,
+                            Warehouse=@Warehouse,
+                            AOB=@AOB,
+                            SubmittedDate=@SubmittedDate,
+                            CreatedBy=@CreatedBy, 
+                            HandoverNumber = @HandoverNumber
+
+                            WHERE
+
+                            Id = 1
+                        ", new
+                {
+
+                    HandoverDate = CurrentHandover.HandoverDate,
+                    Shift = CurrentHandover.Shift,
+                    HealthAndSafety = CurrentHandover.HealthAndSafety,
+                    EquipmentIssues = CurrentHandover.EquipmentIssues,
+                    AssemblyLines = CurrentHandover.AssemblyLines,
+                    MouldShop = CurrentHandover.MouldShop,
+                    Warehouse = CurrentHandover.Warehouse,
+                    AOB = CurrentHandover.AOB,
+                    SubmittedDate = CurrentHandover.SubmittedDate,
+                    CreatedBy = Environment.UserName,
+                    HandoverNumber = CurrentHandover.HandoverNumber
+
+                });
+            }
+        }
+
         public static void Insertdiscrepancy(PackagingTrackerItem item)
         {
             try
@@ -278,6 +504,24 @@ namespace ProFormaLibraries
                             string _ToPlan8 = reader.GetString(reader.GetOrdinal("ToPlan8"));
                             string _Comment8 = reader.GetString(reader.GetOrdinal("Comment8"));
 
+                            string _DespatchPlan9 = reader.GetString(reader.GetOrdinal("DespatchPlan9"));
+                            string _Arrival9 = reader.GetString(reader.GetOrdinal("Arrival9"));
+                            string _Departure9 = reader.GetString(reader.GetOrdinal("Departure9"));
+                            string _FirstSeq9 = reader.GetString(reader.GetOrdinal("FirstSeq9"));
+                            string _LastSeq9 = reader.GetString(reader.GetOrdinal("LastSeq9"));
+                            string _RegNumber9 = reader.GetString(reader.GetOrdinal("RegNumber9"));
+                            string _ToPlan9 = reader.GetString(reader.GetOrdinal("ToPlan9"));
+                            string _Comment9 = reader.GetString(reader.GetOrdinal("Comment9"));
+
+                            string _DespatchPlan10 = reader.GetString(reader.GetOrdinal("DespatchPlan10"));
+                            string _Arrival10 = reader.GetString(reader.GetOrdinal("Arrival10"));
+                            string _Departure10 = reader.GetString(reader.GetOrdinal("Departure10"));
+                            string _FirstSeq10 = reader.GetString(reader.GetOrdinal("FirstSeq10"));
+                            string _LastSeq10 = reader.GetString(reader.GetOrdinal("LastSeq10"));
+                            string _RegNumber10 = reader.GetString(reader.GetOrdinal("RegNumber10"));
+                            string _ToPlan10 = reader.GetString(reader.GetOrdinal("ToPlan10"));
+                            string _Comment10 = reader.GetString(reader.GetOrdinal("Comment10"));
+
                             int _HandoverVersion = int.Parse(reader.GetString(reader.GetOrdinal("HandoverNumber")));
 
                             //DespatchPlan9,
@@ -383,6 +627,24 @@ namespace ProFormaLibraries
                                 RegNumber8 = _RegNumber8,
                                 ToPlan8 = _ToPlan8,
                                 Comment8 = _Comment8,
+
+                                DespatchPlan9 = _DespatchPlan9,
+                                Arrival9 = _Arrival9,
+                                Departure9 = _Departure9,
+                                FirstSeq9 = _FirstSeq9,
+                                LastSeq9 = _LastSeq9,
+                                RegNumber9 = _RegNumber9,
+                                ToPlan9 = _ToPlan9,
+                                Comment9 = _Comment9,
+
+                                DespatchPlan10 = _DespatchPlan10,
+                                Arrival10 = _Arrival10,
+                                Departure10 = _Departure10,
+                                FirstSeq10 = _FirstSeq10,
+                                LastSeq10 = _LastSeq10,
+                                RegNumber10 = _RegNumber10,
+                                ToPlan10 = _ToPlan10,
+                                Comment10 = _Comment10,
 
                                 HandoverNumber = _HandoverVersion
 

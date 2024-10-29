@@ -156,7 +156,7 @@
     <value>220, 50</value>
   </data>
   <data name="ReportBugButton.Text" xml:space="preserve">
-    <value>Report Bug</value>
+    <value>  Report Bug</value>
   </data>
   <data name="HandoverButton4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -177,7 +177,7 @@
     <value>220, 50</value>
   </data>
   <data name="HandoverButton4.Text" xml:space="preserve">
-    <value>Hang On </value>
+    <value>  Hang On </value>
   </data>
   <data name="HandoverButton3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -198,7 +198,7 @@
     <value>220, 50</value>
   </data>
   <data name="HandoverButton3.Text" xml:space="preserve">
-    <value>Shipments</value>
+    <value>  Shipments</value>
   </data>
   <data name="HandoverButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -219,7 +219,7 @@
     <value>220, 50</value>
   </data>
   <data name="HandoverButton2.Text" xml:space="preserve">
-    <value>Handover New</value>
+    <value>  Handover New</value>
   </data>
   <data name="HandoverButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -240,7 +240,7 @@
     <value>220, 50</value>
   </data>
   <data name="HandoverButton1.Text" xml:space="preserve">
-    <value>Handover</value>
+    <value>  Handover</value>
   </data>
   <data name="TrackerButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -261,7 +261,7 @@
     <value>220, 50</value>
   </data>
   <data name="TrackerButton.Text" xml:space="preserve">
-    <value>Tracker</value>
+    <value>  Tracker</value>
   </data>
   <data name="InternalPackagingButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -282,7 +282,7 @@
     <value>220, 50</value>
   </data>
   <data name="InternalPackagingButton.Text" xml:space="preserve">
-    <value>Internal</value>
+    <value>  Internal</value>
   </data>
   <data name="PackagingCountButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -303,7 +303,7 @@
     <value>220, 50</value>
   </data>
   <data name="PackagingCountButton.Text" xml:space="preserve">
-    <value>BMW Count</value>
+    <value>  BMW Count</value>
   </data>
   <data name="iconButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -324,7 +324,7 @@
     <value>220, 50</value>
   </data>
   <data name="iconButton1.Text" xml:space="preserve">
-    <value>MHE Training</value>
+    <value>  MHE Training</value>
   </data>
   <data name="exportButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -345,7 +345,7 @@
     <value>220, 50</value>
   </data>
   <data name="exportButton1.Text" xml:space="preserve">
-    <value>Exports</value>
+    <value>  Exports</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">

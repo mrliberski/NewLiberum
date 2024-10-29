@@ -28,7 +28,6 @@ namespace ProFormaUI.Forms
             ReloadForm();
             StartCloseTimer();
             Autosave();
-
         }
 
         private void StartCloseTimer()

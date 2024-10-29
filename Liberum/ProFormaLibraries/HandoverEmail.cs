@@ -17,25 +17,25 @@ namespace ProFormaLibraries
             output += @$"<h3>LOGISTICS SHIFT REPORT - {Handover.Shift} {DateOnly.FromDateTime(DateTime.Now)}&nbsp;</h3>";
 
             output += @$"<h4>Health and Safety&nbsp;</h4>";
-            output += $@"<hr>{Handover.HealthAndSafety}&nbsp;&nbsp";
+            output += $@"{Handover.HealthAndSafety}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>MHE Equipment&nbsp;</h4>";
-            output += $@"<hr>{Handover.EquipmentIssues}&nbsp;&nbsp";
+            output += $@"{Handover.EquipmentIssues}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Assembly Lines&nbsp;</h4>";
-            output += $@"<hr>{Handover.AssemblyLines}&nbsp;&nbsp";
+            output += $@"{Handover.AssemblyLines}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Mould Shop&nbsp;</h4>";
-            output += $@"<hr>{Handover.MouldShop}&nbsp;&nbsp";
+            output += $@"{Handover.MouldShop}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Hang on parts&nbsp;</h4>";
-            output += $@"<hr>{Handover.HangOnParts}&nbsp;&nbsp";
+            output += $@"{Handover.HangOnParts}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Warehouse & Material &nbsp;</h4>";
-            output += $@"<hr>{Handover.Warehouse}&nbsp;&nbsp";
+            output += $@"{Handover.Warehouse}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Dock and Other Topics &nbsp;</h4>";
-            output += $@"<hr>{Handover.AOB}&nbsp;&nbsp";
+            output += $@"{Handover.AOB}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Shipments &nbsp;</h4>";
             output += @"<table border=""1"" cellspacing=""0"" cellpadding=""0"" style=font-size:10pt;font-family:Calibri; border-collapse: collapse; text-align:center; width:90%;>";
@@ -146,6 +146,30 @@ namespace ProFormaLibraries
             output += @$"<td align=""center"">&nbsp;{Handover.RegNumber8}&nbsp;</td>";
             output += @$"<td align=""center"">&nbsp;{Handover.ToPlan8}&nbsp;</td>";
             output += @$"<td align=""center"">&nbsp;{Handover.Comment8}&nbsp;</td>";
+            output += @"</tr>";
+
+            output += @"<tr>";
+            output += @"<td align=""center"">&nbsp;<b>&nbsp;9</b>&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.DespatchPlan9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.Arrival9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.Departure9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.FirstSeq9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.LastSeq9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.RegNumber9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.ToPlan9}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.Comment9}&nbsp;</td>";
+            output += @"</tr>";
+
+            output += @"<tr>";
+            output += @"<td align=""center"">&nbsp;<b>&nbsp;10</b>&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.DespatchPlan10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.Arrival10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.Departure10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.FirstSeq10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.LastSeq10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.RegNumber10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.ToPlan10}&nbsp;</td>";
+            output += @$"<td align=""center"">&nbsp;{Handover.Comment10}&nbsp;</td>";
             output += @"</tr>";
 
             output += "</table>";

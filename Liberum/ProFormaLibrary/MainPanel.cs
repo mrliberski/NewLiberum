@@ -389,5 +389,23 @@ namespace ProFormaUI
             ActivateButton(sender);
             OpenChildForm(new Forms.SubmitBug(), sender);
         }
+
+        private void HandoverButton3_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.Shipments(), sender);
+        }
+
+        private void HandoverButton4_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.HangOn(), sender);
+        }
+
+        private void HandoverButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.NewHandover(), sender);
+        }
     }
 }
