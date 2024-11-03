@@ -548,13 +548,29 @@ namespace ProFormaUI.Forms
                 counts.Add(metalPallets);
             }
 
-            //MessageBox.Show("Getting there");
-
-
             //Create email body and pass it to sender class
-            string emailsss;
-            emailsss = PackagingCountTemplate.PackagingCountEmailBody(counts);
-            PackagingCountTemplate.SendPackagingCount(emailsss);
+            try
+            {
+                
+                string emailsss;
+                emailsss = PackagingCountTemplate.PackagingCountEmailBody(counts);
+                PackagingCountTemplate.SendPackagingCount(emailsss);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            // Addc count to acrchive db
+            try
+            {
+                SqliteDataAccess.AddPackagingCountToDB(counts);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
 
             ClearAllTextBoxes(this);
             counts.Clear();

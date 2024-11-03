@@ -511,26 +511,28 @@
             // 
             // DecorWipEmptiesTextBox
             // 
-            DecorWipEmptiesTextBox.Location = new Point(234, 364);
+            DecorWipEmptiesTextBox.Enabled = false;
+            DecorWipEmptiesTextBox.Location = new Point(228, 583);
             DecorWipEmptiesTextBox.Name = "DecorWipEmptiesTextBox";
             DecorWipEmptiesTextBox.Size = new Size(86, 27);
             DecorWipEmptiesTextBox.TabIndex = 10;
-            DecorWipEmptiesTextBox.Text = "666";
+            DecorWipEmptiesTextBox.Text = "0";
             DecorWipEmptiesTextBox.TextChanged += DecorWipEmptiesTextBox_TextChanged;
             // 
             // label67
             // 
             label67.AutoSize = true;
-            label67.Location = new Point(20, 367);
+            label67.Location = new Point(14, 586);
             label67.Name = "label67";
-            label67.Size = new Size(135, 20);
+            label67.Size = new Size(88, 20);
             label67.TabIndex = 70;
-            label67.Text = "F6X Decor Pad WIP";
+            label67.Text = "empty label";
+            label67.Click += label67_Click;
             // 
             // DecorWipPalletFactorlabel
             // 
             DecorWipPalletFactorlabel.AutoSize = true;
-            DecorWipPalletFactorlabel.Location = new Point(340, 367);
+            DecorWipPalletFactorlabel.Location = new Point(334, 586);
             DecorWipPalletFactorlabel.Name = "DecorWipPalletFactorlabel";
             DecorWipPalletFactorlabel.Size = new Size(17, 20);
             DecorWipPalletFactorlabel.TabIndex = 75;
@@ -539,15 +541,15 @@
             // DecorWipPackFactorlabel
             // 
             DecorWipPackFactorlabel.AutoSize = true;
-            DecorWipPackFactorlabel.Location = new Point(435, 367);
+            DecorWipPackFactorlabel.Location = new Point(429, 586);
             DecorWipPackFactorlabel.Name = "DecorWipPackFactorlabel";
-            DecorWipPackFactorlabel.Size = new Size(25, 20);
+            DecorWipPackFactorlabel.Size = new Size(17, 20);
             DecorWipPackFactorlabel.TabIndex = 76;
-            DecorWipPackFactorlabel.Text = "39";
+            DecorWipPackFactorlabel.Text = "1";
             // 
             // AirbagFlapEmptiesTextBox
             // 
-            AirbagFlapEmptiesTextBox.Location = new Point(234, 397);
+            AirbagFlapEmptiesTextBox.Location = new Point(234, 366);
             AirbagFlapEmptiesTextBox.Name = "AirbagFlapEmptiesTextBox";
             AirbagFlapEmptiesTextBox.Size = new Size(86, 27);
             AirbagFlapEmptiesTextBox.TabIndex = 11;
@@ -557,7 +559,7 @@
             // label71
             // 
             label71.AutoSize = true;
-            label71.Location = new Point(20, 400);
+            label71.Location = new Point(20, 369);
             label71.Name = "label71";
             label71.Size = new Size(154, 20);
             label71.TabIndex = 77;
@@ -566,7 +568,7 @@
             // AirbagFlapPalletFactorLabel
             // 
             AirbagFlapPalletFactorLabel.AutoSize = true;
-            AirbagFlapPalletFactorLabel.Location = new Point(340, 400);
+            AirbagFlapPalletFactorLabel.Location = new Point(340, 369);
             AirbagFlapPalletFactorLabel.Name = "AirbagFlapPalletFactorLabel";
             AirbagFlapPalletFactorLabel.Size = new Size(25, 20);
             AirbagFlapPalletFactorLabel.TabIndex = 82;
@@ -575,7 +577,7 @@
             // AirbagFlapPackFactorLabel
             // 
             AirbagFlapPackFactorLabel.AutoSize = true;
-            AirbagFlapPackFactorLabel.Location = new Point(435, 400);
+            AirbagFlapPackFactorLabel.Location = new Point(435, 369);
             AirbagFlapPackFactorLabel.Name = "AirbagFlapPackFactorLabel";
             AirbagFlapPackFactorLabel.Size = new Size(25, 20);
             AirbagFlapPackFactorLabel.TabIndex = 83;
@@ -583,7 +585,7 @@
             // 
             // AirbagChuteEmptiesTextBox
             // 
-            AirbagChuteEmptiesTextBox.Location = new Point(234, 430);
+            AirbagChuteEmptiesTextBox.Location = new Point(234, 399);
             AirbagChuteEmptiesTextBox.Name = "AirbagChuteEmptiesTextBox";
             AirbagChuteEmptiesTextBox.Size = new Size(86, 27);
             AirbagChuteEmptiesTextBox.TabIndex = 12;
@@ -593,7 +595,7 @@
             // label75
             // 
             label75.AutoSize = true;
-            label75.Location = new Point(20, 433);
+            label75.Location = new Point(20, 402);
             label75.Name = "label75";
             label75.Size = new Size(164, 20);
             label75.TabIndex = 84;
@@ -602,7 +604,7 @@
             // AirbagChutePalletFactorlabel
             // 
             AirbagChutePalletFactorlabel.AutoSize = true;
-            AirbagChutePalletFactorlabel.Location = new Point(340, 433);
+            AirbagChutePalletFactorlabel.Location = new Point(340, 402);
             AirbagChutePalletFactorlabel.Name = "AirbagChutePalletFactorlabel";
             AirbagChutePalletFactorlabel.Size = new Size(17, 20);
             AirbagChutePalletFactorlabel.TabIndex = 89;
@@ -611,7 +613,7 @@
             // AirbagChutePackFactorlabel
             // 
             AirbagChutePackFactorlabel.AutoSize = true;
-            AirbagChutePackFactorlabel.Location = new Point(435, 433);
+            AirbagChutePackFactorlabel.Location = new Point(435, 402);
             AirbagChutePackFactorlabel.Name = "AirbagChutePackFactorlabel";
             AirbagChutePackFactorlabel.Size = new Size(25, 20);
             AirbagChutePackFactorlabel.TabIndex = 90;
@@ -683,7 +685,7 @@
             // DecorWipTotallabel
             // 
             DecorWipTotallabel.AutoSize = true;
-            DecorWipTotallabel.Location = new Point(523, 367);
+            DecorWipTotallabel.Location = new Point(517, 586);
             DecorWipTotallabel.Name = "DecorWipTotallabel";
             DecorWipTotallabel.Size = new Size(17, 20);
             DecorWipTotallabel.TabIndex = 108;
@@ -692,7 +694,7 @@
             // AirbagFlapTotalLabel
             // 
             AirbagFlapTotalLabel.AutoSize = true;
-            AirbagFlapTotalLabel.Location = new Point(523, 400);
+            AirbagFlapTotalLabel.Location = new Point(523, 369);
             AirbagFlapTotalLabel.Name = "AirbagFlapTotalLabel";
             AirbagFlapTotalLabel.Size = new Size(17, 20);
             AirbagFlapTotalLabel.TabIndex = 109;
@@ -701,7 +703,7 @@
             // AirbagChuteTotallabel
             // 
             AirbagChuteTotallabel.AutoSize = true;
-            AirbagChuteTotallabel.Location = new Point(523, 433);
+            AirbagChuteTotallabel.Location = new Point(523, 402);
             AirbagChuteTotallabel.Name = "AirbagChuteTotallabel";
             AirbagChuteTotallabel.Size = new Size(17, 20);
             AirbagChuteTotallabel.TabIndex = 110;
@@ -709,7 +711,7 @@
             // 
             // ventBezelPStextBox
             // 
-            ventBezelPStextBox.Location = new Point(234, 463);
+            ventBezelPStextBox.Location = new Point(234, 432);
             ventBezelPStextBox.Name = "ventBezelPStextBox";
             ventBezelPStextBox.Size = new Size(86, 27);
             ventBezelPStextBox.TabIndex = 120;
@@ -719,7 +721,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(20, 466);
+            label5.Location = new Point(20, 435);
             label5.Name = "label5";
             label5.Size = new Size(126, 20);
             label5.TabIndex = 121;
@@ -728,7 +730,7 @@
             // ventBezelPSpalletFactorLabel
             // 
             ventBezelPSpalletFactorLabel.AutoSize = true;
-            ventBezelPSpalletFactorLabel.Location = new Point(340, 466);
+            ventBezelPSpalletFactorLabel.Location = new Point(340, 435);
             ventBezelPSpalletFactorLabel.Name = "ventBezelPSpalletFactorLabel";
             ventBezelPSpalletFactorLabel.Size = new Size(17, 20);
             ventBezelPSpalletFactorLabel.TabIndex = 122;
@@ -737,7 +739,7 @@
             // ventBezelPSfillFactorlabel
             // 
             ventBezelPSfillFactorlabel.AutoSize = true;
-            ventBezelPSfillFactorlabel.Location = new Point(435, 466);
+            ventBezelPSfillFactorlabel.Location = new Point(435, 435);
             ventBezelPSfillFactorlabel.Name = "ventBezelPSfillFactorlabel";
             ventBezelPSfillFactorlabel.Size = new Size(25, 20);
             ventBezelPSfillFactorlabel.TabIndex = 123;
@@ -746,7 +748,7 @@
             // ventBezelPStotalLabel
             // 
             ventBezelPStotalLabel.AutoSize = true;
-            ventBezelPStotalLabel.Location = new Point(523, 466);
+            ventBezelPStotalLabel.Location = new Point(523, 435);
             ventBezelPStotalLabel.Name = "ventBezelPStotalLabel";
             ventBezelPStotalLabel.Size = new Size(17, 20);
             ventBezelPStotalLabel.TabIndex = 124;
@@ -754,7 +756,7 @@
             // 
             // ventBezelDStextBox
             // 
-            ventBezelDStextBox.Location = new Point(234, 496);
+            ventBezelDStextBox.Location = new Point(234, 465);
             ventBezelDStextBox.Name = "ventBezelDStextBox";
             ventBezelDStextBox.Size = new Size(86, 27);
             ventBezelDStextBox.TabIndex = 125;
@@ -764,7 +766,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(20, 499);
+            label9.Location = new Point(20, 468);
             label9.Name = "label9";
             label9.Size = new Size(129, 20);
             label9.TabIndex = 126;
@@ -773,7 +775,7 @@
             // ventBezelDSpalletFactorLabel
             // 
             ventBezelDSpalletFactorLabel.AutoSize = true;
-            ventBezelDSpalletFactorLabel.Location = new Point(340, 499);
+            ventBezelDSpalletFactorLabel.Location = new Point(340, 468);
             ventBezelDSpalletFactorLabel.Name = "ventBezelDSpalletFactorLabel";
             ventBezelDSpalletFactorLabel.Size = new Size(17, 20);
             ventBezelDSpalletFactorLabel.TabIndex = 127;
@@ -782,7 +784,7 @@
             // ventBezelDSfillFactorLabel
             // 
             ventBezelDSfillFactorLabel.AutoSize = true;
-            ventBezelDSfillFactorLabel.Location = new Point(435, 499);
+            ventBezelDSfillFactorLabel.Location = new Point(435, 468);
             ventBezelDSfillFactorLabel.Name = "ventBezelDSfillFactorLabel";
             ventBezelDSfillFactorLabel.Size = new Size(33, 20);
             ventBezelDSfillFactorLabel.TabIndex = 128;
@@ -791,7 +793,7 @@
             // ventBezelDStotalContainerLabel
             // 
             ventBezelDStotalContainerLabel.AutoSize = true;
-            ventBezelDStotalContainerLabel.Location = new Point(523, 499);
+            ventBezelDStotalContainerLabel.Location = new Point(523, 468);
             ventBezelDStotalContainerLabel.Name = "ventBezelDStotalContainerLabel";
             ventBezelDStotalContainerLabel.Size = new Size(17, 20);
             ventBezelDStotalContainerLabel.TabIndex = 129;
@@ -799,7 +801,7 @@
             // 
             // ventcentretextBox
             // 
-            ventcentretextBox.Location = new Point(234, 529);
+            ventcentretextBox.Location = new Point(234, 498);
             ventcentretextBox.Name = "ventcentretextBox";
             ventcentretextBox.Size = new Size(86, 27);
             ventcentretextBox.TabIndex = 130;
@@ -809,7 +811,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(20, 532);
+            label13.Location = new Point(20, 501);
             label13.Name = "label13";
             label13.Size = new Size(153, 20);
             label13.TabIndex = 131;
@@ -818,7 +820,7 @@
             // ventCentrePalletFactorLabel
             // 
             ventCentrePalletFactorLabel.AutoSize = true;
-            ventCentrePalletFactorLabel.Location = new Point(340, 532);
+            ventCentrePalletFactorLabel.Location = new Point(340, 501);
             ventCentrePalletFactorLabel.Name = "ventCentrePalletFactorLabel";
             ventCentrePalletFactorLabel.Size = new Size(17, 20);
             ventCentrePalletFactorLabel.TabIndex = 132;
@@ -827,7 +829,7 @@
             // ventCentreFillLabel
             // 
             ventCentreFillLabel.AutoSize = true;
-            ventCentreFillLabel.Location = new Point(435, 532);
+            ventCentreFillLabel.Location = new Point(435, 501);
             ventCentreFillLabel.Name = "ventCentreFillLabel";
             ventCentreFillLabel.Size = new Size(25, 20);
             ventCentreFillLabel.TabIndex = 133;
@@ -836,7 +838,7 @@
             // ventCentreTotalLabel
             // 
             ventCentreTotalLabel.AutoSize = true;
-            ventCentreTotalLabel.Location = new Point(523, 532);
+            ventCentreTotalLabel.Location = new Point(523, 501);
             ventCentreTotalLabel.Name = "ventCentreTotalLabel";
             ventCentreTotalLabel.Size = new Size(17, 20);
             ventCentreTotalLabel.TabIndex = 134;
@@ -925,7 +927,7 @@
             groupBox2.Controls.Add(label42);
             groupBox2.Location = new Point(12, 71);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(727, 586);
+            groupBox2.Size = new Size(727, 658);
             groupBox2.TabIndex = 59;
             groupBox2.TabStop = false;
             groupBox2.Text = "Internal Packaging Count";

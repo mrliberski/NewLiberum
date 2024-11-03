@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SQLite;
+using System.Globalization;
+
 //using System.Data.SQLite;
 using System.Linq;
 using System.Reflection;
@@ -10,11 +12,74 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+
+        public static List<UserModel> PermittedUsers()
+        {
+            //pulls list of authorized people
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "select User, expiry from ApplicationAccess";
+                var users = new List<UserModel>();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var user = new UserModel();
+
+                        // fill item properties from reader
+                        user.User = reader["User"].ToString();
+                        user.Expiry = reader["Expiry"].ToString();
+                   
+                        users.Add(user);
+                    }
+                }
+                return users;
+            }          
+        }
+
+        public static List<UserModel> PermittedUsersMHE()
+        {
+            //pulls list of authorized people (mhe)
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "select User, expiry from AccessMHE";
+                var users = new List<UserModel>();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var user = new UserModel();
+
+                        // fill item properties from reader
+                        user.User = reader["User"].ToString();
+                        user.Expiry = reader["Expiry"].ToString();
+
+                        users.Add(user);
+                    }
+                }
+                return users;
+            }
+        }
+
+
+
+
+        //Function to add packaging count to database for archiving
+        public static void AddPackagingCountToDB(List<PackagingCount> counts)
+        {
+            //TODO: Packaging count
+        }
+
         public static void InsertShipmentsOnly(CurrentHandoverModel CurrentHandover)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))

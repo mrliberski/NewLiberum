@@ -161,7 +161,7 @@ namespace ProFormaLibraries
                         <br><br><i>Customer note: {Customer.CustomerFootNote}</i><hr>
 
                         <i>Name of exporter: Antolin Interiors UK Ltd. <br>
-        Place and date of export: Redditch, {DateTime.Now.ToString("dd/MM/yyyy")}</i>
+        Place and date of export: Redditch, {DateTime.Now.ToString("dd/MM/yyyy")}</i><br>
 Antolin Redditch is a division of Antolin Interiors UK Limited, registered office 5 Apollo Way, Warwick, CV34 6RW, reg no 1676532, VAT no. GB 683 8198 82<br>
 Account name: Antolin Interiors UK Limited. Account number: 72228947 Bank key: 40-09-17. IBAN: GB09HBUK40091772228947<br>
                         
@@ -328,7 +328,7 @@ Account name: Antolin Interiors UK Limited. Account number: 72228947 Bank key: 4
                         <br><br><i>Customer note: {Customer.CustomerFootNote}</i><hr>
 
                         <i>Name of exporter: Antolin Interiors UK Ltd. <br>
-        Place and date of export: Redditch, {DateTime.Now.ToString("dd/MM/yyyy")}</i>
+        Place and date of export: Redditch, {DateTime.Now.ToString("dd/MM/yyyy")}</i><br>
 Antolin Redditch is a division of Antolin Interiors UK Limited, registered office 5 Apollo Way, Warwick, CV34 6RW, reg no 1676532, VAT no. GB 683 8198 82<br>
 Account name: Antolin Interiors UK Limited. Account number: 72228947 Bank key: 40-09-17. IBAN: GB09HBUK40091772228947<br>
 

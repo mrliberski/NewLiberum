@@ -565,7 +565,7 @@ namespace ProFormaUI.Forms
             PackagingCount LowerCover = new PackagingCount();
             PackagingCount Wad = new PackagingCount();
             PackagingCount vent = new PackagingCount();
-            PackagingCount DecorWip = new PackagingCount();
+            //PackagingCount DecorWip = new PackagingCount();
             PackagingCount AirbagFlap = new PackagingCount();
             PackagingCount AirbagHute = new PackagingCount();
             PackagingCount VentBezelPS = new PackagingCount();
@@ -705,17 +705,17 @@ namespace ProFormaUI.Forms
             vent.TotalContainers = int.Parse(VentTotallabel.Text);
 
             //DecorWip
-            DecorWip.PackagingName = "F6X Decor Pad Wip";
-            DecorWip.PackagingNumber = "not applicable";
-            if (int.TryParse(DecorWipEmptiesTextBox.Text, out result))
-                DecorWip.CountOfEmpties = result;
-            else
-                DecorWip.CountOfEmpties = 0;
-            DecorWip.CountOfFulls = 0;
-            DecorWip.CountOfDamaged = 0;
-            DecorWip.PalletFactor = int.Parse(DecorWipPalletFactorlabel.Text);
-            DecorWip.PackFactor = int.Parse(DecorWipPackFactorlabel.Text);
-            DecorWip.TotalContainers = int.Parse(DecorWipTotallabel.Text);
+            // DecorWip.PackagingName = "F6X Decor Pad Wip";
+            //DecorWip.PackagingNumber = "not applicable";
+            //if (int.TryParse(DecorWipEmptiesTextBox.Text, out result))
+            //DecorWip.CountOfEmpties = result;
+            // else
+            //DecorWip.CountOfEmpties = 0;
+            //DecorWip.CountOfFulls = 0;
+            //DecorWip.CountOfDamaged = 0;
+            //DecorWip.PalletFactor = int.Parse(DecorWipPalletFactorlabel.Text);
+            // DecorWip.PackFactor = int.Parse(DecorWipPackFactorlabel.Text);
+            //DecorWip.TotalContainers = int.Parse(DecorWipTotallabel.Text);
 
             //AirbagFlap
             AirbagFlap.PackagingName = "F6X Airbag Flap";
@@ -815,7 +815,7 @@ namespace ProFormaUI.Forms
             counts.Add(LowerCover);
             counts.Add(Wad);
             counts.Add(vent);
-            counts.Add(DecorWip);
+            //counts.Add(DecorWip);
             counts.Add(AirbagFlap);
             counts.Add(AirbagHute);
             counts.Add(VentBezel);
@@ -832,6 +832,11 @@ namespace ProFormaUI.Forms
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label67_Click(object sender, EventArgs e)
         {
 
         }

@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using DocumentFormat.OpenXml.Spreadsheet;
 using System.Runtime.InteropServices;
 using System.Media;
+using System.Globalization;
 
 
 
@@ -50,10 +51,103 @@ namespace ProFormaUI
 
             AmendDeadLine();
             CheckLicence();
+            CheckAppAccess();
+            CheckMHEaccess();
             NotificationsLogic.DisplayNotificationsAsRequired();
             timer1.Start();
             SetDateLabel();
         }
+
+        //
+
+
+        private void ShowButtons()
+        {
+            exportButton1.Visible = true;
+            iconButton1.Visible = true; iconButton1.Enabled = false;
+            PackagingCountButton.Visible = true;
+            InternalPackagingButton.Visible = true;
+            TrackerButton.Visible = true;
+            HandoverButton1.Visible = true;
+            HandoverButton2.Visible = true;
+            HandoverButton3.Visible = true;
+            HandoverButton4.Visible = true;
+            ReportBugButton.Visible = true;
+        }
+
+        private void HideButtons()
+        {
+            exportButton1.Visible = false;
+            iconButton1.Visible = false;
+            PackagingCountButton.Visible = false;
+            InternalPackagingButton.Visible = false;
+            TrackerButton.Visible = false;
+            HandoverButton1.Visible = false;
+            HandoverButton2.Visible = false;
+            HandoverButton3.Visible = false;
+            HandoverButton4.Visible = false;
+            ReportBugButton.Visible = false;
+        }
+
+        private void ShowMHE() { iconButton1.Visible = true; iconButton1.Enabled = true; }
+
+        private void HideMHE() { iconButton1.Visible = false; iconButton1.Enabled = false; }
+
+        private void CheckAppAccess()
+        {
+            try 
+            {
+                string currentUser = Environment.UserName;
+                List<UserModel> users = SqliteDataAccess.PermittedUsers();
+
+                foreach (var user in users)
+                {
+                    DateTime ExpiryDate = DateTime.ParseExact(user.Expiry, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+                    if (user.User.ToUpper() == currentUser.ToUpper() && ExpiryDate > DateTime.Now)
+                    {
+                        ShowButtons();
+                        return;
+                    }
+                    else 
+                    {
+                        HideButtons();
+                        MessageBox.Show("Hello World.");
+                    }
+                }
+            }
+            catch (Exception ex) 
+            { 
+                MessageBox.Show("Exception");
+            }
+        }
+
+        private void CheckMHEaccess()
+        {
+            try
+            {
+                string currentUser = Environment.UserName;
+                List<UserModel> users = SqliteDataAccess.PermittedUsersMHE();
+
+                foreach (var user in users)
+                {
+                    DateTime ExpiryDate = DateTime.ParseExact(user.Expiry, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+                    if (user.User.ToUpper() == currentUser.ToUpper() && ExpiryDate > DateTime.Now)
+                    {
+                        ShowMHE();
+                        return;
+                    }
+                    else
+                    {
+                        HideMHE();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception");
+            }
+        }
+
 
         /// <summary>
         /// /dragging window
