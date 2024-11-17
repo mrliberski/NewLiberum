@@ -572,7 +572,7 @@
             AirbagFlapPalletFactorLabel.Name = "AirbagFlapPalletFactorLabel";
             AirbagFlapPalletFactorLabel.Size = new Size(25, 20);
             AirbagFlapPalletFactorLabel.TabIndex = 82;
-            AirbagFlapPalletFactorLabel.Text = "12";
+            AirbagFlapPalletFactorLabel.Text = "16";
             // 
             // AirbagFlapPackFactorLabel
             // 
@@ -606,9 +606,9 @@
             AirbagChutePalletFactorlabel.AutoSize = true;
             AirbagChutePalletFactorlabel.Location = new Point(340, 402);
             AirbagChutePalletFactorlabel.Name = "AirbagChutePalletFactorlabel";
-            AirbagChutePalletFactorlabel.Size = new Size(17, 20);
+            AirbagChutePalletFactorlabel.Size = new Size(25, 20);
             AirbagChutePalletFactorlabel.TabIndex = 89;
-            AirbagChutePalletFactorlabel.Text = "8";
+            AirbagChutePalletFactorlabel.Text = "12";
             // 
             // AirbagChutePackFactorlabel
             // 

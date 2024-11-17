@@ -111,7 +111,6 @@ namespace ProFormaUI
                     else 
                     {
                         HideButtons();
-                        MessageBox.Show("Hello World.");
                     }
                 }
             }

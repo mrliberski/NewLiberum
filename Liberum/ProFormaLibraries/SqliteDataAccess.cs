@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Spreadsheet;
 using Microsoft.VisualBasic.ApplicationServices;
 
@@ -18,6 +19,68 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        //Function to archive 
+        public static void UpdateLiveRecord(int recordNumber)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                using (var cmd = cnn.CreateCommand())
+                {
+                    cmd.CommandText = "UPDATE Assessments SET LiveRecord = @LiveRecord WHERE Id = @RecordNumber";
+
+                    // Add parameters to avoid SQL injection
+                    var liveRecordParam = cmd.CreateParameter();
+                    liveRecordParam.ParameterName = "@LiveRecord";
+                    liveRecordParam.Value = "Archived";
+                    cmd.Parameters.Add(liveRecordParam);
+
+                    var recordNumberParam = cmd.CreateParameter();
+                    recordNumberParam.ParameterName = "@RecordNumber";
+                    recordNumberParam.Value = recordNumber;
+                    cmd.Parameters.Add(recordNumberParam);
+
+                    // Execute the command
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    // Optional: Check if the update was successful
+                    if (rowsAffected == 0)
+                    {
+                        Console.WriteLine($"No record with Id = {recordNumber} was found.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Successfully updated record with Id = {recordNumber} to 'Archived'.");
+                    }
+                }
+            }
+        }
+
+
+        public static List<string> LoadSites()
+        {
+            List<string> sites = new List<string>();
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                sites = cnn.Query<string>("SELECT Sites FROM Sites").ToList();
+            }
+
+            return sites;
+        }
+
+        public static List<string> LoadShifts()
+        {
+            List<string> Shifts = new List<string>();
+
+            //TODO: set up db and add shifts - AssessmentShifts
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                Shifts = cnn.Query<string>("SELECT Shift FROM AssessmentShifts").ToList();
+            }
+
+            return Shifts;
+        }
 
         public static List<UserModel> PermittedUsers()
         {
@@ -72,7 +135,61 @@ namespace ProFormaLibraries
         }
 
 
+        public static List<AssessmentModel> LoadAssessmentItems() 
+        {
+            //pulls list of records from assessment table
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "select * from Assessments WHERE LiveRecord = @Live";
 
+                var parameter = cmd.CreateParameter();
+                parameter.ParameterName = "@Live";
+                parameter.Value = "Live"; // Replace with actual value
+                cmd.Parameters.Add(parameter);
+
+                List<AssessmentModel> items = new List<AssessmentModel>();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var entry = new AssessmentModel();
+
+                        // fill item properties from reader
+                        entry.Id = Convert.ToInt32(reader["Id"]);
+                        entry.Name = reader["Name"].ToString();
+                        entry.Surname = reader["Surname"].ToString(); ;
+                        entry.Site = reader["Site"].ToString(); ;
+                        entry.Shift = reader["Shift"].ToString(); ;
+                        entry.CreatedDate = reader["CreatedDate"].ToString(); ;
+                        entry.CreatedBy = reader["CreatedBy"].ToString(); ;
+                        entry.UpdatedDate = reader["UpdatedDate"].ToString(); ;
+                        entry.UpdatedBy = reader["UpdatedBy"].ToString(); ;
+                        entry.Comments = reader["Comments"].ToString(); ;
+                        entry.LiveRecord = reader["LiveRecord"].ToString(); ;
+                        entry.A1 = reader["A1"].ToString(); ;
+                        entry.A2 = reader["A2"].ToString(); ;
+                        entry.A3 = reader["A3"].ToString(); ;
+                        entry.A4 = reader["A4"].ToString(); ;
+                        entry.A5 = reader["A5"].ToString(); ;
+                        entry.B1 = reader["B1"].ToString(); ;
+                        entry.B2 = reader["B2"].ToString(); ;
+                        entry.H1 = reader["H1"].ToString(); ;
+                        entry.F1 = reader["F1"].ToString(); ;
+                        entry.M3A = reader["M3A"].ToString(); ;
+                        entry.M3B = reader["M3B"].ToString(); ;
+                        entry.D1 = reader["D1"].ToString(); ;
+                        entry.Remote = reader["Remote"].ToString(); ;
+                        entry.Crane = reader["Crane"].ToString(); ;
+                        entry.Assessment = reader["Assessment"].ToString(); ;
+
+                        items.Add(entry);
+                    }
+                }
+                return items;
+            }
+        }
 
         //Function to add packaging count to database for archiving
         public static void AddPackagingCountToDB(List<PackagingCount> counts)

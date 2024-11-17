@@ -299,9 +299,9 @@
             label7.AutoSize = true;
             label7.Location = new Point(12, 380);
             label7.Name = "label7";
-            label7.Size = new Size(134, 40);
+            label7.Size = new Size(153, 40);
             label7.TabIndex = 82;
-            label7.Text = "Material Shortages\r\nWarehouse Checks\r\n";
+            label7.Text = "Warehouse Locations \r\nDaily Check Report";
             // 
             // textBox6
             // 

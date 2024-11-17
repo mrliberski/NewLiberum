@@ -31,7 +31,7 @@ namespace ProFormaLibraries
             output += @$"<h4>Hang on parts&nbsp;</h4>";
             output += $@"{Handover.HangOnParts}&nbsp;&nbsp<hr>";
 
-            output += @$"<h4>Warehouse & Material &nbsp;</h4>";
+            output += @$"<h4>Warehouse Locations Daily Check &nbsp;</h4>";
             output += $@"{Handover.Warehouse}&nbsp;&nbsp<hr>";
 
             output += @$"<h4>Dock and Other Topics &nbsp;</h4>";
