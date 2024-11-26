@@ -508,12 +508,13 @@ namespace ProFormaLibrary
             HtmlAndPdfLogic.CreateHtmlInvoice(Customer, Invoice, Items);
             HtmlAndPdfLogic.CreatePdfInvoice();
 
-            if (Environment.UserName.ToUpper() == "PAWEL.LIBERSKI" || Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "ALINA.SIM")
-            {
-                System.Diagnostics.Process.Start("explorer.exe", @".\HTML");
-            }
+            //if (Environment.UserName.ToUpper() == "PAWEL.LIBERSKI" || Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "ALINA.SIM")
+            //{
+            //    System.Diagnostics.Process.Start("explorer.exe", @".\HTML");
+            //}
 
-            
+            System.Diagnostics.Process.Start("explorer.exe", @".\HTML");
+
         }
 
         public void SweepUptheForm()

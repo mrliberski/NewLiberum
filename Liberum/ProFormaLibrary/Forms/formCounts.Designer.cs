@@ -192,6 +192,15 @@
             errorLabel = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
+            label13 = new Label();
+            label14 = new Label();
+            PinkBinTextBox = new TextBox();
+            label15 = new Label();
+            label20 = new Label();
+            BlueBinTexBox = new TextBox();
+            label23 = new Label();
+            label24 = new Label();
+            GreenBinTextBox = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -221,7 +230,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(20, 68);
+            label1.Location = new Point(20, 51);
             label1.Name = "label1";
             label1.Size = new Size(219, 20);
             label1.TabIndex = 3;
@@ -229,7 +238,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(409, 65);
+            textBox1.Location = new Point(409, 48);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(86, 27);
             textBox1.TabIndex = 1;
@@ -237,7 +246,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(501, 65);
+            textBox2.Location = new Point(501, 48);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(86, 27);
             textBox2.TabIndex = 2;
@@ -246,7 +255,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(338, 68);
+            label2.Location = new Point(338, 51);
             label2.Name = "label2";
             label2.Size = new Size(65, 20);
             label2.TabIndex = 5;
@@ -255,7 +264,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 11F);
             label3.Location = new Point(12, 9);
             label3.Name = "label3";
             label3.Size = new Size(591, 25);
@@ -265,7 +274,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(409, 42);
+            label4.Location = new Point(409, 25);
             label4.Name = "label4";
             label4.Size = new Size(62, 20);
             label4.TabIndex = 9;
@@ -313,7 +322,7 @@
             groupBox1.Controls.Add(textBox2);
             groupBox1.Location = new Point(12, 57);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1031, 219);
+            groupBox1.Size = new Size(1031, 191);
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             groupBox1.Text = "Sequenced";
@@ -321,7 +330,7 @@
             // label80
             // 
             label80.AutoSize = true;
-            label80.Location = new Point(812, 169);
+            label80.Location = new Point(812, 152);
             label80.Name = "label80";
             label80.Size = new Size(25, 20);
             label80.TabIndex = 39;
@@ -330,7 +339,7 @@
             // label81
             // 
             label81.AutoSize = true;
-            label81.Location = new Point(812, 136);
+            label81.Location = new Point(812, 119);
             label81.Name = "label81";
             label81.Size = new Size(25, 20);
             label81.TabIndex = 38;
@@ -339,7 +348,7 @@
             // label82
             // 
             label82.AutoSize = true;
-            label82.Location = new Point(812, 103);
+            label82.Location = new Point(812, 86);
             label82.Name = "label82";
             label82.Size = new Size(17, 20);
             label82.TabIndex = 37;
@@ -348,7 +357,7 @@
             // label83
             // 
             label83.AutoSize = true;
-            label83.Location = new Point(812, 42);
+            label83.Location = new Point(812, 25);
             label83.Name = "label83";
             label83.Size = new Size(82, 20);
             label83.TabIndex = 36;
@@ -357,7 +366,7 @@
             // label84
             // 
             label84.AutoSize = true;
-            label84.Location = new Point(812, 68);
+            label84.Location = new Point(812, 51);
             label84.Name = "label84";
             label84.Size = new Size(25, 20);
             label84.TabIndex = 35;
@@ -366,7 +375,7 @@
             // topCoverTotalLabel
             // 
             topCoverTotalLabel.AutoSize = true;
-            topCoverTotalLabel.Location = new Point(900, 169);
+            topCoverTotalLabel.Location = new Point(900, 152);
             topCoverTotalLabel.Name = "topCoverTotalLabel";
             topCoverTotalLabel.Size = new Size(17, 20);
             topCoverTotalLabel.TabIndex = 34;
@@ -375,7 +384,7 @@
             // topCoverPalletFactorLabel
             // 
             topCoverPalletFactorLabel.AutoSize = true;
-            topCoverPalletFactorLabel.Location = new Point(717, 169);
+            topCoverPalletFactorLabel.Location = new Point(717, 152);
             topCoverPalletFactorLabel.Name = "topCoverPalletFactorLabel";
             topCoverPalletFactorLabel.Size = new Size(17, 20);
             topCoverPalletFactorLabel.TabIndex = 33;
@@ -383,7 +392,7 @@
             // 
             // topcoverDamagedTextBox
             // 
-            topcoverDamagedTextBox.Location = new Point(593, 166);
+            topcoverDamagedTextBox.Location = new Point(593, 149);
             topcoverDamagedTextBox.Name = "topcoverDamagedTextBox";
             topcoverDamagedTextBox.Size = new Size(86, 27);
             topcoverDamagedTextBox.TabIndex = 12;
@@ -392,7 +401,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(338, 169);
+            label21.Location = new Point(338, 152);
             label21.Name = "label21";
             label21.Size = new Size(65, 20);
             label21.TabIndex = 30;
@@ -400,7 +409,7 @@
             // 
             // topCoverFullsTextBox
             // 
-            topCoverFullsTextBox.Location = new Point(501, 166);
+            topCoverFullsTextBox.Location = new Point(501, 149);
             topCoverFullsTextBox.Name = "topCoverFullsTextBox";
             topCoverFullsTextBox.Size = new Size(86, 27);
             topCoverFullsTextBox.TabIndex = 11;
@@ -409,7 +418,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(20, 169);
+            label22.Location = new Point(20, 152);
             label22.Name = "label22";
             label22.Size = new Size(206, 20);
             label22.TabIndex = 28;
@@ -417,7 +426,7 @@
             // 
             // topCoverEmptiestextBox
             // 
-            topCoverEmptiestextBox.Location = new Point(409, 166);
+            topCoverEmptiestextBox.Location = new Point(409, 149);
             topCoverEmptiestextBox.Name = "topCoverEmptiestextBox";
             topCoverEmptiestextBox.Size = new Size(86, 27);
             topCoverEmptiestextBox.TabIndex = 10;
@@ -426,7 +435,7 @@
             // DecorTotalLabel
             // 
             DecorTotalLabel.AutoSize = true;
-            DecorTotalLabel.Location = new Point(900, 136);
+            DecorTotalLabel.Location = new Point(900, 119);
             DecorTotalLabel.Name = "DecorTotalLabel";
             DecorTotalLabel.Size = new Size(17, 20);
             DecorTotalLabel.TabIndex = 27;
@@ -435,7 +444,7 @@
             // DecorPalletFactorlabel
             // 
             DecorPalletFactorlabel.AutoSize = true;
-            DecorPalletFactorlabel.Location = new Point(717, 136);
+            DecorPalletFactorlabel.Location = new Point(717, 119);
             DecorPalletFactorlabel.Name = "DecorPalletFactorlabel";
             DecorPalletFactorlabel.Size = new Size(17, 20);
             DecorPalletFactorlabel.TabIndex = 26;
@@ -443,7 +452,7 @@
             // 
             // DecorDamagedtextBox
             // 
-            DecorDamagedtextBox.Location = new Point(593, 133);
+            DecorDamagedtextBox.Location = new Point(593, 116);
             DecorDamagedtextBox.Name = "DecorDamagedtextBox";
             DecorDamagedtextBox.Size = new Size(86, 27);
             DecorDamagedtextBox.TabIndex = 9;
@@ -452,7 +461,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(338, 136);
+            label17.Location = new Point(338, 119);
             label17.Name = "label17";
             label17.Size = new Size(65, 20);
             label17.TabIndex = 23;
@@ -460,7 +469,7 @@
             // 
             // DecorFulltextBox
             // 
-            DecorFulltextBox.Location = new Point(501, 133);
+            DecorFulltextBox.Location = new Point(501, 116);
             DecorFulltextBox.Name = "DecorFulltextBox";
             DecorFulltextBox.Size = new Size(86, 27);
             DecorFulltextBox.TabIndex = 8;
@@ -469,7 +478,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(20, 136);
+            label18.Location = new Point(20, 119);
             label18.Name = "label18";
             label18.Size = new Size(174, 20);
             label18.TabIndex = 21;
@@ -477,7 +486,7 @@
             // 
             // DecorEmptiestextBox
             // 
-            DecorEmptiestextBox.Location = new Point(409, 133);
+            DecorEmptiestextBox.Location = new Point(409, 116);
             DecorEmptiestextBox.Name = "DecorEmptiestextBox";
             DecorEmptiestextBox.Size = new Size(86, 27);
             DecorEmptiestextBox.TabIndex = 7;
@@ -486,7 +495,7 @@
             // lowerTotalLabel
             // 
             lowerTotalLabel.AutoSize = true;
-            lowerTotalLabel.Location = new Point(900, 103);
+            lowerTotalLabel.Location = new Point(900, 86);
             lowerTotalLabel.Name = "lowerTotalLabel";
             lowerTotalLabel.Size = new Size(17, 20);
             lowerTotalLabel.TabIndex = 20;
@@ -495,7 +504,7 @@
             // lowerPalletFactorLabel
             // 
             lowerPalletFactorLabel.AutoSize = true;
-            lowerPalletFactorLabel.Location = new Point(717, 103);
+            lowerPalletFactorLabel.Location = new Point(717, 86);
             lowerPalletFactorLabel.Name = "lowerPalletFactorLabel";
             lowerPalletFactorLabel.Size = new Size(17, 20);
             lowerPalletFactorLabel.TabIndex = 19;
@@ -503,7 +512,7 @@
             // 
             // lowersDamagedTextBox
             // 
-            lowersDamagedTextBox.Location = new Point(593, 100);
+            lowersDamagedTextBox.Location = new Point(593, 83);
             lowersDamagedTextBox.Name = "lowersDamagedTextBox";
             lowersDamagedTextBox.Size = new Size(86, 27);
             lowersDamagedTextBox.TabIndex = 6;
@@ -512,7 +521,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(900, 42);
+            label11.Location = new Point(900, 25);
             label11.Name = "label11";
             label11.Size = new Size(116, 20);
             label11.TabIndex = 17;
@@ -521,7 +530,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(900, 68);
+            label12.Location = new Point(900, 51);
             label12.Name = "label12";
             label12.Size = new Size(17, 20);
             label12.TabIndex = 16;
@@ -530,7 +539,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(717, 42);
+            label10.Location = new Point(717, 25);
             label10.Name = "label10";
             label10.Size = new Size(89, 20);
             label10.TabIndex = 15;
@@ -539,7 +548,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(717, 68);
+            label9.Location = new Point(717, 51);
             label9.Name = "label9";
             label9.Size = new Size(17, 20);
             label9.TabIndex = 14;
@@ -548,7 +557,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(593, 42);
+            label8.Location = new Point(593, 25);
             label8.Name = "label8";
             label8.Size = new Size(75, 20);
             label8.TabIndex = 13;
@@ -556,7 +565,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(593, 65);
+            textBox5.Location = new Point(593, 48);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(86, 27);
             textBox5.TabIndex = 3;
@@ -565,7 +574,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(501, 42);
+            label7.Location = new Point(501, 25);
             label7.Name = "label7";
             label7.Size = new Size(32, 20);
             label7.TabIndex = 11;
@@ -574,7 +583,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(338, 103);
+            label6.Location = new Point(338, 86);
             label6.Name = "label6";
             label6.Size = new Size(65, 20);
             label6.TabIndex = 9;
@@ -582,7 +591,7 @@
             // 
             // lowersFullsTextBox
             // 
-            lowersFullsTextBox.Location = new Point(501, 100);
+            lowersFullsTextBox.Location = new Point(501, 83);
             lowersFullsTextBox.Name = "lowersFullsTextBox";
             lowersFullsTextBox.Size = new Size(86, 27);
             lowersFullsTextBox.TabIndex = 5;
@@ -591,7 +600,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(20, 103);
+            label5.Location = new Point(20, 86);
             label5.Name = "label5";
             label5.Size = new Size(146, 20);
             label5.TabIndex = 7;
@@ -599,7 +608,7 @@
             // 
             // lowerEmpriesTextBox
             // 
-            lowerEmpriesTextBox.Location = new Point(409, 100);
+            lowerEmpriesTextBox.Location = new Point(409, 83);
             lowerEmpriesTextBox.Name = "lowerEmpriesTextBox";
             lowerEmpriesTextBox.Size = new Size(86, 27);
             lowerEmpriesTextBox.TabIndex = 4;
@@ -607,6 +616,15 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(label23);
+            groupBox2.Controls.Add(label24);
+            groupBox2.Controls.Add(GreenBinTextBox);
+            groupBox2.Controls.Add(label15);
+            groupBox2.Controls.Add(label20);
+            groupBox2.Controls.Add(BlueBinTexBox);
+            groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(label14);
+            groupBox2.Controls.Add(PinkBinTextBox);
             groupBox2.Controls.Add(MetalPalTotalLabel);
             groupBox2.Controls.Add(MetalPalPackFacLabel);
             groupBox2.Controls.Add(metalPalPalletFactorLabel);
@@ -725,9 +743,9 @@
             groupBox2.Controls.Add(label42);
             groupBox2.Controls.Add(label43);
             groupBox2.Controls.Add(lowColFullTextBox);
-            groupBox2.Location = new Point(12, 282);
+            groupBox2.Location = new Point(12, 254);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1031, 554);
+            groupBox2.Size = new Size(1031, 638);
             groupBox2.TabIndex = 35;
             groupBox2.TabStop = false;
             groupBox2.Text = "Hang On";
@@ -735,7 +753,7 @@
             // MetalPalTotalLabel
             // 
             MetalPalTotalLabel.AutoSize = true;
-            MetalPalTotalLabel.Location = new Point(900, 468);
+            MetalPalTotalLabel.Location = new Point(900, 447);
             MetalPalTotalLabel.Name = "MetalPalTotalLabel";
             MetalPalTotalLabel.Size = new Size(17, 20);
             MetalPalTotalLabel.TabIndex = 119;
@@ -744,7 +762,7 @@
             // MetalPalPackFacLabel
             // 
             MetalPalPackFacLabel.AutoSize = true;
-            MetalPalPackFacLabel.Location = new Point(812, 468);
+            MetalPalPackFacLabel.Location = new Point(812, 447);
             MetalPalPackFacLabel.Name = "MetalPalPackFacLabel";
             MetalPalPackFacLabel.Size = new Size(17, 20);
             MetalPalPackFacLabel.TabIndex = 118;
@@ -753,7 +771,7 @@
             // metalPalPalletFactorLabel
             // 
             metalPalPalletFactorLabel.AutoSize = true;
-            metalPalPalletFactorLabel.Location = new Point(717, 468);
+            metalPalPalletFactorLabel.Location = new Point(717, 447);
             metalPalPalletFactorLabel.Name = "metalPalPalletFactorLabel";
             metalPalPalletFactorLabel.Size = new Size(17, 20);
             metalPalPalletFactorLabel.TabIndex = 117;
@@ -762,7 +780,7 @@
             // textBox3
             // 
             textBox3.Enabled = false;
-            textBox3.Location = new Point(593, 465);
+            textBox3.Location = new Point(593, 444);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(86, 27);
             textBox3.TabIndex = 114;
@@ -770,7 +788,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(338, 468);
+            label16.Location = new Point(338, 447);
             label16.Name = "label16";
             label16.Size = new Size(65, 20);
             label16.TabIndex = 116;
@@ -779,7 +797,7 @@
             // mett
             // 
             mett.Enabled = false;
-            mett.Location = new Point(501, 465);
+            mett.Location = new Point(501, 444);
             mett.Name = "mett";
             mett.Size = new Size(86, 27);
             mett.TabIndex = 113;
@@ -787,7 +805,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(20, 466);
+            label19.Location = new Point(20, 445);
             label19.Name = "label19";
             label19.Size = new Size(121, 20);
             label19.TabIndex = 115;
@@ -795,7 +813,7 @@
             // 
             // metalPalEmptyTextBox
             // 
-            metalPalEmptyTextBox.Location = new Point(409, 465);
+            metalPalEmptyTextBox.Location = new Point(409, 444);
             metalPalEmptyTextBox.Name = "metalPalEmptyTextBox";
             metalPalEmptyTextBox.Size = new Size(86, 27);
             metalPalEmptyTextBox.TabIndex = 112;
@@ -804,7 +822,7 @@
             // LidsTotallabel
             // 
             LidsTotallabel.AutoSize = true;
-            LidsTotallabel.Location = new Point(900, 501);
+            LidsTotallabel.Location = new Point(900, 480);
             LidsTotallabel.Name = "LidsTotallabel";
             LidsTotallabel.Size = new Size(17, 20);
             LidsTotallabel.TabIndex = 111;
@@ -813,7 +831,7 @@
             // EuroPalletTotallabel
             // 
             EuroPalletTotallabel.AutoSize = true;
-            EuroPalletTotallabel.Location = new Point(900, 435);
+            EuroPalletTotallabel.Location = new Point(900, 414);
             EuroPalletTotallabel.Name = "EuroPalletTotallabel";
             EuroPalletTotallabel.Size = new Size(17, 20);
             EuroPalletTotallabel.TabIndex = 110;
@@ -822,7 +840,7 @@
             // StColUpperTotalLabel
             // 
             StColUpperTotalLabel.AutoSize = true;
-            StColUpperTotalLabel.Location = new Point(900, 402);
+            StColUpperTotalLabel.Location = new Point(900, 381);
             StColUpperTotalLabel.Name = "StColUpperTotalLabel";
             StColUpperTotalLabel.Size = new Size(17, 20);
             StColUpperTotalLabel.TabIndex = 109;
@@ -831,7 +849,7 @@
             // SideCapTotallabel
             // 
             SideCapTotallabel.AutoSize = true;
-            SideCapTotallabel.Location = new Point(900, 369);
+            SideCapTotallabel.Location = new Point(900, 348);
             SideCapTotallabel.Name = "SideCapTotallabel";
             SideCapTotallabel.Size = new Size(17, 20);
             SideCapTotallabel.TabIndex = 108;
@@ -840,7 +858,7 @@
             // CIDcoverTotallabel
             // 
             CIDcoverTotallabel.AutoSize = true;
-            CIDcoverTotallabel.Location = new Point(900, 336);
+            CIDcoverTotallabel.Location = new Point(900, 315);
             CIDcoverTotallabel.Name = "CIDcoverTotallabel";
             CIDcoverTotallabel.Size = new Size(17, 20);
             CIDcoverTotallabel.TabIndex = 107;
@@ -849,7 +867,7 @@
             // LoweCapTotallabel
             // 
             LoweCapTotallabel.AutoSize = true;
-            LoweCapTotallabel.Location = new Point(900, 303);
+            LoweCapTotallabel.Location = new Point(900, 282);
             LoweCapTotallabel.Name = "LoweCapTotallabel";
             LoweCapTotallabel.Size = new Size(17, 20);
             LoweCapTotallabel.TabIndex = 106;
@@ -858,7 +876,7 @@
             // SideCoverTotallabel
             // 
             SideCoverTotallabel.AutoSize = true;
-            SideCoverTotallabel.Location = new Point(900, 270);
+            SideCoverTotallabel.Location = new Point(900, 249);
             SideCoverTotallabel.Name = "SideCoverTotallabel";
             SideCoverTotallabel.Size = new Size(17, 20);
             SideCoverTotallabel.TabIndex = 105;
@@ -867,7 +885,7 @@
             // ProjServCoverTotalLabel
             // 
             ProjServCoverTotalLabel.AutoSize = true;
-            ProjServCoverTotalLabel.Location = new Point(900, 237);
+            ProjServCoverTotalLabel.Location = new Point(900, 216);
             ProjServCoverTotalLabel.Name = "ProjServCoverTotalLabel";
             ProjServCoverTotalLabel.Size = new Size(17, 20);
             ProjServCoverTotalLabel.TabIndex = 104;
@@ -876,7 +894,7 @@
             // ProjectorCoverTotallabel
             // 
             ProjectorCoverTotallabel.AutoSize = true;
-            ProjectorCoverTotallabel.Location = new Point(900, 204);
+            ProjectorCoverTotallabel.Location = new Point(900, 183);
             ProjectorCoverTotallabel.Name = "ProjectorCoverTotallabel";
             ProjectorCoverTotallabel.Size = new Size(17, 20);
             ProjectorCoverTotallabel.TabIndex = 103;
@@ -885,7 +903,7 @@
             // AirsplitterTotallabel
             // 
             AirsplitterTotallabel.AutoSize = true;
-            AirsplitterTotallabel.Location = new Point(900, 171);
+            AirsplitterTotallabel.Location = new Point(900, 150);
             AirsplitterTotallabel.Name = "AirsplitterTotallabel";
             AirsplitterTotallabel.Size = new Size(17, 20);
             AirsplitterTotallabel.TabIndex = 102;
@@ -894,7 +912,7 @@
             // footwellTotalLabel
             // 
             footwellTotalLabel.AutoSize = true;
-            footwellTotalLabel.Location = new Point(900, 138);
+            footwellTotalLabel.Location = new Point(900, 117);
             footwellTotalLabel.Name = "footwellTotalLabel";
             footwellTotalLabel.Size = new Size(17, 20);
             footwellTotalLabel.TabIndex = 101;
@@ -903,7 +921,7 @@
             // PuddletotalLabel
             // 
             PuddletotalLabel.AutoSize = true;
-            PuddletotalLabel.Location = new Point(900, 105);
+            PuddletotalLabel.Location = new Point(900, 84);
             PuddletotalLabel.Name = "PuddletotalLabel";
             PuddletotalLabel.Size = new Size(17, 20);
             PuddletotalLabel.TabIndex = 100;
@@ -912,7 +930,7 @@
             // label97
             // 
             label97.AutoSize = true;
-            label97.Location = new Point(900, 44);
+            label97.Location = new Point(900, 23);
             label97.Name = "label97";
             label97.Size = new Size(116, 20);
             label97.TabIndex = 99;
@@ -921,7 +939,7 @@
             // LowColTotalContTextBox
             // 
             LowColTotalContTextBox.AutoSize = true;
-            LowColTotalContTextBox.Location = new Point(900, 70);
+            LowColTotalContTextBox.Location = new Point(900, 49);
             LowColTotalContTextBox.Name = "LowColTotalContTextBox";
             LowColTotalContTextBox.Size = new Size(17, 20);
             LowColTotalContTextBox.TabIndex = 98;
@@ -930,7 +948,7 @@
             // LidsPackFactorlabel
             // 
             LidsPackFactorlabel.AutoSize = true;
-            LidsPackFactorlabel.Location = new Point(812, 501);
+            LidsPackFactorlabel.Location = new Point(812, 480);
             LidsPackFactorlabel.Name = "LidsPackFactorlabel";
             LidsPackFactorlabel.Size = new Size(17, 20);
             LidsPackFactorlabel.TabIndex = 97;
@@ -939,7 +957,7 @@
             // LidsPalletFactorlabel
             // 
             LidsPalletFactorlabel.AutoSize = true;
-            LidsPalletFactorlabel.Location = new Point(717, 501);
+            LidsPalletFactorlabel.Location = new Point(717, 480);
             LidsPalletFactorlabel.Name = "LidsPalletFactorlabel";
             LidsPalletFactorlabel.Size = new Size(25, 20);
             LidsPalletFactorlabel.TabIndex = 96;
@@ -948,7 +966,7 @@
             // LidsDamagedtextBox
             // 
             LidsDamagedtextBox.Enabled = false;
-            LidsDamagedtextBox.Location = new Point(593, 498);
+            LidsDamagedtextBox.Location = new Point(593, 477);
             LidsDamagedtextBox.Name = "LidsDamagedtextBox";
             LidsDamagedtextBox.Size = new Size(86, 27);
             LidsDamagedtextBox.TabIndex = 51;
@@ -956,7 +974,7 @@
             // label78
             // 
             label78.AutoSize = true;
-            label78.Location = new Point(338, 501);
+            label78.Location = new Point(338, 480);
             label78.Name = "label78";
             label78.Size = new Size(65, 20);
             label78.TabIndex = 93;
@@ -965,7 +983,7 @@
             // LidsFullstextBox
             // 
             LidsFullstextBox.Enabled = false;
-            LidsFullstextBox.Location = new Point(501, 498);
+            LidsFullstextBox.Location = new Point(501, 477);
             LidsFullstextBox.Name = "LidsFullstextBox";
             LidsFullstextBox.Size = new Size(86, 27);
             LidsFullstextBox.TabIndex = 50;
@@ -973,7 +991,7 @@
             // label79
             // 
             label79.AutoSize = true;
-            label79.Location = new Point(20, 499);
+            label79.Location = new Point(20, 478);
             label79.Name = "label79";
             label79.Size = new Size(112, 20);
             label79.TabIndex = 91;
@@ -981,7 +999,7 @@
             // 
             // LidsEmptiesTextBox
             // 
-            LidsEmptiesTextBox.Location = new Point(409, 498);
+            LidsEmptiesTextBox.Location = new Point(409, 477);
             LidsEmptiesTextBox.Name = "LidsEmptiesTextBox";
             LidsEmptiesTextBox.Size = new Size(86, 27);
             LidsEmptiesTextBox.TabIndex = 49;
@@ -990,7 +1008,7 @@
             // EuroPalletPackFactorlabel
             // 
             EuroPalletPackFactorlabel.AutoSize = true;
-            EuroPalletPackFactorlabel.Location = new Point(812, 435);
+            EuroPalletPackFactorlabel.Location = new Point(812, 414);
             EuroPalletPackFactorlabel.Name = "EuroPalletPackFactorlabel";
             EuroPalletPackFactorlabel.Size = new Size(17, 20);
             EuroPalletPackFactorlabel.TabIndex = 90;
@@ -999,7 +1017,7 @@
             // EuroPalletPalletFactorlabel
             // 
             EuroPalletPalletFactorlabel.AutoSize = true;
-            EuroPalletPalletFactorlabel.Location = new Point(717, 435);
+            EuroPalletPalletFactorlabel.Location = new Point(717, 414);
             EuroPalletPalletFactorlabel.Name = "EuroPalletPalletFactorlabel";
             EuroPalletPalletFactorlabel.Size = new Size(17, 20);
             EuroPalletPalletFactorlabel.TabIndex = 89;
@@ -1008,7 +1026,7 @@
             // EuroPalletDamagedtextBox
             // 
             EuroPalletDamagedtextBox.Enabled = false;
-            EuroPalletDamagedtextBox.Location = new Point(593, 432);
+            EuroPalletDamagedtextBox.Location = new Point(593, 411);
             EuroPalletDamagedtextBox.Name = "EuroPalletDamagedtextBox";
             EuroPalletDamagedtextBox.Size = new Size(86, 27);
             EuroPalletDamagedtextBox.TabIndex = 48;
@@ -1017,7 +1035,7 @@
             // label74
             // 
             label74.AutoSize = true;
-            label74.Location = new Point(338, 435);
+            label74.Location = new Point(338, 414);
             label74.Name = "label74";
             label74.Size = new Size(65, 20);
             label74.TabIndex = 86;
@@ -1026,7 +1044,7 @@
             // EuroPalletFullstextBox
             // 
             EuroPalletFullstextBox.Enabled = false;
-            EuroPalletFullstextBox.Location = new Point(501, 432);
+            EuroPalletFullstextBox.Location = new Point(501, 411);
             EuroPalletFullstextBox.Name = "EuroPalletFullstextBox";
             EuroPalletFullstextBox.Size = new Size(86, 27);
             EuroPalletFullstextBox.TabIndex = 47;
@@ -1035,7 +1053,7 @@
             // label75
             // 
             label75.AutoSize = true;
-            label75.Location = new Point(20, 433);
+            label75.Location = new Point(20, 412);
             label75.Name = "label75";
             label75.Size = new Size(106, 20);
             label75.TabIndex = 84;
@@ -1043,7 +1061,7 @@
             // 
             // EuroPalletEmptiesTextBox
             // 
-            EuroPalletEmptiesTextBox.Location = new Point(409, 432);
+            EuroPalletEmptiesTextBox.Location = new Point(409, 411);
             EuroPalletEmptiesTextBox.Name = "EuroPalletEmptiesTextBox";
             EuroPalletEmptiesTextBox.Size = new Size(86, 27);
             EuroPalletEmptiesTextBox.TabIndex = 46;
@@ -1052,7 +1070,7 @@
             // StColUpperPackFactorLabel
             // 
             StColUpperPackFactorLabel.AutoSize = true;
-            StColUpperPackFactorLabel.Location = new Point(812, 402);
+            StColUpperPackFactorLabel.Location = new Point(812, 381);
             StColUpperPackFactorLabel.Name = "StColUpperPackFactorLabel";
             StColUpperPackFactorLabel.Size = new Size(25, 20);
             StColUpperPackFactorLabel.TabIndex = 83;
@@ -1061,7 +1079,7 @@
             // StColUpperPalletFactorLabel
             // 
             StColUpperPalletFactorLabel.AutoSize = true;
-            StColUpperPalletFactorLabel.Location = new Point(717, 402);
+            StColUpperPalletFactorLabel.Location = new Point(717, 381);
             StColUpperPalletFactorLabel.Name = "StColUpperPalletFactorLabel";
             StColUpperPalletFactorLabel.Size = new Size(25, 20);
             StColUpperPalletFactorLabel.TabIndex = 82;
@@ -1069,7 +1087,7 @@
             // 
             // StColUpperDamagedtextBox
             // 
-            StColUpperDamagedtextBox.Location = new Point(593, 399);
+            StColUpperDamagedtextBox.Location = new Point(593, 378);
             StColUpperDamagedtextBox.Name = "StColUpperDamagedtextBox";
             StColUpperDamagedtextBox.Size = new Size(86, 27);
             StColUpperDamagedtextBox.TabIndex = 45;
@@ -1078,7 +1096,7 @@
             // label70
             // 
             label70.AutoSize = true;
-            label70.Location = new Point(338, 402);
+            label70.Location = new Point(338, 381);
             label70.Name = "label70";
             label70.Size = new Size(65, 20);
             label70.TabIndex = 79;
@@ -1086,7 +1104,7 @@
             // 
             // StColUpperFullstextBox
             // 
-            StColUpperFullstextBox.Location = new Point(501, 399);
+            StColUpperFullstextBox.Location = new Point(501, 378);
             StColUpperFullstextBox.Name = "StColUpperFullstextBox";
             StColUpperFullstextBox.Size = new Size(86, 27);
             StColUpperFullstextBox.TabIndex = 44;
@@ -1095,7 +1113,7 @@
             // label71
             // 
             label71.AutoSize = true;
-            label71.Location = new Point(20, 400);
+            label71.Location = new Point(20, 379);
             label71.Name = "label71";
             label71.Size = new Size(192, 20);
             label71.TabIndex = 77;
@@ -1103,7 +1121,7 @@
             // 
             // StColUpperEmptiesTextBox
             // 
-            StColUpperEmptiesTextBox.Location = new Point(409, 399);
+            StColUpperEmptiesTextBox.Location = new Point(409, 378);
             StColUpperEmptiesTextBox.Name = "StColUpperEmptiesTextBox";
             StColUpperEmptiesTextBox.Size = new Size(86, 27);
             StColUpperEmptiesTextBox.TabIndex = 43;
@@ -1112,7 +1130,7 @@
             // SideCapPackFactorlabel
             // 
             SideCapPackFactorlabel.AutoSize = true;
-            SideCapPackFactorlabel.Location = new Point(812, 369);
+            SideCapPackFactorlabel.Location = new Point(812, 348);
             SideCapPackFactorlabel.Name = "SideCapPackFactorlabel";
             SideCapPackFactorlabel.Size = new Size(25, 20);
             SideCapPackFactorlabel.TabIndex = 76;
@@ -1121,7 +1139,7 @@
             // SideCapPalletFactorlabel
             // 
             SideCapPalletFactorlabel.AutoSize = true;
-            SideCapPalletFactorlabel.Location = new Point(717, 369);
+            SideCapPalletFactorlabel.Location = new Point(717, 348);
             SideCapPalletFactorlabel.Name = "SideCapPalletFactorlabel";
             SideCapPalletFactorlabel.Size = new Size(17, 20);
             SideCapPalletFactorlabel.TabIndex = 75;
@@ -1129,7 +1147,7 @@
             // 
             // SideCapDamagedtextBox
             // 
-            SideCapDamagedtextBox.Location = new Point(593, 366);
+            SideCapDamagedtextBox.Location = new Point(593, 345);
             SideCapDamagedtextBox.Name = "SideCapDamagedtextBox";
             SideCapDamagedtextBox.Size = new Size(86, 27);
             SideCapDamagedtextBox.TabIndex = 42;
@@ -1138,7 +1156,7 @@
             // label66
             // 
             label66.AutoSize = true;
-            label66.Location = new Point(338, 369);
+            label66.Location = new Point(338, 348);
             label66.Name = "label66";
             label66.Size = new Size(65, 20);
             label66.TabIndex = 72;
@@ -1146,7 +1164,7 @@
             // 
             // SideCapFullstextBox
             // 
-            SideCapFullstextBox.Location = new Point(501, 366);
+            SideCapFullstextBox.Location = new Point(501, 345);
             SideCapFullstextBox.Name = "SideCapFullstextBox";
             SideCapFullstextBox.Size = new Size(86, 27);
             SideCapFullstextBox.TabIndex = 41;
@@ -1155,7 +1173,7 @@
             // label67
             // 
             label67.AutoSize = true;
-            label67.Location = new Point(20, 367);
+            label67.Location = new Point(20, 346);
             label67.Name = "label67";
             label67.Size = new Size(141, 20);
             label67.TabIndex = 70;
@@ -1163,7 +1181,7 @@
             // 
             // SideCapemptiesTextBox
             // 
-            SideCapemptiesTextBox.Location = new Point(409, 366);
+            SideCapemptiesTextBox.Location = new Point(409, 345);
             SideCapemptiesTextBox.Name = "SideCapemptiesTextBox";
             SideCapemptiesTextBox.Size = new Size(86, 27);
             SideCapemptiesTextBox.TabIndex = 40;
@@ -1172,7 +1190,7 @@
             // CIDcoverPackFactorlabel
             // 
             CIDcoverPackFactorlabel.AutoSize = true;
-            CIDcoverPackFactorlabel.Location = new Point(812, 336);
+            CIDcoverPackFactorlabel.Location = new Point(812, 315);
             CIDcoverPackFactorlabel.Name = "CIDcoverPackFactorlabel";
             CIDcoverPackFactorlabel.Size = new Size(25, 20);
             CIDcoverPackFactorlabel.TabIndex = 69;
@@ -1181,7 +1199,7 @@
             // CIDcoverPalletFactorlabel
             // 
             CIDcoverPalletFactorlabel.AutoSize = true;
-            CIDcoverPalletFactorlabel.Location = new Point(717, 336);
+            CIDcoverPalletFactorlabel.Location = new Point(717, 315);
             CIDcoverPalletFactorlabel.Name = "CIDcoverPalletFactorlabel";
             CIDcoverPalletFactorlabel.Size = new Size(25, 20);
             CIDcoverPalletFactorlabel.TabIndex = 68;
@@ -1189,7 +1207,7 @@
             // 
             // CIDcoverDamagedtextBox
             // 
-            CIDcoverDamagedtextBox.Location = new Point(593, 333);
+            CIDcoverDamagedtextBox.Location = new Point(593, 312);
             CIDcoverDamagedtextBox.Name = "CIDcoverDamagedtextBox";
             CIDcoverDamagedtextBox.Size = new Size(86, 27);
             CIDcoverDamagedtextBox.TabIndex = 39;
@@ -1198,7 +1216,7 @@
             // label62
             // 
             label62.AutoSize = true;
-            label62.Location = new Point(338, 336);
+            label62.Location = new Point(338, 315);
             label62.Name = "label62";
             label62.Size = new Size(65, 20);
             label62.TabIndex = 65;
@@ -1206,7 +1224,7 @@
             // 
             // CIDcoverFullstextBox
             // 
-            CIDcoverFullstextBox.Location = new Point(501, 333);
+            CIDcoverFullstextBox.Location = new Point(501, 312);
             CIDcoverFullstextBox.Name = "CIDcoverFullstextBox";
             CIDcoverFullstextBox.Size = new Size(86, 27);
             CIDcoverFullstextBox.TabIndex = 38;
@@ -1215,7 +1233,7 @@
             // label63
             // 
             label63.AutoSize = true;
-            label63.Location = new Point(20, 334);
+            label63.Location = new Point(20, 313);
             label63.Name = "label63";
             label63.Size = new Size(142, 20);
             label63.TabIndex = 63;
@@ -1223,7 +1241,7 @@
             // 
             // CIDcoverEmptiestextBox
             // 
-            CIDcoverEmptiestextBox.Location = new Point(409, 333);
+            CIDcoverEmptiestextBox.Location = new Point(409, 312);
             CIDcoverEmptiestextBox.Name = "CIDcoverEmptiestextBox";
             CIDcoverEmptiestextBox.Size = new Size(86, 27);
             CIDcoverEmptiestextBox.TabIndex = 37;
@@ -1232,7 +1250,7 @@
             // LoweCapPackFctorlabel
             // 
             LoweCapPackFctorlabel.AutoSize = true;
-            LoweCapPackFctorlabel.Location = new Point(812, 303);
+            LoweCapPackFctorlabel.Location = new Point(812, 282);
             LoweCapPackFctorlabel.Name = "LoweCapPackFctorlabel";
             LoweCapPackFctorlabel.Size = new Size(25, 20);
             LoweCapPackFctorlabel.TabIndex = 62;
@@ -1241,7 +1259,7 @@
             // LoweCapPalletFactorlabel
             // 
             LoweCapPalletFactorlabel.AutoSize = true;
-            LoweCapPalletFactorlabel.Location = new Point(717, 303);
+            LoweCapPalletFactorlabel.Location = new Point(717, 282);
             LoweCapPalletFactorlabel.Name = "LoweCapPalletFactorlabel";
             LoweCapPalletFactorlabel.Size = new Size(25, 20);
             LoweCapPalletFactorlabel.TabIndex = 61;
@@ -1249,7 +1267,7 @@
             // 
             // LoweCapDamagedtextBox
             // 
-            LoweCapDamagedtextBox.Location = new Point(593, 300);
+            LoweCapDamagedtextBox.Location = new Point(593, 279);
             LoweCapDamagedtextBox.Name = "LoweCapDamagedtextBox";
             LoweCapDamagedtextBox.Size = new Size(86, 27);
             LoweCapDamagedtextBox.TabIndex = 36;
@@ -1258,7 +1276,7 @@
             // label58
             // 
             label58.AutoSize = true;
-            label58.Location = new Point(338, 303);
+            label58.Location = new Point(338, 282);
             label58.Name = "label58";
             label58.Size = new Size(65, 20);
             label58.TabIndex = 58;
@@ -1266,7 +1284,7 @@
             // 
             // LoweCapFullstextBox
             // 
-            LoweCapFullstextBox.Location = new Point(501, 300);
+            LoweCapFullstextBox.Location = new Point(501, 279);
             LoweCapFullstextBox.Name = "LoweCapFullstextBox";
             LoweCapFullstextBox.Size = new Size(86, 27);
             LoweCapFullstextBox.TabIndex = 35;
@@ -1275,7 +1293,7 @@
             // label59
             // 
             label59.AutoSize = true;
-            label59.Location = new Point(20, 301);
+            label59.Location = new Point(20, 280);
             label59.Name = "label59";
             label59.Size = new Size(111, 20);
             label59.TabIndex = 56;
@@ -1283,7 +1301,7 @@
             // 
             // LoweCapEmptiesTextBox
             // 
-            LoweCapEmptiesTextBox.Location = new Point(409, 300);
+            LoweCapEmptiesTextBox.Location = new Point(409, 279);
             LoweCapEmptiesTextBox.Name = "LoweCapEmptiesTextBox";
             LoweCapEmptiesTextBox.Size = new Size(86, 27);
             LoweCapEmptiesTextBox.TabIndex = 34;
@@ -1292,7 +1310,7 @@
             // SideCoverPackFactorlabel
             // 
             SideCoverPackFactorlabel.AutoSize = true;
-            SideCoverPackFactorlabel.Location = new Point(812, 270);
+            SideCoverPackFactorlabel.Location = new Point(812, 249);
             SideCoverPackFactorlabel.Name = "SideCoverPackFactorlabel";
             SideCoverPackFactorlabel.Size = new Size(25, 20);
             SideCoverPackFactorlabel.TabIndex = 55;
@@ -1301,7 +1319,7 @@
             // SideCoverPalletFactorlabel
             // 
             SideCoverPalletFactorlabel.AutoSize = true;
-            SideCoverPalletFactorlabel.Location = new Point(717, 270);
+            SideCoverPalletFactorlabel.Location = new Point(717, 249);
             SideCoverPalletFactorlabel.Name = "SideCoverPalletFactorlabel";
             SideCoverPalletFactorlabel.Size = new Size(25, 20);
             SideCoverPalletFactorlabel.TabIndex = 54;
@@ -1309,7 +1327,7 @@
             // 
             // SideCoverDamagedtextBox
             // 
-            SideCoverDamagedtextBox.Location = new Point(593, 267);
+            SideCoverDamagedtextBox.Location = new Point(593, 246);
             SideCoverDamagedtextBox.Name = "SideCoverDamagedtextBox";
             SideCoverDamagedtextBox.Size = new Size(86, 27);
             SideCoverDamagedtextBox.TabIndex = 33;
@@ -1318,7 +1336,7 @@
             // label54
             // 
             label54.AutoSize = true;
-            label54.Location = new Point(338, 270);
+            label54.Location = new Point(338, 249);
             label54.Name = "label54";
             label54.Size = new Size(65, 20);
             label54.TabIndex = 51;
@@ -1326,7 +1344,7 @@
             // 
             // SideCoverFulltextBox
             // 
-            SideCoverFulltextBox.Location = new Point(501, 267);
+            SideCoverFulltextBox.Location = new Point(501, 246);
             SideCoverFulltextBox.Name = "SideCoverFulltextBox";
             SideCoverFulltextBox.Size = new Size(86, 27);
             SideCoverFulltextBox.TabIndex = 32;
@@ -1335,7 +1353,7 @@
             // label55
             // 
             label55.AutoSize = true;
-            label55.Location = new Point(20, 268);
+            label55.Location = new Point(20, 247);
             label55.Name = "label55";
             label55.Size = new Size(283, 20);
             label55.TabIndex = 49;
@@ -1343,7 +1361,7 @@
             // 
             // SideCoverEmptiesTextBox
             // 
-            SideCoverEmptiesTextBox.Location = new Point(409, 267);
+            SideCoverEmptiesTextBox.Location = new Point(409, 246);
             SideCoverEmptiesTextBox.Name = "SideCoverEmptiesTextBox";
             SideCoverEmptiesTextBox.Size = new Size(86, 27);
             SideCoverEmptiesTextBox.TabIndex = 31;
@@ -1352,7 +1370,7 @@
             // ProjServCoverPckFactorlabel
             // 
             ProjServCoverPckFactorlabel.AutoSize = true;
-            ProjServCoverPckFactorlabel.Location = new Point(812, 237);
+            ProjServCoverPckFactorlabel.Location = new Point(812, 216);
             ProjServCoverPckFactorlabel.Name = "ProjServCoverPckFactorlabel";
             ProjServCoverPckFactorlabel.Size = new Size(25, 20);
             ProjServCoverPckFactorlabel.TabIndex = 48;
@@ -1361,7 +1379,7 @@
             // ProjServCoverPalletFactorlabel
             // 
             ProjServCoverPalletFactorlabel.AutoSize = true;
-            ProjServCoverPalletFactorlabel.Location = new Point(717, 237);
+            ProjServCoverPalletFactorlabel.Location = new Point(717, 216);
             ProjServCoverPalletFactorlabel.Name = "ProjServCoverPalletFactorlabel";
             ProjServCoverPalletFactorlabel.Size = new Size(25, 20);
             ProjServCoverPalletFactorlabel.TabIndex = 47;
@@ -1369,7 +1387,7 @@
             // 
             // ProjServCoverDamagedtextBox
             // 
-            ProjServCoverDamagedtextBox.Location = new Point(593, 234);
+            ProjServCoverDamagedtextBox.Location = new Point(593, 213);
             ProjServCoverDamagedtextBox.Name = "ProjServCoverDamagedtextBox";
             ProjServCoverDamagedtextBox.Size = new Size(86, 27);
             ProjServCoverDamagedtextBox.TabIndex = 30;
@@ -1378,7 +1396,7 @@
             // label50
             // 
             label50.AutoSize = true;
-            label50.Location = new Point(338, 237);
+            label50.Location = new Point(338, 216);
             label50.Name = "label50";
             label50.Size = new Size(65, 20);
             label50.TabIndex = 44;
@@ -1386,7 +1404,7 @@
             // 
             // ProjServCoverFullstextBox
             // 
-            ProjServCoverFullstextBox.Location = new Point(501, 234);
+            ProjServCoverFullstextBox.Location = new Point(501, 213);
             ProjServCoverFullstextBox.Name = "ProjServCoverFullstextBox";
             ProjServCoverFullstextBox.Size = new Size(86, 27);
             ProjServCoverFullstextBox.TabIndex = 29;
@@ -1395,7 +1413,7 @@
             // label51
             // 
             label51.AutoSize = true;
-            label51.Location = new Point(20, 235);
+            label51.Location = new Point(20, 214);
             label51.Name = "label51";
             label51.Size = new Size(190, 20);
             label51.TabIndex = 42;
@@ -1403,7 +1421,7 @@
             // 
             // ProjServCoverEmptiestextBox
             // 
-            ProjServCoverEmptiestextBox.Location = new Point(409, 234);
+            ProjServCoverEmptiestextBox.Location = new Point(409, 213);
             ProjServCoverEmptiestextBox.Name = "ProjServCoverEmptiestextBox";
             ProjServCoverEmptiestextBox.Size = new Size(86, 27);
             ProjServCoverEmptiestextBox.TabIndex = 28;
@@ -1412,7 +1430,7 @@
             // ProjectorCoverPackFactorlabel
             // 
             ProjectorCoverPackFactorlabel.AutoSize = true;
-            ProjectorCoverPackFactorlabel.Location = new Point(812, 204);
+            ProjectorCoverPackFactorlabel.Location = new Point(812, 183);
             ProjectorCoverPackFactorlabel.Name = "ProjectorCoverPackFactorlabel";
             ProjectorCoverPackFactorlabel.Size = new Size(25, 20);
             ProjectorCoverPackFactorlabel.TabIndex = 41;
@@ -1421,7 +1439,7 @@
             // ProjectorCoverPalletFactorlabel
             // 
             ProjectorCoverPalletFactorlabel.AutoSize = true;
-            ProjectorCoverPalletFactorlabel.Location = new Point(717, 204);
+            ProjectorCoverPalletFactorlabel.Location = new Point(717, 183);
             ProjectorCoverPalletFactorlabel.Name = "ProjectorCoverPalletFactorlabel";
             ProjectorCoverPalletFactorlabel.Size = new Size(25, 20);
             ProjectorCoverPalletFactorlabel.TabIndex = 40;
@@ -1429,7 +1447,7 @@
             // 
             // ProjectorCoverDamagedtextBox
             // 
-            ProjectorCoverDamagedtextBox.Location = new Point(593, 201);
+            ProjectorCoverDamagedtextBox.Location = new Point(593, 180);
             ProjectorCoverDamagedtextBox.Name = "ProjectorCoverDamagedtextBox";
             ProjectorCoverDamagedtextBox.Size = new Size(86, 27);
             ProjectorCoverDamagedtextBox.TabIndex = 27;
@@ -1438,7 +1456,7 @@
             // label46
             // 
             label46.AutoSize = true;
-            label46.Location = new Point(338, 204);
+            label46.Location = new Point(338, 183);
             label46.Name = "label46";
             label46.Size = new Size(65, 20);
             label46.TabIndex = 37;
@@ -1446,7 +1464,7 @@
             // 
             // ProjectorCoverFullStextBox
             // 
-            ProjectorCoverFullStextBox.Location = new Point(501, 201);
+            ProjectorCoverFullStextBox.Location = new Point(501, 180);
             ProjectorCoverFullStextBox.Name = "ProjectorCoverFullStextBox";
             ProjectorCoverFullStextBox.Size = new Size(86, 27);
             ProjectorCoverFullStextBox.TabIndex = 26;
@@ -1455,7 +1473,7 @@
             // label47
             // 
             label47.AutoSize = true;
-            label47.Location = new Point(20, 202);
+            label47.Location = new Point(20, 181);
             label47.Name = "label47";
             label47.Size = new Size(137, 20);
             label47.TabIndex = 35;
@@ -1463,7 +1481,7 @@
             // 
             // ProjectorCoveremptiestextBox
             // 
-            ProjectorCoveremptiestextBox.Location = new Point(409, 201);
+            ProjectorCoveremptiestextBox.Location = new Point(409, 180);
             ProjectorCoveremptiestextBox.Name = "ProjectorCoveremptiestextBox";
             ProjectorCoveremptiestextBox.Size = new Size(86, 27);
             ProjectorCoveremptiestextBox.TabIndex = 25;
@@ -1472,7 +1490,7 @@
             // AirsplitterPackFactorlabel
             // 
             AirsplitterPackFactorlabel.AutoSize = true;
-            AirsplitterPackFactorlabel.Location = new Point(812, 171);
+            AirsplitterPackFactorlabel.Location = new Point(812, 150);
             AirsplitterPackFactorlabel.Name = "AirsplitterPackFactorlabel";
             AirsplitterPackFactorlabel.Size = new Size(25, 20);
             AirsplitterPackFactorlabel.TabIndex = 34;
@@ -1481,7 +1499,7 @@
             // AirsplitterPalletrFactorLabel
             // 
             AirsplitterPalletrFactorLabel.AutoSize = true;
-            AirsplitterPalletrFactorLabel.Location = new Point(717, 171);
+            AirsplitterPalletrFactorLabel.Location = new Point(717, 150);
             AirsplitterPalletrFactorLabel.Name = "AirsplitterPalletrFactorLabel";
             AirsplitterPalletrFactorLabel.Size = new Size(17, 20);
             AirsplitterPalletrFactorLabel.TabIndex = 33;
@@ -1489,7 +1507,7 @@
             // 
             // AirsplitterDamagedtextBox
             // 
-            AirsplitterDamagedtextBox.Location = new Point(593, 168);
+            AirsplitterDamagedtextBox.Location = new Point(593, 147);
             AirsplitterDamagedtextBox.Name = "AirsplitterDamagedtextBox";
             AirsplitterDamagedtextBox.Size = new Size(86, 27);
             AirsplitterDamagedtextBox.TabIndex = 24;
@@ -1498,7 +1516,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(338, 171);
+            label25.Location = new Point(338, 150);
             label25.Name = "label25";
             label25.Size = new Size(65, 20);
             label25.TabIndex = 30;
@@ -1506,7 +1524,7 @@
             // 
             // AirsplitterFullstextBox
             // 
-            AirsplitterFullstextBox.Location = new Point(501, 168);
+            AirsplitterFullstextBox.Location = new Point(501, 147);
             AirsplitterFullstextBox.Name = "AirsplitterFullstextBox";
             AirsplitterFullstextBox.Size = new Size(86, 27);
             AirsplitterFullstextBox.TabIndex = 23;
@@ -1515,7 +1533,7 @@
             // label26
             // 
             label26.AutoSize = true;
-            label26.Location = new Point(20, 169);
+            label26.Location = new Point(20, 148);
             label26.Name = "label26";
             label26.Size = new Size(222, 20);
             label26.TabIndex = 28;
@@ -1523,7 +1541,7 @@
             // 
             // AirsplitterEmptiesTextBox
             // 
-            AirsplitterEmptiesTextBox.Location = new Point(409, 168);
+            AirsplitterEmptiesTextBox.Location = new Point(409, 147);
             AirsplitterEmptiesTextBox.Name = "AirsplitterEmptiesTextBox";
             AirsplitterEmptiesTextBox.Size = new Size(86, 27);
             AirsplitterEmptiesTextBox.TabIndex = 22;
@@ -1532,7 +1550,7 @@
             // footwellPackFactorLabel
             // 
             footwellPackFactorLabel.AutoSize = true;
-            footwellPackFactorLabel.Location = new Point(812, 138);
+            footwellPackFactorLabel.Location = new Point(812, 117);
             footwellPackFactorLabel.Name = "footwellPackFactorLabel";
             footwellPackFactorLabel.Size = new Size(17, 20);
             footwellPackFactorLabel.TabIndex = 27;
@@ -1541,7 +1559,7 @@
             // footwellPalletFactorLabel
             // 
             footwellPalletFactorLabel.AutoSize = true;
-            footwellPalletFactorLabel.Location = new Point(717, 138);
+            footwellPalletFactorLabel.Location = new Point(717, 117);
             footwellPalletFactorLabel.Name = "footwellPalletFactorLabel";
             footwellPalletFactorLabel.Size = new Size(25, 20);
             footwellPalletFactorLabel.TabIndex = 26;
@@ -1549,7 +1567,7 @@
             // 
             // FootwellDamagedTextbox
             // 
-            FootwellDamagedTextbox.Location = new Point(593, 135);
+            FootwellDamagedTextbox.Location = new Point(593, 114);
             FootwellDamagedTextbox.Name = "FootwellDamagedTextbox";
             FootwellDamagedTextbox.Size = new Size(86, 27);
             FootwellDamagedTextbox.TabIndex = 21;
@@ -1558,7 +1576,7 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.Location = new Point(338, 138);
+            label29.Location = new Point(338, 117);
             label29.Name = "label29";
             label29.Size = new Size(65, 20);
             label29.TabIndex = 23;
@@ -1566,7 +1584,7 @@
             // 
             // FootwellFullTextBox
             // 
-            FootwellFullTextBox.Location = new Point(501, 135);
+            FootwellFullTextBox.Location = new Point(501, 114);
             FootwellFullTextBox.Name = "FootwellFullTextBox";
             FootwellFullTextBox.Size = new Size(86, 27);
             FootwellFullTextBox.TabIndex = 20;
@@ -1575,7 +1593,7 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.Location = new Point(20, 136);
+            label30.Location = new Point(20, 115);
             label30.Name = "label30";
             label30.Size = new Size(231, 20);
             label30.TabIndex = 21;
@@ -1583,7 +1601,7 @@
             // 
             // FootwellEmptytextBox
             // 
-            FootwellEmptytextBox.Location = new Point(409, 135);
+            FootwellEmptytextBox.Location = new Point(409, 114);
             FootwellEmptytextBox.Name = "FootwellEmptytextBox";
             FootwellEmptytextBox.Size = new Size(86, 27);
             FootwellEmptytextBox.TabIndex = 19;
@@ -1592,7 +1610,7 @@
             // puddlePackFactorLabel
             // 
             puddlePackFactorLabel.AutoSize = true;
-            puddlePackFactorLabel.Location = new Point(812, 105);
+            puddlePackFactorLabel.Location = new Point(812, 84);
             puddlePackFactorLabel.Name = "puddlePackFactorLabel";
             puddlePackFactorLabel.Size = new Size(33, 20);
             puddlePackFactorLabel.TabIndex = 20;
@@ -1601,7 +1619,7 @@
             // puddlePalletFactorLabel
             // 
             puddlePalletFactorLabel.AutoSize = true;
-            puddlePalletFactorLabel.Location = new Point(717, 105);
+            puddlePalletFactorLabel.Location = new Point(717, 84);
             puddlePalletFactorLabel.Name = "puddlePalletFactorLabel";
             puddlePalletFactorLabel.Size = new Size(25, 20);
             puddlePalletFactorLabel.TabIndex = 19;
@@ -1609,7 +1627,7 @@
             // 
             // PuddleDamagedTextBox
             // 
-            PuddleDamagedTextBox.Location = new Point(593, 102);
+            PuddleDamagedTextBox.Location = new Point(593, 81);
             PuddleDamagedTextBox.Name = "PuddleDamagedTextBox";
             PuddleDamagedTextBox.Size = new Size(86, 27);
             PuddleDamagedTextBox.TabIndex = 18;
@@ -1618,7 +1636,7 @@
             // label33
             // 
             label33.AutoSize = true;
-            label33.Location = new Point(812, 44);
+            label33.Location = new Point(812, 23);
             label33.Name = "label33";
             label33.Size = new Size(82, 20);
             label33.TabIndex = 17;
@@ -1627,7 +1645,7 @@
             // LowColPackFactorTextBox
             // 
             LowColPackFactorTextBox.AutoSize = true;
-            LowColPackFactorTextBox.Location = new Point(812, 70);
+            LowColPackFactorTextBox.Location = new Point(812, 49);
             LowColPackFactorTextBox.Name = "LowColPackFactorTextBox";
             LowColPackFactorTextBox.Size = new Size(25, 20);
             LowColPackFactorTextBox.TabIndex = 16;
@@ -1636,7 +1654,7 @@
             // label35
             // 
             label35.AutoSize = true;
-            label35.Location = new Point(717, 44);
+            label35.Location = new Point(717, 23);
             label35.Name = "label35";
             label35.Size = new Size(89, 20);
             label35.TabIndex = 15;
@@ -1645,7 +1663,7 @@
             // LowColPalletFactotTextBox
             // 
             LowColPalletFactotTextBox.AutoSize = true;
-            LowColPalletFactotTextBox.Location = new Point(717, 70);
+            LowColPalletFactotTextBox.Location = new Point(717, 49);
             LowColPalletFactotTextBox.Name = "LowColPalletFactotTextBox";
             LowColPalletFactotTextBox.Size = new Size(17, 20);
             LowColPalletFactotTextBox.TabIndex = 14;
@@ -1654,7 +1672,7 @@
             // label37
             // 
             label37.AutoSize = true;
-            label37.Location = new Point(593, 44);
+            label37.Location = new Point(593, 23);
             label37.Name = "label37";
             label37.Size = new Size(75, 20);
             label37.TabIndex = 13;
@@ -1662,7 +1680,7 @@
             // 
             // LowColDamagedTextBox
             // 
-            LowColDamagedTextBox.Location = new Point(593, 67);
+            LowColDamagedTextBox.Location = new Point(593, 46);
             LowColDamagedTextBox.Name = "LowColDamagedTextBox";
             LowColDamagedTextBox.Size = new Size(86, 27);
             LowColDamagedTextBox.TabIndex = 15;
@@ -1671,7 +1689,7 @@
             // label38
             // 
             label38.AutoSize = true;
-            label38.Location = new Point(501, 44);
+            label38.Location = new Point(501, 23);
             label38.Name = "label38";
             label38.Size = new Size(32, 20);
             label38.TabIndex = 11;
@@ -1680,7 +1698,7 @@
             // label39
             // 
             label39.AutoSize = true;
-            label39.Location = new Point(338, 102);
+            label39.Location = new Point(338, 81);
             label39.Name = "label39";
             label39.Size = new Size(65, 20);
             label39.TabIndex = 9;
@@ -1689,7 +1707,7 @@
             // label40
             // 
             label40.AutoSize = true;
-            label40.Location = new Point(409, 44);
+            label40.Location = new Point(409, 23);
             label40.Name = "label40";
             label40.Size = new Size(62, 20);
             label40.TabIndex = 9;
@@ -1697,7 +1715,7 @@
             // 
             // PuddleFulltextBox
             // 
-            PuddleFulltextBox.Location = new Point(501, 102);
+            PuddleFulltextBox.Location = new Point(501, 81);
             PuddleFulltextBox.Name = "PuddleFulltextBox";
             PuddleFulltextBox.Size = new Size(86, 27);
             PuddleFulltextBox.TabIndex = 17;
@@ -1706,7 +1724,7 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(20, 103);
+            label41.Location = new Point(20, 82);
             label41.Name = "label41";
             label41.Size = new Size(315, 20);
             label41.TabIndex = 7;
@@ -1714,7 +1732,7 @@
             // 
             // PuddleEmptiesTextBox
             // 
-            PuddleEmptiesTextBox.Location = new Point(409, 102);
+            PuddleEmptiesTextBox.Location = new Point(409, 81);
             PuddleEmptiesTextBox.Name = "PuddleEmptiesTextBox";
             PuddleEmptiesTextBox.Size = new Size(86, 27);
             PuddleEmptiesTextBox.TabIndex = 16;
@@ -1722,7 +1740,7 @@
             // 
             // lowColEmptyTextBox
             // 
-            lowColEmptyTextBox.Location = new Point(409, 67);
+            lowColEmptyTextBox.Location = new Point(409, 46);
             lowColEmptyTextBox.Name = "lowColEmptyTextBox";
             lowColEmptyTextBox.Size = new Size(86, 27);
             lowColEmptyTextBox.TabIndex = 13;
@@ -1731,7 +1749,7 @@
             // label42
             // 
             label42.AutoSize = true;
-            label42.Location = new Point(20, 68);
+            label42.Location = new Point(20, 47);
             label42.Name = "label42";
             label42.Size = new Size(224, 20);
             label42.TabIndex = 3;
@@ -1740,7 +1758,7 @@
             // label43
             // 
             label43.AutoSize = true;
-            label43.Location = new Point(338, 70);
+            label43.Location = new Point(338, 49);
             label43.Name = "label43";
             label43.Size = new Size(65, 20);
             label43.TabIndex = 5;
@@ -1748,7 +1766,7 @@
             // 
             // lowColFullTextBox
             // 
-            lowColFullTextBox.Location = new Point(501, 67);
+            lowColFullTextBox.Location = new Point(501, 46);
             lowColFullTextBox.Name = "lowColFullTextBox";
             lowColFullTextBox.Size = new Size(86, 27);
             lowColFullTextBox.TabIndex = 14;
@@ -1787,6 +1805,84 @@
             radioButton2.Text = "Hang On Containers";
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(338, 514);
+            label13.Name = "label13";
+            label13.Size = new Size(65, 20);
+            label13.TabIndex = 122;
+            label13.Text = "3104444";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(20, 512);
+            label14.Name = "label14";
+            label14.Size = new Size(102, 20);
+            label14.TabIndex = 121;
+            label14.Text = "Pink Gitter Bin";
+            // 
+            // PinkBinTextBox
+            // 
+            PinkBinTextBox.Location = new Point(409, 511);
+            PinkBinTextBox.Name = "PinkBinTextBox";
+            PinkBinTextBox.Size = new Size(86, 27);
+            PinkBinTextBox.TabIndex = 120;
+            PinkBinTextBox.TextChanged += PinkBinTextBox_TextChanged;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(338, 547);
+            label15.Name = "label15";
+            label15.Size = new Size(65, 20);
+            label15.TabIndex = 125;
+            label15.Text = "3100670";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(20, 545);
+            label20.Name = "label20";
+            label20.Size = new Size(104, 20);
+            label20.TabIndex = 124;
+            label20.Text = "Blue Gitter Bin";
+            // 
+            // BlueBinTexBox
+            // 
+            BlueBinTexBox.Location = new Point(409, 544);
+            BlueBinTexBox.Name = "BlueBinTexBox";
+            BlueBinTexBox.Size = new Size(86, 27);
+            BlueBinTexBox.TabIndex = 123;
+            BlueBinTexBox.TextChanged += BlueBinTexBox_TextChanged;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(338, 580);
+            label23.Name = "label23";
+            label23.Size = new Size(65, 20);
+            label23.TabIndex = 128;
+            label23.Text = "3100662";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(20, 578);
+            label24.Name = "label24";
+            label24.Size = new Size(114, 20);
+            label24.TabIndex = 127;
+            label24.Text = "Green Gitter Bin";
+            // 
+            // GreenBinTextBox
+            // 
+            GreenBinTextBox.Location = new Point(409, 577);
+            GreenBinTextBox.Name = "GreenBinTextBox";
+            GreenBinTextBox.Size = new Size(86, 27);
+            GreenBinTextBox.TabIndex = 126;
+            GreenBinTextBox.TextChanged += GreenBinTextBox_TextChanged;
             // 
             // formCounts
             // 
@@ -1978,5 +2074,14 @@
         private TextBox metalPalEmptyTextBox;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
+        private Label label23;
+        private Label label24;
+        private TextBox GreenBinTextBox;
+        private Label label15;
+        private Label label20;
+        private TextBox BlueBinTexBox;
+        private Label label13;
+        private Label label14;
+        private TextBox PinkBinTextBox;
     }
 }

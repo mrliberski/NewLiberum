@@ -188,6 +188,10 @@ namespace ProFormaUI.Forms
             PackagingCount pallets = new PackagingCount();
             PackagingCount metalPallets = new PackagingCount();
 
+            PackagingCount PinkBins = new PackagingCount();
+            PackagingCount BlueBins = new PackagingCount();
+            PackagingCount GreenBins = new PackagingCount();
+
 
             //TOPPER BFS
             TopperBFS.PackagingName = "F6X Topper Pad BFS";
@@ -521,6 +525,52 @@ namespace ProFormaUI.Forms
             metalPallets.PackFactor = 1;
             metalPallets.TotalContainers = int.Parse(MetalPalTotalLabel.Text);
 
+            //GitterBins
+            //PackagingCount PinkBins = new PackagingCount();
+            PinkBins.PackagingName = "Pink Gitter Bin";
+            PinkBins.PackagingNumber = "3104444";
+            if (int.TryParse(PinkBinTextBox.Text, out result))
+                PinkBins.CountOfEmpties = result;
+            else
+                PinkBins.CountOfEmpties = 0;
+
+            PinkBins.CountOfFulls = 0;
+            PinkBins.CountOfDamaged = 0;
+            PinkBins.PalletFactor = 1;
+            PinkBins.PackFactor = 1;
+            PinkBins.TotalContainers = int.Parse(PinkBinTextBox.Text);
+
+            //PackagingCount BlueBins = new PackagingCount();
+            BlueBins.PackagingName = "Blue Gitter Bin";
+            BlueBins.PackagingNumber = "3100670";
+            if (int.TryParse(BlueBinTexBox.Text, out result))
+                BlueBins.CountOfEmpties = result;
+            else
+                BlueBins.CountOfEmpties = 0;
+
+            BlueBins.CountOfFulls = 0;
+            BlueBins.CountOfDamaged = 0;
+            BlueBins.PalletFactor = 1;
+            BlueBins.PackFactor = 1;
+            BlueBins.TotalContainers = int.Parse(BlueBinTexBox.Text);
+
+            //PackagingCount GreenBins = new PackagingCount();
+            GreenBins.PackagingName = "Green Gitter Bin";
+            GreenBins.PackagingNumber = "3100662";
+            if (int.TryParse(GreenBinTextBox.Text, out result))
+                GreenBins.CountOfEmpties = result;
+            else
+                GreenBins.CountOfEmpties = 0;
+
+            GreenBins.CountOfFulls = 0;
+            GreenBins.CountOfDamaged = 0;
+            GreenBins.PalletFactor = 1;
+            GreenBins.PackFactor = 1;
+            GreenBins.TotalContainers = int.Parse(GreenBinTextBox.Text);
+
+
+
+
 
             if (radioButton1.Checked == true)
             {
@@ -546,12 +596,16 @@ namespace ProFormaUI.Forms
                 counts.Add(lids);
                 counts.Add(pallets);
                 counts.Add(metalPallets);
+
+                counts.Add(PinkBins);
+                counts.Add(BlueBins);
+                counts.Add(GreenBins);
             }
 
             //Create email body and pass it to sender class
             try
             {
-                
+
                 string emailsss;
                 emailsss = PackagingCountTemplate.PackagingCountEmailBody(counts);
                 PackagingCountTemplate.SendPackagingCount(emailsss);
@@ -1916,8 +1970,47 @@ namespace ProFormaUI.Forms
 
         private void CheckButton()
         {
-            if (radioButton1.Checked == true) { radioButton2.Checked = false; } 
+            if (radioButton1.Checked == true) { radioButton2.Checked = false; }
             else if (radioButton2.Checked == true) { radioButton1.Checked = false; }
+        }
+
+        private void PinkBinTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(PinkBinTextBox.Text, out int quantityOfItems))
+            {
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                PinkBinTextBox.Text = string.Empty;
+                errorLabel.Visible = true;
+            }
+        }
+
+        private void BlueBinTexBox_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(BlueBinTexBox.Text, out int quantityOfItems))
+            {
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                PinkBinTextBox.Text = string.Empty;
+                errorLabel.Visible = true;
+            }
+        }
+
+        private void GreenBinTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(GreenBinTextBox.Text, out int quantityOfItems))
+            {
+                errorLabel.Visible = false;
+            }
+            else
+            {
+                PinkBinTextBox.Text = string.Empty;
+                errorLabel.Visible = true;
+            }
         }
     }
 }

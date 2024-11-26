@@ -514,5 +514,50 @@ namespace ProFormaUI.Forms
                 }
             }
         }
+
+        // move to next index
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //// Ensure there is a currently selected cell
+            //if (dataGridView1.CurrentCell == null)
+            //{
+            //    MessageBox.Show("No cell is currently selected.");
+            //    return;
+            //}
+
+            //int currentRowIndex = dataGridView1.CurrentCell.RowIndex;
+            //int nextRowIndex = currentRowIndex + 1;
+
+            //// Ensure the next row is within bounds and not the new row
+            //if (nextRowIndex < dataGridView1.Rows.Count - (dataGridView1.AllowUserToAddRows ? 1 : 0))
+            //{
+            //    // Try to set the next cell as current, defaulting to the first column
+            //    try
+            //    {
+            //        dataGridView1.CurrentCell = dataGridView1.Rows[nextRowIndex].Cells[0];
+            //    }
+            //    catch (System.Exception ex)
+            //    {
+            //        MessageBox.Show($"Cannot move to the next row: {ex.Message}");
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Already at the last row.");
+            //}
+        }
+
+
+        // move to previous index
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //int currentRowIndex = dataGridView1.CurrentCell.RowIndex;
+            //int previousRowIndex = currentRowIndex - 1;
+
+            //if (previousRowIndex >= 0)
+            //{
+            //    dataGridView1.CurrentCell = dataGridView1.Rows[previousRowIndex].Cells[0];
+            //}
+        }
     }
 }

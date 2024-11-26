@@ -95,6 +95,7 @@
             DeptTextBox = new TextBox();
             label5 = new Label();
             ArchiveButton = new Button();
+            UpdateButton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -114,7 +115,7 @@
             // addButton
             // 
             addButton.FlatStyle = FlatStyle.Flat;
-            addButton.Location = new Point(817, 589);
+            addButton.Location = new Point(817, 549);
             addButton.Name = "addButton";
             addButton.Size = new Size(455, 36);
             addButton.TabIndex = 70;
@@ -623,7 +624,7 @@
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(817, 631);
+            button2.Location = new Point(817, 674);
             button2.Name = "button2";
             button2.Size = new Size(455, 36);
             button2.TabIndex = 309;
@@ -633,12 +634,13 @@
             // button3
             // 
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1051, 672);
+            button3.Location = new Point(1051, 715);
             button3.Name = "button3";
             button3.Size = new Size(221, 36);
             button3.TabIndex = 310;
             button3.Text = ">>";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // groupBox1
             // 
@@ -709,7 +711,7 @@
             // button4
             // 
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(817, 672);
+            button4.Location = new Point(817, 715);
             button4.Name = "button4";
             button4.Size = new Size(221, 36);
             button4.TabIndex = 312;
@@ -755,7 +757,7 @@
             // ArchiveButton
             // 
             ArchiveButton.FlatStyle = FlatStyle.Flat;
-            ArchiveButton.Location = new Point(817, 714);
+            ArchiveButton.Location = new Point(817, 591);
             ArchiveButton.Name = "ArchiveButton";
             ArchiveButton.Size = new Size(455, 36);
             ArchiveButton.TabIndex = 317;
@@ -763,12 +765,23 @@
             ArchiveButton.UseVisualStyleBackColor = true;
             ArchiveButton.Click += ArchiveButton_Click;
             // 
+            // UpdateButton
+            // 
+            UpdateButton.FlatStyle = FlatStyle.Flat;
+            UpdateButton.Location = new Point(817, 632);
+            UpdateButton.Name = "UpdateButton";
+            UpdateButton.Size = new Size(455, 36);
+            UpdateButton.TabIndex = 318;
+            UpdateButton.Text = "Update Current Record";
+            UpdateButton.UseVisualStyleBackColor = true;
+            // 
             // MheTraining
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1299, 860);
+            Controls.Add(UpdateButton);
             Controls.Add(ArchiveButton);
             Controls.Add(DeptTextBox);
             Controls.Add(label5);
@@ -909,5 +922,6 @@
         private TextBox DeptTextBox;
         private Label label5;
         private Button ArchiveButton;
+        private Button UpdateButton;
     }
 }

@@ -95,7 +95,7 @@ namespace ProFormaUI
 
         private void CheckAppAccess()
         {
-            try 
+            try
             {
                 string currentUser = Environment.UserName;
                 List<UserModel> users = SqliteDataAccess.PermittedUsers();
@@ -108,14 +108,14 @@ namespace ProFormaUI
                         ShowButtons();
                         return;
                     }
-                    else 
+                    else
                     {
                         HideButtons();
                     }
                 }
             }
-            catch (Exception ex) 
-            { 
+            catch (Exception ex)
+            {
                 MessageBox.Show("Exception");
             }
         }
@@ -506,6 +506,12 @@ namespace ProFormaUI
         {
             ActivateButton(sender);
             OpenChildForm(new Forms.MheTraining(), sender);
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.BentleyCount(), sender);
         }
     }
 }
