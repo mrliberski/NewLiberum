@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
             ExitButton = new FontAwesome.Sharp.IconButton();
             ReportBugButton = new FontAwesome.Sharp.IconButton();
             HandoverButton4 = new FontAwesome.Sharp.IconButton();
@@ -54,7 +55,6 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
-            iconButton2 = new FontAwesome.Sharp.IconButton();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             panelTitleBar.SuspendLayout();
@@ -66,9 +66,9 @@
             // 
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
-            panelMenu.Controls.Add(iconButton2);
             panelMenu.Controls.Add(ExitButton);
             panelMenu.Controls.Add(ReportBugButton);
+            panelMenu.Controls.Add(iconButton2);
             panelMenu.Controls.Add(HandoverButton4);
             panelMenu.Controls.Add(HandoverButton3);
             panelMenu.Controls.Add(HandoverButton2);
@@ -80,6 +80,18 @@
             panelMenu.Controls.Add(exportButton1);
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
+            // 
+            // iconButton2
+            // 
+            resources.ApplyResources(iconButton2, "iconButton2");
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.ForeColor = Color.Gainsboro;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Car;
+            iconButton2.IconColor = Color.Gainsboro;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.Name = "iconButton2";
+            iconButton2.UseVisualStyleBackColor = true;
+            iconButton2.Click += iconButton2_Click;
             // 
             // ExitButton
             // 
@@ -306,18 +318,6 @@
             // 
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
-            // 
-            // iconButton2
-            // 
-            resources.ApplyResources(iconButton2, "iconButton2");
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.ForeColor = Color.Gainsboro;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Car;
-            iconButton2.IconColor = Color.Gainsboro;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Name = "iconButton2";
-            iconButton2.UseVisualStyleBackColor = true;
-            iconButton2.Click += iconButton2_Click;
             // 
             // MainPanel
             // 

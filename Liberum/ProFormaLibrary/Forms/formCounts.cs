@@ -15,6 +15,7 @@ namespace ProFormaUI.Forms
     public partial class formCounts : Form
     {
         public List<PackagingCount> counts = new List<PackagingCount>();
+        public List<PackagingCount> OtherCounts = new List<PackagingCount>();
 
         public formCounts()
         {
@@ -167,6 +168,9 @@ namespace ProFormaUI.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
+            counts.Clear();
+            OtherCounts.Clear();
+
             PackagingCount TopperBFS = new PackagingCount();
             PackagingCount Lower = new PackagingCount();
             PackagingCount Decor = new PackagingCount();
@@ -525,6 +529,7 @@ namespace ProFormaUI.Forms
             metalPallets.PackFactor = 1;
             metalPallets.TotalContainers = int.Parse(MetalPalTotalLabel.Text);
 
+
             //GitterBins
             //PackagingCount PinkBins = new PackagingCount();
             PinkBins.PackagingName = "Pink Gitter Bin";
@@ -538,7 +543,7 @@ namespace ProFormaUI.Forms
             PinkBins.CountOfDamaged = 0;
             PinkBins.PalletFactor = 1;
             PinkBins.PackFactor = 1;
-            PinkBins.TotalContainers = int.Parse(PinkBinTextBox.Text);
+            PinkBins.TotalContainers = PinkBins.CountOfEmpties;
 
             //PackagingCount BlueBins = new PackagingCount();
             BlueBins.PackagingName = "Blue Gitter Bin";
@@ -552,7 +557,7 @@ namespace ProFormaUI.Forms
             BlueBins.CountOfDamaged = 0;
             BlueBins.PalletFactor = 1;
             BlueBins.PackFactor = 1;
-            BlueBins.TotalContainers = int.Parse(BlueBinTexBox.Text);
+            BlueBins.TotalContainers = BlueBins.CountOfEmpties;
 
             //PackagingCount GreenBins = new PackagingCount();
             GreenBins.PackagingName = "Green Gitter Bin";
@@ -566,8 +571,7 @@ namespace ProFormaUI.Forms
             GreenBins.CountOfDamaged = 0;
             GreenBins.PalletFactor = 1;
             GreenBins.PackFactor = 1;
-            GreenBins.TotalContainers = int.Parse(GreenBinTextBox.Text);
-
+            GreenBins.TotalContainers = GreenBins.CountOfEmpties;
 
 
 
@@ -593,13 +597,15 @@ namespace ProFormaUI.Forms
                 counts.Add(sideCap);
                 counts.Add(StColUpAssy);
 
-                counts.Add(lids);
-                counts.Add(pallets);
-                counts.Add(metalPallets);
 
-                counts.Add(PinkBins);
-                counts.Add(BlueBins);
-                counts.Add(GreenBins);
+
+
+                OtherCounts.Add(lids);
+                OtherCounts.Add(pallets);
+                OtherCounts.Add(metalPallets);
+                OtherCounts.Add(PinkBins);
+                OtherCounts.Add(BlueBins);
+                OtherCounts.Add(GreenBins);
             }
 
             //Create email body and pass it to sender class
@@ -607,7 +613,7 @@ namespace ProFormaUI.Forms
             {
 
                 string emailsss;
-                emailsss = PackagingCountTemplate.PackagingCountEmailBody(counts);
+                emailsss = PackagingCountTemplate.PackagingCountEmailBody(counts, OtherCounts);
                 PackagingCountTemplate.SendPackagingCount(emailsss);
             }
             catch (Exception ex)

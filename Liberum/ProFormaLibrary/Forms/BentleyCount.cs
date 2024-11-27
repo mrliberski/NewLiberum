@@ -14,9 +14,12 @@ namespace ProFormaUI.Forms
 {
     public partial class BentleyCount : Form
     {
+        public List<BentleyCountModel> count = new List<BentleyCountModel>();
+
         public BentleyCount()
         {
             InitializeComponent();
+            LoadTheme();
             ErrorLabel.Visible = false;
         }
 
@@ -492,10 +495,126 @@ namespace ProFormaUI.Forms
         //submit
         private void button3_Click(object sender, EventArgs e)
         {
+            BentleyCountModel LhFinished = new BentleyCountModel();
+            BentleyCountModel LhSub = new BentleyCountModel();
+            BentleyCountModel LhWad = new BentleyCountModel();
+            BentleyCountModel LhHud = new BentleyCountModel();
+            BentleyCountModel LhPab = new BentleyCountModel();
+            BentleyCountModel LhUnlas = new BentleyCountModel();
 
+            BentleyCountModel RhFinished = new BentleyCountModel();
+            BentleyCountModel RhSub = new BentleyCountModel();
+            BentleyCountModel RhWad = new BentleyCountModel();
+            BentleyCountModel RhHud = new BentleyCountModel();
+            BentleyCountModel RhPab = new BentleyCountModel();
+            BentleyCountModel RhUnlas = new BentleyCountModel();
+
+            BentleyCountModel LhCmp = new BentleyCountModel();
+
+            LhFinished.PackagingName = label14.Text;
+            LhFinished.PackagingNumber = label15.Text;
+            LhFinished.CountOfEmpties = int.Parse(LHassyTextBox.Text);
+            LhFinished.PackFactor = int.Parse(LhAssyPackFactor.Text);
+            LhFinished.TotalParts = int.Parse(LhAssyTotalParts.Text);
+
+            LhSub.PackagingName = label1.Text;
+            LhSub.PackagingNumber = label2.Text;
+            LhSub.CountOfEmpties = int.Parse(LhSubstrateTextBox.Text);
+            LhSub.PackFactor = int.Parse(LhSubPackFactor.Text);
+            LhSub.TotalParts = int.Parse(LhSubTotalParts.Text);
+
+            LhWad.PackagingName = label5.Text;
+            LhWad.PackagingNumber = label6.Text;
+            LhWad.CountOfEmpties = int.Parse(LHWadTextBox.Text);
+            LhWad.PackFactor = int.Parse(LhWadPackFactor.Text);
+            LhWad.TotalParts = int.Parse(LhWadTotalParts.Text);
+
+            LhHud.PackagingName = label18.Text;
+            LhHud.PackagingNumber = label17.Text;
+            LhHud.CountOfEmpties = int.Parse(LhHudTextBox.Text);
+            LhHud.PackFactor = int.Parse(LhHudPackFactor.Text);
+            LhHud.TotalParts = int.Parse(LhHudTotal.Text);
+
+            LhPab.PackagingName = label22.Text;
+            LhPab.PackagingNumber = label21.Text;
+            LhPab.CountOfEmpties = int.Parse(LhPabTextBox.Text);
+            LhPab.PackFactor = int.Parse(LhPabPackFactor.Text);
+            LhPab.TotalParts = int.Parse(LhPabTotalParts.Text);
+
+            LhUnlas.PackagingName = label23.Text;
+            LhUnlas.PackagingNumber = label24.Text;
+            LhUnlas.CountOfEmpties = int.Parse(LhUnlaseredTextBox.Text);
+            LhUnlas.PackFactor = int.Parse(LhUnlaseredPackFactor.Text);
+            LhUnlas.TotalParts = int.Parse(LhUnlasTotalParts.Text);
+
+            RhFinished.PackagingName = label27.Text;
+            RhFinished.PackagingNumber = label28.Text;
+            RhFinished.CountOfEmpties = int.Parse(RhFinishedTextBox.Text);
+            RhFinished.PackFactor = int.Parse(RhFinishedPackFactor.Text);
+            RhFinished.TotalParts = int.Parse(RhFinishedTotal.Text);
+
+            RhSub.PackagingName = label43.Text;
+            RhSub.PackagingNumber = label44.Text;
+            RhSub.CountOfEmpties = int.Parse(RhSubTextBox.Text);
+            RhSub.PackFactor = int.Parse(RhSubPackFactor.Text);
+            RhSub.TotalParts = int.Parse(RhSubTotal.Text);
+
+            RhWad.PackagingName = label42.Text;
+            RhWad.PackagingNumber = label41.Text;
+            RhWad.CountOfEmpties = int.Parse(RhWadTextBox.Text);
+            RhWad.PackFactor = int.Parse(RhWadPackFactor.Text);
+            RhWad.TotalParts = int.Parse(RhWadTotal.Text);
+
+            RhHud.PackagingName = label38.Text;
+            RhHud.PackagingNumber = label37.Text;
+            RhHud.CountOfEmpties = int.Parse(RhHudTextBox.Text);
+            RhHud.PackFactor = int.Parse(RhHudPackFactor.Text);
+            RhHud.TotalParts = int.Parse(RhHudTotal.Text);
+
+            RhPab.PackagingName = label35.Text;
+            RhPab.PackagingNumber = label34.Text;
+            RhPab.CountOfEmpties = int.Parse(RhPabTextBox.Text);
+            RhPab.PackFactor = int.Parse(RhPabPackFactor.Text);
+            RhPab.TotalParts = int.Parse(RhPabTotal.Text);
+
+            RhUnlas.PackagingName = label13.Text;
+            RhUnlas.PackagingNumber = label20.Text;
+            RhUnlas.CountOfEmpties = int.Parse(RhUnlasTextBox.Text);
+            RhUnlas.PackFactor = int.Parse(RhUnlasPackFactor.Text);
+            RhUnlas.TotalParts = int.Parse(RhUnlasTotal.Text);
+
+            LhCmp.PackagingName = label47.Text;
+            LhCmp.PackagingNumber = label48.Text;
+            LhCmp.CountOfEmpties = int.Parse(LhCmpTextBox.Text);
+            LhCmp.PackFactor = int.Parse(CmpPackFactor.Text);
+            LhCmp.TotalParts = int.Parse(CmpTotal.Text);
+
+            count.Add(LhFinished);
+            count.Add(LhSub);
+            count.Add(LhWad);
+            count.Add(LhHud);
+            count.Add(LhPab);
+            count.Add(LhUnlas);
+
+            count.Add(RhFinished);
+            count.Add(RhSub);
+            count.Add(RhWad);
+            count.Add(RhHud);
+            count.Add(RhPab);
+            count.Add(RhUnlas);
+
+            count.Add(LhCmp);
+
+            //TODO:
+            //SqliteDataAccess.AddBentleyCount();
+
+            //Create email body and pass it to sender class
+            string emails;
+            emails = BentleyCountProcedures.BentleyCountEmailBody(count);
+            BentleyCountProcedures.SendBentleyCount(emails);
+
+            ClearAllTextBoxes(this);
+            count.Clear();
         }
-
-        
-
     }
 }

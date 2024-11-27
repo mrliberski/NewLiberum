@@ -49,7 +49,7 @@ namespace ProFormaLibraries
 
             return output;
         }
-        public static string PackagingCountEmailBody(List<PackagingCount> packagingCounts)
+        public static string PackagingCountEmailBody(List<PackagingCount> packagingCounts, List<PackagingCount> OtherCount)
         {
             string output = "buhaha";
             //Generate body of email
@@ -81,8 +81,34 @@ namespace ProFormaLibraries
                 output += @"</tr>";
             }
 
-            output += "</table>";
+            output += "</table><br><br>";
+
+            if (OtherCount.Count != 0)
+            {
+                output += @"<table border=""1"" cellspacing=""0"" cellpadding=""0"" style=font-size:10pt;font-family:Calibri; border-collapse: collapse; text-align:center; width:90%;>";
+
+                output += @"<tr><td align=""center"">&nbsp;<b>Packaging Name</b>&nbsp;</td>";
+                output += @"<td align=""center"">&nbsp;<b>Packaging Number</b>&nbsp;</td>";
+                output += @"<td align=""center"">&nbsp;<b>Total Containers</b>&nbsp;</td>";
+
+                output += @"</tr>";
+
+                foreach (PackagingCount item in OtherCount)
+                {
+                    output += @$"<tr><td align=""center"">&nbsp;{item.PackagingName}&nbsp;</td>";
+                    output += @$"<td align=""center"">&nbsp;{item.PackagingNumber}&nbsp;</td>";
+                    output += @$"<td align=""center"">&nbsp;{item.TotalContainers}&nbsp;</td>";
+                }
+
+                output += @"</tr></table>";
+            }
+
+
+
+
             output += "<br>Counted on " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+
+
 
             return output;
         }
