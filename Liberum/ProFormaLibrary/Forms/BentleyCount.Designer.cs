@@ -101,7 +101,9 @@
             label2 = new Label();
             button3 = new Button();
             button2 = new Button();
+            dataGridView1 = new DataGridView();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // ErrorLabel
@@ -196,7 +198,7 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(12, 66);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(659, 508);
+            groupBox1.Size = new Size(620, 508);
             groupBox1.TabIndex = 57;
             groupBox1.TabStop = false;
             groupBox1.Text = "Bentley Stock Count";
@@ -283,11 +285,11 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(303, 412);
+            label20.Location = new Point(222, 412);
             label20.Name = "label20";
-            label20.Size = new Size(30, 20);
+            label20.Size = new Size(111, 20);
             label20.TabIndex = 79;
-            label20.Text = "xxx";
+            label20.Text = "680631371-000";
             // 
             // RhFinishedPackFactor
             // 
@@ -507,7 +509,7 @@
             label44.Name = "label44";
             label44.Size = new Size(111, 20);
             label44.TabIndex = 55;
-            label44.Text = "680631371-000";
+            label44.Text = "535120021-000";
             // 
             // LhUnlaseredPackFactor
             // 
@@ -547,11 +549,11 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.Location = new Point(303, 214);
+            label24.Location = new Point(222, 214);
             label24.Name = "label24";
-            label24.Size = new Size(30, 20);
+            label24.Size = new Size(111, 20);
             label24.TabIndex = 48;
-            label24.Text = "xxx";
+            label24.Text = "680631372-000";
             // 
             // LhAssyPackFactor
             // 
@@ -799,12 +801,12 @@
             label2.Name = "label2";
             label2.Size = new Size(111, 20);
             label2.TabIndex = 5;
-            label2.Text = "680631372-000";
+            label2.Text = "535120022-000";
             // 
             // button3
             // 
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(677, 129);
+            button3.Location = new Point(183, 580);
             button3.Name = "button3";
             button3.Size = new Size(165, 48);
             button3.TabIndex = 15;
@@ -815,7 +817,7 @@
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(677, 75);
+            button2.Location = new Point(12, 580);
             button2.Name = "button2";
             button2.Size = new Size(165, 48);
             button2.TabIndex = 14;
@@ -823,12 +825,26 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(652, 66);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(639, 508);
+            dataGridView1.TabIndex = 84;
+            // 
             // BentleyCount
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1089, 723);
+            ClientSize = new Size(1331, 723);
+            Controls.Add(dataGridView1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(groupBox1);
@@ -839,6 +855,7 @@
             Text = "Bentley Count";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -918,5 +935,6 @@
         private Label label44;
         private Button button3;
         private Button button2;
+        private DataGridView dataGridView1;
     }
 }

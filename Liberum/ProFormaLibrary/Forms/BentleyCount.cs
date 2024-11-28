@@ -511,83 +511,132 @@ namespace ProFormaUI.Forms
 
             BentleyCountModel LhCmp = new BentleyCountModel();
 
+            int result = 0;
+
             LhFinished.PackagingName = label14.Text;
             LhFinished.PackagingNumber = label15.Text;
-            LhFinished.CountOfEmpties = int.Parse(LHassyTextBox.Text);
             LhFinished.PackFactor = int.Parse(LhAssyPackFactor.Text);
             LhFinished.TotalParts = int.Parse(LhAssyTotalParts.Text);
+            if (int.TryParse(LHassyTextBox.Text, out result))
+                LhFinished.CountOfEmpties = result;
+            else
+                LhFinished.CountOfEmpties = 0;
 
             LhSub.PackagingName = label1.Text;
             LhSub.PackagingNumber = label2.Text;
-            LhSub.CountOfEmpties = int.Parse(LhSubstrateTextBox.Text);
             LhSub.PackFactor = int.Parse(LhSubPackFactor.Text);
             LhSub.TotalParts = int.Parse(LhSubTotalParts.Text);
+            if (int.TryParse(LhSubstrateTextBox.Text, out result))
+                LhSub.CountOfEmpties = result;
+            else
+                LhSub.CountOfEmpties = 0;
 
             LhWad.PackagingName = label5.Text;
             LhWad.PackagingNumber = label6.Text;
-            LhWad.CountOfEmpties = int.Parse(LHWadTextBox.Text);
             LhWad.PackFactor = int.Parse(LhWadPackFactor.Text);
             LhWad.TotalParts = int.Parse(LhWadTotalParts.Text);
+            if (int.TryParse(LHWadTextBox.Text, out result))
+                LhWad.CountOfEmpties = result;
+            else
+                LhWad.CountOfEmpties = 0;
 
             LhHud.PackagingName = label18.Text;
             LhHud.PackagingNumber = label17.Text;
-            LhHud.CountOfEmpties = int.Parse(LhHudTextBox.Text);
             LhHud.PackFactor = int.Parse(LhHudPackFactor.Text);
             LhHud.TotalParts = int.Parse(LhHudTotal.Text);
+            if (int.TryParse(LhHudTextBox.Text, out result))
+                LhHud.CountOfEmpties = result;
+            else
+                LhHud.CountOfEmpties = 0;
 
             LhPab.PackagingName = label22.Text;
             LhPab.PackagingNumber = label21.Text;
-            LhPab.CountOfEmpties = int.Parse(LhPabTextBox.Text);
             LhPab.PackFactor = int.Parse(LhPabPackFactor.Text);
             LhPab.TotalParts = int.Parse(LhPabTotalParts.Text);
+            if (int.TryParse(LhPabTextBox.Text, out result))
+                LhPab.CountOfEmpties = result;
+            else
+                LhPab.CountOfEmpties = 0;
 
             LhUnlas.PackagingName = label23.Text;
             LhUnlas.PackagingNumber = label24.Text;
-            LhUnlas.CountOfEmpties = int.Parse(LhUnlaseredTextBox.Text);
+            //LhUnlas.CountOfEmpties = int.Parse(LhUnlaseredTextBox.Text);
             LhUnlas.PackFactor = int.Parse(LhUnlaseredPackFactor.Text);
             LhUnlas.TotalParts = int.Parse(LhUnlasTotalParts.Text);
+            if (int.TryParse(LhUnlaseredTextBox.Text, out result))
+                LhUnlas.CountOfEmpties = result;
+            else
+                LhUnlas.CountOfEmpties = 0;
 
             RhFinished.PackagingName = label27.Text;
             RhFinished.PackagingNumber = label28.Text;
-            RhFinished.CountOfEmpties = int.Parse(RhFinishedTextBox.Text);
+            //RhFinished.CountOfEmpties = int.Parse(RhFinishedTextBox.Text);
             RhFinished.PackFactor = int.Parse(RhFinishedPackFactor.Text);
             RhFinished.TotalParts = int.Parse(RhFinishedTotal.Text);
+            if (int.TryParse(RhFinishedTextBox.Text, out result))
+                RhFinished.CountOfEmpties = result;
+            else
+                RhFinished.CountOfEmpties = 0;
 
             RhSub.PackagingName = label43.Text;
             RhSub.PackagingNumber = label44.Text;
-            RhSub.CountOfEmpties = int.Parse(RhSubTextBox.Text);
+            //RhSub.CountOfEmpties = int.Parse(RhSubTextBox.Text);
             RhSub.PackFactor = int.Parse(RhSubPackFactor.Text);
             RhSub.TotalParts = int.Parse(RhSubTotal.Text);
+            if (int.TryParse(RhSubTextBox.Text, out result))
+                RhSub.CountOfEmpties = result;
+            else
+                RhSub.CountOfEmpties = 0;
 
             RhWad.PackagingName = label42.Text;
             RhWad.PackagingNumber = label41.Text;
-            RhWad.CountOfEmpties = int.Parse(RhWadTextBox.Text);
+            //RhWad.CountOfEmpties = int.Parse(RhWadTextBox.Text);
             RhWad.PackFactor = int.Parse(RhWadPackFactor.Text);
             RhWad.TotalParts = int.Parse(RhWadTotal.Text);
+            if (int.TryParse(RhWadTextBox.Text, out result))
+                RhWad.CountOfEmpties = result;
+            else
+                RhWad.CountOfEmpties = 0;
 
             RhHud.PackagingName = label38.Text;
             RhHud.PackagingNumber = label37.Text;
-            RhHud.CountOfEmpties = int.Parse(RhHudTextBox.Text);
+            //RhHud.CountOfEmpties = int.Parse(RhHudTextBox.Text);
             RhHud.PackFactor = int.Parse(RhHudPackFactor.Text);
             RhHud.TotalParts = int.Parse(RhHudTotal.Text);
+            if (int.TryParse(RhHudTextBox.Text, out result))
+                RhHud.CountOfEmpties = result;
+            else
+                RhHud.CountOfEmpties = 0;
 
             RhPab.PackagingName = label35.Text;
             RhPab.PackagingNumber = label34.Text;
-            RhPab.CountOfEmpties = int.Parse(RhPabTextBox.Text);
+            //RhPab.CountOfEmpties = int.Parse(RhPabTextBox.Text);
             RhPab.PackFactor = int.Parse(RhPabPackFactor.Text);
             RhPab.TotalParts = int.Parse(RhPabTotal.Text);
+            if (int.TryParse(RhPabTextBox.Text, out result))
+                RhPab.CountOfEmpties = result;
+            else
+                RhPab.CountOfEmpties = 0;
 
             RhUnlas.PackagingName = label13.Text;
             RhUnlas.PackagingNumber = label20.Text;
-            RhUnlas.CountOfEmpties = int.Parse(RhUnlasTextBox.Text);
+            //RhUnlas.CountOfEmpties = int.Parse(RhUnlasTextBox.Text);
             RhUnlas.PackFactor = int.Parse(RhUnlasPackFactor.Text);
             RhUnlas.TotalParts = int.Parse(RhUnlasTotal.Text);
+            if (int.TryParse(RhUnlasTextBox.Text, out result))
+                RhUnlas.CountOfEmpties = result;
+            else
+                RhUnlas.CountOfEmpties = 0;
 
             LhCmp.PackagingName = label47.Text;
             LhCmp.PackagingNumber = label48.Text;
-            LhCmp.CountOfEmpties = int.Parse(LhCmpTextBox.Text);
+            //LhCmp.CountOfEmpties = int.Parse(LhCmpTextBox.Text);
             LhCmp.PackFactor = int.Parse(CmpPackFactor.Text);
             LhCmp.TotalParts = int.Parse(CmpTotal.Text);
+            if (int.TryParse(LhCmpTextBox.Text, out result))
+                LhCmp.CountOfEmpties = result;
+            else
+                LhCmp.CountOfEmpties = 0;
 
             count.Add(LhFinished);
             count.Add(LhSub);
