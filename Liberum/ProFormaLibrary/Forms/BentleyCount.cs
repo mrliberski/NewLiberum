@@ -15,12 +15,60 @@ namespace ProFormaUI.Forms
     public partial class BentleyCount : Form
     {
         public List<BentleyCountModel> count = new List<BentleyCountModel>();
+        public List<BentleyEntryModel> DBtableEntries = new List<BentleyEntryModel>();
+        public BentleyEntryModel TableEntry = new BentleyEntryModel();
 
         public BentleyCount()
         {
             InitializeComponent();
             LoadTheme();
+            UpdateOverview();
             ErrorLabel.Visible = false;
+        }
+
+        private void UpdateOverview()
+        {
+            DBtableEntries.Clear();
+            dataGridView1.DataSource = null;
+            DBtableEntries = SqliteDataAccess.LoadBentleyCounts();
+            dataGridView1.DataSource = DBtableEntries;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            dataGridView1.Columns["Id"].Visible = false;
+
+            dataGridView1.Columns["EntryDate"].DisplayIndex = 1;
+            dataGridView1.Columns[1].HeaderText = "LH ASSY";
+            dataGridView1.Columns[2].HeaderText = "LH SUBS";
+            dataGridView1.Columns[3].HeaderText = "LH WAD";
+            dataGridView1.Columns[4].HeaderText = "LH HUD";
+            dataGridView1.Columns[5].HeaderText = "LH PAB";
+            dataGridView1.Columns[6].HeaderText = "Unlasered";
+
+            dataGridView1.Columns[7].HeaderText = "RH ASSY";
+            dataGridView1.Columns[8].HeaderText = "RH SUBS";
+            dataGridView1.Columns[9].HeaderText = "RH WAD";
+            dataGridView1.Columns[10].HeaderText = "RH HUD";
+            dataGridView1.Columns[11].HeaderText = "RH PAB";
+            dataGridView1.Columns[12].HeaderText = "Unlasered";
+
+            dataGridView1.Columns[13].HeaderText = "CMP"; 
+            dataGridView1.Columns[14].HeaderText = "DATE";
+
+            //dataGridView1.Columns["DeliveryDate"].AutoSizeMode; 
+            //dataGridView1.Columns[1].Name = "Column2";
+            //dataGridView1.Columns[2].Name = "Column3";
+            //dataGridView1.Columns[3].Name = "Column4";
+            //dataGridView1.Columns[4].Name = "Column5";
+            //dataGridView1.Columns[5].Name = "Column6";
+            //dataGridView1.Columns[6].Name = "Column7";
+            //dataGridView1.Columns[7].Name = "Column8";
+            //dataGridView1.Columns[8].Name = "Column9";
+
+            //dataGridView1.Columns["RegNumber"].DisplayIndex = 2;
+
+            //NOTE: Selected index will be one and basing on this will be populating overview
+
+            ErrorLabel.Text = string.Empty;
         }
 
         // Apply button themes to current forms
@@ -654,13 +702,38 @@ namespace ProFormaUI.Forms
 
             count.Add(LhCmp);
 
-            //TODO:
-            //SqliteDataAccess.AddBentleyCount();
-
+            // Create email
             //Create email body and pass it to sender class
             string emails;
             emails = BentleyCountProcedures.BentleyCountEmailBody(count);
             BentleyCountProcedures.SendBentleyCount(emails);
+
+            //Add entry to database and update tableview
+            try
+            {
+                TableEntry.LhFinished = LhFinished.TotalParts;
+                TableEntry.LhLasered = LhSub.TotalParts;
+                TableEntry.LhWad = LhWad.TotalParts;
+                TableEntry.LhHud = LhHud.TotalParts;
+                TableEntry.LhPab = LhPab.TotalParts;
+                TableEntry.LhUnlasered = LhUnlas.TotalParts;
+                TableEntry.RhFinished = RhFinished.TotalParts;
+                TableEntry.RhLasered = RhSub.TotalParts;
+                TableEntry.RhWad = RhWad.TotalParts;
+                TableEntry.RhHud = RhHud.TotalParts;
+                TableEntry.RhPab = RhPab.TotalParts;
+                TableEntry.RhUnlasered = RhUnlas.TotalParts;
+                TableEntry.Cmp = LhCmp.TotalParts;
+                TableEntry.EntryDate = DateTime.Now.ToString("dd-MMM-yyyy");
+
+                SqliteDataAccess.AddBentleyCount(TableEntry);
+
+                UpdateOverview();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+
+ 
 
             ClearAllTextBoxes(this);
             count.Clear();

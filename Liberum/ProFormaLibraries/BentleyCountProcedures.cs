@@ -30,7 +30,8 @@ namespace ProFormaLibraries
                 output += @"<td align=""center"">&nbsp;<b>Full Containers</b>&nbsp;</td>";
                 output += @"<td align=""center"">&nbsp;<b>Fill Factor</b>&nbsp;</td>";
                 output += @"<td align=""center"">&nbsp;<b>Total Parts</b>&nbsp;</td>";
-                output += @"</tr>";
+            output += @"<td align=""center"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Comment</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>";
+            output += @"</tr>";
 
                 foreach (BentleyCountModel item in count)
                 {
@@ -40,7 +41,8 @@ namespace ProFormaLibraries
                     output += @$"<td align=""center"">&nbsp;{item.CountOfEmpties}&nbsp;</td>";
                     output += @$"<td align=""center"">&nbsp;{item.PackFactor}&nbsp;</td>";
                     output += @$"<td align=""center"">&nbsp;{item.TotalParts}&nbsp;</td>";
-                    output += @"</tr>";
+                output += @$"<td align=""center"">                                 </td>";
+                output += @"</tr>";
                 }
 
                 output += "</table>";

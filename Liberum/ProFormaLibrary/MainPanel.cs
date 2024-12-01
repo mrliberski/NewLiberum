@@ -68,7 +68,7 @@ namespace ProFormaUI
             PackagingCountButton.Visible = true;
             InternalPackagingButton.Visible = true;
             TrackerButton.Visible = true;
-            HandoverButton1.Visible = true;
+            //HandoverButton1.Visible = true;
             HandoverButton2.Visible = true;
             HandoverButton3.Visible = true;
             HandoverButton4.Visible = true;
@@ -82,7 +82,7 @@ namespace ProFormaUI
             PackagingCountButton.Visible = false;
             InternalPackagingButton.Visible = false;
             TrackerButton.Visible = false;
-            HandoverButton1.Visible = false;
+            //HandoverButton1.Visible = false;
             HandoverButton2.Visible = false;
             HandoverButton3.Visible = false;
             HandoverButton4.Visible = false;

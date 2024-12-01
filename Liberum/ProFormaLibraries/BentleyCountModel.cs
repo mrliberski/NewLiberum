@@ -17,6 +17,8 @@ namespace ProFormaLibraries
         public int CountOfEmpties { get; set; }
         public int PackFactor { get; set; }
         public int TotalParts { get; set; }
+        public string? EnteredBy { get; set; }
+        public string? EntryDate { get; set; }
 
     }
 }

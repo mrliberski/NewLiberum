@@ -19,6 +19,90 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
+        public static void AddBentleyCount(BentleyEntryModel model)
+        {
+            //MessageBox.Show("yay");
+            try
+            {
+                using (var connection = new SQLiteConnection(LoadConnectionString()))
+                {
+                    connection.Open();
+                    var cmd = connection.CreateCommand();
+                    cmd.CommandText = @"insert into Bentley
+                        (
+                            LhFinished,
+                            LhLasered,
+                            LhWad, 
+                            LhHud, 
+                            LhPab,
+                            LhUnlasered, 
+                            RhFinished, 
+                            RhLasered, 
+                            RhWad,
+                            RhHud,
+                            RhPab,
+                            RhUnlasered,
+                            Cmp,
+                            EntryDate,
+                            CreatedBy
+                        )
+                        values 
+                        (
+                            @LhFinished,
+                            @LhLasered,
+                            @LhWad, 
+                            @LhHud, 
+                            @LhPab,
+                            @LhUnlasered, 
+                            @RhFinished, 
+                            @RhLasered, 
+                            @RhWad,
+                            @RhHud,
+                            @RhPab,
+                            @RhUnlasered,
+                            @Cmp,
+                            @EntryDate,
+                            @CreatedBy
+                        )";
+                    cmd.Parameters.Add(new SQLiteParameter("@LhFinished", model.LhFinished));
+                    cmd.Parameters.Add(new SQLiteParameter("@LhLasered", model.LhLasered));
+                    cmd.Parameters.Add(new SQLiteParameter("@LhWad", model.LhWad));
+                    cmd.Parameters.Add(new SQLiteParameter("@LhHud", model.LhHud));
+                    cmd.Parameters.Add(new SQLiteParameter("@LhPab", model.LhPab));
+                    cmd.Parameters.Add(new SQLiteParameter("@LhUnlasered", model.LhUnlasered));
+                    cmd.Parameters.Add(new SQLiteParameter("@RhFinished", model.RhFinished));
+                    cmd.Parameters.Add(new SQLiteParameter("@RhLasered",model.RhLasered));
+                    cmd.Parameters.Add(new SQLiteParameter("@RhWad",model.RhWad));
+                    cmd.Parameters.Add(new SQLiteParameter("@RhHud", model.RhHud));
+                    cmd.Parameters.Add(new SQLiteParameter("@RhPab", model.RhPab));
+                    cmd.Parameters.Add(new SQLiteParameter("@RhUnlasered", model.RhUnlasered));
+                    cmd.Parameters.Add(new SQLiteParameter("@Cmp", model.Cmp));
+                    cmd.Parameters.Add(new SQLiteParameter("@EntryDate", model.EntryDate));
+                    cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", Environment.UserName));
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (Exception e) 
+            { 
+                MessageBox.Show(e.Message, "damn");
+            }
+
+        }
+
+        public static List<BentleyEntryModel> LoadBentleyCounts()
+        {
+            List<BentleyEntryModel> Entries = new List<BentleyEntryModel>();
+
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                Entries = cnn.Query<BentleyEntryModel>("SELECT * FROM Bentley ORDER BY Id desc ").ToList();
+            }
+
+            return Entries;
+        }
+
         //Function to archive 
         public static void UpdateLiveRecord(int recordNumber)
         {
@@ -55,7 +139,6 @@ namespace ProFormaLibraries
                 }
             }
         }
-
 
         public static List<string> LoadSites()
         {
@@ -583,6 +666,46 @@ namespace ProFormaLibraries
                 }
                 else
  { return 0; }
+            }
+        }
+
+        public static string FetchCurrentHangOnState()
+        {
+            string connectionString = LoadConnectionString();
+            string query = "SELECT HangOnParts FROM CurrentHandover WHERE Id = 1";
+            string result = string.Empty;
+
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            result = reader["HangOnParts"].ToString();
+                        }
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        public static void SaveHangOnState(string hangOnState)
+        {
+            string connectionString = LoadConnectionString();
+            string query = "UPDATE CurrentHandover SET HangOnParts = @HangOnParts WHERE Id = 1";
+
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@HangOnParts", hangOnState);
+                    command.ExecuteNonQuery();
+                }
             }
         }
 

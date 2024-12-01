@@ -152,9 +152,6 @@
   <data name="ReportBugButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="ReportBugButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 580</value>
-  </data>
   <data name="ReportBugButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
   </data>
@@ -174,7 +171,7 @@
     <value>NoControl</value>
   </data>
   <data name="iconButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 530</value>
+    <value>0, 480</value>
   </data>
   <data name="iconButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -195,7 +192,7 @@
     <value>NoControl</value>
   </data>
   <data name="HandoverButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 480</value>
+    <value>0, 430</value>
   </data>
   <data name="HandoverButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -216,7 +213,7 @@
     <value>NoControl</value>
   </data>
   <data name="HandoverButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 430</value>
+    <value>0, 380</value>
   </data>
   <data name="HandoverButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -237,33 +234,12 @@
     <value>NoControl</value>
   </data>
   <data name="HandoverButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 380</value>
+    <value>0, 330</value>
   </data>
   <data name="HandoverButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
   </data>
   <data name="HandoverButton2.Text" xml:space="preserve">
-    <value>  Handover New</value>
-  </data>
-  <data name="HandoverButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="HandoverButton1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="HandoverButton1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="HandoverButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HandoverButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 330</value>
-  </data>
-  <data name="HandoverButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="HandoverButton1.Text" xml:space="preserve">
     <value>  Handover</value>
   </data>
   <data name="TrackerButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

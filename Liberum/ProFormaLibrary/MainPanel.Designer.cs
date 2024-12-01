@@ -31,13 +31,12 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
             ExitButton = new FontAwesome.Sharp.IconButton();
             ReportBugButton = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
             HandoverButton4 = new FontAwesome.Sharp.IconButton();
             HandoverButton3 = new FontAwesome.Sharp.IconButton();
             HandoverButton2 = new FontAwesome.Sharp.IconButton();
-            HandoverButton1 = new FontAwesome.Sharp.IconButton();
             TrackerButton = new FontAwesome.Sharp.IconButton();
             InternalPackagingButton = new FontAwesome.Sharp.IconButton();
             PackagingCountButton = new FontAwesome.Sharp.IconButton();
@@ -72,7 +71,6 @@
             panelMenu.Controls.Add(HandoverButton4);
             panelMenu.Controls.Add(HandoverButton3);
             panelMenu.Controls.Add(HandoverButton2);
-            panelMenu.Controls.Add(HandoverButton1);
             panelMenu.Controls.Add(TrackerButton);
             panelMenu.Controls.Add(InternalPackagingButton);
             panelMenu.Controls.Add(PackagingCountButton);
@@ -80,18 +78,6 @@
             panelMenu.Controls.Add(exportButton1);
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
-            // 
-            // iconButton2
-            // 
-            resources.ApplyResources(iconButton2, "iconButton2");
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.ForeColor = Color.Gainsboro;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Car;
-            iconButton2.IconColor = Color.Gainsboro;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Name = "iconButton2";
-            iconButton2.UseVisualStyleBackColor = true;
-            iconButton2.Click += iconButton2_Click;
             // 
             // ExitButton
             // 
@@ -116,6 +102,18 @@
             ReportBugButton.Name = "ReportBugButton";
             ReportBugButton.UseVisualStyleBackColor = true;
             ReportBugButton.Click += ReportBugButton_Click;
+            // 
+            // iconButton2
+            // 
+            resources.ApplyResources(iconButton2, "iconButton2");
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.ForeColor = Color.Gainsboro;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Car;
+            iconButton2.IconColor = Color.Gainsboro;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.Name = "iconButton2";
+            iconButton2.UseVisualStyleBackColor = true;
+            iconButton2.Click += iconButton2_Click;
             // 
             // HandoverButton4
             // 
@@ -152,18 +150,6 @@
             HandoverButton2.Name = "HandoverButton2";
             HandoverButton2.UseVisualStyleBackColor = true;
             HandoverButton2.Click += HandoverButton2_Click;
-            // 
-            // HandoverButton1
-            // 
-            resources.ApplyResources(HandoverButton1, "HandoverButton1");
-            HandoverButton1.FlatAppearance.BorderSize = 0;
-            HandoverButton1.ForeColor = Color.Gainsboro;
-            HandoverButton1.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            HandoverButton1.IconColor = Color.Gainsboro;
-            HandoverButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            HandoverButton1.Name = "HandoverButton1";
-            HandoverButton1.UseVisualStyleBackColor = true;
-            HandoverButton1.Click += HandoverButton1_Click;
             // 
             // TrackerButton
             // 
@@ -367,7 +353,6 @@
         private FontAwesome.Sharp.IconButton HandoverButton4;
         private FontAwesome.Sharp.IconButton HandoverButton3;
         private FontAwesome.Sharp.IconButton HandoverButton2;
-        private FontAwesome.Sharp.IconButton HandoverButton1;
         private FontAwesome.Sharp.IconButton ReportBugButton;
         private FontAwesome.Sharp.IconButton ExitButton;
         private FontAwesome.Sharp.IconButton iconButton2;
