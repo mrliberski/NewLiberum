@@ -350,37 +350,6 @@ namespace ProFormaUI.Forms
             VentTotallabel.Text = (fulls * int.Parse(VentPalletFactorlabel.Text)).ToString();
         }
 
-        private void DecorWipEmptiesTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(DecorWipEmptiesTextBox.Text, out int quantityOfItems))
-            {
-                DecorwipTotalLabelChange();
-                errorLabel.Visible = false;
-            }
-            else
-            {
-                //MessageBox.Show("Incorrect Value", "Incorrect entry");
-                DecorWipEmptiesTextBox.Text = string.Empty;
-                DecorwipTotalLabelChange();
-                errorLabel.Visible = true;
-            }
-        }
-
-        private void DecorwipTotalLabelChange()
-        {
-            //this block checks if entry can be parsed to ints and updates total qty label
-            int fulls;
-            if (int.TryParse(DecorWipEmptiesTextBox.Text, out fulls))
-            {
-                fulls = int.Parse(DecorWipEmptiesTextBox.Text);
-            }
-            else
-            {
-                fulls = 0;
-            }
-
-            DecorWipTotallabel.Text = (fulls * int.Parse(DecorWipPalletFactorlabel.Text)).ToString();
-        }
 
         private void AirbagFlapEmptiesTextBox_TextChanged(object sender, EventArgs e)
         {

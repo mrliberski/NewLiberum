@@ -71,6 +71,15 @@
             label5 = new Label();
             lowerEmpriesTextBox = new TextBox();
             groupBox2 = new GroupBox();
+            label23 = new Label();
+            label24 = new Label();
+            GreenBinTextBox = new TextBox();
+            label15 = new Label();
+            label20 = new Label();
+            BlueBinTexBox = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
+            PinkBinTextBox = new TextBox();
             MetalPalTotalLabel = new Label();
             MetalPalPackFacLabel = new Label();
             metalPalPalletFactorLabel = new Label();
@@ -192,15 +201,6 @@
             errorLabel = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
-            label13 = new Label();
-            label14 = new Label();
-            PinkBinTextBox = new TextBox();
-            label15 = new Label();
-            label20 = new Label();
-            BlueBinTexBox = new TextBox();
-            label23 = new Label();
-            label24 = new Label();
-            GreenBinTextBox = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -282,16 +282,25 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label23);
+            groupBox1.Controls.Add(label24);
             groupBox1.Controls.Add(label80);
             groupBox1.Controls.Add(label81);
+            groupBox1.Controls.Add(GreenBinTextBox);
+            groupBox1.Controls.Add(label20);
             groupBox1.Controls.Add(label82);
+            groupBox1.Controls.Add(label15);
+            groupBox1.Controls.Add(label14);
             groupBox1.Controls.Add(label83);
             groupBox1.Controls.Add(label84);
+            groupBox1.Controls.Add(BlueBinTexBox);
             groupBox1.Controls.Add(topCoverTotalLabel);
             groupBox1.Controls.Add(topCoverPalletFactorLabel);
+            groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(topcoverDamagedTextBox);
             groupBox1.Controls.Add(label21);
             groupBox1.Controls.Add(topCoverFullsTextBox);
+            groupBox1.Controls.Add(PinkBinTextBox);
             groupBox1.Controls.Add(label22);
             groupBox1.Controls.Add(topCoverEmptiestextBox);
             groupBox1.Controls.Add(DecorTotalLabel);
@@ -322,7 +331,7 @@
             groupBox1.Controls.Add(textBox2);
             groupBox1.Location = new Point(12, 57);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1031, 191);
+            groupBox1.Size = new Size(1031, 288);
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             groupBox1.Text = "Sequenced";
@@ -616,15 +625,6 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(label23);
-            groupBox2.Controls.Add(label24);
-            groupBox2.Controls.Add(GreenBinTextBox);
-            groupBox2.Controls.Add(label15);
-            groupBox2.Controls.Add(label20);
-            groupBox2.Controls.Add(BlueBinTexBox);
-            groupBox2.Controls.Add(label13);
-            groupBox2.Controls.Add(label14);
-            groupBox2.Controls.Add(PinkBinTextBox);
             groupBox2.Controls.Add(MetalPalTotalLabel);
             groupBox2.Controls.Add(MetalPalPackFacLabel);
             groupBox2.Controls.Add(metalPalPalletFactorLabel);
@@ -743,12 +743,90 @@
             groupBox2.Controls.Add(label42);
             groupBox2.Controls.Add(label43);
             groupBox2.Controls.Add(lowColFullTextBox);
-            groupBox2.Location = new Point(12, 254);
+            groupBox2.Location = new Point(12, 367);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1031, 638);
+            groupBox2.Size = new Size(1031, 525);
             groupBox2.TabIndex = 35;
             groupBox2.TabStop = false;
             groupBox2.Text = "Hang On";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(338, 251);
+            label23.Name = "label23";
+            label23.Size = new Size(65, 20);
+            label23.TabIndex = 128;
+            label23.Text = "3100662";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(20, 251);
+            label24.Name = "label24";
+            label24.Size = new Size(114, 20);
+            label24.TabIndex = 127;
+            label24.Text = "Green Gitter Bin";
+            // 
+            // GreenBinTextBox
+            // 
+            GreenBinTextBox.Location = new Point(409, 248);
+            GreenBinTextBox.Name = "GreenBinTextBox";
+            GreenBinTextBox.Size = new Size(86, 27);
+            GreenBinTextBox.TabIndex = 126;
+            GreenBinTextBox.TextChanged += GreenBinTextBox_TextChanged;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(338, 218);
+            label15.Name = "label15";
+            label15.Size = new Size(65, 20);
+            label15.TabIndex = 125;
+            label15.Text = "3100670";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(20, 218);
+            label20.Name = "label20";
+            label20.Size = new Size(104, 20);
+            label20.TabIndex = 124;
+            label20.Text = "Blue Gitter Bin";
+            // 
+            // BlueBinTexBox
+            // 
+            BlueBinTexBox.Location = new Point(409, 215);
+            BlueBinTexBox.Name = "BlueBinTexBox";
+            BlueBinTexBox.Size = new Size(86, 27);
+            BlueBinTexBox.TabIndex = 123;
+            BlueBinTexBox.TextChanged += BlueBinTexBox_TextChanged;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(338, 185);
+            label13.Name = "label13";
+            label13.Size = new Size(65, 20);
+            label13.TabIndex = 122;
+            label13.Text = "3104444";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(20, 185);
+            label14.Name = "label14";
+            label14.Size = new Size(102, 20);
+            label14.TabIndex = 121;
+            label14.Text = "Pink Gitter Bin";
+            // 
+            // PinkBinTextBox
+            // 
+            PinkBinTextBox.Location = new Point(409, 182);
+            PinkBinTextBox.Name = "PinkBinTextBox";
+            PinkBinTextBox.Size = new Size(86, 27);
+            PinkBinTextBox.TabIndex = 120;
+            PinkBinTextBox.TextChanged += PinkBinTextBox_TextChanged;
             // 
             // MetalPalTotalLabel
             // 
@@ -1805,84 +1883,6 @@
             radioButton2.Text = "Hang On Containers";
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(338, 514);
-            label13.Name = "label13";
-            label13.Size = new Size(65, 20);
-            label13.TabIndex = 122;
-            label13.Text = "3104444";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(20, 512);
-            label14.Name = "label14";
-            label14.Size = new Size(102, 20);
-            label14.TabIndex = 121;
-            label14.Text = "Pink Gitter Bin";
-            // 
-            // PinkBinTextBox
-            // 
-            PinkBinTextBox.Location = new Point(409, 511);
-            PinkBinTextBox.Name = "PinkBinTextBox";
-            PinkBinTextBox.Size = new Size(86, 27);
-            PinkBinTextBox.TabIndex = 120;
-            PinkBinTextBox.TextChanged += PinkBinTextBox_TextChanged;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(338, 547);
-            label15.Name = "label15";
-            label15.Size = new Size(65, 20);
-            label15.TabIndex = 125;
-            label15.Text = "3100670";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new Point(20, 545);
-            label20.Name = "label20";
-            label20.Size = new Size(104, 20);
-            label20.TabIndex = 124;
-            label20.Text = "Blue Gitter Bin";
-            // 
-            // BlueBinTexBox
-            // 
-            BlueBinTexBox.Location = new Point(409, 544);
-            BlueBinTexBox.Name = "BlueBinTexBox";
-            BlueBinTexBox.Size = new Size(86, 27);
-            BlueBinTexBox.TabIndex = 123;
-            BlueBinTexBox.TextChanged += BlueBinTexBox_TextChanged;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(338, 580);
-            label23.Name = "label23";
-            label23.Size = new Size(65, 20);
-            label23.TabIndex = 128;
-            label23.Text = "3100662";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new Point(20, 578);
-            label24.Name = "label24";
-            label24.Size = new Size(114, 20);
-            label24.TabIndex = 127;
-            label24.Text = "Green Gitter Bin";
-            // 
-            // GreenBinTextBox
-            // 
-            GreenBinTextBox.Location = new Point(409, 577);
-            GreenBinTextBox.Name = "GreenBinTextBox";
-            GreenBinTextBox.Size = new Size(86, 27);
-            GreenBinTextBox.TabIndex = 126;
-            GreenBinTextBox.TextChanged += GreenBinTextBox_TextChanged;
             // 
             // formCounts
             // 

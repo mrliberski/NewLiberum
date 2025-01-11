@@ -31,6 +31,8 @@ namespace ProFormaUI.Forms
         private List<string> ShiftList = new List<string>();
         private List<AssessmentModel> AssessmentList = new List<AssessmentModel>();
 
+        public string RefreshMessage = "Any changes will only be displayed when overview is reloaded";
+
 
 
         public MheTraining()
@@ -64,21 +66,23 @@ namespace ProFormaUI.Forms
             dataGridView1.Columns["UpdatedBy"].Visible = false;
             dataGridView1.Columns["Comments"].Visible = false;
             //dataGridView1.Columns["LiveRecord"].Visible = false;
-            dataGridView1.Columns["A1"].Visible = false;
-            dataGridView1.Columns["A2"].Visible = false;
-            dataGridView1.Columns["A3"].Visible = false;
-            dataGridView1.Columns["A4"].Visible = false;
-            dataGridView1.Columns["A5"].Visible = false;
-            dataGridView1.Columns["B1"].Visible = false;
-            dataGridView1.Columns["B2"].Visible = false;
-            dataGridView1.Columns["H1"].Visible = false;
-            dataGridView1.Columns["F1"].Visible = false;
-            dataGridView1.Columns["M3A"].Visible = false;
-            dataGridView1.Columns["M3B"].Visible = false;
-            dataGridView1.Columns["D1"].Visible = false;
-            dataGridView1.Columns["Remote"].Visible = false;
-            dataGridView1.Columns["Crane"].Visible = false;
-            dataGridView1.Columns["Assessment"].Visible = false;
+            //dataGridView1.Columns["A1"].Visible = false;
+            //dataGridView1.Columns["A2"].Visible = false;
+            //dataGridView1.Columns["A3"].Visible = false;
+            //dataGridView1.Columns["A4"].Visible = false;
+            //dataGridView1.Columns["A5"].Visible = false;
+            //dataGridView1.Columns["B1"].Visible = false;
+            //dataGridView1.Columns["B2"].Visible = false;
+            //dataGridView1.Columns["H1"].Visible = false;
+            //dataGridView1.Columns["F1"].Visible = false;
+            //dataGridView1.Columns["M3A"].Visible = false;
+            //dataGridView1.Columns["M3B"].Visible = false;
+            //dataGridView1.Columns["D1"].Visible = false;
+            //dataGridView1.Columns["Remote"].Visible = false;
+            //dataGridView1.Columns["Crane"].Visible = false;
+            //dataGridView1.Columns["Assessment"].Visible = false;
+            //dataGridView1.Columns["P1"].Visible = false;
+            //dataGridView1.Columns["RackingInspection"].Visible = false;
 
             //dataGridView1.Columns[9].HeaderText = "Registration";
             //dataGridView1.Columns[1].HeaderText = "Delivery Date";
@@ -176,7 +180,6 @@ namespace ProFormaUI.Forms
             errorLabel.Text = string.Empty;
         }
 
-
         // Populates combobox selections
         private void LoadSites()
         {
@@ -226,6 +229,22 @@ namespace ProFormaUI.Forms
             //label4.ForeColor = ThemeColor.SecondaryColor;
         }
 
+        private void B1picker_ValueChanged(object sender, EventArgs e)
+        {
+            B1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = B1picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateB1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "B1 could not be updated;";
+            }
+        }
+
         private void MheTraining_Load(object sender, EventArgs e)
         {
 
@@ -234,11 +253,6 @@ namespace ProFormaUI.Forms
         private void errorLabel_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void B1picker_ValueChanged(object sender, EventArgs e)
-        {
-            B1picker.Format = DateTimePickerFormat.Long;
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -250,7 +264,9 @@ namespace ProFormaUI.Forms
                 NameTextBox.Text = selectedRow.Cells["Name"].Value.ToString();
                 SurnameTextBox.Text = selectedRow.Cells["Surname"].Value.ToString();
                 SiteTextBox.Text = selectedRow.Cells["Site"].Value.ToString();
+                SiteCombo.Text = selectedRow.Cells["Site"].Value.ToString();
                 DeptTextBox.Text = selectedRow.Cells["Shift"].Value.ToString();
+                ShiftCombo.Text = selectedRow.Cells["Shift"].Value.ToString();
 
                 IdLaberlheader.Text = "Id";
                 NameLabelHeader.Text = "Name";
@@ -383,10 +399,11 @@ namespace ProFormaUI.Forms
                     P1picker.Format = DateTimePickerFormat.Long;
                     P1picker.Value = P1Datevalue;
                 }
-                catch
+                catch (System.Exception wtf)
                 {
                     P1picker.Format = DateTimePickerFormat.Custom;
                     P1picker.CustomFormat = " ";
+                    //MessageBox.Show(wtf.Message);
                 }
 
                 // 3A
@@ -468,21 +485,20 @@ namespace ProFormaUI.Forms
                     AssessmentPicker.CustomFormat = " ";
                 }
 
-                // TODO: Racking Inspection
-                //try
-                //{
-                //    DateTime RackingDatevalue = DateTime.ParseExact(selectedRow.Cells["Racking"].Value.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                //    RackingPicker.Format = DateTimePickerFormat.Long;
-                //    RackingPicker.Value = RackingDatevalue;
-                //}
-                //catch
-                //{
-                //    RackingPicker.Format = DateTimePickerFormat.Custom;
-                //    RackingPicker.CustomFormat = " ";
-                //}
 
-
-
+                // Racking
+                try
+                {
+                    DateTime P1Datevalue = DateTime.ParseExact(selectedRow.Cells["RackingInspection"].Value.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    RackingPicker.Format = DateTimePickerFormat.Long;
+                    RackingPicker.Value = P1Datevalue;
+                }
+                catch (System.Exception wtf)
+                {
+                    RackingPicker.Format = DateTimePickerFormat.Custom;
+                    RackingPicker.CustomFormat = " ";
+                    //MessageBox.Show(wtf.Message);
+                }
 
             }
 
@@ -518,46 +534,382 @@ namespace ProFormaUI.Forms
         // move to next index
         private void button3_Click(object sender, EventArgs e)
         {
-            //// Ensure there is a currently selected cell
-            //if (dataGridView1.CurrentCell == null)
-            //{
-            //    MessageBox.Show("No cell is currently selected.");
-            //    return;
-            //}
-
-            //int currentRowIndex = dataGridView1.CurrentCell.RowIndex;
-            //int nextRowIndex = currentRowIndex + 1;
-
-            //// Ensure the next row is within bounds and not the new row
-            //if (nextRowIndex < dataGridView1.Rows.Count - (dataGridView1.AllowUserToAddRows ? 1 : 0))
-            //{
-            //    // Try to set the next cell as current, defaulting to the first column
-            //    try
-            //    {
-            //        dataGridView1.CurrentCell = dataGridView1.Rows[nextRowIndex].Cells[0];
-            //    }
-            //    catch (System.Exception ex)
-            //    {
-            //        MessageBox.Show($"Cannot move to the next row: {ex.Message}");
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Already at the last row.");
-            //}
+            MoveSelectionDown();
         }
-
 
         // move to previous index
         private void button4_Click(object sender, EventArgs e)
         {
-            //int currentRowIndex = dataGridView1.CurrentCell.RowIndex;
-            //int previousRowIndex = currentRowIndex - 1;
+            MoveSelectionUp();
+        }
 
-            //if (previousRowIndex >= 0)
-            //{
-            //    dataGridView1.CurrentCell = dataGridView1.Rows[previousRowIndex].Cells[0];
-            //}
+        private void B2picker_ValueChanged(object sender, EventArgs e)
+        {
+            B2picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = B2picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateB2(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "B2 could not be updated;";
+            }
+        }
+
+        private void A1picker_ValueChanged(object sender, EventArgs e)
+        {
+            A1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = A1picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateA1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "A1 could not be updated;";
+            }
+        }
+
+        private void A2picker_ValueChanged(object sender, EventArgs e)
+        {
+            A2picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = A2picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateA2(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "A2 could not be updated;";
+            }
+        }
+
+        private void H1picker_ValueChanged(object sender, EventArgs e)
+        {
+            H1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = H1picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateH1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "H1 could not be updated;";
+            }
+        }
+
+        private void F1picker_ValueChanged(object sender, EventArgs e)
+        {
+            F1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = F1picker.Value.ToString("dd/MM/yyyy");
+                // MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateF1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "F1 could not be updated;";
+            }
+        }
+
+        private void P1picker_ValueChanged(object sender, EventArgs e)
+        {
+            P1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = P1picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateP1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "P1 could not be updated;";
+            }
+        }
+
+        private void mewps3aPicker_ValueChanged(object sender, EventArgs e)
+        {
+            mewps3aPicker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = mewps3aPicker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateM3A(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "M3A could not be updated;";
+            }
+        }
+
+        private void Mewps3Bpicker_ValueChanged(object sender, EventArgs e)
+        {
+            Mewps3Bpicker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = Mewps3Bpicker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateM3B(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "M3B could not be updated;";
+            }
+        }
+
+        private void A4picker_ValueChanged(object sender, EventArgs e)
+        {
+            A4picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
+                // MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateA4(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "A4 could not be updated;";
+            }
+        }
+
+        private void A5picker_ValueChanged(object sender, EventArgs e)
+        {
+            A5picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateA5(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "A5 could not be updated;";
+            }
+        }
+
+        private void D1picker_ValueChanged(object sender, EventArgs e)
+        {
+            D1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = D1picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateD1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "D1 could not be updated;";
+            }
+        }
+
+        private void RemotePIcker_ValueChanged(object sender, EventArgs e)
+        {
+            RemotePIcker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = RemotePIcker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateRemote(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "Remote could not be updated;";
+            }
+        }
+
+        private void CranePicker_ValueChanged(object sender, EventArgs e)
+        {
+            CranePicker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = CranePicker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateCrane(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "Crane could not be updated;";
+            }
+        }
+
+        private void AssessmentPicker_ValueChanged(object sender, EventArgs e)
+        {
+            AssessmentPicker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = AssessmentPicker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateAssessment(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "Assessment Record could not be updated;";
+            }
+        }
+
+        private void RackingPicker_ValueChanged(object sender, EventArgs e)
+        {
+            RackingPicker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = RackingPicker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateRacking(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch (System.Exception wtf)
+            {
+                errorLabel.Text = "Racking Inspection could not be updated;";
+                System.Diagnostics.Debug.WriteLine(wtf.Message);
+            }
+        }
+
+        private void SiteCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string NewValue = SiteCombo.Text;
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateSite(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "Site could not be updated;";
+            }
+        }
+
+        private void ShiftCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string NewValue = ShiftCombo.Text;
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateShift(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "Shift could not be updated;";
+            }
+        }
+
+        private void CommentextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string NewValue = CommentextBox.Text;
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateComment(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "Comment could not be updated;";
+            }
+        }
+
+        private void MoveSelectionUp()
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int currentIndex = dataGridView1.SelectedRows[0].Index;
+                if (currentIndex > 0)
+                {
+                    dataGridView1.ClearSelection();
+                    dataGridView1.Rows[currentIndex - 1].Selected = true;
+                }
+            }
+        }
+
+        private void MoveSelectionDown()
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int currentIndex = dataGridView1.SelectedRows[0].Index;
+                if (currentIndex < dataGridView1.Rows.Count - 1)
+                {
+                    dataGridView1.ClearSelection();
+                    dataGridView1.Rows[currentIndex + 1].Selected = true;
+                }
+            }
+        }
+
+        //// Example button click event handlers
+        //private void btnUp_Click(object sender, EventArgs e)
+        //{
+        //    MoveSelectionUp();
+        //}
+
+        //private void btnDown_Click(object sender, EventArgs e)
+        //{
+        //    MoveSelectionDown();
+        //}
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            MoveSelectionUp();
+        }
+
+        private void SiteTextBox_TextChanged(object sender, EventArgs e)
+        {
+            //not currently used
+        }
+
+        private void SurnameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string NewValue = SurnameTextBox.Text;
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateName(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch (System.Exception wtf)
+            {
+                errorLabel.Text = "Comment could not be updated: " + wtf.Message;
+            }
+        }
+
+        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string NewValue = NameTextBox.Text;
+                //MessageBox.Show(NewValue);
+                SqliteDataAccess.UpdateName(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch (System.Exception wtf)
+            {
+                errorLabel.Text = "Comment could not be updated: " + wtf.Message;
+            }
+        }
+
+        //Reloads overview id data grid
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            UpdateOverview();
         }
     }
 }

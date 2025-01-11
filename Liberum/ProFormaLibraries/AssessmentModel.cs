@@ -34,5 +34,7 @@ namespace ProFormaLibraries
             public string? Remote { get; set; } // Crane Remote
             public string? Crane { get; set; } // Crane
             public string? Assessment { get; set; } // Crane assessment
+            public string? P1 { get; set; } // bendi
+            public string? RackingInspection { get; set; } // Racking Inspection
     }
 }

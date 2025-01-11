@@ -71,10 +71,6 @@
             label63 = new Label();
             VentPalletFactorlabel = new Label();
             VentPackFactorlabel = new Label();
-            DecorWipEmptiesTextBox = new TextBox();
-            label67 = new Label();
-            DecorWipPalletFactorlabel = new Label();
-            DecorWipPackFactorlabel = new Label();
             AirbagFlapEmptiesTextBox = new TextBox();
             label71 = new Label();
             AirbagFlapPalletFactorLabel = new Label();
@@ -90,7 +86,6 @@
             LowerCoverTotallabel = new Label();
             WadTotallabel = new Label();
             VentTotallabel = new Label();
-            DecorWipTotallabel = new Label();
             AirbagFlapTotalLabel = new Label();
             AirbagChuteTotallabel = new Label();
             ventBezelPStextBox = new TextBox();
@@ -128,7 +123,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 11F);
             label3.Location = new Point(12, 9);
             label3.Name = "label3";
             label3.Size = new Size(624, 25);
@@ -509,44 +504,6 @@
             VentPackFactorlabel.TabIndex = 69;
             VentPackFactorlabel.Text = "140";
             // 
-            // DecorWipEmptiesTextBox
-            // 
-            DecorWipEmptiesTextBox.Enabled = false;
-            DecorWipEmptiesTextBox.Location = new Point(228, 583);
-            DecorWipEmptiesTextBox.Name = "DecorWipEmptiesTextBox";
-            DecorWipEmptiesTextBox.Size = new Size(86, 27);
-            DecorWipEmptiesTextBox.TabIndex = 10;
-            DecorWipEmptiesTextBox.Text = "0";
-            DecorWipEmptiesTextBox.TextChanged += DecorWipEmptiesTextBox_TextChanged;
-            // 
-            // label67
-            // 
-            label67.AutoSize = true;
-            label67.Location = new Point(14, 586);
-            label67.Name = "label67";
-            label67.Size = new Size(88, 20);
-            label67.TabIndex = 70;
-            label67.Text = "empty label";
-            label67.Click += label67_Click;
-            // 
-            // DecorWipPalletFactorlabel
-            // 
-            DecorWipPalletFactorlabel.AutoSize = true;
-            DecorWipPalletFactorlabel.Location = new Point(334, 586);
-            DecorWipPalletFactorlabel.Name = "DecorWipPalletFactorlabel";
-            DecorWipPalletFactorlabel.Size = new Size(17, 20);
-            DecorWipPalletFactorlabel.TabIndex = 75;
-            DecorWipPalletFactorlabel.Text = "1";
-            // 
-            // DecorWipPackFactorlabel
-            // 
-            DecorWipPackFactorlabel.AutoSize = true;
-            DecorWipPackFactorlabel.Location = new Point(429, 586);
-            DecorWipPackFactorlabel.Name = "DecorWipPackFactorlabel";
-            DecorWipPackFactorlabel.Size = new Size(17, 20);
-            DecorWipPackFactorlabel.TabIndex = 76;
-            DecorWipPackFactorlabel.Text = "1";
-            // 
             // AirbagFlapEmptiesTextBox
             // 
             AirbagFlapEmptiesTextBox.Location = new Point(234, 366);
@@ -681,15 +638,6 @@
             VentTotallabel.Size = new Size(17, 20);
             VentTotallabel.TabIndex = 107;
             VentTotallabel.Text = "0";
-            // 
-            // DecorWipTotallabel
-            // 
-            DecorWipTotallabel.AutoSize = true;
-            DecorWipTotallabel.Location = new Point(517, 586);
-            DecorWipTotallabel.Name = "DecorWipTotallabel";
-            DecorWipTotallabel.Size = new Size(17, 20);
-            DecorWipTotallabel.TabIndex = 108;
-            DecorWipTotallabel.Text = "0";
             // 
             // AirbagFlapTotalLabel
             // 
@@ -866,7 +814,6 @@
             groupBox2.Controls.Add(ventBezelPStextBox);
             groupBox2.Controls.Add(AirbagChuteTotallabel);
             groupBox2.Controls.Add(AirbagFlapTotalLabel);
-            groupBox2.Controls.Add(DecorWipTotallabel);
             groupBox2.Controls.Add(VentTotallabel);
             groupBox2.Controls.Add(WadTotallabel);
             groupBox2.Controls.Add(LowerCoverTotallabel);
@@ -882,10 +829,6 @@
             groupBox2.Controls.Add(AirbagFlapPalletFactorLabel);
             groupBox2.Controls.Add(label71);
             groupBox2.Controls.Add(AirbagFlapEmptiesTextBox);
-            groupBox2.Controls.Add(DecorWipPackFactorlabel);
-            groupBox2.Controls.Add(DecorWipPalletFactorlabel);
-            groupBox2.Controls.Add(label67);
-            groupBox2.Controls.Add(DecorWipEmptiesTextBox);
             groupBox2.Controls.Add(VentPackFactorlabel);
             groupBox2.Controls.Add(VentPalletFactorlabel);
             groupBox2.Controls.Add(label63);
@@ -927,7 +870,7 @@
             groupBox2.Controls.Add(label42);
             groupBox2.Location = new Point(12, 71);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(727, 658);
+            groupBox2.Size = new Size(727, 555);
             groupBox2.TabIndex = 59;
             groupBox2.TabStop = false;
             groupBox2.Text = "Internal Packaging Count";
@@ -1023,10 +966,6 @@
         private Label label63;
         private Label VentPalletFactorlabel;
         private Label VentPackFactorlabel;
-        private TextBox DecorWipEmptiesTextBox;
-        private Label label67;
-        private Label DecorWipPalletFactorlabel;
-        private Label DecorWipPackFactorlabel;
         private TextBox AirbagFlapEmptiesTextBox;
         private Label label71;
         private Label AirbagFlapPalletFactorLabel;
@@ -1042,7 +981,6 @@
         private Label LowerCoverTotallabel;
         private Label WadTotallabel;
         private Label VentTotallabel;
-        private Label DecorWipTotallabel;
         private Label AirbagFlapTotalLabel;
         private Label AirbagChuteTotallabel;
         private TextBox ventBezelPStextBox;

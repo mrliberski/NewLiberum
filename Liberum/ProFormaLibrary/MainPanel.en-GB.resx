@@ -158,27 +158,6 @@
   <data name="ReportBugButton.Text" xml:space="preserve">
     <value>  Report Bug</value>
   </data>
-  <data name="iconButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="iconButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="iconButton2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="iconButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 480</value>
-  </data>
-  <data name="iconButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 50</value>
-  </data>
-  <data name="iconButton2.Text" xml:space="preserve">
-    <value>  Bentley Count</value>
-  </data>
   <data name="HandoverButton4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -192,7 +171,7 @@
     <value>NoControl</value>
   </data>
   <data name="HandoverButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 430</value>
+    <value>0, 480</value>
   </data>
   <data name="HandoverButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -213,7 +192,7 @@
     <value>NoControl</value>
   </data>
   <data name="HandoverButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 380</value>
+    <value>0, 430</value>
   </data>
   <data name="HandoverButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -234,7 +213,7 @@
     <value>NoControl</value>
   </data>
   <data name="HandoverButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 330</value>
+    <value>0, 380</value>
   </data>
   <data name="HandoverButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
@@ -255,13 +234,34 @@
     <value>NoControl</value>
   </data>
   <data name="TrackerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 280</value>
+    <value>0, 330</value>
   </data>
   <data name="TrackerButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 50</value>
   </data>
   <data name="TrackerButton.Text" xml:space="preserve">
     <value>  Tracker</value>
+  </data>
+  <data name="iconButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="iconButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="iconButton2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="iconButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 280</value>
+  </data>
+  <data name="iconButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 50</value>
+  </data>
+  <data name="iconButton2.Text" xml:space="preserve">
+    <value>  Bentley Count</value>
   </data>
   <data name="InternalPackagingButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -666,6 +666,9 @@
   </data>
   <data name="panelDesktopPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>901, 728</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1121, 808</value>

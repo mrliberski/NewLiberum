@@ -582,6 +582,11 @@ namespace ProFormaUI.Forms
                 counts.Add(Lower);
                 counts.Add(Decor);
                 counts.Add(TopcoverDS);
+
+                OtherCounts.Add(PinkBins);
+                OtherCounts.Add(BlueBins);
+                OtherCounts.Add(GreenBins);
+
             }
             else
             {
@@ -597,15 +602,10 @@ namespace ProFormaUI.Forms
                 counts.Add(sideCap);
                 counts.Add(StColUpAssy);
 
-
-
-
                 OtherCounts.Add(lids);
                 OtherCounts.Add(pallets);
                 OtherCounts.Add(metalPallets);
-                OtherCounts.Add(PinkBins);
-                OtherCounts.Add(BlueBins);
-                OtherCounts.Add(GreenBins);
+
             }
 
             //Create email body and pass it to sender class
@@ -2001,7 +2001,7 @@ namespace ProFormaUI.Forms
             }
             else
             {
-                PinkBinTextBox.Text = string.Empty;
+                BlueBinTexBox.Text = string.Empty;
                 errorLabel.Visible = true;
             }
         }
@@ -2014,7 +2014,7 @@ namespace ProFormaUI.Forms
             }
             else
             {
-                PinkBinTextBox.Text = string.Empty;
+                GreenBinTextBox.Text = string.Empty;
                 errorLabel.Visible = true;
             }
         }

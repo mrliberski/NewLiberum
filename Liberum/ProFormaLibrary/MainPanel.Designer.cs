@@ -67,11 +67,11 @@
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
             panelMenu.Controls.Add(ExitButton);
             panelMenu.Controls.Add(ReportBugButton);
-            panelMenu.Controls.Add(iconButton2);
             panelMenu.Controls.Add(HandoverButton4);
             panelMenu.Controls.Add(HandoverButton3);
             panelMenu.Controls.Add(HandoverButton2);
             panelMenu.Controls.Add(TrackerButton);
+            panelMenu.Controls.Add(iconButton2);
             panelMenu.Controls.Add(InternalPackagingButton);
             panelMenu.Controls.Add(PackagingCountButton);
             panelMenu.Controls.Add(iconButton1);

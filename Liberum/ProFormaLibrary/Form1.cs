@@ -18,7 +18,7 @@ namespace ProFormaLibrary
         List<string> requestType = new List<string>();
         List<string> ibfTimeslot = new List<string>();
         List<CustomerModel> customers = new List<CustomerModel>();
-        public DateTime deadLine = new DateTime(2025, 01, 07);
+        public DateTime deadLine = new DateTime(2025, 07, 07);
         public List<ItemModel> Items = new List<ItemModel>();
         public string SelectedCustomer { get; set; }
         public string HUquantity { get; set; }
@@ -779,6 +779,8 @@ namespace ProFormaLibrary
                 //CheckLicence();
                 PopulateCustomerInfo();
             }
+
+
 
         }
 
