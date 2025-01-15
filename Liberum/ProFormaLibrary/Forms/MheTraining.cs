@@ -882,7 +882,7 @@ namespace ProFormaUI.Forms
             {
                 string NewValue = SurnameTextBox.Text;
                 //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateName(NewValue, int.Parse(IdLabel.Text));
+                SqliteDataAccess.UpdateSurname(NewValue, int.Parse(IdLabel.Text));
                 errorLabel.Text = RefreshMessage;
             }
             catch (System.Exception wtf)
@@ -910,6 +910,100 @@ namespace ProFormaUI.Forms
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             UpdateOverview();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                RadioButton radioButton = sender as RadioButton;
+                if (radioButton != null && radioButton.Checked)
+                {
+                    AssessmentList.Clear();
+                    dataGridView1.DataSource = null;
+                    AssessmentList = SqliteDataAccess.LoadAssessmentItems(radioButton.Text);
+                    dataGridView1.DataSource = AssessmentList;
+                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                    //MessageBox.Show($"You selected: {radioButton.Text}");
+                }
+            }
+            catch (System.Exception wtf)
+            {
+                errorLabel.Text = wtf.Message;
+            }
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateOverview();
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (searchBox.Text != null)
+                {
+                    AssessmentList.Clear();
+                    dataGridView1.DataSource = null;
+                    AssessmentList = SqliteDataAccess.LoadAssessmentItemsSearch(searchBox.Text);
+                    dataGridView1.DataSource = AssessmentList;
+                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                }
+            }
+            catch (System.Exception wtf)
+            {
+                errorLabel.Text = wtf.Message;
+            }
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not yet implemented - let me know to add record manually");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ShowMatrix();
+        }
+
+        private void ShowMatrix()
+        {
+            MessageBox.Show("Not yet implemented - work in progress");
+            DialogResult iExit;
+            iExit = MessageBox.Show("New matrix will be created, continue?", "Please confirm.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (iExit == DialogResult.Yes)
+            {
+                if (AssessmentList.Count > 0)
+                {
+                    try
+                    {
+                        MheMatrix.CreateHtmlMatrix();
+                        //DrawHtmlMatrix(AssessmentList);
+                        //ConvertMatrixtToPdf();
+                        //OpenFolder();
+                        System.Diagnostics.Process.Start("explorer.exe", @".\Matrix");
+                        System.Diagnostics.Debug.WriteLine("Possibly it went OK");
+                    }
+                    catch (System.Exception ex)
+                    {
+                        errorLabel.Text = string.Empty;
+                        errorLabel.Text += ex.Message;
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("No items were found on the list.", "What are you doing stepbrother?", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+
+            }
         }
     }
 }

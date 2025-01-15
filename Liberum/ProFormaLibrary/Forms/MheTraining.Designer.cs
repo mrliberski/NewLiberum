@@ -122,6 +122,7 @@
             addButton.TabIndex = 70;
             addButton.Text = "Add New Record";
             addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
             // 
             // label3
             // 
@@ -144,6 +145,7 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(411, 670);
             dataGridView1.TabIndex = 83;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // label2
@@ -698,6 +700,7 @@
             button2.TabIndex = 309;
             button2.Text = "Show Matrix";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -733,10 +736,12 @@
             searchBox.Size = new Size(411, 27);
             searchBox.TabIndex = 109;
             searchBox.Text = "Search Here";
+            searchBox.TextChanged += searchBox_TextChanged;
             // 
             // radioButton4
             // 
             radioButton4.AutoSize = true;
+            radioButton4.Enabled = false;
             radioButton4.Location = new Point(21, 159);
             radioButton4.Name = "radioButton4";
             radioButton4.Size = new Size(79, 24);
@@ -744,6 +749,7 @@
             radioButton4.TabStop = true;
             radioButton4.Text = "Leavers";
             radioButton4.UseVisualStyleBackColor = true;
+            radioButton4.CheckedChanged += radioButton_CheckedChanged;
             // 
             // radioButton3
             // 
@@ -755,6 +761,7 @@
             radioButton3.TabStop = true;
             radioButton3.Text = "Droitwich";
             radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -766,6 +773,7 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "Redditch";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton_CheckedChanged;
             // 
             // radioButton1
             // 
@@ -777,6 +785,7 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "All Sites";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // button4
             // 

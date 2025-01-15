@@ -15,6 +15,7 @@ using DocumentFormat.OpenXml.Spreadsheet;
 using System.Runtime.InteropServices;
 using System.Media;
 using System.Globalization;
+using Microsoft.VisualBasic.ApplicationServices;
 
 
 
@@ -27,12 +28,14 @@ namespace ProFormaUI
         private Random random;
         private int tempIndex;
         private Form activeForm;
-        public DateTime deadLine = new DateTime(2025, 01, 07);
+        public DateTime deadLine = new DateTime(2025, 07, 07);
 
 
         //Constructor
         public MainPanel()
         {
+            this.ShowInTaskbar = false;
+
             InitializeComponent();
 
             //Log visitor
@@ -53,6 +56,7 @@ namespace ProFormaUI
             CheckLicence();
             CheckAppAccess();
             CheckMHEaccess();
+            ShowPawelStuff();
             NotificationsLogic.DisplayNotificationsAsRequired();
             timer1.Start();
             SetDateLabel();
@@ -73,6 +77,7 @@ namespace ProFormaUI
             HandoverButton3.Visible = true;
             HandoverButton4.Visible = true;
             ReportBugButton.Visible = true;
+            iconButton3.Visible = true; iconButton3.Enabled = false;
         }
 
         private void HideButtons()
@@ -87,6 +92,7 @@ namespace ProFormaUI
             HandoverButton3.Visible = false;
             HandoverButton4.Visible = false;
             ReportBugButton.Visible = false;
+            iconButton3.Visible = false;
         }
 
         private void ShowMHE() { iconButton1.Visible = true; iconButton1.Enabled = true; }
@@ -147,6 +153,29 @@ namespace ProFormaUI
             }
         }
 
+        private void ShowPawelStuff()
+        {
+            try
+            {
+                string currentUser = Environment.UserName;
+
+                if (currentUser.ToUpper() == "PANLI" || currentUser.ToUpper() == "PAWEL.LIBERSKI" || currentUser.ToUpper() == "ALINA.SIM")
+                {
+                    iconButton3.Visible = true;
+                    iconButton3.Enabled = true;
+                }
+                else
+                {
+                    iconButton3.Visible = false;
+                    iconButton3.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception");
+            }
+        }
+
 
         /// <summary>
         /// /dragging window
@@ -192,12 +221,6 @@ namespace ProFormaUI
 
                 // Play the custom sound
                 System.Reflection.Assembly.GetExecutingAssembly().PlaySound("customSound", customSound);
-
-
-
-
-
-
             }
         }
 
@@ -254,7 +277,7 @@ namespace ProFormaUI
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = System.Drawing.Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
@@ -299,22 +322,34 @@ namespace ProFormaUI
 
             //format child form and open within a panel
             activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
 
-            this.panelDesktopPanel.Controls.Add(childForm);
-            this.panelDesktopPanel.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+            if (childForm.Name == "ProductionPlan") 
+            {
+                childForm.TopLevel = true;
+                childForm.FormBorderStyle = FormBorderStyle.Sizable; // Allow resizing
+                childForm.MaximizeBox = true; // Show maximize button
+                childForm.MinimizeBox = true; // Show minimize button
+                childForm.Dock = DockStyle.None; // Remove docking
+                childForm.WindowState = FormWindowState.Maximized; // Maximize the window
 
-            lblTitle.Text = childForm.Text;
+                childForm.Show(); // Show as a standalone form
 
+                lblTitle.Text = childForm.Text;
+            }
+            else
+            {
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Fill;
+
+                this.panelDesktopPanel.Controls.Add(childForm);
+                this.panelDesktopPanel.Tag = childForm;
+                childForm.BringToFront();
+                childForm.Show();
+
+                lblTitle.Text = childForm.Text;
+            }
         }
-
-
-
-
 
         private void MainPanel_Load(object sender, EventArgs e)
         {
@@ -512,6 +547,12 @@ namespace ProFormaUI
         {
             ActivateButton(sender);
             OpenChildForm(new Forms.BentleyCount(), sender);
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.ProductionPlan(), sender);
         }
     }
 }

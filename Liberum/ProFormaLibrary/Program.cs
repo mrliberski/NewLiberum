@@ -28,6 +28,10 @@ namespace ProFormaLibrary
         [STAThread]
         static void Main()
         {
+            // Next two lines help app not to appear in the taskbar
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();

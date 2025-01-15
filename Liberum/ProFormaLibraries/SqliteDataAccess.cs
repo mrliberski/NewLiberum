@@ -91,7 +91,6 @@ namespace ProFormaLibraries
             }
         }
 
-
         public static void AddBentleyCount(BentleyEntryModel model)
         {
             //MessageBox.Show("yay");
@@ -163,7 +162,6 @@ namespace ProFormaLibraries
             }
 
         }
-
 
         public static List<BentleyEntryModel> LoadBentleyCounts()
         {
@@ -291,7 +289,7 @@ namespace ProFormaLibraries
             }
         }
 
-        public static List<AssessmentModel> LoadAssessmentItems() 
+        public static List<AssessmentModel> LoadAssessmentItems()
         {
             //pulls list of records from assessment table
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -345,7 +343,134 @@ namespace ProFormaLibraries
                         items.Add(entry);
                     }
                 }
+                //MessageBox.Show(items.Count.ToString());
                 return items;
+            }
+        }
+
+        public static List<AssessmentModel> LoadAssessmentItemsSearch(string query)
+        {
+            // Pulls list of records from assessment table
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                using (var cmd = cnn.CreateCommand())
+                {
+                    cmd.CommandText = "SELECT * FROM Assessments WHERE Name LIKE @Query OR Surname LIKE @Query";
+
+                    var parameter = cmd.CreateParameter();
+                    parameter.ParameterName = "@Query";
+                    parameter.Value = "%" + query + "%"; // Using wildcards for LIKE query
+                    cmd.Parameters.Add(parameter);
+
+                    List<AssessmentModel> items = new List<AssessmentModel>();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var entry = new AssessmentModel
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                Name = reader["Name"].ToString(),
+                                Surname = reader["Surname"].ToString(),
+                                Site = reader["Site"].ToString(),
+                                Shift = reader["Shift"].ToString(),
+                                CreatedDate = reader["CreatedDate"].ToString(),
+                                CreatedBy = reader["CreatedBy"].ToString(),
+                                UpdatedDate = reader["UpdatedDate"].ToString(),
+                                UpdatedBy = reader["UpdatedBy"].ToString(),
+                                Comments = reader["Comments"].ToString(),
+                                LiveRecord = reader["LiveRecord"].ToString(),
+                                A1 = reader["A1"].ToString(),
+                                A2 = reader["A2"].ToString(),
+                                A3 = reader["A3"].ToString(),
+                                A4 = reader["A4"].ToString(),
+                                A5 = reader["A5"].ToString(),
+                                B1 = reader["B1"].ToString(),
+                                B2 = reader["B2"].ToString(),
+                                H1 = reader["H1"].ToString(),
+                                F1 = reader["F1"].ToString(),
+                                M3A = reader["M3A"].ToString(),
+                                M3B = reader["M3B"].ToString(),
+                                D1 = reader["D1"].ToString(),
+                                Remote = reader["Remote"].ToString(),
+                                Crane = reader["Crane"].ToString(),
+                                P1 = reader["P1"].ToString(),
+                                RackingInspection = reader["RackingInspection"].ToString(),
+                                Assessment = reader["Assessment"].ToString()
+                            };
+
+                            items.Add(entry);
+                        }
+                    }
+                    return items;
+                }
+            }
+        }
+
+        public static List<AssessmentModel> LoadAssessmentItems(string selection)
+        {
+            // Pulls list of records from assessment table
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                using (var cmd = cnn.CreateCommand())
+                {
+                    cmd.CommandText = "SELECT * FROM Assessments WHERE LiveRecord = @Live AND Site = @Site";
+
+                    var liveParameter = cmd.CreateParameter();
+                    liveParameter.ParameterName = "@Live";
+                    liveParameter.Value = "Live"; // Replace with actual value
+                    cmd.Parameters.Add(liveParameter);
+
+                    var siteParameter = cmd.CreateParameter();
+                    siteParameter.ParameterName = "@Site";
+                    siteParameter.Value = selection;
+                    cmd.Parameters.Add(siteParameter);
+
+                    List<AssessmentModel> items = new List<AssessmentModel>();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var entry = new AssessmentModel
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                Name = reader["Name"].ToString(),
+                                Surname = reader["Surname"].ToString(),
+                                Site = reader["Site"].ToString(),
+                                Shift = reader["Shift"].ToString(),
+                                CreatedDate = reader["CreatedDate"].ToString(),
+                                CreatedBy = reader["CreatedBy"].ToString(),
+                                UpdatedDate = reader["UpdatedDate"].ToString(),
+                                UpdatedBy = reader["UpdatedBy"].ToString(),
+                                Comments = reader["Comments"].ToString(),
+                                LiveRecord = reader["LiveRecord"].ToString(),
+                                A1 = reader["A1"].ToString(),
+                                A2 = reader["A2"].ToString(),
+                                A3 = reader["A3"].ToString(),
+                                A4 = reader["A4"].ToString(),
+                                A5 = reader["A5"].ToString(),
+                                B1 = reader["B1"].ToString(),
+                                B2 = reader["B2"].ToString(),
+                                H1 = reader["H1"].ToString(),
+                                F1 = reader["F1"].ToString(),
+                                M3A = reader["M3A"].ToString(),
+                                M3B = reader["M3B"].ToString(),
+                                D1 = reader["D1"].ToString(),
+                                Remote = reader["Remote"].ToString(),
+                                Crane = reader["Crane"].ToString(),
+                                P1 = reader["P1"].ToString(),
+                                RackingInspection = reader["RackingInspection"].ToString(),
+                                Assessment = reader["Assessment"].ToString()
+                            };
+
+                            items.Add(entry);
+                        }
+                    }
+                    //MessageBox.Show(items.Count.ToString());
+                    return items;
+                }
             }
         }
 
@@ -539,7 +664,6 @@ namespace ProFormaLibraries
                 });
             }
         }
-
 
         public static void InsertNewCurrentHandover(CurrentHandoverModel CurrentHandover)
         {
@@ -1766,7 +1890,7 @@ namespace ProFormaLibraries
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker ORDER BY Id DESC", new DynamicParameters());
+                var output = cnn.Query<PackagingTrackerItem>("select * from PackagingTracker ORDER BY Id DESC LIMIT 1000", new DynamicParameters());
                 return output.ToList();
             }
         }
@@ -2886,10 +3010,12 @@ namespace ProFormaLibraries
                     if (rowsAffected == 0)
                     {
                         Console.WriteLine($"No record with Id = {RecordNumber} was found.");
+                        System.Diagnostics.Debug.WriteLine("I chuj");
                     }
                     else
                     {
                         Console.WriteLine($"Successfully updated Value Shift with Id = {RecordNumber} to {newValue}.");
+                        System.Diagnostics.Debug.WriteLine("ok");
                     }
                 }
             }
@@ -2922,18 +3048,91 @@ namespace ProFormaLibraries
                     if (rowsAffected == 0)
                     {
                         Console.WriteLine($"No record with Id = {RecordNumber} was found.");
+                        System.Diagnostics.Debug.WriteLine("I chuj");
                     }
                     else
                     {
                         Console.WriteLine($"Successfully updated Value Comments with Id = {RecordNumber} to {newValue}.");
+                        System.Diagnostics.Debug.WriteLine("ok");
                     }
                 }
             }
         }
 
-        public static void UpdateName(string newValue, int v)
+        public static void UpdateName(string newValue, int RecordNumber)
         {
-            throw new NotImplementedException();
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                using (var cmd = cnn.CreateCommand())
+                {
+                    cmd.CommandText = "UPDATE Assessments SET Name = @NewValue WHERE Id = @RecordNumber";
+
+                    // Add parameters to avoid SQL injection
+                    var liveRecordParam = cmd.CreateParameter();
+                    liveRecordParam.ParameterName = "@NewValue";
+                    liveRecordParam.Value = newValue;
+                    cmd.Parameters.Add(liveRecordParam);
+
+                    var recordNumberParam = cmd.CreateParameter();
+                    recordNumberParam.ParameterName = "@RecordNumber";
+                    recordNumberParam.Value = RecordNumber;
+                    cmd.Parameters.Add(recordNumberParam);
+
+                    // Execute the command
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    // Optional: Check if the update was successful
+                    if (rowsAffected == 0)
+                    {
+                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
+                        System.Diagnostics.Debug.WriteLine("I chuj");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Successfully updated Value Comments with Id = {RecordNumber} to {newValue}.");
+                        System.Diagnostics.Debug.WriteLine("ok");
+                    }
+                }
+            }
+        }
+
+        public static void UpdateSurname(string newValue, int RecordNumber)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Open();
+                using (var cmd = cnn.CreateCommand())
+                {
+                    cmd.CommandText = "UPDATE Assessments SET Surname = @NewValue WHERE Id = @RecordNumber";
+
+                    // Add parameters to avoid SQL injection
+                    var liveRecordParam = cmd.CreateParameter();
+                    liveRecordParam.ParameterName = "@NewValue";
+                    liveRecordParam.Value = newValue;
+                    cmd.Parameters.Add(liveRecordParam);
+
+                    var recordNumberParam = cmd.CreateParameter();
+                    recordNumberParam.ParameterName = "@RecordNumber";
+                    recordNumberParam.Value = RecordNumber;
+                    cmd.Parameters.Add(recordNumberParam);
+
+                    // Execute the command
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    // Optional: Check if the update was successful
+                    if (rowsAffected == 0)
+                    {
+                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
+                        System.Diagnostics.Debug.WriteLine("I chuj");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Successfully updated Value Comments with Id = {RecordNumber} to {newValue}.");
+                        System.Diagnostics.Debug.WriteLine("ok");
+                    }
+                }
+            }
         }
     }
 }
