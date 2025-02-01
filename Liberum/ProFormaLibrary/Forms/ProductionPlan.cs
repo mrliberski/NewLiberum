@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProFormaLibraries;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,20 +11,22 @@ using System.Windows.Forms;
 
 namespace ProFormaUI.Forms
 {
-    public partial class ProductionPlan : Form
+    public partial class ProductionPlan : Form, IToolSelection
     {
         private Button[] buttons;
 
         public ProductionPlan()
         {
             InitializeComponent();
-            
             InitializeButtons();
         }
 
-
+        private void OpenImm1(int ButtonIndex)
+        {
+            Form open = new IMM1(this, ButtonIndex);
+            open.ShowDialog();
+        }
  
-
         private void InitializeButtons()
         {
             buttons = new Button[24]; // Change the array size to 6
@@ -61,10 +64,56 @@ namespace ProFormaUI.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Button_Click(sender, e);
+            Button clickedButton = sender as Button;
+
+            try
+            {
+                int buttonIndex = int.Parse(clickedButton.Name.Replace("button", ""));
+                //MessageBox.Show(buttonIndex.ToString());
+                OpenImm1(buttonIndex);
+            }
+            catch (Exception wtf) { errorLabel.Text = wtf.Message; }
         }
 
+        //Receives data from Tool selection form 
+        public void SelectedItem(ToolChangeModel ToolChangeModel, int ClickedButton)
+        {
+            //throw new NotImplementedException();
+            MessageBox.Show("ddddddd");
+        }
 
+        // snippet form Copilot to be worked on
+        private void IMMbutton_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                // Change the clicked button's color to orange
+                clickedButton.BackColor = Color.Orange;
+
+                // Get the button number from the clicked button's name
+                int buttonNumber = int.Parse(clickedButton.Name.Replace("IMMbutton", ""));
+
+                // Change the next 5 buttons' color to green
+                for (int i = 1; i <= 5; i++)
+                {
+                    int nextButtonNumber = buttonNumber + i;
+                    if (nextButtonNumber <= 24)
+                    {
+                        Button nextButton = this.Controls.Find("IMMbutton" + nextButtonNumber, true).FirstOrDefault() as Button;
+                        if (nextButton != null)
+                        {
+                            nextButton.BackColor = Color.Green;
+                        }
+                    }
+                }
+            }
+        }
+
+        public void SelectedItem(ToolChangeModel ToolChangeModel)
+        {
+            throw new NotImplementedException();
+        }
 
 
 

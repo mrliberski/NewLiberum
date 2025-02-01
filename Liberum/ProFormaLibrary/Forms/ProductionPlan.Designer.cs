@@ -129,6 +129,7 @@
             button2.TabIndex = 1;
             button2.Text = "Planned Down";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button1_Click;
             // 
             // button3
             // 
@@ -138,6 +139,7 @@
             button3.TabIndex = 2;
             button3.Text = "Planned Down";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button1_Click;
             // 
             // button4
             // 
@@ -147,6 +149,7 @@
             button4.TabIndex = 3;
             button4.Text = "Planned Down";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button1_Click;
             // 
             // button5
             // 
@@ -154,8 +157,10 @@
             button5.Name = "button5";
             button5.Size = new Size(80, 80);
             button5.TabIndex = 4;
+            button5.Tag = "";
             button5.Text = "Planned Down";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button1_Click;
             // 
             // button6
             // 
@@ -165,6 +170,7 @@
             button6.TabIndex = 5;
             button6.Text = "Planned Down";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button1_Click;
             // 
             // dateTimePicker1
             // 
@@ -180,7 +186,7 @@
             label3.Name = "label3";
             label3.Size = new Size(47, 20);
             label3.TabIndex = 271;
-            label3.Text = "IMM4";
+            label3.Text = "IMM1";
             label3.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label1
@@ -202,6 +208,7 @@
             button7.TabIndex = 273;
             button7.Text = "Planned Down";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button1_Click;
             // 
             // button8
             // 
@@ -211,6 +218,7 @@
             button8.TabIndex = 274;
             button8.Text = "Planned Down";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button1_Click;
             // 
             // button9
             // 
@@ -220,6 +228,7 @@
             button9.TabIndex = 275;
             button9.Text = "Planned Down";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button1_Click;
             // 
             // button10
             // 
@@ -229,6 +238,7 @@
             button10.TabIndex = 276;
             button10.Text = "Planned Down";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button1_Click;
             // 
             // button11
             // 
@@ -238,6 +248,7 @@
             button11.TabIndex = 277;
             button11.Text = "Planned Down";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button1_Click;
             // 
             // button12
             // 
@@ -247,6 +258,7 @@
             button12.TabIndex = 278;
             button12.Text = "Planned Down";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button1_Click;
             // 
             // button13
             // 
@@ -256,6 +268,7 @@
             button13.TabIndex = 279;
             button13.Text = "Planned Down";
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button1_Click;
             // 
             // button14
             // 
@@ -265,6 +278,7 @@
             button14.TabIndex = 280;
             button14.Text = "Planned Down";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button1_Click;
             // 
             // button15
             // 
@@ -274,6 +288,7 @@
             button15.TabIndex = 281;
             button15.Text = "Planned Down";
             button15.UseVisualStyleBackColor = true;
+            button15.Click += button1_Click;
             // 
             // button16
             // 
@@ -283,6 +298,7 @@
             button16.TabIndex = 282;
             button16.Text = "Planned Down";
             button16.UseVisualStyleBackColor = true;
+            button16.Click += button1_Click;
             // 
             // button17
             // 
@@ -292,6 +308,7 @@
             button17.TabIndex = 283;
             button17.Text = "Planned Down";
             button17.UseVisualStyleBackColor = true;
+            button17.Click += button1_Click;
             // 
             // button18
             // 
@@ -301,6 +318,7 @@
             button18.TabIndex = 284;
             button18.Text = "Planned Down";
             button18.UseVisualStyleBackColor = true;
+            button18.Click += button1_Click;
             // 
             // button19
             // 
@@ -310,6 +328,7 @@
             button19.TabIndex = 285;
             button19.Text = "Planned Down";
             button19.UseVisualStyleBackColor = true;
+            button19.Click += button1_Click;
             // 
             // button20
             // 
@@ -319,6 +338,7 @@
             button20.TabIndex = 286;
             button20.Text = "Planned Down";
             button20.UseVisualStyleBackColor = true;
+            button20.Click += button1_Click;
             // 
             // button21
             // 
@@ -328,6 +348,7 @@
             button21.TabIndex = 287;
             button21.Text = "Planned Down";
             button21.UseVisualStyleBackColor = true;
+            button21.Click += button1_Click;
             // 
             // button22
             // 
@@ -337,6 +358,7 @@
             button22.TabIndex = 288;
             button22.Text = "Planned Down";
             button22.UseVisualStyleBackColor = true;
+            button22.Click += button1_Click;
             // 
             // button23
             // 
@@ -346,6 +368,7 @@
             button23.TabIndex = 289;
             button23.Text = "Planned Down";
             button23.UseVisualStyleBackColor = true;
+            button23.Click += button1_Click;
             // 
             // button24
             // 
@@ -355,6 +378,7 @@
             button24.TabIndex = 290;
             button24.Text = "Planned Down";
             button24.UseVisualStyleBackColor = true;
+            button24.Click += button1_Click;
             // 
             // label2
             // 
@@ -778,7 +802,7 @@
             label26.Name = "label26";
             label26.Size = new Size(47, 20);
             label26.TabIndex = 320;
-            label26.Text = "IMM4";
+            label26.Text = "IMM3";
             label26.TextAlign = ContentAlignment.MiddleRight;
             // 
             // button43
@@ -873,10 +897,9 @@
             // 
             // errorLabel
             // 
-            errorLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             errorLabel.AutoSize = true;
             errorLabel.ForeColor = Color.Crimson;
-            errorLabel.Location = new Point(657, 17);
+            errorLabel.Location = new Point(657, 15);
             errorLabel.Name = "errorLabel";
             errorLabel.Size = new Size(163, 20);
             errorLabel.TabIndex = 343;
@@ -888,7 +911,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(2008, 450);
+            ClientSize = new Size(2008, 811);
             Controls.Add(errorLabel);
             Controls.Add(button49);
             Controls.Add(button50);

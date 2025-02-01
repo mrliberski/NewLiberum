@@ -11,10 +11,8 @@ using System.Windows.Forms;
 using ProFormaLibraries;
 using System;
 using System.Collections.Generic;
-
 using System.Drawing;
 using System.Linq;
-
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
@@ -975,7 +973,6 @@ namespace ProFormaUI.Forms
 
         private void ShowMatrix()
         {
-            MessageBox.Show("Not yet implemented - work in progress");
             DialogResult iExit;
             iExit = MessageBox.Show("New matrix will be created, continue?", "Please confirm.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (iExit == DialogResult.Yes)
@@ -984,7 +981,7 @@ namespace ProFormaUI.Forms
                 {
                     try
                     {
-                        MheMatrix.CreateHtmlMatrix();
+                        MheMatrix.CreateHtmlMatrix(AssessmentList);
                         //DrawHtmlMatrix(AssessmentList);
                         //ConvertMatrixtToPdf();
                         //OpenFolder();
@@ -995,6 +992,7 @@ namespace ProFormaUI.Forms
                     {
                         errorLabel.Text = string.Empty;
                         errorLabel.Text += ex.Message;
+                        System.Diagnostics.Debug.WriteLine("MATRIX GENERATION FAILED BECAUSE OF " + ex.Message);
                     }
 
                 }

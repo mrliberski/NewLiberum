@@ -96,15 +96,16 @@ namespace ProFormaUI.Forms
         // ADD ITEM & START NEW DELIVERY
         private void AddPlusNewDeliveryButton_Click(object sender, EventArgs e)
         {
-            //ADD ENTRY, KEEP DATE 
+            //ADD ENTRY, KEEP DATE AND REG NUMBER
             AddEntrytoDB();
+            //Task.Run(() => AddEntrytoDBAsync());
             packagingCodeTextBox.Text = string.Empty;
             advisedQtyTextBox.Text = string.Empty;
             receivedQtyTextBox.Text = string.Empty;
             commentTextBox.Text = string.Empty;
             deliveryNoTextBox.Text = string.Empty;
             deliveryTimeTextBox.Text = string.Empty;
-            RegTextBox.Text = string.Empty;
+            //RegTextBox.Text = string.Empty;
             deliveryTimeTextBox.Focus();
         }
 
@@ -121,6 +122,45 @@ namespace ProFormaUI.Forms
             RegTextBox.Text = string.Empty;
             deliveryTimeTextBox.Focus();
             errorLabel.Text = string.Empty;
+        }
+
+
+        private async Task AddEntrytoDBAsync()
+        {
+            try
+            {
+                var item = new PackagingTrackerItem
+                {
+                    DeliveryDate = dateTimePicker1.Value.ToString(),
+                    DeliveryTime = deliveryTimeTextBox.Text,
+                    DeliveryNumber = deliveryNoTextBox.Text,
+                    PackagingCode = packagingCodeTextBox.Text,
+                    AdvisedQty = int.TryParse(advisedQtyTextBox.Text, out int advised) ? advised : 0,
+                    ReceivedQty = int.TryParse(receivedQtyTextBox.Text, out int received) ? received : 0,
+                    Comment = commentTextBox.Text,
+                    RegNumber = RegTextBox.Text.ToUpper()
+                };
+
+                await Task.Run(() => SqliteDataAccess.InsertPackTrackerItem(item));
+
+                //if (item.AdvisedQty != item.ReceivedQty)
+                //{
+                //    await Task.Run(() => SendDiscrepancyNotification(item));
+                //    await Task.Run(() => SqliteDataAccess.Insertdiscrepancy(item));
+                //}
+
+                await UpdateOverviewAsync();
+            }
+            catch (Exception ex)
+            {
+                HandleError(ex, errorLabel);
+            }
+        }
+
+        private void HandleError(Exception ex, Label errorLabel)
+        {
+            errorLabel.Text = ex.Message;
+            errorLabel.Visible = true;
         }
 
 
@@ -182,6 +222,39 @@ namespace ProFormaUI.Forms
             UpdateOverview();
         }
 
+        private async Task UpdateOverviewAsync()
+        {
+            _items.Clear();
+            dataGridView1.DataSource = null;
+            _items = SqliteDataAccess.PullPackagingTracker();
+            dataGridView1.DataSource = _items;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.Columns["Id"].Visible = false;
+            dataGridView1.Columns["DeliveryTime"].Visible = false;
+            dataGridView1.Columns["EntryDate"].Visible = false;
+
+            dataGridView1.Columns[9].HeaderText = "Registration";
+            dataGridView1.Columns[1].HeaderText = "Delivery Date";
+            dataGridView1.Columns[3].HeaderText = "Delivery Number";
+            dataGridView1.Columns[4].HeaderText = "Packaging Code";
+            dataGridView1.Columns[5].HeaderText = "Qty Advised";
+            dataGridView1.Columns[6].HeaderText = "Qty Received";
+
+            // dataGridView1.Columns["DeliveryDate"].AutoSizeMode; 
+            //dataGridView1.Columns[1].Name = "Column2";
+            //dataGridView1.Columns[2].Name = "Column3";
+            //dataGridView1.Columns[3].Name = "Column4";
+            //dataGridView1.Columns[4].Name = "Column5";
+            //dataGridView1.Columns[5].Name = "Column6";
+            //dataGridView1.Columns[6].Name = "Column7";
+            //dataGridView1.Columns[7].Name = "Column8";
+            //dataGridView1.Columns[8].Name = "Column9";
+
+            dataGridView1.Columns["RegNumber"].DisplayIndex = 2;
+
+            SearchErrorLabel.Text = string.Empty;
+        }
+
         //TODO - pulls date from db and feeds tableview
         private void UpdateOverview()
         {
@@ -222,7 +295,11 @@ namespace ProFormaUI.Forms
         {
             try 
             {
-                PackagingCountTemplate.SendPackagingAlert(item);
+                // IF IN TESTING EBVIRONMENT WE DO NOT WANT TO ALARM PPL OUT :)
+                if (!Environment.UserName.Equals("PANLI", StringComparison.OrdinalIgnoreCase))
+                {
+                    PackagingCountTemplate.SendPackagingAlert(item);
+                }
             } 
             catch (Exception ex) { errorLabel.Text = ex.Message; }
             
@@ -321,7 +398,6 @@ namespace ProFormaUI.Forms
                 SearchErrorLabel.Text = ex.Message;
             }
         }
-
 
 
         //EXPORT RESULTS TO CSV AND OPEN FOLDER

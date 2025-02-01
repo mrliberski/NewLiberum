@@ -11,7 +11,6 @@ using ProFormaLibraries;
 using ProFormaLibrary;
 using ProFormaUI;
 using System.Windows.Forms;
-using DocumentFormat.OpenXml.Spreadsheet;
 using System.Runtime.InteropServices;
 using System.Media;
 using System.Globalization;
@@ -331,6 +330,7 @@ namespace ProFormaUI
                 childForm.MinimizeBox = true; // Show minimize button
                 childForm.Dock = DockStyle.None; // Remove docking
                 childForm.WindowState = FormWindowState.Maximized; // Maximize the window
+                
 
                 childForm.Show(); // Show as a standalone form
 

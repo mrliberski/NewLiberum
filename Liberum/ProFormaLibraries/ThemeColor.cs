@@ -1,4 +1,4 @@
-﻿using DocumentFormat.OpenXml.Bibliography;
+﻿
 using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections.Generic;

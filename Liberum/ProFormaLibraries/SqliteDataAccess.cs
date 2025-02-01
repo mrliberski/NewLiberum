@@ -11,8 +11,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
-using DocumentFormat.OpenXml;
-using DocumentFormat.OpenXml.Spreadsheet;
 using Microsoft.VisualBasic.ApplicationServices;
 
 namespace ProFormaLibraries
