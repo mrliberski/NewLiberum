@@ -72,19 +72,19 @@ namespace ProFormaUI.Forms
         }
 
         // ADD SINGLE RECORD
-        private void addButton_Click(object sender, EventArgs e)
+        private async void addButton_Click(object sender, EventArgs e)
         {
-            //ADD entry to DB & RESET all
-            AddEntrytoDB();
+            await AddEntrytoDB();
+            //await Task.Delay(5000);
             ClearAllTextBoxes(this);
         }
 
         // ADD RECORD FOR MULTIITEM DELIVERY
-        private void addPlusNewEntryButton_Click(object sender, EventArgs e)
+        private async void addPlusNewEntryButton_Click(object sender, EventArgs e)
         {
             //ADD ENTRY AND KEEP DATE, DELIVERY TIME AND DELIVERY NUMBER
             // CHANGE FONT COLOR TO GRAYISH
-            AddEntrytoDB();
+            await AddEntrytoDB();
             packagingCodeTextBox.Text = string.Empty;
             advisedQtyTextBox.Text = string.Empty;
             receivedQtyTextBox.Text = string.Empty;
@@ -94,10 +94,10 @@ namespace ProFormaUI.Forms
 
 
         // ADD ITEM & START NEW DELIVERY
-        private void AddPlusNewDeliveryButton_Click(object sender, EventArgs e)
+        private async void AddPlusNewDeliveryButton_Click(object sender, EventArgs e)
         {
             //ADD ENTRY, KEEP DATE AND REG NUMBER
-            AddEntrytoDB();
+            await AddEntrytoDB();
             //Task.Run(() => AddEntrytoDBAsync());
             packagingCodeTextBox.Text = string.Empty;
             advisedQtyTextBox.Text = string.Empty;
@@ -124,39 +124,6 @@ namespace ProFormaUI.Forms
             errorLabel.Text = string.Empty;
         }
 
-
-        private async Task AddEntrytoDBAsync()
-        {
-            try
-            {
-                var item = new PackagingTrackerItem
-                {
-                    DeliveryDate = dateTimePicker1.Value.ToString(),
-                    DeliveryTime = deliveryTimeTextBox.Text,
-                    DeliveryNumber = deliveryNoTextBox.Text,
-                    PackagingCode = packagingCodeTextBox.Text,
-                    AdvisedQty = int.TryParse(advisedQtyTextBox.Text, out int advised) ? advised : 0,
-                    ReceivedQty = int.TryParse(receivedQtyTextBox.Text, out int received) ? received : 0,
-                    Comment = commentTextBox.Text,
-                    RegNumber = RegTextBox.Text.ToUpper()
-                };
-
-                await Task.Run(() => SqliteDataAccess.InsertPackTrackerItem(item));
-
-                //if (item.AdvisedQty != item.ReceivedQty)
-                //{
-                //    await Task.Run(() => SendDiscrepancyNotification(item));
-                //    await Task.Run(() => SqliteDataAccess.Insertdiscrepancy(item));
-                //}
-
-                await UpdateOverviewAsync();
-            }
-            catch (Exception ex)
-            {
-                HandleError(ex, errorLabel);
-            }
-        }
-
         private void HandleError(Exception ex, Label errorLabel)
         {
             errorLabel.Text = ex.Message;
@@ -164,10 +131,9 @@ namespace ProFormaUI.Forms
         }
 
 
-        //TODO - add record to DB
-        private void AddEntrytoDB()
+        private async Task AddEntrytoDB()
         {
-            //MessageBox.Show ("Pretending to add entry to db");
+            
             PackagingTrackerItem item = new PackagingTrackerItem();
             item.DeliveryDate = dateTimePicker1.Value.ToString();
             item.DeliveryTime = deliveryTimeTextBox.Text;

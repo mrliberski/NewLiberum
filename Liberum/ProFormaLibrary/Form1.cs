@@ -34,17 +34,17 @@ namespace ProFormaLibrary
         {
             AmendDeadLine();
             InitializeComponent();
+            CheckLicence();
+            LoadTheme();
+            SetToolbarLabelExpiryDate();
+            ClearContent();
+
             LoadRequestType();
             LoadIbfTimeslots();
             LoadInvoiceTypes();
             LoadProcedure();
             LoadCustomers();
-            SetToolbarLabelExpiryDate();
-            ClearContent();
             GetHighestInvoiceNumberAndIncrement();
-            //LoadSampleItems();
-            CheckLicence();
-            LoadTheme();
 
         }
 
@@ -417,7 +417,7 @@ namespace ProFormaLibrary
             GetHighestInvoiceNumberAndIncrement();
         }
 
-        private void CreateInvoiceButton_Click(object sender, EventArgs e)
+        private async void CreateInvoiceButton_Click(object sender, EventArgs e)
         {
             //CheckLicence();
             //NotYet();
@@ -430,7 +430,7 @@ namespace ProFormaLibrary
                 {
                     try
                     {
-                        CreateInvoiceDocuments();
+                        await CreateInvoiceDocuments();
                         SweepUptheForm();
                     }
                     catch (System.Exception ex)
@@ -450,7 +450,7 @@ namespace ProFormaLibrary
         }
 
 
-        public void CreateInvoiceDocuments()
+        public async Task CreateInvoiceDocuments()
         {
             InvoiceItem invoiceItem = new InvoiceItem();
             invoiceItem.InvoiceNumber = InvoiceNumberValue.Text;
@@ -556,7 +556,7 @@ namespace ProFormaLibrary
         }
 
 
-        private void CreateBrokerRequest_Click(object sender, EventArgs e)
+        private async void CreateBrokerRequest_Click(object sender, EventArgs e)
         {
            // CheckLicence();
 
@@ -602,7 +602,7 @@ namespace ProFormaLibrary
                     List<string> fetchedContacts = SqliteDataAccess.LoadCC();
                     request.Contacts = string.Join("<br>", fetchedContacts);
 
-                    CreateInvoiceDocuments();
+                    await CreateInvoiceDocuments();
 
 
                     // TODO: extract to class
