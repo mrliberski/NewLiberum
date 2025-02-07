@@ -96,6 +96,7 @@
             label5 = new Label();
             ArchiveButton = new Button();
             UpdateButton = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -116,9 +117,9 @@
             // 
             addButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             addButton.FlatStyle = FlatStyle.Flat;
-            addButton.Location = new Point(817, 590);
+            addButton.Location = new Point(884, 590);
             addButton.Name = "addButton";
-            addButton.Size = new Size(455, 36);
+            addButton.Size = new Size(388, 36);
             addButton.TabIndex = 70;
             addButton.Text = "Add New Record";
             addButton.UseVisualStyleBackColor = true;
@@ -237,7 +238,6 @@
             NameTextBox.Size = new Size(183, 27);
             NameTextBox.TabIndex = 107;
             NameTextBox.Text = "Craig ";
-            NameTextBox.TextChanged += NameTextBox_TextChanged;
             // 
             // label14
             // 
@@ -258,7 +258,6 @@
             SurnameTextBox.Size = new Size(183, 27);
             SurnameTextBox.TabIndex = 109;
             SurnameTextBox.Text = "Wood";
-            SurnameTextBox.TextChanged += SurnameTextBox_TextChanged;
             // 
             // label1
             // 
@@ -280,7 +279,6 @@
             ShiftCombo.Size = new Size(183, 28);
             ShiftCombo.TabIndex = 269;
             ShiftCombo.Text = "Whatever";
-            ShiftCombo.SelectedIndexChanged += ShiftCombo_SelectedIndexChanged;
             // 
             // B1picker
             // 
@@ -291,7 +289,7 @@
             B1picker.RightToLeft = RightToLeft.No;
             B1picker.Size = new Size(183, 27);
             B1picker.TabIndex = 268;
-            B1picker.ValueChanged += B1picker_ValueChanged;
+            B1picker.ValueChanged += B1picker_ValueChanged_1;
             // 
             // mewps3aPicker
             // 
@@ -302,7 +300,6 @@
             mewps3aPicker.RightToLeft = RightToLeft.No;
             mewps3aPicker.Size = new Size(183, 27);
             mewps3aPicker.TabIndex = 272;
-            mewps3aPicker.ValueChanged += mewps3aPicker_ValueChanged;
             // 
             // P1picker
             // 
@@ -313,7 +310,6 @@
             P1picker.RightToLeft = RightToLeft.No;
             P1picker.Size = new Size(183, 27);
             P1picker.TabIndex = 273;
-            P1picker.ValueChanged += P1picker_ValueChanged;
             // 
             // F1picker
             // 
@@ -324,7 +320,6 @@
             F1picker.RightToLeft = RightToLeft.No;
             F1picker.Size = new Size(183, 27);
             F1picker.TabIndex = 274;
-            F1picker.ValueChanged += F1picker_ValueChanged;
             // 
             // H1picker
             // 
@@ -335,7 +330,6 @@
             H1picker.RightToLeft = RightToLeft.No;
             H1picker.Size = new Size(183, 27);
             H1picker.TabIndex = 275;
-            H1picker.ValueChanged += H1picker_ValueChanged;
             // 
             // A2picker
             // 
@@ -346,7 +340,6 @@
             A2picker.RightToLeft = RightToLeft.No;
             A2picker.Size = new Size(183, 27);
             A2picker.TabIndex = 276;
-            A2picker.ValueChanged += A2picker_ValueChanged;
             // 
             // A1picker
             // 
@@ -357,7 +350,6 @@
             A1picker.RightToLeft = RightToLeft.No;
             A1picker.Size = new Size(183, 27);
             A1picker.TabIndex = 277;
-            A1picker.ValueChanged += A1picker_ValueChanged;
             // 
             // B2picker
             // 
@@ -368,7 +360,6 @@
             B2picker.RightToLeft = RightToLeft.No;
             B2picker.Size = new Size(183, 27);
             B2picker.TabIndex = 278;
-            B2picker.ValueChanged += B2picker_ValueChanged;
             // 
             // label17
             // 
@@ -478,7 +469,6 @@
             A5picker.RightToLeft = RightToLeft.No;
             A5picker.Size = new Size(183, 27);
             A5picker.TabIndex = 288;
-            A5picker.ValueChanged += A5picker_ValueChanged;
             // 
             // A4picker
             // 
@@ -489,7 +479,6 @@
             A4picker.RightToLeft = RightToLeft.No;
             A4picker.Size = new Size(183, 27);
             A4picker.TabIndex = 289;
-            A4picker.ValueChanged += A4picker_ValueChanged;
             // 
             // Mewps3Bpicker
             // 
@@ -500,7 +489,6 @@
             Mewps3Bpicker.RightToLeft = RightToLeft.No;
             Mewps3Bpicker.Size = new Size(183, 27);
             Mewps3Bpicker.TabIndex = 290;
-            Mewps3Bpicker.ValueChanged += Mewps3Bpicker_ValueChanged;
             // 
             // D1picker
             // 
@@ -511,7 +499,6 @@
             D1picker.RightToLeft = RightToLeft.No;
             D1picker.Size = new Size(183, 27);
             D1picker.TabIndex = 291;
-            D1picker.ValueChanged += D1picker_ValueChanged;
             // 
             // RemotePIcker
             // 
@@ -522,7 +509,6 @@
             RemotePIcker.RightToLeft = RightToLeft.No;
             RemotePIcker.Size = new Size(183, 27);
             RemotePIcker.TabIndex = 292;
-            RemotePIcker.ValueChanged += RemotePIcker_ValueChanged;
             // 
             // CranePicker
             // 
@@ -533,7 +519,6 @@
             CranePicker.RightToLeft = RightToLeft.No;
             CranePicker.Size = new Size(183, 27);
             CranePicker.TabIndex = 293;
-            CranePicker.ValueChanged += CranePicker_ValueChanged;
             // 
             // AssessmentPicker
             // 
@@ -544,7 +529,6 @@
             AssessmentPicker.RightToLeft = RightToLeft.No;
             AssessmentPicker.Size = new Size(183, 27);
             AssessmentPicker.TabIndex = 294;
-            AssessmentPicker.ValueChanged += AssessmentPicker_ValueChanged;
             // 
             // label26
             // 
@@ -632,7 +616,6 @@
             RackingPicker.RightToLeft = RightToLeft.No;
             RackingPicker.Size = new Size(183, 27);
             RackingPicker.TabIndex = 302;
-            RackingPicker.ValueChanged += RackingPicker_ValueChanged;
             // 
             // SiteCombo
             // 
@@ -643,7 +626,6 @@
             SiteCombo.Size = new Size(183, 28);
             SiteCombo.TabIndex = 303;
             SiteCombo.Text = "Redditch 2";
-            SiteCombo.SelectedIndexChanged += SiteCombo_SelectedIndexChanged;
             // 
             // label33
             // 
@@ -678,7 +660,6 @@
             CommentextBox.ScrollBars = ScrollBars.Vertical;
             CommentextBox.Size = new Size(455, 128);
             CommentextBox.TabIndex = 306;
-            CommentextBox.TextChanged += CommentextBox_TextChanged;
             // 
             // label35
             // 
@@ -694,9 +675,9 @@
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(817, 674);
+            button2.Location = new Point(884, 674);
             button2.Name = "button2";
-            button2.Size = new Size(455, 36);
+            button2.Size = new Size(388, 36);
             button2.TabIndex = 309;
             button2.Text = "Show Matrix";
             button2.UseVisualStyleBackColor = true;
@@ -706,9 +687,9 @@
             // 
             button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1051, 715);
+            button3.Location = new Point(1128, 715);
             button3.Name = "button3";
-            button3.Size = new Size(221, 36);
+            button3.Size = new Size(144, 36);
             button3.TabIndex = 310;
             button3.Text = ">>";
             button3.UseVisualStyleBackColor = true;
@@ -722,9 +703,9 @@
             groupBox1.Controls.Add(radioButton3);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(817, 229);
+            groupBox1.Location = new Point(884, 229);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(455, 224);
+            groupBox1.Size = new Size(388, 224);
             groupBox1.TabIndex = 311;
             groupBox1.TabStop = false;
             groupBox1.Text = "Search";
@@ -733,7 +714,7 @@
             // 
             searchBox.Location = new Point(21, 39);
             searchBox.Name = "searchBox";
-            searchBox.Size = new Size(411, 27);
+            searchBox.Size = new Size(361, 27);
             searchBox.TabIndex = 109;
             searchBox.Text = "Search Here";
             searchBox.TextChanged += searchBox_TextChanged;
@@ -791,9 +772,9 @@
             // 
             button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(817, 715);
+            button4.Location = new Point(884, 715);
             button4.Name = "button4";
-            button4.Size = new Size(221, 36);
+            button4.Size = new Size(154, 36);
             button4.TabIndex = 312;
             button4.Text = "<<";
             button4.UseVisualStyleBackColor = true;
@@ -804,7 +785,7 @@
             SiteTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             SiteTextBox.Location = new Point(817, 516);
             SiteTextBox.Name = "SiteTextBox";
-            SiteTextBox.Size = new Size(183, 27);
+            SiteTextBox.Size = new Size(121, 27);
             SiteTextBox.TabIndex = 313;
             SiteTextBox.Text = "Redditch";
             SiteTextBox.Visible = false;
@@ -826,7 +807,7 @@
             DeptTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             DeptTextBox.Location = new Point(1006, 516);
             DeptTextBox.Name = "DeptTextBox";
-            DeptTextBox.Size = new Size(183, 27);
+            DeptTextBox.Size = new Size(121, 27);
             DeptTextBox.TabIndex = 315;
             DeptTextBox.Text = "Logistic";
             DeptTextBox.Visible = false;
@@ -846,9 +827,9 @@
             // 
             ArchiveButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             ArchiveButton.FlatStyle = FlatStyle.Flat;
-            ArchiveButton.Location = new Point(817, 632);
+            ArchiveButton.Location = new Point(884, 632);
             ArchiveButton.Name = "ArchiveButton";
-            ArchiveButton.Size = new Size(455, 36);
+            ArchiveButton.Size = new Size(388, 36);
             ArchiveButton.TabIndex = 317;
             ArchiveButton.Text = "Archive Current Record";
             ArchiveButton.UseVisualStyleBackColor = true;
@@ -866,12 +847,22 @@
             UpdateButton.UseVisualStyleBackColor = true;
             UpdateButton.Click += UpdateButton_Click;
             // 
+            // button6
+            // 
+            button6.Location = new Point(820, 239);
+            button6.Name = "button6";
+            button6.Size = new Size(32, 32);
+            button6.TabIndex = 321;
+            button6.Text = "X";
+            button6.UseVisualStyleBackColor = true;
+            // 
             // MheTraining
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1299, 860);
+            Controls.Add(button6);
             Controls.Add(UpdateButton);
             Controls.Add(ArchiveButton);
             Controls.Add(DeptTextBox);
@@ -1014,5 +1005,6 @@
         private Label label5;
         private Button ArchiveButton;
         private Button UpdateButton;
+        private Button button6;
     }
 }

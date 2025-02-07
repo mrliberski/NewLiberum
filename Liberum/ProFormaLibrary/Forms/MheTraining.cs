@@ -227,21 +227,7 @@ namespace ProFormaUI.Forms
             //label4.ForeColor = ThemeColor.SecondaryColor;
         }
 
-        private void B1picker_ValueChanged(object sender, EventArgs e)
-        {
-            B1picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = B1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateB1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "B1 could not be updated;";
-            }
-        }
+
 
         private void MheTraining_Load(object sender, EventArgs e)
         {
@@ -536,296 +522,312 @@ namespace ProFormaUI.Forms
         }
 
         // move to previous index
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MoveSelectionUp();
-        }
+        //private void button4_Click(object sender, EventArgs e)
+        //{
+        //    MoveSelectionUp();
+        //}
 
-        private void B2picker_ValueChanged(object sender, EventArgs e)
+        private void B1picker_ValueChanged(object sender, EventArgs e)
         {
-            B2picker.Format = DateTimePickerFormat.Long;
+            B1picker.Format = DateTimePickerFormat.Long;
             try
             {
-                string NewValue = B2picker.Value.ToString("dd/MM/yyyy");
+                string NewValue = B1picker.Value.ToString("dd/MM/yyyy");
                 //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateB2(NewValue, int.Parse(IdLabel.Text));
+                //SqliteDataAccess.UpdateB1(NewValue, int.Parse(IdLabel.Text));
                 errorLabel.Text = RefreshMessage;
             }
             catch
             {
-                errorLabel.Text = "B2 could not be updated;";
+                errorLabel.Text = "B1 could not be updated;";
             }
         }
 
-        private void A1picker_ValueChanged(object sender, EventArgs e)
-        {
-            A1picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = A1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateA1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "A1 could not be updated;";
-            }
-        }
+        //private void B2picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    B2picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = B2picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        //SqliteDataAccess.UpdateB2(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "B2 could not be updated;";
+        //    }
+        //}
 
-        private void A2picker_ValueChanged(object sender, EventArgs e)
-        {
-            A2picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = A2picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateA2(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "A2 could not be updated;";
-            }
-        }
+        //private void A1picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    A1picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = A1picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        //SqliteDataAccess.UpdateA1(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "A1 could not be updated;";
+        //    }
+        //}
 
-        private void H1picker_ValueChanged(object sender, EventArgs e)
-        {
-            H1picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = H1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateH1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "H1 could not be updated;";
-            }
-        }
+        //private void A2picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    A2picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = A2picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        //SqliteDataAccess.UpdateA2(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "A2 could not be updated;";
+        //    }
+        //}
 
-        private void F1picker_ValueChanged(object sender, EventArgs e)
-        {
-            F1picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = F1picker.Value.ToString("dd/MM/yyyy");
-                // MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateF1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "F1 could not be updated;";
-            }
-        }
+        //private void H1picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    H1picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = H1picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateH1(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "H1 could not be updated;";
+        //    }
+        //}
 
-        private void P1picker_ValueChanged(object sender, EventArgs e)
-        {
-            P1picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = P1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateP1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "P1 could not be updated;";
-            }
-        }
+        //private void F1picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    F1picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = F1picker.Value.ToString("dd/MM/yyyy");
+        //        // MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateF1(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "F1 could not be updated;";
+        //    }
+        //}
 
-        private void mewps3aPicker_ValueChanged(object sender, EventArgs e)
-        {
-            mewps3aPicker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = mewps3aPicker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateM3A(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "M3A could not be updated;";
-            }
-        }
+        //private void P1picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    P1picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = P1picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateP1(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "P1 could not be updated;";
+        //    }
+        //}
 
-        private void Mewps3Bpicker_ValueChanged(object sender, EventArgs e)
-        {
-            Mewps3Bpicker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = Mewps3Bpicker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateM3B(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "M3B could not be updated;";
-            }
-        }
+        //private void mewps3aPicker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    mewps3aPicker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = mewps3aPicker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateM3A(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "M3A could not be updated;";
+        //    }
+        //}
 
-        private void A4picker_ValueChanged(object sender, EventArgs e)
-        {
-            A4picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
-                // MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateA4(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "A4 could not be updated;";
-            }
-        }
+        //private void Mewps3Bpicker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    Mewps3Bpicker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = Mewps3Bpicker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateM3B(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "M3B could not be updated;";
+        //    }
+        //}
 
-        private void A5picker_ValueChanged(object sender, EventArgs e)
-        {
-            A5picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateA5(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "A5 could not be updated;";
-            }
-        }
+        //private void A4picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    A4picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
+        //        // MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateA4(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "A4 could not be updated;";
+        //    }
+        //}
 
-        private void D1picker_ValueChanged(object sender, EventArgs e)
-        {
-            D1picker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = D1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateD1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "D1 could not be updated;";
-            }
-        }
+        //private void A5picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    A5picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateA5(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "A5 could not be updated;";
+        //    }
+        //}
 
-        private void RemotePIcker_ValueChanged(object sender, EventArgs e)
-        {
-            RemotePIcker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = RemotePIcker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateRemote(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "Remote could not be updated;";
-            }
-        }
+        //private void D1picker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    D1picker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = D1picker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateD1(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "D1 could not be updated;";
+        //    }
+        //}
 
-        private void CranePicker_ValueChanged(object sender, EventArgs e)
-        {
-            CranePicker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = CranePicker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateCrane(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "Crane could not be updated;";
-            }
-        }
+        //private void RemotePIcker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    RemotePIcker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = RemotePIcker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateRemote(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "Remote could not be updated;";
+        //    }
+        //}
 
-        private void AssessmentPicker_ValueChanged(object sender, EventArgs e)
-        {
-            AssessmentPicker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = AssessmentPicker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateAssessment(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "Assessment Record could not be updated;";
-            }
-        }
+        //private void CranePicker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    CranePicker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = CranePicker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateCrane(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "Crane could not be updated;";
+        //    }
+        //}
 
-        private void RackingPicker_ValueChanged(object sender, EventArgs e)
-        {
-            RackingPicker.Format = DateTimePickerFormat.Long;
-            try
-            {
-                string NewValue = RackingPicker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateRacking(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch (System.Exception wtf)
-            {
-                errorLabel.Text = "Racking Inspection could not be updated;";
-                System.Diagnostics.Debug.WriteLine(wtf.Message);
-            }
-        }
+        //private void AssessmentPicker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    AssessmentPicker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = AssessmentPicker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateAssessment(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "Assessment Record could not be updated;";
+        //    }
+        //}
 
-        private void SiteCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string NewValue = SiteCombo.Text;
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateSite(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "Site could not be updated;";
-            }
-        }
+        //private void RackingPicker_ValueChanged(object sender, EventArgs e)
+        //{
+        //    RackingPicker.Format = DateTimePickerFormat.Long;
+        //    try
+        //    {
+        //        string NewValue = RackingPicker.Value.ToString("dd/MM/yyyy");
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateRacking(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch (System.Exception wtf)
+        //    {
+        //        errorLabel.Text = "Racking Inspection could not be updated;";
+        //        System.Diagnostics.Debug.WriteLine(wtf.Message);
+        //    }
+        //}
 
-        private void ShiftCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string NewValue = ShiftCombo.Text;
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateShift(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "Shift could not be updated;";
-            }
-        }
+        //private void SiteCombo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string NewValue = SiteCombo.Text;
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateSite(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "Site could not be updated;";
+        //    }
+        //}
 
-        private void CommentextBox_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string NewValue = CommentextBox.Text;
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateComment(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "Comment could not be updated;";
-            }
-        }
+        //private void ShiftCombo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string NewValue = ShiftCombo.Text;
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateShift(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "Shift could not be updated;";
+        //    }
+        //}
+
+        //private void CommentextBox_TextChanged(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string NewValue = CommentextBox.Text;
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateComment(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch
+        //    {
+        //        errorLabel.Text = "Comment could not be updated;";
+        //    }
+        //}
 
         private void MoveSelectionUp()
         {
@@ -874,35 +876,35 @@ namespace ProFormaUI.Forms
             //not currently used
         }
 
-        private void SurnameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string NewValue = SurnameTextBox.Text;
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateSurname(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch (System.Exception wtf)
-            {
-                errorLabel.Text = "Comment could not be updated: " + wtf.Message;
-            }
-        }
+        //private void SurnameTextBox_TextChanged(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string NewValue = SurnameTextBox.Text;
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateSurname(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch (System.Exception wtf)
+        //    {
+        //        errorLabel.Text = "Comment could not be updated: " + wtf.Message;
+        //    }
+        //}
 
-        private void NameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string NewValue = NameTextBox.Text;
-                //MessageBox.Show(NewValue);
-                SqliteDataAccess.UpdateName(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch (System.Exception wtf)
-            {
-                errorLabel.Text = "Comment could not be updated: " + wtf.Message;
-            }
-        }
+        //private void NameTextBox_TextChanged(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string NewValue = NameTextBox.Text;
+        //        //MessageBox.Show(NewValue);
+        //        SqliteDataAccess.UpdateName(NewValue, int.Parse(IdLabel.Text));
+        //        errorLabel.Text = RefreshMessage;
+        //    }
+        //    catch (System.Exception wtf)
+        //    {
+        //        errorLabel.Text = "Comment could not be updated: " + wtf.Message;
+        //    }
+        //}
 
         //Reloads overview id data grid
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -1001,6 +1003,22 @@ namespace ProFormaUI.Forms
                     MessageBox.Show("No items were found on the list.", "What are you doing stepbrother?", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
 
+            }
+        }
+
+        private void B1picker_ValueChanged_1(object sender, EventArgs e)
+        {
+            B1picker.Format = DateTimePickerFormat.Long;
+            try
+            {
+                string NewValue = B1picker.Value.ToString("dd/MM/yyyy");
+                //MessageBox.Show(NewValue);
+                //SqliteDataAccess.UpdateB1(NewValue, int.Parse(IdLabel.Text));
+                errorLabel.Text = RefreshMessage;
+            }
+            catch
+            {
+                errorLabel.Text = "B1 could not be updated;";
             }
         }
     }

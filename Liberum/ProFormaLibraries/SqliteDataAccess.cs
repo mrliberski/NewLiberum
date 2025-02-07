@@ -294,7 +294,7 @@ namespace ProFormaLibraries
             {
                 cnn.Open();
                 var cmd = cnn.CreateCommand();
-                cmd.CommandText = "select * from Assessments WHERE LiveRecord = @Live";
+                cmd.CommandText = "select * from Assessments WHERE LiveRecord = @Live ORDER BY Name";
 
                 var parameter = cmd.CreateParameter();
                 parameter.ParameterName = "@Live";
