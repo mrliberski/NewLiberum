@@ -97,6 +97,23 @@
             ArchiveButton = new Button();
             UpdateButton = new Button();
             button6 = new Button();
+            button1 = new Button();
+            button5 = new Button();
+            SaveStateLabel = new Label();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
+            button10 = new Button();
+            button11 = new Button();
+            button12 = new Button();
+            button13 = new Button();
+            button14 = new Button();
+            button15 = new Button();
+            button16 = new Button();
+            button17 = new Button();
+            button18 = new Button();
+            button19 = new Button();
+            SaveButton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -160,7 +177,7 @@
             // 
             // IdLaberlheader
             // 
-            IdLaberlheader.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            IdLaberlheader.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             IdLaberlheader.AutoSize = true;
             IdLaberlheader.Location = new Point(856, 754);
             IdLaberlheader.Name = "IdLaberlheader";
@@ -172,7 +189,7 @@
             // 
             // IdLabel
             // 
-            IdLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            IdLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             IdLabel.AutoSize = true;
             IdLabel.Location = new Point(884, 754);
             IdLabel.Name = "IdLabel";
@@ -184,7 +201,7 @@
             // 
             // SurnameLabelHeader
             // 
-            SurnameLabelHeader.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            SurnameLabelHeader.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             SurnameLabelHeader.AutoSize = true;
             SurnameLabelHeader.Location = new Point(811, 794);
             SurnameLabelHeader.Name = "SurnameLabelHeader";
@@ -196,7 +213,7 @@
             // 
             // NameLabelHeader
             // 
-            NameLabelHeader.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            NameLabelHeader.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             NameLabelHeader.AutoSize = true;
             NameLabelHeader.Location = new Point(830, 774);
             NameLabelHeader.Name = "NameLabelHeader";
@@ -208,7 +225,7 @@
             // 
             // SurnameLabel
             // 
-            SurnameLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            SurnameLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             SurnameLabel.AutoSize = true;
             SurnameLabel.Location = new Point(884, 794);
             SurnameLabel.Name = "SurnameLabel";
@@ -220,7 +237,7 @@
             // 
             // NameLabel
             // 
-            NameLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            NameLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             NameLabel.AutoSize = true;
             NameLabel.Location = new Point(884, 774);
             NameLabel.Name = "NameLabel";
@@ -238,6 +255,7 @@
             NameTextBox.Size = new Size(183, 27);
             NameTextBox.TabIndex = 107;
             NameTextBox.Text = "Craig ";
+            NameTextBox.TextChanged += NameTextBox_TextChanged;
             // 
             // label14
             // 
@@ -258,6 +276,7 @@
             SurnameTextBox.Size = new Size(183, 27);
             SurnameTextBox.TabIndex = 109;
             SurnameTextBox.Text = "Wood";
+            SurnameTextBox.TextChanged += SurnameTextBox_TextChanged;
             // 
             // label1
             // 
@@ -279,6 +298,7 @@
             ShiftCombo.Size = new Size(183, 28);
             ShiftCombo.TabIndex = 269;
             ShiftCombo.Text = "Whatever";
+            ShiftCombo.SelectedIndexChanged += ShiftCombo_SelectedIndexChanged;
             // 
             // B1picker
             // 
@@ -295,77 +315,84 @@
             // 
             mewps3aPicker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             mewps3aPicker.Font = new Font("Segoe UI", 9F);
-            mewps3aPicker.Location = new Point(617, 461);
+            mewps3aPicker.Location = new Point(617, 460);
             mewps3aPicker.Name = "mewps3aPicker";
             mewps3aPicker.RightToLeft = RightToLeft.No;
             mewps3aPicker.Size = new Size(183, 27);
             mewps3aPicker.TabIndex = 272;
+            mewps3aPicker.ValueChanged += mewps3aPicker_ValueChanged;
             // 
             // P1picker
             // 
             P1picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             P1picker.Font = new Font("Segoe UI", 9F);
-            P1picker.Location = new Point(617, 428);
+            P1picker.Location = new Point(617, 427);
             P1picker.Name = "P1picker";
             P1picker.RightToLeft = RightToLeft.No;
             P1picker.Size = new Size(183, 27);
             P1picker.TabIndex = 273;
+            P1picker.ValueChanged += P1picker_ValueChanged;
             // 
             // F1picker
             // 
             F1picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             F1picker.Font = new Font("Segoe UI", 9F);
-            F1picker.Location = new Point(617, 395);
+            F1picker.Location = new Point(617, 394);
             F1picker.Name = "F1picker";
             F1picker.RightToLeft = RightToLeft.No;
             F1picker.Size = new Size(183, 27);
             F1picker.TabIndex = 274;
+            F1picker.ValueChanged += F1picker_ValueChanged;
             // 
             // H1picker
             // 
             H1picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             H1picker.Font = new Font("Segoe UI", 9F);
-            H1picker.Location = new Point(617, 363);
+            H1picker.Location = new Point(617, 361);
             H1picker.Name = "H1picker";
             H1picker.RightToLeft = RightToLeft.No;
             H1picker.Size = new Size(183, 27);
             H1picker.TabIndex = 275;
+            H1picker.ValueChanged += H1picker_ValueChanged;
             // 
             // A2picker
             // 
             A2picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             A2picker.Font = new Font("Segoe UI", 9F);
-            A2picker.Location = new Point(617, 329);
+            A2picker.Location = new Point(617, 328);
             A2picker.Name = "A2picker";
             A2picker.RightToLeft = RightToLeft.No;
             A2picker.Size = new Size(183, 27);
             A2picker.TabIndex = 276;
+            A2picker.ValueChanged += A2picker_ValueChanged;
             // 
             // A1picker
             // 
             A1picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             A1picker.Font = new Font("Segoe UI", 9F);
-            A1picker.Location = new Point(617, 296);
+            A1picker.Location = new Point(617, 295);
             A1picker.Name = "A1picker";
             A1picker.RightToLeft = RightToLeft.No;
             A1picker.Size = new Size(183, 27);
             A1picker.TabIndex = 277;
+            A1picker.ValueChanged += A1picker_ValueChanged;
             // 
             // B2picker
             // 
             B2picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             B2picker.Font = new Font("Segoe UI", 9F);
-            B2picker.Location = new Point(617, 263);
+            B2picker.Location = new Point(617, 262);
             B2picker.Name = "B2picker";
             B2picker.RightToLeft = RightToLeft.No;
             B2picker.Size = new Size(183, 27);
             B2picker.TabIndex = 278;
+            B2picker.ValueChanged += B2picker_ValueChanged;
             // 
             // label17
             // 
             label17.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label17.AutoSize = true;
-            label17.Location = new Point(467, 235);
+            label17.Location = new Point(466, 232);
             label17.Name = "label17";
             label17.Size = new Size(144, 20);
             label17.TabIndex = 279;
@@ -376,7 +403,7 @@
             // 
             label18.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label18.AutoSize = true;
-            label18.Location = new Point(467, 268);
+            label18.Location = new Point(466, 265);
             label18.Name = "label18";
             label18.Size = new Size(144, 20);
             label18.TabIndex = 280;
@@ -387,7 +414,7 @@
             // 
             label19.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label19.AutoSize = true;
-            label19.Location = new Point(474, 301);
+            label19.Location = new Point(473, 298);
             label19.Name = "label19";
             label19.Size = new Size(137, 20);
             label19.TabIndex = 281;
@@ -398,7 +425,7 @@
             // 
             label20.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label20.AutoSize = true;
-            label20.Location = new Point(507, 333);
+            label20.Location = new Point(507, 331);
             label20.Name = "label20";
             label20.Size = new Size(104, 20);
             label20.TabIndex = 282;
@@ -409,7 +436,7 @@
             // 
             label21.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label21.AutoSize = true;
-            label21.Location = new Point(506, 367);
+            label21.Location = new Point(506, 364);
             label21.Name = "label21";
             label21.Size = new Size(105, 20);
             label21.TabIndex = 283;
@@ -420,7 +447,7 @@
             // 
             label22.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label22.AutoSize = true;
-            label22.Location = new Point(543, 400);
+            label22.Location = new Point(543, 397);
             label22.Name = "label22";
             label22.Size = new Size(68, 20);
             label22.TabIndex = 284;
@@ -431,7 +458,7 @@
             // 
             label23.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label23.AutoSize = true;
-            label23.Location = new Point(496, 433);
+            label23.Location = new Point(496, 430);
             label23.Name = "label23";
             label23.Size = new Size(115, 20);
             label23.TabIndex = 285;
@@ -442,7 +469,7 @@
             // 
             label24.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label24.AutoSize = true;
-            label24.Location = new Point(519, 467);
+            label24.Location = new Point(519, 463);
             label24.Name = "label24";
             label24.Size = new Size(92, 20);
             label24.TabIndex = 286;
@@ -453,7 +480,7 @@
             // 
             label25.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label25.AutoSize = true;
-            label25.Location = new Point(519, 499);
+            label25.Location = new Point(519, 496);
             label25.Name = "label25";
             label25.Size = new Size(91, 20);
             label25.TabIndex = 287;
@@ -464,21 +491,23 @@
             // 
             A5picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             A5picker.Font = new Font("Segoe UI", 9F);
-            A5picker.Location = new Point(617, 560);
+            A5picker.Location = new Point(617, 559);
             A5picker.Name = "A5picker";
             A5picker.RightToLeft = RightToLeft.No;
             A5picker.Size = new Size(183, 27);
             A5picker.TabIndex = 288;
+            A5picker.ValueChanged += A5picker_ValueChanged;
             // 
             // A4picker
             // 
             A4picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             A4picker.Font = new Font("Segoe UI", 9F);
-            A4picker.Location = new Point(617, 527);
+            A4picker.Location = new Point(617, 526);
             A4picker.Name = "A4picker";
             A4picker.RightToLeft = RightToLeft.No;
             A4picker.Size = new Size(183, 27);
             A4picker.TabIndex = 289;
+            A4picker.ValueChanged += A4picker_ValueChanged;
             // 
             // Mewps3Bpicker
             // 
@@ -489,52 +518,57 @@
             Mewps3Bpicker.RightToLeft = RightToLeft.No;
             Mewps3Bpicker.Size = new Size(183, 27);
             Mewps3Bpicker.TabIndex = 290;
+            Mewps3Bpicker.ValueChanged += Mewps3Bpicker_ValueChanged;
             // 
             // D1picker
             // 
             D1picker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             D1picker.Font = new Font("Segoe UI", 9F);
-            D1picker.Location = new Point(617, 593);
+            D1picker.Location = new Point(617, 592);
             D1picker.Name = "D1picker";
             D1picker.RightToLeft = RightToLeft.No;
             D1picker.Size = new Size(183, 27);
             D1picker.TabIndex = 291;
+            D1picker.ValueChanged += D1picker_ValueChanged;
             // 
             // RemotePIcker
             // 
             RemotePIcker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             RemotePIcker.Font = new Font("Segoe UI", 9F);
-            RemotePIcker.Location = new Point(617, 627);
+            RemotePIcker.Location = new Point(617, 625);
             RemotePIcker.Name = "RemotePIcker";
             RemotePIcker.RightToLeft = RightToLeft.No;
             RemotePIcker.Size = new Size(183, 27);
             RemotePIcker.TabIndex = 292;
+            RemotePIcker.ValueChanged += RemotePIcker_ValueChanged;
             // 
             // CranePicker
             // 
             CranePicker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             CranePicker.Font = new Font("Segoe UI", 9F);
-            CranePicker.Location = new Point(617, 659);
+            CranePicker.Location = new Point(617, 658);
             CranePicker.Name = "CranePicker";
             CranePicker.RightToLeft = RightToLeft.No;
             CranePicker.Size = new Size(183, 27);
             CranePicker.TabIndex = 293;
+            CranePicker.ValueChanged += CranePicker_ValueChanged;
             // 
             // AssessmentPicker
             // 
             AssessmentPicker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             AssessmentPicker.Font = new Font("Segoe UI", 9F);
-            AssessmentPicker.Location = new Point(617, 692);
+            AssessmentPicker.Location = new Point(617, 691);
             AssessmentPicker.Name = "AssessmentPicker";
             AssessmentPicker.RightToLeft = RightToLeft.No;
             AssessmentPicker.Size = new Size(183, 27);
             AssessmentPicker.TabIndex = 294;
+            AssessmentPicker.ValueChanged += AssessmentPicker_ValueChanged;
             // 
             // label26
             // 
             label26.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label26.AutoSize = true;
-            label26.Location = new Point(482, 532);
+            label26.Location = new Point(482, 529);
             label26.Name = "label26";
             label26.Size = new Size(129, 20);
             label26.TabIndex = 295;
@@ -545,7 +579,7 @@
             // 
             label27.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label27.AutoSize = true;
-            label27.Location = new Point(491, 565);
+            label27.Location = new Point(491, 562);
             label27.Name = "label27";
             label27.Size = new Size(119, 20);
             label27.TabIndex = 296;
@@ -556,7 +590,7 @@
             // 
             label28.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label28.AutoSize = true;
-            label28.Location = new Point(486, 597);
+            label28.Location = new Point(486, 595);
             label28.Name = "label28";
             label28.Size = new Size(124, 20);
             label28.TabIndex = 297;
@@ -567,7 +601,7 @@
             // 
             label29.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label29.AutoSize = true;
-            label29.Location = new Point(550, 631);
+            label29.Location = new Point(550, 628);
             label29.Name = "label29";
             label29.Size = new Size(61, 20);
             label29.TabIndex = 298;
@@ -578,7 +612,7 @@
             // 
             label30.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label30.AutoSize = true;
-            label30.Location = new Point(491, 664);
+            label30.Location = new Point(491, 661);
             label30.Name = "label30";
             label30.Size = new Size(119, 20);
             label30.TabIndex = 299;
@@ -589,7 +623,7 @@
             // 
             label31.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label31.AutoSize = true;
-            label31.Location = new Point(525, 697);
+            label31.Location = new Point(525, 694);
             label31.Name = "label31";
             label31.Size = new Size(85, 20);
             label31.TabIndex = 300;
@@ -600,7 +634,7 @@
             // 
             label32.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label32.AutoSize = true;
-            label32.Location = new Point(478, 731);
+            label32.Location = new Point(478, 727);
             label32.Name = "label32";
             label32.Size = new Size(133, 20);
             label32.TabIndex = 301;
@@ -611,11 +645,12 @@
             // 
             RackingPicker.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             RackingPicker.Font = new Font("Segoe UI", 9F);
-            RackingPicker.Location = new Point(617, 725);
+            RackingPicker.Location = new Point(617, 724);
             RackingPicker.Name = "RackingPicker";
             RackingPicker.RightToLeft = RightToLeft.No;
             RackingPicker.Size = new Size(183, 27);
             RackingPicker.TabIndex = 302;
+            RackingPicker.ValueChanged += RackingPicker_ValueChanged;
             // 
             // SiteCombo
             // 
@@ -626,12 +661,13 @@
             SiteCombo.Size = new Size(183, 28);
             SiteCombo.TabIndex = 303;
             SiteCombo.Text = "Redditch 2";
+            SiteCombo.SelectedIndexChanged += SiteCombo_SelectedIndexChanged;
             // 
             // label33
             // 
-            label33.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label33.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label33.AutoSize = true;
-            label33.Location = new Point(1233, 754);
+            label33.Location = new Point(1163, 769);
             label33.Name = "label33";
             label33.Size = new Size(39, 20);
             label33.TabIndex = 304;
@@ -641,9 +677,9 @@
             // 
             // label34
             // 
-            label34.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label34.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label34.AutoSize = true;
-            label34.Location = new Point(1193, 757);
+            label34.Location = new Point(1037, 799);
             label34.Name = "label34";
             label34.Size = new Size(34, 20);
             label34.TabIndex = 305;
@@ -660,6 +696,7 @@
             CommentextBox.ScrollBars = ScrollBars.Vertical;
             CommentextBox.Size = new Size(455, 128);
             CommentextBox.TabIndex = 306;
+            CommentextBox.TextChanged += CommentextBox_TextChanged;
             // 
             // label35
             // 
@@ -783,13 +820,12 @@
             // SiteTextBox
             // 
             SiteTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            SiteTextBox.Location = new Point(817, 516);
+            SiteTextBox.Location = new Point(1016, 463);
             SiteTextBox.Name = "SiteTextBox";
             SiteTextBox.Size = new Size(121, 27);
             SiteTextBox.TabIndex = 313;
             SiteTextBox.Text = "Redditch";
             SiteTextBox.Visible = false;
-            SiteTextBox.TextChanged += SiteTextBox_TextChanged;
             // 
             // label4
             // 
@@ -805,7 +841,7 @@
             // DeptTextBox
             // 
             DeptTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            DeptTextBox.Location = new Point(1006, 516);
+            DeptTextBox.Location = new Point(1149, 463);
             DeptTextBox.Name = "DeptTextBox";
             DeptTextBox.Size = new Size(121, 27);
             DeptTextBox.TabIndex = 315;
@@ -849,12 +885,203 @@
             // 
             // button6
             // 
-            button6.Location = new Point(820, 239);
+            button6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button6.Location = new Point(810, 229);
             button6.Name = "button6";
-            button6.Size = new Size(32, 32);
+            button6.Size = new Size(32, 27);
             button6.TabIndex = 321;
             button6.Text = "X";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.Location = new Point(810, 263);
+            button1.Name = "button1";
+            button1.Size = new Size(32, 27);
+            button1.TabIndex = 322;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button5
+            // 
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button5.Location = new Point(810, 296);
+            button5.Name = "button5";
+            button5.Size = new Size(32, 27);
+            button5.TabIndex = 323;
+            button5.Text = "X";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // SaveStateLabel
+            // 
+            SaveStateLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            SaveStateLabel.AutoSize = true;
+            SaveStateLabel.Location = new Point(31, 778);
+            SaveStateLabel.Name = "SaveStateLabel";
+            SaveStateLabel.Size = new Size(49, 20);
+            SaveStateLabel.TabIndex = 326;
+            SaveStateLabel.Text = "Saved";
+            SaveStateLabel.TextAlign = ContentAlignment.MiddleRight;
+            SaveStateLabel.Visible = false;
+            // 
+            // button7
+            // 
+            button7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button7.Location = new Point(810, 328);
+            button7.Name = "button7";
+            button7.Size = new Size(32, 27);
+            button7.TabIndex = 327;
+            button7.Text = "X";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button8.Location = new Point(810, 361);
+            button8.Name = "button8";
+            button8.Size = new Size(32, 27);
+            button8.TabIndex = 328;
+            button8.Text = "X";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button9
+            // 
+            button9.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button9.Location = new Point(810, 393);
+            button9.Name = "button9";
+            button9.Size = new Size(32, 27);
+            button9.TabIndex = 329;
+            button9.Text = "X";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // button10
+            // 
+            button10.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button10.Location = new Point(810, 427);
+            button10.Name = "button10";
+            button10.Size = new Size(32, 27);
+            button10.TabIndex = 330;
+            button10.Text = "X";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // button11
+            // 
+            button11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button11.Location = new Point(810, 460);
+            button11.Name = "button11";
+            button11.Size = new Size(32, 27);
+            button11.TabIndex = 331;
+            button11.Text = "X";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
+            // button12
+            // 
+            button12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button12.Location = new Point(810, 493);
+            button12.Name = "button12";
+            button12.Size = new Size(32, 27);
+            button12.TabIndex = 332;
+            button12.Text = "X";
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
+            // 
+            // button13
+            // 
+            button13.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button13.Location = new Point(810, 526);
+            button13.Name = "button13";
+            button13.Size = new Size(32, 27);
+            button13.TabIndex = 333;
+            button13.Text = "X";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
+            // 
+            // button14
+            // 
+            button14.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button14.Location = new Point(810, 559);
+            button14.Name = "button14";
+            button14.Size = new Size(32, 27);
+            button14.TabIndex = 334;
+            button14.Text = "X";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
+            // 
+            // button15
+            // 
+            button15.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button15.Location = new Point(810, 592);
+            button15.Name = "button15";
+            button15.Size = new Size(32, 27);
+            button15.TabIndex = 335;
+            button15.Text = "X";
+            button15.UseVisualStyleBackColor = true;
+            button15.Click += button15_Click;
+            // 
+            // button16
+            // 
+            button16.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button16.Location = new Point(810, 625);
+            button16.Name = "button16";
+            button16.Size = new Size(32, 27);
+            button16.TabIndex = 336;
+            button16.Text = "X";
+            button16.UseVisualStyleBackColor = true;
+            button16.Click += button16_Click;
+            // 
+            // button17
+            // 
+            button17.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button17.Location = new Point(810, 658);
+            button17.Name = "button17";
+            button17.Size = new Size(32, 27);
+            button17.TabIndex = 337;
+            button17.Text = "X";
+            button17.UseVisualStyleBackColor = true;
+            button17.Click += button17_Click;
+            // 
+            // button18
+            // 
+            button18.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button18.Location = new Point(810, 691);
+            button18.Name = "button18";
+            button18.Size = new Size(32, 27);
+            button18.TabIndex = 338;
+            button18.Text = "X";
+            button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
+            // 
+            // button19
+            // 
+            button19.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button19.Location = new Point(810, 724);
+            button19.Name = "button19";
+            button19.Size = new Size(32, 27);
+            button19.TabIndex = 339;
+            button19.Text = "X";
+            button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
+            // 
+            // SaveButton
+            // 
+            SaveButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            SaveButton.FlatStyle = FlatStyle.Flat;
+            SaveButton.Location = new Point(884, 548);
+            SaveButton.Name = "SaveButton";
+            SaveButton.Size = new Size(388, 36);
+            SaveButton.TabIndex = 340;
+            SaveButton.Text = "Save Changes";
+            SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // MheTraining
             // 
@@ -862,6 +1089,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1299, 860);
+            Controls.Add(SaveButton);
+            Controls.Add(button19);
+            Controls.Add(button18);
+            Controls.Add(button17);
+            Controls.Add(button16);
+            Controls.Add(button15);
+            Controls.Add(button14);
+            Controls.Add(button13);
+            Controls.Add(button12);
+            Controls.Add(button11);
+            Controls.Add(button10);
+            Controls.Add(button9);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(SaveStateLabel);
+            Controls.Add(button5);
+            Controls.Add(button1);
             Controls.Add(button6);
             Controls.Add(UpdateButton);
             Controls.Add(ArchiveButton);
@@ -1006,5 +1250,24 @@
         private Button ArchiveButton;
         private Button UpdateButton;
         private Button button6;
+        private Button button1;
+        private Button button5;
+        private Label label6;
+        private Label label7;
+        private Label SaveStateLabel;
+        private Button button7;
+        private Button button8;
+        private Button button9;
+        private Button button10;
+        private Button button11;
+        private Button button12;
+        private Button button13;
+        private Button button14;
+        private Button button15;
+        private Button button16;
+        private Button button17;
+        private Button button18;
+        private Button button19;
+        private Button SaveButton;
     }
 }

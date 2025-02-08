@@ -3132,5 +3132,10 @@ namespace ProFormaLibraries
                 }
             }
         }
+
+        public static void UpdateAssessmentItem(int v1, string text1, string text2, string text3, string text4, string text5, string v2, string v3, string v4, string v5, string v6, string v7, string v8, string v9, string v10, string v11, string v12, string v13, string v14, string v15, string v16, string v17)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

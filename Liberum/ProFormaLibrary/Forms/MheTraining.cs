@@ -41,10 +41,33 @@ namespace ProFormaUI.Forms
             LoadSites();
             LoadShifts();
             UpdateOverview();
+            SetAdminView();
 
             // Add the event handler for the SelectionChanged event
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
+        }
 
+        private void SetAdminView()
+        {
+            if (Environment.UserName.ToUpper() == "PANLI" || Environment.UserName.ToUpper() == "PAWEL.LIBERSKI")
+            {
+                SaveStateLabel.Visible = true;
+                IdLabel.Visible = true;
+                IdLaberlheader.Visible = true;
+                NameLabel.Visible = true;
+                NameLabelHeader.Visible = true;
+                SurnameLabel.Visible = true;
+                SurnameLabelHeader.Visible = true;
+                SiteTextBox.Visible = true;
+                SiteCombo.Visible = true;
+                DeptTextBox.Visible = true;
+                ShiftCombo.Visible = true;
+                CommentextBox.Visible = true;
+                errorLabel.Visible = true;
+                ArchiveButton.Visible = true;
+            }
+
+            // Show the admin view
         }
 
         //This routine updates the overview of item list by fetching all items from Assessments table
@@ -227,8 +250,6 @@ namespace ProFormaUI.Forms
             //label4.ForeColor = ThemeColor.SecondaryColor;
         }
 
-
-
         private void MheTraining_Load(object sender, EventArgs e)
         {
 
@@ -239,7 +260,7 @@ namespace ProFormaUI.Forms
 
         }
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void MoveSelection()
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
@@ -485,7 +506,25 @@ namespace ProFormaUI.Forms
                 }
 
             }
+        }
 
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+
+            // if we use conditional if then we will gety prompted on form opening which is not desired
+            //if (SaveStateLabel.Text != "Saved")
+            //{
+            //    DialogResult iExit;
+            //    iExit = MessageBox.Show("You have some unsaved changes, do you want to navigate away? Changes will be lost", "Please confirm action...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            //    if (iExit == DialogResult.Yes)
+            //    {
+            //        MoveSelection();
+            //        SaveStateLabel.Text = "Saved";
+            //    }
+            //}
+
+            MoveSelection();
+            SaveStateLabel.Text = "Saved";
         }
 
         private void ArchiveButton_Click(object sender, EventArgs e)
@@ -518,254 +557,22 @@ namespace ProFormaUI.Forms
         // move to next index
         private void button3_Click(object sender, EventArgs e)
         {
-            MoveSelectionDown();
-        }
-
-        // move to previous index
-        //private void button4_Click(object sender, EventArgs e)
-        //{
-        //    MoveSelectionUp();
-        //}
-
-        private void B1picker_ValueChanged(object sender, EventArgs e)
-        {
-            B1picker.Format = DateTimePickerFormat.Long;
-            try
+            if (SaveStateLabel.Text != "Saved")
             {
-                string NewValue = B1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                //SqliteDataAccess.UpdateB1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
+                DialogResult iExit;
+                iExit = MessageBox.Show("You have some unsaved changes, do you want to navigate away? Changes will be lost", "Please confirm action...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (iExit == DialogResult.Yes)
+                {
+                    MoveSelectionDown();
+                    SaveStateLabel.Text = "Saved";
+                }
             }
-            catch
+            else
             {
-                errorLabel.Text = "B1 could not be updated;";
+                MoveSelectionDown();
+                SaveStateLabel.Text = "Saved";
             }
         }
-
-        //private void B2picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    B2picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = B2picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        //SqliteDataAccess.UpdateB2(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "B2 could not be updated;";
-        //    }
-        //}
-
-        //private void A1picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    A1picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = A1picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        //SqliteDataAccess.UpdateA1(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "A1 could not be updated;";
-        //    }
-        //}
-
-        //private void A2picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    A2picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = A2picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        //SqliteDataAccess.UpdateA2(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "A2 could not be updated;";
-        //    }
-        //}
-
-        //private void H1picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    H1picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = H1picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateH1(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "H1 could not be updated;";
-        //    }
-        //}
-
-        //private void F1picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    F1picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = F1picker.Value.ToString("dd/MM/yyyy");
-        //        // MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateF1(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "F1 could not be updated;";
-        //    }
-        //}
-
-        //private void P1picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    P1picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = P1picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateP1(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "P1 could not be updated;";
-        //    }
-        //}
-
-        //private void mewps3aPicker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    mewps3aPicker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = mewps3aPicker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateM3A(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "M3A could not be updated;";
-        //    }
-        //}
-
-        //private void Mewps3Bpicker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    Mewps3Bpicker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = Mewps3Bpicker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateM3B(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "M3B could not be updated;";
-        //    }
-        //}
-
-        //private void A4picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    A4picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
-        //        // MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateA4(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "A4 could not be updated;";
-        //    }
-        //}
-
-        //private void A5picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    A5picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = A4picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateA5(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "A5 could not be updated;";
-        //    }
-        //}
-
-        //private void D1picker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    D1picker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = D1picker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateD1(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "D1 could not be updated;";
-        //    }
-        //}
-
-        //private void RemotePIcker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    RemotePIcker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = RemotePIcker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateRemote(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "Remote could not be updated;";
-        //    }
-        //}
-
-        //private void CranePicker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    CranePicker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = CranePicker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateCrane(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "Crane could not be updated;";
-        //    }
-        //}
-
-        //private void AssessmentPicker_ValueChanged(object sender, EventArgs e)
-        //{
-        //    AssessmentPicker.Format = DateTimePickerFormat.Long;
-        //    try
-        //    {
-        //        string NewValue = AssessmentPicker.Value.ToString("dd/MM/yyyy");
-        //        //MessageBox.Show(NewValue);
-        //        SqliteDataAccess.UpdateAssessment(NewValue, int.Parse(IdLabel.Text));
-        //        errorLabel.Text = RefreshMessage;
-        //    }
-        //    catch
-        //    {
-        //        errorLabel.Text = "Assessment Record could not be updated;";
-        //    }
-        //}
 
         //private void RackingPicker_ValueChanged(object sender, EventArgs e)
         //{
@@ -866,15 +673,12 @@ namespace ProFormaUI.Forms
         //    MoveSelectionDown();
         //}
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            MoveSelectionUp();
-        }
 
-        private void SiteTextBox_TextChanged(object sender, EventArgs e)
-        {
-            //not currently used
-        }
+
+        //private void SiteTextBox_TextChanged(object sender, EventArgs e)
+        //{
+        //    //not currently used
+        //}
 
         //private void SurnameTextBox_TextChanged(object sender, EventArgs e)
         //{
@@ -1006,20 +810,292 @@ namespace ProFormaUI.Forms
             }
         }
 
+        // Move to previous index and display warning if unsaved changes
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            if (SaveStateLabel.Text != "Saved")
+            {
+                DialogResult iExit;
+                iExit = MessageBox.Show("You have some unsaved changes, do you want to navigate away? Changes will be lost", "Please confirm action...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (iExit == DialogResult.Yes)
+                {
+                    MoveSelectionUp();
+                    SaveStateLabel.Text = "Saved";
+                }
+            }
+            else
+            {
+                MoveSelectionUp();
+                SaveStateLabel.Text = "Saved";
+            }
+        }
+
+        //Change format of B1 date picker if a value is selected
         private void B1picker_ValueChanged_1(object sender, EventArgs e)
         {
             B1picker.Format = DateTimePickerFormat.Long;
-            try
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void B2picker_ValueChanged(object sender, EventArgs e)
+        {
+            B2picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void A1picker_ValueChanged(object sender, EventArgs e)
+        {
+            A1picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void A2picker_ValueChanged(object sender, EventArgs e)
+        {
+            A2picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void H1picker_ValueChanged(object sender, EventArgs e)
+        {
+            H1picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void F1picker_ValueChanged(object sender, EventArgs e)
+        {
+            F1picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void P1picker_ValueChanged(object sender, EventArgs e)
+        {
+            P1picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void mewps3aPicker_ValueChanged(object sender, EventArgs e)
+        {
+            mewps3aPicker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void Mewps3Bpicker_ValueChanged(object sender, EventArgs e)
+        {
+            Mewps3Bpicker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void A4picker_ValueChanged(object sender, EventArgs e)
+        {
+            A4picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void A5picker_ValueChanged(object sender, EventArgs e)
+        {
+            A5picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void D1picker_ValueChanged(object sender, EventArgs e)
+        {
+            D1picker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void RemotePIcker_ValueChanged(object sender, EventArgs e)
+        {
+            RemotePIcker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void CranePicker_ValueChanged(object sender, EventArgs e)
+        {
+            CranePicker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void AssessmentPicker_ValueChanged(object sender, EventArgs e)
+        {
+            AssessmentPicker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void RackingPicker_ValueChanged(object sender, EventArgs e)
+        {
+            RackingPicker.Format = DateTimePickerFormat.Long;
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void SurnameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void SiteCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void ShiftCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void CommentextBox_TextChanged(object sender, EventArgs e)
+        {
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        // delete B1 date picker value
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(B1picker);
+        }
+
+        // b2 delete
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(B2picker);
+        }
+
+        //A1 delete
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(A1picker);
+        }
+
+        //A2 delete
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(A2picker);
+        }
+
+        //H1 delete
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(H1picker);
+        }
+
+        //F1 delete
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(F1picker);
+        }
+
+        //P1 Delete
+        private void button10_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(P1picker);
+        }
+
+        //3A delete
+        private void button11_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(mewps3aPicker);
+        }
+
+        //3B delete
+        private void button12_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(Mewps3Bpicker);
+        }
+
+        //A4 delete
+        private void button13_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(A4picker);
+        }
+
+        //A5 delete
+        private void button14_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(A5picker);
+        }
+
+        //d1 delete
+        private void button15_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(D1picker);
+        }
+
+        // remote delete
+        private void button16_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(RemotePIcker);
+        }
+
+        //Assessment delete
+        private void button18_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(AssessmentPicker);
+        }
+
+        //racking delete
+        private void button19_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(RackingPicker);
+        }
+
+        //crane delete
+        private void button17_Click(object sender, EventArgs e)
+        {
+            ClearDatePicker(CranePicker);
+        }
+
+        // Picker Clearing routine
+        private void ClearDatePicker(DateTimePicker datePicker)
+        {
+            datePicker.Format = DateTimePickerFormat.Custom;
+            datePicker.CustomFormat = " ";
+            SaveStateLabel.Text = "Not Saved";
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            if (SaveStateLabel.Text == "Not Saved")
             {
-                string NewValue = B1picker.Value.ToString("dd/MM/yyyy");
-                //MessageBox.Show(NewValue);
-                //SqliteDataAccess.UpdateB1(NewValue, int.Parse(IdLabel.Text));
-                errorLabel.Text = RefreshMessage;
-            }
-            catch
-            {
-                errorLabel.Text = "B1 could not be updated;";
+                try
+                {
+                    SqliteDataAccess.UpdateAssessmentItem(
+                        int.Parse(IdLabel.Text),
+                        NameTextBox.Text,
+                        SurnameTextBox.Text,
+                        SiteCombo.Text,
+                        ShiftCombo.Text,
+                        CommentextBox.Text,
+                        A1picker.Value.ToString("dd/MM/yyyy"),
+                        A2picker.Value.ToString("dd/MM/yyyy"),
+                        A4picker.Value.ToString("dd/MM/yyyy"),
+                        A5picker.Value.ToString("dd/MM/yyyy"),
+                        B1picker.Value.ToString("dd/MM/yyyy"),
+                        B2picker.Value.ToString("dd/MM/yyyy"),
+                        H1picker.Value.ToString("dd/MM/yyyy"),
+                        F1picker.Value.ToString("dd/MM/yyyy"),
+                        P1picker.Value.ToString("dd/MM/yyyy"),
+                        mewps3aPicker.Value.ToString("dd/MM/yyyy"),
+                        Mewps3Bpicker.Value.ToString("dd/MM/yyyy"),
+                        D1picker.Value.ToString("dd/MM/yyyy"),
+                        RemotePIcker.Value.ToString("dd/MM/yyyy"),
+                        CranePicker.Value.ToString("dd/MM/yyyy"),
+                        AssessmentPicker.Value.ToString("dd/MM/yyyy"),
+                        RackingPicker.Value.ToString("dd/MM/yyyy")
+                        );
+                    SaveStateLabel.Text = "Saved";
+                    UpdateOverview();
+                }
+                catch (System.Exception wtf)
+                {
+                    errorLabel.Text = wtf.Message;
+                }
             }
         }
+
+
     }
 }
