@@ -17,78 +17,7 @@ namespace ProFormaLibraries
 {
     public class SqliteDataAccess
     {
-        public static void UpdateB2(string NewValue, int RecordNumber) {
-
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET B2 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = NewValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value B2 with Id = {RecordNumber} to {NewValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateB1(string NewValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET B1 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = NewValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value B1 with Id = {RecordNumber} to {NewValue}.");
-                    }
-                }
-            }
-        }
-
+        
         public static void AddBentleyCount(BentleyEntryModel model)
         {
             //MessageBox.Show("yay");
@@ -173,7 +102,7 @@ namespace ProFormaLibraries
             return Entries;
         }
 
-        //Function to archive 
+        //Function to archive out record from db - it will not be deleted but marked as archived
         public static void UpdateLiveRecord(int recordNumber)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -2475,440 +2404,6 @@ namespace ProFormaLibraries
             }
         }
 
-        public static void UpdateA2(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET A2 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value A2 with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateH1(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET H1 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value H1 with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateF1(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET F1 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value F1 with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateP1(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET P1 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                        System.Diagnostics.Debug.WriteLine("I chuj");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value P1 with Id = {RecordNumber} to {newValue}."); 
-                        System.Diagnostics.Debug.WriteLine("OK");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateM3A(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET M3A = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value M3A with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateM3B(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET M3B = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value M3B with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateA4(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET A4 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value A4 with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateA5(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET A5 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value A5 with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateD1(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET D1 = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value D1 with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateRemote(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Remote = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Remote with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateCrane(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Crane = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Crane with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateAssessment(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Assessment = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Assessment with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
-            }
-        }
-
         public static void UpdateRacking(string newValue, int RecordNumber)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -2945,197 +2440,94 @@ namespace ProFormaLibraries
             }
         }
 
-        public static void UpdateSite(string newValue, int RecordNumber)
+        public static void UpdateAssessmentItem(AssessmentModel assessment)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Site = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Site with Id = {RecordNumber} to {newValue}.");
-                    }
-                }
+                cnn.Execute(@"update Assessments 
+                    SET
+                        Name=@Name,
+                        Surname=@Surname,
+                        Site=@Site,
+                        Shift=@Shift,
+                        UpdatedDate=@UpdatedDate,
+                        UpdatedBy=@UpdatedBy,
+                        Comments=@Comments,
+                        A1=@A1,
+                        A2=@A2,
+                        A3=@A3,
+                        A4=@A4,
+                        A5=@A5,
+                        B1=@B1,
+                        B2=@B2,
+                        H1=@H1,
+                        F1=@F1,
+                        M3A=@M3A,
+                        M3B=@M3B,
+                        D1=@D1,
+                        Remote=@Remote,
+                        Crane=@Crane,
+                        Assessment=@Assessment,
+                        P1=@P1,
+                        H1=@H1,
+                        RackingInspection=@RackingInspection
+                    WHERE
+                        Id=@Id
+                    ", assessment);
             }
         }
 
-        public static void UpdateShift(string newValue, int RecordNumber)
+        public static void AddTrainee(AssessmentModel model)
         {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            try
             {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
+                using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
                 {
-                    cmd.CommandText = "UPDATE Assessments SET Shift = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
+                    using (var connection = new SQLiteConnection(LoadConnectionString()))
                     {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                        System.Diagnostics.Debug.WriteLine("I chuj");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Shift with Id = {RecordNumber} to {newValue}.");
-                        System.Diagnostics.Debug.WriteLine("ok");
+                        connection.Open();
+                        var cmd = connection.CreateCommand();
+                        cmd.CommandText = @"insert into Assessments 
+                    (
+                        Name,
+                        Surname,
+                        Site,
+                        Shift,
+                        CreatedDate,
+                        CreatedBy,
+                        LiveRecord,
+                        Comments
+                    )   
+                    values 
+                    (
+                        @Name,
+                        @Surname,
+                        @Site,
+                        @Shift,
+                        @CreatedDate,
+                        @CreatedBy,
+                        @LiveRecord,
+                        @Comments
+                    )";
+                        cmd.Parameters.Add(new SQLiteParameter("@Name", model.Name));
+                        cmd.Parameters.Add(new SQLiteParameter("@Surname", model.Surname));
+                        cmd.Parameters.Add(new SQLiteParameter("@Site", model.Site));
+                        cmd.Parameters.Add(new SQLiteParameter("@Shift", model.Shift));
+                        cmd.Parameters.Add(new SQLiteParameter("@CreatedDate", model.CreatedDate));
+                        cmd.Parameters.Add(new SQLiteParameter("@CreatedBy", model.CreatedBy));
+                        cmd.Parameters.Add(new SQLiteParameter("@Comments", model.Comments));
+                        cmd.Parameters.Add(new SQLiteParameter("@LiveRecord", "Live"));
+
+
+                        cmd.ExecuteNonQuery();
+                        connection.Close();
                     }
                 }
             }
-        }
-
-        public static void UpdateComment(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            catch(Exception wtf)
             {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Comments = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                        System.Diagnostics.Debug.WriteLine("I chuj");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Comments with Id = {RecordNumber} to {newValue}.");
-                        System.Diagnostics.Debug.WriteLine("ok");
-                    }
-                }
+                MessageBox.Show(wtf.Message);
             }
-        }
-
-        public static void UpdateName(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Name = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                        System.Diagnostics.Debug.WriteLine("I chuj");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Comments with Id = {RecordNumber} to {newValue}.");
-                        System.Diagnostics.Debug.WriteLine("ok");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateSurname(string newValue, int RecordNumber)
-        {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-            {
-                cnn.Open();
-                using (var cmd = cnn.CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE Assessments SET Surname = @NewValue WHERE Id = @RecordNumber";
-
-                    // Add parameters to avoid SQL injection
-                    var liveRecordParam = cmd.CreateParameter();
-                    liveRecordParam.ParameterName = "@NewValue";
-                    liveRecordParam.Value = newValue;
-                    cmd.Parameters.Add(liveRecordParam);
-
-                    var recordNumberParam = cmd.CreateParameter();
-                    recordNumberParam.ParameterName = "@RecordNumber";
-                    recordNumberParam.Value = RecordNumber;
-                    cmd.Parameters.Add(recordNumberParam);
-
-                    // Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    // Optional: Check if the update was successful
-                    if (rowsAffected == 0)
-                    {
-                        Console.WriteLine($"No record with Id = {RecordNumber} was found.");
-                        System.Diagnostics.Debug.WriteLine("I chuj");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Successfully updated Value Comments with Id = {RecordNumber} to {newValue}.");
-                        System.Diagnostics.Debug.WriteLine("ok");
-                    }
-                }
-            }
-        }
-
-        public static void UpdateAssessmentItem(int v1, string text1, string text2, string text3, string text4, string text5, string v2, string v3, string v4, string v5, string v6, string v7, string v8, string v9, string v10, string v11, string v12, string v13, string v14, string v15, string v16, string v17)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -769,7 +769,8 @@ namespace ProFormaUI.Forms
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not yet implemented - let me know to add record manually");
+            Form open = new AddNewTrainee();
+            open.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -1060,42 +1061,55 @@ namespace ProFormaUI.Forms
         {
             if (SaveStateLabel.Text == "Not Saved")
             {
-                try
+                DialogResult iExit;
+                iExit = MessageBox.Show("Current record will be updated, do you wish to continue?", "Please confirm action...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (iExit == DialogResult.Yes)
                 {
-                    SqliteDataAccess.UpdateAssessmentItem(
-                        int.Parse(IdLabel.Text),
-                        NameTextBox.Text,
-                        SurnameTextBox.Text,
-                        SiteCombo.Text,
-                        ShiftCombo.Text,
-                        CommentextBox.Text,
-                        A1picker.Value.ToString("dd/MM/yyyy"),
-                        A2picker.Value.ToString("dd/MM/yyyy"),
-                        A4picker.Value.ToString("dd/MM/yyyy"),
-                        A5picker.Value.ToString("dd/MM/yyyy"),
-                        B1picker.Value.ToString("dd/MM/yyyy"),
-                        B2picker.Value.ToString("dd/MM/yyyy"),
-                        H1picker.Value.ToString("dd/MM/yyyy"),
-                        F1picker.Value.ToString("dd/MM/yyyy"),
-                        P1picker.Value.ToString("dd/MM/yyyy"),
-                        mewps3aPicker.Value.ToString("dd/MM/yyyy"),
-                        Mewps3Bpicker.Value.ToString("dd/MM/yyyy"),
-                        D1picker.Value.ToString("dd/MM/yyyy"),
-                        RemotePIcker.Value.ToString("dd/MM/yyyy"),
-                        CranePicker.Value.ToString("dd/MM/yyyy"),
-                        AssessmentPicker.Value.ToString("dd/MM/yyyy"),
-                        RackingPicker.Value.ToString("dd/MM/yyyy")
-                        );
-                    SaveStateLabel.Text = "Saved";
-                    UpdateOverview();
+                    try
+                    {
+                        AssessmentModel assessment = new AssessmentModel();
+
+                        assessment.Id = int.Parse(IdLabel.Text);
+                        assessment.Name = NameTextBox.Text;
+                        assessment.Surname = SurnameTextBox.Text;
+                        assessment.Site = SiteCombo.Text;
+                        assessment.Shift = ShiftCombo.Text;
+                        assessment.Comments = CommentextBox.Text;
+
+                        assessment.A1 = A1picker.Format != DateTimePickerFormat.Long ? "" : A1picker.Value.ToString("dd/MM/yyyy");
+                        assessment.A2 = A2picker.Format != DateTimePickerFormat.Long ? "" : A2picker.Value.ToString("dd/MM/yyyy");
+                        assessment.A4 = A4picker.Format != DateTimePickerFormat.Long ? "" : A4picker.Value.ToString("dd/MM/yyyy");
+                        assessment.A5 = A5picker.Format != DateTimePickerFormat.Long ? "" : A5picker.Value.ToString("dd/MM/yyyy");
+                        assessment.B1 = B1picker.Format != DateTimePickerFormat.Long ? "" : B1picker.Value.ToString("dd/MM/yyyy");
+                        assessment.B2 = B2picker.Format != DateTimePickerFormat.Long ? "" : B2picker.Value.ToString("dd/MM/yyyy");
+                        assessment.H1 = H1picker.Format != DateTimePickerFormat.Long ? "" : H1picker.Value.ToString("dd/MM/yyyy");
+                        assessment.F1 = F1picker.Format != DateTimePickerFormat.Long ? "" : F1picker.Value.ToString("dd/MM/yyyy");
+                        assessment.P1 = P1picker.Format != DateTimePickerFormat.Long ? "" : P1picker.Value.ToString("dd/MM/yyyy");
+                        assessment.M3A = mewps3aPicker.Format != DateTimePickerFormat.Long ? "" : mewps3aPicker.Value.ToString("dd/MM/yyyy");
+                        assessment.M3B = Mewps3Bpicker.Format != DateTimePickerFormat.Long ? "" : Mewps3Bpicker.Value.ToString("dd/MM/yyyy");
+                        assessment.D1 = D1picker.Format != DateTimePickerFormat.Long ? "" : D1picker.Value.ToString("dd/MM/yyyy");
+                        assessment.Remote = RemotePIcker.Format != DateTimePickerFormat.Long ? "" : RemotePIcker.Value.ToString("dd/MM/yyyy");
+                        assessment.Crane = CranePicker.Format != DateTimePickerFormat.Long ? "" : CranePicker.Value.ToString("dd/MM/yyyy");
+                        assessment.RackingInspection = RackingPicker.Format != DateTimePickerFormat.Long ? "" : RackingPicker.Value.ToString("dd/MM/yyyy");
+                        assessment.Assessment = AssessmentPicker.Format != DateTimePickerFormat.Long ? "" : AssessmentPicker.Value.ToString("dd/MM/yyyy");
+                        assessment.UpdatedBy = Environment.UserName;
+                        assessment.UpdatedDate = DateTime.Now.ToString("dd/MM/yyyy");
+
+                        SqliteDataAccess.UpdateAssessmentItem(assessment);
+                        SaveStateLabel.Text = "Saved";
+                        UpdateOverview();
+                    }
+                    catch (System.Exception wtf)
+                    {
+                        errorLabel.Text = wtf.Message;
+                    }
                 }
-                catch (System.Exception wtf)
+                else
                 {
-                    errorLabel.Text = wtf.Message;
+                    MessageBox.Show("Action cancelled by user.", "Aborted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+
         }
-
-
     }
 }
