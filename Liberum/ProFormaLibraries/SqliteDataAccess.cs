@@ -15,8 +15,92 @@ using Microsoft.VisualBasic.ApplicationServices;
 
 namespace ProFormaLibraries
 {
+
+
     public class SqliteDataAccess
     {
+
+        public static void InsertStockLaneCheck(StockLaneCheckModel model)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(LoadConnectionString()))
+                {
+                    connection.Open();
+                    var cmd = connection.CreateCommand();
+                    cmd.CommandText = @"insert into StockLaneChecks
+                        (
+                            ItemDescription,
+                            PartNumber,
+                            Checked, 
+                            Mixed, 
+                            Quantity,
+                            Time, 
+                            Date, 
+                            Actions, 
+                            TimeAdded,
+                            DateAdded,
+                            AddedBy, 
+                            Email
+                        )
+                        values 
+                        (
+                            @ItemDescription,
+                            @PartNumber,
+                            @Checked, 
+                            @Mixed, 
+                            @Quantity,
+                            @Time, 
+                            @Date, 
+                            @Actions, 
+                            @TimeAdded,
+                            @DateAdded,
+                            @AddedBy, 
+                            @Email
+                        )";
+                    cmd.Parameters.Add(new SQLiteParameter("@ItemDescription", model.ItemDescription));
+                    cmd.Parameters.Add(new SQLiteParameter("@PartNumber", model.PartNumber));
+                    cmd.Parameters.Add(new SQLiteParameter("@Checked", model.Checked));
+                    cmd.Parameters.Add(new SQLiteParameter("@Mixed", model.Mixed));
+                    cmd.Parameters.Add(new SQLiteParameter("@Quantity", model.Quantity));
+                    cmd.Parameters.Add(new SQLiteParameter("@Time", model.Time));
+                    cmd.Parameters.Add(new SQLiteParameter("@Date", model.Date));
+                    cmd.Parameters.Add(new SQLiteParameter("@Actions", model.Actions));
+                    cmd.Parameters.Add(new SQLiteParameter("@TimeAdded", model.TimeAdded));
+                    cmd.Parameters.Add(new SQLiteParameter("@DateAdded", model.DateAdded));
+                    cmd.Parameters.Add(new SQLiteParameter("@AddedBy", model.AddedBy));
+                    cmd.Parameters.Add(new SQLiteParameter("@Email", model.Email));
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "damn");
+            }
+        }
+
+
+
+        public static List<StockLaneItems> LoadStockLanes()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<StockLaneItems>("select id, * from StockLanes ORDER BY Id DESC LIMIT 100", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<StockLaneCheckModel> LoadStockLaneChecks()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<StockLaneCheckModel>("select * from StockLaneChecks ORDER BY Id DESC LIMIT 100", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
         public static void UpdateB2(string NewValue, int RecordNumber) {
 
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -1916,6 +2000,15 @@ namespace ProFormaLibraries
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 var output = cnn.Query<string>("select Address from Recipients", new DynamicParameters());
+                return output.ToList();
+            }
+        }
+
+        public static List<string> LoadStockCheckRecipients()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<string>("select UserName from StockCheckRecipients", new DynamicParameters());
                 return output.ToList();
             }
         }

@@ -33,7 +33,7 @@ namespace ProFormaUI
         //Constructor
         public MainPanel()
         {
-            this.ShowInTaskbar = false;
+            this.ShowInTaskbar = true;
 
             InitializeComponent();
 
@@ -322,7 +322,7 @@ namespace ProFormaUI
             //format child form and open within a panel
             activeForm = childForm;
 
-            if (childForm.Name == "ProductionPlan") 
+            if (childForm.Name == "ProductionPlan")
             {
                 childForm.TopLevel = true;
                 childForm.FormBorderStyle = FormBorderStyle.Sizable; // Allow resizing
@@ -330,7 +330,7 @@ namespace ProFormaUI
                 childForm.MinimizeBox = true; // Show minimize button
                 childForm.Dock = DockStyle.None; // Remove docking
                 childForm.WindowState = FormWindowState.Maximized; // Maximize the window
-                
+
 
                 childForm.Show(); // Show as a standalone form
 
@@ -553,6 +553,12 @@ namespace ProFormaUI
         {
             ActivateButton(sender);
             OpenChildForm(new Forms.ProductionPlan(), sender);
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.StockLane(), sender);
         }
     }
 }

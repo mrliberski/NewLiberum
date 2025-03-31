@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanel));
             panelMenu = new Panel();
+            iconButton4 = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
             ExitButton = new FontAwesome.Sharp.IconButton();
             ReportBugButton = new FontAwesome.Sharp.IconButton();
@@ -65,6 +66,7 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.FromArgb(51, 51, 76);
+            panelMenu.Controls.Add(iconButton4);
             panelMenu.Controls.Add(iconButton3);
             panelMenu.Controls.Add(ExitButton);
             panelMenu.Controls.Add(ReportBugButton);
@@ -83,6 +85,26 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(219, 808);
             panelMenu.TabIndex = 35;
+            // 
+            // iconButton4
+            // 
+            iconButton4.Dock = DockStyle.Top;
+            iconButton4.FlatAppearance.BorderSize = 0;
+            iconButton4.FlatStyle = FlatStyle.Flat;
+            iconButton4.ForeColor = Color.Gainsboro;
+            iconButton4.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            iconButton4.IconColor = Color.Gainsboro;
+            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton4.IconSize = 24;
+            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton4.ImeMode = ImeMode.NoControl;
+            iconButton4.Location = new Point(0, 575);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(219, 45);
+            iconButton4.TabIndex = 24;
+            iconButton4.Text = "  Stock Lanes";
+            iconButton4.UseVisualStyleBackColor = true;
+            iconButton4.Click += iconButton4_Click;
             // 
             // iconButton3
             // 
@@ -498,6 +520,7 @@
             MinimumSize = new Size(749, 498);
             Name = "MainPanel";
             RightToLeft = RightToLeft.No;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Main Panel ";
             WindowState = FormWindowState.Maximized;
             Load += MainPanel_Load;
@@ -542,5 +565,6 @@
         private FontAwesome.Sharp.IconButton ExitButton;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton4;
     }
 }
